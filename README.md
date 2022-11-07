@@ -1,39 +1,48 @@
-# samples2
+# ArkUI-X项目跨平台应用示例
 
-#### 介绍
-{**以下是 Gitee 平台说明，您可以替换此简介**
-Gitee 是 OSCHINA 推出的基于 Git 的代码托管平台（同时支持 SVN）。专为开发者提供稳定、高效、安全的云端软件开发协作平台
-无论是个人、团队、或是企业，都能够用 Gitee 实现代码托管、项目管理、协作开发。企业项目请看 [https://gitee.com/enterprises](https://gitee.com/enterprises)}
+## 简介
+【示例贡献温馨提示】感谢您关注ArkUI-X项目，如果您希望提交代码样例/示例/Demo，请提交到[Samples仓](https://gitee.com/arkui-x/samples)。再次感谢您的关注！
 
-#### 软件架构
-软件架构说明
+### 内容简介
+为帮助开发者快速熟悉ArkUI-X项目所提供的API和应用开发流程，我们提供了一系列的应用示例，即Sample。每一个应用示例都是一个独立的跨平台应用工程项目，开发者可以使用代码编辑器和[CLI](https://gitee.com/arkui-x/cli)命令行开发工具浏览代码、编译工程、安装和运行应用示例来了解ArkUI跨平台应用开发流程。
 
+### 示例列表
 
-#### 安装教程
+- 基础示例
+  - ['HelloWorld'：HelloWorld（API8）](HelloWorld)
+- 精品应用
+  - ['Shopping'：购物示例应用（API8）](Shopping)
+  - ['HealthyDiet'：健康饮食示例应用（API8）](HealthyDiet)
 
-1.  xxxx
-2.  xxxx
-3.  xxxx
+## 目录
+Samples仓下所展示的组件能力
 
-#### 使用说明
+```
+samples
+|---HelloWorld          # HelloWorld
+|---Shopping            # 精品应用购物
+|---HealthyDiet         # 精品应用健康饮食
+```
 
-1.  xxxx
-2.  xxxx
-3.  xxxx
+## 约束
 
-#### 参与贡献
+示例贡献需满足CLI命令行应用构建工具要求的工程结构，应用示例编译需遵守各平台应用工程编译打包要求，比如签名等。
 
-1.  Fork 本仓库
-2.  新建 Feat_xxx 分支
-3.  提交代码
-4.  新建 Pull Request
+## 使用方法
 
+1.  通过[Repo命令](https://gitee.com/arkui-x/manifest/blob/master/README.md)下载ArkUI-X项目所有仓或单独下载Samples仓。
+2.  首先进入到跨平台应用示例目录下，比如：HelloWorld目录，然后执行[CLI](https://gitee.com/arkui-x/cli)命令构建跨平台应用。
+3.  安装运行后，即可在不同平台设备上查看应用示例运行效果。
 
-#### 特技
+## Changlog
 
-1.  使用 Readme\_XXX.md 来支持不同的语言，例如 Readme\_en.md, Readme\_zh.md
-2.  Gitee 官方博客 [blog.gitee.com](https://blog.gitee.com)
-3.  你可以 [https://gitee.com/explore](https://gitee.com/explore) 这个地址来了解 Gitee 上的优秀开源项目
-4.  [GVP](https://gitee.com/gvp) 全称是 Gitee 最有价值开源项目，是综合评定出的优秀开源项目
-5.  Gitee 官方提供的使用手册 [https://gitee.com/help](https://gitee.com/help)
-6.  Gitee 封面人物是一档用来展示 Gitee 会员风采的栏目 [https://gitee.com/gitee-stars/](https://gitee.com/gitee-stars/)
+应用修改记录：[Changlog](Changelog)
+
+## Releasenote
+
+应用发布版本分支说明：[releasenote](releasenote)
+
+## 相关仓<a name="section17988202503118"></a>
+
+1. [Samples](https://gitee.com/arkui-x/samples) 
+2. [CLI](https://gitee.com/arkui-x/cli)

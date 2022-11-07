@@ -1,0 +1,20 @@
+{
+  "string": [
+    {
+      "name": "entry_desc",
+      "value": "description"
+    },
+    {
+      "name": "MainAbility_desc",
+      "value": "description"
+    },
+    {
+      "name": "app_name",
+      "value": "appName"
+    },
+    {
+      "name": "click_me",
+      "value": " Click me "
+    }
+  ]
+}
