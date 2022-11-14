@@ -4,23 +4,21 @@
 
 * Android平台展示效果
 
-|食物列表               |食物详情          |
-|---------------------|--------------------|
-|![](screenshots/device/home.png)|![](screenshots/device/detail.png)|
+|食物列表              |食物详情             |饮食添加              |
+|---------------------|--------------------|---------------------|
+|![](screenshots/device/android_home.jpg)|![](screenshots/device/android_detail.jpg)|![](screenshots/device/android_addFoodImg.jpg)|
 
-|饮食添加               |饮食记录          |
-|---------------------|--------------------|
-|![](screenshots/device/addFoodImg.png)|![](screenshots/device/record.png)|
+* iOS平台展示效果
+
+|食物列表              |食物详情             |饮食添加              |
+|---------------------|--------------------|---------------------|
+|![](screenshots/device/ios_home.jpg)|![](screenshots/device/ios_detail.jpg)|![](screenshots/device/ios_addFoodImg.jpg)|
 
 * OpenHarmomy平台展示效果
 
-|食物列表               |食物详情          |
-|---------------------|--------------------|
-|![](screenshots/device/home.png)|![](screenshots/device/detail.png)|
-
-|饮食添加               |饮食记录          |
-|---------------------|--------------------|
-|![](screenshots/device/addFoodImg.png)|![](screenshots/device/record.png)|
+|食物列表              |食物详情             |饮食添加              |
+|---------------------|--------------------|---------------------|
+|![](screenshots/device/oh_home.png)|![](screenshots/device/oh_detail.png)|![](screenshots/device/oh_addFoodImg.png)|
 
 ## 相关概念
 
