@@ -30,17 +30,14 @@ When contributing an app sample, make sure that it meets the project structure r
 
 ## How to Use
 
-1.  Run the [Repo](https://gitee.com/arkui-x/manifest/blob/master/README.md)  commands to download all repositories of the ArkUI-X project or download the desired app samples.
+1.  Run the [Repo](https://gitee.com/arkui-x/manifest/blob/master/README-EN.md) commands to download all repositories of the ArkUI-X project or download the desired app samples.
 2.  Go to the directory that houses the desired sample, for example, **HelloWorld**, and run the [CLI](https://gitee.com/arkui-x/cli) commands to build a cross-platform application.
 3.  Install and run the application. In this way, you can view the effect on devices running different OS platforms.
 
-## Change Log
-
-Available at: [Changelog](Changelog)
 
 ## Release Notes
 
-Available at: [releasenote](releasenote)
+Available at: [releasenote](../docs/blob/master/en/release-notes/ArkUI-X-v0.1.0-beta.md)
 
 ## Repositories Involved<a name="section17988202503118"></a>
 
