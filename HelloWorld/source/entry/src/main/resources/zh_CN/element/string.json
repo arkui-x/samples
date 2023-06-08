@@ -1,8 +1,20 @@
 {
   "string": [
     {
+      "name": "module_desc",
+      "value": "模块描述"
+    },
+    {
+      "name": "MainAbility_desc",
+      "value": "description"
+    },
+    {
+      "name": "MainAbility_label",
+      "value": "label"
+    },
+    {
       "name": "click_me",
-      "value": " Click me "
+      "value": " 点击 "
     }
   ]
 }
