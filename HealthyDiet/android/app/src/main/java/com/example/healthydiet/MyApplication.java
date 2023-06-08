@@ -2,9 +2,16 @@ package com.example.healthydiet;
 
 import android.util.Log;
 
-import ohos.ace.adapter.AceApplication;
+import ohos.stage.ability.adapter.StageApplication;
 
-public class MyApplication extends AceApplication {
+/**
+ * Example ace application class, which will load ArkUI-X application instance.
+ * StageApplication is provided by ArkUI-X
+ * @see <a href=
+ * "https://gitee.com/arkui-crossplatform/doc/blob/master/contribute/tutorial/how-to-build-Android-app.md">
+ * to build android library</a>
+ */
+public class MyApplication extends StageApplication {
     private static final String LOG_TAG = "HiHelloWorld";
 
     private static final String RES_NAME = "res";

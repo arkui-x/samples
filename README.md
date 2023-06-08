@@ -34,6 +34,13 @@ samples
 2.  首先进入到跨平台应用示例目录下，比如：HelloWorld目录，然后执行[CLI](https://gitee.com/arkui-x/cli)命令构建跨平台应用。
 3.  安装运行后，即可在不同平台设备上查看应用示例运行效果。
 
+## 注意事项
+1.  三个例子里的ios/frameworks文件夹下需要手动添加4.0.8.1的SDK文件才可ios编译成功：[下载地址](http://download.ci.openharmony.cn/version/Master_Version/ArkUI-X/20230607052316/arkui_x_darwin_sdk.tar.gz )。
+2.  编译安卓apk包时，如出现白屏情况，需将三个例子里的android/app/libs文件夹下需要手动添加4.0.8.1的SDK文件即可解决：[下载地址](http://download.ci.openharmony.cn/version/Master_Version/ArkUI-X/20230607_022130/version-Master_Version-ArkUI-X-20230607_022130-arkui_x_windows_linux_sdk.tar.gz )。
+3.  本示例需要使用DevEco Studio 3.1 Beta2 (Build Version: 3.1.0.500, built on April 28, 2023)及以上版本才可编译运行。
+4.  本示例已适配ArkUI-X-sdk 的IDE集成SDK，版本号：4.0.8.1。
+5.  本示例需要在第二步的基础上下载ohpm相关依赖包，[下载步骤](https://gitee.com/arkui-x/docs/blob/master/zh-cn/application-dev/quick-start/start-with-ace-tools.md#%E5%AE%89%E8%A3%85ohpm%E5%91%BD%E4%BB%A4 )。  
+ 
 ## Changlog
 
 应用修改记录：[Changlog](Changelog)
