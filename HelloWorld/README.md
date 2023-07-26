@@ -1,6 +1,6 @@
 # HelloWorld应用示例
 ## 简介
-本示例可通过点击Button按钮改变Text组件展示内容。效果图如下：
+本示例通过[ArkUI-X] Entry Ability模版创建的一个工程,可通过点击Button按钮改变Text组件展示内容。效果图如下：
 
 * Android平台展示效果
 ![](./screenshots/devices/android_main.jpg) ![](./screenshots/devices/android_state.jpg)
@@ -19,10 +19,6 @@
 
 不涉及。
 
-## 注意事项
-
-1.本示例需要在工程的hvigor文件夹中添加一些配置文件,否则会编译失败，配置文件可以在下载完跨平台IDE之后，对hvigorPackage文件中的hvigorAndPlugin解压获取，获取完添加到hvigor文件夹中，并对hvigor中的hvigor-config.json5文件进行配置更新。
-2.本示例已适配ArkUI-X-sdk 的IDE集成SDK，版本号：4.0.8.5。
 
 ## 使用说明
 

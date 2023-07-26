@@ -12,14 +12,11 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
- 
 {
-  "hvigorVersion": "ohos-hvigor-2.5.0-rc.9.s.tgz",
+  "hvigorVersion": "2.6.0-rc.9",
   "dependencies": {
-    "@ohos/hvigor-ohos-plugin": "ohos-hvigor-ohos-plugin-2.5.0-rc.9.s.tgz",
-    "@ohos/hvigor-ohos-arkui-x-plugin": "ohos-hvigor-ohos-arkui-x-plugin-2.0.0-rc.11.s.tgz",
-    "rollup": "rollup.tgz",
-    "lodash": "4.17.21"
+    "@ohos/hvigor-ohos-plugin": "2.6.0-rc.9",
+    "@ohos/hvigor-ohos-arkui-x-plugin": "2.1.0-rc.1"
   },
   "execution": {
     // "daemon": true,                          /* Enable daemon compilation. Default: true */

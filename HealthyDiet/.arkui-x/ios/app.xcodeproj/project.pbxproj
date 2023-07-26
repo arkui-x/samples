@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		312985A1FF004B68B8F92A7A /* libmediaquery.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55F2565AFE8A46908154402B /* libmediaquery.xcframework */; };
+		526E26457BEF4A2AB35CD4FD /* librouter.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29BB003AC1274CDFB042A732 /* librouter.xcframework */; };
+		55B9C95F142045C880581B26 /* librouter.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 29BB003AC1274CDFB042A732 /* librouter.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		784BEE8FDB6647AC95590A22 /* libmediaquery.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 55F2565AFE8A46908154402B /* libmediaquery.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		89E41E4529F505070004F33E /* EntryEntryAbilityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 89E41E4329F505070004F33E /* EntryEntryAbilityViewController.m */; };
 		89E41E4629F505CD0004F33E /* libarkui_ios.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF9C1B5D28B9FC3A005DCF58 /* libarkui_ios.xcframework */; };
 		89E41E4729F505CD0004F33E /* libarkui_ios.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DF9C1B5D28B9FC3A005DCF58 /* libarkui_ios.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -17,10 +21,6 @@
 		F0AF1ADD27D36856008C55DD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F0AF1ADC27D36856008C55DD /* Assets.xcassets */; };
 		F0AF1AE027D36856008C55DD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0AF1ADE27D36856008C55DD /* LaunchScreen.storyboard */; };
 		F0AF1AE327D36856008C55DD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F0AF1AE227D36856008C55DD /* main.m */; };
-		784BEE8FDB6647AC95590A22 /* libmediaquery.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 55F2565AFE8A46908154402B /* libmediaquery.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		312985A1FF004B68B8F92A7A /* libmediaquery.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55F2565AFE8A46908154402B /* libmediaquery.xcframework */; };
-		55B9C95F142045C880581B26 /* librouter.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 29BB003AC1274CDFB042A732 /* librouter.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		526E26457BEF4A2AB35CD4FD /* librouter.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29BB003AC1274CDFB042A732 /* librouter.xcframework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -41,6 +41,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		29BB003AC1274CDFB042A732 /* librouter.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = librouter.xcframework; path = frameworks/librouter.xcframework; sourceTree = "<group>"; };
+		55F2565AFE8A46908154402B /* libmediaquery.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = libmediaquery.xcframework; path = frameworks/libmediaquery.xcframework; sourceTree = "<group>"; };
 		89E41E4329F505070004F33E /* EntryEntryAbilityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EntryEntryAbilityViewController.m; sourceTree = "<group>"; };
 		89E41E4429F505070004F33E /* EntryEntryAbilityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EntryEntryAbilityViewController.h; sourceTree = "<group>"; };
 		D2B351312A49364D000A9C75 /* libhilog.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = libhilog.xcframework; path = frameworks/libhilog.xcframework; sourceTree = "<group>"; };
@@ -53,8 +55,6 @@
 		F0AF1ADF27D36856008C55DD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F0AF1AE127D36856008C55DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F0AF1AE227D36856008C55DD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		55F2565AFE8A46908154402B /* libmediaquery.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = libmediaquery.xcframework; path = frameworks/libmediaquery.xcframework; sourceTree = "<group>"; };
-		29BB003AC1274CDFB042A732 /* librouter.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = librouter.xcframework; path = frameworks/librouter.xcframework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -331,6 +331,7 @@
 				ENABLE_BITCODE = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = app/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = HealthyDiet;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -341,9 +342,9 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.example.x1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.HealthyDiet;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PROVISIONING_PROFILE_SPECIFIER = "no sign";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -362,6 +363,7 @@
 				ENABLE_BITCODE = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = app/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = HealthyDiet;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -372,9 +374,9 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.example.x1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.HealthyDiet;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PROVISIONING_PROFILE_SPECIFIER = "no sign";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
