@@ -1,15 +1,16 @@
 # Native应用示例
 ## 简介
-本示例通过[ArkUI-X] Native C++模版创建的一个工程,可通过点击Button按钮改变Text组件展示内容，编译之前需要将[CMakeLists.txt](.arkui-x/android/app/src/main/cpp/CMakeLists.txt)中的NATIVE_INCLUDE_PATH修改为自己的本地路径。效果图如下：
+本示例通过[ArkUI-X] Native C++模版创建的一个工程,可通过点击Button按钮改变Text组件展示内容。效果图如下：
+注意：导入sample之后，需要将[CMakeLists.txt](.arkui-x/android/app/src/main/cpp/CMakeLists.txt)中的NATIVE_INCLUDE_PATH的{Please set your ArkUI-X SDK path}修改为ArkUI-X SDK的路径。
 
 * Android平台展示效果
-![](./screenshots/devices/android_main.jpg) ![](./screenshots/devices/android_state.jpg)
+![](./screenshots/devices/android.jpg) 
 
 * iOS平台展示效果
-![](./screenshots/devices/ios_main.jpg) ![](./screenshots/devices/ios_state.jpg)
+![](./screenshots/devices/ios.png) 
 
 * OpenHarmomy平台展示效果
-![](./screenshots/devices/oh_main.png) ![](./screenshots/devices/oh_state.png)
+![](./screenshots/devices/ohos.jpeg)
 
 ## 相关概念
 

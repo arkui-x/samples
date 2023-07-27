@@ -3,7 +3,7 @@ cmake_minimum_required(VERSION 3.4.1)
 project(HelloWorldNativeApi)
 
 set(NATIVE_ROOT_PATH ${CMAKE_CURRENT_SOURCE_DIR})
-set(NATIVE_INCLUDE_PATH /Users/apple/Library/OpenHarmony/Sdk/10/arkui-x/engine/lib/include)
+set(NATIVE_INCLUDE_PATH {Please set your ArkUI-X SDK path}/10/arkui-x/engine/lib/include)
 
 include_directories(${NATIVE_ROOT_PATH})
 include_directories(${NATIVE_INCLUDE_PATH})
