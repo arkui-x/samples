@@ -48,7 +48,7 @@ struct FoodListItem {
       .width('100%')
     }
     .params({ foodId: this.foodItem })
-    .margin({ right: 24, left: 32 , top: 135})
+    .margin({ right: 24, left: 32 })
   }
 }
 
