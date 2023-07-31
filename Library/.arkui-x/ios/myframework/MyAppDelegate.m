@@ -18,7 +18,7 @@
 #import <libarkui_ios/StageApplication.h>
 
 #define BUNDLE_DIRECTORY @"/Frameworks/myframework.framework/arkui-x"
-#define BUNDLE_NAME @"com.example.helloworldlibray"
+#define BUNDLE_NAME @"com.example.library"
 
 @interface MyAppDelegate ()
 

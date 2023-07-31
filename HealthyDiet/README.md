@@ -40,13 +40,10 @@
 
 5. 食物详情页面，使用滑动组件展示食物的详细信息，包括使用画布组件展示单位重量的食物各个营养元素的的占比,使用进度条组件展示当前食物是否为高热食物，以及展示单位重量的食物所包含的热量、脂肪、蛋白质、碳水以及维他命C值；并且点击记录按钮可以弹出记录饮食的弹窗，包括记录食物的种类、重量以及用餐时间，可以通过点击完成添加饮食，同时添加的饮食信息会在“记录”Tab页签做展示。
 
-## 注意事项
-
-1.本示例需要在工程的hvigor文件夹中添加一些配置文件,否则会编译失败，配置文件可以在下载完跨平台IDE之后，对hvigorPackage文件中的hvigorAndPlugin解压获取，获取完添加到hvigor文件夹中，并对hvigor中的hvigor-config.json5文件进行配置更新。
-2.本示例已适配ArkUI-X-sdk 的IDE集成SDK，版本号：4.0.8.5。
-
 ## 约束与限制
 
 1.本示例支持在Android\iOS\OpenHarmony平台上运行。
 
-2.本示例需要使用DevEco Studio 4.0 Canary2 (Build Version: 4.0.3.217, built on June 30, 2023)及以上版本才可编译运行。
+2.本示例需要使用DevEco Studio 4.0 Beta2 (Build Version: 4.0.3.313, built on July 22, 2023)及以上版本才可编译运行。
+
+3.本示例已适配ArkUI-X-sdk 的IDE集成SDK，版本号：0.0.9.3。

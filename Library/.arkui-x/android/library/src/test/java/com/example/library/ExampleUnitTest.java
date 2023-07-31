@@ -1,4 +1,4 @@
-package com.example.helloworldlibray;
+package com.example.library;
 
 import org.junit.Test;
 

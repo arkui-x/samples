@@ -140,6 +140,7 @@ struct FoodGrid {
     }).getValue(this.currentBreakpoint))
     .columnsGap(8)
     .rowsGap(8)
+    .edgeEffect(EdgeEffect.Spring)
     .padding({ left: 16, right: 16 })
   }
 }
@@ -150,12 +151,14 @@ struct CategoryModeFoods {
   private foodItems: FoodInfo[] = getFoods()
   private foodCategories: Category[] = getFoodCategories()
 
-  @Builder tabBarItemBuilder(value: Resource, index: number) {
+  @Builder
+  tabBarItemBuilder(value: Resource, index: number) {
     Text(value)
       .width(58)
       .fontColor(this.currentTabIndex === index ? 'rgba(0,0,0,0.9)' : 'rgba(0,0,0,0.6)')
-      .fontSize(this.currentTabIndex === index ? 24 : 18)
+      .fontSize(this.currentTabIndex === index ? 22 : 18)
       .height(56)
+      .padding({ right: 6 })
   }
 
   build() {
@@ -170,7 +173,7 @@ struct CategoryModeFoods {
         }.tabBar(this.tabBarItemBuilder(foodCategory.name, index + 1))
       })
     }
-    .animationDuration(0)
+    .barWidth(300)
     .barMode(BarMode.Scrollable)
     .onChange((index) => {
       this.currentTabIndex = index
@@ -191,9 +194,9 @@ struct FoodsDisplay {
       }
       Row() {
         Image($r("app.media.ic_switch"))
-          .height(24)
-          .width(24)
-          .margin({ left: 24, right: 24 })
+          .height(22)
+          .width(22)
+          .margin({ left: 10, right: 24 })
       }
       .height(56)
       .backgroundColor(this.isCategoryMode ? Color.White : '#F1F3F5')
@@ -211,7 +214,8 @@ struct Home {
   @StorageProp('currentBreakpoint') currentBreakpoint: string = 'md'
   private breakpointSystem: BreakpointSystem = new BreakpointSystem()
 
-  @Builder bottomBarItemBuilder(name: Resource, icon: Resource, index: number) {
+  @Builder
+  bottomBarItemBuilder(name: Resource, icon: Resource, index: number) {
     Flex({
       direction: new BreakPointType({
         sm: FlexDirection.Column,

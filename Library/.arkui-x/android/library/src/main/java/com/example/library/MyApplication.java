@@ -1,4 +1,4 @@
-package com.example.helloworldlibray;
+package com.example.library;
 
 import android.util.Log;
 
