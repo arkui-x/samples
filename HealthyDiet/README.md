@@ -44,6 +44,4 @@
 
 1.本示例支持在Android\iOS\OpenHarmony平台上运行。
 
-2.本示例需要使用DevEco Studio 4.0 Beta2 (Build Version: 4.0.3.313, built on July 22, 2023)及以上版本才可编译运行。
-
-3.本示例已适配ArkUI-X-sdk 的IDE集成SDK，版本号：0.0.9.3。
+2.本示例需要使用DevEco Studio 4.0 Beta2版本才可编译运行。
