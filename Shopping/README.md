@@ -33,4 +33,4 @@
 
 1.本示例支持在Android\iOS\OpenHarmony平台上运行。
 
-2.本示例需要使用DevEco Studio 4.0 Beta2 (Build Version: 4.0.3.313, built on July 22, 2023)及以上版本才可编译运行。
+2.本示例需要使用DevEco Studio 4.0 Beta2版本才可编译运行。
