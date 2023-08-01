@@ -34,9 +34,10 @@ struct FoodListItem {
           .backgroundColor('#FFf1f3f5')
           .margin({ right: 16 })
           .borderRadius(6)
-          .sharedTransition(this.foodItem.letter, {
+          .sharedTransition(JSON.stringify(this.foodItem.id), {
             duration: 400,
-            delay: 100
+            delay: 100,
+            curve:Curve.Ease
           })
         Text(this.foodItem.name)
           .fontSize(14)
@@ -94,9 +95,10 @@ struct FoodGridItem {
       Image(this.foodItem.image)
         .objectFit(ImageFit.Contain)
         .height(152)
-        .sharedTransition(this.foodItem.letter, {
+        .sharedTransition(JSON.stringify(this.foodItem.id), {
           duration: 400,
-          delay: 100
+          delay: 100,
+          curve:Curve.Ease
         })
       Row() {
         Text(this.foodItem.name)
