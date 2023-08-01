@@ -4,13 +4,13 @@
 注意：导入sample之后，需要将[CMakeLists.txt](.arkui-x/android/app/src/main/cpp/CMakeLists.txt)中的NATIVE_INCLUDE_PATH的{Please set your ArkUI-X SDK path}修改为ArkUI-X SDK的路径。
 
 * Android平台展示效果
-![](./screenshots/devices/android.jpg) 
+  ![](./screenshots/devices/android.jpg)
 
 * iOS平台展示效果
-![](./screenshots/devices/ios.png) 
+  ![](./screenshots/devices/ios.png)
 
 * OpenHarmomy平台展示效果
-![](./screenshots/devices/ohos.jpeg)
+  ![](./screenshots/devices/ohos.jpeg)
 
 ## 相关概念
 
@@ -30,4 +30,4 @@
 
 1.本示例支持在Android\iOS\OpenHarmony平台上运行。
 
-2.本示例需要使用DevEco Studio 4.0 Beta2版本才可编译运行。
+2.本示例需要使用DevEco Studio 4.0 Beta2及以上版本才可编译运行。
