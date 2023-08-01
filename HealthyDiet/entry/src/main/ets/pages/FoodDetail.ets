@@ -75,9 +75,10 @@ struct FoodImageDisplay {
   build() {
     Stack({ alignContent: Alignment.BottomStart }) {
       Image(this.foodInfo.image)
-        .sharedTransition(this.foodInfo.letter, {
+        .sharedTransition(JSON.stringify(this.foodInfo.id), {
           duration: 400,
-          delay: 100
+          delay: 100,
+          curve:Curve.Ease
         })
         .backgroundColor(`rgba(255, 255, 255, ${this.imageBgColorA})`)
         .objectFit(ImageFit.Contain)
