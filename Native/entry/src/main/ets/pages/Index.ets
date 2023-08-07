@@ -18,15 +18,16 @@ import testNapi from 'libentry.so'
 @Entry
 @Component
 struct Index {
-  @State message: string = 'Hello World'
+  @State message: string = 'Test native api: 2 + 3 = ?';
 
   build() {
     Row() {
       Column() {
         Text(this.message)
-          .fontSize(50)
+          .fontSize(36)
           .fontWeight(FontWeight.Bold)
           .onClick(() => {
+            this.message = 'Test native api: 2 + 3 = ' + testNapi.add(2, 3);
             hilog.info(0x0000, 'testTag', 'Test NAPI 2 + 3 = %{public}d', testNapi.add(2, 3));
           })
       }
