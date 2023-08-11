@@ -103,11 +103,13 @@
 }
 
 - (void)setNaviAppearance:(UINavigationController *)navi {
-    UINavigationBarAppearance *appearance = [UINavigationBarAppearance new];
-    [appearance configureWithOpaqueBackground];
-    appearance.backgroundColor = UIColor.whiteColor;
-    navi.navigationBar.standardAppearance = appearance;
-    navi.navigationBar.scrollEdgeAppearance = navi.navigationBar.standardAppearance;
+    if (@available(iOS 13.0, *)) {
+        UINavigationBarAppearance *appearance = [UINavigationBarAppearance new];
+        [appearance configureWithOpaqueBackground];
+        appearance.backgroundColor = UIColor.whiteColor;
+        navi.navigationBar.standardAppearance = appearance;
+        navi.navigationBar.scrollEdgeAppearance = navi.navigationBar.standardAppearance;
+    }
 }
 
 @end
