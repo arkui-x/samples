@@ -25,13 +25,13 @@ export default class TestAbility extends UIAbility {
     onCreate(want: Want, launchParam: AbilityConstant.LaunchParam) {
         hilog.info(0x0000, 'testTag', '%{public}s', 'TestAbility onCreate');
         hilog.info(0x0000, 'testTag', '%{public}s', 'want param:' + JSON.stringify(want) ?? '');
-        hilog.info(0x0000, 'testTag', '%{public}s', 'launchParam:'+ JSON.stringify(launchParam) ?? '');
-        var abilityDelegator: any
-        abilityDelegator = AbilityDelegatorRegistry.getAbilityDelegator()
-        var abilityDelegatorArguments: any
-        abilityDelegatorArguments = AbilityDelegatorRegistry.getArguments()
+        hilog.info(0x0000, 'testTag', '%{public}s', 'launchParam:' + JSON.stringify(launchParam) ?? '');
+        let abilityDelegator: AbilityDelegatorRegistry.AbilityDelegator;
+        abilityDelegator = AbilityDelegatorRegistry.getAbilityDelegator();
+        let abilityDelegatorArguments: AbilityDelegatorRegistry.AbilityDelegatorArgs;
+        abilityDelegatorArguments = AbilityDelegatorRegistry.getArguments();
         hilog.info(0x0000, 'testTag', '%{public}s', 'start run testcase!!!');
-        Hypium.hypiumTest(abilityDelegator, abilityDelegatorArguments, testsuite)
+        Hypium.hypiumTest(abilityDelegator, abilityDelegatorArguments, testsuite);
     }
 
     onDestroy() {
