@@ -1,7 +1,0 @@
-{
-  "src": [
-    "pages/Index",
-    "pages/EditFile",
-    "file/pages/document/DocumentFileList"
-  ]
-}

@@ -14,8 +14,8 @@ export default struct MyTabContent {
   aboutToAppear() {
     try {
       const isGson = this.deserialize === 'gson'
-      const removeEmpty: RegExp = new RegExp(/\ +/g)
-      const removeN: RegExp = new RegExp(/[\r\n]/g)
+      const removeEmpty: RegExp = new RegExp('\\s+', 'g')
+      const removeN: RegExp = new RegExp('[\r\n]', 'g')
       this.innerContent = this.innerContent.replace(removeEmpty, "") // 去掉空格
       this.innerContent = this.innerContent.replace(removeN, "") // 去掉\n
       // 若显示内容被""包裹，则去掉""
