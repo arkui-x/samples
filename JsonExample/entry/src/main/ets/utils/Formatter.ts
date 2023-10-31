@@ -118,7 +118,11 @@ function convertObject(obj: object, tabCount: number = 0, addComma: boolean = fa
     }
   })
   tabCount--
-  formatterJSON += `${setTabs(tabCount)}}${addComma ? ',' : ''}\n`
+  if (tabCount === 0) {
+    formatterJSON += `${setTabs(tabCount)}}${addComma ? ',' : ''}`
+  } else {
+    formatterJSON += `${setTabs(tabCount)}}${addComma ? ',' : ''}\n`
+  }
   return formatterJSON
 }
 

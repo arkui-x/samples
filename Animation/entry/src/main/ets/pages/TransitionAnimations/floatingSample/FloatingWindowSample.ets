@@ -44,6 +44,7 @@ struct FloatingWindowSample {
       Column() {
         TitleBar({ title: $r('app.string.Floating_window') })
           .id('target')
+        Checkbox().width(0.5).height(0.5)
         TextInput({ placeholder: $r('app.string.avoiding_input_method_testing') })
           .width('95%').height(50)
           .id('test_inputTab')

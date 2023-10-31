@@ -29,3 +29,16 @@ export struct TitleBar {
     }
   }
 }
+export function debounce(fn:()=>void, delay:number) {
+  let timer = 0
+  const _debounce = ()=> {
+    // 取消上一次的定时器
+    if (timer) clearTimeout(timer)
+    // 延迟执行
+    timer = setTimeout(() => {
+      // 外部传入的真正要执行的函数
+      fn()
+    }, delay)
+  }
+  return _debounce
+}

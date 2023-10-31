@@ -9,7 +9,7 @@ export default struct FloatingWindowComponent {
         .objectFit(ImageFit.Contain)
         .width('40%')
         .height('40%')
-
+        
       Text(this.tips)
         .fontSize(12)
         .fontColor($r('app.color.background_green'))
@@ -22,5 +22,6 @@ export default struct FloatingWindowComponent {
     .borderRadius(16)
     .shadow({ radius: 15, color: $r('app.color.btn_border_color') })
     .justifyContent(FlexAlign.SpaceAround)
+    .margin({ bottom: 50 })
   }
 }

@@ -1,3 +1,4 @@
+import router from '@ohos.router'
 import ListModelPopular from '../component/ListModelPopular'
 import ListModelNew from '../component/ListModelNew'
 import ListModelAll from '../component/ListModelAll'
@@ -10,6 +11,10 @@ struct HomePage {
   @State topSelectIndex: number = 0
   topController: TabsController = new TabsController()
   bottomController: TabsController = new TabsController()
+
+  aboutToAppear() {
+    router.clear();
+  }
 
   @Builder
   TabBuilder(title: string, index: number, normalImg: Resource, selectImg: Resource) {

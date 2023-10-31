@@ -28,7 +28,7 @@ export struct FileList {
           fs.readSync(file.fd, buf, {
             offset: 0
           });
-          this.fileContent = bufferToString(buf);
+          this.fileContent = bufferToString(buf).trim();
           // 传递文件名、文件内容、文件路径
           router.pushUrl({
             url: 'pages/EditFile',
@@ -183,6 +183,8 @@ export struct FileList {
               })
             }
             .id('list')
+            .height('100%')
+            .width('100%')
             .alignListItem(ListItemAlign.Center)
             .scrollBar(BarState.Auto)
           }
