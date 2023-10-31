@@ -55,24 +55,28 @@ export struct ScrollItem {
           console.info('Pan start');
         })
         .onActionUpdate((event: GestureEvent) => {
-          let sxNumber: number = 0;
-          if (event.offsetY - this.offsetY <= 0) {
-            sxNumber = (this.sx - Math.abs(event.offsetY - this.offsetY) / this.windowHeight);
-          } else if (event.offsetY - this.offsetY > 0) {
-            sxNumber = (this.sx + Math.abs(event.offsetY - this.offsetY) / this.windowHeight);
+          if (this.resource.getId() !== '5') {
+            let sxNumber: number = 0;
+            if (event.offsetY - this.offsetY <= 0) {
+              sxNumber = (this.sx - Math.abs(event.offsetY - this.offsetY) / this.windowHeight);
+            } else if (event.offsetY - this.offsetY > 0) {
+              sxNumber = (this.sx + Math.abs(event.offsetY - this.offsetY) / this.windowHeight);
+            }
+            this.move(sxNumber);
+            this.offsetX = event.offsetX;
+            this.offsetY = event.offsetY;
           }
-          this.move(sxNumber);
-          this.offsetX = event.offsetX;
-          this.offsetY = event.offsetY;
         })
         .onActionEnd(() => {
-          this.offsetX = 0;
-          this.offsetY = 0;
-          console.info('Pan end');
-          if (this.scaleX >= 0.15 && this.scaleX < 1) {
-            this.restore();
-          } else if (this.scaleX < 0.15) {
-            this.delete();
+          if (this.resource.getId() !== '5') {
+            this.offsetX = 0;
+            this.offsetY = 0;
+            console.info('Pan end');
+            if (this.scaleX >= 0.15 && this.scaleX < 1) {
+              this.restore();
+            } else if (this.scaleX < 0.15) {
+              this.delete();
+            }
           }
         })
     )

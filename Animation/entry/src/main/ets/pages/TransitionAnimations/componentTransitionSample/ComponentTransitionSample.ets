@@ -1,11 +1,9 @@
-import { TitleBar } from '../../../common/TitleBar';
-
+import { debounce, TitleBar } from '../../../common/TitleBar';
 @Entry
 @Component
 struct ComponentTransitionSample {
   @State flag: boolean = true;
   @State show: Resource = $r('app.string.component_transition_hide');
-
   build() {
     Column() {
       TitleBar({ title: $r('app.string.component_transition') })
@@ -35,7 +33,7 @@ struct ComponentTransitionSample {
             Button(this.show)
               .width('90%')
               .margin({ top: 16 })
-              .onClick(() => {
+              .onClick(debounce(() => {
                 // 点击Button控制Image的显示和消失
                 if (this.flag) {
                   this.show = $r('app.string.component_transition_show');
@@ -46,7 +44,7 @@ struct ComponentTransitionSample {
                 animateTo({ duration: 1000 }, () => {
                   this.flag = !this.flag;
                 })
-              })
+              },800))
           }
           .justifyContent(FlexAlign.Center)
           .width('100%')

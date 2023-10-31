@@ -1,5 +1,4 @@
 import { TitleBar } from '../../common/TitleBar';
-import ShowToast from '../../util/ShowToast';
 
 @Entry
 @Component
@@ -158,12 +157,11 @@ struct AnimationSample {
               duration: 1200,
               curve: Curve.Friction,
               delay: 500,
-              iterations: 2,
+              iterations: 1,
               playMode: PlayMode.Alternate,
               tempo: 10,
               onFinish: () => {
                 this.rotateAngleComplete = 0;
-                ShowToast.shortToast($r('app.string.animate_over'));
               }
             })
         }

@@ -60,63 +60,63 @@ struct MultiplexSample {
     Column() {
       TitleBar({ title: $r('app.string.Multiplex_interface') })
         .id('targetColumn')
-        Scroll(this.scroller) {
-          Row() {
-            ForEach(this.resources, (resource: MultiplexModel) => {
-              ScrollItem({
-                resource: resource,
-                onDelete: this.onDelete
-              })
-                .id(resource.getId())
-                .margin({
-                  left: this.getLeftMargin(resource),
-                  right: this.getRightMargin(resource)
-                })
-                .width(this.getSize(this.windowWidth, resource))
-                .height(this.getSize(this.windowHeight, resource))
-                .zIndex(resource.getId() === this.currentModel.getId() ? 1 : 0)
-                .blur(resource.getId() === this.currentModel.getId() ? 0 : 5)
-            }, (item: MultiplexModel) => {
-              return item.getId();
+      Scroll(this.scroller) {
+        Row() {
+          ForEach(this.resources, (resource: MultiplexModel) => {
+            ScrollItem({
+              resource: resource,
+              onDelete: this.onDelete
             })
-          }
+              .id(resource.getId())
+              .margin({
+                left: this.getLeftMargin(resource),
+                right: this.getRightMargin(resource)
+              })
+              .width(this.getSize(this.windowWidth, resource))
+              .height(this.getSize(this.windowHeight, resource))
+              .zIndex(resource.getId() === this.currentModel.getId() ? 1 : 0)
+              .blur(resource.getId() === this.currentModel.getId() ? 0 : 5)
+          }, (item: MultiplexModel) => {
+            return item.getId();
+          })
         }
-        .id('scroll')
-        .scrollable(ScrollDirection.Horizontal)
-        .scrollBar(BarState.Off) // 滚动条常驻显示
-        .edgeEffect(EdgeEffect.None)
-        .onScroll((xOffset: number, yOffset: number) => {
-          this.currentX += xOffset;
-          this.onceXOffset += xOffset;
-          let index = Math.round(this.currentX / (this.windowWidth / 2 - MARGIN_BETWEEN));
-          if (index < 0) {
-            index = 0;
-          }
-          if (index > this.resources.length - 1) {
-            index = this.resources.length - 1;
-          }
-          this.scrollIndex = index;
-        })
-
-        .onScrollEdge((side: Edge) => {
-        })
-        .onScrollFrameBegin((offset: number) => {
-          return { offsetRemain: offset };
-        })
-        .onScrollStart(() => {
-          this.startScroll = true;
-        })
-        .onScrollStop(() => {
-          this.currentX = this.scroller.currentOffset().xOffset;
-          this.onceXOffset = 0;
-          if (this.startScroll) {
-            this.scrollCurrentIndex();
-          }
-          this.startScroll = false;
-        })
-        .height('100%')
-        .margin({ top: -20 })
       }
+      .id('scroll')
+      .scrollable(ScrollDirection.Horizontal)
+      .scrollBar(BarState.Off) // 滚动条常驻显示
+      .edgeEffect(EdgeEffect.None)
+      .onScroll((xOffset: number, yOffset: number) => {
+        this.currentX += xOffset;
+        this.onceXOffset += xOffset;
+        let index = Math.round(this.currentX / (this.windowWidth / 2 - MARGIN_BETWEEN));
+        if (index < 0) {
+          index = 0;
+        }
+        if (index > this.resources.length - 1) {
+          index = this.resources.length - 1;
+        }
+        this.scrollIndex = index;
+      })
+
+      .onScrollEdge((side: Edge) => {
+      })
+      .onScrollFrameBegin((offset: number) => {
+        return { offsetRemain: offset };
+      })
+      .onScrollStart(() => {
+        this.startScroll = true;
+      })
+      .onScrollStop(() => {
+        this.currentX = this.scroller.currentOffset().xOffset;
+        this.onceXOffset = 0;
+        if (this.startScroll) {
+          this.scrollCurrentIndex();
+        }
+        this.startScroll = false;
+      })
+      .height('100%')
+      .margin({ top: -20 })
+    }
     .width('100%')
     .height('100%')
     .backgroundColor($r('app.color.background_shallow_grey'))
