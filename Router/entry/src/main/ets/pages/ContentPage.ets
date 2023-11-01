@@ -62,18 +62,33 @@ export struct AuthorPage {
   }
 }
 
+// Navigator({ target: 'pages/loginPage', type: NavigationType.Replace }) {
+//   Button('Sign out')
+//     .width('150')
+//     .backgroundColor('#BBB2C8')
+// }
+
 @Component
 export struct SettingsPage {
+  @StorageLink('routerObj') routerObj: router.RouterOptions = {
+    url:'pages/loginPage'
+  };
+
   build() {
     Column() {
       Text('Settings')
         .fontSize(30)
         .margin({ bottom: 30, top: 20 })
-      Navigator({ target: 'pages/loginPage', type: NavigationType.Replace }) {
-        Button('Sign out')
-          .width('150')
-          .backgroundColor('#BBB2C8')
-      }
+      Button('Sign out')
+        .width('150')
+        .backgroundColor('#BBB2C8')
+        .onClick(() => {
+          router.clear();
+          this.routerObj = {
+            url:'pages/loginPage'
+          };
+          router.pushUrl(this.routerObj);
+        })
     }
     .backgroundColor('#B6C5D1')
     .height(400)

@@ -15,7 +15,6 @@ export default struct ListModelNew {
       .onClick(() => {
         router.pushUrl({
           url: "pages/book/FirstBook",
-
         })
       })
       ListItem() {
@@ -29,7 +28,6 @@ export default struct ListModelNew {
       .onClick(() => {
         router.pushUrl({
           url: "pages/book/SecondBook",
-
         })
       })
     }

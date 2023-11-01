@@ -4,30 +4,39 @@ import ListModelNew from '../component/ListModelNew'
 import ListModelAll from '../component/ListModelAll'
 import { AuthorPage, SettingsPage } from './ContentPage'
 
+
 @Entry
 @Component
 struct HomePage {
-  @State bottomSelectIndex: number = 0
-  @State topSelectIndex: number = 0
+  // @State bottomSelectIndex: number = 0
+  // @State topSelectIndex: number = 0
+  @StorageLink('routerObj') routerObj: router.RouterOptions = {
+    url:'pages/loginPage'
+  };
+  @StorageLink('homeTabBottomIndex') homeTabBottomIndex: number = 0;
+  @StorageLink('homeTabTopIndex') homeTabTopIndex: number = 0;
+
   topController: TabsController = new TabsController()
   bottomController: TabsController = new TabsController()
 
   aboutToAppear() {
     router.clear();
+    // this.bottomSelectIndex = this.homeTabBottomIndex;
+    // this.topSelectIndex = this.homeTabTopIndex;
   }
 
   @Builder
   TabBuilder(title: string, index: number, normalImg: Resource, selectImg: Resource) {
     Column() {
-      Image(this.bottomSelectIndex == index ? selectImg : normalImg)
+      Image(this.homeTabBottomIndex == index ? selectImg : normalImg)
         .height(20)
         .height(20)
       Text(title)
         .fontSize(15)
-        .fontColor(this.bottomSelectIndex == index ? Color.Black : Color.Gray)
+        .fontColor(this.homeTabBottomIndex == index ? Color.Black : Color.Gray)
     }
     .onClick(() => {
-      this.bottomSelectIndex = index
+      this.homeTabBottomIndex = index
       this.bottomController.changeIndex(index)
     }
     )
@@ -36,24 +45,24 @@ struct HomePage {
   @Builder
   TabBuilderStart(title: string, index: number, normalImg: Resource, selectImg: Resource) {
     Column() {
-      Image(this.topSelectIndex === index ? selectImg : normalImg)
+      Image(this.homeTabTopIndex === index ? selectImg : normalImg)
         .height(20)
         .height(20)
         .margin({ bottom: 10 })
       Text(title)
         .fontSize(15)
-        .fontColor(this.topSelectIndex === index ? Color.Black : Color.Gray)
+        .fontColor(this.homeTabTopIndex === index ? Color.Black : Color.Gray)
       Divider()
         .strokeWidth(2)
         .color(Color.Black)
         .width(40)
-        .opacity(this.topSelectIndex === index ? 1 : 0)
+        .opacity(this.homeTabTopIndex === index ? 1 : 0)
         .margin({ top: 8 })
     }
     .height(60)
     .backgroundColor('#B6C5D1').width('100%')
     .onClick(() => {
-      this.topSelectIndex = index
+      this.homeTabTopIndex = index
       this.topController.changeIndex(index)
     }
     )
@@ -63,7 +72,8 @@ struct HomePage {
     Column() {
       Tabs({
         barPosition: BarPosition.End,
-        controller: this.bottomController
+        controller: this.bottomController,
+        index:this.homeTabBottomIndex
       }) {
         TabContent() {
           Column() {
@@ -73,8 +83,11 @@ struct HomePage {
               .width('100%')
               .height('12%')
               .padding({ left: 15 })
-            Tabs({ barPosition: BarPosition.Start,
-              controller: this.topController }) {
+            Tabs({
+              barPosition: BarPosition.Start,
+              controller: this.topController,
+              index:this.homeTabTopIndex
+            }) {
               TabContent() {
                 ListModelPopular()
               }
@@ -94,7 +107,8 @@ struct HomePage {
             .margin({ top: -8 })
             .scrollable(true)
             .onChange((index) => {
-              this.topSelectIndex = index
+              // this.topSelectIndex = index;
+              this.homeTabTopIndex = index;
             })
           }
         }
@@ -112,7 +126,8 @@ struct HomePage {
       }
       .scrollable(false)
       .onChange((index) => {
-        this.bottomSelectIndex = index
+        // this.bottomSelectIndex = index;
+        this.homeTabBottomIndex = index;
       })
     }
   }
