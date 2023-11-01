@@ -65,7 +65,8 @@ struct MultiplexSample {
           ForEach(this.resources, (resource: MultiplexModel) => {
             ScrollItem({
               resource: resource,
-              onDelete: this.onDelete
+              onDelete: this.onDelete,
+              resources:this.resources.length
             })
               .id(resource.getId())
               .margin({

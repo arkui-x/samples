@@ -1,5 +1,6 @@
 {
   "src": [
+    "pages/RedirectPage",
     "pages/loginPage",
     "pages/HomePage",
     "pages/book/FirstBook",

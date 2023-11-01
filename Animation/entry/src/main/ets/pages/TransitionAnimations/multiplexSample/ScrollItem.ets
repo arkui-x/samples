@@ -4,7 +4,9 @@ import { MultiplexModel } from './MultiplexModel';
 export struct ScrollItem {
   private panOption: PanGestureOptions = new PanGestureOptions({ direction: PanDirection.Vertical, fingers: 1 });
   @Prop resource: MultiplexModel;
-  private onDelete: (id: string) => void = ()=>{};
+  private onDelete: (id: string) => void = () => {
+  };
+  @Prop resources: number = 5
   @StorageProp('windowHeight') windowHeight: number = 720;
   @State offsetX: number = 0; // X轴滑动距离
   @State offsetY: number = 0; // Y轴滑动距离
@@ -55,7 +57,7 @@ export struct ScrollItem {
           console.info('Pan start');
         })
         .onActionUpdate((event: GestureEvent) => {
-          if (this.resource.getId() !== '5') {
+          if (this.resources > 1) {
             let sxNumber: number = 0;
             if (event.offsetY - this.offsetY <= 0) {
               sxNumber = (this.sx - Math.abs(event.offsetY - this.offsetY) / this.windowHeight);
@@ -68,7 +70,7 @@ export struct ScrollItem {
           }
         })
         .onActionEnd(() => {
-          if (this.resource.getId() !== '5') {
+          if (this.resources > 1) {
             this.offsetX = 0;
             this.offsetY = 0;
             console.info('Pan end');

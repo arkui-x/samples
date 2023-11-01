@@ -2,6 +2,7 @@ import router from '@ohos.router'
 
 @Component
 export default struct ListModelAll {
+
   build() {
     List({ space: 10 }) {
       ListItem() {

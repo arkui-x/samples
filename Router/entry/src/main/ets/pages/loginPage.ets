@@ -5,6 +5,13 @@ import router from '@ohos.router'
 struct loginPage {
   @State scalePassU: number = 1
   @State scalePassP: number = 1
+  @StorageLink('routerObj') routerObj: router.RouterOptions = {
+    url:'pages/loginPage'
+  };
+
+  aboutToAppear() {
+    router.clear();
+  }
 
   build() {
     Column() {
@@ -72,7 +79,10 @@ struct loginPage {
         .fontColor('#8981F7')
         .margin({ top: 20 })
         .onClick(() => {
-          router.pushUrl({ url: 'pages/HomePage' })
+          this.routerObj = {
+            url:'pages/HomePage'
+          };
+          router.pushUrl(this.routerObj);
         })
     }
     .width('100%')
