@@ -159,27 +159,6 @@ struct AnimationToSample {
             .width(160)
             .rotate({ angle: this.rotateAnglePlayback })
             .margin(35)
-
-          Button($r('app.string.attribute_animation_play_complete'))
-            .onClick(() => {
-              animateTo({
-                duration: 1200,
-                curve: Curve.Friction,
-                delay: 500,
-                iterations: 3,
-                playMode: PlayMode.Alternate,
-                tempo: 5,
-                onFinish: () => {
-                  this.rotateAngleComplete = 0;
-                  ShowToast.shortToast($r('app.string.animate_over'));
-                }
-              }, () => {
-                this.rotateAngleComplete = 90;
-              });
-            })
-            .width(160)
-            .rotate({ angle: this.rotateAngleComplete })
-            .margin(50)
         }
         .constraintSize({ minHeight: '100%' })
       }

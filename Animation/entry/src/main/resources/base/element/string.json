@@ -147,10 +147,6 @@
       "value": "Unlimited playback"
     },
     {
-      "name": "attribute_animation_play_complete",
-      "value": "Playback Complete"
-    },
-    {
       "name": "animate_over",
       "value": "The animation finishes playing"
     },

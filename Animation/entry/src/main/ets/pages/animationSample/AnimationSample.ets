@@ -145,25 +145,6 @@ struct AnimationSample {
               playMode: PlayMode.Alternate,
               tempo: 10
             })
-
-          Button($r('app.string.attribute_animation_play_complete'))
-            .onClick(() => {
-              this.rotateAngleComplete = 90;
-            })
-            .width(160)
-            .rotate({ angle: this.rotateAngleComplete })
-            .margin(50)
-            .animation({
-              duration: 1200,
-              curve: Curve.Friction,
-              delay: 500,
-              iterations: 1,
-              playMode: PlayMode.Alternate,
-              tempo: 10,
-              onFinish: () => {
-                this.rotateAngleComplete = 0;
-              }
-            })
         }
         .constraintSize({ minHeight: '100%' })
         .margin({ bottom: 20 })
