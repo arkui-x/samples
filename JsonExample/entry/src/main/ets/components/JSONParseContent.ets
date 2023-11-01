@@ -16,30 +16,31 @@ export default struct MyTabContent {
       const isGson = this.deserialize === 'gson'
       const removeEmpty: RegExp = new RegExp('\\s+', 'g')
       const removeN: RegExp = new RegExp('[\r\n]', 'g')
-      this.innerContent = this.innerContent.replace(removeEmpty, "") // 去掉空格
-      this.innerContent = this.innerContent.replace(removeN, "") // 去掉\n
+      let innerStr: string = this.innerContent
+      innerStr = innerStr.replace(removeEmpty, "") // 去掉空格
+      innerStr = innerStr.replace(removeN, "") // 去掉\n
       // 若显示内容被""包裹，则去掉""
-      if (this.innerContent.indexOf(`"`) === 0 ) {
+      if (innerStr.indexOf(`"`) === 0 ) {
         const removeDouble: RegExp = new RegExp('["|"](.*)["|"]')
-        this.innerContent = this.innerContent.replace(removeDouble, "$1")
+        innerStr = innerStr.replace(removeDouble, "$1")
       }
       // 若显示内容被''包裹，则去掉''
-      if (this.innerContent.indexOf(`'`) === 0) {
+      if (innerStr.indexOf(`'`) === 0) {
         const removeSingle: RegExp = new RegExp(`['|'](.*)['|']`)
-        this.innerContent = this.innerContent.replace(removeSingle, "$1")
+        innerStr = innerStr.replace(removeSingle, "$1")
       }
-      const object_content = this.innerContent.indexOf('{') === 0
+      const object_content = innerStr.indexOf('{') === 0
       let objArray: Array<Object> = new Array<Object>()
       // 根据首页选择的反序列化工具调用不同API
       if (object_content) {
-        const obj: Object = isGson ? fromJsonObject(this.innerContent) : convertObjData(this.innerContent)
+        const obj: Object = isGson ? fromJsonObject(innerStr) : convertObjData(innerStr)
         objArray.push(obj)
       } else {
-        objArray = isGson ? fromJsonArray(this.innerContent) : convertArrayData(this.innerContent)
+        objArray = isGson ? fromJsonArray(innerStr) : convertArrayData(innerStr)
       }
       // 如果反序列化后结果为null或者结果为基本数据类型，则直接显示
       if (isBasicType(objArray[0])) {
-        this.message = JSON.stringify(this.innerContent)
+        this.message = `标准JSON格式如下：\n{"key": "value", "str": 123, "a": true, "b": []}\n\nJSON数据格式错误：\n\t${JSON.stringify(this.innerContent)}`
         this.code = 500
       } else {
         // 将数组和对象分别赋值

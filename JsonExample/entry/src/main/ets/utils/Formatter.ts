@@ -97,10 +97,10 @@ function convertArray(arr: Array<object>, tabCount: number = 0): string {
  * @returns
  */
 function convertObject(obj: object, tabCount: number = 0, addComma: boolean = false): string {
-  let formatterJSON: string = '{\n'
-  tabCount++;
   const keys: Array<string> = Object.keys(obj) // 获取object的key
   const keysLen: number = keys.length
+  let formatterJSON: string = keys.length > 0 ? '{\n' : '{'
+  tabCount++;
   keys.forEach((key: string, index) => {
     const type = isBasicType(obj[key]) // 根据key获取value，判断value的类型
     const isStr = typeof obj[key] === 'string'

@@ -4,6 +4,7 @@ import { getObjectKeys, isArray, isBasicType } from '../utils/Index'
 
 @Component
 export default struct MyTabContent {
+  @State showType: number = 0; // 0: Object, 1: Array
   @State content: object = new Object(); // 反序列化后展示的对象
   @State contentArray: Array<object> = []; // 反序列化后展示的对象数组
   @State code: number = 200; // 反序列化结果，默认200. 200：反序列化成功。 500：反序列化失败
@@ -39,8 +40,10 @@ export default struct MyTabContent {
         // 将数组和对象分别赋值
         if (!object_content) {
           this.contentArray = isGson ? objArray.flat() : objArray
+          this.showType = 1
         } else {
           this.content = objArray[0]
+          this.showType = 0
         }
       }
     } catch (e) {
@@ -52,10 +55,10 @@ export default struct MyTabContent {
   build() {
     Column() {
       if (this.code === 200) {
-        if (this.contentArray.length > 0) {
+        if (this.showType) {
           Text(`'${convertArray(this.contentArray)}'`)
         }
-        if (getObjectKeys(this.content).length > 0) {
+        if (!this.showType) {
           Text(`'${convertObject(this.content)}'`)
         }
       } else {
