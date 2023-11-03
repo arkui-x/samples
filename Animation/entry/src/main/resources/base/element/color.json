@@ -1,0 +1,120 @@
+{
+  "color": [
+    {
+      "name": "white",
+      "value": "#FFFFFF"
+    },
+    {
+      "name":"pink",
+      "value": "#ffbfcd"
+    },
+    {
+      "name": "start_window_background",
+      "value": "#FFFFFF"
+    },
+    {
+      "name": "curve_init",
+      "value": "#E40078"
+    },
+    {
+      "name": "curve_steps",
+      "value": "#FF7500"
+    },
+    {
+      "name": "curve_bezier",
+      "value": "#00BFC9"
+    },
+    {
+      "name": "curve_spring",
+      "value": "#BCD600"
+    },
+    {
+      "name": "background_shallow_grey",
+      "value": "#F1F3F5"
+    },
+    {
+      "name": "background_green",
+      "value": "#67C23A"
+    },
+    {
+      "name": "btn_border_color",
+      "value": "#33000000"
+    },
+    {
+      "name": "radio_response_region_color",
+      "value": "#66ffc0cb"
+    },
+    {
+      "name": "font_color_shallow",
+      "value": "#182431"
+    },
+    {
+      "name": "pop_up_background",
+      "value": "#0D182431"
+    },
+    {
+      "name": "sub_title_color",
+      "value": "#182431"
+    },
+    {
+      "name": "background_blue",
+      "value": "#409EFF"
+    },
+    {
+      "name": "background_orange",
+      "value": "#E6A23C"
+    },
+    {
+      "name": "background_pink",
+      "value": "#F56C6C"
+    },
+    {
+      "name": "background_dark",
+      "value": "#FF000000"
+    },
+    {
+      "name": "tab_bar_select",
+      "value": "#007DFF"
+    },
+    {
+      "name": "contentArea_background_color",
+      "value": "#C0C0C0"
+    },
+    {
+      "name": "tab_bar_unselect",
+      "value": "#66182431"
+    },
+    {
+      "name": "title_color_one",
+      "value": "#0A59F7"
+    },
+    {
+      "name": "title_color_two",
+      "value": "#000000"
+    },
+    {
+      "name": "select_option_bg_color",
+      "value": "#33007DFF"
+    },
+    {
+      "name": "COLOR_80000000",
+      "value": "#80000000"
+    },
+    {
+      "name": "COLOR_FFFFFF",
+      "value": "#FFFFFF"
+    },
+    {
+      "name": "COLOR_8C9BA2",
+      "value": "#8C9BA2"
+    },
+    {
+      "name": "font_color_dark",
+      "value": "#000000"
+    },
+    {
+      "name": "light_grey",
+      "value": "#f2f3f5"
+    }
+  ]
+}
