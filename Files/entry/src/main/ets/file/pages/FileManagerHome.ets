@@ -1,9 +1,9 @@
 import router from '@ohos.router';
 
 class MainListItemModel {
-  image: Resource = $r('app.media.document')
-  title: Resource = $r('app.string.document')
-  routerUrl: string = 'file/pages/document/DocumentFileList'
+  image: Resource = $r('app.media.document');
+  title: Resource = $r('app.string.document');
+  routerUrl: string = 'file/pages/document/DocumentFileList';
 }
 
 const MAIN_LIST_ITEMS: MainListItemModel[] = [
@@ -11,7 +11,7 @@ const MAIN_LIST_ITEMS: MainListItemModel[] = [
     image: $r('app.media.document'),
     title: $r('app.string.document'),
     routerUrl: 'file/pages/document/DocumentFileList'
-  },
+  }
 ]
 
 @Component

@@ -1,4 +1,4 @@
-import { FileList } from '../common/FileList'
+import { FileList } from '../common/FileList';
 
 @Entry
 @Component
