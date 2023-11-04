@@ -1,6 +1,5 @@
 import router from '@ohos.router'
 
-// Page title bar
 @Component
 export default struct TitleBar {
   @Prop title: string = '0'

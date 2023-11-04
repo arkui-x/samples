@@ -8,21 +8,17 @@ import { AuthorPage, SettingsPage } from './ContentPage'
 @Entry
 @Component
 struct HomePage {
-  // @State bottomSelectIndex: number = 0
-  // @State topSelectIndex: number = 0
   @StorageLink('routerObj') routerObj: router.RouterOptions = {
     url:'pages/loginPage'
   };
   @StorageLink('homeTabBottomIndex') homeTabBottomIndex: number = 0;
   @StorageLink('homeTabTopIndex') homeTabTopIndex: number = 0;
 
-  topController: TabsController = new TabsController()
-  bottomController: TabsController = new TabsController()
+  topController: TabsController = new TabsController();
+  bottomController: TabsController = new TabsController();
 
   aboutToAppear() {
     router.clear();
-    // this.bottomSelectIndex = this.homeTabBottomIndex;
-    // this.topSelectIndex = this.homeTabTopIndex;
   }
 
   @Builder
@@ -64,8 +60,7 @@ struct HomePage {
     .onClick(() => {
       this.homeTabTopIndex = index
       this.topController.changeIndex(index)
-    }
-    )
+    })
   }
 
   build() {
@@ -105,9 +100,8 @@ struct HomePage {
             }
             .barHeight(70)
             .margin({ top: -8 })
-            .scrollable(true)
+            .scrollable(false)
             .onChange((index) => {
-              // this.topSelectIndex = index;
               this.homeTabTopIndex = index;
             })
           }
@@ -126,7 +120,6 @@ struct HomePage {
       }
       .scrollable(false)
       .onChange((index) => {
-        // this.bottomSelectIndex = index;
         this.homeTabBottomIndex = index;
       })
     }
