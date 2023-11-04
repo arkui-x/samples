@@ -15,6 +15,8 @@ export default struct MyTabs {
   @State strContent: string = '' // 序列化内容
   private controller: TabsController = new TabsController() // 页签组件控制
   private scroller: Scroller = new Scroller() // 滚动控制
+  @Prop editable: boolean = false // 是否可修改
+  @State timestamp: number = 0;
 
   /**
    * 根据页签下标和页签名构造页签头组件
@@ -34,8 +36,6 @@ export default struct MyTabs {
       })
       .onClick(() => {
         if (this.currentIndex === index) return
-        this.showFormat = false
-        this.showStr = false
         this.formatContent = this.tabs[index].getTabContent()
         this.strContent = this.tabs[index].getTabContent()
         this.currentIndex = index
@@ -56,40 +56,80 @@ export default struct MyTabs {
         ForEach(this.tabs, (item: TabsBean, index) => {
           TabContent() {
             Column() {
-              TextArea({
-                text: item.getTabContent().length > 0 ? `"${item.getTabContent()}"` : item.getTabContent()
-              }).height('25%')
-                .onChange((value) => {
-                  if (null !== index && undefined !== index) {
-                    this.tabs[index].setTabContent(value) // 修改文本框内容时同步修改tabContent
-                    this.formatContent = value
-                    this.strContent = value
-                  }
+              if (this.editable) {
+                TextArea({
+                  text: item.getTabContent().length > 0 ? `"${item.getTabContent()}"` : item.getTabContent()
                 })
+                  .height('25%')
+                  .onChange((value) => {
+                    if (null !== index && undefined !== index) {
+                      this.tabs[index].setTabContent(value) // 修改文本框内容时同步修改tabContent
+                      this.formatContent = value
+                      this.strContent = value
+                    }
+                  })
+              } else {
+                Scroll(this.scroller) {
+                  Text((item.getTabContent().length > 0 ? `"${item.getTabContent()}"` : item.getTabContent()))
+                    .width('100%')
+                }
+                .height('25%')
+                .backgroundColor('#f1f1f1')
+                .borderRadius(12)
+                .padding(8)
+                .align(Alignment.TopStart)
+              }
               Flex({ justifyContent: FlexAlign.SpaceAround }) {
                 Button('序列化')
-                  .onClick(() => {
-                    console.log('11', this.strContent)
-                    // if (this.strContent === '') return
+                  .onClick((event) => {
+                    const now: number = new Date().getTime()
+                    if (this.timestamp === 0) {
+                      this.timestamp = now
+                    } else {
+                      const count: number = now - this.timestamp
+                      if (count <= 500) {
+                        return
+                      } else {
+                        this.timestamp = now
+                      }
+                    }
                     this.showFormat = false
                     if (this.showStr) {
-                      this.showStr = false
-                      setTimeout(() => {
-                        this.showStr = true
-                      }, 350)
+                      if (this.editable) {
+                        this.showStr = false
+                        setTimeout(() => {
+                          this.showStr = true
+                        }, 350)
+                      } else {
+                        return
+                      }
                     } else {
                       this.showStr = true
                     }
                   })
                 Button('反序列化')
-                  .onClick(() => {
-                    // if (this.formatContent === '') return
+                  .onClick((event) => {
+                    const now: number = new Date().getTime()
+                    if (this.timestamp === 0) {
+                      this.timestamp = now
+                    } else {
+                      const count: number = now - this.timestamp
+                      if (count <= 500) {
+                        return
+                      } else {
+                        this.timestamp = now
+                      }
+                    }
                     this.showStr = false
                     if (this.showFormat) {
-                      this.showFormat = false
-                      setTimeout(() => {
-                        this.showFormat = true
-                      }, 350)
+                      if (this.editable) {
+                        this.showFormat = false
+                        setTimeout(() => {
+                          this.showFormat = true
+                        }, 350)
+                      } else {
+                        return
+                      }
                     } else {
                       this.showFormat = true
                     }
@@ -98,11 +138,22 @@ export default struct MyTabs {
               .padding(10)
 
               Scroll(this.scroller) {
-                if (this.showFormat) {
-                  JSONParseContent({ innerContent: this.formatContent })
-                }
-                if (this.showStr) {
-                  JSONStrContent({ innerContent: this.strContent })
+                if (this.editable) {
+                  if (this.currentIndex === index) {
+                    if (this.showFormat) {
+                      JSONParseContent({ innerContent: this.formatContent })
+                    }
+                    if (this.showStr) {
+                      JSONStrContent({ innerContent: this.strContent })
+                    }
+                  }
+                } else {
+                  if (this.showFormat) {
+                    JSONParseContent({ innerContent: this.tabs[index].getTabContent() })
+                  }
+                  if (this.showStr) {
+                    JSONStrContent({ innerContent: this.tabs[index].getTabContent() })
+                  }
                 }
               }
               .height('65%')
@@ -127,10 +178,8 @@ export default struct MyTabs {
     .barMode(BarMode.Scrollable)
     .barHeight(50)
     .barWidth('100%')
-    .animationDuration(400)
+    .animationDuration(300)
     .onChange((index: number) => {
-      this.showFormat = false
-      this.showStr = false
       // 获取tabContent，并赋值给序列号/反序列化内容
       this.formatContent = this.tabs[index].getTabContent()
       this.strContent = this.tabs[index].getTabContent()

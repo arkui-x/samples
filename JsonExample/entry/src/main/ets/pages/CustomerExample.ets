@@ -46,7 +46,7 @@ export default struct CustomerExample {
       })
 
       // 页签组件
-      MyTabs({ tabs: this.tabs })
+      MyTabs({ tabs: this.tabs, editable: true })
         .width('100%')
         .height('95%')
         .backgroundColor(Color.White)

@@ -16,7 +16,8 @@ struct Index {
             .fontWeight(FontWeight.Bold)
             .height('20%')
           Flex({ justifyContent: FlexAlign.Center, alignItems: ItemAlign.Center }) {
-            Text('反序列化工具：').width('40%')
+            Text('反序列化工具：')
+              .width('40%')
             Flex() {
               Row() {
                 Radio({ value: 'gson', group: 'radioGroup' }).checked(this.deserialize === 'gson')
@@ -26,7 +27,9 @@ struct Index {
                     }
                   })
                 Text('gson-ts')
-              }.width('50%')
+              }
+              .width('50%')
+
               Row() {
                 Radio({ value: 'js', group: 'radioGroup' }).checked(this.deserialize === 'js')
                   .onChange((isChecked: boolean) => {
@@ -35,10 +38,13 @@ struct Index {
                     }
                   })
                 Text('原生JS')
-              }.width('50%')
-            }.width('50%')
+              }
+              .width('50%')
+            }
+            .width('50%')
           }
           .height('30%')
+
           Flex({ justifyContent: FlexAlign.SpaceEvenly, alignItems: ItemAlign.Start }) {
             Button('自定义数据')
               .onClick(() => {
