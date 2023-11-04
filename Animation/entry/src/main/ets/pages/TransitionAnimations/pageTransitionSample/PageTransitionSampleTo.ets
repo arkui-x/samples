@@ -1,6 +1,6 @@
 import router from '@ohos.router'
 
-const ANIMATION_TIME: number = 1000
+const ANIMATION_TIME: number = 500
 const ANIMATION_PROGRESS: number = -600
 
 @Entry
@@ -70,7 +70,7 @@ struct PageTransitionSampleTo {
         this.bottomY = ANIMATION_PROGRESS * progress
         this.leftX = -ANIMATION_PROGRESS * progress
         this.rightX = ANIMATION_PROGRESS * progress
-        this.progress = progress
+        this.progress = 0
       })
   }
 }

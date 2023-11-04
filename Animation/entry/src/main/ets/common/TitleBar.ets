@@ -38,6 +38,7 @@ export function debounce(fn:()=>void, delay:number) {
     timer = setTimeout(() => {
       // 外部传入的真正要执行的函数
       fn()
+      timer = 0
     }, delay)
   }
   return _debounce
