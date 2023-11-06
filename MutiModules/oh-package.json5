@@ -8,6 +8,6 @@
   "dependencies": {
   },
   "devDependencies": {
-    "@ohos/hypium": "1.0.7"
+    "@ohos/hypium": "1.0.6"
   }
 }

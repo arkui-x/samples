@@ -16,9 +16,9 @@ struct Index {
 
             let context = getContext(this) as common.UIAbilityContext
             let wantInfo:Want = {
-              bundleName = "com.example.mutimodules";
-              moduleName = "feature1";
-              abilityName = "Feature1Ability";
+              bundleName: "com.example.mutimodules",
+              moduleName: "feature1",
+              abilityName: "Feature1Ability",
             };
 
             context.startAbility(wantInfo).then(() =>{
