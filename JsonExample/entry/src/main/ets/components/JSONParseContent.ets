@@ -20,7 +20,7 @@ export default struct MyTabContent {
       innerStr = innerStr.replace(removeEmpty, "") // 去掉空格
       innerStr = innerStr.replace(removeN, "") // 去掉\n
       // 若显示内容被""包裹，则去掉""
-      if (innerStr.indexOf(`"`) === 0 ) {
+      if (innerStr.indexOf(`"`) === 0) {
         const removeDouble: RegExp = new RegExp('["|"](.*)["|"]')
         innerStr = innerStr.replace(removeDouble, "$1")
       }

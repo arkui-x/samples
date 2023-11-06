@@ -3,8 +3,8 @@ import router from '@ohos.router'
 @Entry
 @Component
 struct loginPage {
-  @State scalePassU: number = 1
-  @State scalePassP: number = 1
+  @State scalePassU: number = 1;
+  @State scalePassP: number = 1;
   @StorageLink('routerObj') routerObj: router.RouterOptions = {
     url:'pages/loginPage'
   };

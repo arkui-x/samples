@@ -32,7 +32,7 @@ struct Index {
                   Text(item.title).fontSize(24)
                 }
                 .width('80%')
-                .padding({ left: 12 }) //内边距
+                .padding({ left: 12 })
                 Text(item.price)
                   .height(50)
                   .width('20%')

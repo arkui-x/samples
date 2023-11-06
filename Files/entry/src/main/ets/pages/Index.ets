@@ -1,4 +1,4 @@
-import FileManagerHome from '../file/pages/FileManagerHome'
+import FileManagerHome from '../file/pages/FileManagerHome';
 
 @Entry
 @Component

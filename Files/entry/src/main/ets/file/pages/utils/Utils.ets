@@ -1,4 +1,4 @@
-import util from '@ohos.util'
+import util from '@ohos.util';
 
 // 将buffer转换为string
 export function bufferToString(buffer: ArrayBuffer): string {

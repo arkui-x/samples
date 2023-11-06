@@ -1,6 +1,5 @@
 import fs from '@ohos.file.fs';
 import router from '@ohos.router';
-import { bufferToString } from '../file/pages/utils/Utils'
 
 // 获取路由参数
 let params = router.getParams() as Record<string, string | number>;
@@ -11,11 +10,11 @@ let filePathList: string = params.filePathList as string;
 @Entry
 @Component
 struct EditFile {
-  @State fileName: string = fileName //文件名
-  @State fileContent: string = fileContent //文件内容
-  @State filePathList: string = filePathList //文件路径
+  @State fileName: string = fileName; //文件名
+  @State fileContent: string = fileContent; //文件内容
+  @State filePathList: string = filePathList; //文件路径
   @State newFileContent: string = ''; //新值
-  controller: TextAreaController = new TextAreaController()
+  controller: TextAreaController = new TextAreaController();
 
   build() {
     Row() {
@@ -47,10 +46,6 @@ struct EditFile {
                   let file = fs.openSync(filePath, fs.OpenMode.READ_WRITE | fs.OpenMode.CREATE | fs.OpenMode.TRUNC);
                   fs.writeSync(file.fd, this.newFileContent);
                   fs.closeSync(file);
-                  let fileRead = fs.openSync(filePath, fs.OpenMode.READ_WRITE);
-                  let buf = new ArrayBuffer(4096);
-                  bufferToString(buf);
-                  fs.closeSync(fileRead);
                   router.back()
                 }
                 )

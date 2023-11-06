@@ -18,10 +18,6 @@ struct FloatingWindowSample {
   @State moveStartY: number = 0; // Y方向起始点
   @State moveEndX: number = 0; // X方向终点
   @State moveEndY: number = 0; // Y方向终点
-  @State moveSumLengthX: number = 0; // X方向移动距离总和
-  @State moveSumLengthY: number = 0; // Y方向移动距离总和
-  @State moveStartTime: number = 0; // 触摸开始时间
-  @State moveEndTime: number = 0; // 触摸结束时间
 
   aboutToAppear() {
     let displayModel = display.getDefaultDisplaySync()
@@ -60,19 +56,12 @@ struct FloatingWindowSample {
             if (event.type === TouchType.Down) {
               this.moveStartX = event.touches[0].windowX; // 按下时获取X坐标初始值
               this.moveStartY = event.touches[0].windowY; // 按下时获取Y坐标初始值
-              this.moveStartTime = Date.now(); // 按下时开始时间
-              this.moveSumLengthX = 0; // 按下时初始化x方向移动距离
-              this.moveSumLengthY = 0; // 按下时初始化y方向移动距离
             }
             if (event.type === TouchType.Move) {
               this.moveEndX = event.touches[0].windowX; // X方向移动的当前位置
               this.moveEndY = event.touches[0].windowY; // Y方向移动的当前位置
-              this.moveSumLengthX += Math.abs(this.moveEndX - this.moveStartX); // 每一次移动计算相对于上一次X方向位置的距离
-              this.moveSumLengthY += Math.abs(this.moveEndY - this.moveStartY); // 每一次移动计算相对于上一次Y方向位置的距离
               this.moveStartX = this.moveEndX;
               this.moveStartY = this.moveEndY;
-              Logger.info(TAG, `move ing, moveSumLengthX:${this.moveSumLengthX}, moveSumLengthY:${this.moveSumLengthY}`);
-
               // 跟手过程，使用responsiveSpringMotion曲线
               animateTo({ curve: curves.responsiveSpringMotion() }, () => {
                 // 减去半径，以使球的中心运动到手指位置
@@ -80,20 +69,10 @@ struct FloatingWindowSample {
                 this.positionY = event.touches[0].windowY - this.diameter / 2 - 120;
                 Logger.info(TAG, `move end, animateTo x:${this.positionX}, y:${this.positionY}`);
               })
-            } else if (event.type === TouchType.Up) {
-              this.moveEndTime = Date.now();
-              let moveDiffTime = this.moveEndTime - this.moveStartTime; // 最后一秒移动的距离
-              // 距离
-              let s = Math.sqrt((this.moveSumLengthX * this.moveSumLengthX) + (this.moveSumLengthY * this.moveSumLengthY));
-              // 时间
-              let t = moveDiffTime;
-              // 速度
-              let v = s / t;
-              Logger.info(TAG, `moveEnd, moveSumLengthX:${this.moveSumLengthX}, moveSumLengthY:${this.moveSumLengthY}, moveDiffTime:${moveDiffTime}`);
-              Logger.info(TAG, `moveEnd, s:${s}, t:${t}, v:${v}`);
-
+            }
+            if (event.type === TouchType.Up) {
               // 离手时，使用springMotion曲线，且将移动时速度赋值给离手时速度
-              animateTo({ curve: curves.springMotion(), tempo: v }, () => {
+              animateTo({ curve: curves.springMotion(), tempo: 0.5 }, () => {
                 if (this.positionX >= this.displayHalfWidth) {
                   // 如果划到右边，则定位至屏幕右边减去自身宽度80，再减去10留出间隙
                   this.positionX = this.displayHalfWidth * 2 - 90;

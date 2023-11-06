@@ -1,4 +1,4 @@
-import { BasicDataSource } from './BasicDataSource';
+import { BasicDataSource } from './BasicDataSource'
 import { InfiniteData } from './InfiniteData'
 
 /**

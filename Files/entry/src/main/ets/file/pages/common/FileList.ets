@@ -1,8 +1,7 @@
-import router from '@ohos.router'
+import router from '@ohos.router';
 import fs from '@ohos.file.fs';
-import { bufferToString } from '../utils/Utils'
+import { bufferToString } from '../utils/Utils';
 
-@Preview
 @Component
 export struct FileList {
   @State isNoFile: boolean = true;
@@ -56,15 +55,15 @@ export struct FileList {
           console.info("list file failed with error message: " + err.message + ", error code: " + err.code);
         } else {
           console.info("listFile succeed");
-          this.fileList = [...filenames]
+          this.fileList = [...filenames];
           for (let i = 0; i < filenames.length; i++) {
             console.info("filename: %s", filenames[i]);
-            this.filePathList.push(pathDir + '/' + filenames[i])
+            this.filePathList.push(pathDir + '/' + filenames[i]);
           }
-          resolve('success')
+          resolve('success');
         }
       });
-    })
+    });
   }
 
   // 创建测试文件
@@ -76,17 +75,17 @@ export struct FileList {
       console.info("write data to file succeed and size is:" + writeLen);
       fs.closeSync(file);
     }).catch(() => {
-      throw new Error()
+      throw new Error();
     });
   }
 
   private createFiles() {
-    this.createTestFile("test.txt", 'text文件内容')
-    this.createTestFile("test.log", 'log文件内容')
-    this.createTestFile("test.doc", 'doc文件内容')
+    this.createTestFile("test.txt", 'text文件内容');
+    this.createTestFile("test.log", 'log文件内容');
+    this.createTestFile("test.doc", 'doc文件内容');
 
-    this.isNoFile = false
-    this.getFiles()
+    this.isNoFile = false;
+    this.getFiles();
   }
 
   aboutToAppear() {

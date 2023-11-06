@@ -12,7 +12,7 @@ export function getObjectKeys(obj: object): Array<string> {
  * @param param
  * @returns
  */
-export function isArray(param: any): Boolean {
+export function isArray(param: []): Boolean {
   return Array.isArray(param)
 }
 
@@ -21,7 +21,7 @@ export function isArray(param: any): Boolean {
  * @param array
  * @returns
  */
-export function isBasicArray(array: Array<any>): Boolean {
+export function isBasicArray(array: []): Boolean {
   return array.every(value => isBasicType(value))
 }
 
@@ -30,7 +30,7 @@ export function isBasicArray(array: Array<any>): Boolean {
  * @param param
  * @returns
  */
-export function isBasicType(param: any): Boolean {
+export function isBasicType(param: number|string|boolean|null|undefined|object): Boolean {
   const basicType = [
     '[object Number]',
     '[object String]',

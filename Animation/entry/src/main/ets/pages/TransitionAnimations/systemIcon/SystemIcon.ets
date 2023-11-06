@@ -27,8 +27,6 @@ struct SystemIcon {
             .trackColor($r('app.color.COLOR_80000000'))
             .blockColor($r('app.color.COLOR_FFFFFF'))
             .selectedColor($r('app.color.COLOR_FFFFFF'))
-            // .blockSize({ width: 0.1, height: 0.1 })
-            // .trackBorderRadius(12)
             .onChange((value: number, mode: SliderChangeMode) => {
               this.sliderValue = value;
               if (this.sliderValue <= 50) {
@@ -55,9 +53,9 @@ struct SystemIcon {
             this.lineComponent(90)
             this.lineComponent(-45)
           }
-          .width(48)
-          .height(48)
-          .margin({ bottom: 8 })
+          .width(30)
+          .height(30)
+          .margin({ bottom: 30 })
           .alignContent(Alignment.Center)
         }
         .width(54)
