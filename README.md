@@ -12,6 +12,11 @@
   - ['HelloWorld'：HelloWorld（API10）](HelloWorld)
   - ['Library'：Library（API10）](Library)
   - ['Native'：Native（API10）](Native)
+  - ['Animation'：Animation（API10）](Animation)
+  - ['Files'：Files（API10）](Files)
+  - ['InfiniteList'：InfiniteList（API10）](InfiniteList)
+  - ['JsonExample'：JsonExample（API10）](JsonExample)
+  - ['Router'：Router（API10）](Router)
 - 精品应用
   - ['Shopping'：购物示例应用（API10）](Shopping)
   - ['HealthyDiet'：健康饮食示例应用（API10）](HealthyDiet)
@@ -25,6 +30,11 @@ samples
 |---HelloWorld          # HelloWorld
 |---Library             # Library
 |---Native              # Native
+|---Animation           # 场景动画功能
+|---Files               # 读写文件
+|---InfiniteList        # 无限列表功能
+|---JsonExample         # 使用不同的库反序列化一组json字符串
+|---Router              # 页面跳转
 |---Shopping            # 精品应用购物
 |---HealthyDiet         # 精品应用健康饮食
 ```
