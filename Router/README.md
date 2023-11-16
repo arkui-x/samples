@@ -20,4 +20,4 @@
 
 1.本示例支持在Android\iOS\OpenHarmony平台上运行。
 
-2.本示例需要使用DevEco Studio 4.0 Beta2及以上版本才可编译运行，ios最好为17版本及以上。
+2.本示例需要使用DevEco Studio 4.0 Beta2及以上版本才可编译运行。
