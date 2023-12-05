@@ -21,22 +21,22 @@ export enum CategoryId {
   Dessert
 }
 
-export type Category = {
-  name: Resource
-  id: CategoryId
+export class Category {
+  name: Resource | null = null;
+  id: CategoryId | null = null;
 }
 
-export type FoodInfo = {
-  id: number
-  letter: string
-  name: string | Resource
-  image: Resource
-  categoryId: CategoryId
-  calories: number
-  protein: number
-  fat: number
-  carbohydrates: number
-  vitaminC: number
+export class FoodInfo {
+  id: number = 0;
+  letter: string = '';
+  name: string | Resource = '';
+  image: Resource | null = null;
+  categoryId: CategoryId | null = null;
+  calories: number = 0;
+  protein: number = 0;
+  fat: number = 0;
+  carbohydrates: number = 0;
+  vitaminC: number = 0;
 }
 
 export enum MealTimeId {
@@ -47,8 +47,8 @@ export enum MealTimeId {
 }
 
 export class MealTime {
-  name: Resource
-  id: MealTimeId
+  name: Resource | string = '';
+  id: MealTimeId = -1;
 
   constructor(id: MealTimeId) {
     this.id = id
@@ -70,11 +70,11 @@ export class MealTime {
 }
 
 export class DietRecord {
-  id: number
-  foodId: number
-  mealTime: MealTime
-  weight: number
-  key: string
+  id: number = 0;
+  foodId: number = 0;
+  mealTime: MealTime | null = null;
+  weight: number = 0;
+  key: string = '';
 
   constructor(id: number, foodId: number, mealTime: MealTime, weight: number, key: string) {
     this.id = id
@@ -87,13 +87,13 @@ export class DietRecord {
 
 @Observed
 export class OneMealStatisticsInfo {
-  mealTime: MealTime
+  mealTime: MealTime | null = null;
   mealFoods: Array<MealFoodInfo> = []
   totalCalories: number = 0
   totalFat: number = 0
   totalCarbohydrates: number = 0
   totalProtein: number = 0
-  key: string
+  key: string = ''
 
   constructor(mealTime: MealTime) {
     this.mealTime = mealTime
@@ -103,7 +103,7 @@ export class OneMealStatisticsInfo {
 export class MealFoodInfo {
   recordId: number
   name: string | Resource
-  image: Resource
+  image: Resource | null
   calories: number
   protein: number
   fat: number
@@ -111,7 +111,7 @@ export class MealFoodInfo {
   weight: number
   key: string
 
-  constructor(recordId: number, name: string | Resource, image: Resource, calories: number, protein: number,
+  constructor(recordId: number, name: string | Resource, image: Resource | null, calories: number, protein: number,
               fat: number, carbohydrates: number, weight: number, key: string) {
     this.recordId = recordId
     this.name = name

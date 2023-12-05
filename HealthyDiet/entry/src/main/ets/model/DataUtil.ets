@@ -12,7 +12,6 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-
 import router from '@ohos.router'
 import {
   FoodInfo,
@@ -21,7 +20,8 @@ import {
   MealTimeId,
   OneMealStatisticsInfo,
   MealFoodInfo,
-  DietRecord
+  DietRecord,
+  MealTime
 } from './DataModels'
 import { mockFoods, mockFoodInfo, mockDietRecords } from '../mock/MockData'
 
@@ -33,43 +33,21 @@ export function getFoods(): Array<FoodInfo> {
 }
 
 export function getFoodInfo(): FoodInfo {
-  return DEBUG_PREVIEW ? mockFoodInfo : router.getParams()['foodId']
+  const params = router.getParams() as Record<string, Object>
+  return DEBUG_PREVIEW ? mockFoodInfo : (params.foodId as FoodInfo)
 }
 
 // make records ordered by meal time
 export let initDietRecords: Array<DietRecord> = [
-  {
-    id: -1,
-    foodId: 0,
-    mealTime: { name: $r('app.string.meal_time_breakfast'), id: MealTimeId.Breakfast },
-    weight: 0,
-    key: '1'
-  },
-  {
-    id: -1,
-    foodId: 0,
-    mealTime: { name: $r('app.string.meal_time_lunch'), id: MealTimeId.Lunch },
-    weight: 0,
-    key: '2'
-  },
-  {
-    id: -1,
-    foodId: 0,
-    mealTime: { name: $r('app.string.meal_time_dinner'), id: MealTimeId.Dinner },
-    weight: 0,
-    key: '3'
-  },
-  {
-    id: -1,
-    foodId: 0,
-    mealTime: { name: $r('app.string.meal_time_supper'), id: MealTimeId.Supper },
-    weight: 0,
-    key: '4'
-  }]
+  new DietRecord(-1, 0, new MealTime(MealTimeId.Breakfast), 0, '1'),
+  new DietRecord(-1, 0, new MealTime(MealTimeId.Lunch), 0, '2'),
+  new DietRecord(-1, 0, new MealTime(MealTimeId.Dinner), 0, '3'),
+  new DietRecord(-1, 0, new MealTime(MealTimeId.Supper), 0, '4')
+]
 
 export function getDietRecords(): Array<DietRecord> {
   return DEBUG_PREVIEW ? initDietRecords.concat(mockDietRecords) :
-  AppStorage.Get<Array<DietRecord>>('dietRecords')
+  AppStorage.Get<Array<DietRecord>>('dietRecords') as Array<DietRecord>
 }
 
 export function getFoodCategories(): Category[] {
@@ -85,9 +63,9 @@ export function getMileTimes(): string[] {
     return ['早餐', '午餐', '晚餐', '夜宵']
   } else {
     let mealTimeResources: Resource[] = [$r("app.string.meal_time_breakfast"), $r('app.string.meal_time_lunch'), $r('app.string.meal_time_dinner'), $r('app.string.meal_time_supper'), $r('app.string.category_dessert')]
-    let mealTimes = []
+    let mealTimes: string[] = []
     mealTimeResources.forEach(item => {
-      let mealTime = this.context.resourceManager.getStringSync(item.id)
+      let mealTime: string = getContext().resourceManager.getStringSync(item.id)
       if (mealTime !== '') {
         mealTimes.push(mealTime)
       }
@@ -96,42 +74,41 @@ export function getMileTimes(): string[] {
   }
 }
 
-export function getSortedFoodData(): Array<FoodInfo> {
-  var letterReg = /^[A-Z]$/
-  var list = new Array()
-  var foods = getFoods()
-  for (var i = 0;i < foods.length; i++) {
-    list['#'] = new Array()
+export function getSortedFoodData(): Array<FoodInfo | string> {
+  let letterReg: RegExp = new RegExp("^[A-Z]$");
+  let list: Array<FoodInfo[]> = new Array<FoodInfo[]>();
+  let foods: Array<FoodInfo> = getFoods();
+  let letterArr: Array<string> = [];
+  for (let i = 0; i < foods.length; i++) {
+    list['#'] = new Array<FoodInfo>()
     // convert the first letter to uppercase
-    var letter = foods[i].letter.substr(0, 1).toUpperCase()
+    let letter: string = foods[i].letter.substr(0, 1).toUpperCase()
     if (!letterReg.test(letter)) {
       letter = '#'
     }
     // create group by letter
-    if (!(letter in list)) {
-      list[letter] = new Array()
+    if (!(list[letter] != undefined)) {
+      list[letter] = new Array<FoodInfo>()
+      letterArr.push(letter)
     }
     list[letter].push(foods[i])
   }
   // sort by alphabetical order
-  var letterGroup = new Array()
-  for (var key in list) {
-    letterGroup.push({
-      letter: key,
-      list: list[key]
-    })
+  let letterGroup: Array<Record<string, string | Array<FoodInfo>>> = []
+  for (let i = 0; i < letterArr.length; i++) {
+      letterGroup.push({
+        'letter': letterArr[i],
+        'list': list[letterArr[i]]
+      })
   }
-  letterGroup.sort(function (x, y) {
-    return x.letter.charCodeAt(0) - y.letter.charCodeAt(0)
+  // console.log('zhengchao 1')
+  letterGroup.sort((x, y) => {
+    return String(x.letter).charCodeAt(0) - String(y.letter).charCodeAt(0);
   })
-  // put '#' to last for others
-  var lastArr = letterGroup[0]
-  letterGroup.splice(0, 1)
-  letterGroup.push(lastArr)
   // create result list
-  var resultList = []
-  for (var i = 0; i < letterGroup.length; i++) {
-    resultList.push(letterGroup[i].letter)
+  let resultList: Array<FoodInfo | string> = [];
+  for (let i = 0; i < letterGroup.length; i++) {
+    resultList.push(letterGroup[i].letter as string)
     resultList = resultList.concat(letterGroup[i].list)
   }
   return resultList
@@ -140,28 +117,34 @@ export function getSortedFoodData(): Array<FoodInfo> {
 export function statistics(): Array<OneMealStatisticsInfo> {
   console.info('meal statistics')
   let dietRecords = getDietRecords()
-  const mealMap = new Map()
-  dietRecords.forEach((item) => {
-    let oneMealStatisticsInfo: OneMealStatisticsInfo = mealMap.get(item.mealTime.id)
-    if (oneMealStatisticsInfo === undefined) {
-      oneMealStatisticsInfo = new OneMealStatisticsInfo(item.mealTime)
+  let mealMap: Map<MealTimeId, OneMealStatisticsInfo> = new Map()
+  dietRecords.forEach((item: DietRecord) => {
+    if (item.mealTime != null) {
+      let oneMealStatisticsInfo: OneMealStatisticsInfo | undefined = mealMap.get(item.mealTime.id)
+      if (oneMealStatisticsInfo === undefined) {
+        oneMealStatisticsInfo = new OneMealStatisticsInfo(item.mealTime)
+      }
+      let foodInfo: FoodInfo | undefined = getFoods().find((food) => {
+        return food.id === item.foodId
+      })
+      if (foodInfo === undefined) {
+        return;
+      }
+      let calories = foodInfo.calories * item.weight
+      let protein = foodInfo.protein * item.weight
+      let fat = foodInfo.fat * item.weight
+      let carbohydrates = foodInfo.carbohydrates * item.weight
+      oneMealStatisticsInfo.mealFoods.push(new MealFoodInfo(item.id, foodInfo.name, foodInfo.image, calories,
+        protein, fat, carbohydrates, item.weight, item.key))
+      oneMealStatisticsInfo.totalFat += fat
+      oneMealStatisticsInfo.totalCalories += calories
+      oneMealStatisticsInfo.totalCarbohydrates += carbohydrates
+      oneMealStatisticsInfo.totalProtein += protein
+      oneMealStatisticsInfo.key = item.key
+      mealMap.set(item.mealTime.id, oneMealStatisticsInfo)
     }
-    var foodInfo = getFoods().find((food) => {
-      return food.id === item.foodId
-    })
-    var calories = foodInfo.calories * item.weight
-    var protein = foodInfo.protein * item.weight
-    var fat = foodInfo.fat * item.weight
-    var carbohydrates = foodInfo.carbohydrates * item.weight
-    oneMealStatisticsInfo.mealFoods.push(new MealFoodInfo(item.id, foodInfo.name, foodInfo.image, calories,
-      protein, fat, carbohydrates, item.weight, item.key))
-    oneMealStatisticsInfo.totalFat += fat
-    oneMealStatisticsInfo.totalCalories += calories
-    oneMealStatisticsInfo.totalCarbohydrates += carbohydrates
-    oneMealStatisticsInfo.totalProtein += protein
-    oneMealStatisticsInfo.key = item.key
-    mealMap.set(item.mealTime.id, oneMealStatisticsInfo)
-  })
+  }
+)
 
   return Array.from(mealMap.values())
 }

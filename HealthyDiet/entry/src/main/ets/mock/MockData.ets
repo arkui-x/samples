@@ -13,7 +13,7 @@
  * limitations under the License.
  */
 
-import { FoodInfo, CategoryId, MealTimeId, DietRecord } from '../model/DataModels'
+import { FoodInfo, CategoryId, MealTimeId, DietRecord, MealTime } from '../model/DataModels'
 
 export let mockFoods: Array<FoodInfo> = [
   {
@@ -1496,32 +1496,8 @@ export let mockFoodInfo: FoodInfo = {
 }
 
 export let mockDietRecords: Array<DietRecord> = [
-  {
-    id: 1,
-    foodId: 2,
-    mealTime: { name: $r('app.string.meal_time_dinner'), id: MealTimeId.Dinner },
-    weight: 200,
-    key: '1'
-  },
-  {
-    id: 2,
-    foodId: 8,
-    mealTime: { name: $r('app.string.meal_time_dinner'), id: MealTimeId.Dinner },
-    weight: 200,
-    key: '2'
-  },
-  {
-    id: 3,
-    foodId: 6,
-    mealTime: { name: $r('app.string.meal_time_lunch'), id: MealTimeId.Lunch },
-    weight: 200,
-    key: '3'
-  },
-  {
-    id: 4,
-    foodId: 3,
-    mealTime: { name: $r('app.string.meal_time_dinner'), id: MealTimeId.Dinner },
-    weight: 200,
-    key: '4'
-  }
+  new DietRecord(1, 2, new MealTime(MealTimeId.Dinner), 200, '1'),
+  new DietRecord(2, 8, new MealTime(MealTimeId.Dinner), 200, '2'),
+  new DietRecord(3, 6, new MealTime(MealTimeId.Lunch), 200, '3'),
+  new DietRecord(4, 3, new MealTime(MealTimeId.Dinner), 200, '4')
 ]
