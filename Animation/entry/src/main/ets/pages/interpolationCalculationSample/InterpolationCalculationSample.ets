@@ -4,7 +4,8 @@ import { TitleBar } from '../../common/TitleBar'
 
 const ANIMATION_TIME: number = 2000
 
-@Extend(Text) function textStyle(customWidth: string) {
+@Extend(Text)
+function textStyle(customWidth: string) {
   .height(50)
   .width(customWidth)
   .margin({ left: 12 })
@@ -19,7 +20,7 @@ struct InterpolationCalculation {
   private initCurve: ICurve = Curves.initCurve(Curve.EaseIn)
   private stepsCurve: ICurve = Curves.stepsCurve(9, true)
   private cubicBezierCurve: ICurve = Curves.cubicBezierCurve(0.1, 0.0, 0.1, 1.0)
-  private springCurve: ICurve = Curves.springCurve(100, 1, 228, 30)
+  private springCurve: ICurve = Curves.springCurve(10, 1, 228, 30)
 
   build() {
     Column() {

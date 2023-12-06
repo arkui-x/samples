@@ -4,7 +4,6 @@ import Folder from './Folder';
 @Entry
 @Component
 struct FolderSample {
-  @StorageProp('windowHeight') windowHeight: number = 720;
   @State isOpen: boolean = false;
   @State widthSize: number = 80;
   @State heightSize: number = 80;
@@ -12,15 +11,20 @@ struct FolderSample {
 
   click() {
     if (!this.isOpen) {
-      this.widthSize = 280;
-      this.heightSize = 280;
-      this.translateY = this.windowHeight * 0.1;
+      animateTo({ duration: 500, curve: Curve.Linear, playMode: PlayMode.Normal }, () => {
+        this.widthSize = 280;
+        this.heightSize = 280;
+        this.translateY = 72;
+      });
+
     } else {
-      this.widthSize = 80;
-      this.heightSize = 80;
-      this.translateY = 0;
+      animateTo({ duration: 500, curve: Curve.Linear, playMode: PlayMode.Normal }, () => {
+        this.widthSize = 80;
+        this.heightSize = 80;
+        this.translateY = 0;
+      });
     }
-    animateTo({ duration: 500 }, () => {
+    animateTo({ duration: 300 }, () => {
       this.isOpen = !this.isOpen;
     });
   }
@@ -37,11 +41,6 @@ struct FolderSample {
           .width(this.widthSize)
           .height(this.heightSize)
           .translate({ y: this.translateY })
-          .animation({
-            duration: 500,
-            curve: Curve.Linear,
-            playMode: PlayMode.Normal
-          })
       }
       .padding(20)
       .width('100%')
