@@ -16,7 +16,7 @@
 @Preview
 @Component
 struct DecIcon {
-  private click: () => void = undefined
+  private click?: () => void
 
   build() {
     Column() {
@@ -33,7 +33,9 @@ struct DecIcon {
     .height(20)
     .opacity(0.4)
     .onClick(() => {
-      this.click()
+      if (this.click){
+        this.click()
+      }
     })
   }
 }
@@ -41,7 +43,7 @@ struct DecIcon {
 @Preview
 @Component
 struct IncIcon {
-  private readonly click: () => void = undefined
+  private readonly click?: () => void
 
   build() {
     Column() {
@@ -57,7 +59,9 @@ struct IncIcon {
     .height(20)
     .padding({ top: 2, bottom: 2 })
     .onClick(() => {
-      this.click()
+      if (this.click) {
+        this.click()
+      }
     })
   }
 }
@@ -65,8 +69,8 @@ struct IncIcon {
 @Component
 export struct CustomCounter {
   @Prop value: string
-  private onDec: () => void = undefined
-  private onInc: () => void = undefined
+  private onDec?: () => void
+  private onInc?: () => void
 
   build() {
     Row() {

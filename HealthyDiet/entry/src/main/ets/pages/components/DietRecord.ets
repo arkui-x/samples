@@ -39,10 +39,10 @@ function GetColor(value: number): Resource {
 @Component
 struct Histogram {
   @Consume("dietData") dietData: Array<OneMealStatisticsInfo>
-  @BuilderParam content: any
-  @BuilderParam legendComponent: any
-  private title: string | Resource
-  private legend: HistogramLegend[]
+  @BuilderParam content: (item: OneMealStatisticsInfo) => void
+  @BuilderParam legendComponent: (item: HistogramLegend) => void
+  private title: string | Resource = ''
+  private legend: HistogramLegend[] = []
 
   build() {
     Column() {
@@ -56,7 +56,7 @@ struct Histogram {
 
       Stack({ alignContent: Alignment.Bottom }) {
         Column() {
-          ForEach(new Array<number>(6), (item) => {
+          ForEach(new Array<number>(6), () => {
             Divider()
               .strokeWidth(1)
               .color('#D8D8D8')
@@ -72,10 +72,12 @@ struct Histogram {
               if (item.mealFoods.length > 1) {
                 Column() {
                   this.content(item)
-                  Text(item.mealTime.name).fontSize(14)
-                    .fontColor('#7E7E7E')
-                    .fontFamily('HarmonyHeTi')
-                    .margin({ top: 10 })
+                  if (item.mealTime != null) {
+                    Text(item.mealTime.name).fontSize(14)
+                      .fontColor('#7E7E7E')
+                      .fontFamily('HarmonyHeTi')
+                      .margin({ top: 10 })
+                  }
                 }
                 .justifyContent(FlexAlign.End)
                 .height('100%')
@@ -88,7 +90,7 @@ struct Histogram {
       .height(190)
 
       Row() {
-        ForEach(this.legend, item => {
+        ForEach(this.legend, (item: HistogramLegend) => {
           Row() {
             Rect({ width: 9, height: 9, radius: 9 }).fill(item.color).margin({ right: 18 })
             this.legendComponent(item)
@@ -118,7 +120,7 @@ struct NutritionHistogramContent {
     Text(item.value).fontSize(12).fontColor('#18181A').fontFamily('HarmonyHeTi')
   }
 
-  @Builder content(item) {
+  @Builder content(item: OneMealStatisticsInfo) {
     Column() {
       if (item.totalFat > 0) {
         Rect({ width: 14, height: item.totalFat / 200 + 14, radius: 7 }).fill('#FD9A42')
@@ -158,11 +160,11 @@ struct HeatHistogramContent {
     new HistogramLegend('#73CD57', $r("app.string.medium_low_calories")),
   ]
 
-  @Builder legendComponent(item) {
+  @Builder legendComponent(item: HistogramLegend) {
     Text(item.value).fontSize(12).fontColor('#18181A').fontFamily('HarmonyHeTi')
   }
 
-  @Builder content(item) {
+  @Builder content(item: OneMealStatisticsInfo) {
     Column() {
       Rect({ width: 14, height: item.totalCalories / 1000 + 14, radius: 14 })
         .fill(GetColor(item.totalCalories))
@@ -189,12 +191,12 @@ struct MealFoodDetail {
   @Consume("dataChange") notifyDataChange: number
   @State shown: boolean = true
   @State translateX: number = 0
-  private mealFoodInfo: MealFoodInfo
+  private mealFoodInfo: MealFoodInfo | null = null
   private panTranslateX: number = 300
 
   build() {
     if (this.shown) {
-      if (this.mealFoodInfo.weight != 0) {
+      if (this.mealFoodInfo != null && this.mealFoodInfo.weight != 0) {
         Row() {
           Row() {
             Image(this.mealFoodInfo.image)
@@ -216,16 +218,18 @@ struct MealFoodDetail {
             CustomCounter({
               value: this.mealFoodInfo.weight + 'g',
               onDec: () => {
-                if (this.mealFoodInfo.weight > 0) {
+                if (this.mealFoodInfo != null && this.mealFoodInfo.weight > 0) {
                   this.mealFoodInfo.weight -= 50
                   updateDietWeight(this.mealFoodInfo.recordId, this.mealFoodInfo.weight)
                   this.notifyDataChange++
                 }
               },
               onInc: () => {
-                this.mealFoodInfo.weight += 50
-                updateDietWeight(this.mealFoodInfo.recordId, this.mealFoodInfo.weight)
-                this.notifyDataChange++
+                if (this.mealFoodInfo != null) {
+                  this.mealFoodInfo.weight += 50
+                  updateDietWeight(this.mealFoodInfo.recordId, this.mealFoodInfo.weight)
+                  this.notifyDataChange++
+                }
               }
             })
           }
@@ -240,9 +244,9 @@ struct MealFoodDetail {
             .onClick(() => {
               animateTo({ duration: 400 }, () => {
                 this.shown = false
-                let dietRecords = AppStorage.Get<Array<DietRecord>>('dietRecords');
+                let dietRecords = AppStorage.Get<Array<DietRecord>>('dietRecords') as DietRecord[];
                 dietRecords.forEach((item) => {
-                  if (item.key === this.mealFoodInfo.key) {
+                  if (this.mealFoodInfo != null && item.key === this.mealFoodInfo.key) {
                     item.weight = 0;
                   }
                 })
@@ -272,11 +276,11 @@ struct MealFoodDetail {
 
 @Component
 struct MealCard {
-  private mealInfo: OneMealStatisticsInfo
+  private mealInfo: OneMealStatisticsInfo | null = null
 
   build() {
     Column() {
-      if (this.mealInfo.mealFoods.length > 1) {
+      if (this.mealInfo != null && this.mealInfo.mealTime != null && this.mealInfo.mealFoods.length > 1) {
         Text(this.mealInfo.mealTime.name)
           .fontSize(24)
           .fontFamily('HarmonyHeTi-Medium')
@@ -285,7 +289,7 @@ struct MealCard {
           .backgroundColor('#FFFFFF')
           .padding({ left: 16, right: 16 })
 
-        ForEach(this.mealInfo.mealFoods, (mealItem) => {
+        ForEach(this.mealInfo.mealFoods, (mealItem: MealFoodInfo) => {
           MealFoodDetail({ mealFoodInfo: mealItem })
         })
       }
@@ -315,7 +319,7 @@ struct DietDetails {
         .indicator(new BreakPointType({ sm: true, md: false, lg: false }).getValue(this.currentBreakpoint))
         .displayCount(new BreakPointType({ sm: 1, md: 2, lg: 2 }).getValue(this.currentBreakpoint))
 
-        ForEach(this.dietData, (item) => {
+        ForEach(this.dietData, (item: OneMealStatisticsInfo) => {
           MealCard({ mealInfo: item })
         })
       }

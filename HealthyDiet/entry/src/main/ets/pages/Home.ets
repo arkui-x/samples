@@ -21,7 +21,7 @@ import { Records } from './components/DietRecord'
 
 @Component
 struct FoodListItem {
-  private foodItem: FoodInfo
+  private foodItem: FoodInfo = new FoodInfo()
 
   build() {
     Navigator({ target: 'pages/FoodDetail' }) {
@@ -55,7 +55,7 @@ struct FoodListItem {
 
 @Component
 struct ListModeFoods {
-  private foodItems: FoodInfo[] = getSortedFoodData()
+  private foodItems: FoodInfo[] = getSortedFoodData() as FoodInfo[]
 
   build() {
     Column() {
@@ -67,12 +67,12 @@ struct ListModeFoods {
         .fontSize(20)
 
       List() {
-        ForEach(this.foodItems, (item) => {
+        ForEach(this.foodItems, (item: FoodInfo) => {
           ListItem() {
             if (item.letter !== undefined) {
               FoodListItem({ foodItem: item })
             } else {
-              Text(item)
+              Text(item.letter)
                 .fontSize(14)
                 .height(48)
                 .margin({ left: 24 })
@@ -88,7 +88,7 @@ struct ListModeFoods {
 
 @Component
 struct FoodGridItem {
-  private foodItem: FoodInfo
+  private foodItem: FoodInfo = new FoodInfo()
 
   build() {
     Column() {
@@ -125,7 +125,7 @@ struct FoodGridItem {
 @Component
 struct FoodGrid {
   @StorageProp('currentBreakpoint') currentBreakpoint: string = 'md'
-  private foodItems: FoodInfo[]
+  private foodItems: FoodInfo[] = []
 
   build() {
     Grid() {
@@ -232,11 +232,7 @@ struct Home {
         .width(24)
         .fillColor(this.getTabBarColor(index))
       Text(name)
-        .margin(new BreakPointType({
-          sm: { top: 4 },
-          md: { left: 8 },
-          lg: { top: 4 }
-        }).getValue(this.currentBreakpoint))
+        .margin(new BreakPointType({ sm: 4, md: 8, lg: 4 }).getValue(this.currentBreakpoint))
         .fontSize(11)
         .fontColor(this.getTabBarColor(index))
     }

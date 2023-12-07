@@ -50,9 +50,9 @@ export class BreakPointType<T> {
   }
 }
 
-type Breakpoint = {
-  name: string
-  size: number
+class Breakpoint {
+  name: string = ''
+  size: number = 0
   mediaQueryListener?: mediaQuery.MediaQueryListener
 }
 
@@ -71,7 +71,7 @@ export class BreakpointSystem {
 
   public register() {
     this.breakpoints.forEach((breakpoint: Breakpoint, index) => {
-      let condition
+      let condition: string = ''
       if (index === this.breakpoints.length - 1) {
         condition = "(" + breakpoint.size + "vp<=width" + ")"
       } else {
@@ -89,7 +89,9 @@ export class BreakpointSystem {
 
   public unregister() {
     this.breakpoints.forEach((breakpoint: Breakpoint) => {
-      breakpoint.mediaQueryListener.off('change')
+      if (breakpoint && breakpoint.mediaQueryListener) {
+        breakpoint.mediaQueryListener.off('change')
+      }
     })
   }
 }
