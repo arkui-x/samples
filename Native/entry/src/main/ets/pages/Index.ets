@@ -12,23 +12,33 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-import hilog from '@ohos.hilog';
+
 import testNapi from 'libentry.so'
 
 @Entry
 @Component
 struct Index {
   @State message: string = 'Test native api: 2 + 3 = ?';
+  @State message2: string = 'Click me'
 
   build() {
     Row() {
       Column() {
         Text(this.message)
-          .fontSize(36)
+          .fontSize(50)
           .fontWeight(FontWeight.Bold)
           .onClick(() => {
-            this.message = 'Test native api: 2 + 3 = ' + testNapi.add(2, 3);
-            hilog.info(0x0000, 'testTag', 'Test NAPI 2 + 3 = %{public}d', testNapi.add(2, 3));
+            this.message = "Test native api: 2 + 3 = " + testNapi.add(2, 3);
+            console.log("Test NAPI 2 + 3 = " + testNapi.add(2, 3));
+          })
+        Text(this.message2)
+          .fontSize(50)
+          .fontWeight(FontWeight.Bold)
+          .onClick(() => {
+            this.message2 = testNapi.nativeCallArkTS((a:string)=>{
+              return a + " world!";
+            });
+            console.log(this.message2);
           })
       }
       .width('100%')
