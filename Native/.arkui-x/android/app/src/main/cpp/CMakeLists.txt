@@ -18,3 +18,4 @@ set_target_properties(
 set(NATIVE_SOURCE_PATH ${CMAKE_CURRENT_SOURCE_DIR}/../../../../../../entry/src/main/cpp)
 add_library(entry SHARED ${NATIVE_SOURCE_PATH}/hello.cpp)
 target_link_libraries(entry PUBLIC arkui_android)
+
