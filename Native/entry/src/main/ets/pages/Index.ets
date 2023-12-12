@@ -20,6 +20,7 @@ import testNapi from 'libentry.so'
 struct Index {
   @State message: string = 'Test native api: 2 + 3 = ?';
   @State message2: string = 'Click me'
+  @State message3: string = 'NativeUvLoop result';
 
   build() {
     Row() {
@@ -39,6 +40,23 @@ struct Index {
               return a + " world!";
             });
             console.log(this.message2);
+          })
+        Text(this.message3)
+          .fontSize(30)
+          .fontWeight(FontWeight.Bold)
+          .margin({ top: 15 })
+        Button('NativeUvLoop execute click me')
+          .width('100%')
+          .height(50)
+          .fontSize(20)
+          .margin({ top: 20 })
+          .onClick(() => {
+            if (testNapi.nativeUvLoop() == 0) {
+              this.message3 = "NativeUvLoop successful"
+            } else {
+              this.message3 = "NativeUvLoop failed"
+            }
+            console.log(this.message3);
           })
       }
       .width('100%')
