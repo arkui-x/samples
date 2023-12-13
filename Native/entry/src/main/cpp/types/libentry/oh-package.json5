@@ -13,8 +13,8 @@
  * limitations under the License.
  */
 {
-  "name": "libentry.so",
   "types": "./index.d.ts",
-  "version": "",
-  "description": "Please describe the basic information."
+  "name": "libentry.so",
+  "description": "",
+  "version": ""
 }

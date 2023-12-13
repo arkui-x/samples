@@ -13,7 +13,6 @@
  * limitations under the License.
  */
 
-import hilog from '@ohos.hilog';
 import TestRunner from '@ohos.application.testRunner';
 import AbilityDelegatorRegistry from '@ohos.app.ability.abilityDelegatorRegistry';
 
@@ -21,44 +20,40 @@ var abilityDelegator = undefined
 var abilityDelegatorArguments = undefined
 
 async function onAbilityCreateCallback() {
-  hilog.info(0x0000, 'testTag', '%{public}s', 'onAbilityCreateCallback');
+    console.log('onAbilityCreateCallback');
 }
 
 async function addAbilityMonitorCallback(err: any) {
-  hilog.info(0x0000, 'testTag', 'addAbilityMonitorCallback : %{public}s', JSON.stringify(err) ?? '');
+    console.log('addAbilityMonitorCallback');
 }
 
 export default class OpenHarmonyTestRunner implements TestRunner {
-  constructor() {
-  }
+    constructor() {
+    }
 
-  onPrepare() {
-    hilog.info(0x0000, 'testTag', '%{public}s', 'OpenHarmonyTestRunner OnPrepare ');
-  }
+    onPrepare() {
+        console.log('onPrepare');
+    }
 
-  async onRun() {
-    hilog.info(0x0000, 'testTag', '%{public}s', 'OpenHarmonyTestRunner onRun run');
-    // @ts-ignore
-    abilityDelegatorArguments = AbilityDelegatorRegistry.getArguments()
-    // @ts-ignore
-    abilityDelegator = AbilityDelegatorRegistry.getAbilityDelegator()
-    const bundleName = abilityDelegatorArguments.bundleName;
-    const testAbilityName = 'TestAbility';
-    let lMonitor = {
-      abilityName: testAbilityName,
-      onAbilityCreate: onAbilityCreateCallback,
-    };
-    abilityDelegator.addAbilityMonitor(lMonitor, addAbilityMonitorCallback)
-    const want = {
-      bundleName: bundleName,
-      abilityName: testAbilityName
-    };
-    // @ts-ignore
-    abilityDelegator = AbilityDelegatorRegistry.getAbilityDelegator();
-    abilityDelegator.startAbility(want, (err: any, data: any) => {
-      hilog.info(0x0000, 'testTag', 'startAbility : err : %{public}s', JSON.stringify(err) ?? '');
-      hilog.info(0x0000, 'testTag', 'startAbility : data : %{public}s', JSON.stringify(data) ?? '');
-    })
-    hilog.info(0x0000, 'testTag', '%{public}s', 'OpenHarmonyTestRunner onRun end');
-  }
+    async onRun() {
+        console.log('onRun');
+        abilityDelegatorArguments = AbilityDelegatorRegistry.getArguments()
+        abilityDelegator = AbilityDelegatorRegistry.getAbilityDelegator()
+        var bundleName = abilityDelegatorArguments.bundleName
+        var parameters = abilityDelegatorArguments.parameters
+        let moduleName = parameters["moduleName"]
+        let lMonitor = {
+            abilityName: "TestAbility",
+            onAbilityCreate: onAbilityCreateCallback,
+        };
+        abilityDelegator.addAbilityMonitor(lMonitor, addAbilityMonitorCallback)
+        let want = {
+            abilityName: "TestAbility",
+            bundleName: bundleName,
+            moduleName: moduleName
+        };
+        abilityDelegator.startAbility(want, (err: any, data: any) => {
+            console.log('startAbility' + err + data);
+        });
+    }
 }

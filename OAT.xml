@@ -64,18 +64,23 @@ Note:If the text contains special characters, please escape them according to th
                 <filteritem type="filepath" name="Shopping/ios/.*.xcuserstate" desc="iOS工程固定配置文件"/>
                 <filteritem type="filepath" name="Shopping/screenshots/.*.png|.*.jpg" desc="运行结果截图"/>
                 <filteritem type="filepath" name="HealthyDiet/ios/.*.xcuserstate" desc="iOS工程固定配置文件"/>
+                <filteritem type="filename" name="*.jpg|*.png|*.gif|*.pdf|*.jpeg" desc="already checked"/>
             </filefilter>
             <filefilter name="copyrightPolicyFilter" desc="Copyright文件头校验策略的过滤条件" >
                 <filteritem type="filename" name="gradlew" desc="Android工程编译入口脚本，无需添加版权头"/>
                 <filteritem type="filename" name="gradlew.bat" desc="Android工程编译入口脚本，无需添加版权头"/>
                 <filteritem type="filename" name="build-profile.json5" desc="OpenHarmony工程编译配置文件，无需添加版权头"/>
                 <filteritem type="filename" name="hvigorfile.js" desc="OpenHarmony工程编译配置文件，无需添加版权头"/>
+                <filteritem type="filename" name="hvigorfile.ts" desc="OpenHarmony工程配置文件无需添加版权头"/>
+                <filteritem type="filename" name="hvigor-wrapper.js" desc="OpenHarmony工程配置文件无需添加版权头"/>
             </filefilter>
             <filefilter name="defaultPolicyFilter" desc="License文件头校验策略的过滤条件" >
                 <filteritem type="filename" name="gradlew" desc="Android工程编译入口脚本，无需添加License头"/>
                 <filteritem type="filename" name="gradlew.bat" desc="Android工程编译入口脚本，无需添加License头"/>
                 <filteritem type="filename" name="build-profile.json5" desc="OpenHarmony工程编译配置文件，无需添加License头"/>
                 <filteritem type="filename" name="hvigorfile.js" desc="OpenHarmony工程编译配置文件，无需添加License头"/>
+                <filteritem type="filename" name="hvigorfile.ts" desc="OpenHarmony工程配置文件无需添加License头"/>
+                <filteritem type="filename" name="hvigor-wrapper.js" desc="OpenHarmony工程配置文件无需添加License头"/>
             </filefilter>
             <filefilter name="copyrightPolicyFilter" desc="HealthyDiet Copyright文件头校验策略的过滤条件" >
                 <filteritem type="filepath" name="HealthyDiet/ios/.*.plist|.*.modulemap|.*.storyboard|.*.pbxproj|.*.xcworkspacedata|.*.podspec" desc="示例展示无需添加版权头"/>
@@ -83,6 +88,8 @@ Note:If the text contains special characters, please escape them according to th
                 <filteritem type="filepath" name="HealthyDiet/android/.*.so" desc="示例展示无需添加版权头"/>
                 <filteritem type="filepath" name="HealthyDiet/android/.*.java" desc="示例展示无需添加版权头"/>
                 <filteritem type="filepath" name="HealthyDiet/source/.*.ets" desc="示例展示无需添加版权头"/>
+                <filteritem type="filepath" name="HealthyDiet/entry/hvigorfile.ts" desc="OpenHarmony工程配置文件无需添加版权头"/>
+                <filteritem type="filepath" name="HealthyDiet/hvigorfile.ts" desc="OpenHarmony工程配置文件无需添加版权头"/>
             </filefilter>
             <filefilter name="defaultPolicyFilter" desc="HealthyDiet License文件头校验策略的过滤条件" >
                 <filteritem type="filepath" name="HealthyDiet/ios/.*.plist|.*.modulemap|.*.storyboard|.*.pbxproj|.*.xcworkspacedata|.*.podspec" desc="示例展示无需添加License头"/>
@@ -91,28 +98,44 @@ Note:If the text contains special characters, please escape them according to th
                 <filteritem type="filepath" name="HealthyDiet/android/.*.so" desc="示例展示无需添加License头"/>
                 <filteritem type="filepath" name="HealthyDiet/android/.*.java" desc="示例展示无需添加License头"/>
                 <filteritem type="filepath" name="HealthyDiet/source/.*.ets" desc="示例展示无需添加License头"/>
+                <filteritem type="filepath" name="HealthyDiet/entry/hvigorfile.ts" desc="OpenHarmony工程配置文件无需添加License头"/>
+                <filteritem type="filepath" name="HealthyDiet/hvigorfile.ts" desc="OpenHarmony工程配置文件无需添加License头"/>
             </filefilter>
             <filefilter name="copyrightPolicyFilter" desc="Shopping Copyright文件头校验策略的过滤条件" >
                 <filteritem type="filepath" name="Shopping/ios/.*.plist|.*.modulemap|.*.storyboard|.*.pbxproj|.*.xcworkspacedata|.*.podspec" desc="示例展示无需添加版权头"/>
                 <filteritem type="filepath" name="Shopping/android/.*.xml" desc="示例展示无需添加版权头"/>
                 <filteritem type="filepath" name="Shopping/android/.*.java" desc="示例展示无需添加版权头"/>
                 <filteritem type="filepath" name="Shopping/source/.*.ets" desc="示例展示无需添加版权头"/>
+                <filteritem type="filepath" name="Shopping/entry/hvigorfile.ts" desc="OpenHarmony工程配置文件无需添加版权头"/>
+                <filteritem type="filepath" name="Shopping/hvigorfile.ts" desc="OpenHarmony工程配置文件无需添加版权头"/>
             </filefilter>
             <filefilter name="defaultPolicyFilter" desc="Shopping License文件头校验策略的过滤条件" >
                 <filteritem type="filepath" name="Shopping/ios/.*.plist|.*.modulemap|.*.storyboard|.*.pbxproj|.*.xcworkspacedata|.*.podspec" desc="示例展示无需添加License头"/>
                 <filteritem type="filepath" name="Shopping/android/.*.xml" desc="示例展示无需添加License头"/>
                 <filteritem type="filepath" name="Shopping/android/.*.java" desc="示例展示无需添加License头"/>
                 <filteritem type="filepath" name="Shopping/source/.*.ets" desc="示例展示无需添加License头"/>
+                <filteritem type="filepath" name="Shopping/entry/hvigorfile.ts" desc="OpenHarmony工程配置文件无需添加License头"/>
+                <filteritem type="filepath" name="Shopping/hvigorfile.ts" desc="OpenHarmony工程配置文件无需添加License头"/>
             </filefilter>
             <filefilter name="copyrightPolicyFilter" desc="HelloWorld Copyright文件头校验策略的过滤条件" >
                 <filteritem type="filepath" name="HelloWorld/android/.*.xml|.*.java" desc="示例展示无需添加版权头"/>
                 <filteritem type="filepath" name="HelloWorld/ios/.*.plist|.*.modulemap|.*.storyboard|.*.pbxproj|.*.xcworkspacedata|.*.podspec" desc="xcode工程文件无需添加License头"/>
                 <filteritem type="filepath" name="HelloWorld/source/.*.ets" desc="示例展示无需添加版权头"/>
+                <filteritem type="filepath" name="HelloWorld/entry/hvigorfile.ts" desc="OpenHarmony工程配置文件无需添加版权头"/>
+                <filteritem type="filepath" name="HelloWorld/hvigorfile.ts" desc="OpenHarmony工程配置文件无需添加版权头"/>
             </filefilter>
             <filefilter name="defaultPolicyFilter" desc="HelloWorld License文件头校验策略的过滤条件" >
                 <filteritem type="filepath" name="HelloWorld/android/.*.xml|.*.java" desc="示例展示无需添加License头"/>
                 <filteritem type="filepath" name="HelloWorld/ios/.*.plist|.*.modulemap|.*.storyboard|.*.pbxproj|.*.xcworkspacedata|.*.podspec" desc="xcode工程文件无需添加License头"/>
                 <filteritem type="filepath" name="HelloWorld/source/.*.ets" desc="示例展示无需添加License头"/>
+                <filteritem type="filepath" name="HelloWorld/entry/hvigorfile.ts" desc="OpenHarmony工程配置文件无需添加License头"/>
+                <filteritem type="filepath" name="HelloWorld/hvigorfile.ts" desc="OpenHarmony工程配置文件无需添加License头"/>
+            </filefilter>
+            <filefilter name="copyrightPolicyFilter" desc="Native Copyright文件头校验策略的过滤条件" >
+                <filteritem type="filepath" name="Native/entry/src/main/cpp/types/libentry/index.d.ts" desc="示例展示无需添加版权头"/>
+            </filefilter>
+            <filefilter name="defaultPolicyFilter" desc="Native License文件头校验策略的过滤条件" >
+                <filteritem type="filepath" name="Native/entry/src/main/cpp/types/libentry/index.d.ts" desc="示例展示无需添加License头"/>
             </filefilter>
         </filefilterlist>
     </oatconfig>

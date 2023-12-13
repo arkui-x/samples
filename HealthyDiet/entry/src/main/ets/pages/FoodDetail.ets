@@ -28,8 +28,8 @@ import { getFoodInfo, initDietRecords, getMileTimes } from '../model/DataUtil'
 
 @Component
 struct CardTitle {
-  private title: Resource
-  private subtitle: Resource
+  private title: Resource | null = null
+  private subtitle: Resource | null = null
 
   build() {
     Row() {
@@ -68,24 +68,26 @@ struct PageTitle {
 
 @Component
 struct FoodImageDisplay {
-  private foodInfo: FoodInfo
+  private foodInfo: FoodInfo | null = null
   @State imageBgColorA: number = 0
   @StorageProp('currentBreakpoint') currentBreakpoint: string = 'sm'
 
   build() {
     Stack({ alignContent: Alignment.BottomStart }) {
-      Image(this.foodInfo.image)
-        .sharedTransition(JSON.stringify(this.foodInfo.id), {
-          duration: 400,
-          delay: 100,
-          curve:Curve.Ease
-        })
-        .backgroundColor(`rgba(255, 255, 255, ${this.imageBgColorA})`)
-        .objectFit(ImageFit.Contain)
-      Text(this.foodInfo.name)
-        .fontSize(26)
-        .fontWeight(FontWeight.Bold)
-        .margin({ left: 26, bottom: 18 })
+      if (this.foodInfo != null) {
+        Image(this.foodInfo.image)
+          .sharedTransition(JSON.stringify(this.foodInfo.id), {
+            duration: 400,
+            delay: 100,
+            curve:Curve.Ease
+          })
+          .backgroundColor(`rgba(255, 255, 255, ${this.imageBgColorA})`)
+          .objectFit(ImageFit.Contain)
+        Text(this.foodInfo.name)
+          .fontSize(26)
+          .fontWeight(FontWeight.Bold)
+          .margin({ left: 26, bottom: 18 })
+      }
     }
     .height(this.currentBreakpoint == 'lg' ? 166 : 280)
   }
@@ -93,9 +95,9 @@ struct FoodImageDisplay {
 
 @Component
 struct ContentTable {
-  private foodInfo: FoodInfo
+  private foodInfo: FoodInfo | null = null
 
-  @Builder IngredientItem(title: Resource, colorValue: string, name: Resource, value: Resource) {
+  @Builder IngredientItem(title: Resource | null, colorValue: string, name: Resource, value: Resource) {
     Row() {
       Text(title)
         .fontSize(18)
@@ -120,12 +122,14 @@ struct ContentTable {
 
   build() {
     Column() {
-      this.IngredientItem($r('app.string.diet_record_calorie'), '#F54040', $r('app.string.diet_record_calorie'), $r('app.string.calorie_with_kcal_unit', this.foodInfo.calories.toString()))
-      Row().height(20)
-      this.IngredientItem($r('app.string.nutrition_element'), '#CCC', $r('app.string.nutrition_element'), $r('app.string.weight_with_gram_unit', this.foodInfo.protein.toString()))
-      this.IngredientItem(null, '#F5D640', $r('app.string.diet_record_fat'), $r('app.string.weight_with_gram_unit', this.foodInfo.fat.toString()))
-      this.IngredientItem(null, '#9E9EFF', $r('app.string.diet_record_carbohydrates'), $r('app.string.weight_with_gram_unit', this.foodInfo.carbohydrates.toString()))
-      this.IngredientItem(null, '#53F540', $r('app.string.diet_record_vitaminC'), $r('app.string.weight_with_milligram_unit', this.foodInfo.vitaminC.toString()))
+      if (this.foodInfo != null) {
+        this.IngredientItem($r('app.string.diet_record_calorie'), '#F54040', $r('app.string.diet_record_calorie'), $r('app.string.calorie_with_kcal_unit', this.foodInfo.calories.toString()))
+        Row().height(20)
+        this.IngredientItem($r('app.string.nutrition_element'), '#CCC', $r('app.string.nutrition_element'), $r('app.string.weight_with_gram_unit', this.foodInfo.protein.toString()))
+        this.IngredientItem(null, '#F5D640', $r('app.string.diet_record_fat'), $r('app.string.weight_with_gram_unit', this.foodInfo.fat.toString()))
+        this.IngredientItem(null, '#9E9EFF', $r('app.string.diet_record_carbohydrates'), $r('app.string.weight_with_gram_unit', this.foodInfo.carbohydrates.toString()))
+        this.IngredientItem(null, '#53F540', $r('app.string.diet_record_vitaminC'), $r('app.string.weight_with_milligram_unit', this.foodInfo.vitaminC.toString()))
+      }
     }
     .cardStyle()
   }
@@ -133,56 +137,60 @@ struct ContentTable {
 
 @Component
 struct CaloriesProgress {
-  private foodInfo: FoodInfo
+  private foodInfo: FoodInfo | null = null
   private averageCalories: number = 0
   private totalCalories: number = 0
   private highCalories: boolean = false
 
   aboutToAppear() {
-    switch (this.foodInfo.categoryId) {
-      case CategoryId.Vegetable:
-        this.averageCalories = 26
-        break
-      case CategoryId.Fruit:
-        this.averageCalories = 60
-        break
-      case CategoryId.Nut:
-        this.averageCalories = 606
-        break
-      case CategoryId.Seafood:
-        this.averageCalories = 56
-        break
-      case CategoryId.Dessert:
-        this.averageCalories = 365
-        break
+    if (this.foodInfo != null) {
+      switch (this.foodInfo.categoryId) {
+        case CategoryId.Vegetable:
+          this.averageCalories = 26
+          break
+        case CategoryId.Fruit:
+          this.averageCalories = 60
+          break
+        case CategoryId.Nut:
+          this.averageCalories = 606
+          break
+        case CategoryId.Seafood:
+          this.averageCalories = 56
+          break
+        case CategoryId.Dessert:
+          this.averageCalories = 365
+          break
+      }
+      this.totalCalories = this.averageCalories * 2
+      this.highCalories = this.foodInfo.calories < this.averageCalories
     }
-    this.totalCalories = this.averageCalories * 2
-    this.highCalories = this.foodInfo.calories < this.averageCalories
   }
 
   build() {
     Column() {
-      CardTitle({ title: $r('app.string.diet_record_calorie'), subtitle: $r('app.string.unit_weight') })
+      if (this.foodInfo != null) {
+        CardTitle({ title: $r('app.string.diet_record_calorie'), subtitle: $r('app.string.unit_weight') })
 
-      Row() {
-        Text(this.foodInfo.calories.toString())
-          .fontColor(this.getCalorieColor())
-          .fontSize(65)
-        Text($r('app.string.calorie_with_kcal_unit', ''))
-          .fontSize(20)
-          .margin({ bottom: 10 })
+        Row() {
+          Text(this.foodInfo.calories.toString())
+            .fontColor(this.getCalorieColor())
+            .fontSize(65)
+          Text($r('app.string.calorie_with_kcal_unit', ''))
+            .fontSize(20)
+            .margin({ bottom: 10 })
+        }
+        .margin({ top: 25, bottom: 25 })
+        .alignItems(VerticalAlign.Bottom)
+
+        Text(this.highCalories ? $r('app.string.high_calorie_food') : $r('app.string.low_calorie_food'))
+          .fontSize(13)
+          .fontColor('#313131')
+
+        Progress({ value: this.foodInfo.calories, total: this.totalCalories, style: ProgressStyle.Linear })
+          .style({ strokeWidth: 24 })
+          .color(this.getCalorieColor())
+          .margin({ top: 18 })
       }
-      .margin({ top: 25, bottom: 25 })
-      .alignItems(VerticalAlign.Bottom)
-
-      Text(this.highCalories ? $r('app.string.high_calorie_food') : $r('app.string.low_calorie_food'))
-        .fontSize(13)
-        .fontColor('#313131')
-
-      Progress({ value: this.foodInfo.calories, total: this.totalCalories, style: ProgressStyle.Linear })
-        .style({ strokeWidth: 24 })
-        .color(this.getCalorieColor())
-        .margin({ top: 18 })
     }
     .cardStyle()
   }
@@ -195,10 +203,10 @@ struct CaloriesProgress {
 class NutritionElement {
   element: Resource
   weight: number
-  percent: number
-  beginAngle: number
-  endAngle: number
-  color: string
+  percent: number = -1
+  beginAngle: number = -1
+  endAngle: number = -1
+  color: string = ''
 
   constructor(element: Resource, weight: number, color: string) {
     this.element = element
@@ -209,71 +217,77 @@ class NutritionElement {
 
 @Component
 struct NutritionPieChart {
-  private foodInfo: FoodInfo
-  private nutritionElements: NutritionElement[]
+  private foodInfo: FoodInfo | null = null
+  private nutritionElements: NutritionElement[] | null = null
   private settings: RenderingContextSettings = new RenderingContextSettings(true)
   private context: CanvasRenderingContext2D = new CanvasRenderingContext2D(this.settings)
 
   build() {
-    Column() {
-      CardTitle({ title: $r('app.string.nutrition_element'), subtitle: $r('app.string.unit_weight') })
-      Canvas(this.context)
-        .height(CIRCLE_RADIUS * 2)
-        .aspectRatio(1)
-        .margin({ top: 30, bottom: 32 })
-        .onReady(() => {
-          this.nutritionElements.forEach((item) => {
-            this.context.beginPath()
-            this.context.moveTo(CIRCLE_RADIUS, CIRCLE_RADIUS)
-            this.context.arc(CIRCLE_RADIUS, CIRCLE_RADIUS, CIRCLE_RADIUS, item.beginAngle, item.endAngle)
-            this.context.fillStyle = item.color
-            this.context.fill()
+    if (this.nutritionElements != null) {
+      Column() {
+        CardTitle({ title: $r('app.string.nutrition_element'), subtitle: $r('app.string.unit_weight') })
+        Canvas(this.context)
+          .height(CIRCLE_RADIUS * 2)
+          .aspectRatio(1)
+          .margin({ top: 30, bottom: 32 })
+          .onReady(() => {
+            if (this.nutritionElements != null) {
+              this.nutritionElements.forEach((item) => {
+                this.context.beginPath()
+                this.context.moveTo(CIRCLE_RADIUS, CIRCLE_RADIUS)
+                this.context.arc(CIRCLE_RADIUS, CIRCLE_RADIUS, CIRCLE_RADIUS, item.beginAngle, item.endAngle)
+                this.context.fillStyle = item.color
+                this.context.fill()
+              })
+            }
           })
-        })
-      Row() {
-        ForEach(this.nutritionElements, (item: NutritionElement) => {
-          Row({ space: 4 }) {
-            Circle({ width: 8, height: 8 }).fill(item.color)
-            Text(item.element).fontSize(12)
-            Text($r('app.string.weight_with_gram_unit', item.weight.toString())).fontSize(12)
-          }
-        })
+        Row() {
+          ForEach(this.nutritionElements, (item: NutritionElement) => {
+            Row({ space: 4 }) {
+              Circle({ width: 8, height: 8 }).fill(item.color)
+              Text(item.element).fontSize(12)
+              Text($r('app.string.weight_with_gram_unit', item.weight.toString())).fontSize(12)
+            }
+          })
+        }
+        .width('100%')
+        .justifyContent(FlexAlign.SpaceAround)
       }
-      .width('100%')
-      .justifyContent(FlexAlign.SpaceAround)
+      .cardStyle()
     }
-    .cardStyle()
   }
 }
 
 @Component
 struct NutritionPercent {
-  private foodInfo: FoodInfo
-  private nutritionElements: NutritionElement[]
+  private foodInfo: FoodInfo | null = null
+  private nutritionElements: NutritionElement[] | null = null
 
   build() {
     Column() {
       CardTitle({ title: $r('app.string.nutrition_element'), subtitle: $r('app.string.unit_weight') })
 
       Row() {
-        ForEach(this.nutritionElements, (item: NutritionElement) => {
-          Column() {
-            Stack({ alignContent: Alignment.Center }) {
-              Progress({ value: item.percent, type: ProgressType.Ring })
-                .style({ strokeWidth: 10 })
-                .color(item.color)
-                .margin(4)
-              Text(item.percent + '%').fontSize(17)
-            }
+        if (this.nutritionElements != null) {
+          ForEach(this.nutritionElements, (item: NutritionElement) => {
+            Column() {
+              Stack({ alignContent: Alignment.Center }) {
+                Progress({ value: item.percent, type: ProgressType.Ring })
+                  .style({ strokeWidth: 10 })
+                  .color(item.color)
+                  .margin(4)
+                Text(item.percent + '%').fontSize(17)
+              }
 
-            Text(item.element)
-              .fontSize(13)
-              .margin({ top: 24 })
-            Text($r('app.string.weight_with_gram_unit', item.weight.toString()))
-              .fontSize(13)
-          }.layoutWeight(1)
+              Text(item.element)
+                .fontSize(13)
+                .margin({ top: 24 })
+              Text($r('app.string.weight_with_gram_unit', item.weight.toString()))
+                .fontSize(13)
+            }.layoutWeight(1)
 
-        })
+          })
+        }
       }
       .width('100%')
       .margin({ top: 50 })
@@ -284,7 +298,7 @@ struct NutritionPercent {
 
 @CustomDialog
 struct Record {
-  private foodInfo: FoodInfo
+  private foodInfo: FoodInfo = new FoodInfo();
   private controller: CustomDialogController
   private select: number = 1
   private mileTime: string[] = getMileTimes()
@@ -295,18 +309,20 @@ struct Record {
   build() {
     Column() {
       Row({ space: 6 }) {
-        Column() {
-          Text(this.foodInfo.name)
-            .minFontSize(18)
-            .maxFontSize(30)
-            .maxLines(1)
-          Text($r('app.string.calorie_with_kcal_unit', this.foodInfo.calories.toString()))
-            .fontSize(16)
-            .fontColor('rgba(0,0,0,0.4)')
-            .margin({ top: 2 })
+        if (this.foodInfo != null) {
+          Column() {
+            Text(this.foodInfo.name)
+              .minFontSize(18)
+              .maxFontSize(30)
+              .maxLines(1)
+            Text($r('app.string.calorie_with_kcal_unit', this.foodInfo.calories.toString()))
+              .fontSize(16)
+              .fontColor('rgba(0,0,0,0.4)')
+              .margin({ top: 2 })
+          }
+          .layoutWeight(1)
+          .justifyContent(FlexAlign.Center)
         }
-        .layoutWeight(1)
-        .justifyContent(FlexAlign.Center)
 
         TextPicker({ range: this.mileTime, selected: this.select })
           .layoutWeight(1)
@@ -315,8 +331,8 @@ struct Record {
             direction: GradientDirection.Top,
             colors: [[0xfdfdfd, 0.0], [0xe0e0e0, 0.5], [0xfdfdfd, 1]],
           })
-          .onChange((value: string, index: number) => {
-            this.mealTimeId = index
+          .onChange((value: string | string[], index: number | number[]) => {
+            this.mealTimeId = Number(index)
           })
           .height('100%')
 
@@ -327,7 +343,7 @@ struct Record {
             direction: GradientDirection.Top,
             colors: [[0xfdfdfd, 0.0], [0xe0e0e0, 0.5], [0xfdfdfd, 1]],
           })
-          .onChange((value: string) => {
+          .onChange((value: string | string[]) => {
             this.mealWeight = Number(value)
           })
           .height('100%')
@@ -344,11 +360,13 @@ struct Record {
           if (dietRecordsList == undefined || dietRecordsList.length === 0) {
             dietRecordsList = initDietRecords
           }
-          let dietRecordData = new DietRecord(dietRecordsList.length, this.foodInfo.id,
-            new MealTime(this.mealTimeId), this.mealWeight, new Date().getTime().toString())
-          dietRecordsList.push(dietRecordData)
-          AppStorage.SetOrCreate<Array<DietRecord>>('dietRecords', dietRecordsList)
-          this.controller.close()
+          if (this.foodInfo != null) {
+            let dietRecordData = new DietRecord(dietRecordsList.length, this.foodInfo.id,
+              new MealTime(this.mealTimeId), this.mealWeight, new Date().getTime().toString())
+            dietRecordsList.push(dietRecordData)
+            AppStorage.SetOrCreate<Array<DietRecord>>('dietRecords', dietRecordsList)
+            this.controller.close()
+          }
         })
     }
     .cardStyle()
@@ -362,7 +380,7 @@ struct Record {
 struct FoodDetail {
   @StorageProp('currentBreakpoint') currentBreakpoint: string = 'sm'
   private foodInfo: FoodInfo = getFoodInfo()
-  private nutritionElements: NutritionElement[]
+  private nutritionElements: NutritionElement[] = []
   dialogController: CustomDialogController = new CustomDialogController({
     builder: Record({ foodInfo: this.foodInfo }),
     autoCancel: true,
@@ -392,29 +410,31 @@ struct FoodDetail {
   build() {
     Scroll() {
       Column() {
-        PageTitle()
-        FoodImageDisplay({ foodInfo: this.foodInfo })
-        Swiper() {
-          ContentTable({ foodInfo: this.foodInfo })
-          CaloriesProgress({ foodInfo: this.foodInfo })
-          NutritionPercent({ foodInfo: this.foodInfo, nutritionElements: this.nutritionElements })
-          NutritionPieChart({ foodInfo: this.foodInfo, nutritionElements: this.nutritionElements })
-        }
-        .indicator(new BreakPointType({ sm: true, md: false, lg: false }).getValue(this.currentBreakpoint))
-        .displayCount(new BreakPointType({ sm: 1, md: 2, lg: 3 }).getValue(this.currentBreakpoint))
-        .clip(new Rect().width('100%').height('100%').radiusWidth(15).radiusHeight(15))
-        .itemSpace(20)
-        .height(330)
-        .margin({ top: 10, right: 10, left: 10 })
+        if (this.foodInfo != null) {
+          PageTitle()
+          FoodImageDisplay({ foodInfo: this.foodInfo })
+          Swiper() {
+            ContentTable({ foodInfo: this.foodInfo })
+            CaloriesProgress({ foodInfo: this.foodInfo })
+            NutritionPercent({ foodInfo: this.foodInfo, nutritionElements: this.nutritionElements })
+            NutritionPieChart({ foodInfo: this.foodInfo, nutritionElements: this.nutritionElements })
+          }
+          .indicator(new BreakPointType({ sm: true, md: false, lg: false }).getValue(this.currentBreakpoint))
+          .displayCount(new BreakPointType({ sm: 1, md: 2, lg: 3 }).getValue(this.currentBreakpoint))
+          .clip(new Rect().width('100%').height('100%').radiusWidth(15).radiusHeight(15))
+          .itemSpace(20)
+          .height(330)
+          .margin({ top: 10, right: 10, left: 10 })
 
-        Button($r('app.string.button_food_detail_record'), { type: ButtonType.Capsule, stateEffect: true })
-          .height(42)
-          .width('80%')
-          .margin({ top: 32, bottom: 32 })
-          .backgroundColor($r('app.color.theme_color_green'))
-          .onClick(() => {
-            this.dialogController.open()
-          })
+          Button($r('app.string.button_food_detail_record'), { type: ButtonType.Capsule, stateEffect: true })
+            .height(42)
+            .width('80%')
+            .margin({ top: 32, bottom: 32 })
+            .backgroundColor($r('app.color.theme_color_green'))
+            .onClick(() => {
+              this.dialogController.open()
+            })
+        }
       }
       .alignItems(HorizontalAlign.Center)
     }

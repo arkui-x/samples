@@ -38,28 +38,28 @@
 
 - (BOOL)application:(UIApplication *)app openURL:(NSURL *)url options:(NSDictionary<NSString *,id> *)options {
     NSLog(@"appdelegate openUrl callback, url : %@", url.absoluteString); // eg: (com.entry.arkui://entry?OtherAbility)
-
+    
     NSString *bundleName = url.scheme;
     NSString *moduleName = url.host;
     NSString *abilityName, *params;
 
     NSURLComponents * urlComponents = [NSURLComponents componentsWithString:url.absoluteString];
     NSArray <NSURLQueryItem *> *array = urlComponents.queryItems;
-        for (NSURLQueryItem * item in array) {
+    for (NSURLQueryItem * item in array) {
         if ([item.name isEqualToString:@"abilityName"]) {
-        abilityName = item.value;
+            abilityName = item.value;
         } else if ([item.name isEqualToString:@"params"]) {
-        params = item.value;
+            params = item.value;
         }
-        }
+    }
 
-        [self handleOpenUrlWithBundleName:bundleName
-        moduleName:moduleName
-        abilityName:abilityName
-        params:params, nil];
-
-        return YES;
-        }
+    [self handleOpenUrlWithBundleName:bundleName
+                           moduleName:moduleName
+                          abilityName:abilityName
+                               params:params, nil];
+    
+    return YES;
+}
 
 - (BOOL)handleOpenUrlWithBundleName:(NSString *)bundleName
                          moduleName:(NSString *)moduleName
@@ -76,8 +76,9 @@
     
     if ([moduleName isEqualToString:@"entry"] && [abilityName isEqualToString:@"EntryAbility"]) {
         NSString *instanceName = [NSString stringWithFormat:@"%@:%@:%@",bundleName, moduleName, abilityName];
-        EntryEntryAbilityViewController *otherVC = [[EntryEntryAbilityViewController alloc] initWithInstanceName:instanceName];
-        subStageVC = (EntryEntryAbilityViewController *)otherVC;
+        EntryEntryAbilityViewController *entryOtherVC = [[EntryEntryAbilityViewController alloc] initWithInstanceName:instanceName];
+        entryOtherVC.params = params;
+        subStageVC = (EntryEntryAbilityViewController *)entryOtherVC;
     } // other ViewController
     
     if (!subStageVC) {
@@ -103,13 +104,11 @@
 }
 
 - (void)setNaviAppearance:(UINavigationController *)navi {
-    if (@available(iOS 13.0, *)) {
-        UINavigationBarAppearance *appearance = [UINavigationBarAppearance new];
-        [appearance configureWithOpaqueBackground];
-        appearance.backgroundColor = UIColor.whiteColor;
-        navi.navigationBar.standardAppearance = appearance;
-        navi.navigationBar.scrollEdgeAppearance = navi.navigationBar.standardAppearance;
-    }
+    UINavigationBarAppearance *appearance = [UINavigationBarAppearance new];
+    [appearance configureWithOpaqueBackground];
+    appearance.backgroundColor = UIColor.whiteColor;
+    navi.navigationBar.standardAppearance = appearance;
+    navi.navigationBar.scrollEdgeAppearance = navi.navigationBar.standardAppearance;
 }
 
 @end

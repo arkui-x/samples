@@ -18,7 +18,7 @@
 #import <libarkui_ios/StageApplication.h>
 
 #define BUNDLE_DIRECTORY @"arkui-x"
-#define BUNDLE_NAME @"com.example.x1"
+#define BUNDLE_NAME @"com.example.healthydiet"
 
 @interface AppDelegate ()
 
@@ -41,12 +41,22 @@
     
     NSString *bundleName = url.scheme;
     NSString *moduleName = url.host;
-    NSString *abilityName = url.query;
-    
+    NSString *abilityName, *params;
+
+    NSURLComponents * urlComponents = [NSURLComponents componentsWithString:url.absoluteString];
+    NSArray <NSURLQueryItem *> *array = urlComponents.queryItems;
+    for (NSURLQueryItem * item in array) {
+        if ([item.name isEqualToString:@"abilityName"]) {
+            abilityName = item.value;
+        } else if ([item.name isEqualToString:@"params"]) {
+            params = item.value;
+        }
+    }
+
     [self handleOpenUrlWithBundleName:bundleName
                            moduleName:moduleName
                           abilityName:abilityName
-                               params:@"more parameters", nil];
+                               params:params, nil];
     
     return YES;
 }
@@ -66,8 +76,9 @@
     
     if ([moduleName isEqualToString:@"entry"] && [abilityName isEqualToString:@"EntryAbility"]) {
         NSString *instanceName = [NSString stringWithFormat:@"%@:%@:%@",bundleName, moduleName, abilityName];
-        EntryEntryAbilityViewController *otherVC = [[EntryEntryAbilityViewController alloc] initWithInstanceName:instanceName];
-        subStageVC = (EntryEntryAbilityViewController *)otherVC;
+        EntryEntryAbilityViewController *entryOtherVC = [[EntryEntryAbilityViewController alloc] initWithInstanceName:instanceName];
+        entryOtherVC.params = params;
+        subStageVC = (EntryEntryAbilityViewController *)entryOtherVC;
     } // other ViewController
     
     if (!subStageVC) {

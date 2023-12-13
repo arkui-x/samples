@@ -54,8 +54,7 @@ struct Logo {
           delay: 100,
           onFinish: () => {
             setTimeout(() => {
-              // @ts-ignore
-              router.replaceUrl({ url: 'pages/Home' })
+              router.pushUrl({ url: 'pages/Home' })
             }, 1000)
           }
         }, () => {

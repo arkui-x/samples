@@ -9,4 +9,3 @@
 /.clang-format
 /.clang-tidy
 **/.test
-/oh-package-lock.json

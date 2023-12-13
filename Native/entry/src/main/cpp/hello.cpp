@@ -16,7 +16,6 @@
 
 static napi_value Add(napi_env env, napi_callback_info info)
 {
-    size_t requireArgc = 2;
     size_t argc = 2;
     napi_value args[2] = {nullptr};
 
@@ -27,6 +26,12 @@ static napi_value Add(napi_env env, napi_callback_info info)
 
     napi_valuetype valuetype1;
     napi_typeof(env, args[1], &valuetype1);
+
+    if ((valuetype0 != napi_number) || (valuetype1 != napi_number)) {
+        napi_value undefined = nullptr;
+        napi_get_undefined(env, &undefined);
+        return undefined;
+    }
 
     double value0;
     napi_get_value_double(env, args[0], &value0);
@@ -41,11 +46,33 @@ static napi_value Add(napi_env env, napi_callback_info info)
 
 }
 
+static napi_value NativeCallArkTS(napi_env env, napi_callback_info info) {
+    size_t argc = 1;
+    napi_value args[1] = {nullptr};
+    napi_get_cb_info(env, info, &argc, args, nullptr, nullptr);
+
+    napi_valuetype valuetype = napi_undefined;
+    napi_typeof(env, args[0], &valuetype);
+
+    if (valuetype != napi_function) {
+        napi_value undefined = nullptr;
+        napi_get_undefined(env, &undefined);
+        return undefined;
+    }
+
+    napi_value argv = nullptr;
+    napi_create_string_utf8(env, "hello", NAPI_AUTO_LENGTH, &argv);
+    napi_value result = nullptr;
+    napi_call_function(env, nullptr, args[0], 1, &argv, &result);
+    return result;
+}
+
 EXTERN_C_START
 static napi_value Init(napi_env env, napi_value exports)
 {
     napi_property_descriptor desc[] = {
-        { "add", nullptr, Add, nullptr, nullptr, nullptr, napi_default, nullptr }
+        { "add", nullptr, Add, nullptr, nullptr, nullptr, napi_default, nullptr },
+        { "nativeCallArkTS", nullptr, NativeCallArkTS, nullptr, nullptr, nullptr, napi_default, nullptr },
     };
     napi_define_properties(env, exports, sizeof(desc) / sizeof(desc[0]), desc);
     return exports;
