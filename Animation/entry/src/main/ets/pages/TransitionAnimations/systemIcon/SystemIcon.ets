@@ -6,6 +6,8 @@ struct SystemIcon {
   @State sliderValue: number = 100;
   @State centralDiameter: number = 12; // 中心圆直径
   @State lineWidth: number = 6; // 线条宽度
+  @State touchDown: number = 0
+  private panOption: PanGestureOptions = new PanGestureOptions({ direction: PanDirection.Down | PanDirection.Up })
 
   build() {
     Column() {
@@ -20,16 +22,17 @@ struct SystemIcon {
             reverse: true
           })
             .id('systemIcons_slider')
-            .width(54)
-            .height(130)
-            .trackThickness(54)
+            .width(80)
+            .height(300)
+            .trackThickness(80)
             .showTips(false)
             .trackColor($r('app.color.COLOR_80000000'))
             .blockColor($r('app.color.COLOR_FFFFFF'))
             .selectedColor($r('app.color.COLOR_FFFFFF'))
             .onChange((value: number, mode: SliderChangeMode) => {
+              console.log('ontuchslider', value)
               this.sliderValue = value;
-              if (this.sliderValue <= 50) {
+              if (this.sliderValue <= 30) {
                 this.centralDiameter = 8;
                 this.lineWidth = 1;
               } else {
@@ -38,31 +41,59 @@ struct SystemIcon {
               }
             })
 
-          // 亮度图标
-          Stack() {
-            // 中心圆
-            Text()
-              .width(this.centralDiameter)
-              .height(this.centralDiameter)
-              .animation({ duration: 500, curve: "ease" })
-              .borderRadius(8)
-              .backgroundColor($r('app.color.COLOR_8C9BA2'))
+          Column() {
+            // 亮度图标
+            Stack() {
+              // 中心圆
+              Text()
+                .width(this.centralDiameter)
+                .height(this.centralDiameter)
+                .animation({ duration: 500, curve: "ease" })
+                .borderRadius(8)
+                .backgroundColor($r('app.color.COLOR_8C9BA2'))
 
-            this.lineComponent(0)
-            this.lineComponent(45)
-            this.lineComponent(90)
-            this.lineComponent(-45)
+              this.lineComponent(0)
+              this.lineComponent(45)
+              this.lineComponent(90)
+              this.lineComponent(-45)
+            }
+            .width(30)
+            .height(30)
+            .margin({ bottom: 30 })
+            .alignContent(Alignment.Center)
           }
-          .width(30)
-          .height(30)
-          .margin({ bottom: 30 })
-          .alignContent(Alignment.Center)
+          .gesture(
+            PanGesture(this.panOption)
+              .onActionStart((event?: GestureEvent) => {
+                if (event) {
+                  this.touchDown = event.offsetY
+                }
+              })
+              .onActionUpdate((event?: GestureEvent) => {
+                if (event) {
+                  if (event.offsetX - this.touchDown > 0) {
+                    animateTo({ duration: 500, curve: Curve.Friction }, () => {
+                      this.sliderValue = (this.sliderValue - event.offsetY + this.touchDown) / 2
+                    })
+                  } else {
+                    animateTo({ duration: 500, curve: Curve.Friction }, () => {
+                      this.sliderValue = this.sliderValue - this.touchDown - event.offsetY
+                    })
+                  }
+                }
+              })
+          )
+          .onClick(() => {
+            animateTo({ duration: 500, curve: Curve.Friction }, () => {
+              this.sliderValue = 30
+            })
+          })
         }
         .width(54)
         .height(130)
         .offset({ x: 34, y: -10 })
         .alignContent(Alignment.Bottom)
-        .translate({x:-50})
+        .translate({ x: -50 })
       }
       .width(340)
       .height(640)

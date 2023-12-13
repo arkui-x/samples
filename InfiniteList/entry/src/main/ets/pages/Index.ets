@@ -6,6 +6,7 @@ import { InfiniteData } from '../bean/InfiniteData'
 struct Index {
   @State myData: MyDataSource = new MyDataSource()
   @State isReachEnd: number = 0
+  @State control: boolean = true
 
   build() {
     Row() {
@@ -42,8 +43,11 @@ struct Index {
         }
         .cachedCount(8)
         .onReachEnd(() => {
-          if (!this.isReachEnd) {
-            this.isReachEnd = setTimeout(() => {
+          if (this.control) {
+            this.control = false
+            const now = new Date().getTime()
+            if (now - this.isReachEnd >= 350) {
+              this.isReachEnd = now
               AlertDialog.show(
                 {
                   title: 'tips',
@@ -54,7 +58,8 @@ struct Index {
                   primaryButton: {
                     value: '取消',
                     action: () => {
-                      this.isReachEnd = 0
+                      this.isReachEnd = new Date().getTime()
+                      this.control = true
                     }
                   },
                   secondaryButton: {
@@ -64,15 +69,19 @@ struct Index {
                       const count = total / 200
                       const moreData: Array<InfiniteData> = this.myData.setData(count)
                       this.myData.addBatchData(moreData)
-                      this.isReachEnd = 0
+                      this.isReachEnd = new Date().getTime()
+                      this.control = true
                     }
                   },
                   cancel: () => {
-                    this.isReachEnd = 0
+                    this.isReachEnd = new Date().getTime()
+                    this.control = true
                   }
                 }
               )
-            }, 350)
+            } else {
+              this.isReachEnd = now
+            }
           }
         })
       }

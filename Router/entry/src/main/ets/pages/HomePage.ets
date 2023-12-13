@@ -100,7 +100,6 @@ struct HomePage {
             }
             .barHeight(70)
             .margin({ top: -8 })
-            .scrollable(false)
             .onChange((index) => {
               this.homeTabTopIndex = index;
             })

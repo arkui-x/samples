@@ -70,7 +70,7 @@ struct PageTransitionSampleTo {
         this.bottomY = ANIMATION_PROGRESS * progress
         this.leftX = -ANIMATION_PROGRESS * progress
         this.rightX = ANIMATION_PROGRESS * progress
-        this.progress = 0
+        this.progress = progress
       })
   }
 }

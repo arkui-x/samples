@@ -90,7 +90,7 @@ export struct ScrollItem {
     let an = Math.pow((1 - sx) * 30, 2);
     this.angle = an > 90 ? 90 : an;
     let y = Math.log((2 - sx)) * -(this.windowHeight * 2);
-    this.translateY = y > 0 ? 0 : y;
+    this.translateY = y > 0 ? 0 : (y + 120);
     console.info('Pan sx:' + this.sx);
     console.info('Pan scaleX:' + this.scaleX);
     console.info('Pan translateY:' + this.translateY);
