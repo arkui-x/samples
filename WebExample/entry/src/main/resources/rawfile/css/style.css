@@ -65,6 +65,7 @@ h1 {
 	position: fixed;
 	width: 100%;
 	border-bottom: 1px solid #999999;
+	z-index: 99;
 }
 
 /** Controls for the demo (left column) */
