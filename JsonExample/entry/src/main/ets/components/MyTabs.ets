@@ -137,27 +137,39 @@ export default struct MyTabs {
               }
               .padding(10)
 
-              Scroll(this.scroller) {
-                if (this.editable) {
-                  if (this.currentIndex === index) {
-                    if (this.showFormat) {
+              if (this.editable) {
+                if (this.currentIndex === index) {
+                  if (this.showFormat) {
+                    Scroll(this.scroller) {
                       JSONParseContent({ innerContent: this.formatContent })
                     }
-                    if (this.showStr) {
-                      JSONStrContent({ innerContent: this.strContent })
-                    }
-                  }
-                } else {
-                  if (this.showFormat) {
-                    JSONParseContent({ innerContent: this.tabs[index].getTabContent() })
+                      .height('65%')
+                      .edgeEffect(EdgeEffect.Fade)
                   }
                   if (this.showStr) {
-                    JSONStrContent({ innerContent: this.tabs[index].getTabContent() })
+                    Scroll(this.scroller) {
+                      JSONStrContent({ innerContent: this.strContent })
+                    }
+                      .height('65%')
+                      .edgeEffect(EdgeEffect.Fade)
                   }
                 }
+              } else {
+                if (this.showFormat) {
+                  Scroll(this.scroller) {
+                    JSONParseContent({ innerContent: this.tabs[index].getTabContent() })
+                  }
+                    .height('65%')
+                    .edgeEffect(EdgeEffect.Fade)
+                }
+                if (this.showStr) {
+                  Scroll(this.scroller) {
+                    JSONStrContent({ innerContent: this.tabs[index].getTabContent() })
+                  }
+                    .height('65%')
+                    .edgeEffect(EdgeEffect.Fade)
+                }
               }
-              .height('65%')
-              .edgeEffect(EdgeEffect.Fade)
             }
           }
           .padding(20)
