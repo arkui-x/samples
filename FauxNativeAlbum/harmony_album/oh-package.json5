@@ -1,0 +1,15 @@
+{
+  "license": "",
+  "devDependencies": {
+    "@ohos/hypium": "1.0.6"
+  },
+  "author": "",
+  "name": "ElectronicAlbum",
+  "description": "Please describe the basic information.",
+  "main": "",
+  "version": "1.0.0",
+  "dependencies": {
+    "@ohos/mp4parser": "^2.0.0"
+  },
+  "compileOnlyDependencies": {}
+}
