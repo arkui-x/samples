@@ -1,0 +1,21 @@
+{
+  "C:\\Users\\admin\\Desktop\\sample1017\\jinritoutiao\\entry\\src\\main\\ets\\entryability\\EntryAbility.ets": [
+    "ohos.hilog",
+    "ohos.app.ability.UIAbility"
+  ],
+  "C:\\Users\\admin\\Desktop\\sample1017\\jinritoutiao\\entry\\src\\main\\ets\\pages\\NewsDetail.ets": [
+    "ohos.router"
+  ],
+  "C:\\Users\\admin\\Desktop\\sample1017\\jinritoutiao\\entry\\src\\main\\ets\\pages\\NewHomePage.ets": [
+    "ohos.promptAction"
+  ],
+  "C:\\Users\\admin\\Desktop\\sample1017\\jinritoutiao\\entry\\src\\main\\ets\\pages\\components\\VideoPage.ets": [
+    "ohos.promptAction"
+  ],
+  "C:\\Users\\admin\\Desktop\\sample1017\\jinritoutiao\\entry\\src\\main\\ets\\pages\\components\\NewHomeItem.ets": [
+    "ohos.router"
+  ],
+  "C:\\Users\\admin\\Desktop\\sample1017\\jinritoutiao\\entry\\src\\main\\ets\\pages\\util\\Request.ets": [
+    "ohos.net.http"
+  ]
+}

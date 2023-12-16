@@ -1,0 +1,395 @@
+{
+    "record" : 
+    [
+        {
+            "id" : "0x01000000",
+            "name" : "app_name",
+            "type" : "string"
+        },
+        {
+            "id" : "0x01000001",
+            "name" : "app_icon",
+            "type" : "media"
+        },
+        {
+            "id" : "0x01000002",
+            "name" : "EntryAbility_desc",
+            "type" : "string"
+        },
+        {
+            "id" : "0x01000003",
+            "name" : "EntryAbility_label",
+            "type" : "string"
+        },
+        {
+            "id" : "0x01000004",
+            "name" : "module_desc",
+            "type" : "string"
+        },
+        {
+            "id" : "0x01000005",
+            "name" : "start_window_background",
+            "type" : "color"
+        },
+        {
+            "id" : "0x01000006",
+            "name" : "Back",
+            "type" : "media"
+        },
+        {
+            "id" : "0x01000007",
+            "name" : "anquan",
+            "type" : "media"
+        },
+        {
+            "id" : "0x01000008",
+            "name" : "apple",
+            "type" : "media"
+        },
+        {
+            "id" : "0x01000009",
+            "name" : "bofang",
+            "type" : "media"
+        },
+        {
+            "id" : "0x0100000A",
+            "name" : "cha",
+            "type" : "media"
+        },
+        {
+            "id" : "0x0100000B",
+            "name" : "denglu",
+            "type" : "media"
+        },
+        {
+            "id" : "0x0100000C",
+            "name" : "douyinhaoyou",
+            "type" : "media"
+        },
+        {
+            "id" : "0x0100000D",
+            "name" : "douyinrichang",
+            "type" : "media"
+        },
+        {
+            "id" : "0x0100000E",
+            "name" : "duihao",
+            "type" : "media"
+        },
+        {
+            "id" : "0x0100000F",
+            "name" : "duihaoyi",
+            "type" : "media"
+        },
+        {
+            "id" : "0x01000010",
+            "name" : "fankui",
+            "type" : "media"
+        },
+        {
+            "id" : "0x01000011",
+            "name" : "fuzhilianjie",
+            "type" : "media"
+        },
+        {
+            "id" : "0x01000012",
+            "name" : "gantanhao",
+            "type" : "media"
+        },
+        {
+            "id" : "0x01000013",
+            "name" : "ic_collect",
+            "type" : "media"
+        },
+        {
+            "id" : "0x01000014",
+            "name" : "ic_device_earphone_filled",
+            "type" : "media"
+        },
+        {
+            "id" : "0x01000015",
+            "name" : "ic_fail_refresh",
+            "type" : "media"
+        },
+        {
+            "id" : "0x01000016",
+            "name" : "ic_gallery_album_damage_video",
+            "type" : "media"
+        },
+        {
+            "id" : "0x01000017",
+            "name" : "ic_gallery_album_damage_video_click",
+            "type" : "media"
+        },
+        {
+            "id" : "0x01000018",
+            "name" : "ic_gallery_photoedit_more",
+            "type" : "media"
+        },
+        {
+            "id" : "0x01000019",
+            "name" : "ic_love",
+            "type" : "media"
+        },
+        {
+            "id" : "0x0100001A",
+            "name" : "ic_more",
+            "type" : "media"
+        },
+        {
+            "id" : "0x0100001B",
+            "name" : "ic_public_add_filled",
+            "type" : "media"
+        },
+        {
+            "id" : "0x0100001C",
+            "name" : "ic_public_appstore",
+            "type" : "media"
+        },
+        {
+            "id" : "0x0100001D",
+            "name" : "ic_public_appstore_click",
+            "type" : "media"
+        },
+        {
+            "id" : "0x0100001E",
+            "name" : "ic_public_arrow_left",
+            "type" : "media"
+        },
+        {
+            "id" : "0x0100001F",
+            "name" : "ic_public_cancel",
+            "type" : "media"
+        },
+        {
+            "id" : "0x01000020",
+            "name" : "ic_public_contacts",
+            "type" : "media"
+        },
+        {
+            "id" : "0x01000021",
+            "name" : "ic_public_contacts_click",
+            "type" : "media"
+        },
+        {
+            "id" : "0x01000022",
+            "name" : "ic_public_drag_handle_filled",
+            "type" : "media"
+        },
+        {
+            "id" : "0x01000023",
+            "name" : "ic_public_input_search",
+            "type" : "media"
+        },
+        {
+            "id" : "0x01000024",
+            "name" : "ic_public_play",
+            "type" : "media"
+        },
+        {
+            "id" : "0x01000025",
+            "name" : "ic_public_play_click",
+            "type" : "media"
+        },
+        {
+            "id" : "0x01000026",
+            "name" : "ic_public_share",
+            "type" : "media"
+        },
+        {
+            "id" : "0x01000027",
+            "name" : "ic_public_view_list",
+            "type" : "media"
+        },
+        {
+            "id" : "0x01000028",
+            "name" : "ic_public_view_list_click",
+            "type" : "media"
+        },
+        {
+            "id" : "0x01000029",
+            "name" : "ic_pull_down_refresh",
+            "type" : "media"
+        },
+        {
+            "id" : "0x0100002A",
+            "name" : "ic_pull_up_load",
+            "type" : "media"
+        },
+        {
+            "id" : "0x0100002B",
+            "name" : "ic_pull_up_refresh",
+            "type" : "media"
+        },
+        {
+            "id" : "0x0100002C",
+            "name" : "ic_review",
+            "type" : "media"
+        },
+        {
+            "id" : "0x0100002D",
+            "name" : "ic_share",
+            "type" : "media"
+        },
+        {
+            "id" : "0x0100002E",
+            "name" : "ic_succeed_refresh",
+            "type" : "media"
+        },
+        {
+            "id" : "0x0100002F",
+            "name" : "icon",
+            "type" : "media"
+        },
+        {
+            "id" : "0x01000030",
+            "name" : "iphone",
+            "type" : "media"
+        },
+        {
+            "id" : "0x01000031",
+            "name" : "jiazaizhong",
+            "type" : "media"
+        },
+        {
+            "id" : "0x01000032",
+            "name" : "loading",
+            "type" : "media"
+        },
+        {
+            "id" : "0x01000033",
+            "name" : "peng_you_quan",
+            "type" : "media"
+        },
+        {
+            "id" : "0x01000034",
+            "name" : "refresh",
+            "type" : "media"
+        },
+        {
+            "id" : "0x01000035",
+            "name" : "shaohou",
+            "type" : "media"
+        },
+        {
+            "id" : "0x01000036",
+            "name" : "share_icon",
+            "type" : "media"
+        },
+        {
+            "id" : "0x01000037",
+            "name" : "shebeilixian",
+            "type" : "media"
+        },
+        {
+            "id" : "0x01000038",
+            "name" : "shense",
+            "type" : "media"
+        },
+        {
+            "id" : "0x01000039",
+            "name" : "shoucang",
+            "type" : "media"
+        },
+        {
+            "id" : "0x0100003A",
+            "name" : "tian",
+            "type" : "media"
+        },
+        {
+            "id" : "0x0100003B",
+            "name" : "toutiao",
+            "type" : "media"
+        },
+        {
+            "id" : "0x0100003C",
+            "name" : "uri1",
+            "type" : "media"
+        },
+        {
+            "id" : "0x0100003D",
+            "name" : "uri2",
+            "type" : "media"
+        },
+        {
+            "id" : "0x0100003E",
+            "name" : "uri3",
+            "type" : "media"
+        },
+        {
+            "id" : "0x0100003F",
+            "name" : "uri4",
+            "type" : "media"
+        },
+        {
+            "id" : "0x01000040",
+            "name" : "uri5",
+            "type" : "media"
+        },
+        {
+            "id" : "0x01000041",
+            "name" : "user1",
+            "type" : "media"
+        },
+        {
+            "id" : "0x01000042",
+            "name" : "user2",
+            "type" : "media"
+        },
+        {
+            "id" : "0x01000043",
+            "name" : "user3",
+            "type" : "media"
+        },
+        {
+            "id" : "0x01000044",
+            "name" : "user4",
+            "type" : "media"
+        },
+        {
+            "id" : "0x01000045",
+            "name" : "user55",
+            "type" : "media"
+        },
+        {
+            "id" : "0x01000046",
+            "name" : "user6",
+            "type" : "media"
+        },
+        {
+            "id" : "0x01000047",
+            "name" : "user7",
+            "type" : "media"
+        },
+        {
+            "id" : "0x01000048",
+            "name" : "user_info1",
+            "type" : "media"
+        },
+        {
+            "id" : "0x01000049",
+            "name" : "wei_xin",
+            "type" : "media"
+        },
+        {
+            "id" : "0x0100004A",
+            "name" : "xitongfenxiang",
+            "type" : "media"
+        },
+        {
+            "id" : "0x0100004B",
+            "name" : "youjian",
+            "type" : "media"
+        },
+        {
+            "id" : "0x0100004C",
+            "name" : "ziti",
+            "type" : "media"
+        },
+        {
+            "id" : "0x0100004D",
+            "name" : "main_pages",
+            "type" : "profile"
+        }
+    ]
+}
