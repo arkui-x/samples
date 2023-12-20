@@ -1,0 +1,16 @@
+{
+	"BuildOptions":{
+		"BUNDLE_NAME":"com.example.multiability",
+		"SELECT_BUILD_MODE":"",
+		"BUILD_PATH":{
+			"OUTPUT_PATH":"/Users/arkuix/temp/zhengchao/temp/ace/MultiAbility/build/outputs/default"
+		},
+		"SELECT_BUILD_PRODUCT":"default"
+	},
+	"CommonInfo":{
+		"crossplatform.projectType":"application",
+		"project.ide.version":"4.0.0.600",
+		"current.select.product":"default",
+		"current.select.buildMode":""
+	}
+}
