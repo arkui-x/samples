@@ -16,6 +16,7 @@
   - ['Files'：Files（API10）](Files)
   - ['InfiniteList'：InfiniteList（API10）](InfiniteList)
   - ['JsonExample'：JsonExample（API10）](JsonExample)
+  - ['PlatformBridge'：PlatformBridge（API10）](PlatformBridge)
   - ['Router'：Router（API10）](Router)
 - 精品应用
   - ['Shopping'：购物示例应用（API10）](Shopping)
@@ -34,6 +35,7 @@ samples
 |---Files               # 读写文件
 |---InfiniteList        # 无限列表功能
 |---JsonExample         # 使用不同的库反序列化一组json字符串
+|---PlatformBridge      # 平台桥接功能
 |---Router              # 页面跳转
 |---Shopping            # 精品应用购物
 |---HealthyDiet         # 精品应用健康饮食

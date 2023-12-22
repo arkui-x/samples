@@ -59,6 +59,7 @@ Note:If the text contains special characters, please escape them according to th
                 <filteritem type="filename" name="gradle-wrapper.jar" desc="Android工程模版自带的打包工具"/>
                 <filteritem type="filepath" name="HelloWorld/ios/.*.xcuserstate" desc="iOS工程固定配置文件"/>
                 <filteritem type="filepath" name="HelloWorld/screenshots/.*.png|.*.jpg" desc="运行结果截图"/>
+                <filteritem type="filepath" name="PlatformBridge/ios/.*.xcuserstate" desc="iOS工程固定配置文件"/>
                 <filteritem type="filepath" name="Shopping/source/entry/src/main/ets/MainAbility/resources/.*.png" desc="具备版权的图片"/>
                 <filteritem type="filepath" name="Shopping/android/app/src/main/assets/js/MainAbility/resources/.*.png" desc="具备版权的图片"/>
                 <filteritem type="filepath" name="Shopping/ios/.*.xcuserstate" desc="iOS工程固定配置文件"/>
@@ -113,6 +114,16 @@ Note:If the text contains special characters, please escape them according to th
                 <filteritem type="filepath" name="HelloWorld/android/.*.xml|.*.java" desc="示例展示无需添加License头"/>
                 <filteritem type="filepath" name="HelloWorld/ios/.*.plist|.*.modulemap|.*.storyboard|.*.pbxproj|.*.xcworkspacedata|.*.podspec" desc="xcode工程文件无需添加License头"/>
                 <filteritem type="filepath" name="HelloWorld/source/.*.ets" desc="示例展示无需添加License头"/>
+            </filefilter>
+            <filefilter name="copyrightPolicyFilter" desc="PlatformBridge Copyright文件头校验策略的过滤条件" >
+                <filteritem type="filepath" name="PlatformBridge/android/.*.xml|.*.java" desc="示例展示无需添加版权头"/>
+                <filteritem type="filepath" name="PlatformBridge/ios/.*.plist|.*.modulemap|.*.storyboard|.*.pbxproj|.*.xcworkspacedata|.*.podspec" desc="xcode工程文件无需添加License头"/>
+                <filteritem type="filepath" name="PlatformBridge/source/.*.ets" desc="示例展示无需添加版权头"/>
+            </filefilter>
+            <filefilter name="defaultPolicyFilter" desc="PlatformBridge License文件头校验策略的过滤条件" >
+                <filteritem type="filepath" name="PlatformBridge/android/.*.xml|.*.java" desc="示例展示无需添加License头"/>
+                <filteritem type="filepath" name="PlatformBridge/ios/.*.plist|.*.modulemap|.*.storyboard|.*.pbxproj|.*.xcworkspacedata|.*.podspec" desc="xcode工程文件无需添加License头"/>
+                <filteritem type="filepath" name="PlatformBridge/source/.*.ets" desc="示例展示无需添加License头"/>
             </filefilter>
         </filefilterlist>
     </oatconfig>
