@@ -8,4 +8,4 @@ include_directories(${NATIVERENDER_ROOT_PATH}
                               ${NATIVERENDER_ROOT_PATH}/include)
 
 add_library(entry SHARED hello.cpp)
-target_link_libraries(entry PUBLIC libace_napi.z.so)
+target_link_libraries(entry PUBLIC libace_napi.z.so libuv.so)
