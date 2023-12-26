@@ -59,9 +59,10 @@ struct SystemIcon {
             }
             .width(30)
             .height(30)
-            .margin({ bottom: 30 })
             .alignContent(Alignment.Center)
           }
+          .offset({ x: 0, y: -60 })
+
           .gesture(
             PanGesture(this.panOption)
               .onActionStart((event?: GestureEvent) => {
@@ -85,7 +86,9 @@ struct SystemIcon {
           )
           .onClick(() => {
             animateTo({ duration: 500, curve: Curve.Friction }, () => {
-              this.sliderValue = 30
+              this.sliderValue = 15
+              this.centralDiameter = 8;
+              this.lineWidth = 1;
             })
           })
         }

@@ -58,7 +58,7 @@ export default struct MyTabs {
             Column() {
               if (this.editable) {
                 TextArea({
-                  text: item.getTabContent().length > 0 ? `"${item.getTabContent()}"` : item.getTabContent()
+                  text: item.getTabContent()
                 })
                   .height('25%')
                   .onChange((value) => {
