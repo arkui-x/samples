@@ -1,5 +1,3 @@
-import router from '@ohos.router'
-
 @Component
 export struct LogInPage {
   @Link showLogIn: boolean
@@ -16,7 +14,7 @@ export struct LogInPage {
             animateTo({
               duration: 100,
               curve: Curve.Linear,
-              onFinish:()=>{
+              onFinish: () => {
                 this.showLogIn = false
               }
             }, () => {

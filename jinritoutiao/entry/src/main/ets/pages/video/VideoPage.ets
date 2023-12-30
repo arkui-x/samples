@@ -44,11 +44,11 @@ export struct VideoPage {
       } else {
         List({ scroller: this.scroller, space: 15 }) {
           LazyForEach(this.videoMap, (t: NewsItem, i: number) => {
-              ListItem() {
-                VideoItem({
-                  t: t
-                })
-              }.padding({ left: 15, right: 15 })
+            ListItem() {
+              VideoItem({
+                t: t
+              })
+            }.padding({ left: 15, right: 15 })
           }, (t: NewsItem, i: number) => i.toString())
         }
         .edgeEffect(EdgeEffect.None)

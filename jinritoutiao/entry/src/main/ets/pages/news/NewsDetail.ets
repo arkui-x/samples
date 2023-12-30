@@ -32,19 +32,19 @@ struct NewDetails {
   @State isLogIn: boolean = false
   @State shareOverLay: string = 'share'
   @State isLoading: boolean = false
-  @State source: string = '' //作者
-  @State diggCount: number = 0 // 点赞数
-  @State title: string = '' // 新闻title
-  @State commentCount: number = 0 //评论数
-  @State publishTime: number = 0 //发布时间
-  @State shareCount: number = 0 // 分享数
-  @State avatarUrl: string = '' //作者头像
-  @State content: string = '' //文章内容
+  @State source: string = '' //author
+  @State diggCount: number = 0 // of Likes
+  @State title: string = '' // news title
+  @State commentCount: number = 0 // review
+  @State publishTime: number = 0 // Release time
+  @State shareCount: number = 0 // Number of shares
+  @State avatarUrl: string = '' //Author profile picture
+  @State content: string = '' //Article content
   @State imageList: Resource[] = []
   @State review: Review[] = []
   @State isLoadAll: boolean = false
   @State isTopMore: boolean = false
-  @State isReview: boolean = true
+  @State isReviewY: number = 0
 
   aboutToAppear() {
     let params = router.getParams() as Params
@@ -62,6 +62,12 @@ struct NewDetails {
       this.review = getReviewList(10)
     } else {
       this.review = getReviewList(params.comment_count)
+    }
+    const count: number = this.content ? 200 : 180
+    if (params.image_list.length) {
+      this.isReviewY = this.imageList.length * 300 + (this.imageList.length - 1) * 20 + count
+    } else {
+      this.isReviewY = 170
     }
   }
 
@@ -104,7 +110,7 @@ struct NewDetails {
   @Builder
   Review() {
     Column() {
-      // 评论头部
+      // Comment header
       Column() {
         Flex({ justifyContent: FlexAlign.SpaceBetween }) {
           Text(`评论 ${this.commentCount}`).width('50%').id('review')
@@ -126,7 +132,7 @@ struct NewDetails {
         .width('100%')
       }
 
-      // 评论详情
+      // Comment details
       Column() {
         ForEach(this.review, (t: Review, i: number) => {
           Flex({ direction: FlexDirection.Column }) {
@@ -727,30 +733,10 @@ struct NewDetails {
               Text(`${this.commentCount}`)
             }
             .onClick(() => {
-              if (this.isReview) {
-                let reviewId = getInspectorByKey('review');
-                let reviewRect: itTmp = JSON.parse(reviewId);
-                // 官方文档获取的方式有问题： let rectInfo:Array<object> = JSON.parse('[' + rect.$rect + ']');
-                let reviewInfo: Array<string> = reviewRect.$rect.replace('][', ',')
-                  .replace('[', '')
-                  .replace(']', '')
-                  .split(',')
-                let reviewTop: number = Number(reviewInfo[1]);
-                let reviewBottom: number = Number(reviewInfo[3]);
-                let reviewY = ((reviewTop + (reviewBottom - reviewTop) / 2)) / 2
-                console.log('reviewY', reviewY)
-                // 这里getInspectorByKey安卓与oh获取值不一样，oh:508.5  安卓：844.5
-                this.scroller.scrollTo({ xOffset: 0, yOffset: reviewY, animation: {
-                  duration: 500,
-                  curve: Curve.Linear
-                } })
-              } else {
-                this.scroller.scrollTo({ xOffset: 0, yOffset: 0, animation: {
-                  duration: 500,
-                  curve: Curve.Linear
-                } })
-              }
-              this.isReview = !this.isReview
+              this.scroller.scrollTo({ xOffset: 0, yOffset: this.isReviewY, animation: {
+                duration: 500,
+                curve: Curve.Smooth
+              } })
             })
 
             Flex({ justifyContent: FlexAlign.Center, alignItems: ItemAlign.Center }) {

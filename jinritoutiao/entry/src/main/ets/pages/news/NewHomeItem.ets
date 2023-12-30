@@ -48,14 +48,14 @@ export struct NewHomeItem {
           }
           .height(45)
           .onClick(() => {
-            console.log('this.t.has_image',this.t.has_image)
+            console.log('this.t.has_image', this.t.has_image)
             if (this.t.has_image) {
               if (this.t.detail_image_list) {
                 this.skipRouter(this.t.detail_image_list)
-              }else if (this.t.image_list) {
+              } else if (this.t.image_list) {
                 let imgAry: ImageList[] = this.t.image_list.map((t: ImageList): ImageList => new ImageList(t.height, t.uri, t.url.replace('http', 'https'), t.url_list, t.width))
                 this.skipRouter(imgAry)
-              }else {
+              } else {
                 this.skipRouter([])
               }
             } else {

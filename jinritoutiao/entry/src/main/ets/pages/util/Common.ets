@@ -1,24 +1,13 @@
-import {
-  images,
-  imgs,
-  Review,
-  reviewAgo,
-  reviewContent,
-  reviewImg,
-  reviewLove,
-  reviewName,
-  videos,
-  where
-} from './Mock'
+import { Review, reviewAgo, reviewContent, reviewImg, reviewLove, reviewName, where } from './Mock'
 
 export function debounce(fn: () => void, delay: number) {
   let timer = 0
   const _debounce = () => {
-    // 取消上一次的定时器
+    // Example Cancel the last timer
     if (timer) clearTimeout(timer)
-    // 延迟执行
+    // Deferred execution
     timer = setTimeout(() => {
-      // 外部传入的真正要执行的函数
+      // The actual function passed in from the outside to be executed
       fn()
       timer = 0
     }, delay)
@@ -49,7 +38,7 @@ export function getReviewList(length: number): Review[] {
 }
 
 export function getTimeStr(timestamp: number) {
-  const diff = timestamp / 1000; // 毫秒转换为秒
+  const diff = timestamp / 1000; // Milliseconds are converted to seconds
 
   if (diff < 60) {
     return "刚刚";
@@ -61,14 +50,5 @@ export function getTimeStr(timestamp: number) {
     return Math.floor(diff / 86400) + "天前";
   } else {
     return '一个月前';
-  }
-}
-
-export function getVideoRandom(key: string) {
-  let random = Math.floor(Math.random() * 5)
-  if (key === 'src') {
-    return videos[random]
-  } else {
-    return images[random]
   }
 }

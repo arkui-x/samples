@@ -3,6 +3,7 @@ import { homePageRequest, NewsItem } from '../util/Request'
 import promptAction from '@ohos.promptAction'
 import { NewsSource } from './NewsLazy'
 import { OfflinePage } from '../components/OfflinePage'
+
 @Component
 export struct NewHomePage {
   scroller: Scroller = new Scroller()

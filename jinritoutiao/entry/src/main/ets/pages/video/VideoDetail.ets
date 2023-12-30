@@ -1,6 +1,10 @@
-import { getVideoRandom } from '../util/Common'
 import router from '@ohos.router';
 import promptAction from '@ohos.promptAction';
+import { images, videos } from '../util/Mock';
+
+interface Params {
+  random: number;
+}
 
 @Entry
 @Component
@@ -8,6 +12,12 @@ struct VideoDetail {
   controller: VideoController = new VideoController();
   @State isPlay: boolean = false
   @State isPrepared: boolean = false
+  private random: number = 0
+
+  aboutToAppear() {
+    let params = router.getParams() as Params
+    this.random = params.random
+  }
 
   @Builder
   VideoOverlay() {
@@ -81,8 +91,8 @@ struct VideoDetail {
       Column() {
         Column() {
           Video({
-            src: getVideoRandom('src'),
-            previewUri: getVideoRandom('uri'),
+            src: videos[this.random],
+            previewUri: images[this.random],
             controller: this.controller,
           })
             .height(240)
@@ -98,7 +108,7 @@ struct VideoDetail {
             .onError(() => {
               promptAction.showToast({ message: '视频播放失败，请稍后重试' });
             })
-            .onFinish(()=>{
+            .onFinish(() => {
               this.isPlay = !this.isPlay
             })
         }

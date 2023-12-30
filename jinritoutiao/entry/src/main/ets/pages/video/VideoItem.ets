@@ -1,10 +1,12 @@
-import { getTimeStr, getVideoRandom } from '../util/Common'
+import { getTimeStr } from '../util/Common'
 import { NewsItem } from '../util/Request'
 import router from '@ohos.router';
+import { images } from '../util/Mock';
 
 @Component
 export struct VideoItem {
   @Prop t: NewsItem;
+  private random: number = Math.floor(Math.random() * 5)
 
   @Builder
   VideoOverlay() {
@@ -23,7 +25,7 @@ export struct VideoItem {
     .width('90%')
     .alignItems(HorizontalAlign.Center)
     .onClick(() => {
-      router.pushUrl({ url: 'pages/video/VideoDetail' })
+      router.pushUrl({ url: 'pages/video/VideoDetail', params: { random: this.random } })
     })
   }
 
@@ -31,7 +33,7 @@ export struct VideoItem {
     Column({ space: 15 }) {
       Flex({ justifyContent: FlexAlign.SpaceBetween, alignItems: ItemAlign.Center }) {
         Row() {
-          //作者头像
+          //Author profile picture
           Column() {
             Image(this.t.user_info.avatar_url)
               .height(30)
@@ -41,7 +43,7 @@ export struct VideoItem {
           }
           .borderRadius(13)
 
-          //作者昵称
+          //Author nickname
           Column() {
             Text(this.t.source)
               .fontSize(12)
@@ -50,7 +52,7 @@ export struct VideoItem {
           .padding({ left: 10, right: 10 })
         }.width('85%')
 
-        //关注按钮
+        //Follow button
         Button() {
           Text('关注')
             .fontSize(12)
@@ -64,16 +66,16 @@ export struct VideoItem {
       }
 
       Flex({ direction: FlexDirection.Column, alignItems: ItemAlign.Start }) {
-        // 视频title
+        // Video title
         Column() {
           Text(this.t.title)
             .fontSize(15)
             .maxLines(2)
         }
 
-        //视频内容
+        //Video content
         Column() {
-          Image(getVideoRandom('uri'))
+          Image(images[this.random])
             .height(240)
             .width('100%')
         }
@@ -82,18 +84,18 @@ export struct VideoItem {
         .overlay(this.VideoOverlay())
         .margin({ top: 8, bottom: 8 })
 
-        // 视频来源
+        // Video source
         Flex() {
-          // 视频来源
+          // Video source
           Text(this.t.source)
             .fontColor('#999999')
             .fontSize(12)
-          // 视频评论数
+          // Video review count
           Text(`${this.t.comment_count} 评论`)
             .fontColor('#999999')
             .fontSize(12)
             .margin({ left: 10, right: 10 })
-          // 视频发布时间
+          // Video release time
           Text(getTimeStr(this.t.behot_time - this.t.publish_time))
             .fontColor('#999999')
             .fontSize(12)

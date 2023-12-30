@@ -1,4 +1,5 @@
 import { NewsItem } from '../util/Request';
+
 class BasicDataSource implements IDataSource {
   public listeners: DataChangeListener[] = [];
 

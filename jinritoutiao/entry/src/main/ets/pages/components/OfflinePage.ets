@@ -1,7 +1,8 @@
 @Component
 export struct OfflinePage {
-  @Link isShow:boolean
-  build(){
+  @Link isShow: boolean
+
+  build() {
     Column() {
       if (this.isShow) {
         Column() {
