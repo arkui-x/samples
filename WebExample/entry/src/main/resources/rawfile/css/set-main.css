@@ -7,6 +7,35 @@ section.contents main > .set-main {
 	overflow-y: auto;
 }
 
+.set-main > #demo_controls,
+.set-main_content,
+.set-main_content > #set_target {
+	display: none;
+}
+
+.settings {
+	height: 100%;
+	width: 100%;
+	display: grid;
+}
+.settings-item {
+	grid-row: auto;
+	grid-column: auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.settings-item-sys {
+	width: 200px;
+	max-width: 80%;
+	height: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 12px;
+	border: 1px solid #999999;
+}
+
 section.contents main > .set-main > .set-main_content {
 	flex: 1;
 	display: flex;
