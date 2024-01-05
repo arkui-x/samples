@@ -48,6 +48,7 @@ export struct VideoItem {
             Text(this.t.source)
               .fontSize(12)
               .width('100%')
+              .fontColor(Color.Black)
           }
           .padding({ left: 10, right: 10 })
         }.width('85%')
@@ -71,6 +72,7 @@ export struct VideoItem {
           Text(this.t.title)
             .fontSize(15)
             .maxLines(2)
+            .fontColor(Color.Black)
         }
 
         //Video content

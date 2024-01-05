@@ -33,6 +33,7 @@ export struct NewHomeItem {
               .fontSize(15)
               .margin({ bottom: 5 })
               .maxLines(1)
+              .fontColor(Color.Black)
             Flex() {
               Text('置顶')
                 .fontColor('#f04142')
@@ -81,6 +82,7 @@ export struct NewHomeItem {
                   .fontSize(15)
                   .margin({ bottom: 10 })
                   .maxLines(1)
+                  .fontColor(Color.Black)
                 Flex({ justifyContent: FlexAlign.SpaceBetween, alignItems: ItemAlign.Start }) {
                   ForEach(this.t.image_list, (t: ImageList, i: number) => {
                     Column() {
@@ -123,6 +125,7 @@ export struct NewHomeItem {
                     .fontSize(15)
                     .margin({ bottom: 10 })
                     .maxLines(2)
+                    .fontColor(Color.Black)
                   Flex() {
                     Text(this.t.source)
                       .fontColor('#999999')

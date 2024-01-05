@@ -87,6 +87,7 @@ struct VideoDetail {
         }
       }
       .padding({ top: 20, left: 10, right: 10 })
+      .backgroundColor(Color.White)
 
       Column() {
         Column() {
@@ -121,5 +122,6 @@ struct VideoDetail {
       .height('100%')
       .width('100%')
     }
+    .backgroundColor(Color.White)
   }
 }

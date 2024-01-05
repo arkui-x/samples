@@ -31,6 +31,7 @@ export struct LogInPage {
               .fontSize(18)
               .margin({ bottom: 5 })
               .fontWeight(FontWeight.Bold)
+              .fontColor(Color.Black)
 
             Column() {
               Image($r('app.media.toutiao'))
@@ -66,10 +67,10 @@ export struct LogInPage {
               Text() {
                 Span('已阅读并同意')
                   .fontColor('#999999')
-                Span(' 用户协议')
+                Span(' 用户协议') .fontColor(Color.Black)
                 Span(' 和 ')
                   .fontColor('#999999')
-                Span('隐私政策')
+                Span('隐私政策') .fontColor(Color.Black)
               }
               .fontSize(10)
             }
@@ -148,9 +149,11 @@ export struct LogInPage {
             Flex({ justifyContent: FlexAlign.Center, alignItems: ItemAlign.Center }) {
               Text('隐私设置')
                 .fontSize(12)
+                .fontColor(Color.Black)
                 .margin({ right: 15 })
               Text('遇到问题')
                 .fontSize(12)
+                .fontColor(Color.Black)
             }
           }
 

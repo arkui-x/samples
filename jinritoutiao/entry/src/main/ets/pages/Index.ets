@@ -41,6 +41,7 @@ struct Index {
         .margin({ top: 4 })
     }
     .border({ width: { top: 1 }, color: '#999' })
+    .backgroundColor(Color.White)
     .onClick(() => {
       if (index !== 3) {
         this.botSelect = index
@@ -79,6 +80,7 @@ struct Index {
     }
     .width(50)
     .height(30)
+    .backgroundColor(Color.White)
     .onClick(() => {
       this.topSelect = index
     })
@@ -93,6 +95,7 @@ struct Index {
       Text('您还没有登录头条账号')
         .fontWeight(FontWeight.Bold)
         .margin({ top: 20, bottom: 15 })
+        .fontColor(Color.Black)
       Text('登录头条账号进入商城， 可领取更多权益')
         .fontColor('#999')
         .fontSize(12)
@@ -188,6 +191,7 @@ struct Index {
       }
       .width('100%')
       .height('100%')
+      .backgroundColor(Color.White)
       .padding({ bottom: 20 })
 
       LogInPage({ showLogIn: this.showLogIn, logInHeight: this.logInHeight })

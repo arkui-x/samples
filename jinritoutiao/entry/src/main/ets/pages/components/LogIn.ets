@@ -28,6 +28,7 @@ export struct LogIn {
         Text(`登录后可${this.shareOverLay == 'love' ? '点赞' : this.shareOverLay == 'collect' ? '收藏' : '关注'}`)
           .fontSize(14)
           .margin({ bottom: 5 })
+          .fontColor(Color.Black)
         Flex({ justifyContent: FlexAlign.Center, alignItems: ItemAlign.Center }) {
           Checkbox()
             .width(12)
@@ -36,10 +37,10 @@ export struct LogIn {
           Text() {
             Span('已阅读并同意')
               .fontColor('#999999')
-            Span(' 用户协议')
+            Span(' 用户协议').fontColor(Color.Black)
             Span(' 和 ')
               .fontColor('#999999')
-            Span('隐私政策')
+            Span('隐私政策').fontColor(Color.Black)
           }
           .fontSize(10)
         }
@@ -72,9 +73,9 @@ export struct LogIn {
 
         Flex({ justifyContent: FlexAlign.SpaceBetween, alignItems: ItemAlign.Center }) {
           Text('其他登录方式')
-            .fontSize(12)
+            .fontSize(12).fontColor(Color.Black)
           Text('遇到问题')
-            .fontSize(12)
+            .fontSize(12).fontColor(Color.Black)
         }
         .margin({ bottom: 20 })
 

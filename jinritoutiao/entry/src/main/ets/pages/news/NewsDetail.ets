@@ -113,7 +113,7 @@ struct NewDetails {
       // Comment header
       Column() {
         Flex({ justifyContent: FlexAlign.SpaceBetween }) {
-          Text(`评论 ${this.commentCount}`).width('50%').id('review')
+          Text(`评论 ${this.commentCount}`).width('50%').id('review').fontColor(Color.Black)
           Flex({ justifyContent: FlexAlign.End, alignItems: ItemAlign.Center }) {
             Text(`${this.diggCount} 赞`)
               .fontColor(Color.Grey)
@@ -152,6 +152,7 @@ struct NewDetails {
                   Text(t.name)
                     .fontSize(12)
                     .width('100%')
+                    .fontColor(Color.Black)
                 }
                 .padding({ left: 10, right: 10 })
               }
@@ -164,6 +165,7 @@ struct NewDetails {
                   .margin({ right: 8 })
                 Text(`${t.love ? t.love : '赞'}`)
                   .fontSize(t.love ? 14 : 12)
+                  .fontColor(Color.Black)
               }
             }
 
@@ -175,6 +177,7 @@ struct NewDetails {
               Text(t.content)
                 .fontSize(15)
                 .margin({ bottom: 10 })
+                .fontColor(Color.Black)
               Flex({ justifyContent: FlexAlign.Start, alignItems: ItemAlign.Center }) {
                 Text('回复 >')
                   .backgroundColor('#f2f3f5')
@@ -221,6 +224,7 @@ struct NewDetails {
               Text('转发到头条')
                 .fontSize(10)
                 .margin({ top: 10 })
+                .fontColor(Color.Black)
             }
           }
 
@@ -239,6 +243,7 @@ struct NewDetails {
               Text('生成分享图')
                 .fontSize(10)
                 .margin({ top: 10 })
+                .fontColor(Color.Black)
             }
           }
 
@@ -257,6 +262,7 @@ struct NewDetails {
               Text('微信')
                 .fontSize(10)
                 .margin({ top: 10 })
+                .fontColor(Color.Black)
             }
           }
 
@@ -275,6 +281,7 @@ struct NewDetails {
               Text('朋友圈')
                 .fontSize(10)
                 .margin({ top: 10 })
+                .fontColor(Color.Black)
             }
           }
 
@@ -293,6 +300,7 @@ struct NewDetails {
               Text('抖音好友')
                 .fontSize(10)
                 .margin({ top: 10 })
+                .fontColor(Color.Black)
             }
           }
 
@@ -311,6 +319,7 @@ struct NewDetails {
               Text('抖音日常')
                 .fontSize(10)
                 .margin({ top: 10 })
+                .fontColor(Color.Black)
             }
           }
 
@@ -329,6 +338,7 @@ struct NewDetails {
               Text('私信')
                 .fontSize(10)
                 .margin({ top: 10 })
+                .fontColor(Color.Black)
             }
           }
 
@@ -347,6 +357,7 @@ struct NewDetails {
               Text('系统分享')
                 .fontSize(10)
                 .margin({ top: 10 })
+                .fontColor(Color.Black)
             }
           }
 
@@ -365,6 +376,7 @@ struct NewDetails {
               Text('复制链接')
                 .fontSize(10)
                 .margin({ top: 10 })
+                .fontColor(Color.Black)
             }
           }
         }
@@ -399,6 +411,7 @@ struct NewDetails {
                 Text('收藏')
                   .fontSize(10)
                   .margin({ top: 10 })
+                  .fontColor(Color.Black)
               }
             }
 
@@ -417,6 +430,7 @@ struct NewDetails {
                 Text('稍后再看')
                   .fontSize(10)
                   .margin({ top: 10 })
+                  .fontColor(Color.Black)
               }
             }
 
@@ -435,6 +449,7 @@ struct NewDetails {
                 Text('内容举报')
                   .fontSize(10)
                   .margin({ top: 10 })
+                  .fontColor(Color.Black)
               }
             }
 
@@ -453,6 +468,7 @@ struct NewDetails {
                 Text('功能反馈')
                   .fontSize(10)
                   .margin({ top: 10 })
+                  .fontColor(Color.Black)
               }
             }
 
@@ -471,6 +487,7 @@ struct NewDetails {
                 Text('字体设置')
                   .fontSize(10)
                   .margin({ top: 10 })
+                  .fontColor(Color.Black)
               }
             }
 
@@ -489,6 +506,7 @@ struct NewDetails {
                 Text('深色模式')
                   .fontSize(10)
                   .margin({ top: 10 })
+                  .fontColor(Color.Black)
               }
             }
           }
@@ -589,6 +607,7 @@ struct NewDetails {
                     .fontSize(18)
                     .letterSpacing(2)
                     .id('textTitle')
+                    .fontColor(Color.Black)
                   Flex({ justifyContent: FlexAlign.SpaceBetween, alignItems: ItemAlign.Center }) {
                     Row() {
                       Column() {
@@ -605,6 +624,7 @@ struct NewDetails {
                         Text(this.source)
                           .fontSize(12)
                           .width('100%')
+                          .fontColor(Color.Black)
                         Text(`${formatDate(this.publishTime)} ${WhereRandom} ${this.source}`)
                           .fontSize(10)
                           .fontColor(Color.Grey)
@@ -650,6 +670,7 @@ struct NewDetails {
                     .letterSpacing(2)
                     .fontSize(16)
                     .margin({ top: 5, bottom: 5 })
+                    .fontColor(Color.Black)
                   if (this.imageList.length) {
                     ForEach(this.imageList, (t: ImageList, i: number) => {
                       Column() {
@@ -709,7 +730,7 @@ struct NewDetails {
                 .height(20)
                 .objectFit(ImageFit.Contain)
                 .margin({ right: 8 })
-              Text('分享')
+              Text('分享').fontColor(Color.Black)
             }
             .onClick(() => {
               animateTo({
@@ -730,7 +751,7 @@ struct NewDetails {
                 .height(20)
                 .objectFit(ImageFit.Contain)
                 .margin({ right: 8 })
-              Text(`${this.commentCount}`)
+              Text(`${this.commentCount}`).fontColor(Color.Black)
             }
             .onClick(() => {
               this.scroller.scrollTo({ xOffset: 0, yOffset: this.isReviewY, animation: {
@@ -745,7 +766,7 @@ struct NewDetails {
                 .height(20)
                 .objectFit(ImageFit.Contain)
                 .margin({ right: 8 })
-              Text(`${this.diggCount}`)
+              Text(`${this.diggCount}`).fontColor(Color.Black)
             }
             .onClick(() => {
               this.shareOverLay = 'love'
@@ -765,7 +786,7 @@ struct NewDetails {
                 .height(20)
                 .objectFit(ImageFit.Contain)
                 .margin({ right: 8 })
-              Text(`${this.shareCount}`)
+              Text(`${this.shareCount}`).fontColor(Color.Black)
             }
             .onClick(() => {
               this.shareOverLay = 'collect'
@@ -784,6 +805,7 @@ struct NewDetails {
           .height('8%')
         }
         .overlay(this.LargeOverlayNode(), { align: Alignment.Center })
+        .backgroundColor(Color.White)
 
         this.ShareColumn()
       }
