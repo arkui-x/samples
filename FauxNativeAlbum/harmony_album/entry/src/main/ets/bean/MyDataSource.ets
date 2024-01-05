@@ -81,7 +81,7 @@ export default class MyDataSource extends BasicDataSource {
     this.notifyDataAdd(this.dataArray.length - 1);
   }
 
-  public reloadData(array:string[]): void {
+  public reloadData(array: string[]): void {
     this.dataArray = array;
     this.notifyDataReload();
   }

@@ -71,7 +71,7 @@ struct DetailPage {
 
   build() {
     Column() {
-      TopNavigation({ title:'相册',currentPage:this.currentPage })
+      TopNavigation({ title: '相册', currentPage: this.currentPage })
       Stack() {
         List({ scroller: this.scroller, initialIndex: this.selectedIndex }) {
           ForEach(this.photoArr.getAllData(), (img: Resource) => {

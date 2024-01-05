@@ -24,35 +24,35 @@ import emitter from '@ohos.events.emitter';
 
 @Component
 export default struct AlbumTabPage {
-  @Link currentPage:string;
-  @Link lastPageCount:number;
-  @Link isPageLoading:boolean;
-  @Link barHeight:number;
-  @State is3dInitData:boolean = false;//近3天tab是否加载过数据
-  @State is7dInitData:boolean = false;//近7天tab是否加载过数据
-  @State is30dInitData:boolean = false;//近30天tab是否加载过数据
+  @Link currentPage: string;
+  @Link lastPageCount: number;
+  @Link isPageLoading: boolean;
+  @Link barHeight: number;
+  @State is3dInitData: boolean = false; //Check whether the tab has loaded data in the last 3 days
+  @State is7dInitData: boolean = false; //Check whether the tab has loaded data in the last 7 days
+  @State is30dInitData: boolean = false; //Check whether the tab has loaded data in the last 30 days
   @State photoArr: MyDataSource = AppStorage.get('photoArr') as MyDataSource;
   @State photo3dArr: MyDataSource = AppStorage.get('photo3dArr') as MyDataSource;
   @State photo7dArr: MyDataSource = AppStorage.get('photo7dArr') as MyDataSource;
   @State photo30dArr: MyDataSource = AppStorage.get('photo30dArr') as MyDataSource;
   @State smallPhotoArr: MyDataSource = AppStorage.get('smallPhotoArr') as MyDataSource;
-  @StorageLink('currentNumber') currentNumber:number = 0;//默认显示全部图片
-  @StorageLink('homeTabIndex') homeTabIndex: number = 0;//图库tab页 tab 切换index
-  @StorageLink('homeTabBottomIndex') homeTabBottomIndex: number = 0;//tab切换index
+  @StorageLink('currentNumber') currentNumber: number = 0; //All images are displayed by default
+  @StorageLink('homeTabIndex') homeTabIndex: number = 0; //Gallery tab tab switches index
+  @StorageLink('homeTabBottomIndex') homeTabBottomIndex: number = 0; //tab switch index
   @StorageLink('receivedAlbumRes') receivedAlbumRes: albumResFace[] = [];
-  private tabsController:TabsController = new TabsController();
+  private tabsController: TabsController = new TabsController();
 
   /**
-   * 根据时间来显示图片，默认为0
-   * @param num 0:全部 1:3天 2:7天 3:一个月
+   * Displays pictures based on time, default is 0
+   * @param num 0:All 1:3 days 2:7 days 3: a month
    */
-  handleChangeTime(num:number) {
+  handleChangeTime(num: number) {
     console.log('handleChangeTime：' + num.toString());
     this.currentNumber = num;
     this.lastPageCount = 30;
     let eventData: emitter.EventData = {
-      data:{
-        type:''
+      data: {
+        type: ''
       }
     };
 
@@ -61,25 +61,25 @@ export default struct AlbumTabPage {
       priority: emitter.EventPriority.HIGH
     };
 
-    if(num === 0) {
-      if(this.photoArr.totalCount() === 0) {
+    if (num === 0) {
+      if (this.photoArr.totalCount() === 0) {
         emitter.emit(innerEvent, eventData);
       }
       // this.smallPhotoArr.reloadData(new Array<string>().concat(Constants.CACHE_IMG_LIST,this.photoArr.getAllData(),Constants.CACHE_IMG_LIST));
-    }else if(num === 1) {
-      if(!this.is3dInitData) {
+    } else if (num === 1) {
+      if (!this.is3dInitData) {
         this.is3dInitData = true;
         emitter.emit(innerEvent, eventData);
       }
       // this.smallPhotoArr.reloadData(new Array<string>().concat(Constants.CACHE_IMG_LIST,this.photo3dArr.getAllData(),Constants.CACHE_IMG_LIST));
-    }else if(num === 2) {
-      if(!this.is7dInitData) {
+    } else if (num === 2) {
+      if (!this.is7dInitData) {
         this.is7dInitData = true;
         emitter.emit(innerEvent, eventData);
       }
       // this.smallPhotoArr.reloadData(new Array<string>().concat(Constants.CACHE_IMG_LIST,this.photo7dArr.getAllData(),Constants.CACHE_IMG_LIST));
-    }else if(num === 3) {
-      if(!this.is30dInitData) {
+    } else if (num === 3) {
+      if (!this.is30dInitData) {
         this.is30dInitData = true;
         emitter.emit(innerEvent, eventData);
       }
@@ -87,15 +87,16 @@ export default struct AlbumTabPage {
     }
   }
 
-  // 全部图库
-  @Builder AllAlbumBuilder() {
+  // All gallery
+  @Builder
+  AllAlbumBuilder() {
     Stack() {
       Column() {
         ListPage({
           currentPage: this.currentPage,
-          photoArr:this.photoArr,
-          lastPageCount:this.lastPageCount,
-          isPageLoading:this.isPageLoading
+          photoArr: this.photoArr,
+          lastPageCount: this.lastPageCount,
+          isPageLoading: this.isPageLoading
         })
       }
       .zIndex(this.currentPage === 'listPage' ? 2 : 1)
@@ -106,8 +107,8 @@ export default struct AlbumTabPage {
       Column() {
         DetailListPage({
           currentPage: this.currentPage,
-          photoArr:this.photoArr,
-          smallPhotoArr:this.smallPhotoArr
+          photoArr: this.photoArr,
+          smallPhotoArr: this.smallPhotoArr
         })
       }
       .zIndex(this.currentPage === 'listPage' ? 1 : 2)
@@ -119,15 +120,16 @@ export default struct AlbumTabPage {
     .flexGrow(1)
   }
 
-  // 近3天图库
-  @Builder ThreeDayAlbumBuilder() {
+  // Last 3 days photo gallery
+  @Builder
+  ThreeDayAlbumBuilder() {
     Stack() {
       Column() {
         ListPage({
           currentPage: this.currentPage,
-          photoArr:this.photo3dArr,
-          lastPageCount:this.lastPageCount,
-          isPageLoading:this.isPageLoading
+          photoArr: this.photo3dArr,
+          lastPageCount: this.lastPageCount,
+          isPageLoading: this.isPageLoading
         })
       }
       .zIndex(this.currentPage === 'listPage' ? 2 : 1)
@@ -138,8 +140,8 @@ export default struct AlbumTabPage {
       Column() {
         DetailListPage({
           currentPage: this.currentPage,
-          photoArr:this.photo3dArr,
-          smallPhotoArr:this.smallPhotoArr
+          photoArr: this.photo3dArr,
+          smallPhotoArr: this.smallPhotoArr
         })
       }
       .zIndex(this.currentPage === 'listPage' ? 1 : 2)
@@ -151,15 +153,16 @@ export default struct AlbumTabPage {
     .flexGrow(1)
   }
 
-  // 近7天图库
-  @Builder SevenDayAlbumBuilder() {
+  // Last 7 days photo gallery
+  @Builder
+  SevenDayAlbumBuilder() {
     Stack() {
       Column() {
         ListPage({
           currentPage: this.currentPage,
-          photoArr:this.photo7dArr,
-          lastPageCount:this.lastPageCount,
-          isPageLoading:this.isPageLoading
+          photoArr: this.photo7dArr,
+          lastPageCount: this.lastPageCount,
+          isPageLoading: this.isPageLoading
         })
       }
       .zIndex(this.currentPage === 'listPage' ? 2 : 1)
@@ -170,8 +173,8 @@ export default struct AlbumTabPage {
       Column() {
         DetailListPage({
           currentPage: this.currentPage,
-          photoArr:this.photo7dArr,
-          smallPhotoArr:this.smallPhotoArr
+          photoArr: this.photo7dArr,
+          smallPhotoArr: this.smallPhotoArr
         })
       }
       .zIndex(this.currentPage === 'listPage' ? 1 : 2)
@@ -183,15 +186,16 @@ export default struct AlbumTabPage {
     .flexGrow(1)
   }
 
-  // 近30天图库
-  @Builder ThirtyDayAlbumBuilder() {
+  // Last 30 days photo gallery
+  @Builder
+  ThirtyDayAlbumBuilder() {
     Stack() {
       Column() {
         ListPage({
           currentPage: this.currentPage,
-          photoArr:this.photo30dArr,
-          lastPageCount:this.lastPageCount,
-          isPageLoading:this.isPageLoading
+          photoArr: this.photo30dArr,
+          lastPageCount: this.lastPageCount,
+          isPageLoading: this.isPageLoading
         })
       }
       .zIndex(this.currentPage === 'listPage' ? 2 : 1)
@@ -202,8 +206,8 @@ export default struct AlbumTabPage {
       Column() {
         DetailListPage({
           currentPage: this.currentPage,
-          photoArr:this.photo30dArr,
-          smallPhotoArr:this.smallPhotoArr
+          photoArr: this.photo30dArr,
+          smallPhotoArr: this.smallPhotoArr
         })
       }
       .zIndex(this.currentPage === 'listPage' ? 1 : 2)
@@ -215,8 +219,9 @@ export default struct AlbumTabPage {
     .flexGrow(1)
   }
 
-  // 底部按钮样式
-  @Builder TabBuilder(title: string, targetIndex: number) {
+  // Bottom button style
+  @Builder
+  TabBuilder(title: string, targetIndex: number) {
     Column() {
       Text(title)
         .fontColor(this.homeTabIndex === targetIndex ? '#1698CE' : '#6B6B6B')
@@ -236,36 +241,32 @@ export default struct AlbumTabPage {
   build() {
     Column() {
       Flex({ direction: FlexDirection.Column }) {
-        if(this.homeTabBottomIndex === 1 || this.currentPage !== 'listPage') {
-          TopNavigation({ title:'相册',currentPage:this.currentPage })
+        if (this.homeTabBottomIndex === 1 || this.currentPage !== 'listPage') {
+          TopNavigation({ title: '相册', currentPage: this.currentPage })
         }
-        Tabs({ barPosition: BarPosition.End,controller: this.tabsController,index:this.homeTabIndex }) {
+        Tabs({ barPosition: BarPosition.End, controller: this.tabsController, index: this.homeTabIndex }) {
           TabContent() {
             this.AllAlbumBuilder();
           }
-          .tabBar(this.TabBuilder('全部',0))
+          .tabBar(this.TabBuilder('全部', 0))
 
           TabContent() {
             this.ThreeDayAlbumBuilder();
           }
-          .tabBar(this.TabBuilder('3天',1))
+          .tabBar(this.TabBuilder('3天', 1))
 
           TabContent() {
             this.SevenDayAlbumBuilder();
           }
-          .tabBar(this.TabBuilder('7天',2))
+          .tabBar(this.TabBuilder('7天', 2))
 
           TabContent() {
             this.ThirtyDayAlbumBuilder();
           }
-          .tabBar(this.TabBuilder('1个月',3))
+          .tabBar(this.TabBuilder('1个月', 3))
         }
         .barHeight(this.barHeight)
         .scrollable(false)
-        // .onChange((index) => {
-        //   this.handleChangeTime(index);
-        // })
-
       }
     }
   }

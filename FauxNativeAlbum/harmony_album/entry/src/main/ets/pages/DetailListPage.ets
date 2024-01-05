@@ -16,7 +16,7 @@
 import display from '@ohos.display';
 import router from '@ohos.router';
 import Constants from '../common/constants/Constants';
-import { checkIsVideo } from  '../common/utils/util.js';
+import { checkIsVideo } from '../common/utils/util.js';
 import MyDataSource from '../bean/MyDataSource'
 
 enum scrollTypeEnum {
@@ -26,21 +26,21 @@ enum scrollTypeEnum {
 
 @Component
 export default struct DetailListPage {
-  @Link @Watch('currentPageChange') currentPage:string;
-  @Link photoArr:MyDataSource;
-  @Link smallPhotoArr:MyDataSource;
+  @Link @Watch('currentPageChange') currentPage: string;
+  @Link photoArr: MyDataSource;
+  @Link smallPhotoArr: MyDataSource;
   private swiperController: SwiperController = new SwiperController();
   private smallScroller: Scroller = new Scroller();
   private bigScroller: Scroller = new Scroller();
   @State deviceWidth: number = Constants.DEFAULT_WIDTH;
   @State smallImgWidth: number = (this.deviceWidth - Constants.LIST_ITEM_SPACE * (Constants.SHOW_COUNT - 1)) /
-    Constants.SHOW_COUNT;
+  Constants.SHOW_COUNT;
   @State imageWidth: number = this.deviceWidth + this.smallImgWidth;
   @StorageLink('selectedIndex') selectedIndex: number = 0;
   @StorageLink('homeTabBottomIndex') homeTabBottomIndex: number = 0;
 
   currentPageChange() {
-    if(this.currentPage === 'detailListPage') {
+    if (this.currentPage === 'detailListPage') {
       this.smallScroller.scrollToIndex(this.selectedIndex);
       this.bigScroller.scrollToIndex(this.selectedIndex);
     }
@@ -49,11 +49,11 @@ export default struct DetailListPage {
   @Builder
   SmallImgItemBuilder(img: Resource, index?: number) {
     if (index && index > (Constants.CACHE_IMG_SIZE - 1) && index < (this.smallPhotoArr.totalCount() - Constants.CACHE_IMG_SIZE)) {
-      if(checkIsVideo(String(img))) {
-        Video({src:img})
+      if (checkIsVideo(String(img))) {
+        Video({ src: img })
           .controls(false)
           .onClick(() => this.smallImgClickAction(index))
-      }else {
+      } else {
         Image(img)
           .onClick(() => this.smallImgClickAction(index))
       }
@@ -78,11 +78,11 @@ export default struct DetailListPage {
     this.currentPage = 'detailPage';
     router.pushUrl({
       url: Constants.URL_DETAIL_PAGE,
-      params: { photoArr: this.photoArr,currentPage:this.currentPage }
+      params: { photoArr: this.photoArr, currentPage: this.currentPage }
     });
   }
 
-  goVideoDetailPage(item:Resource): void {
+  goVideoDetailPage(item: Resource): void {
     console.log('detailListPage:' + this.photoArr.totalCount());
     this.currentPage = 'videoDetailPage';
     router.pushUrl({
@@ -99,7 +99,7 @@ export default struct DetailListPage {
 
   smallScrollAction(type: scrollTypeEnum): void {
     this.selectedIndex = Math.round(((this.smallScroller.currentOffset().xOffset as number) +
-    this.smallImgWidth / Constants.DOUBLE_NUMBER) / (this.smallImgWidth + Constants.LIST_ITEM_SPACE));
+      this.smallImgWidth / Constants.DOUBLE_NUMBER) / (this.smallImgWidth + Constants.LIST_ITEM_SPACE));
     if (type === scrollTypeEnum.SCROLL) {
       this.bigScroller.scrollTo({ xOffset: this.selectedIndex * this.imageWidth, yOffset: 0 });
     } else {
@@ -123,7 +123,7 @@ export default struct DetailListPage {
       List({ scroller: this.bigScroller, initialIndex: this.selectedIndex }) {
         LazyForEach(this.photoArr, (item: Resource) => {
           ListItem() {
-            if(checkIsVideo(String(item))) {
+            if (checkIsVideo(String(item))) {
               Stack() {
                 Image($r('app.media.img_bg'))
                   .width(Constants.FULL_PERCENT)
@@ -140,7 +140,7 @@ export default struct DetailListPage {
                     this.goVideoDetailPage(item);
                   })
               }
-            }else {
+            } else {
               Image(item)
                 .height(Constants.FULL_PERCENT)
                 .width(Constants.FULL_PERCENT)
@@ -184,7 +184,7 @@ export default struct DetailListPage {
         }, (item: Resource) => JSON.stringify(item))
       }
       .cachedCount(15)
-      .margin({top:10,bottom:20})
+      .margin({ top: 10, bottom: 20 })
       .listDirection(Axis.Horizontal)
       .listDirection(Axis.Horizontal)
       .onScroll((scrollOffset, scrollState) => {

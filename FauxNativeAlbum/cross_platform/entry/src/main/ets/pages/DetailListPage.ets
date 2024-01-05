@@ -26,22 +26,22 @@ enum scrollTypeEnum {
 
 @Component
 export default struct DetailListPage {
-  @Link @Watch('currentPageChange') currentPage:string;
-  @Link photoArr:MyDataSource;
-  @Link smallPhotoArr:MyDataSource;
+  @Link @Watch('currentPageChange') currentPage: string;
+  @Link photoArr: MyDataSource;
+  @Link smallPhotoArr: MyDataSource;
   private swiperController: SwiperController = new SwiperController();
   private smallScroller: Scroller = new Scroller();
   private bigScroller: Scroller = new Scroller();
   @State deviceWidth: number = Constants.DEFAULT_WIDTH;
   @State smallImgWidth: number = (this.deviceWidth - Constants.LIST_ITEM_SPACE * (Constants.SHOW_COUNT - 1)) /
-    Constants.SHOW_COUNT;
+  Constants.SHOW_COUNT;
   @State imageWidth: number = this.deviceWidth + this.smallImgWidth;
-  @State isIOS:boolean = AppStorage.get('isIOS') as boolean;
+  @State isIOS: boolean = AppStorage.get('isIOS') as boolean;
   @StorageLink('selectedIndex') selectedIndex: number = 0;
   @StorageLink('homeTabBottomIndex') homeTabBottomIndex: number = 0;
 
   currentPageChange() {
-    if(this.currentPage === 'detailListPage') {
+    if (this.currentPage === 'detailListPage') {
       this.smallScroller.scrollToIndex(this.selectedIndex);
       this.bigScroller.scrollToIndex(this.selectedIndex);
     }
@@ -50,11 +50,11 @@ export default struct DetailListPage {
   @Builder
   SmallImgItemBuilder(img: string, index?: number) {
     if (index && index > (Constants.CACHE_IMG_SIZE - 1) && index < (this.smallPhotoArr.totalCount() - Constants.CACHE_IMG_SIZE)) {
-      if(checkIsVideo(img)) {
-        Video({src:img})
+      if (checkIsVideo(img)) {
+        Video({ src: img })
           .controls(false)
           .onClick(() => this.smallImgClickAction(index))
-      }else {
+      } else {
         Image(img)
           .onClick(() => this.smallImgClickAction(index))
       }
@@ -62,7 +62,7 @@ export default struct DetailListPage {
   }
 
   aboutToAppear() {
-    let density:number =  AppStorage.get('density') || 2.5;
+    let density: number = AppStorage.get('density') || 2.5;
     console.log('detail aboutToAppear' + density);
     let displayClass: display.Display = display.getDefaultDisplaySync();
     let width = displayClass.width / density ?? Constants.DEFAULT_WIDTH;
@@ -80,7 +80,7 @@ export default struct DetailListPage {
     this.currentPage = 'detailPage';
     router.pushUrl({
       url: Constants.URL_DETAIL_PAGE,
-      params: { photoArr: this.photoArr,currentPage:this.currentPage }
+      params: { photoArr: this.photoArr, currentPage: this.currentPage }
     });
   }
 
@@ -100,13 +100,13 @@ export default struct DetailListPage {
   }
 
   build() {
-    Flex({direction: FlexDirection.Column}) {
+    Flex({ direction: FlexDirection.Column }) {
       Swiper(this.swiperController) {
-        LazyForEach(this.photoArr, (item: string,index:number) => {
-          if(checkIsVideo(String(item))) {
+        LazyForEach(this.photoArr, (item: string, index: number) => {
+          if (checkIsVideo(String(item))) {
             Stack() {
-              if(this.isIOS) {
-                Video({ src:item })
+              if (this.isIOS) {
+                Video({ src: item })
                   .controls(false)
                   .width(Constants.FULL_PERCENT)
                   .height(Constants.FULL_PERCENT)
@@ -118,7 +118,7 @@ export default struct DetailListPage {
                       params: { uri: item }
                     });
                   })
-              }else {
+              } else {
                 Image($r('app.media.img_bg'))
                   .width(Constants.FULL_PERCENT)
                   .height(Constants.FULL_PERCENT)
@@ -143,13 +143,11 @@ export default struct DetailListPage {
                   });
                 })
             }
-          }else {
+          } else {
             Image(item)
               .width(Constants.FULL_PERCENT)
               .height(Constants.FULL_PERCENT)
               .objectFit(ImageFit.Contain)
-              // .gesture(PinchGesture({ fingers: Constants.DOUBLE_NUMBER })
-              // .onActionStart(() => this.goDetailPage()))
               .onClick(() => {
                 this.goDetailPage()
               })
@@ -163,7 +161,7 @@ export default struct DetailListPage {
       .indicator(false)
       .width(Constants.FULL_PERCENT)
       .height(Constants.FULL_PERCENT)
-      .onChange((index:number) => {
+      .onChange((index: number) => {
         this.selectedIndex = index;
         let smallWidth = this.smallImgWidth + Constants.LIST_ITEM_SPACE;
         this.smallScroller.scrollTo({ xOffset: this.selectedIndex * smallWidth, yOffset: 0 });
@@ -183,7 +181,7 @@ export default struct DetailListPage {
         }, (item: string) => JSON.stringify(item))
       }
       .cachedCount(15)
-      .margin({top:10,bottom:20})
+      .margin({ top: 10, bottom: 20 })
       .listDirection(Axis.Horizontal)
       .onScroll((scrollOffset, scrollState) => {
         if (scrollState === ScrollState.Fling) {

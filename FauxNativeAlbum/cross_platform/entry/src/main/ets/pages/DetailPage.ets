@@ -41,9 +41,9 @@ struct DetailPage {
   @State bgOpacity: number = 0;
 
   aboutToAppear() {
-    console.log('selectedIndex:'+this.selectedIndex);
+    console.log('selectedIndex:' + this.selectedIndex);
     console.log(this.photoArr.getData(this.selectedIndex));
-    let density:number =  AppStorage.get('density') || 2.5;
+    let density: number = AppStorage.get('density') || 2.5;
     let displayClass: display.Display = display.getDefaultDisplaySync();
     let width = displayClass?.width / density ?? Constants.DEFAULT_WIDTH;
     this.deviceWidth = width;
@@ -74,115 +74,115 @@ struct DetailPage {
 
   build() {
     Column() {
-      TopNavigation({ title:'相册',currentPage:this.currentPage })
-    Stack() {
-      List({ scroller: this.scroller, initialIndex: this.selectedIndex }) {
-        LazyForEach(this.photoArr, (img: Resource) => {
-          ListItem() {
-            Image(img)
-              .objectFit(ImageFit.Contain)
-              .onClick(() => router.back())
-          }
-          .gesture(GestureGroup(GestureMode.Exclusive,
-            PinchGesture({ fingers: Constants.DOUBLE_NUMBER })
-              .onActionStart(() => {
-                this.resetImg();
-                this.isScaling = true;
-                this.imgOffSetX = 0;
-                this.imgOffSetY = 0;
-              })
-              .onActionUpdate((event?: GestureEvent) => {
-                if (event) {
-                  this.imgScale = this.currentScale * event.scale;
-                }
-              })
-              .onActionEnd(() => {
-                if (this.imgScale < 1) {
+      TopNavigation({ title: '相册', currentPage: this.currentPage })
+      Stack() {
+        List({ scroller: this.scroller, initialIndex: this.selectedIndex }) {
+          LazyForEach(this.photoArr, (img: Resource) => {
+            ListItem() {
+              Image(img)
+                .objectFit(ImageFit.Contain)
+                .onClick(() => router.back())
+            }
+            .gesture(GestureGroup(GestureMode.Exclusive,
+              PinchGesture({ fingers: Constants.DOUBLE_NUMBER })
+                .onActionStart(() => {
                   this.resetImg();
+                  this.isScaling = true;
                   this.imgOffSetX = 0;
                   this.imgOffSetY = 0;
-                } else {
-                  this.currentScale = this.imgScale;
-                }
-              }), PanGesture()
-              .onActionStart(() => {
-                this.resetImg();
-                this.isScaling = true;
-              })
-              .onActionUpdate((event?: GestureEvent) => {
-                if (event) {
-                  this.imgOffSetX = this.preOffsetX + event.offsetX;
-                  this.imgOffSetY = this.preOffsetY + event.offsetY;
-                }
-              })
-          ))
-          .padding({
-            left: this.smallImgWidth / Constants.DOUBLE_NUMBER,
-            right: this.smallImgWidth / Constants.DOUBLE_NUMBER
-          })
-          .width(this.imageWidth)
-        }, (item: Resource) => JSON.stringify(item))
-      }
-      .cachedCount(15)
-      .onScrollStop(() => {
-        let currentIndex = Math.round(((this.scroller.currentOffset().xOffset as number) +
-          (this.imageWidth / Constants.DOUBLE_NUMBER)) / this.imageWidth);
-        this.selectedIndex = currentIndex;
-        this.scroller.scrollTo({ xOffset: currentIndex * this.imageWidth, yOffset: 0 });
-      })
-      .width(Constants.FULL_PERCENT)
-      .height(Constants.FULL_PERCENT)
-      .listDirection(Axis.Horizontal)
-      .visibility(this.isScaling ? Visibility.Hidden : Visibility.Visible)
+                })
+                .onActionUpdate((event?: GestureEvent) => {
+                  if (event) {
+                    this.imgScale = this.currentScale * event.scale;
+                  }
+                })
+                .onActionEnd(() => {
+                  if (this.imgScale < 1) {
+                    this.resetImg();
+                    this.imgOffSetX = 0;
+                    this.imgOffSetY = 0;
+                  } else {
+                    this.currentScale = this.imgScale;
+                  }
+                }), PanGesture()
+                .onActionStart(() => {
+                  this.resetImg();
+                  this.isScaling = true;
+                })
+                .onActionUpdate((event?: GestureEvent) => {
+                  if (event) {
+                    this.imgOffSetX = this.preOffsetX + event.offsetX;
+                    this.imgOffSetY = this.preOffsetY + event.offsetY;
+                  }
+                })
+            ))
+            .padding({
+              left: this.smallImgWidth / Constants.DOUBLE_NUMBER,
+              right: this.smallImgWidth / Constants.DOUBLE_NUMBER
+            })
+            .width(this.imageWidth)
+          }, (item: Resource) => JSON.stringify(item))
+        }
+        .cachedCount(15)
+        .onScrollStop(() => {
+          let currentIndex = Math.round(((this.scroller.currentOffset().xOffset as number) +
+            (this.imageWidth / Constants.DOUBLE_NUMBER)) / this.imageWidth);
+          this.selectedIndex = currentIndex;
+          this.scroller.scrollTo({ xOffset: currentIndex * this.imageWidth, yOffset: 0 });
+        })
+        .width(Constants.FULL_PERCENT)
+        .height(Constants.FULL_PERCENT)
+        .listDirection(Axis.Horizontal)
+        .visibility(this.isScaling ? Visibility.Hidden : Visibility.Visible)
 
-      Row() {
-        Image(this.photoArr.getData(this.selectedIndex) as string)
-          .position({ x: this.imgOffSetX, y: this.imgOffSetY })
-          .scale({ x: this.imgScale, y: this.imgScale })
-          .objectFit(ImageFit.Contain)
-          .onClick(() => router.back())
+        Row() {
+          Image(this.photoArr.getData(this.selectedIndex) as string)
+            .position({ x: this.imgOffSetX, y: this.imgOffSetY })
+            .scale({ x: this.imgScale, y: this.imgScale })
+            .objectFit(ImageFit.Contain)
+            .onClick(() => router.back())
+        }
+        .gesture(GestureGroup(GestureMode.Exclusive,
+          PinchGesture({ fingers: Constants.DOUBLE_NUMBER })
+            .onActionUpdate((event?: GestureEvent) => {
+              if (event) {
+                this.imgScale = this.currentScale * event.scale;
+              }
+            })
+            .onActionEnd(() => {
+              if (this.imgScale < 1) {
+                this.resetImg();
+                this.imgOffSetX = 0;
+                this.imgOffSetY = 0;
+              } else {
+                this.currentScale = this.imgScale;
+              }
+            }),
+          PanGesture()
+            .onActionStart(() => {
+              this.preOffsetX = this.imgOffSetX;
+              this.preOffsetY = this.imgOffSetY;
+            })
+            .onActionUpdate((event?: GestureEvent) => {
+              if (event) {
+                this.imgOffSetX = this.preOffsetX + event.offsetX;
+                this.imgOffSetY = this.preOffsetY + event.offsetY;
+              }
+            })
+            .onActionEnd(() => this.handlePanEnd())
+        ))
+        .padding({
+          left: this.smallImgWidth / Constants.DOUBLE_NUMBER,
+          right: this.smallImgWidth / Constants.DOUBLE_NUMBER
+        })
+        .width(Constants.FULL_PERCENT)
+        .height(Constants.FULL_PERCENT)
+        .visibility(this.isScaling ? Visibility.Visible : Visibility.Hidden)
       }
-      .gesture(GestureGroup(GestureMode.Exclusive,
-        PinchGesture({ fingers: Constants.DOUBLE_NUMBER })
-          .onActionUpdate((event?: GestureEvent) => {
-            if (event) {
-              this.imgScale = this.currentScale * event.scale;
-            }
-          })
-          .onActionEnd(() => {
-            if (this.imgScale < 1) {
-              this.resetImg();
-              this.imgOffSetX = 0;
-              this.imgOffSetY = 0;
-            } else {
-              this.currentScale = this.imgScale;
-            }
-          }),
-        PanGesture()
-          .onActionStart(() => {
-            this.preOffsetX = this.imgOffSetX;
-            this.preOffsetY = this.imgOffSetY;
-          })
-          .onActionUpdate((event?: GestureEvent) => {
-            if (event) {
-              this.imgOffSetX = this.preOffsetX + event.offsetX;
-              this.imgOffSetY = this.preOffsetY + event.offsetY;
-            }
-          })
-          .onActionEnd(() => this.handlePanEnd())
-      ))
-      .padding({
-        left: this.smallImgWidth / Constants.DOUBLE_NUMBER,
-        right: this.smallImgWidth / Constants.DOUBLE_NUMBER
-      })
-      .width(Constants.FULL_PERCENT)
+      .width(this.imageWidth)
       .height(Constants.FULL_PERCENT)
-      .visibility(this.isScaling ? Visibility.Visible : Visibility.Hidden)
+      .backgroundColor($r('app.color.detail_background'))
     }
-    .width(this.imageWidth)
-    .height(Constants.FULL_PERCENT)
-    .backgroundColor($r('app.color.detail_background'))
-  }
   }
 }
 

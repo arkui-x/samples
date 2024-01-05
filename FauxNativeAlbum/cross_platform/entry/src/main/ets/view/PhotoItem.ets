@@ -21,7 +21,8 @@ export default struct PhotoItem {
   private photoArr: Array<string> = [];
   private showCount: number = Constants.SHOW_COUNT / Constants.DOUBLE_NUMBER;
 
-  @Builder albumPicBuilder(uri: string, index: number) {
+  @Builder
+  albumPicBuilder(uri: string, index: number) {
     Column() {
       Image(uri)
         .width(Constants.FULL_PERCENT)
@@ -31,7 +32,7 @@ export default struct PhotoItem {
         .backgroundColor('#000000')
     }
     .padding((this.showCount - index - 1) * Constants.PHOTO_ITEM_PADDING)
-    .margin({top : 12})
+    .margin({ top: 12 })
     .offset({ y: (this.showCount - index - 1) * Constants.PHOTO_ITEM_OFFSET })
     .height(Constants.PHOTO_ITEM_PERCENT)
     .width(Constants.FULL_PERCENT)

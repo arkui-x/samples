@@ -15,18 +15,19 @@
 
 import Constants from '../common/constants/Constants';
 
-// 点击返回退出app，会导致闪退
+// Clicking back to exit the app will cause a flash back
 @Component
 export default struct VideoItem {
   @State currentIndex: number = 0;
   private photoArr: Array<string> = [];
   private showCount: number = Constants.SHOW_COUNT / Constants.DOUBLE_NUMBER;
 
-  @Builder albumPicBuilder(uri: string, index: number) {
+  @Builder
+  albumPicBuilder(uri: string, index: number) {
     Column() {
-        Video({
-          src: uri,
-        })
+      Video({
+        src: uri,
+      })
         .controls(false)
         .width(Constants.FULL_PERCENT)
         .height(Constants.FULL_PERCENT)
@@ -34,7 +35,7 @@ export default struct VideoItem {
         .opacity(1 - (this.showCount - index - 1) * Constants.ITEM_OPACITY_OFFSET)
     }
     .padding((this.showCount - index - 1) * Constants.PHOTO_ITEM_PADDING)
-    .margin({top : 12})
+    .margin({ top: 12 })
     .offset({ y: (this.showCount - index - 1) * Constants.PHOTO_ITEM_OFFSET })
     .height(Constants.PHOTO_ITEM_PERCENT)
     .width(Constants.FULL_PERCENT)

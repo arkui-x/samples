@@ -21,23 +21,23 @@ import MyDataSource from '../bean/MyDataSource';
 
 @Component
 export default struct XcAlbumPage {
-  @Link currentPage:string;
-  @Link lastPageCount:number;
-  @Link isPageLoading:boolean;
+  @Link currentPage: string;
+  @Link lastPageCount: number;
+  @Link isPageLoading: boolean;
   @State typeAlbumArr: MyDataSource = AppStorage.get('typeAlbumArr') as MyDataSource;
   @State smallPhotoArr: MyDataSource = AppStorage.get('smallPhotoArr') as MyDataSource;
 
   build() {
     Column() {
       Flex({ direction: FlexDirection.Column }) {
-        TopNavigation({ title:'相册',currentPage:this.currentPage })
+        TopNavigation({ title: '相册', currentPage: this.currentPage })
         Stack() {
           Column() {
             ListPage({
               currentPage: this.currentPage,
-              photoArr:this.typeAlbumArr,
-              lastPageCount:this.lastPageCount,
-              isPageLoading:this.isPageLoading
+              photoArr: this.typeAlbumArr,
+              lastPageCount: this.lastPageCount,
+              isPageLoading: this.isPageLoading
             })
           }
           .zIndex(this.currentPage === 'listPage' ? 2 : 1)
@@ -48,8 +48,8 @@ export default struct XcAlbumPage {
           Column() {
             DetailListPage({
               currentPage: this.currentPage,
-              photoArr:this.typeAlbumArr,
-              smallPhotoArr:this.smallPhotoArr
+              photoArr: this.typeAlbumArr,
+              smallPhotoArr: this.smallPhotoArr
             })
           }
           .zIndex(this.currentPage === 'listPage' ? 1 : 2)
