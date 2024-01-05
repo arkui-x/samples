@@ -6,7 +6,7 @@
   ![](./screenshots/devices/android_1.png) ![](./screenshots/devices/android_2.png) ![](./screenshots/devices/android_3.png)
 
 * iOS平台展示效果
-  ![](./screenshots/devices/ios_main.png) ![](./screenshots/devices/ios_deserialize.png)
+  ![](./screenshots/devices/ios_1.png) ![](./screenshots/devices/ios_2.png) ![](./screenshots/devices/ios_3.png)
 
 * OpenHarmony平台展示效果
   ![](./screenshots/devices/oh_1.png) ![](./screenshots/devices/oh_2.png) ![](./screenshots/devices/oh_3.png)
@@ -25,7 +25,7 @@
 
 2.点击左侧entries页签，右侧展示出一个文本列表。
 
-3.点击左侧set页面，右侧为按钮+DIV的联动操作区，点击按钮可以对div进行操作。
+3.点击左侧set页面，右侧展示了一个静态页面，里面有系统设置、账户设置等。
 
 ## 约束与限制
 
