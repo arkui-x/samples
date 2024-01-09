@@ -207,14 +207,18 @@ struct RichTextContent {
               })
             })
             .aboutToDelete((value: RichEditorDeleteValue) => {
-              let deleteContent: string = value.richEditorDeleteSpans[0]['value'].slice(value.richEditorDeleteSpans[0].offsetInSpan[0], value.richEditorDeleteSpans[0].offsetInSpan[1])
-              this.mainList.unshift({
-                content: deleteContent,
-                offset: value.richEditorDeleteSpans[0].offsetInSpan,
-                offsetInSpan: [0, value.richEditorDeleteSpans[0].offsetInSpan[0]],
-                isDelete: true
-              })
-              return true;
+              if(value.richEditorDeleteSpans[0]){
+                let deleteContent: string = value.richEditorDeleteSpans[0]['value'].slice(value.richEditorDeleteSpans[0].offsetInSpan[0], value.richEditorDeleteSpans[0].offsetInSpan[1])
+                this.mainList.unshift({
+                  content: deleteContent,
+                  offset: value.richEditorDeleteSpans[0].offsetInSpan,
+                  offsetInSpan: [0, value.richEditorDeleteSpans[0].offsetInSpan[0]],
+                  isDelete: true
+                })
+                return true;
+              }else {
+                return false
+              }
             })
             .borderWidth(1)
             .width("100%")
