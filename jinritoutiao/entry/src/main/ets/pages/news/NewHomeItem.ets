@@ -17,7 +17,7 @@ export struct NewHomeItem {
         comment_count: this.t.comment_count,
         publish_time: this.t.publish_time,
         share_count: this.t.share_count,
-        avatar_url: this.t.user_info.avatar_url,
+        avatar_url: this.t.user_info ? this.t.user_info.avatar_url : this.t.media_info.avatar_url,
         content: this.t.abstract,
         image_list: ary
       }

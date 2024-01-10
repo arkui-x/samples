@@ -35,7 +35,7 @@ export struct VideoItem {
         Row() {
           //Author profile picture
           Column() {
-            Image(this.t.user_info.avatar_url)
+            Image(this.t.user_info ? this.t.user_info.avatar_url : this.t.media_info.avatar_url)
               .height(30)
               .width(30)
               .objectFit(ImageFit.Contain)

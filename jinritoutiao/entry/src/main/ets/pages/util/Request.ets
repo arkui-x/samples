@@ -24,6 +24,34 @@ class UserInfo {
   }
 }
 
+class MediaInfo {
+  avatar_url: string;
+  follow: boolean;
+  is_star_user: boolean;
+  media_id: number;
+  name: string;
+  recommend_reason: string;
+  recommend_type: number;
+  live_info_type: number;
+  user_id: string;
+  user_verified: boolean;
+  verified_content: string;
+
+  constructor(avatar_url: string, follow: boolean, is_star_user: boolean, media_id: number, name: string, recommend_reason: string, recommend_type: number, live_info_type: number, user_id: string, user_verified: boolean, verified_content: string) {
+    this.avatar_url = avatar_url
+    this.is_star_user = is_star_user
+    this.follow = follow
+    this.media_id = media_id
+    this.name = name
+    this.recommend_reason = recommend_reason
+    this.recommend_type = recommend_type
+    this.live_info_type = live_info_type
+    this.user_id = user_id
+    this.user_verified = user_verified
+    this.verified_content = verified_content
+  }
+}
+
 interface Url {
   url: string
 }
@@ -58,8 +86,9 @@ export class NewsItem {
   source: string;
   title: string;
   user_info: UserInfo;
+  media_info: MediaInfo
 
-  constructor(detail_image_list: ImageList[], abstract: string, behot_time: number, comment_count: number, common_raw_data: string, digg_count: number, has_image: boolean, image_list: ImageList[], publish_time: number, share_count: number, source: string, title: string, user_info: UserInfo) {
+  constructor(detail_image_list: ImageList[], abstract: string, behot_time: number, comment_count: number, common_raw_data: string, digg_count: number, has_image: boolean, image_list: ImageList[], publish_time: number, share_count: number, source: string, title: string, user_info: UserInfo, media_info: MediaInfo) {
     this.abstract = abstract
     this.behot_time = behot_time
     this.comment_count = comment_count
@@ -73,6 +102,7 @@ export class NewsItem {
     this.title = title
     this.user_info = user_info
     this.detail_image_list = detail_image_list
+    this.media_info = media_info
   }
 }
 
