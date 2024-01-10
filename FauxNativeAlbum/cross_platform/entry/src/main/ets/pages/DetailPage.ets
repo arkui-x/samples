@@ -158,7 +158,7 @@ struct DetailPage {
                 this.currentScale = this.imgScale;
               }
             }),
-          PanGesture()
+          PanGesture({ direction: PanDirection.None })
             .onActionStart(() => {
               this.preOffsetX = this.imgOffSetX;
               this.preOffsetY = this.imgOffSetY;
