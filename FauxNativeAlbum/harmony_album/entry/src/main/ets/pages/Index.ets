@@ -374,6 +374,7 @@ struct Index {
     }
     if (item.name === 'screenshots') {
       this.getCameraObjectRes('screenshots');
+      AppStorage.setOrCreate('photoArr', this.typeAlbumArr);
     }
     if (item.name === 'videos') {
       this.getCameraObjectRes('videos');

@@ -254,6 +254,7 @@ struct Index {
     }
     if (item.name === 'screenshots') {
       this.bridgeImpl.callMethod('getAlbumScreenshots');
+      AppStorage.setOrCreate('photoArr', this.typeAlbumArr);
     }
     if (item.name === 'videos') {
       this.bridgeImpl.callMethod('getAlbumVideos');

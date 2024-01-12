@@ -150,13 +150,9 @@ struct DetailPage {
               }
             })
             .onActionEnd(() => {
-              if (this.imgScale < 1) {
-                this.resetImg();
-                this.imgOffSetX = 0;
-                this.imgOffSetY = 0;
-              } else {
-                this.currentScale = this.imgScale;
-              }
+              this.resetImg();
+              this.imgOffSetX = 0;
+              this.imgOffSetY = 0;
             }),
           PanGesture({ direction: PanDirection.None })
             .onActionStart(() => {
