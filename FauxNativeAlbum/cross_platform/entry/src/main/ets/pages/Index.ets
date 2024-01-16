@@ -206,18 +206,21 @@ struct Index {
         this.smallPhotoArr.reloadData(new Array<string>().concat(Constants.CACHE_IMG_LIST, this.photo3dArr.getAllData(), Constants.CACHE_IMG_LIST));
         this.home3dAlbumRes.reloadData(JSON.parse(JSON.stringify(albumRes)));
         AppStorage.setOrCreate('photo3dArr', this.photo3dArr);
+        AppStorage.setOrCreate('photoArr', this.photo3dArr);
       }
       if (this.homeTabIndex === 2) {
         this.photo7dArr.reloadData(JSON.parse(JSON.stringify(albumRes)));
         this.smallPhotoArr.reloadData(new Array<string>().concat(Constants.CACHE_IMG_LIST, this.photo7dArr.getAllData(), Constants.CACHE_IMG_LIST));
         this.home7dAlbumRes.reloadData(JSON.parse(JSON.stringify(albumRes)));
         AppStorage.setOrCreate('photo7dArr', this.photo7dArr);
+        AppStorage.setOrCreate('photoArr', this.photo7dArr);
       }
       if (this.homeTabIndex === 3) {
         this.photo30dArr.reloadData(JSON.parse(JSON.stringify(albumRes)));
         this.smallPhotoArr.reloadData(new Array<string>().concat(Constants.CACHE_IMG_LIST, this.photo30dArr.getAllData(), Constants.CACHE_IMG_LIST));
         this.home30dAlbumRes.reloadData(JSON.parse(JSON.stringify(albumRes)));
         AppStorage.setOrCreate('photo30dArr', this.photo30dArr);
+        AppStorage.setOrCreate('photoArr', this.photo30dArr);
       }
 
       this.receivedAlbumRes = this.receivedAlbumRes.concat(receiveAlbumRes);

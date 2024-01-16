@@ -136,7 +136,10 @@ struct DetailPage {
             .position({ x: this.imgOffSetX, y: this.imgOffSetY })
             .scale({ x: this.imgScale, y: this.imgScale })
             .objectFit(ImageFit.Contain)
-            .onClick(() => router.back())
+            .onClick(() => {
+              this.currentPage = 'detailListPage';
+              router.back()
+            })
         }
         .gesture(GestureGroup(GestureMode.Exclusive,
           PinchGesture({ fingers: Constants.DOUBLE_NUMBER })
