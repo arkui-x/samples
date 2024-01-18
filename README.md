@@ -18,6 +18,7 @@
   - ['JsonExample'：JsonExample（API10）](JsonExample)
   - ['PlatformBridge'：PlatformBridge（API10）](PlatformBridge)
   - ['Router'：Router（API10）](Router)
+  - ['WebExample'：WebExample（API10）](WebExample)
 - 精品应用
   - ['Shopping'：购物示例应用（API10）](Shopping)
   - ['HealthyDiet'：健康饮食示例应用（API10）](HealthyDiet)
@@ -37,6 +38,7 @@ samples
 |---JsonExample         # 使用不同的库反序列化一组json字符串
 |---PlatformBridge      # 平台桥接功能
 |---Router              # 页面跳转
+|---WebExample          # Web组件
 |---Shopping            # 精品应用购物
 |---HealthyDiet         # 精品应用健康饮食
 ```

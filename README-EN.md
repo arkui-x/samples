@@ -17,6 +17,7 @@ This repository provides a series of app samples to help you quickly learn the A
   - ['InfiniteList'：InfiniteList（API10）](InfiniteList)
   - ['JsonExample'：JsonExample（API10）](JsonExample)
   - ['Router'：Router（API10）](Router)
+  - ['WebExample'：WebExample（API10）](WebExample)
 - Featured apps:
   - ['Shopping': Shopping App (API8)](Shopping)
   - ['HealthyDiet': Healthy Diet App (API8)](HealthyDiet)
@@ -34,6 +35,7 @@ samples
 |---InfiniteList        # Infinite List app
 |---JsonExample         # JsonExample app
 |---Router              # Router app
+|---WebExample          # Web module
 ```
 
 ## Constraints
