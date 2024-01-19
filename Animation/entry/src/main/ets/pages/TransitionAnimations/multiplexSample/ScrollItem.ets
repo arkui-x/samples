@@ -56,8 +56,9 @@ export struct ScrollItem {
         .onActionStart(() => {
           console.info('Pan start');
         })
-        .onActionUpdate((event: GestureEvent) => {
-          if (this.resources > 1) {
+      .onActionUpdate((event: GestureEvent) => {
+        if (this.translateY >= 115) this.translateY = 110
+        if (this.resources > 1 && this.translateY <= 115) {
             let sxNumber: number = 0;
             if (event.offsetY - this.offsetY <= 0) {
               sxNumber = (this.sx - Math.abs(event.offsetY - this.offsetY) / this.windowHeight);
@@ -74,7 +75,8 @@ export struct ScrollItem {
             this.offsetX = 0;
             this.offsetY = 0;
             console.info('Pan end');
-            if (this.scaleX >= 0.15 && this.scaleX < 1) {
+            if (this.scaleX >= 0.15 && this.scaleX <= 1) {
+              this.move(1)
               this.restore();
             } else if (this.scaleX < 0.15) {
               this.delete();
@@ -90,7 +92,7 @@ export struct ScrollItem {
     let an = Math.pow((1 - sx) * 30, 2);
     this.angle = an > 90 ? 90 : an;
     let y = Math.log((2 - sx)) * -(this.windowHeight * 2);
-    this.translateY = y > 0 ? 0 : (y + 120);
+    this.translateY = y > 0 ? 118 : (y + 120);
     console.info('Pan sx:' + this.sx);
     console.info('Pan scaleX:' + this.scaleX);
     console.info('Pan translateY:' + this.translateY);
@@ -102,12 +104,12 @@ export struct ScrollItem {
    */
   restore() {
     let that = this;
-    let intervalID = setInterval(() => {
-      that.move(that.sx += 0.01);
-      if (that.sx >= 1) {
-        clearInterval(intervalID);
-      }
-    }, 10)
+    setTimeout(() => {
+      that.sx = 1
+      that.scaleX = 1
+      that.angle = 0
+      that.translateY = 0
+    }, 50)
   }
 
   /**
@@ -115,11 +117,14 @@ export struct ScrollItem {
    */
   delete() {
     let that = this;
-    let intervalID = setInterval(() => {
-      that.move(that.sx -= 0.01);
-      if (that.sx < 0.2) {
-        clearInterval(intervalID);
-        that.onDelete(that.resource.getId());
+    let intervalID: number = setInterval(() => {
+      if (intervalID > 0) {
+        that.move(that.sx -= 0.01);
+        if (that.sx < 0.2) {
+          clearInterval(intervalID);
+          intervalID = 0
+          that.onDelete(that.resource.getId());
+        }
       }
     }, 10)
   }

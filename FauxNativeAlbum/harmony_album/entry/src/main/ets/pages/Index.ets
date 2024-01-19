@@ -374,6 +374,7 @@ struct Index {
     this.xcPageNo = 1;
     if (item.name === 'photos') {
       this.getCameraObjectRes('photos');
+      AppStorage.setOrCreate('photoArr', this.typeAlbumArr);
     }
     if (item.name === 'screenshots') {
       this.getCameraObjectRes('screenshots');
