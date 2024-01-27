@@ -5,6 +5,7 @@ import XcAlbumPage from './XcAlbumPage';
 @Component
 struct PhotoRedirect {
   @StorageLink('currentInnerPage') currentInnerPage: string = 'listPage';
+  @StorageLink('currentPage') currentPage: string = 'listPage';
   @StorageLink('lastPageCount') lastPageCount: number = 30; //The number of last pages
   @StorageLink('isPageLoading') isPageLoading: boolean = false; //Whether to request the next page
   @StorageLink('currentListName') currentListName: string = 'home';
@@ -27,7 +28,7 @@ struct PhotoRedirect {
   build() {
     Column() {
       XcAlbumPage({
-        currentPage: this.currentInnerPage,
+        currentPage: this.currentPage,
         lastPageCount: this.lastPageCount,
         isPageLoading: this.isPageLoading
       })

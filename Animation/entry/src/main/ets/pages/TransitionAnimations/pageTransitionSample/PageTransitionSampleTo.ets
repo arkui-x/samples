@@ -47,7 +47,9 @@ struct PageTransitionSampleTo {
     const routerParams = router.getParams() as Record<string,SlideEffect|number>
     this.transitionType = routerParams.type as SlideEffect
     this.angle = routerParams.angle as number
+    if (!this.angle) this.angle = 0
     this.zoom = routerParams.zoom as number
+    if (!this.zoom) this.zoom = 2
   }
 
   pageTransition() {

@@ -254,6 +254,7 @@ struct Index {
     this.bridgeImpl.callMethod('resetAlbum');
     if (item.name === 'photos') {
       this.bridgeImpl.callMethod('getAlbumPhotos');
+      AppStorage.setOrCreate('photoArr', this.typeAlbumArr);
     }
     if (item.name === 'screenshots') {
       this.bridgeImpl.callMethod('getAlbumScreenshots');

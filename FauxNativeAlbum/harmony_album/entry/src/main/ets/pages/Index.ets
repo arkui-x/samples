@@ -283,7 +283,7 @@ struct Index {
 
   // Filter the data
   filterDataByTime(receiveAlbumRes: albumResFace[], days: number) {
-    let timestamp: number = Math.floor(new Date().getTime() / 1000) - (24 * 60 * 60 * 1000) * days; //day天前的时间戳
+    let timestamp: number = Math.floor(new Date().getTime() / 1000) - (24 * 60 * 60) * days;
     let recentDayRes: albumResFace[] = [];
     receiveAlbumRes.forEach((item) => {
       if (item.createTime >= timestamp) {
@@ -374,6 +374,7 @@ struct Index {
     this.xcPageNo = 1;
     if (item.name === 'photos') {
       this.getCameraObjectRes('photos');
+      AppStorage.setOrCreate('photoArr', this.typeAlbumArr);
     }
     if (item.name === 'screenshots') {
       this.getCameraObjectRes('screenshots');
