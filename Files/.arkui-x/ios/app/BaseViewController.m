@@ -5,16 +5,16 @@
 //  Created by Dordly on 2024/3/14.
 //
 
-#import "FatherViewController.h"
+#import "BaseViewController.h"
 #import "EntryEntryAbilityViewController.h"
 
-@interface FatherViewController ()
+@interface BaseViewController ()
 
 @property (nonatomic, strong) UIView *mainView;
 
 @end
 
-@implementation FatherViewController
+@implementation BaseViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
