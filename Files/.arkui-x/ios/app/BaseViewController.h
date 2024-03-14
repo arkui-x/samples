@@ -9,7 +9,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface FatherViewController : UIViewController
+@interface BaseViewController : UIViewController
 
 @property (nonatomic, copy) NSString *instanceName;
 
