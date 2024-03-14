@@ -1,5 +1,5 @@
 //
-//  FatherViewController.h
+//  BaseViewController.h
 //  app
 //
 //  Created by Dordly on 2024/3/13.
@@ -9,7 +9,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface FatherViewController : UIViewController
+@interface BaseViewController : UIViewController
 
 @property (nonatomic, copy) NSString *instanceName;
 
