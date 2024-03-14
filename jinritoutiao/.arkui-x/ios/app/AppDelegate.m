@@ -14,7 +14,7 @@
  */
 
 #import "AppDelegate.h"
-#import "FatherViewController.h"
+#import "BaseViewController.h"
 #import <libarkui_ios/StageApplication.h>
 
 #define BUNDLE_DIRECTORY @"arkui-x"
@@ -29,7 +29,7 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     [StageApplication configModuleWithBundleDirectory:BUNDLE_DIRECTORY];
     [StageApplication launchApplication];
-    FatherViewController *vc = [[FatherViewController alloc] init];
+    BaseViewController *vc = [[BaseViewController alloc] init];
     vc.instanceName = [NSString stringWithFormat:@"%@:%@:%@",BUNDLE_NAME, @"entry", @"EntryAbility"];
     [self setNavRootVC:vc];
     return YES;
@@ -64,7 +64,7 @@
     id subStageVC = nil;
     
     if ([moduleName isEqualToString:@"entry"] && [abilityName isEqualToString:@"EntryAbility"]) {
-        FatherViewController *vc = [[FatherViewController alloc] init];
+        BaseViewController *vc = [[BaseViewController alloc] init];
         vc.instanceName = [NSString stringWithFormat:@"%@:%@:%@",bundleName, moduleName, abilityName];
         subStageVC = vc;
     } // other ViewController
