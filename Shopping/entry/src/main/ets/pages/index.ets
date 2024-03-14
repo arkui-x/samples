@@ -23,8 +23,6 @@ import { Information } from './homePage/informance'
 import { ShopCart } from './homePage/shopCart'
 import { User } from './homePage/User'
 
-let portraitIndex = null
-
 @Entry
 @Component
 struct Index {
@@ -37,27 +35,6 @@ struct Index {
   @State width1: number = 100
   @State ratio: number = 1
   listener = mediaQuery.matchMediaSync('(orientation:landscape)')
-
-  aboutToAppear() {
-    // @ts-ignore
-    display.getAllDisplays((err, data) => {
-      let aspect = data[0].width / data[0].height
-      if (aspect == 0.5625) {
-        this.ratio = 1.4
-      }
-    })
-    portraitIndex = this.onPortrait.bind(this)
-    this.listener.on('change', portraitIndex)
-  }
-
-  async onPortrait(mediaQueryResult) {
-    let result = mediaQueryResult.matches
-    if (result) {
-      this.width1 = 45
-    } else {
-      this.width1 = 100
-    }
-  }
 
   build() {
     Column() {
@@ -91,7 +68,7 @@ struct Index {
 
         Column() {
           Flex({ justifyContent: FlexAlign.SpaceAround, alignItems: ItemAlign.Center }) {
-            ForEach(this.tabTittleData, item => {
+            ForEach(this.tabTittleData, (item: TabTitleModel) => {
               Flex({
                 direction: FlexDirection.Column,
                 justifyContent: FlexAlign.Center,
@@ -111,7 +88,7 @@ struct Index {
                 this.tabsIndex = item.id
                 this.controller.changeIndex(item.id)
               })
-            }, item => JSON.stringify(item))
+            },  (item: TabTitleModel) => JSON.stringify(item))
           }
           .height('8%')
         }

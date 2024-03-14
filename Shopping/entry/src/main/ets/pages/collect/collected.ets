@@ -20,33 +20,15 @@ import { SinglePage1 } from './singlePage1'
 import { SinglePage2 } from './singlePage2'
 import { SinglePage3 } from './singlePage3'
 
-let portraitCollected = null
-
 @Entry
 @Component
 struct CollectedPage {
-  @State width1: number = parseInt(router.getParams()['num'] as string, 10)
-  @State ratio: number = parseInt(router.getParams()['ratio'] as string, 10)
+  @State ratio: number = 10
   @State opacity1: number = 1
   @State num: number = 1
   @State layoutId: number = 0
   @State collected: boolean = true
   listener = mediaQuery.matchMediaSync('(orientation:landscape)')
-
-  aboutToAppear() {
-    console.log('www data log ' + this.width)
-    portraitCollected = this.onPortrait.bind(this)
-    this.listener.on('change', portraitCollected)
-  }
-
-  async onPortrait(mediaQueryResult) {
-    let result = mediaQueryResult.matches
-    if (result) {
-      this.width1 = 45
-    } else {
-      this.width1 = 100
-    }
-  }
 
   build() {
     Column() {

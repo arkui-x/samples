@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 52;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		18BAB9872BA2CE98008F621D /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BAB9862BA2CE98008F621D /* BaseViewController.m */; };
 		312985A1FF004B68B8F92A7A /* libmediaquery.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55F2565AFE8A46908154402B /* libmediaquery.xcframework */; };
 		526E26457BEF4A2AB35CD4FD /* librouter.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29BB003AC1274CDFB042A732 /* librouter.xcframework */; };
 		55B9C95F142045C880581B26 /* librouter.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 29BB003AC1274CDFB042A732 /* librouter.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -41,6 +42,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		18BAB9852BA2CE98008F621D /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		18BAB9862BA2CE98008F621D /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
 		29BB003AC1274CDFB042A732 /* librouter.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = librouter.xcframework; path = frameworks/librouter.xcframework; sourceTree = "<group>"; };
 		55F2565AFE8A46908154402B /* libmediaquery.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = libmediaquery.xcframework; path = frameworks/libmediaquery.xcframework; sourceTree = "<group>"; };
 		89E41E4329F505070004F33E /* EntryEntryAbilityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EntryEntryAbilityViewController.m; sourceTree = "<group>"; };
@@ -93,6 +96,8 @@
 		F0AF1ACF27D3684F008C55DD /* app */ = {
 			isa = PBXGroup;
 			children = (
+				18BAB9852BA2CE98008F621D /* BaseViewController.h */,
+				18BAB9862BA2CE98008F621D /* BaseViewController.m */,
 				89E41E4429F505070004F33E /* EntryEntryAbilityViewController.h */,
 				89E41E4329F505070004F33E /* EntryEntryAbilityViewController.m */,
 				F0AF1AD027D3684F008C55DD /* AppDelegate.h */,
@@ -187,6 +192,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F0AF1AD227D3684F008C55DD /* AppDelegate.m in Sources */,
+				18BAB9872BA2CE98008F621D /* BaseViewController.m in Sources */,
 				89E41E4529F505070004F33E /* EntryEntryAbilityViewController.m in Sources */,
 				F0AF1AE327D36856008C55DD /* main.m in Sources */,
 			);
@@ -327,7 +333,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = V988GE98EW;
+				DEVELOPMENT_TEAM = 5B33WN284J;
 				ENABLE_BITCODE = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = app/Info.plist;
@@ -342,9 +348,9 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.example.HealthyDiet;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.assemblyTestDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "no sign";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -359,7 +365,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = V988GE98EW;
+				DEVELOPMENT_TEAM = 5B33WN284J;
 				ENABLE_BITCODE = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = app/Info.plist;
@@ -374,9 +380,9 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.example.HealthyDiet;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.assemblyTestDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "no sign";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

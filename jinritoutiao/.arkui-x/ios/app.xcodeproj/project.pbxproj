@@ -3,10 +3,21 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 52;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		18BAB98D2BA2CF05008F621D /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BAB98C2BA2CF05008F621D /* BaseViewController.m */; };
+		2A6A585752134F4A9BD57547 /* librouter.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 662A5F3A2DC54066AEED545A /* librouter.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		358251FA555A4AEA976F4D59 /* libnet_utils.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC7E786A1BAF43DF898D1BCC /* libnet_utils.xcframework */; };
+		54DD999A41E144EBBCC01F95 /* librouter.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 662A5F3A2DC54066AEED545A /* librouter.xcframework */; };
+		73AAB46722094D429E5A7094 /* libpromptaction.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5C4E890CCC1E48EA95018579 /* libpromptaction.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		8D3BF4E02D314019B925C625 /* libnet_utils.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BC7E786A1BAF43DF898D1BCC /* libnet_utils.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		9974EE8FEA2441D390245C3C /* libnet_http.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 123915EE5B0444D484FF9ECA /* libnet_http.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A7D0F2073B2348E7B90344F2 /* libhilog.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 31F8B4427DFC4BE5A9D6D710 /* libhilog.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B67B856DFFD54C3F8B1D49E0 /* libhilog.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31F8B4427DFC4BE5A9D6D710 /* libhilog.xcframework */; };
+		C66017FB771142FF9E59D188 /* libpromptaction.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C4E890CCC1E48EA95018579 /* libpromptaction.xcframework */; };
+		DB30D6048BA8468CB865F217 /* libnet_http.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 123915EE5B0444D484FF9ECA /* libnet_http.xcframework */; };
 		DF4BEDE929F4F5280060CCEB /* EntryEntryAbilityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF4BEDE729F4F5270060CCEB /* EntryEntryAbilityViewController.m */; };
 		DF9C1B5E28B9FC3A005DCF58 /* libarkui_ios.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF9C1B5D28B9FC3A005DCF58 /* libarkui_ios.xcframework */; };
 		DF9C1B5F28B9FC3A005DCF58 /* libarkui_ios.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DF9C1B5D28B9FC3A005DCF58 /* libarkui_ios.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -25,6 +36,11 @@
 			dstSubfolderSpec = 10;
 			files = (
 				DF9C1B5F28B9FC3A005DCF58 /* libarkui_ios.xcframework in Embed Frameworks */,
+				2A6A585752134F4A9BD57547 /* librouter.xcframework in Embed Frameworks */,
+				73AAB46722094D429E5A7094 /* libpromptaction.xcframework in Embed Frameworks */,
+				A7D0F2073B2348E7B90344F2 /* libhilog.xcframework in Embed Frameworks */,
+				9974EE8FEA2441D390245C3C /* libnet_http.xcframework in Embed Frameworks */,
+				8D3BF4E02D314019B925C625 /* libnet_utils.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -32,10 +48,17 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		123915EE5B0444D484FF9ECA /* libnet_http.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = libnet_http.xcframework; path = frameworks/libnet_http.xcframework; sourceTree = "<group>"; };
+		18BAB98B2BA2CF05008F621D /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		18BAB98C2BA2CF05008F621D /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		31F8B4427DFC4BE5A9D6D710 /* libhilog.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = libhilog.xcframework; path = frameworks/libhilog.xcframework; sourceTree = "<group>"; };
+		5C4E890CCC1E48EA95018579 /* libpromptaction.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = libpromptaction.xcframework; path = frameworks/libpromptaction.xcframework; sourceTree = "<group>"; };
+		662A5F3A2DC54066AEED545A /* librouter.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = librouter.xcframework; path = frameworks/librouter.xcframework; sourceTree = "<group>"; };
+		BC7E786A1BAF43DF898D1BCC /* libnet_utils.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = libnet_utils.xcframework; path = frameworks/libnet_utils.xcframework; sourceTree = "<group>"; };
 		DF4BEDE729F4F5270060CCEB /* EntryEntryAbilityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EntryEntryAbilityViewController.m; sourceTree = "<group>"; };
 		DF4BEDE829F4F5280060CCEB /* EntryEntryAbilityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EntryEntryAbilityViewController.h; sourceTree = "<group>"; };
 		DF9C1B5D28B9FC3A005DCF58 /* libarkui_ios.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = libarkui_ios.xcframework; path = frameworks/libarkui_ios.xcframework; sourceTree = "<group>"; };
-		DF9C1B6028B9FC4B005DCF58 /* arkui-x */ = {isa = PBXFileReference; lastKnownFileType = folder; path = arkui-x; sourceTree = "<group>"; };
+		DF9C1B6028B9FC4B005DCF58 /* arkui-x */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "arkui-x"; sourceTree = "<group>"; };
 		F0AF1ACD27D3684F008C55DD /* app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = app.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0AF1AD027D3684F008C55DD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F0AF1AD127D3684F008C55DD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -51,6 +74,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				DF9C1B5E28B9FC3A005DCF58 /* libarkui_ios.xcframework in Frameworks */,
+				54DD999A41E144EBBCC01F95 /* librouter.xcframework in Frameworks */,
+				C66017FB771142FF9E59D188 /* libpromptaction.xcframework in Frameworks */,
+				B67B856DFFD54C3F8B1D49E0 /* libhilog.xcframework in Frameworks */,
+				DB30D6048BA8468CB865F217 /* libnet_http.xcframework in Frameworks */,
+				358251FA555A4AEA976F4D59 /* libnet_utils.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +106,8 @@
 		F0AF1ACF27D3684F008C55DD /* app */ = {
 			isa = PBXGroup;
 			children = (
+				18BAB98B2BA2CF05008F621D /* BaseViewController.h */,
+				18BAB98C2BA2CF05008F621D /* BaseViewController.m */,
 				DF4BEDE829F4F5280060CCEB /* EntryEntryAbilityViewController.h */,
 				DF4BEDE729F4F5270060CCEB /* EntryEntryAbilityViewController.m */,
 				F0AF1AD027D3684F008C55DD /* AppDelegate.h */,
@@ -94,6 +124,11 @@
 			isa = PBXGroup;
 			children = (
 				DF9C1B5D28B9FC3A005DCF58 /* libarkui_ios.xcframework */,
+				662A5F3A2DC54066AEED545A /* librouter.xcframework */,
+				5C4E890CCC1E48EA95018579 /* libpromptaction.xcframework */,
+				31F8B4427DFC4BE5A9D6D710 /* libhilog.xcframework */,
+				123915EE5B0444D484FF9ECA /* libnet_http.xcframework */,
+				BC7E786A1BAF43DF898D1BCC /* libnet_utils.xcframework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -169,6 +204,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F0AF1AD227D3684F008C55DD /* AppDelegate.m in Sources */,
+				18BAB98D2BA2CF05008F621D /* BaseViewController.m in Sources */,
 				DF4BEDE929F4F5280060CCEB /* EntryEntryAbilityViewController.m in Sources */,
 				F0AF1AE327D36856008C55DD /* main.m in Sources */,
 			);
@@ -306,10 +342,10 @@
 				ARCHS = arm64;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: ";
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = MCN34247SC;
+				DEVELOPMENT_TEAM = 5B33WN284J;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = app/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -322,9 +358,9 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.example.jinritoutiao;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.assemblyTestDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "shiseido sc adhoc";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -336,10 +372,10 @@
 				ARCHS = arm64;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: ";
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = MCN34247SC;
+				DEVELOPMENT_TEAM = 5B33WN284J;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = app/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -352,9 +388,9 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.example.jinritoutiao;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.assemblyTestDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "shiseido sc adhoc";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

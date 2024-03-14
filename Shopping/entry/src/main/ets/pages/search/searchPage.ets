@@ -18,14 +18,12 @@ import router from '@ohos.router';
 import { ExampleDataModel, SearchDataModel } from '../../model/searchModel';
 import { exampleData, searchData } from '../../data/searchData'
 
-let portraitSearch = null
-
 @Entry
 @Component
 struct SearchPage {
-  @State placeholder: string = (router.getParams()['message']).toString()
-  @State width1: number = parseInt(router.getParams()['num'] as string, 10)
-  @State ratio: number = parseInt(router.getParams()['ratio'] as string, 10)
+  @State placeholder: string = router.getParams().toString()
+  @State width1: number = 0
+  @State ratio: number = 10
   @State value: string = ''
   @State flag: boolean = true
   @State isShow: boolean = true
@@ -38,22 +36,6 @@ struct SearchPage {
   @State swiperWidth: number = 30
   @State opacity1: number = 1
   listener = mediaQuery.matchMediaSync('(orientation:landscape)');
-
-  aboutToAppear() {
-    portraitSearch = this.onPortrait.bind(this);
-    this.listener.on('change', portraitSearch)
-  }
-
-  async onPortrait(mediaQueryResult) {
-    let result = mediaQueryResult.matches
-    if (result) {
-      this.width1 = 45
-      this.swiperWidth = 30
-    } else {
-      this.width1 = 100
-      this.swiperWidth = 60
-    }
-  }
 
   build() {
     Column() {
@@ -125,7 +107,7 @@ struct SearchPage {
 
               if (this.flag) {
                 Flex({ justifyContent: FlexAlign.Start, alignItems: ItemAlign.Center, wrap: FlexWrap.Wrap }) {
-                  ForEach(this.exampleText, item => {
+                  ForEach(this.exampleText, (item: ExampleDataModel) => {
                     Button() {
                       Text(item.exampleText)
                         .fontSize(12 * this.ratio)
@@ -135,7 +117,7 @@ struct SearchPage {
                     .margin(3)
                     .height(30 * this.ratio)
                     .backgroundColor('#f8f8f8')
-                  }, item => JSON.stringify(item))
+                  }, (item: ExampleDataModel) => JSON.stringify(item))
                 }
                 .margin({ left: 10, right: 10 })
               } else {
@@ -175,7 +157,7 @@ struct SearchPage {
                 .alignItems(HorizontalAlign.Start)
 
                 List() {
-                  ForEach([1, 2, 3, 4, 5, 6], item => {
+                  ForEach([1, 2, 3, 4, 5, 6], (item: number) => {
                     ListItem() {
                       Column() {
                         Flex({ justifyContent: FlexAlign.SpaceBetween, alignItems: ItemAlign.Center }) {
@@ -197,7 +179,7 @@ struct SearchPage {
                         }
                         .padding({ left: 5, right: 5 })
 
-                        ForEach([1, 2, 3, 4, 5, 6, 7, 8, 9, 10], item => {
+                        ForEach([1, 2, 3, 4, 5, 6, 7, 8, 9, 10], (item: number) => {
                           Flex({ justifyContent: FlexAlign.SpaceBetween, alignItems: ItemAlign.Center }) {
                             Flex({ alignItems: ItemAlign.Center }) {
                               Flex({ justifyContent: FlexAlign.Center, alignItems: ItemAlign.Center }) {
@@ -224,7 +206,7 @@ struct SearchPage {
                           .padding({ left: 5, right: 5 })
                           .width('100%')
                           .height(40 * this.ratio)
-                        }, item => JSON.stringify(item))
+                        }, (item: number) => JSON.stringify(item))
                       }
                       .width('100%')
                     }
@@ -232,8 +214,8 @@ struct SearchPage {
                     .margin({ left: 5, right: 5 })
                     .padding({ top: 5 })
                     .backgroundColor(Color.White)
-                    .width(`${this.swiperWidth}%`)
-                  }, item => JSON.stringify(item))
+                    .width(`60%`)
+                  }, (item: number) => JSON.stringify(item))
                 }
                 .listDirection(Axis.Horizontal)
                 .height('70%')
@@ -250,7 +232,7 @@ struct SearchPage {
           }
           if (this.isFlag) {
             Column() {
-              ForEach(this.searched, item => {
+              ForEach(this.searched, (item: string) => {
                 Flex({ justifyContent: FlexAlign.SpaceBetween, alignItems: ItemAlign.Center }) {
                   Row() {
                     Image('/resources/icon/search.png')
@@ -274,7 +256,7 @@ struct SearchPage {
                   this.isFlag = false
                   this.value = item
                 })
-              }, item => JSON.stringify(item))
+              }, (item: string) => JSON.stringify(item))
             }
           }
         }

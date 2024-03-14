@@ -9,7 +9,6 @@
 #import "EntryEntryAbilityViewController.h"
 
 @interface BaseViewController ()
-
 @property (nonatomic, strong) UIView *mainView;
 
 @end
@@ -20,11 +19,9 @@
     [super viewDidLoad];
     CGFloat top = [self getStatusBarHeight];
     self.mainView = [[UIView alloc] initWithFrame:CGRectMake(0, top, self.view.frame.size.width, self.view.frame.size.height - top)];
-    self.mainView.backgroundColor = [UIColor whiteColor];
     [self.view addSubview:self.mainView];
     EntryEntryAbilityViewController *mainView = [[EntryEntryAbilityViewController alloc] initWithInstanceName:self.instanceName];
     mainView.view.frame = CGRectMake(0, 0, self.mainView.frame.size.width, self.mainView.frame.size.height);
-    mainView.view.backgroundColor = [UIColor whiteColor];
     [self.mainView addSubview:mainView.view];
 }
 
