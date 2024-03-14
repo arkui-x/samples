@@ -45,7 +45,7 @@ struct MainListItemComponent {
     .height(56)
     .width('100%')
     .borderRadius(24)
-    .backgroundColor($r('app.color.white'))
+    .backgroundColor($r('app.color.background'))
     .margin({ top: 10 })
     .onClick(() => {
       router.pushUrl({ url: this.mainListItem.routerUrl })
@@ -75,7 +75,7 @@ export default struct FileManagerHome {
       .height('100%')
     }
     .height('100%')
-    .backgroundColor($r('app.color.background'))
+    .backgroundColor(Color.White)
     .padding(20)
   }
 }
