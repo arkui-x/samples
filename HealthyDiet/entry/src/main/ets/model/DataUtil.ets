@@ -65,7 +65,7 @@ export function getMileTimes(): string[] {
     let mealTimeResources: Resource[] = [$r("app.string.meal_time_breakfast"), $r('app.string.meal_time_lunch'), $r('app.string.meal_time_dinner'), $r('app.string.meal_time_supper'), $r('app.string.category_dessert')]
     let mealTimes: string[] = []
     mealTimeResources.forEach(item => {
-      let mealTime: string = getContext().resourceManager.getStringSync(item.id)
+      let mealTime: string = getContext().resourceManager.getStringSync(item)
       if (mealTime !== '') {
         mealTimes.push(mealTime)
       }

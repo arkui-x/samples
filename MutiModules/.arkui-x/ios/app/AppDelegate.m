@@ -39,28 +39,28 @@
 
 - (BOOL)application:(UIApplication *)app openURL:(NSURL *)url options:(NSDictionary<NSString *,id> *)options {
     NSLog(@"appdelegate openUrl callback, url : %@", url.absoluteString); // eg: (com.entry.arkui://entry?OtherAbility)
-
+    
     NSString *bundleName = url.scheme;
     NSString *moduleName = url.host;
     NSString *abilityName, *params;
-
+    
     NSURLComponents * urlComponents = [NSURLComponents componentsWithString:url.absoluteString];
     NSArray <NSURLQueryItem *> *array = urlComponents.queryItems;
-        for (NSURLQueryItem * item in array) {
+    for (NSURLQueryItem * item in array) {
         if ([item.name isEqualToString:@"abilityName"]) {
-        abilityName = item.value;
+            abilityName = item.value;
         } else if ([item.name isEqualToString:@"params"]) {
-        params = item.value;
+            params = item.value;
         }
-        }
-
-        [self handleOpenUrlWithBundleName:bundleName
-        moduleName:moduleName
-        abilityName:abilityName
-        params:params, nil];
-
-        return YES;
-        }
+    }
+    
+    [self handleOpenUrlWithBundleName:bundleName
+                           moduleName:moduleName
+                          abilityName:abilityName
+                               params:params, nil];
+    
+    return YES;
+}
 
 - (BOOL)handleOpenUrlWithBundleName:(NSString *)bundleName
                          moduleName:(NSString *)moduleName

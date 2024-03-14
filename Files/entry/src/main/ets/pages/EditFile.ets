@@ -68,11 +68,10 @@ struct EditFile {
               .borderRadius(0)
               .fontWeight(500)
               .margin({ left: 8, right: 8 })
-              .backgroundColor('#f1f3f5')
           }
           .width('100%')
           .align(Alignment.Start)
-          .margin({ top: 8 })
+          .margin({ top: 8, left: 26 })
         }
         .margin({ top: 11 })
         .height(81)
@@ -106,6 +105,6 @@ struct EditFile {
     }
     .height('100%')
     .width('100%')
-    .backgroundColor('#f1f3f5')
+    .backgroundColor(Color.White)
   }
 }

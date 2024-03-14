@@ -170,13 +170,13 @@ export struct FileList {
                       .fontWeight(500)
                       .margin({ left: 12 })
                       .borderRadius(10)
-                      .backgroundColor(0xFFFFFF)
+                      .backgroundColor('#f1f3f5')
                       .id('item' + index)
                   }
                   .borderRadius(20)
                   .width('94%')
                   .height(56)
-                  .backgroundColor(0xFFFFFF)
+                  .backgroundColor('#f1f3f5')
                 }
                 .swipeAction({ end: this.itemEnd(index), edgeEffect: SwipeEdgeEffect.Spring })
               })
@@ -188,7 +188,7 @@ export struct FileList {
             .scrollBar(BarState.Auto)
           }
           .padding({ top: 5 })
-          .backgroundColor('#f1f3f5')
+          .backgroundColor(0xFFFFFF)
           .width('100%')
           .height('100%')
           .align(Alignment.Center)

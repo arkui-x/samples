@@ -19,15 +19,15 @@ import bridge from '@arkui-x.bridge'
 struct Index {
   private bridgeImpl = bridge.createBridge('Bridge');
   @State helloArkUI: string = '';
-  @State nativeResponse: Object = '';
+  @State nativeResponse: string = '';
 
   aboutToAppear() {
     this.getHelloArkUI();
   }
 
   getHelloArkUI() {
-    this.bridgeImpl.callMethod('getHelloArkUI').then((result: string) => {
-      this.helloArkUI = result;
+    this.bridgeImpl.callMethod('getHelloArkUI').then((result) => {
+      this.helloArkUI = '' + result;
     });
   }
 
@@ -41,7 +41,13 @@ struct Index {
           .fontSize(15)
           .margin(10)
           .onClick(async () => {
-            this.nativeResponse = await this.bridgeImpl.sendMessage('Hello ArkUI-X!');
+            this.bridgeImpl.sendMessage('Hello ArkUI-X!').then((res) => {
+              this.nativeResponse = '发送数据到原生侧----响应成功： ' + res;
+              console.log(this.nativeResponse)
+            }).catch((err: Error) => {
+              this.nativeResponse = '发送数据到原生侧----响应失败： ' + err;
+              console.log(this.nativeResponse)
+            });
           })
         Text('Response from Native: ' + this.nativeResponse)
           .fontSize(15)
