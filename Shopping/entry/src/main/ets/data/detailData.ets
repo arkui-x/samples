@@ -12,336 +12,104 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
+import { expect } from '@ohos/hypium'
 
 import {
   SwiperModel, PhoneTypeModel, ShowImgModel, RecommendDataModel, GoodsInfoModel, ListDataModel
 } from "../model/detailModel"
 
 export const swiperData: Array<SwiperModel> = [
-  { src: "/resources/detailImg/swiper/swiper1.png" },
-  { src: "/resources/detailImg/swiper/swiper2.png" },
-  { src: "/resources/detailImg/swiper/swiper3.png" },
+  new SwiperModel("/resources/detailImg/swiper/swiper1.png"),
+  new SwiperModel("/resources/detailImg/swiper/swiper2.png"),
+  new SwiperModel("/resources/detailImg/swiper/swiper3.png")
 ]
 
 export const phoneTypeData: Array<PhoneTypeModel> = [
-  {
-    uri: "/resources/detailImg/deliver/deliver_type1.png",
-    color: "亮黑色"
-  },
-  {
-    uri: "/resources/detailImg/deliver/deliver_type2.png",
-    color: "星河银"
-  },
-  {
-    uri: "/resources/detailImg/deliver/deliver_type3.png",
-    color: "翡翠冷"
-  },
-  {
-    uri: "/resources/detailImg/deliver/deliver_type4.png",
-    color: "紫罗兰",
-  },
-  {
-    uri: "/resources/detailImg/deliver/deliver_type5.png",
-    color: "丹霞橙"
-  }
+  new PhoneTypeModel("/resources/detailImg/deliver/deliver_type1.png", "亮黑色"),
+  new PhoneTypeModel("/resources/detailImg/deliver/deliver_type2.png", "星河银"),
+  new PhoneTypeModel("/resources/detailImg/deliver/deliver_type3.png", "翡翠冷"),
+  new PhoneTypeModel("/resources/detailImg/deliver/deliver_type4.png", "紫罗兰"),
+  new PhoneTypeModel("/resources/detailImg/deliver/deliver_type5.png", "丹霞橙")
 ]
 
 export const showImgData: Array<ShowImgModel> = [
-  { uri: "/resources/detailImg/evaluation/buyersShow1.png" },
-  { uri: "/resources/detailImg/evaluation/buyersShow2.png" },
-  { uri: "/resources/detailImg/evaluation/buyersShow3.png" },
-  { uri: "/resources/detailImg/evaluation/buyersShow4.png" },
+  new ShowImgModel("/resources/detailImg/evaluation/buyersShow1.png"),
+  new ShowImgModel("/resources/detailImg/evaluation/buyersShow2.png"),
+  new ShowImgModel("/resources/detailImg/evaluation/buyersShow3.png"),
+  new ShowImgModel("/resources/detailImg/evaluation/buyersShow4.png")
 ]
 
 export const recommendData: Array<RecommendDataModel> = [
-  {
-    img: '/resources/detailImg/recommendImg/recommendImg/recommendImg1.png',
-    title: 'XX Mate 40 5G 全网通',
-    price: '￥196'
-  },
-  {
-    img: '/resources/detailImg/recommendImg/recommendImg/recommendImg2.png',
-    title: 'XX手机 大多数人的选择',
-    price: '￥339.98'
-  },
-  {
-    img: '/resources/detailImg/recommendImg/recommendImg/recommendImg3.png',
-    title: 'XX Mate 40 Pro 5G 全网通',
-    price: '￥188'
-  },
-  {
-    img: '/resources/detailImg/recommendImg/recommendImg/recommendImg4.png',
-    title: 'XX Mate 40 5G 全网通',
-    price: '￥196'
-  },
-  {
-    img: '/resources/detailImg/recommendImg/recommendImg/recommendImg5.png',
-    title: 'XX手机 大多数人的选择',
-    price: '￥339.98'
-  },
-  {
-    img: '/resources/detailImg/recommendImg/recommendImg/recommendImg6.png',
-    title: 'XX Mate 40 Pro 5G 全网通',
-    price: '￥188'
-  }
+  new RecommendDataModel("/resources/detailImg/recommendImg/recommendImg/recommendImg1.png", "XX Mate 40 5G 全网通", "￥196"),
+  new RecommendDataModel("/resources/detailImg/recommendImg/recommendImg/recommendImg2.png", "XX手机 大多数人的选择", "￥339.98"),
+  new RecommendDataModel("/resources/detailImg/recommendImg/recommendImg/recommendImg3.png", "XX Mate 40 Pro 5G 全网通", "￥188"),
+  new RecommendDataModel("/resources/detailImg/recommendImg/recommendImg/recommendImg4.png", "XX Mate 40 5G 全网通", "￥196"),
+  new RecommendDataModel("/resources/detailImg/recommendImg/recommendImg/recommendImg5.png", "XX手机 大多数人的选择", "￥339.98"),
+  new RecommendDataModel("/resources/detailImg/recommendImg/recommendImg/recommendImg6.png", "XX Mate 40 Pro 5G 全网通", "￥188")
 ]
 
 export const goodsInfoData: Array<GoodsInfoModel> = [
-  {
-    img: "/resources/detailImg/recommendImg/attention/list_1.png"
-  },
-  {
-    img: "/resources/detailImg/recommendImg/attention/list_1.png"
-  },
-  {
-    img: "/resources/detailImg/recommendImg/attention/list_2.png"
-  },
-  {
-    img: "/resources/detailImg/recommendImg/attention/list_3.png"
-  },
-  {
-    img: "/resources/detailImg/recommendImg/attention/list_4.png"
-  },
-  {
-    img: "/resources/detailImg/recommendImg/attention/list_4.png"
-  },
-  {
-    img: "/resources/detailImg/recommendImg/attention/list_5.png"
-  },
-  {
-    img: "/resources/detailImg/recommendImg/attention/list_5.png"
-  },
-  {
-    img: "/resources/detailImg/recommendImg/attention/list_5.png"
-  },
-  {
-    img: "/resources/detailImg/recommendImg/attention/list_5.png"
-  },
-  {
-    img: "/resources/detailImg/recommendImg/attention/list_5.png"
-  },
-  {
-    img: "/resources/detailImg/recommendImg/attention/list_5.png"
-  },
-  {
-    img: "/resources/detailImg/recommendImg/attention/list_6.png"
-  },
-  {
-    img: "/resources/detailImg/recommendImg/attention/list_6.png"
-  },
-  {
-    img: "/resources/detailImg/recommendImg/attention/list_6.png"
-  },
-  {
-    img: "/resources/detailImg/recommendImg/attention/list_6.png"
-  },
-  {
-    img: "/resources/detailImg/recommendImg/attention/list_4.png"
-  },
-  {
-    img: "/resources/detailImg/recommendImg/attention/list_5.png"
-  },
-  {
-    img: "/resources/detailImg/recommendImg/attention/list_6.png"
-  },
-  {
-    img: "/resources/detailImg/recommendImg/attention/list_5.png"
-  },
-  {
-    img: "/resources/detailImg/recommendImg/attention/list_4.png"
-  },
-  {
-    img: "/resources/detailImg/recommendImg/attention/list_5.png"
-  },
-  {
-    img: "/resources/detailImg/recommendImg/attention/list_6.png"
-  },
+  new GoodsInfoModel("/resources/detailImg/recommendImg/attention/list_1.png"),
+  new GoodsInfoModel("/resources/detailImg/recommendImg/attention/list_1.png"),
+  new GoodsInfoModel("/resources/detailImg/recommendImg/attention/list_2.png"),
+  new GoodsInfoModel("/resources/detailImg/recommendImg/attention/list_3.png"),
+  new GoodsInfoModel("/resources/detailImg/recommendImg/attention/list_4.png"),
+  new GoodsInfoModel("/resources/detailImg/recommendImg/attention/list_4.png"),
+  new GoodsInfoModel("/resources/detailImg/recommendImg/attention/list_5.png"),
+  new GoodsInfoModel("/resources/detailImg/recommendImg/attention/list_5.png"),
+  new GoodsInfoModel("/resources/detailImg/recommendImg/attention/list_5.png"),
+  new GoodsInfoModel("/resources/detailImg/recommendImg/attention/list_5.png"),
+  new GoodsInfoModel("/resources/detailImg/recommendImg/attention/list_5.png"),
+  new GoodsInfoModel("/resources/detailImg/recommendImg/attention/list_5.png"),
+  new GoodsInfoModel("/resources/detailImg/recommendImg/attention/list_6.png"),
+  new GoodsInfoModel("/resources/detailImg/recommendImg/attention/list_6.png"),
+  new GoodsInfoModel("/resources/detailImg/recommendImg/attention/list_6.png"),
+  new GoodsInfoModel("/resources/detailImg/recommendImg/attention/list_6.png"),
+  new GoodsInfoModel("/resources/detailImg/recommendImg/attention/list_4.png"),
+  new GoodsInfoModel("/resources/detailImg/recommendImg/attention/list_5.png"),
+  new GoodsInfoModel("/resources/detailImg/recommendImg/attention/list_6.png"),
+  new GoodsInfoModel("/resources/detailImg/recommendImg/attention/list_5.png"),
+  new GoodsInfoModel("/resources/detailImg/recommendImg/attention/list_4.png"),
+  new GoodsInfoModel("/resources/detailImg/recommendImg/attention/list_5.png"),
+  new GoodsInfoModel("/resources/detailImg/recommendImg/attention/list_6.png")
 ]
 
 export const listData: Array<ListDataModel> = [
-  {
-    img: '/resources/detailImg/recommendImg/recommendImg/recommendImg1.png',
-    title: 'XX Mate 40 5G 全网通',
-    price: '￥196'
-  },
-  {
-    img: '/resources/detailImg/recommendImg/recommendImg/recommendImg2.png',
-    title: 'XX手机 大多数人的选择',
-    price: '￥339.98'
-  },
-  {
-    img: '/resources/detailImg/recommendImg/recommendImg/recommendImg3.png',
-    title: 'XX Mate 40 Pro 5G 全网通',
-    price: '￥188'
-  },
-  {
-    img: '/resources/detailImg/recommendImg/recommendImg/recommendImg4.png',
-    title: 'XX Mate 40 5G 全网通',
-    price: '￥196'
-  },
-  {
-    img: '/resources/detailImg/recommendImg/recommendImg/recommendImg5.png',
-    title: 'XX手机 大多数人的选择',
-    price: '￥339.98'
-  },
-  {
-    img: '/resources/detailImg/recommendImg/recommendImg/recommendImg6.png',
-    title: 'XX Mate 40 Pro 5G 全网通',
-    price: '￥188'
-  },
-  {
-    img: '/resources/detailImg/recommendImg/recommendImg/recommendImg7.png',
-    title: 'XX Mate 40 5G 全网通',
-    price: '￥196'
-  },
-  {
-    img: '/resources/detailImg/recommendImg/recommendImg/recommendImg8.png',
-    title: 'XX手机 大多数人的选择',
-    price: '￥339.98'
-  },
-  {
-    img: '/resources/detailImg/recommendImg/recommendImg/recommendImg9.png',
-    title: 'XX Mate 40 Pro 5G 全网通',
-    price: '￥188'
-  },
-  {
-    img: '/resources/detailImg/recommendImg/recommendImg/recommendImg10.png',
-    title: 'XX Mate 40 5G 全网通',
-    price: '￥196'
-  },
-  {
-    img: '/resources/detailImg/recommendImg/recommendImg/recommendImg1.png',
-    title: 'XX手机 大多数人的选择',
-    price: '￥339.98'
-  },
-  {
-    img: '/resources/detailImg/recommendImg/recommendImg/recommendImg2.png',
-    title: 'XX Mate 40 Pro 5G 全网通',
-    price: '￥188'
-  },
-  {
-    img: '/resources/detailImg/recommendImg/recommendImg/recommendImg3.png',
-    title: 'XX Mate 40 5G 全网通',
-    price: '￥196'
-  },
-  {
-    img: '/resources/detailImg/recommendImg/recommendImg/recommendImg4.png',
-    title: 'XX手机 大多数人的选择',
-    price: '￥339.98'
-  },
-  {
-    img: '/resources/detailImg/recommendImg/recommendImg/recommendImg5.png',
-    title: 'XX Mate 40 Pro 5G 全网通',
-    price: '￥188'
-  },
-  {
-    img: '/resources/detailImg/recommendImg/recommendImg/recommendImg6.png',
-    title: 'XX Mate 40 5G 全网通',
-    price: '￥196'
-  },
-  {
-    img: '/resources/detailImg/recommendImg/recommendImg/recommendImg7.png',
-    title: 'XX手机 大多数人的选择',
-    price: '￥339.98'
-  },
-  {
-    img: '/resources/detailImg/recommendImg/recommendImg/recommendImg8.png',
-    title: 'XX Mate 40 Pro 5G 全网通',
-    price: '￥188'
-  },
-  {
-    img: '/resources/detailImg/recommendImg/recommendImg/recommendImg9.png',
-    title: 'XX Mate 40 5G 全网通',
-    price: '￥196'
-  },
-  {
-    img: '/resources/detailImg/recommendImg/recommendImg/recommendImg10.png',
-    title: 'XX手机 大多数人的选择',
-    price: '￥339.98'
-  },
-  {
-    img: '/resources/detailImg/recommendImg/recommendImg/recommendImg1.png',
-    title: 'XX Mate 40 Pro 5G 全网通',
-    price: '￥188'
-  },
-  {
-    img: '/resources/detailImg/recommendImg/recommendImg/recommendImg2.png',
-    title: 'XX Mate 40 5G 全网通',
-    price: '￥196'
-  },
-  {
-    img: '/resources/detailImg/recommendImg/recommendImg/recommendImg3.png',
-    title: 'XX手机 大多数人的选择',
-    price: '￥339.98'
-  },
-  {
-    img: '/resources/detailImg/recommendImg/recommendImg/recommendImg4.png',
-    title: 'XX Mate 40 Pro 5G 全网通',
-    price: '￥188'
-  },
-  {
-    img: '/resources/detailImg/recommendImg/recommendImg/recommendImg5.png',
-    title: 'XX Mate 40 5G 全网通',
-    price: '￥196'
-  },
-  {
-    img: '/resources/detailImg/recommendImg/recommendImg/recommendImg6.png',
-    title: 'XX手机 大多数人的选择',
-    price: '￥339.98'
-  },
-  {
-    img: '/resources/detailImg/recommendImg/recommendImg/recommendImg7.png',
-    title: 'XX Mate 40 Pro 5G 全网通',
-    price: '￥188'
-  },
-  {
-    img: '/resources/detailImg/recommendImg/recommendImg/recommendImg8.png',
-    title: 'XX Mate 40 5G 全网通',
-    price: '￥196'
-  },
-  {
-    img: '/resources/detailImg/recommendImg/recommendImg/recommendImg9.png',
-    title: 'XX手机 大多数人的选择',
-    price: '￥339.98'
-  },
-  {
-    img: '/resources/detailImg/recommendImg/recommendImg/recommendImg10.png',
-    title: 'XX Mate 40 Pro 5G 全网通',
-    price: '￥188'
-  },
-  {
-    img: '/resources/detailImg/recommendImg/recommendImg/recommendImg1.png',
-    title: 'XX Mate 40 5G 全网通',
-    price: '￥196'
-  },
-  {
-    img: '/resources/detailImg/recommendImg/recommendImg/recommendImg2.png',
-    title: 'XX手机 大多数人的选择',
-    price: '￥339.98'
-  },
-  {
-    img: '/resources/detailImg/recommendImg/recommendImg/recommendImg3.png',
-    title: 'XX Mate 40 Pro 5G 全网通',
-    price: '￥188'
-  },
-  {
-    img: '/resources/detailImg/recommendImg/recommendImg/recommendImg4.png',
-    title: 'XX Mate 40 5G 全网通',
-    price: '￥196'
-  },
-  {
-    img: '/resources/detailImg/recommendImg/recommendImg/recommendImg5.png',
-    title: 'XX手机 大多数人的选择',
-    price: '￥339.98'
-  },
-  {
-    img: '/resources/detailImg/recommendImg/recommendImg/recommendImg6.png',
-    title: 'XX Mate 40 Pro 5G 全网通',
-    price: '￥188'
-  },
-  {
-    img: '/resources/detailImg/recommendImg/recommendImg/recommendImg7.png',
-    title: 'XX Mate 40 Pro 5G 全网通',
-    price: '￥188'
-  },
+  new ListDataModel("/resources/detailImg/recommendImg/recommendImg/recommendImg1.png", "XX Mate 40 5G 全网通", "￥196"),
+  new ListDataModel("/resources/detailImg/recommendImg/recommendImg/recommendImg2.png", "XX手机 大多数人的选择", "￥339.98"),
+  new ListDataModel("/resources/detailImg/recommendImg/recommendImg/recommendImg3.png", "XX Mate 40 Pro 5G 全网通", "￥188"),
+  new ListDataModel("/resources/detailImg/recommendImg/recommendImg/recommendImg4.png", "XX Mate 40 5G 全网通", "￥196"),
+  new ListDataModel("/resources/detailImg/recommendImg/recommendImg/recommendImg5.png", "XX手机 大多数人的选择", "￥339.98"),
+  new ListDataModel("/resources/detailImg/recommendImg/recommendImg/recommendImg6.png", "XX Mate 40 Pro 5G 全网通", "￥188"),
+  new ListDataModel("/resources/detailImg/recommendImg/recommendImg/recommendImg7.png", "XX Mate 40 5G 全网通", "￥196"),
+  new ListDataModel("/resources/detailImg/recommendImg/recommendImg/recommendImg8.png", "XX手机 大多数人的选择", "￥339.98"),
+  new ListDataModel("/resources/detailImg/recommendImg/recommendImg/recommendImg9.png", "XX Mate 40 Pro 5G 全网通", "￥188"),
+  new ListDataModel("/resources/detailImg/recommendImg/recommendImg/recommendImg10.png", "XX Mate 40 5G 全网通", "￥196"),
+  new ListDataModel("/resources/detailImg/recommendImg/recommendImg/recommendImg1.png", "XX手机 大多数人的选择", "￥339.98"),
+  new ListDataModel("/resources/detailImg/recommendImg/recommendImg/recommendImg2.png", "XX Mate 40 Pro 5G 全网通", "￥188"),
+  new ListDataModel("/resources/detailImg/recommendImg/recommendImg/recommendImg3.png", "XX Mate 40 5G 全网通", "￥196"),
+  new ListDataModel("/resources/detailImg/recommendImg/recommendImg/recommendImg4.png", "XX手机 大多数人的选择", "￥339.98"),
+  new ListDataModel("/resources/detailImg/recommendImg/recommendImg/recommendImg5.png", "XX Mate 40 Pro 5G 全网通", "￥188"),
+  new ListDataModel("/resources/detailImg/recommendImg/recommendImg/recommendImg6.png", "XX Mate 40 5G 全网通", "￥196"),
+  new ListDataModel("/resources/detailImg/recommendImg/recommendImg/recommendImg7.png", "XX手机 大多数人的选择", "￥339.98"),
+  new ListDataModel("/resources/detailImg/recommendImg/recommendImg/recommendImg8.png","XX Mate 40 Pro 5G 全网通","￥188"),
+  new ListDataModel("/resources/detailImg/recommendImg/recommendImg/recommendImg9.png","XX Mate 40 5G 全网通","￥196"),
+  new ListDataModel("/resources/detailImg/recommendImg/recommendImg/recommendImg10.png","XX手机 大多数人的选择","￥339.98"),
+  new ListDataModel("/resources/detailImg/recommendImg/recommendImg/recommendImg1.png","XX Mate 40 Pro 5G 全网通","￥188"),
+  new ListDataModel("/resources/detailImg/recommendImg/recommendImg/recommendImg2.png","XX Mate 40 5G 全网通","￥196"),
+  new ListDataModel("/resources/detailImg/recommendImg/recommendImg/recommendImg3.png","XX手机 大多数人的选择","￥339.98"),
+  new ListDataModel("/resources/detailImg/recommendImg/recommendImg/recommendImg4.png","XX Mate 40 Pro 5G 全网通","￥188"),
+  new ListDataModel("/resources/detailImg/recommendImg/recommendImg/recommendImg5.png", "XX Mate 40 5G 全网通","￥196"),
+  new ListDataModel("/resources/detailImg/recommendImg/recommendImg/recommendImg6.png", "XX手机 大多数人的选择","￥339.98"),
+  new ListDataModel("/resources/detailImg/recommendImg/recommendImg/recommendImg7.png", "XX Mate 40 Pro 5G 全网通", "￥188"),
+  new ListDataModel("/resources/detailImg/recommendImg/recommendImg/recommendImg8.png", "XX Mate 40 5G 全网通", "￥196"),
+  new ListDataModel("/resources/detailImg/recommendImg/recommendImg/recommendImg9.png", "XX手机 大多数人的选择", "￥339.98"),
+  new ListDataModel("/resources/detailImg/recommendImg/recommendImg/recommendImg10.png", "XX Mate 40 Pro 5G 全网通", "￥188"),
+  new ListDataModel("/resources/detailImg/recommendImg/recommendImg/recommendImg1.png", "XX Mate 40 5G 全网通", "￥196"),
+  new ListDataModel("/resources/detailImg/recommendImg/recommendImg/recommendImg2.png", "XX手机 大多数人的选择", "￥339.98"),
+  new ListDataModel("/resources/detailImg/recommendImg/recommendImg/recommendImg3.png", "XX Mate 40 Pro 5G 全网通", "￥188"),
+  new ListDataModel("/resources/detailImg/recommendImg/recommendImg/recommendImg4.png", "XX Mate 40 5G 全网通", "￥196"),
+  new ListDataModel("/resources/detailImg/recommendImg/recommendImg/recommendImg5.png", "XX手机 大多数人的选择", "￥339.98"),
+  new ListDataModel("/resources/detailImg/recommendImg/recommendImg/recommendImg6.png", "XX Mate 40 Pro 5G 全网通", "￥188"),
+  new ListDataModel("/resources/detailImg/recommendImg/recommendImg/recommendImg7.png", "XX Mate 40 Pro 5G 全网通","￥188")
 ]

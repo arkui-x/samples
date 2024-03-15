@@ -3,10 +3,13 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 52;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		18BAB9902BA2CF2E008F621D /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BAB98E2BA2CF2E008F621D /* BaseViewController.m */; };
+		8C42CAA4F55A4150B188C85C /* libhilog.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6B61D1691A5F4B739C127AED /* libhilog.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		DCCFF44C11C24FE49600046B /* libhilog.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B61D1691A5F4B739C127AED /* libhilog.xcframework */; };
 		DF4BEDE929F4F5280060CCEB /* EntryEntryAbilityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF4BEDE729F4F5270060CCEB /* EntryEntryAbilityViewController.m */; };
 		DF9C1B5E28B9FC3A005DCF58 /* libarkui_ios.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF9C1B5D28B9FC3A005DCF58 /* libarkui_ios.xcframework */; };
 		DF9C1B5F28B9FC3A005DCF58 /* libarkui_ios.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DF9C1B5D28B9FC3A005DCF58 /* libarkui_ios.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -25,6 +28,7 @@
 			dstSubfolderSpec = 10;
 			files = (
 				DF9C1B5F28B9FC3A005DCF58 /* libarkui_ios.xcframework in Embed Frameworks */,
+				8C42CAA4F55A4150B188C85C /* libhilog.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -32,10 +36,13 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		18BAB98E2BA2CF2E008F621D /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		18BAB98F2BA2CF2E008F621D /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		6B61D1691A5F4B739C127AED /* libhilog.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = libhilog.xcframework; path = frameworks/libhilog.xcframework; sourceTree = "<group>"; };
 		DF4BEDE729F4F5270060CCEB /* EntryEntryAbilityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EntryEntryAbilityViewController.m; sourceTree = "<group>"; };
 		DF4BEDE829F4F5280060CCEB /* EntryEntryAbilityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EntryEntryAbilityViewController.h; sourceTree = "<group>"; };
 		DF9C1B5D28B9FC3A005DCF58 /* libarkui_ios.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = libarkui_ios.xcframework; path = frameworks/libarkui_ios.xcframework; sourceTree = "<group>"; };
-		DF9C1B6028B9FC4B005DCF58 /* arkui-x */ = {isa = PBXFileReference; lastKnownFileType = folder; path = arkui-x; sourceTree = "<group>"; };
+		DF9C1B6028B9FC4B005DCF58 /* arkui-x */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "arkui-x"; sourceTree = "<group>"; };
 		F0AF1ACD27D3684F008C55DD /* app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = app.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0AF1AD027D3684F008C55DD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F0AF1AD127D3684F008C55DD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -51,6 +58,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DF9C1B5E28B9FC3A005DCF58 /* libarkui_ios.xcframework in Frameworks */,
+				DCCFF44C11C24FE49600046B /* libhilog.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +86,8 @@
 		F0AF1ACF27D3684F008C55DD /* app */ = {
 			isa = PBXGroup;
 			children = (
+				18BAB98F2BA2CF2E008F621D /* BaseViewController.h */,
+				18BAB98E2BA2CF2E008F621D /* BaseViewController.m */,
 				DF4BEDE829F4F5280060CCEB /* EntryEntryAbilityViewController.h */,
 				DF4BEDE729F4F5270060CCEB /* EntryEntryAbilityViewController.m */,
 				F0AF1AD027D3684F008C55DD /* AppDelegate.h */,
@@ -94,6 +104,7 @@
 			isa = PBXGroup;
 			children = (
 				DF9C1B5D28B9FC3A005DCF58 /* libarkui_ios.xcframework */,
+				6B61D1691A5F4B739C127AED /* libhilog.xcframework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -169,6 +180,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F0AF1AD227D3684F008C55DD /* AppDelegate.m in Sources */,
+				18BAB9902BA2CF2E008F621D /* BaseViewController.m in Sources */,
 				DF4BEDE929F4F5280060CCEB /* EntryEntryAbilityViewController.m in Sources */,
 				F0AF1AE327D36856008C55DD /* main.m in Sources */,
 			);
@@ -306,10 +318,10 @@
 				ARCHS = arm64;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: ";
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = MCN34247SC;
+				DEVELOPMENT_TEAM = 5B33WN284J;
 				ENABLE_BITCODE = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = app/Info.plist;
@@ -323,9 +335,9 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.example.json;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.assemblyTestDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "shiseido sc adhoc";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -337,10 +349,10 @@
 				ARCHS = arm64;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: ";
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = MCN34247SC;
+				DEVELOPMENT_TEAM = 5B33WN284J;
 				ENABLE_BITCODE = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = app/Info.plist;
@@ -354,9 +366,9 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.example.json;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.assemblyTestDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "shiseido sc adhoc";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

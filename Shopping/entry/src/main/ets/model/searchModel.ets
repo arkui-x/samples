@@ -14,13 +14,15 @@
  */
 
 export class ExampleDataModel {
-  constructor(public exampleText: string) {
+  public exampleText: string;
+  constructor(exampleText: string) {
     this.exampleText = exampleText;
   }
 }
 
 export class SearchDataModel {
-  constructor(public searchData: string) {
+  public searchData: string;
+  constructor(searchData: string) {
     this.searchData = searchData;
   }
 }

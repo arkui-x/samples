@@ -18,563 +18,190 @@ import { TabTitleModel, SearchTextModel, NavDataModel, SwiperModel, TitleBarMode
   FindImgNameModel, FindIconSrcModel, RecordModel, OrderModel, DiscountModel, ServiceModel } from '../model/homeModel'
 
 export const tabTitleData: Array<TabTitleModel> = [
-  {
-    id: 0,
-    uri: "/resources/homeImg/tabIcon/home.png",
-    selectedUri: "/resources/homeImg/tabIcon/homeSelected.png",
-    title: "首页",
-  },
-  {
-    id: 1,
-    uri: "/resources/homeImg/tabIcon/classification.png",
-    selectedUri: "/resources/homeImg/tabIcon/classificationSelected.png",
-    title: "分类",
-  },
-  {
-    id: 2,
-    uri: "/resources/homeImg/tabIcon/find.png",
-    selectedUri: "/resources/homeImg/tabIcon/findSelected.png",
-    title: "消息",
-  },
-  {
-    id: 3,
-    uri: "/resources/homeImg/tabIcon/cart.png",
-    selectedUri: "/resources/homeImg/tabIcon/cartSelected.png",
-    title: "购物车",
-  },
-  {
-    id: 4,
-    uri: "/resources/homeImg/tabIcon/user.png",
-    selectedUri: "/resources/homeImg/tabIcon/userSelected.png",
-    title: "我的",
-  }
+  new TabTitleModel(0, "/resources/homeImg/tabIcon/home.png","/resources/homeImg/tabIcon/homeSelected.png", "首页"),
+  new TabTitleModel(1, "/resources/homeImg/tabIcon/classification.png", "/resources/homeImg/tabIcon/classificationSelected.png", "分类"),
+  new TabTitleModel(2, "/resources/homeImg/tabIcon/find.png","/resources/homeImg/tabIcon/findSelected.png", "消息"),
+  new TabTitleModel(3, "/resources/homeImg/tabIcon/cart.png", "/resources/homeImg/tabIcon/cartSelected.png", "购物车"),
+  new TabTitleModel(4, "/resources/homeImg/tabIcon/user.png", "/resources/homeImg/tabIcon/userSelected.png", "我的")
 ]
 
 export const findSearchTextData: Array<SearchTextModel> = [
-  { searchText: "精品好礼" },
-  { searchText: "节日大优惠" },
-  { searchText: "品牌手机" }
+  new SearchTextModel("精品好礼"),
+  new SearchTextModel("节日大优惠"),
+  new SearchTextModel("品牌手机")
 ]
 
 export const navData: Array<NavDataModel> = [
-  { navData: "首页" },
-  { navData: "推荐" },
-  { navData: "XX专区" },
-  { navData: "新品频道" },
-  { navData: "智能家居" },
-  { navData: "拼团" },
-  { navData: "企业购物" },
-  { navData: "推荐" },
-  { navData: "XX专区" },
-  { navData: "新品频道" },
-  { navData: "智能家居" },
-  { navData: "拼团" },
-  { navData: "企业购物" },
-  { navData: "推荐" },
-  { navData: "XX专区" },
-  { navData: "新品频道" },
-  { navData: "智能家居" },
-  { navData: "拼团" },
-  { navData: "企业购物" }
+  new NavDataModel("首页"),
+  new NavDataModel("推荐"),
+  new NavDataModel("XX专区"),
+  new NavDataModel("新品频道"),
+  new NavDataModel("智能家居"),
+  new NavDataModel("拼团"),
+  new NavDataModel("企业购物"),
+  new NavDataModel("推荐"),
+  new NavDataModel("XX专区"),
+  new NavDataModel("新品频道"),
+  new NavDataModel("智能家居"),
+  new NavDataModel("拼团"),
+  new NavDataModel("企业购物"),
+  new NavDataModel("推荐"),
+  new NavDataModel("XX专区"),
+  new NavDataModel("新品频道"),
+  new NavDataModel("智能家居"),
+  new NavDataModel("拼团"),
+  new NavDataModel("企业购物")
 ]
 
 export const swiperData: Array<SwiperModel> = [
-  { img: "/resources/homeImg/banner/banner1.jpg" },
-  { img: "/resources/homeImg/banner/banner2.jpg" },
-  { img: "/resources/homeImg/banner/banner1.jpg" }
+  new SwiperModel("/resources/homeImg/banner/banner1.jpg"),
+  new SwiperModel("/resources/homeImg/banner/banner2.jpg"),
+  new SwiperModel("/resources/homeImg/banner/banner1.jpg")
 ]
 
 export const coreData: Array<CoreDataModel> = [
-  {
-    "uri": "/resources/homeImg/core/core1.png",
-    "title": "火爆热款"
-  },
-  {
-    "uri": "/resources/homeImg/core/core2.png",
-    "title": "商品分类"
-  },
-  {
-    "uri": "/resources/homeImg/core/core3.png",
-    "title": "充值中心"
-  },
-  {
-    "uri": "/resources/homeImg/core/core4.png",
-    "title": "活动专区"
-  },
-  {
-    "uri": "/resources/homeImg/core/core5.png",
-    "title": "积分商城"
-  },
-  {
-    "uri": "/resources/homeImg/core/core6.png",
-    "title": "精选热卖"
-  },
-  {
-    "uri": "/resources/homeImg/core/core7.png",
-    "title": "酒店订购"
-  },
-  {
-    "uri": "/resources/homeImg/core/core8.png",
-    "title": "好物众测"
-  },
-  {
-    "uri": "/resources/homeImg/core/core9.png",
-    "title": "精品手机"
-  },
-  {
-    "uri": "/resources/homeImg/core/core10.png",
-    "title": "数码电器"
-  },
-  {
-    "uri": "/resources/homeImg/core/core11.png",
-    "title": "数码配件"
-  },
-  {
-    "uri": "/resources/homeImg/core/core12.png",
-    "title": "以旧换新"
-  },
-  {
-    "uri": "/resources/homeImg/core/core13.png",
-    "title": "限时抢购"
-  },
-  {
-    "uri": "/resources/homeImg/core/core14.png",
-    "title": "新品推荐"
-  },
-  {
-    "uri": "/resources/homeImg/core/core15.png",
-    "title": "邀请有礼"
-  },
-  {
-    "uri": "/resources/homeImg/core/core16.png",
-    "title": "优惠专区"
-  },
-  {
-    "uri": "/resources/homeImg/core/core17.png",
-    "title": "正在直播"
-  },
-  {
-    "uri": "/resources/homeImg/core/core18.png",
-    "title": "智慧生活"
-  },
-  {
-    "uri": "/resources/homeImg/core/core19.png",
-    "title": "会员中心"
-  },
-  {
-    "uri": "/resources/homeImg/core/core13.png",
-    "title": "限时抢购"
-  }
+  new CoreDataModel("/resources/homeImg/core/core1.png", "火爆热款"),
+  new CoreDataModel("/resources/homeImg/core/core2.png", "商品分类"),
+  new CoreDataModel("/resources/homeImg/core/core3.png", "充值中心"),
+  new CoreDataModel("/resources/homeImg/core/core4.png", "活动专区"),
+  new CoreDataModel("/resources/homeImg/core/core5.png", "积分商城"),
+  new CoreDataModel("/resources/homeImg/core/core6.png", "精选热卖"),
+  new CoreDataModel("/resources/homeImg/core/core7.png", "酒店订购"),
+  new CoreDataModel("/resources/homeImg/core/core8.png", "好物众测"),
+  new CoreDataModel("/resources/homeImg/core/core9.png", "精品手机"),
+  new CoreDataModel("/resources/homeImg/core/core10.png", "数码电器"),
+  new CoreDataModel("/resources/homeImg/core/core11.png", "数码配件"),
+  new CoreDataModel("/resources/homeImg/core/core12.png", "以旧换新"),
+  new CoreDataModel("/resources/homeImg/core/core13.png", "限时抢购"),
+  new CoreDataModel("/resources/homeImg/core/core14.png", "新品推荐"),
+  new CoreDataModel("/resources/homeImg/core/core15.png", "邀请有礼"),
+  new CoreDataModel("/resources/homeImg/core/core16.png", "优惠专区"),
+  new CoreDataModel("/resources/homeImg/core/core17.png", "正在直播"),
+  new CoreDataModel("/resources/homeImg/core/core18.png", "智慧生活"),
+  new CoreDataModel("/resources/homeImg/core/core19.png", "会员中心"),
+  new CoreDataModel("/resources/homeImg/core/core13.png", "限时抢购")
 ]
 
 export const boutiqueData: Array<BoutiqueModel> = [
-  {
-    text1: "XX Phone",
-    text2: "最高优惠200元",
-    img1: "/resources/homeImg/boutique/1.png",
-    img2: "/resources/homeImg/boutique/2.png"
-  },
-  {
-    text1: "XX Watch",
-    text2: "500元起",
-    img1: "/resources/homeImg/boutique/3.png",
-    img2: "/resources/homeImg/boutique/4.png"
-  },
-  {
-    text1: "phone & watch",
-    text2: "8这起购",
-    img1: "/resources/homeImg/boutique/5.png",
-    img2: "/resources/homeImg/boutique/6.png"
-  },
-  {
-    text1: "XX配件",
-    text2: "500元起",
-    img1: "/resources/homeImg/boutique/7.png",
-    img2: "/resources/homeImg/boutique/8.png"
-  },
-  {
-    text1: "XX笔记本",
-    text2: "500元起",
-    img1: "/resources/homeImg/boutique/9.png",
-    img2: "/resources/homeImg/boutique/10.png"
-  },
-  {
-    text1: "XX笔记本",
-    text2: "4000元起",
-    img1: "/resources/homeImg/boutique/11.png",
-    img2: "/resources/homeImg/boutique/12.png"
-  }
+  new BoutiqueModel("XX Phone", "最高优惠200元", "/resources/homeImg/boutique/1.png", "/resources/homeImg/boutique/2.png"),
+  new BoutiqueModel("XX Watch", "500元起", "/resources/homeImg/boutique/3.png", "/resources/homeImg/boutique/4.png"),
+  new BoutiqueModel("phone & watch", "8这起购", "/resources/homeImg/boutique/5.png", "/resources/homeImg/boutique/6.png"),
+  new BoutiqueModel("XX配件", "500元起", "/resources/homeImg/boutique/7.png", "/resources/homeImg/boutique/8.png"),
+  new BoutiqueModel("XX笔记本", "500元起", "/resources/homeImg/boutique/9.png", "/resources/homeImg/boutique/10.png"),
+  new BoutiqueModel("XX笔记本", "4000元起", "/resources/homeImg/boutique/11.png", "/resources/homeImg/boutique/12.png")
 ]
 
 export const titleBarData: Array<TitleBarModel> = [
-  { id: 0, title: "全部" },
-  { id: 1, title: "直播" },
-  { id: 2, title: "便宜好货" },
-  { id: 3, title: "淘货" }
+  new TitleBarModel(0, "全部"),
+  new TitleBarModel(1, "直播" ),
+  new TitleBarModel(2, "便宜好货"),
+  new TitleBarModel(3, "淘货")
 ]
 
 export const productData: Array<ProductDataModel> = [
-  {
-    uri: '/resources/homeImg/imgLoads/product001.png',
-    title: 'XX设备 优惠直购',
-    labels: '尊享',
-    price: '￥4122.0',
-    index: 0
-  },
-  {
-    uri: '/resources/homeImg/imgLoads/product002.png',
-    title: '送给亲人！快速购买',
-    labels: '纯色',
-    price: '￥4122.0',
-    index: 0
-  },
-  {
-    uri: '/resources/homeImg/imgLoads/product003.png',
-    title: '高质量产品',
-    labels: '净含量:350g',
-    price: '￥4122.0',
-    index: 0
-  },
-  {
-    uri: '/resources/homeImg/imgLoads/product004.png',
-    title: 'XX pro手机',
-    labels: '材质:玻璃/金属/塑料',
-    price: '￥4122.0',
-    index: 0
-  },
-  {
-    uri: '/resources/homeImg/imgLoads/product005.png',
-    title: 'XX手机 限时特惠',
-    labels: '购买免运费 | 跨店',
-    price: '￥4122.0',
-    index: 0
-  },
-  {
-    uri: '/resources/homeImg/imgLoads/product006.png',
-    title: 'XX设备 优惠直购',
-    labels: '尊享',
-    price: '￥4122.0',
-    index: 0
-  },
-  {
-    uri: '/resources/homeImg/imgLoads/product007.png',
-    title: '送给亲人！快速购买',
-    labels: '纯色',
-    price: '￥4122.0',
-    index: 0
-  },
-  {
-    uri: '/resources/homeImg/imgLoads/product008.png',
-    title: '高质量产品',
-    labels: '净含量:350g',
-    price: '￥4122.0',
-    index: 0,
-  },
-  {
-    uri: '/resources/homeImg/imgLoads/product009.png',
-    title: 'XX pro手机',
-    labels: '材质:玻璃/金属/塑料',
-    price: '￥4122.0',
-    index: 0,
-  },
-  {
-    uri: '/resources/homeImg/imgLoads/product010.png',
-    title: 'XX手机 限时特惠',
-    labels: '购买免运费 | 跨店',
-    price: '￥4122.0',
-    index: 0,
-  },
-  {
-    uri: '/resources/homeImg/imgLoads/product011.png',
-    title: 'XX设备 优惠直购',
-    labels: '尊享',
-    price: '￥4122.0',
-    index: 0,
-  },
-  {
-    uri: '/resources/homeImg/imgLoads/product012.png',
-    title: '送给亲人！快速购买',
-    labels: '纯色',
-    price: '￥4122.0',
-    index: 0,
-  },
-  {
-    uri: '/resources/homeImg/imgLoads/product013.png',
-    title: '高质量产品',
-    labels: '净含量:350g',
-    price: '￥4122.0',
-    index: 0,
-  },
-  {
-    uri: '/resources/homeImg/imgLoads/product014.png',
-    title: 'XX pro手机',
-    labels: '材质:玻璃/金属/塑料',
-    price: '￥4122.0',
-    index: 0,
-  }
+  new ProductDataModel('/resources/homeImg/imgLoads/product001.png', 'XX设备 优惠直购', '尊享', '￥4122.0', 0),
+  new ProductDataModel('/resources/homeImg/imgLoads/product002.png', '送给亲人！快速购买', '纯色', '￥4122.0', 0),
+  new ProductDataModel('/resources/homeImg/imgLoads/product003.png', '高质量产品', '净含量:350g', '￥4122.0', 0),
+  new ProductDataModel('/resources/homeImg/imgLoads/product004.png', 'XX pro手机', '材质:玻璃/金属/塑料', '￥4122.0', 0),
+  new ProductDataModel('/resources/homeImg/imgLoads/product005.png', 'XX手机 限时特惠', '购买免运费 | 跨店', '￥4122.0', 0),
+  new ProductDataModel('/resources/homeImg/imgLoads/product006.png', 'XX设备 优惠直购', '尊享', '￥4122.0', 0),
+  new ProductDataModel('/resources/homeImg/imgLoads/product007.png', '送给亲人！快速购买', '纯色', '￥4122.0', 0),
+  new ProductDataModel('/resources/homeImg/imgLoads/product008.png', '高质量产品', '净含量:350g', '￥4122.0', 0),
+  new ProductDataModel('/resources/homeImg/imgLoads/product009.png', 'XX pro手机', '材质:玻璃/金属/塑料', '￥4122.0', 0),
+  new ProductDataModel('/resources/homeImg/imgLoads/product010.png', 'XX手机 限时特惠', '购买免运费 | 跨店', '￥4122.0', 0),
+  new ProductDataModel('/resources/homeImg/imgLoads/product011.png', 'XX设备 优惠直购', '尊享', '￥4122.0', 0),
+  new ProductDataModel('/resources/homeImg/imgLoads/product012.png', '送给亲人！快速购买', '纯色', '￥4122.0', 0),
+  new ProductDataModel('/resources/homeImg/imgLoads/product013.png', '高质量产品', '净含量:350g', '￥4122.0', 0),
+  new ProductDataModel('/resources/homeImg/imgLoads/product014.png', 'XX pro手机', '材质:玻璃/金属/塑料', '￥4122.0', 0)
 ]
 
 export const informationData: Array<InformationModel> = [
-  {
-    uri: "/resources/common/our.png",
-    title: "我的助手",
-    notice: "您的交易存在商品问题？点击快速解决！",
-    time: "09:50"
-  },
-  {
-    uri: "/resources/common/person.png",
-    title: "活动优惠",
-    notice: "您的交易存在商品问题？点击快速解决！",
-    time: "09:50"
-  },
-  {
-    uri: "/resources/common/user.png",
-    title: "中国XX官方旗舰店",
-    notice: "您的交易存在商品问题？点击快速解决！",
-    time: "09:50"
-  },
-  {
-    uri: "/resources/common/our.png",
-    title: "服务通知",
-    notice: "您的交易存在商品问题？点击快速解决！",
-    time: "09:50"
-  },
-  {
-    uri: "/resources/common/person.png",
-    title: "消息互动",
-    notice: "您的交易存在商品问题？点击快速解决！",
-    time: "09:50"
-  },
-  {
-    uri: "/resources/common/user.png",
-    title: "交易物流",
-    notice: "您的交易存在商品问题？点击快速解决！",
-    time: "09:50"
-  },
-  {
-    uri: "/resources/common/our.png",
-    title: "我的助手",
-    notice: "您的交易存在商品问题？点击快速解决！",
-    time: "09:50"
-  },
-  {
-    uri: "/resources/common/person.png",
-    title: "活动优惠",
-    notice: "您的交易存在商品问题？点击快速解决！",
-    time: "09:50"
-  },
-  {
-    uri: "/resources/common/user.png",
-    title: "中国XX官方旗舰店",
-    notice: "您的交易存在商品问题？点击快速解决！",
-    time: "09:50"
-  },
-  {
-    uri: "/resources/common/person.png",
-    title: "服务通知",
-    notice: "您的交易存在商品问题？点击快速解决！",
-    time: "09:50"
-  },
-  {
-    uri: "/resources/common/user.png",
-    title: "互动消息",
-    notice: "您的交易存在商品问题？点击快速解决！",
-    time: "09:50"
-  },
-  {
-    uri: "/resources/common/our.png",
-    title: "交易物流",
-    notice: "您的交易存在商品问题？点击快速解决！",
-    time: "09:50"
-  },
-  {
-    uri: "/resources/common/user.png",
-    title: "中国XX官方旗舰店",
-    notice: "您的交易存在商品问题？点击快速解决！",
-    time: "09:50"
-  },
-  {
-    uri: "/resources/common/person.png",
-    title: "服务通知",
-    notice: "您的交易存在商品问题？点击快速解决！",
-    time: "09:50"
-  },
-  {
-    uri: "/resources/common/user.png",
-    title: "互动消息",
-    notice: "您的交易存在商品问题？点击快速解决！",
-    time: "09:50"
-  },
-  {
-    uri: "/resources/common/our.png",
-    title: "交易物流",
-    notice: "您的交易存在商品问题？点击快速解决！",
-    time: "09:50"
-  },
+  new InformationModel("/resources/common/our.png",  "我的助手",  "您的交易存在商品问题？点击快速解决！", "09:50"),
+  new InformationModel("/resources/common/person.png", "活动优惠", "您的交易存在商品问题？点击快速解决！", "09:50"),
+  new InformationModel("/resources/common/user.png", "中国XX官方旗舰店", "您的交易存在商品问题？点击快速解决！", "09:50"),
+  new InformationModel("/resources/common/our.png", "服务通知", "您的交易存在商品问题？点击快速解决！", "09:50"),
+  new InformationModel("/resources/common/person.png", "消息互动", "您的交易存在商品问题？点击快速解决！", "09:50"),
+  new InformationModel("/resources/common/user.png", "交易物流", "您的交易存在商品问题？点击快速解决！", "09:50"),
+  new InformationModel("/resources/common/our.png", "我的助手", "您的交易存在商品问题？点击快速解决！", "09:50"),
+  new InformationModel("/resources/common/person.png", "活动优惠", "您的交易存在商品问题？点击快速解决！", "09:50"),
+  new InformationModel("/resources/common/user.png", "中国XX官方旗舰店", "您的交易存在商品问题？点击快速解决！", "09:50"),
+  new InformationModel("/resources/common/person.png", "服务通知", "您的交易存在商品问题？点击快速解决！", "09:50"),
+  new InformationModel("/resources/common/user.png", "互动消息", "您的交易存在商品问题？点击快速解决！", "09:50"),
+  new InformationModel("/resources/common/our.png", "交易物流", "您的交易存在商品问题？点击快速解决！", "09:50"),
+  new InformationModel("/resources/common/user.png", "中国XX官方旗舰店",  "您的交易存在商品问题？点击快速解决！", "09:50"),
+  new InformationModel("/resources/common/person.png", "服务通知", "您的交易存在商品问题？点击快速解决！", "09:50"),
+  new InformationModel("/resources/common/user.png", "互动消息", "您的交易存在商品问题？点击快速解决！",  "09:50"),
+  new InformationModel("/resources/common/our.png", "交易物流", "您的交易存在商品问题？点击快速解决！", "09:50"),
 ]
 
 export const shopCartItemData: Array<ShopCartItemDataModel> = [
-  {
-    img: '/resources/homeImg/imgLoads/product001.png',
-    title: 'XX 官方旗舰店手机 5G网速 超大内存 快来购买'
-  },
-  {
-    img: '/resources/homeImg/imgLoads/product002.png',
-    title: 'XX 官方旗舰店手机 5G网速 超大内存 快来购买'
-  },
-  {
-    img: '/resources/homeImg/imgLoads/product003.png',
-    title: 'XX 官方旗舰店手机 5G网速 超大内存 快来购买'
-  },
-  {
-    img: '/resources/homeImg/imgLoads/product004.png',
-    title: 'XX 官方旗舰店手机 5G网速 超大内存 快来购买'
-  },
-  {
-    img: '/resources/homeImg/imgLoads/product005.png',
-    title: 'XX XX 官方旗舰店手机 5G网速 超大内存 快来购买'
-  },
-  {
-    img: '/resources/homeImg/imgLoads/product006.png',
-    title: 'XX 官方旗舰店手机 5G网速 超大内存 快来购买'
-  },
-  {
-    img: '/resources/homeImg/imgLoads/product007.png',
-    title: 'XX 官方旗舰店手机 5G网速 超大内存 快来购买'
-  }
+  new ShopCartItemDataModel('/resources/homeImg/imgLoads/product001.png', 'XX 官方旗舰店手机 5G网速 超大内存 快来购买'),
+  new ShopCartItemDataModel('/resources/homeImg/imgLoads/product002.png', 'XX 官方旗舰店手机 5G网速 超大内存 快来购买'),
+  new ShopCartItemDataModel('/resources/homeImg/imgLoads/product003.png', 'XX 官方旗舰店手机 5G网速 超大内存 快来购买'),
+  new ShopCartItemDataModel('/resources/homeImg/imgLoads/product004.png', 'XX 官方旗舰店手机 5G网速 超大内存 快来购买'),
+  new ShopCartItemDataModel('/resources/homeImg/imgLoads/product005.png', 'XX XX 官方旗舰店手机 5G网速 超大内存 快来购买'),
+  new ShopCartItemDataModel('/resources/homeImg/imgLoads/product006.png', 'XX 官方旗舰店手机 5G网速 超大内存 快来购买'),
+  new ShopCartItemDataModel('/resources/homeImg/imgLoads/product007.png', 'XX 官方旗舰店手机 5G网速 超大内存 快来购买')
 ]
 
 export const findTitleTextData: Array<FindTitleTextModel> = [
-  { titleText: "全部" },
-  { titleText: "节日优惠晒单" },
-  { titleText: "出品" },
-  { titleText: "穿搭" },
-  { titleText: "家居" },
-  { titleText: "+" }
+  new FindTitleTextModel("全部"),
+  new FindTitleTextModel("节日优惠晒单"),
+  new FindTitleTextModel("出品"),
+  new FindTitleTextModel("穿搭"),
+  new FindTitleTextModel("家居"),
+  new FindTitleTextModel("+")
 ]
 
 export const findImgSrcData: Array<FindImgSrcModel> = [
-  { imgSrc: "/resources/homeImg/imgLoads/product001.png" },
-  { imgSrc: "/resources/homeImg/imgLoads/product001.png" },
-  { imgSrc: "/resources/homeImg/imgLoads/product001.png" }
+  new FindImgSrcModel("/resources/homeImg/imgLoads/product001.png"),
+  new FindImgSrcModel("/resources/homeImg/imgLoads/product001.png"),
+  new FindImgSrcModel("/resources/homeImg/imgLoads/product001.png")
 ]
 
 export const findImgIntroData: Array<FindImgIntroModel> = [
-  { imgIntro: "XXX Phone 30 vip手机设计 5G 全网通 12GB+256GB" },
-  { imgIntro: "室外摄像机 精品版 （支持XX XX等设备）" },
-  { imgIntro: "潮流XXX系列手机壳" }
+  new FindImgIntroModel("XXX Phone 30 vip手机设计 5G 全网通 12GB+256GB"),
+  new FindImgIntroModel("室外摄像机 精品版 （支持XX XX等设备）"),
+  new FindImgIntroModel("潮流XXX系列手机壳")
 ]
 
 export const findImgNameData: Array<FindImgNameModel> = [
-  { imgName: "普通用户" },
-  { imgName: "我是VIP" },
-  { imgName: "User" }
+  new FindImgNameModel("普通用户"),
+  new FindImgNameModel("我是VIP"),
+  new FindImgNameModel("User")
 ]
 
 export const findIconSrcData: Array<FindIconSrcModel> = [
-  { iconSrc: "/resources/icon/game.png" },
-  { iconSrc: "/resources/icon/install.png" },
-  { iconSrc: "/resources/icon/promotions.png" },
+  new FindIconSrcModel("/resources/icon/game.png"),
+  new FindIconSrcModel("/resources/icon/install.png"),
+  new FindIconSrcModel("/resources/icon/promotions.png")
 ]
 
 export const recordData: Array<RecordModel> = [
-  {
-    img: "/resources/icon/attention.png",
-    title: "收藏",
-    uri: "pages/collect/collected"
-  },
-  {
-    img: "/resources/icon/attention.png",
-    title: "订阅店铺",
-    uri: ""
-  },
-  {
-    img: "/resources/icon/attention.png",
-    title: "足迹",
-    uri: ""
-  },
-  {
-    img: "/resources/icon/attention.png",
-    title: "零钱￥100.0",
-    uri: ""
-  }
+  new RecordModel("/resources/icon/attention.png", "收藏", "pages/collect/collected"),
+  new RecordModel("/resources/icon/attention.png", "订阅店铺",  ""),
+  new RecordModel("/resources/icon/attention.png", "足迹", ""),
+  new RecordModel("/resources/icon/attention.png", "零钱￥100.0",  "")
 ]
 
 export const orderData: Array<OrderModel> = [
-  {
-    id: 1,
-    img: "/resources/icon/attention.png",
-    title: "待付款",
-    uri: "pages/delivery/delivery"
-  },
-  {
-    id: 2,
-    img: "/resources/icon/attention.png",
-    title: "待发货",
-    uri: "pages/delivery/delivery"
-  },
-  {
-    id: 3,
-    img: "/resources/icon/attention.png",
-    title: "待收货",
-    uri: "pages/delivery/delivery"
-  },
-  {
-    id: 4,
-    img: "/resources/icon/attention.png",
-    title: "待评价",
-    uri: "pages/delivery/delivery"
-  },
-  {
-    id: 5,
-    img: "/resources/icon/attention.png",
-    title: "退款/售后",
-    uri: ""
-  }
+  new OrderModel(1, "/resources/icon/attention.png", "待付款", "pages/delivery/delivery"),
+  new OrderModel(2, "/resources/icon/attention.png", "待发货", "pages/delivery/delivery"),
+  new OrderModel(3, "/resources/icon/attention.png", "待收货", "pages/delivery/delivery"),
+  new OrderModel(4, "/resources/icon/attention.png", "待评价", "pages/delivery/delivery"),
+  new OrderModel(5,  "/resources/icon/attention.png", "退款/售后",  "")
 ]
 
 export const discountData: Array<DiscountModel> = [
-  {
-    img: "/resources/common/achievement.png",
-    name: "88VIP",
-    text: "抢5折券"
-  },
-  {
-    img: "/resources/common/activity.png",
-    name: "打折优惠共享",
-    text: "领101元红包"
-  },
-  {
-    img: "/resources/common/gift.png",
-    name: "88VIP",
-    text: "查看可用优惠"
-  },
-  {
-    img: "/resources/common/sales.png",
-    name: "领券中心",
-    text: "天天领5折券"
-  }
+  new DiscountModel("/resources/common/achievement.png", "88VIP", "抢5折券"),
+  new DiscountModel("/resources/common/activity.png", "打折优惠共享", "领101元红包"),
+  new DiscountModel("/resources/common/gift.png", "88VIP", "查看可用优惠"),
+  new DiscountModel("/resources/common/sales.png", "领券中心", "天天领5折券")
 ]
 
 export const serviceData: Array<ServiceModel> = [
-  {
-    img: "/resources/icon/attention.png",
-    title: "待付款",
-    uri: ""
-  },
-  {
-    img: "/resources/icon/attention.png",
-    title: "待发货",
-    uri: ""
-  },
-  {
-    img: "/resources/icon/attention.png",
-    title: "待收货",
-    uri: ""
-  },
-  {
-    img: "/resources/icon/attention.png",
-    title: "官方客服",
-    uri: "pages/customerService/customerService"
-  }
+  new ServiceModel("/resources/icon/attention.png", "待付款", ""),
+  new ServiceModel("/resources/icon/attention.png", "待发货", ""),
+  new ServiceModel("/resources/icon/attention.png", "待收货", ""),
+  new ServiceModel("/resources/icon/attention.png", "官方客服", "pages/customerService/customerService")
 ]

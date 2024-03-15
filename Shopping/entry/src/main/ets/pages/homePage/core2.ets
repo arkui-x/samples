@@ -26,10 +26,10 @@ export struct Core2 {
   build() {
     Column() {
       List() {
-        ForEach(this.cols, item1 => {
+        ForEach(this.cols, (item1: number) => {
           ListItem() {
             Grid() {
-              ForEach(this.rows, item2 => {
+              ForEach(this.rows, (item2: number) => {
                 GridItem() {
                   Column() {
                     Image(`${this.coreData[item1 * 2 + item2].uri}`)
@@ -42,13 +42,13 @@ export struct Core2 {
                   }
                 }
                 .width('100%')
-              }, item => JSON.stringify(item))
+              }, (item2: number) => JSON.stringify(item2))
             }
             .rowsTemplate('1fr 1fr')
             .columnsTemplate('1fr')
           }
           .width('22.5%')
-        }, item => JSON.stringify(item))
+        }, (item1: number) => JSON.stringify(item1))
       }
       .listDirection(Axis.Horizontal)
       .height('22%')

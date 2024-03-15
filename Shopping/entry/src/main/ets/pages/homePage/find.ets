@@ -39,11 +39,11 @@ export struct FindPage {
               .vertical(true)
               .height('8%')
             Swiper() {
-              ForEach(this.searchText, item => {
+              ForEach(this.searchText, (item: SearchTextModel) => {
                 Text(item.searchText)
                   .fontSize(15 * this.ratio)
                   .fontColor(Color.Grey)
-              }, item => JSON.stringify(item))
+              }, (item: SearchTextModel) => JSON.stringify(item))
             }
             .width('65%')
             .autoPlay(false)
@@ -75,10 +75,10 @@ export struct FindPage {
 
         ListItem() {
           Flex({ justifyContent: FlexAlign.SpaceBetween, alignItems: ItemAlign.Center }) {
-            ForEach(this.titleText, item => {
+            ForEach(this.titleText, (item: FindTitleTextModel) => {
               Text(item.titleText)
                 .fontSize(15 * this.ratio)
-            }, item => JSON.stringify(item))
+            }, (item: FindTitleTextModel) => JSON.stringify(item))
           }
           .padding({ left: 15, right: 15 })
         }
@@ -91,7 +91,7 @@ export struct FindPage {
 
         ListItem() {
           Column() {
-            ForEach([1, 2, 3, 4, 5, 6, 7, 8, 9], item => {
+            ForEach([1, 2, 3, 4, 5, 6, 7, 8, 9], (item: number) => {
               Row() {
                 Column() {
                   ImageItem({ ratio: this.ratio })
@@ -106,7 +106,7 @@ export struct FindPage {
               .width('100%')
               .aspectRatio(1.1)
               .margin({ top: 10 })
-            }, item => JSON.stringify(item))
+            }, (item: number) => JSON.stringify(item))
           }
           .padding({ left: 10, right: 10 })
         }

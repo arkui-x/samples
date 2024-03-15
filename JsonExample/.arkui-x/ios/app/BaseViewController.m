@@ -2,14 +2,13 @@
 //  BaseViewController.m
 //  app
 //
-//  Created by Dordly on 2024/3/13.
+//  Created by Dordly on 2024/3/14.
 //
 
 #import "BaseViewController.h"
 #import "EntryEntryAbilityViewController.h"
 
 @interface BaseViewController ()
-
 @property (nonatomic, strong) UIView *mainView;
 
 @end

@@ -9,13 +9,11 @@
 /* Begin PBXBuildFile section */
 		09AF75E2BB41D8ED21768BC4 /* libhilog.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 26C32341C36A0E7F78FA91E1 /* libhilog.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		193A9D27AFA7DECA84BB6A3F /* libhilog.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26C32341C36A0E7F78FA91E1 /* libhilog.xcframework */; };
-		708A045B36F2E0D3F59DADC2 /* libresourcemanager.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7F94D4E78FA6115647AE4634 /* libresourcemanager.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		92C42CEB1DCF45F4ABE6DA41 /* EntryNextAbilityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 112ABEF6D90D44B1B4BEFA52 /* EntryNextAbilityViewController.m */; };
 		DF4BEDE929F4F5280060CCEB /* EntryEntryAbilityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF4BEDE729F4F5270060CCEB /* EntryEntryAbilityViewController.m */; };
 		DF9C1B5E28B9FC3A005DCF58 /* libarkui_ios.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF9C1B5D28B9FC3A005DCF58 /* libarkui_ios.xcframework */; };
 		DF9C1B5F28B9FC3A005DCF58 /* libarkui_ios.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DF9C1B5D28B9FC3A005DCF58 /* libarkui_ios.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		DF9C1B6128B9FC4B005DCF58 /* arkui-x in Resources */ = {isa = PBXBuildFile; fileRef = DF9C1B6028B9FC4B005DCF58 /* arkui-x */; };
-		EF56BC1E3CD1D6CACB890181 /* libresourcemanager.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F94D4E78FA6115647AE4634 /* libresourcemanager.xcframework */; };
 		F0AF1AD227D3684F008C55DD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F0AF1AD127D3684F008C55DD /* AppDelegate.m */; };
 		F0AF1ADD27D36856008C55DD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F0AF1ADC27D36856008C55DD /* Assets.xcassets */; };
 		F0AF1AE027D36856008C55DD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0AF1ADE27D36856008C55DD /* LaunchScreen.storyboard */; };
@@ -29,7 +27,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				708A045B36F2E0D3F59DADC2 /* libresourcemanager.xcframework in Embed Frameworks */,
 				09AF75E2BB41D8ED21768BC4 /* libhilog.xcframework in Embed Frameworks */,
 				DF9C1B5F28B9FC3A005DCF58 /* libarkui_ios.xcframework in Embed Frameworks */,
 			);
@@ -41,7 +38,6 @@
 /* Begin PBXFileReference section */
 		112ABEF6D90D44B1B4BEFA52 /* EntryNextAbilityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EntryNextAbilityViewController.m; sourceTree = "<group>"; };
 		26C32341C36A0E7F78FA91E1 /* libhilog.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = libhilog.xcframework; path = frameworks/libhilog.xcframework; sourceTree = "<group>"; };
-		7F94D4E78FA6115647AE4634 /* libresourcemanager.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = libresourcemanager.xcframework; path = frameworks/libresourcemanager.xcframework; sourceTree = "<group>"; };
 		AE89975D61434B3BA56A0E97 /* EntryNextAbilityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EntryNextAbilityViewController.h; sourceTree = "<group>"; };
 		DF4BEDE729F4F5270060CCEB /* EntryEntryAbilityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EntryEntryAbilityViewController.m; sourceTree = "<group>"; };
 		DF4BEDE829F4F5280060CCEB /* EntryEntryAbilityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EntryEntryAbilityViewController.h; sourceTree = "<group>"; };
@@ -61,7 +57,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EF56BC1E3CD1D6CACB890181 /* libresourcemanager.xcframework in Frameworks */,
 				193A9D27AFA7DECA84BB6A3F /* libhilog.xcframework in Frameworks */,
 				DF9C1B5E28B9FC3A005DCF58 /* libarkui_ios.xcframework in Frameworks */,
 			);
@@ -109,7 +104,6 @@
 			isa = PBXGroup;
 			children = (
 				DF9C1B5D28B9FC3A005DCF58 /* libarkui_ios.xcframework */,
-				7F94D4E78FA6115647AE4634 /* libresourcemanager.xcframework */,
 				26C32341C36A0E7F78FA91E1 /* libhilog.xcframework */,
 			);
 			name = Frameworks;
@@ -327,22 +321,22 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 4H7CJCM728;
+				DEVELOPMENT_TEAM = 5B33WN284J;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = app/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.example.zheng;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.assemblyTestDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "no sign";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -357,22 +351,22 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 4H7CJCM728;
+				DEVELOPMENT_TEAM = 5B33WN284J;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = app/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.example.zheng;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.assemblyTestDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "no sign";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
