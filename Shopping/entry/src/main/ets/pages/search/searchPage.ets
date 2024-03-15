@@ -37,6 +37,21 @@ struct SearchPage {
   @State opacity1: number = 1
   listener = mediaQuery.matchMediaSync('(orientation:landscape)');
 
+  aboutToAppear() {
+    this.listener.on('change', this.onPortrait)
+  }
+
+  async onPortrait(mediaQueryResult: mediaQuery.MediaQueryResult) {
+    let result = mediaQueryResult.matches
+    if (result) {
+      this.width1 = 45
+      this.swiperWidth = 30
+    } else {
+      this.width1 = 100
+      this.swiperWidth = 60
+    }
+  }
+
   build() {
     Column() {
       Column() {
