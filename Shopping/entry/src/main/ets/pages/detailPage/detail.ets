@@ -18,10 +18,12 @@ import router from '@ohos.router';
 import { SwiperModel, PhoneTypeModel, ShowImgModel, RecommendDataModel, GoodsInfoModel, ListDataModel
 } from "../../model/detailModel"
 import { swiperData, phoneTypeData, showImgData, recommendData, goodsInfoData, listData } from '../../data/detailData'
+import mediaquery from '@ohos.mediaquery';
 
 @Entry
 @Component
 struct Detail {
+  @State width1: number = 10
   @State ratio: number = 10
   @State active: boolean = false
   @State swiper: Array<SwiperModel> = swiperData
@@ -33,6 +35,20 @@ struct Detail {
   @State collected: boolean = false
   @State opacity1: number= 1
   listener= mediaQuery.matchMediaSync('(orientation:landscape)');
+
+  aboutToAppear() {
+    this.listener.on('change', this.onPortrait);
+  }
+
+  async onPortrait(mediaQueryResult:mediaquery.MediaQueryResult) {
+    let result = mediaQueryResult.matches
+    if (result) {
+      this.width1 = 45
+    } else {
+      this.width1 = 100
+    }
+  }
+
 
   build() {
     Scroll() {
