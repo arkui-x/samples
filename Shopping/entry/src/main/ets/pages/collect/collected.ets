@@ -25,12 +25,18 @@ import { SinglePage3 } from './singlePage3'
 @Component
 struct CollectedPage {
   @State width1: number = 10
-  @State ratio: number = 10
+  @State ratio: number = 1
   @State opacity1: number = 1
   @State num: number = 1
   @State layoutId: number = 0
   @State collected: boolean = true
   listener = mediaQuery.matchMediaSync('(orientation:landscape)')
+
+  onPageShow() {
+    const params = router.getParams() as Record<number, string>; // 获取传递过来的参数对象
+    this.width1 = params['num']
+    this.ratio = params['ratio']
+  }
 
   aboutToAppear() {
     console.log('www data log ' + this.width)
