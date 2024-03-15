@@ -21,9 +21,9 @@ import { exampleData, searchData } from '../../data/searchData'
 @Entry
 @Component
 struct SearchPage {
-  @State placeholder: string = router.getParams().toString()
+  @State placeholder: string = ''
   @State width1: number = 0
-  @State ratio: number = 10
+  @State ratio: number = 1
   @State value: string = ''
   @State flag: boolean = true
   @State isShow: boolean = true
@@ -36,6 +36,13 @@ struct SearchPage {
   @State swiperWidth: number = 30
   @State opacity1: number = 1
   listener = mediaQuery.matchMediaSync('(orientation:landscape)');
+
+  onPageShow(){
+    const params = router.getParams() as Record<number, string>; // 获取传递过来的参数对象
+    this.placeholder = params['message']
+    this.width1 = params['num']
+    this.ratio = params['ratio']
+  }
 
   aboutToAppear() {
     this.listener.on('change', this.onPortrait)
