@@ -12,6 +12,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
+import mediaquery from '@ohos.mediaquery'
 
 import mediaQuery from '@ohos.mediaquery'
 import router from '@ohos.router'
@@ -23,12 +24,28 @@ import { SinglePage3 } from './singlePage3'
 @Entry
 @Component
 struct CollectedPage {
+  @State width1: number = 10
   @State ratio: number = 10
   @State opacity1: number = 1
   @State num: number = 1
   @State layoutId: number = 0
   @State collected: boolean = true
   listener = mediaQuery.matchMediaSync('(orientation:landscape)')
+
+  aboutToAppear() {
+    console.log('www data log ' + this.width)
+    this.listener.on('change', this.onPortrait)
+  }
+
+  async onPortrait(mediaQueryResult : mediaquery.MediaQueryResult) {
+    let result = mediaQueryResult.matches
+    if (result) {
+      this.width1 = 45
+    } else {
+      this.width1 = 100
+    }
+  }
+
 
   build() {
     Column() {
