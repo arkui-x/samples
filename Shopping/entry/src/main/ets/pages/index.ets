@@ -14,7 +14,6 @@
  */
 
 import mediaQuery from '@ohos.mediaquery';
-import display from '@ohos.display';
 import { TabTitleModel } from '../model/homeModel'
 import { tabTitleData } from '../data/homeData'
 import { MainPage } from './homePage/main'
@@ -22,6 +21,7 @@ import { VisitPage } from './homePage/visitPage'
 import { Information } from './homePage/informance'
 import { ShopCart } from './homePage/shopCart'
 import { User } from './homePage/User'
+import mediaquery from '@ohos.mediaquery';
 
 @Entry
 @Component
@@ -35,6 +35,19 @@ struct Index {
   @State width1: number = 100
   @State ratio: number = 1
   listener = mediaQuery.matchMediaSync('(orientation:landscape)')
+
+  aboutToAppear() {
+    this.listener.on('change', this.onPortrait)
+  }
+
+  async onPortrait(mediaQueryResult:mediaquery.MediaQueryResult) {
+    let result = mediaQueryResult.matches
+    if (result) {
+      this.width1 = 45
+    } else {
+      this.width1 = 100
+    }
+  }
 
   build() {
     Column() {
