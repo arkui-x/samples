@@ -54,8 +54,7 @@ export struct NewHomeItem {
               if (this.t.detail_image_list) {
                 this.skipRouter(this.t.detail_image_list)
               } else if (this.t.image_list) {
-                let imgAry: ImageList[] = this.t.image_list.map((t: ImageList): ImageList => new ImageList(t.height, t.uri, t.url.replace('http', 'https'), t.url_list, t.width))
-                this.skipRouter(imgAry)
+                this.skipRouter(this.t.image_list)
               } else {
                 this.skipRouter([])
               }
@@ -86,7 +85,7 @@ export struct NewHomeItem {
                 Flex({ justifyContent: FlexAlign.SpaceBetween, alignItems: ItemAlign.Start }) {
                   ForEach(this.t.image_list, (t: ImageList, i: number) => {
                     Column() {
-                      Image(t.url.replace('http', 'https'))
+                      Image(t.url)
                         .height(90)
                         .width(93)
                     }
@@ -110,8 +109,7 @@ export struct NewHomeItem {
               }
               .height(160)
               .onClick(() => {
-                let imgAry: ImageList[] = this.t.image_list.map((t: ImageList): ImageList => new ImageList(t.height, t.uri, t.url.replace('http', 'https'), t.url_list, t.width))
-                this.skipRouter(imgAry)
+                this.skipRouter(this.t.image_list)
               })
             }
             if (this.t.detail_image_list) {
