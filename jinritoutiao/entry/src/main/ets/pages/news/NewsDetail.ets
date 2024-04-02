@@ -696,7 +696,7 @@ struct NewDetails {
               .padding(10)
             }
             .scrollBarWidth(3)
-            .onScroll(() => {
+            .onWillScroll(() => {
               if (this.scroller.isAtEnd()) {
                 let remainder = this.commentCount % 10
                 if (remainder) {
