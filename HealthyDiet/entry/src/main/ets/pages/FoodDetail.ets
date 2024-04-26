@@ -356,7 +356,7 @@ struct Record {
         .margin({ top: 33, left: 72, right: 72 })
         .backgroundColor($r('app.color.theme_color_green'))
         .onClick(() => {
-          let dietRecordsList = AppStorage.Get<Array<DietRecord>>('dietRecords')
+          let dietRecordsList = AppStorage.get<Array<DietRecord>>('dietRecords')
           if (dietRecordsList == undefined || dietRecordsList.length === 0) {
             dietRecordsList = initDietRecords
           }
@@ -364,7 +364,7 @@ struct Record {
             let dietRecordData = new DietRecord(dietRecordsList.length, this.foodInfo.id,
               new MealTime(this.mealTimeId), this.mealWeight, new Date().getTime().toString())
             dietRecordsList.push(dietRecordData)
-            AppStorage.SetOrCreate<Array<DietRecord>>('dietRecords', dietRecordsList)
+            AppStorage.setOrCreate<Array<DietRecord>>('dietRecords', dietRecordsList)
             this.controller.close()
           }
         })
