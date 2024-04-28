@@ -64,7 +64,7 @@ export class BreakpointSystem {
   private updateCurrentBreakpoint(breakpoint: string) {
     if (this.currentBreakpoint !== breakpoint) {
       this.currentBreakpoint = breakpoint
-      AppStorage.setAndLink<string>('currentBreakpoint', this.currentBreakpoint)
+      AppStorage.set<string>('currentBreakpoint', this.currentBreakpoint)
       console.log('on current breakpoint: ' + this.currentBreakpoint)
     }
   }
