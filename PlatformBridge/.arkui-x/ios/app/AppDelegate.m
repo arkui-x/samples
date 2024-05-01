@@ -16,14 +16,12 @@
 #import "AppDelegate.h"
 #import "EntryEntryAbilityViewController.h"
 #import <libarkui_ios/StageApplication.h>
-#import <libarkui_ios/BridgePlugin.h>
-#import "BridgeClass.h"
 
 #define BUNDLE_DIRECTORY @"arkui-x"
 #define BUNDLE_NAME @"com.example.platformbridge"
 
-@interface AppDelegate ()<IMessageListener>
-@property (nonatomic, strong) BridgeClass* plugin;
+@interface AppDelegate ()
+
 @end
 
 @implementation AppDelegate
@@ -31,22 +29,16 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     [StageApplication configModuleWithBundleDirectory:BUNDLE_DIRECTORY];
     [StageApplication launchApplication];
-
+    
     NSString *instanceName = [NSString stringWithFormat:@"%@:%@:%@",BUNDLE_NAME, @"entry", @"EntryAbility"];
     EntryEntryAbilityViewController *mainView = [[EntryEntryAbilityViewController alloc] initWithInstanceName:instanceName];
-
-    int32_t instancedId = [mainView getInstanceId];
-
-    self.plugin = [[BridgeClass alloc] initBridgePlugin:@"Bridge" instanceId:instancedId];
-    self.plugin.messageListener = self;
-
     [self setNavRootVC:mainView];
     return YES;
 }
 
 - (BOOL)application:(UIApplication *)app openURL:(NSURL *)url options:(NSDictionary<NSString *,id> *)options {
     NSLog(@"appdelegate openUrl callback, url : %@", url.absoluteString); // eg: (com.entry.arkui://entry?OtherAbility)
-
+    
     NSString *bundleName = url.scheme;
     NSString *moduleName = url.host;
     NSString *abilityName, *params;
@@ -65,7 +57,7 @@
                            moduleName:moduleName
                           abilityName:abilityName
                                params:params, nil];
-
+    
     return YES;
 }
 
@@ -73,26 +65,26 @@
                          moduleName:(NSString *)moduleName
                         abilityName:(NSString *)abilityName
                              params:(NSString *)params, ...NS_REQUIRES_NIL_TERMINATION {
-
+    
     id rootVC = [[UIApplication sharedApplication].delegate window].rootViewController;
     BOOL hasRoot = NO;
     if ([rootVC isKindOfClass:[UINavigationController class]]) {
         hasRoot = YES;
     }
-
+    
     id subStageVC = nil;
-
+    
     if ([moduleName isEqualToString:@"entry"] && [abilityName isEqualToString:@"EntryAbility"]) {
         NSString *instanceName = [NSString stringWithFormat:@"%@:%@:%@",bundleName, moduleName, abilityName];
         EntryEntryAbilityViewController *entryOtherVC = [[EntryEntryAbilityViewController alloc] initWithInstanceName:instanceName];
         entryOtherVC.params = params;
         subStageVC = (EntryEntryAbilityViewController *)entryOtherVC;
     } // other ViewController
-
+    
     if (!subStageVC) {
         return NO;
     }
-
+    
     if (!hasRoot) {
         [self setNavRootVC:subStageVC];
     } else {
@@ -116,15 +108,7 @@
     [appearance configureWithOpaqueBackground];
     appearance.backgroundColor = UIColor.whiteColor;
     navi.navigationBar.standardAppearance = appearance;
-    navi.navigationBar.hidden = true;
     navi.navigationBar.scrollEdgeAppearance = navi.navigationBar.standardAppearance;
 }
 
-#pragma mark - listener
-- (NSString*)onMessage:(id)data {
-    return @"oc onMessage success";
-}
-
-- (void)onMessageResponse:(id)data {
-}
 @end
