@@ -1,31 +1,18 @@
 {
   "app": {
-    "signingConfigs": [
-      {
-        "name": "default",
-        "material": {
-          "certpath": "/Users/arkui-x/.ohos/config/openharmony/auto_ohos_default_platformbridge_com.example.platformbridge.cer",
-          "storePassword": "0000001B1F630F6C1DCEFADC7BFD3E19D4D7B6D7751E04753D55A53AA1BD71DADDCD3FDDB4DBE702E86D94",
-          "keyAlias": "debugKey",
-          "keyPassword": "0000001BFB897831A71EB8FAECC875EDEDE359EFC2C52CDB39B781926A2C2250780286273D0CC048BF58D5",
-          "profile": "/Users/arkui-x/.ohos/config/openharmony/auto_ohos_default_platformbridge_com.example.platformbridge.p7b",
-          "signAlg": "SHA256withECDSA",
-          "storeFile": "/Users/arkui-x/.ohos/config/openharmony/auto_ohos_default_platformbridge_com.example.platformbridge.p12"
-        }
-      }
-    ],
+    "signingConfigs": [],
     "products": [
       {
         "name": "default",
         "signingConfig": "default",
-        "compileSdkVersion": 10,
-        "compatibleSdkVersion": 10,
-        "runtimeOS": "OpenHarmony",
+        "compileSdkVersion": 11,
+        "compatibleSdkVersion": 11,
+        "runtimeOS": "OpenHarmony"
       }
     ],
     "buildModeSet": [
       {
-        "name": "debug",
+        "name": "debug"
       },
       {
         "name": "release"
@@ -46,5 +33,5 @@
       ]
     }
   ],
-  "crossplatform": true
+  "crossplatform": true,
 }
