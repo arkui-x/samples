@@ -19,7 +19,7 @@
 
   |                             首页                             |                         |
   | :----------------------------------------------------------: | :---------------------------------------: |
-  | <img src="./screenshots/devices/ios_main.JPG" style="zoom:20%;" /> |
+  | <img src="./screenshots/devices/iOS_main.jpg" style="zoom:20%;" /> |
 
 
 ## 相关概念
