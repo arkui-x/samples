@@ -44,7 +44,7 @@ export struct NewHomePage {
               NewHomeItem({ t: t, i: i })
             }
             .padding({ left: 15, right: 15 })
-          })
+          }, (item: string) => item)
         }
         .edgeEffect(EdgeEffect.None)
         .onScrollIndex((first: number, last: number) => {

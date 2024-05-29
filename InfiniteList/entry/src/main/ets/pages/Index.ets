@@ -39,7 +39,7 @@ struct Index {
                   .width('20%')
               }
             }
-          })
+          }, (item: string) => item)
         }
         .cachedCount(8)
         .onReachEnd(() => {
