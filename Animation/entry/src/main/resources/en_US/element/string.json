@@ -1,0 +1,332 @@
+{
+  "string": [
+    {
+      "name": "module_desc",
+      "value": "module description"
+    },
+    {
+      "name": "EntryAbility_desc",
+      "value": "description"
+    },
+    {
+      "name": "EntryAbility_label",
+      "value": "label"
+    },
+    {
+      "name": "Animation_samples",
+      "value": "Animation Sample"
+    },
+    {
+      "name": "animation",
+      "value": "Animation"
+    },
+    {
+      "name": "component",
+      "value": "Component"
+    },
+    {
+      "name": "universal",
+      "value": "Universal"
+    },
+    {
+      "name": "global_method",
+      "value": "Global Method"
+    },
+    {
+      "name": "transition_animation",
+      "value": "Transition animation"
+    },
+    {
+      "name": "interpolation_calculation",
+      "value": "Interpolation calculation"
+    },
+    {
+      "name": "page_transition",
+      "value": "Transitions between pages"
+    },
+    {
+      "name": "share_element_transition",
+      "value": "Shared element transition"
+    },
+    {
+      "name": "Multiplex_interface",
+      "value": "multiplex"
+    },
+    {
+      "name": "Floating_window",
+      "value": "floating window"
+    },
+    {
+      "name": "Folder_expansion",
+      "value": "folder expansion"
+    },
+    {
+      "name": "System_icon",
+      "value": "system icon"
+    },
+    {
+      "name": "Shop_card_expansion",
+      "value": "shop card expansion"
+    },
+    {
+      "name": "Gallery_card_expansion",
+      "value": "gallery card expansion"
+    },
+    {
+      "name": "component_transition",
+      "value": "Component transition"
+    },
+    {
+      "name": "layout_animation_expansion",
+      "value": "Layout animation"
+    },
+    {
+      "name": "size_transition_expansion",
+      "value": "Size transition"
+    },
+    {
+      "name": "side_bar_effects_title",
+      "value": "SideBar effects"
+    },
+    {
+      "name": "animate_to",
+      "value": "AnimateTo"
+    },
+    {
+      "name": "motion_path",
+      "value": "Path animation"
+    },
+    {
+      "name": "auxiliary",
+      "value": "Auxiliary"
+    },
+    {
+      "name": "auxiliary_badge",
+      "value": "Badge"
+    },
+    {
+      "name": "scroll_bar",
+      "value": "ScrollBar"
+    },  {
+      "name": "auxiliary_refresh",
+      "value": "Refresh"
+    }, {
+      "name": "auxiliary_panel",
+      "value": "Panel"
+    }, {
+      "name": "attribute_animation",
+      "value": "AttributeAnimation"
+    },
+    {
+      "name": "attribute_animation_change_size",
+      "value": "Change size"
+    },
+    {
+      "name": "attribute_animation_change_rotation",
+      "value": "Change the rotation"
+    },
+    {
+      "name": "attribute_animation_set_curve",
+      "value": "Set the curve"
+    },
+    {
+      "name": "attribute_animation_delay",
+      "value": "Delay 3 s"
+    },
+    {
+      "name": "attribute_animation_play_count",
+      "value": "Play 2 times"
+    },
+    {
+      "name": "attribute_animation_play_speed",
+      "value": "Play the speed"
+    },
+    {
+      "name": "attribute_animation_unlimited_playback",
+      "value": "Unlimited playback"
+    },
+    {
+      "name": "animate_over",
+      "value": "The animation finishes playing"
+    },
+    {
+      "name": "interpolation_calculation_init_curve",
+      "value": "EaseIn (deceleration start) difference curve"
+    },
+    {
+      "name": "interpolation_calculation_steps_curve",
+      "value": "step curve object"
+    },
+    {
+      "name": "interpolation_calculation_cubic_bezier_curve",
+      "value": "Third-order Bézier curve object"
+    },
+    {
+      "name": "interpolation_calculation_spring",
+      "value": "Spring curve object"
+    },
+    {
+      "name": "pan_end",
+      "value": "End"
+    },
+    {
+      "name": "motion_path_click_me",
+      "value": "click me"
+    },
+    {
+      "name": "component_transition_show",
+      "value": " Show"
+    },
+    {
+      "name": "component_transition_hide",
+      "value": "Hide"
+    },
+    {
+      "name": "Tips_call",
+      "value": "Waiting"
+    },
+    {
+      "name": "Font_family_regular",
+      "value": "HarmonyOS Sans SC-Regular"
+    },
+    {
+      "name": "avoiding_input_method_testing",
+      "value": "Please Enter Content"
+    },
+    {
+      "name": "layout_animation_expansion_align",
+      "value": "Align animation"
+    },
+    {
+      "name": "layout_animation_expansion_size",
+      "value": "Size animation"
+    },
+    {
+      "name": "layout_animation_expansion_padding",
+      "value": "Padding animation"
+    },
+    {
+      "name": "layout_animation_expansion_margin",
+      "value": "Margin animation"
+    },
+    {
+      "name": "layout_animation_expansion_direction",
+      "value": "Direction animation"
+    },
+    {
+      "name": "layout_animation_expansion_offset",
+      "value": "Offset animation"
+    },
+    {
+      "name": "layout_animation_expansion_position",
+      "value": "Position animation"
+    },
+    {
+      "name": "layout_animation_expansion_markAnchor",
+      "value": "MarkAnchor animation"
+    },
+    {
+      "name": "layout_animation_expansion_alignRules",
+      "value": "AlignRules animation"
+    },
+    {
+      "name": "page_transition_top",
+      "value": "Top Entry/Bottom Exit"
+    },
+    {
+      "name": "page_transition_bottom",
+      "value": "Bottom Entry/Top Exit"
+    },
+    {
+      "name": "page_transition_scale",
+      "value": "Zoom in/out"
+    },
+    {
+      "name": "page_transition_rotate",
+      "value": "Spin in/out"
+    },
+    {
+      "name": "page_transition_back",
+      "value": "Back to page transition between pages"
+    },
+    {
+      "name": "page_transition_left",
+      "value": "Left Entry/Right Exit"
+    },
+    {
+      "name": "page_transition_right",
+      "value": "Right Entry/Left Exit"
+    },
+    {
+      "name": "Today",
+      "value": "today"
+    },
+    {
+      "name": "Font_family_medium",
+      "value": "HarmonyOS Sans SC-Medium"
+    },
+    {
+      "name": "divider_color_blue",
+      "value": "Blue"
+    },
+    {
+      "name": "divider_color_green",
+      "value": "Green"
+    },
+    {
+      "name": "divider_color_orange",
+      "value": "Orange"
+    },
+    {
+      "name": "divider_color_pink",
+      "value": "Pink"
+    },
+    {
+      "name": "side_bar_type_embed",
+      "value": "Embed"
+    },
+    {
+      "name": "set_side_bar_type",
+      "value": "Set sideBarType"
+    },
+    {
+      "name": "side_bar_type_overlay",
+      "value": "Overlay"
+    },
+    {
+      "name": "side_bar_type_auto",
+      "value": "Auto"
+    },
+    {
+      "name": "hide_side_bar",
+      "value": "Hide sideBar"
+    },
+    {
+      "name": "show_side_bar",
+      "value": "Show sideBar"
+    },
+    {
+      "name": "size_transition_flex",
+      "value": "Flex"
+    },
+    {
+      "name": "size_transition_grid_item",
+      "value": "GridItem"
+    }, {
+      "name": "size_transition_swiper_item",
+      "value": "SwiperItem"
+    },
+    {
+      "name": "size_transition_font_size",
+      "value": "FontSize"
+    },
+    {
+      "name": "size_transition_expansion_tabContent",
+      "value": "TabContent"
+    },
+    {
+      "name": "size_transition_list_item",
+      "value": "ListItem"
+    }
+  ]
+}
