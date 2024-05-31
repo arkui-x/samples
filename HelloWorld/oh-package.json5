@@ -12,17 +12,16 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
- 
+
 {
-  "name": "helloworld",
-  "version": "1.0.0",
-  "description": "Please describe the basic information.",
-  "main": "",
-  "author": "",
   "license": "",
-  "dependencies": {
-  },
   "devDependencies": {
     "@ohos/hypium": "1.0.6"
-  }
+  },
+  "author": "",
+  "name": "helloworld",
+  "description": "Please describe the basic information.",
+  "main": "",
+  "version": "1.0.0",
+  "dependencies": {}
 }

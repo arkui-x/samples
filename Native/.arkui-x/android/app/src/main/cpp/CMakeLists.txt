@@ -1,6 +1,6 @@
 # the minimum version of CMake.
 cmake_minimum_required(VERSION 3.4.1)
-project(HelloworldNativeapi)
+project(HelloWorldNativeApi)
 
 set(NATIVE_ROOT_PATH ${CMAKE_CURRENT_SOURCE_DIR})
 if(DEFINED ENV{ARKUIX_SDK_HOME})

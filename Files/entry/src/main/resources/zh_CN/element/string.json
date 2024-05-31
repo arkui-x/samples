@@ -1,0 +1,28 @@
+{
+  "string": [
+    {
+      "name": "module_desc",
+      "value": "模块描述"
+    },
+    {
+      "name": "EntryAbility_desc",
+      "value": "description"
+    },
+    {
+      "name": "EntryAbility_label",
+      "value": "label"
+    },
+    {
+      "name": "file_manager",
+      "value": "文件管理"
+    },
+    {
+      "name": "document",
+      "value": "文档"
+    },
+    {
+      "name": "no_file",
+      "value": "没有相关文件"
+    }
+  ]
+}

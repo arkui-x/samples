@@ -13,6 +13,7 @@
  * limitations under the License.
  */
 
+import hilog from '@ohos.hilog';
 import TestRunner from '@ohos.application.testRunner';
 import AbilityDelegatorRegistry from '@ohos.app.ability.abilityDelegatorRegistry';
 
@@ -20,11 +21,11 @@ var abilityDelegator = undefined
 var abilityDelegatorArguments = undefined
 
 async function onAbilityCreateCallback() {
-    console.log('onAbilityCreateCallback');
+    hilog.info(0x0000, 'testTag', '%{public}s', 'onAbilityCreateCallback');
 }
 
 async function addAbilityMonitorCallback(err: any) {
-    console.log('addAbilityMonitorCallback');
+    hilog.info(0x0000, 'testTag', 'addAbilityMonitorCallback : %{public}s', JSON.stringify(err) ?? '');
 }
 
 export default class OpenHarmonyTestRunner implements TestRunner {
@@ -32,28 +33,29 @@ export default class OpenHarmonyTestRunner implements TestRunner {
     }
 
     onPrepare() {
-        console.log('onPrepare');
+        hilog.info(0x0000, 'testTag', '%{public}s', 'OpenHarmonyTestRunner OnPrepare ');
     }
 
     async onRun() {
-        console.log('onRun');
+        hilog.info(0x0000, 'testTag', '%{public}s', 'OpenHarmonyTestRunner onRun run');
         abilityDelegatorArguments = AbilityDelegatorRegistry.getArguments()
         abilityDelegator = AbilityDelegatorRegistry.getAbilityDelegator()
-        var bundleName = abilityDelegatorArguments.bundleName
-        var parameters = abilityDelegatorArguments.parameters
-        let moduleName = parameters["moduleName"]
+        const bundleName = abilityDelegatorArguments.bundleName;
+        const testAbilityName = 'TestAbility';
         let lMonitor = {
-            abilityName: "TestAbility",
+            abilityName: testAbilityName,
             onAbilityCreate: onAbilityCreateCallback,
         };
         abilityDelegator.addAbilityMonitor(lMonitor, addAbilityMonitorCallback)
-        let want = {
-            abilityName: "TestAbility",
+        const want = {
             bundleName: bundleName,
-            moduleName: moduleName
+            abilityName: testAbilityName
         };
-        abilityDelegator.startAbility(want, (err: any, data: any) => {
-            console.log('startAbility' + err + data);
-        });
+        abilityDelegator = AbilityDelegatorRegistry.getAbilityDelegator();
+        abilityDelegator.startAbility(want, (err : any, data : any) => {
+            hilog.info(0x0000, 'testTag', 'startAbility : err : %{public}s', JSON.stringify(err) ?? '');
+            hilog.info(0x0000, 'testTag', 'startAbility : data : %{public}s',JSON.stringify(data) ?? '');
+        })
+        hilog.info(0x0000, 'testTag', '%{public}s', 'OpenHarmonyTestRunner onRun end');
     }
 }

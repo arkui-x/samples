@@ -14,20 +14,26 @@
  */
 
 export class SwiperModel {
-  constructor(public src: string) {
+  public src: string
+  constructor(src: string) {
     this.src = src;
   }
 }
 
 export class PhoneTypeModel {
-  constructor(public uri: string, public color: string) {
+  public uri: string
+  public color: string
+  constructor(uri: string, color: string) {
     this.uri = uri;
     this.color = color;
   }
 }
 
 export class RecommendDataModel {
-  constructor(public img: string, public title: string, public price: string) {
+  public img: string
+  public title: string
+  public price: string
+  constructor(img: string, title: string, price: string) {
     this.img = img;
     this.title = title;
     this.price = price;
@@ -35,19 +41,24 @@ export class RecommendDataModel {
 }
 
 export class ShowImgModel {
-  constructor(public uri: string) {
+  public uri: string
+  constructor(uri: string) {
     this.uri = uri;
   }
 }
 
 export class GoodsInfoModel {
-  constructor(public img: string) {
+  public img: string
+  constructor(img: string) {
     this.img = img;
   }
 }
 
 export class ListDataModel {
-  constructor(public img: string, public title: string, public price: string) {
+  public img: string
+  public title: string
+  public price: string
+  constructor(img: string, title: string, price: string) {
     this.img = img;
     this.title = title;
     this.price = price;

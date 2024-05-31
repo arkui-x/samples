@@ -1,0 +1,38 @@
+@import './table.css';
+@import './set-main.css';
+
+section.contents main {
+	flex: 1;
+	display: flex;
+	justify-content: center;
+	padding: 20px;
+	padding-top: 65px;
+	overflow: hidden;
+}
+section.contents main > .hide {
+	display: none !important;
+}
+section.contents main > .home-main {
+	height: 100%;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+}
+section.contents main > .home-main > #barchart_1,
+#barchart_2,
+#barchart_3 {
+	width: 100%;
+	height: 33.33%;
+	/* height: calc(100% / 3); */
+}
+section.contents main > .entries-main {
+	height: 100%;
+	width: 100%;
+	overflow: auto;
+}
+section.contents main > .entries-main > .table {
+	height: 100%;
+	width: 100%;
+}

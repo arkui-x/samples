@@ -10,6 +10,14 @@ This repository provides a series of app samples to help you quickly learn the A
 
 - Basic app:
   - ['HelloWorld': HelloWorld (API8)](HelloWorld)
+  - ['Library'：Library（API10）](Library)
+  - ['Native'：Native（API10）](Native)
+  - ['Animation'：Animation（API10）](Animation)
+  - ['Files'：Files（API10）](Files)
+  - ['InfiniteList'：InfiniteList（API10）](InfiniteList)
+  - ['JsonExample'：JsonExample（API10）](JsonExample)
+  - ['Router'：Router（API10）](Router)
+  - ['WebExample'：WebExample（API10）](WebExample)
 - Featured apps:
   - ['Shopping': Shopping App (API8)](Shopping)
   - ['HealthyDiet': Healthy Diet App (API8)](HealthyDiet)
@@ -22,6 +30,12 @@ samples
 |---HelloWorld          # HelloWorld
 |---Shopping            # Shopping app
 |---HealthyDiet         # Healthy diet app
+|---Animation           # Animation app
+|---Files               # Read or Write Files app
+|---InfiniteList        # Infinite List app
+|---JsonExample         # JsonExample app
+|---Router              # Router app
+|---WebExample          # Web module
 ```
 
 ## Constraints
