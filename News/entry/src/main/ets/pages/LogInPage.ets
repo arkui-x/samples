@@ -27,14 +27,14 @@ export struct LogInPage {
           alignItems: ItemAlign.Center
         }) {
           Column() {
-            Text('登录你的头条  精彩永不丢失')
+            Text('登录你的新闻  精彩永不丢失')
               .fontSize(18)
               .margin({ bottom: 5 })
               .fontWeight(FontWeight.Bold)
               .fontColor(Color.Black)
 
             Column() {
-              Image($r('app.media.toutiao'))
+              Image($r('app.media.ic_public_contacts_click'))
                 .width(50)
                 .height(50)
                 .objectFit(ImageFit.Contain)

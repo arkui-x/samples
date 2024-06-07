@@ -17,6 +17,7 @@ import { BotItem, NavTop, TopItem } from './util/Mock'
 import { LogInPage } from './LogInPage'
 import { TopSearch } from './components/TopSearch'
 import { VideoPage } from './video/VideoPage'
+import deviceInfo from '@ohos.deviceInfo';
 
 @Entry
 @Component
@@ -27,6 +28,7 @@ struct Index {
   private botController: TabsController = new TabsController()
   @State showLogIn: boolean = false
   @State logInHeight: string = '0'
+  @State osName: string = deviceInfo.osFullName;
 
   @Builder
   TabBotBuilder(item: BotItem, index: number) {
@@ -191,6 +193,7 @@ struct Index {
       }
       .width('100%')
       .height('100%')
+      .margin({top: this.osName.startsWith('iOS') ? 20 : 0})
       .backgroundColor(Color.White)
       .padding({ bottom: 20 })
 

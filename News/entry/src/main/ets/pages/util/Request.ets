@@ -169,18 +169,15 @@ function httpRequestGet(url: string): Promise<NewsData> {
 export function homePageRequest(key?: string): Promise<NewsItem[]> {
   return new Promise(async (resolve: Function, reject: Function) => {
     let newsUrl = 'https://is.snssdk.com/api/news/feed/v58/'
-    httpRequestGet(newsUrl).then((data: NewsData) => {
-      if (data.message === 'success' && data.data.length) {
-        if (key == 'video') {
-          resolve(data.data.splice(0, 4));
-        } else {
-          resolve(data.data);
-        }
+    let data: NewsData = await httpRequestGet(newsUrl)
+    if (data.message === 'success' && data.data.length) {
+      if (key == 'video') {
+        resolve(data.data.splice(0, 4));
       } else {
-        reject('error');
+        resolve(data.data);
       }
-    }).catch((err: Error) => {
+    } else {
       reject('error');
-    });
+    }
   });
 }

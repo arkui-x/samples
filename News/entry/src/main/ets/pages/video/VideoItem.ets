@@ -1,12 +1,15 @@
 import { getTimeStr } from '../util/Common'
 import { NewsItem } from '../util/Request'
 import router from '@ohos.router';
-import { images } from '../util/Mock';
+import { images, videos } from '../util/Mock';
 
 @Component
 export struct VideoItem {
   @Prop t: NewsItem;
   private random: number = Math.floor(Math.random() * 5)
+  @State isPlayVideo: boolean = false
+  @State isplaying: boolean = false
+  controller: VideoController = new VideoController()
 
   @Builder
   VideoOverlay() {
@@ -16,17 +19,10 @@ export struct VideoItem {
           .height(30)
           .width(30)
       }
-      .height(30)
-      .width(30)
-      .position({ x: '50%', y: '50%' })
-      .translate({ x: '-50%', y: '-50%' })
     }
-    .height('80%')
-    .width('90%')
-    .alignItems(HorizontalAlign.Center)
-    .onClick(() => {
-      router.pushUrl({ url: 'pages/video/VideoDetail', params: { random: this.random } })
-    })
+    .height('100%')
+    .width('100%')
+    .justifyContent(FlexAlign.Center)
   }
 
   build() {
@@ -77,13 +73,60 @@ export struct VideoItem {
 
         //Video content
         Column() {
-          Image(images[this.random])
-            .height(240)
-            .width('100%')
+          if (this.isPlayVideo) {
+            Video({
+              src: videos[this.random],
+              previewUri: images[this.random],
+              controller: this.controller,
+            })
+              .width('100%')
+              .height(194)
+              .controls(false)
+              .objectFit(ImageFit.Contain)
+              .onStart(() => {
+                this.isplaying = true
+              })
+              .onPause(() => {
+                this.isplaying = false
+              })
+              .onStop(() => {
+                this.isplaying = false
+              })
+              .onVisibleAreaChange([0.0, 1.0], (isVisible: boolean, currentRatio: number) => {
+                if (currentRatio < 0.3) {
+                  this.controller.stop()
+                  this.isplaying = false
+                  this.isPlayVideo = false
+                }
+              })
+              .onFinish(() => {
+                this.isplaying = false
+                this.isPlayVideo = false
+              })
+              .onClick(() => {
+                if (this.isplaying == true) {
+                  this.controller.pause()
+                } else {
+                  this.controller.start()
+                }
+              })
+          } else {
+            Image(images[this.random])
+              .height(194)
+              .width('100%')
+              .overlay(this.VideoOverlay())
+              .onClick(() => {
+                this.isPlayVideo = true
+                for (let i = 2000; i < 8000; i = i + 1000) {
+                  setTimeout(() => {
+                    this.controller.start()
+                  }, i)
+                }
+              })
+          }
+
         }
-        .height(240)
         .width('100%')
-        .overlay(this.VideoOverlay())
         .margin({ top: 8, bottom: 8 })
 
         // Video source
