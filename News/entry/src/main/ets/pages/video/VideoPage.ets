@@ -10,6 +10,7 @@ export struct VideoPage {
   @State videoMap: VideoSource = new VideoSource()
   scroller: Scroller = new Scroller()
   @State @Watch('getNews') isShow: boolean = false
+  @State isWaitingForLoading: boolean = true
 
   getNews() {
     if (this.isShow) {
@@ -31,16 +32,28 @@ export struct VideoPage {
       promptAction.showToast({ message: '请确保网络已连接' });
       this.isShow = false
     });
+
+    setTimeout(() => {
+      this.isWaitingForLoading = false
+    }, 3900)
   }
 
   build() {
     Column() {
       TopSearch()
       if (!this.videoMap.totalCount()) {
-        Column() {
-          OfflinePage({ isShow: this.isShow })
+        if (this.isWaitingForLoading) {
+          LoadingProgress()
+            .color(0xf04142)
+            .width(70)
+            .height(70)
+            .margin({top: 180})
+        } else {
+          Column() {
+            OfflinePage({ isShow: this.isShow })
+          }
+          .margin({ top: 50 })
         }
-        .margin({ top: 50 })
       } else {
         List({ scroller: this.scroller, space: 15 }) {
           LazyForEach(this.videoMap, (t: NewsItem, i: number) => {
@@ -55,14 +68,11 @@ export struct VideoPage {
         .height('90%')
         .padding({ top: 15 })
 
-        .onScrollIndex((first: number, last: number) => {
+        .onScrollIndex(async (first: number, last: number) => {
           let total: number = this.videoMap.totalCount() - 2
           if (last > total) {
-            homePageRequest('video').then(res => {
-              this.videoMap.addBatchData(res)
-            }).catch(() => {
-              promptAction.showToast({ message: '请确保网络已连接' });
-            });
+            let item: NewsItem[] = await homePageRequest('video')
+            this.videoMap.addBatchData(item)
           }
         })
       }
