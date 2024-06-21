@@ -1,0 +1,26 @@
+{
+  "module": {
+    "name": "application",
+    "type": "feature",
+    "description": "$string:module_desc",
+    "mainElement": "ApplicationAbility",
+    "deviceTypes": [
+      "default"
+    ],
+    "deliveryWithInstall": true,
+    "installationFree": false,
+    "pages": "$profile:main_pages",
+    "abilities": [
+      {
+        "name": "ApplicationAbility",
+        "srcEntry": "./ets/applicationability/ApplicationAbility.ets",
+        "description": "$string:ApplicationAbility_desc",
+        "icon": "$media:layered_image",
+        "label": "$string:ApplicationAbility_label",
+        "startWindowIcon": "$media:startIcon",
+        "startWindowBackground": "$color:start_window_background",
+        "exported": true
+      }
+    ]
+  }
+}

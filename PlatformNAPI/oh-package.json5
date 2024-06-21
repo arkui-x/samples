@@ -13,7 +13,7 @@
  * limitations under the License.
  */
 {
-  "license": "",
+  "modelVersion": "5.0.0",
   "devDependencies": {
     "@ohos/hypium": "1.0.6"
   },

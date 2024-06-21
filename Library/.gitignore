@@ -1,6 +1,6 @@
 /node_modules
 /oh_modules
-/local.properties
+local.properties
 /.idea
 **/build
 /.hvigor
@@ -9,4 +9,7 @@
 /.clang-format
 /.clang-tidy
 **/.test
-/oh-package-lock.json
+/oh-package-lock.json5
+.gradle
+/.arkui-x/android/library/libs
+/.arkui-x/ios/frameworks

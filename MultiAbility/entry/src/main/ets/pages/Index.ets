@@ -14,11 +14,13 @@
  */
 import Want from '@ohos.app.ability.Want';
 import common from '@ohos.app.ability.common';
+import { AsyncCallback } from '@kit.BasicServicesKit';
 
 @Entry
 @Component
 struct Index {
   @State message: string = 'Page firstAbility'
+  @State message2: string = 'First Module Ability'
 
   build() {
     Row() {
@@ -34,11 +36,21 @@ struct Index {
             };
 
             let context = getContext(this) as common.UIAbilityContext;
-            context.startAbility(wantInfo).then(() =>{
-              console.info('start success');
-            }).catch((err:Error)=>{
-              console.info('error code'+ JSON.stringify(err));
-            })
+            context.startAbility(wantInfo, null);
+          })
+
+        Text(this.message2)
+          .fontSize(50)
+          .fontWeight(FontWeight.Bold)
+          .onClick(() => {
+            let wantInfo:Want = {
+              bundleName: "com.example.multiability",
+              moduleName: "application",
+              abilityName: "ApplicationAbility",
+            };
+
+            let context = getContext(this) as common.UIAbilityContext;
+            context.startAbility(wantInfo, null);
           })
       }
       .width('100%')
