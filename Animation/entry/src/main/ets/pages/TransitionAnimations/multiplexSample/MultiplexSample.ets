@@ -12,8 +12,8 @@ struct MultiplexSample {
   private scroller: Scroller = new Scroller();
   private currentX: number = 0; // 当前X轴位置
   private startScroll: boolean = false; // 开始滑动
-  @StorageProp('windowWidth') windowWidth: number = 480;
-  @StorageProp('windowHeight') windowHeight: number = 720;
+  @StorageProp('windowWidth') windowWidth: number = 390;
+  @StorageProp('windowHeight') windowHeight: number = 600;
   @State resources: Array<MultiplexModel> = new Array<MultiplexModel>();
   @State currentModel: MultiplexModel = new MultiplexModel('1', $r('app.media.img_test_1')); // 当前item
   @State onceXOffset: number = 0; // 本次滑动X轴距离
@@ -133,7 +133,7 @@ struct MultiplexSample {
       }
     }
     this.scroller.scrollTo({
-      xOffset: (this.windowWidth / 2 - MARGIN_BETWEEN) * index,
+      xOffset: (this.windowWidth / 2) * index,
       yOffset: 0,
       animation: { duration: 100, curve: Curve.LinearOutSlowIn }
     })

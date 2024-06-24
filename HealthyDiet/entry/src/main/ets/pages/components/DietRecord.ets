@@ -244,7 +244,7 @@ struct MealFoodDetail {
             .onClick(() => {
               animateTo({ duration: 400 }, () => {
                 this.shown = false
-                let dietRecords = AppStorage.Get<Array<DietRecord>>('dietRecords') as DietRecord[];
+                let dietRecords = AppStorage.get<Array<DietRecord>>('dietRecords') as DietRecord[];
                 dietRecords.forEach((item) => {
                   if (this.mealFoodInfo != null && item.key === this.mealFoodInfo.key) {
                     item.weight = 0;

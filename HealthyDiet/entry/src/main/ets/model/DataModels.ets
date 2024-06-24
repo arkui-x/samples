@@ -22,8 +22,8 @@ export enum CategoryId {
 }
 
 export class Category {
-  name: Resource | null = null;
-  id: CategoryId | null = null;
+  name: string | Resource = '';
+  id: CategoryId = 0;
 }
 
 export class FoodInfo {

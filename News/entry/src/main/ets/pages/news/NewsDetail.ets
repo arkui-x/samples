@@ -212,7 +212,7 @@ struct NewDetails {
           ListItem() {
             Column() {
               Column() {
-                Image($r('app.media.toutiao'))
+                Image($r('app.media.ic_public_contacts_click'))
                   .width(30)
                   .height(30)
                   .objectFit(ImageFit.Contain)
@@ -221,7 +221,7 @@ struct NewDetails {
               .borderRadius(23)
               .backgroundColor(Color.White)
 
-              Text('转发到头条')
+              Text('转发到新闻')
                 .fontSize(10)
                 .margin({ top: 10 })
                 .fontColor(Color.Black)
@@ -549,7 +549,7 @@ struct NewDetails {
           Column() {
             Flex({ justifyContent: FlexAlign.SpaceBetween, alignItems: ItemAlign.Center }) {
               Column() {
-                ImageSpan($r('app.media.ic_public_arrow_left'))
+                Image($r('app.media.ic_public_arrow_left'))
                   .width(18)
                   .height(18)
                   .objectFit(ImageFit.Contain)
@@ -565,15 +565,15 @@ struct NewDetails {
                 .placeholderColor(Color.Grey)
                 .placeholderFont({ size: 12 })
               Column() {
-                ImageSpan($r('app.media.ic_device_earphone_filled'))
-                  .width(18)
+                Image($r('app.media.ic_device_earphone_filled'))
+                  .width(21)
                   .height(18)
                   .objectFit(ImageFit.Contain)
               }
               .margin({ left: 12, right: 15 })
 
               Column() {
-                ImageSpan($r('app.media.ic_more'))
+                Image($r('app.media.ic_more'))
                   .width(20)
                   .height(20)
                   .objectFit(ImageFit.Contain)
@@ -696,7 +696,7 @@ struct NewDetails {
               .padding(10)
             }
             .scrollBarWidth(3)
-            .onWillScroll(() => {
+            .onScroll(() => {
               if (this.scroller.isAtEnd()) {
                 let remainder = this.commentCount % 10
                 if (remainder) {

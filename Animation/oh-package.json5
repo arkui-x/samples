@@ -1,5 +1,6 @@
 {
-  "name": "animation",
+  "modelVersion": "5.0.0",
+  "name": "Animation",
   "version": "1.0.0",
   "description": "Please describe the basic information.",
   "main": "",

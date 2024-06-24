@@ -1,13 +1,13 @@
 @Entry
 @Component
 struct IndexNext {
-  @State message: string = 'Next Ability'
+  @State message: string = 'First module\nAbility B Page B'
 
   build() {
     Row() {
       Column() {
         Text(this.message)
-          .fontSize(50)
+          .fontSize(40)
           .fontWeight(FontWeight.Bold)
       }
       .width('100%')

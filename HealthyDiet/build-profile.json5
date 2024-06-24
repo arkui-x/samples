@@ -20,9 +20,8 @@
       {
         "name": "default",
         "signingConfig": "default",
-        "compileSdkVersion": 10,
-        "compatibleSdkVersion": 10,
-        "runtimeOS": "OpenHarmony",
+        "compatibleSdkVersion": "5.0.0(12)",
+        "runtimeOS": "HarmonyOS"
       }
     ],
     "buildModeSet": [
@@ -47,6 +46,5 @@
         }
       ]
     }
-  ],
-  "crossplatform": true
+  ]
 }

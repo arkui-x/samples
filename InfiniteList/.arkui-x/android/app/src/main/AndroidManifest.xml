@@ -12,6 +12,7 @@
         android:theme="@android:style/Theme.Light.NoTitleBar">
 	<activity android:exported="true" android:name=".EntryEntryAbilityActivity"
 		android:windowSoftInputMode="adjustNothing |stateHidden"
+		android:screenOrientation="portrait"
 		android:configChanges="orientation|keyboard|layoutDirection|screenSize|screenLayout|uiMode|smallestScreenSize|density"
 		>
             <intent-filter>

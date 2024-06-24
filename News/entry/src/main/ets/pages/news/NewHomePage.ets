@@ -11,6 +11,7 @@ export struct NewHomePage {
   @State @Watch('getNews') isShow: boolean = false
   @State isLoading: boolean = false
   @State touchOld: number = 0
+  @State isWaitingForLoading: boolean = true
 
   aboutToAppear() {
     homePageRequest().then(res => {
@@ -19,6 +20,10 @@ export struct NewHomePage {
       promptAction.showToast({ message: '请确保网络已连接' });
       this.isShow = false
     });
+
+    setTimeout(() => {
+      this.isWaitingForLoading = false
+    }, 30000)
   }
 
   getNews() {
@@ -36,7 +41,15 @@ export struct NewHomePage {
   build() {
     Column() {
       if (this.news.totalCount() == 0) {
-        OfflinePage({ isShow: this.isShow })
+        if (this.isWaitingForLoading) {
+          LoadingProgress()
+            .color(0xf04142)
+            .width(70)
+            .height(70)
+            .margin({top: 180})
+        } else {
+          OfflinePage({ isShow: this.isShow })
+        }
       } else {
         List({ scroller: this.scroller }) {
           LazyForEach(this.news, (t: NewsItem, i: number) => {
@@ -44,7 +57,7 @@ export struct NewHomePage {
               NewHomeItem({ t: t, i: i })
             }
             .padding({ left: 15, right: 15 })
-          })
+          }, (item: string) => item)
         }
         .edgeEffect(EdgeEffect.None)
         .onScrollIndex((first: number, last: number) => {
@@ -59,8 +72,8 @@ export struct NewHomePage {
         })
       }
     }
-    .height('88%')
-    .margin({ bottom: 70 })
+    .height('100%')
+    .padding({bottom: 60})
 
   }
 }

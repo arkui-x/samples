@@ -144,14 +144,14 @@ export default struct MyTabs {
                       JSONParseContent({ innerContent: this.formatContent })
                     }
                       .height('65%')
-                      .edgeEffect(EdgeEffect.Fade)
+                      .edgeEffect(EdgeEffect.Spring)
                   }
                   if (this.showStr) {
                     Scroll(this.scroller) {
                       JSONStrContent({ innerContent: this.strContent })
                     }
                       .height('65%')
-                      .edgeEffect(EdgeEffect.Fade)
+                      .edgeEffect(EdgeEffect.Spring)
                   }
                 }
               } else {
@@ -160,14 +160,14 @@ export default struct MyTabs {
                     JSONParseContent({ innerContent: this.tabs[index].getTabContent() })
                   }
                     .height('65%')
-                    .edgeEffect(EdgeEffect.Fade)
+                    .edgeEffect(EdgeEffect.Spring)
                 }
                 if (this.showStr) {
                   Scroll(this.scroller) {
                     JSONStrContent({ innerContent: this.tabs[index].getTabContent() })
                   }
                     .height('65%')
-                    .edgeEffect(EdgeEffect.Fade)
+                    .edgeEffect(EdgeEffect.Spring)
                 }
               }
             }

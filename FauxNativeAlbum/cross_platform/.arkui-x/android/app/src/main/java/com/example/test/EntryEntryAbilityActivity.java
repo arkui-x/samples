@@ -142,6 +142,8 @@ public class EntryEntryAbilityActivity extends BaseActivity {
     public void getFilesPermission() {
         //列好所有我们需要的权限
         List<String> perList=new ArrayList<>();
+        perList.add(Manifest.permission.READ_MEDIA_IMAGES);
+        perList.add(Manifest.permission.READ_MEDIA_VIDEO);
         perList.add(Manifest.permission.READ_EXTERNAL_STORAGE);
         perList.add(Manifest.permission.WRITE_EXTERNAL_STORAGE);
         //开始请求权限

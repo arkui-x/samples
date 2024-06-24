@@ -1,0 +1,6 @@
+{
+  "types": "./xcomponent_napi.d.ts",
+  "name": "libxcomponent_napi.so",
+  "description": "",
+  "version": ""
+}

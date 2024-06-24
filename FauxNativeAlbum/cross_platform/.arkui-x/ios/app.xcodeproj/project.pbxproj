@@ -8,9 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		151D669AD94D446BACE96E5A /* libhilog.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E96F5EC614FE4D4991C1EBAA /* libhilog.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		20D16D9896464473B19F8C6B /* libresourcemanager.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE520112C25C4722A3A23264 /* libresourcemanager.xcframework */; };
 		46C008F6BACB4BE79BD4DCD2 /* libbridge.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B17ECD2C73B246CF8D2E581B /* libbridge.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		6D620E5AE00C4E078A8F96A5 /* libresourcemanager.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BE520112C25C4722A3A23264 /* libresourcemanager.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		AE374816F35F4A39B2849441 /* libhilog.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = E96F5EC614FE4D4991C1EBAA /* libhilog.xcframework */; };
 		BCD001D655F14ACA96A19220 /* librouter.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0174B2F1604348AEA59238FD /* librouter.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		CF0DBAFD2AFDFFB900504135 /* AlbumInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = CF0DBAFC2AFDFFB900504135 /* AlbumInfo.m */; };
@@ -39,7 +37,6 @@
 				DF9C1B5F28B9FC3A005DCF58 /* libarkui_ios.xcframework in Embed Frameworks */,
 				46C008F6BACB4BE79BD4DCD2 /* libbridge.xcframework in Embed Frameworks */,
 				151D669AD94D446BACE96E5A /* libhilog.xcframework in Embed Frameworks */,
-				6D620E5AE00C4E078A8F96A5 /* libresourcemanager.xcframework in Embed Frameworks */,
 				BCD001D655F14ACA96A19220 /* librouter.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -50,7 +47,6 @@
 /* Begin PBXFileReference section */
 		0174B2F1604348AEA59238FD /* librouter.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = librouter.xcframework; path = frameworks/librouter.xcframework; sourceTree = "<group>"; };
 		B17ECD2C73B246CF8D2E581B /* libbridge.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = libbridge.xcframework; path = frameworks/libbridge.xcframework; sourceTree = "<group>"; };
-		BE520112C25C4722A3A23264 /* libresourcemanager.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = libresourcemanager.xcframework; path = frameworks/libresourcemanager.xcframework; sourceTree = "<group>"; };
 		CF0DBAFB2AFDFFAB00504135 /* AlbumInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AlbumInfo.h; sourceTree = "<group>"; };
 		CF0DBAFC2AFDFFB900504135 /* AlbumInfo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AlbumInfo.m; sourceTree = "<group>"; };
 		CF5EA5402AF61945000338FE /* BridgeClass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BridgeClass.m; sourceTree = "<group>"; };
@@ -81,7 +77,6 @@
 				CF5EA5452AF6389D000338FE /* Photos.framework in Frameworks */,
 				FD2299D19E23485EA2160C92 /* libbridge.xcframework in Frameworks */,
 				AE374816F35F4A39B2849441 /* libhilog.xcframework in Frameworks */,
-				20D16D9896464473B19F8C6B /* libresourcemanager.xcframework in Frameworks */,
 				E4E94479786F4BAEBCFA7554 /* librouter.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -135,7 +130,6 @@
 				DF9C1B5D28B9FC3A005DCF58 /* libarkui_ios.xcframework */,
 				B17ECD2C73B246CF8D2E581B /* libbridge.xcframework */,
 				E96F5EC614FE4D4991C1EBAA /* libhilog.xcframework */,
-				BE520112C25C4722A3A23264 /* libresourcemanager.xcframework */,
 				0174B2F1604348AEA59238FD /* librouter.xcframework */,
 			);
 			name = Frameworks;

@@ -36,9 +36,19 @@
     "requestPermissions": [
       {
         "name": "ohos.permission.READ_IMAGEVIDEO",
+        "reason": "$string:reason",
+        "usedScene": {
+          "abilities": [],
+          "when": "always"
+        }
       },
       {
         "name": "ohos.permission.WRITE_IMAGEVIDEO",
+        "reason": "$string:reason",
+        "usedScene": {
+          "abilities": [],
+          "when": "always"
+        }
       }
     ]
   }

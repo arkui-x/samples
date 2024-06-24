@@ -119,7 +119,7 @@ struct Index {
   }
 
   // Get all the pictures and videos, sorted but not paginated
-  getImagesAndVideos(parameters: Record<string, bridge.Parameter> | undefined) {
+  getImagesAndVideos(...parameters: bridge.Parameter[]) {
     try {
       let _this: thisFace = AppStorage.get('_this') as thisFace;
       console.log('getImagesAndVideos params:' + parameters);
@@ -131,7 +131,7 @@ struct Index {
     return 'call js getImagesAndVideos success';
   }
 
-  getScreenInfo(parameters: Record<string, bridge.Parameter> | undefined) {
+  getScreenInfo(...parameters: bridge.Parameter[]) {
     console.log('getScreenInfo params:' + parameters);
     AppStorage.setOrCreate('density', Number(parameters));
     return 'call js getScreenInfo success';
@@ -271,7 +271,7 @@ struct Index {
   }
 
   //Get ios screenshot photo
-  getIOSScreenshot(parameters: Record<string, bridge.Parameter> | undefined) {
+  getIOSScreenshot(...parameters: bridge.Parameter[]) {
     let _this: thisFace = AppStorage.get('_this') as thisFace;
     _this.isIOS = true;
     let screenshotRes: Array<albumResFace> = JSON.parse(String(parameters));

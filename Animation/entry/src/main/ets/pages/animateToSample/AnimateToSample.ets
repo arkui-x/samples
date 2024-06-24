@@ -159,7 +159,6 @@ struct AnimationToSample {
             .rotate({ angle: this.rotateAnglePlayback })
             .margin(35)
         }
-        .constraintSize({ minHeight: '100%' })
       }
       .borderRadius(24)
       .backgroundColor(Color.White)

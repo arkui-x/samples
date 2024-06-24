@@ -176,7 +176,6 @@ struct LayoutAnimationSample {
           .margin({ bottom: 80 })
         }
         .padding({ left: 12, right: 12 })
-        .constraintSize({ minHeight: '100%' })
 
       }
     }

@@ -15,7 +15,9 @@
 
 #import "AppDelegate.h"
 #import "EntryEntryAbilityViewController.h"
+#import "EntryEntryAbilityViewController.h"
 #import "EntryNextAbilityViewController.h"
+#import "SecondmoduleSecondmoduleAbilityViewController.h"
 #import <libarkui_ios/StageApplication.h>
 
 #define BUNDLE_DIRECTORY @"arkui-x"
@@ -39,28 +41,28 @@
 
 - (BOOL)application:(UIApplication *)app openURL:(NSURL *)url options:(NSDictionary<NSString *,id> *)options {
     NSLog(@"appdelegate openUrl callback, url : %@", url.absoluteString); // eg: (com.entry.arkui://entry?OtherAbility)
-    
+
     NSString *bundleName = url.scheme;
     NSString *moduleName = url.host;
     NSString *abilityName, *params;
 
     NSURLComponents * urlComponents = [NSURLComponents componentsWithString:url.absoluteString];
     NSArray <NSURLQueryItem *> *array = urlComponents.queryItems;
-    for (NSURLQueryItem * item in array) {
+        for (NSURLQueryItem * item in array) {
         if ([item.name isEqualToString:@"abilityName"]) {
-            abilityName = item.value;
+        abilityName = item.value;
         } else if ([item.name isEqualToString:@"params"]) {
-            params = item.value;
+        params = item.value;
         }
-    }
+        }
 
-    [self handleOpenUrlWithBundleName:bundleName
-                           moduleName:moduleName
-                          abilityName:abilityName
-                               params:params, nil];
-    
-    return YES;
-}
+        [self handleOpenUrlWithBundleName:bundleName
+        moduleName:moduleName
+        abilityName:abilityName
+        params:params, nil];
+
+        return YES;
+        }
 
 - (BOOL)handleOpenUrlWithBundleName:(NSString *)bundleName
                          moduleName:(NSString *)moduleName
@@ -77,13 +79,20 @@
     
     if ([moduleName isEqualToString:@"entry"] && [abilityName isEqualToString:@"EntryAbility"]) {
         NSString *instanceName = [NSString stringWithFormat:@"%@:%@:%@",bundleName, moduleName, abilityName];
-        EntryEntryAbilityViewController *entryOtherVC = [[EntryEntryAbilityViewController alloc] initWithInstanceName:instanceName];
-        entryOtherVC.params = params;
-        subStageVC = (EntryEntryAbilityViewController *)entryOtherVC;
+        EntryEntryAbilityViewController *otherVC = [[EntryEntryAbilityViewController alloc] initWithInstanceName:instanceName];
+        subStageVC = (EntryEntryAbilityViewController *)otherVC;
+    } else if ([moduleName isEqualToString:@"entry"] && [abilityName isEqualToString:@"EntryAbility"]) {
+        NSString *instanceName = [NSString stringWithFormat:@"%@:%@:%@",bundleName, moduleName, abilityName];
+        EntryEntryAbilityViewController *otherVC = [[EntryEntryAbilityViewController alloc] initWithInstanceName:instanceName];
+        subStageVC = (EntryEntryAbilityViewController *)otherVC;
     } else if ([moduleName isEqualToString:@"entry"] && [abilityName isEqualToString:@"NextAbility"]) {
         NSString *instanceName = [NSString stringWithFormat:@"%@:%@:%@",bundleName, moduleName, abilityName];
         EntryNextAbilityViewController *otherVC = [[EntryNextAbilityViewController alloc] initWithInstanceName:instanceName];
         subStageVC = (EntryNextAbilityViewController *)otherVC;
+    } else if ([moduleName isEqualToString:@"secondmodule"] && [abilityName isEqualToString:@"SecondmoduleAbility"]) {
+        NSString *instanceName = [NSString stringWithFormat:@"%@:%@:%@",bundleName, moduleName, abilityName];
+        SecondmoduleSecondmoduleAbilityViewController *otherVC = [[SecondmoduleSecondmoduleAbilityViewController alloc] initWithInstanceName:instanceName];
+        subStageVC = (SecondmoduleSecondmoduleAbilityViewController *)otherVC;
     } // other ViewController
     
     if (!subStageVC) {

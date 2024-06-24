@@ -47,7 +47,7 @@ export let initDietRecords: Array<DietRecord> = [
 
 export function getDietRecords(): Array<DietRecord> {
   return DEBUG_PREVIEW ? initDietRecords.concat(mockDietRecords) :
-  AppStorage.Get<Array<DietRecord>>('dietRecords') as Array<DietRecord>
+  AppStorage.get<Array<DietRecord>>('dietRecords') as Array<DietRecord>
 }
 
 export function getFoodCategories(): Category[] {
@@ -155,5 +155,5 @@ export function updateDietWeight(recordId: number, weight: number) {
     return record.id === recordId
   })
   dietRecords[index].weight = weight
-  AppStorage.SetOrCreate<Array<DietRecord>>('dietRecords', dietRecords)
+  AppStorage.setOrCreate<Array<DietRecord>>('dietRecords', dietRecords)
 }

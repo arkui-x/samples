@@ -14,34 +14,55 @@
  */
 import Want from '@ohos.app.ability.Want';
 import common from '@ohos.app.ability.common';
+import { AsyncCallback } from '@kit.BasicServicesKit';
 
 @Entry
 @Component
 struct Index {
-  @State message: string = 'Page firstAbility'
+  @State title: string = 'First module\nAbility A Page A'
+  @State message: string = 'Go To Page B'
+  @State message2: string = 'Go To Second Module'
 
   build() {
     Row() {
       Column() {
+        Text(this.title)
+          .fontSize(40)
+          .fontWeight(FontWeight.Bold)
         Text(this.message)
-          .fontSize(50)
+          .fontSize(30)
+          .fontColor(Color.Blue)
           .fontWeight(FontWeight.Bold)
           .onClick(() => {
-            let wantInfo:Want = {
+            let wantInfo: Want = {
               bundleName: "com.example.multiability",
               moduleName: "entry",
               abilityName: "NextAbility",
             };
 
             let context = getContext(this) as common.UIAbilityContext;
-            context.startAbility(wantInfo).then(() =>{
-              console.info('start success');
-            }).catch((err:Error)=>{
-              console.info('error code'+ JSON.stringify(err));
-            })
+            context.startAbility(wantInfo, null);
           })
+          .position({ x: '80vp', y: '250.00vp' })
+
+        Text(this.message2)
+          .fontSize(30)
+          .fontColor(Color.Blue)
+          .fontWeight(FontWeight.Bold)
+          .onClick(() => {
+            let wantInfo: Want = {
+              bundleName: "com.example.multiability",
+              moduleName: "secondmodule",
+              abilityName: "SecondmoduleAbility",
+            };
+
+            let context = getContext(this) as common.UIAbilityContext;
+            context.startAbility(wantInfo, null);
+          })
+          .position({ x: '30vp', y: '350.00vp' })
       }
       .width('100%')
+      .height('700vp')
     }
     .height('100%')
   }

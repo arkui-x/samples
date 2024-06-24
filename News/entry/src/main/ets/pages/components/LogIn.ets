@@ -46,7 +46,7 @@ export struct LogIn {
         }
 
         Column() {
-          Image($r('app.media.toutiao'))
+          Image($r('app.media.ic_public_contacts_click'))
             .width(50)
             .height(50)
             .objectFit(ImageFit.Contain)

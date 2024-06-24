@@ -28,9 +28,9 @@ struct MotionPathSample {
         .justifyContent(FlexAlign.Center)
         .borderRadius(24)
         .backgroundColor(Color.White)
-        .height(400)
-        .width('100%')
-        .margin({ left: 12, right: 12 })
+        .height('100%')
+        .width('94%')
+        .margin({ left: '3%', right: '3%' })
         .alignItems(this.toggle ? HorizontalAlign.Start : HorizontalAlign.Center)
       }
     }
