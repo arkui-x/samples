@@ -5,9 +5,9 @@
       {
         "name": "default",
         "signingConfig": "default",
-        "compileSdkVersion": 10,
-        "compatibleSdkVersion": 10,
-        "runtimeOS": "OpenHarmony",
+        "compileSdkVersion": 11,
+        "compatibleSdkVersion": 11,
+        "runtimeOS": "OpenHarmony"
       }
     ],
     "buildModeSet": [
@@ -31,7 +31,18 @@
           ]
         }
       ]
+    },
+    {
+      "name": "application",
+      "srcPath": "./application",
+      "targets": [
+        {
+          "name": "default",
+          "applyToProducts": [
+            "default"
+          ]
+        }
+      ]
     }
-  ],
-  "crossplatform": true
+  ]
 }

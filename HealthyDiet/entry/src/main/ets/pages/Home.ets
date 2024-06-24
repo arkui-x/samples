@@ -154,7 +154,7 @@ struct CategoryModeFoods {
   private foodCategories: Category[] = getFoodCategories()
 
   @Builder
-  tabBarItemBuilder(value: Resource, index: number) {
+  tabBarItemBuilder(value: Resource | string, index: number) : CustomBuilder {
     Text(value)
       .width(58)
       .fontColor(this.currentTabIndex === index ? 'rgba(0,0,0,0.9)' : 'rgba(0,0,0,0.6)')
@@ -213,7 +213,7 @@ struct FoodsDisplay {
 @Component
 struct Home {
   @State currentTabIndex: number = 0
-  @StorageProp('currentBreakpoint') currentBreakpoint: string = 'md'
+  @StorageProp('currentBreakpoint') currentBreakpoint: string = 'sm'
   private breakpointSystem: BreakpointSystem = new BreakpointSystem()
 
   @Builder

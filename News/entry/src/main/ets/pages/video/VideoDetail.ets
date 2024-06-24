@@ -55,7 +55,7 @@ struct VideoDetail {
     Column() {
       Flex({ justifyContent: FlexAlign.SpaceBetween, alignItems: ItemAlign.Center }) {
         Column() {
-          ImageSpan($r('app.media.ic_public_arrow_left'))
+          Image($r('app.media.ic_public_arrow_left'))
             .width(18)
             .height(18)
             .objectFit(ImageFit.Contain)
@@ -72,15 +72,15 @@ struct VideoDetail {
           .placeholderColor(Color.Grey)
           .placeholderFont({ size: 12 })
         Column() {
-          ImageSpan($r('app.media.ic_device_earphone_filled'))
-            .width(18)
+          Image($r('app.media.ic_device_earphone_filled'))
+            .width(21)
             .height(18)
             .objectFit(ImageFit.Contain)
         }
         .margin({ left: 12, right: 15 })
 
         Column() {
-          ImageSpan($r('app.media.ic_more'))
+          Image($r('app.media.ic_more'))
             .width(20)
             .height(20)
             .objectFit(ImageFit.Contain)

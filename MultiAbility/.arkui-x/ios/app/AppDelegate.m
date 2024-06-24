@@ -16,6 +16,7 @@
 #import "AppDelegate.h"
 #import "EntryEntryAbilityViewController.h"
 #import "EntryNextAbilityViewController.h"
+#import "ApplicationApplicationAbilityViewController.h"
 #import <libarkui_ios/StageApplication.h>
 
 #define BUNDLE_DIRECTORY @"arkui-x"
@@ -84,6 +85,10 @@
         NSString *instanceName = [NSString stringWithFormat:@"%@:%@:%@",bundleName, moduleName, abilityName];
         EntryNextAbilityViewController *otherVC = [[EntryNextAbilityViewController alloc] initWithInstanceName:instanceName];
         subStageVC = (EntryNextAbilityViewController *)otherVC;
+    } else if ([moduleName isEqualToString:@"application"] && [abilityName isEqualToString:@"ApplicationAbility"]) {
+        NSString *instanceName = [NSString stringWithFormat:@"%@:%@:%@",bundleName, moduleName, abilityName];
+        ApplicationApplicationAbilityViewController *otherVC = [[ApplicationApplicationAbilityViewController alloc] initWithInstanceName:instanceName];
+        subStageVC = (ApplicationApplicationAbilityViewController *)otherVC;
     } // other ViewController
     
     if (!subStageVC) {

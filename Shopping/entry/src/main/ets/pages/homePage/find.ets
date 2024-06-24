@@ -82,9 +82,6 @@ export struct FindPage {
           }
           .padding({ left: 15, right: 15 })
         }
-        // @ts-ignore
-        // @ts-ignore
-        .sticky(Sticky.Normal)
         .backgroundColor(Color.White)
         .padding({ top: 10, bottom: 10 })
         .border({ radius: 10 * this.ratio })

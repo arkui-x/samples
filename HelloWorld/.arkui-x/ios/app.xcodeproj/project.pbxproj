@@ -17,8 +17,6 @@
 		F0AF1ADD27D36856008C55DD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F0AF1ADC27D36856008C55DD /* Assets.xcassets */; };
 		F0AF1AE027D36856008C55DD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0AF1ADE27D36856008C55DD /* LaunchScreen.storyboard */; };
 		F0AF1AE327D36856008C55DD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F0AF1AE227D36856008C55DD /* main.m */; };
-		DDCDB1DD9D8A48B6B9C61BCA /* libresourcemanager.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6EE97B6CEEE4D788CFF060D /* libresourcemanager.xcframework */; };
-		D6E6387CFC5B4209AFCF8AC3 /* libresourcemanager.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C6EE97B6CEEE4D788CFF060D /* libresourcemanager.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -30,7 +28,6 @@
 			files = (
 				E9BAC96539549EE82BE85FE4 /* libhilog.xcframework in Embed Frameworks */,
 				89E41E4729F505CD0004F33E /* libarkui_ios.xcframework in Embed Frameworks */,
-					D6E6387CFC5B4209AFCF8AC3 /* libresourcemanager.xcframework in Embed Frameworks */,
 );
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -50,7 +47,6 @@
 		F0AF1ADF27D36856008C55DD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F0AF1AE127D36856008C55DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F0AF1AE227D36856008C55DD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		C6EE97B6CEEE4D788CFF060D /* libresourcemanager.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = libresourcemanager.xcframework; path = frameworks/libresourcemanager.xcframework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,7 +56,6 @@
 			files = (
 				3E3DD5E422D1B35ADC8B711A /* libhilog.xcframework in Frameworks */,
 				89E41E4629F505CD0004F33E /* libarkui_ios.xcframework in Frameworks */,
-					DDCDB1DD9D8A48B6B9C61BCA /* libresourcemanager.xcframework in Frameworks */,
 );
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -105,7 +100,6 @@
 			children = (
 				DF9C1B5D28B9FC3A005DCF58 /* libarkui_ios.xcframework */,
 				2FC42CD91E38DA552082BA83 /* libhilog.xcframework */,
-					C6EE97B6CEEE4D788CFF060D /* libresourcemanager.xcframework */,
 );
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -337,7 +331,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.assemblyTestDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PROVISIONING_PROFILE_SPECIFIER = "no sign";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/frameworks/libarkui_ios.xcframework/ios-arm64/libarkui_ios.framework/Headers/include";
@@ -369,7 +363,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.assemblyTestDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PROVISIONING_PROFILE_SPECIFIER = "no sign";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/frameworks/libarkui_ios.xcframework/ios-arm64/libarkui_ios.framework/Headers/include";
