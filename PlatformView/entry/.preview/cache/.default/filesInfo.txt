@@ -1,2 +1,0 @@
-E:/demo/newmapApp/PlatformView/entry/.preview/cache/.default/entry/src/main/ets/entryability/EntryAbility.ts;com.example.platformView/entry/ets/entryability/EntryAbility;esm;entry/.preview/cache/.default/entry/src/main/ets/entryability/EntryAbility.ts;entry;false
-E:/demo/newmapApp/PlatformView/entry/.preview/cache/.default/entry/src/main/ets/pages/Index.ts;com.example.platformView/entry/ets/pages/Index;esm;entry/.preview/cache/.default/entry/src/main/ets/pages/Index.ts;entry;false

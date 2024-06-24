@@ -1,0 +1,7 @@
+{
+  crossplatform: true,
+  modules: [
+    'entry',
+    "application"
+  ],
+}

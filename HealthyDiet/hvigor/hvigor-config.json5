@@ -1,8 +1,7 @@
 {
-  "hvigorVersion": "4.1.2",
+  "modelVersion": "5.0.0",
   "dependencies": {
-    "@ohos/hvigor-ohos-plugin": "4.1.2",
-    "@ohos/hvigor-ohos-arkui-x-plugin": "3.1.1"
+    "@ohos/hvigor-ohos-arkui-x-plugin": "4.2.1"
   },
   "execution": {
     // "daemon": true,                          /* Enable daemon compilation. Default: true */
