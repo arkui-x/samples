@@ -1,0 +1,24 @@
+{
+  "float": [
+    {
+      "name": "marginData",
+      "value": "25vp"
+    },
+    {
+      "name": "buttonHeightData",
+      "value": "50vp"
+    },
+    {
+      "name": "textFont",
+      "value": "20vp"
+    },
+    {
+      "name": "xComponentWidth",
+      "value": "260vp"
+    },
+    {
+      "name": "xComponentHeight",
+      "value": "260vp"
+    }
+  ]
+}

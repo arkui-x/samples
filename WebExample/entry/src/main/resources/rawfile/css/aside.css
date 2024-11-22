@@ -1,0 +1,86 @@
+section.contents aside {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	order: -1;
+	padding-top: 45px;
+}
+@media screen and (max-width: 63rem) {
+	section.contents aside.aside-show {
+		width: 30%;
+		max-width: 30%;
+	}
+}
+
+@media screen and (min-width: 64rem) {
+	section.contents aside.aside-show {
+		width: 10%;
+		max-width: 10%;
+	}
+}
+section.contents aside menu {
+	height: 100%;
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	justify-content: start;
+	border-right: 1px solid #999999;
+}
+section.contents aside menu menuitem {
+	background-color: #99999910;
+	height: 56px;
+	line-height: 56px;
+	width: 100%;
+	padding: 0 1rem;
+	display: flex;
+	text-align: start;
+	align-items: center;
+	cursor: pointer;
+}
+section.contents aside menu menuitem img {
+	width: 24px;
+	height: 18px;
+	margin-right: 5px;
+}
+section.contents aside menu menuitem:hover {
+	background-color: #ecf5ff;
+}
+section.contents aside menu menuitem.actived {
+	color: #409eff;
+}
+section.contents aside > .toolbar {
+	position: absolute;
+	width: 12px;
+	height: 56px;
+	line-height: 56px;
+	top: 50%;
+	left: 100%;
+	background: url(../assets/holder.svg);
+	transform: translate(0, -50%);
+	cursor: pointer;
+}
+section.contents aside i.icon {
+	color: #b7bdc8;
+}
+section.contents aside i.hidden {
+	display: none;
+}
+section.contents aside i.right::before {
+	content: '>';
+}
+section.contents aside i.left::before {
+	content: '<';
+}
+section.contents aside fieldset {
+	display: flex;
+	flex-flow: wrap;
+	justify-content: space-between;
+	align-items: flex-end;
+}
+section.contents aside .align-top {
+	align-self: flex-start;
+}
