@@ -9,28 +9,12 @@
 ### 示例列表
 
 - 基础示例
-  - ['HelloWorld'：HelloWorld（API12）](HelloWorld)
-  - ['Library'：Library（API12）](Library)
-  - ['Native'：Native（API12）](Native)
-  - ['MultiAbility'：MultiAbility（API12）](MultiAbility)
-  
-- 功能演示
-  - ['Animation'：Animation（API12）](Animation)
-  - ['Files'：Files（API12）](Files)
-  - ['FauxNativeAlbum'：FauxNativeAlbum（API12）](FauxNativeAlbum)
-  - ['InfiniteList'：InfiniteList（API12）](InfiniteList)
-  - ['JsonExample'：JsonExample（API12）](JsonExample)
-  - ['PlatformBridge'：PlatformBridge（API12）](PlatformBridge)
-  - ['Router'：Router（API12）](Router)
-  - ['WebExample'：WebExample（API12）](WebExample)
-  - ['MediaVideo'：MediaVideo（API12）](MediaVideo)
-  - ['PlatformNAPI'：PlatformNAPI（API12）](PlatformNAPI)
-  - ['XcomponentNative'：XcomponentNative（API12）](XcomponentNative)
-  
+  - ['HelloWorld'：HelloWorld（API10）](HelloWorld)
+  - ['Library'：Library（API10）](Library)
+  - ['Native'：Native（API10）](Native)
 - 精品应用
-  - ['Shopping'：购物示例应用（API12）](Shopping)
-  - ['HealthyDiet'：健康饮食示例应用（API12）](HealthyDiet)
-  - ['News'：新闻示例应用（API12）](News)
+  - ['Shopping'：购物示例应用（API10）](Shopping)
+  - ['HealthyDiet'：健康饮食示例应用（API10）](HealthyDiet)
 
 ## 目录
 
@@ -38,24 +22,11 @@ Samples仓下所展示的组件能力
 
 ```
 samples
-|---HelloWorld          # 基础应用：HelloWorld
-|---Library             # 基础应用：Library
-|---Native              # 基础应用：Native
-|---MultiAbility        # 基础应用：MultiAbility
-|---Animation           # 功能演示：场景动画
-|---Files               # 功能演示：文件读写
-|---FauxNativeAlbum     # 功能演示：相册能力
-|---InfiniteList        # 功能演示：无限列表
-|---JsonExample         # 功能演示：反序列化json字符串
-|---PlatformBridge      # 功能演示：平台桥接
-|---Router              # 功能演示：Router页面跳转
-|---WebExample          # 功能演示：Web组件
-|---MediaVideo          # 功能演示：视频播放
-|---PlatformNAPI        # 功能演示：ArkTs与Native交互能力
-|---XcomponentNative    # 功能演示：OpenGL绘制3D图形
-|---Shopping            # 精品应用：购物
-|---HealthyDiet         # 精品应用：健康饮食
-|---News                # 精品应用：新闻
+|---HelloWorld          # HelloWorld
+|---Library             # Library
+|---Native              # Native
+|---Shopping            # 精品应用购物
+|---HealthyDiet         # 精品应用健康饮食
 ```
 
 ## 约束
@@ -65,17 +36,15 @@ samples
 ## 使用方法
 
 1.  通过[Repo命令](https://gitee.com/arkui-x/manifest/blob/master/README.md)下载ArkUI-X项目所有仓或单独下载Samples仓。
-2.  利用DevEco Studio打开应用工程，通过Build APP(s)构建，或在应用工程目录下通过ACE Tools命令行工具构建应用。
+2.  通过DevEco Studio打开应用工程，或在应用工程目录下通过ACE Tools命令行工具构建应用。
 3.  安装运行后，即可在不同平台设备上查看应用示例运行效果。
 
 ## 注意事项
 
-1.  本示例支持在Android\iOS\HarmonyOS NEXT平台上运行。
-2.  本示例需要使用DevEco Studio 5.0.0 Release及以上版本或者ArkUI-X SDK 5.0.0 Release及以上版本的Ace Tools命令行工具才可编译运行。
+1.  本示例支持在Android\iOS\OpenHarmony平台上运行。
+2.  本示例需要使用DevEco Studio 4.0 Beta2及以上版本才可编译运行。
 
 
 ## 相关仓
 
 [Samples](https://gitee.com/arkui-x/samples)
-
-[CLI](https://gitee.com/arkui-x/cli)

@@ -14,11 +14,11 @@
  */
 
 #import "AppDelegate.h"
-#import "BaseViewController.h"
+#import "EntryEntryAbilityViewController.h"
 #import <libarkui_ios/StageApplication.h>
 
 #define BUNDLE_DIRECTORY @"arkui-x"
-#define BUNDLE_NAME @"com.example.x1"
+#define BUNDLE_NAME @"com.example.shopping"
 
 @interface AppDelegate ()
 
@@ -31,8 +31,7 @@
     [StageApplication launchApplication];
     
     NSString *instanceName = [NSString stringWithFormat:@"%@:%@:%@",BUNDLE_NAME, @"entry", @"EntryAbility"];
-    BaseViewController *mainView = [[BaseViewController alloc] init];
-    mainView.instanceName = instanceName;
+    EntryEntryAbilityViewController *mainView = [[EntryEntryAbilityViewController alloc] initWithInstanceName:instanceName];
     [self setNavRootVC:mainView];
     return YES;
 }
@@ -42,12 +41,22 @@
     
     NSString *bundleName = url.scheme;
     NSString *moduleName = url.host;
-    NSString *abilityName = url.query;
-    
+    NSString *abilityName, *params;
+
+    NSURLComponents * urlComponents = [NSURLComponents componentsWithString:url.absoluteString];
+    NSArray <NSURLQueryItem *> *array = urlComponents.queryItems;
+    for (NSURLQueryItem * item in array) {
+        if ([item.name isEqualToString:@"abilityName"]) {
+            abilityName = item.value;
+        } else if ([item.name isEqualToString:@"params"]) {
+            params = item.value;
+        }
+    }
+
     [self handleOpenUrlWithBundleName:bundleName
                            moduleName:moduleName
                           abilityName:abilityName
-                               params:@"more parameters", nil];
+                               params:params, nil];
     
     return YES;
 }
@@ -67,9 +76,9 @@
     
     if ([moduleName isEqualToString:@"entry"] && [abilityName isEqualToString:@"EntryAbility"]) {
         NSString *instanceName = [NSString stringWithFormat:@"%@:%@:%@",bundleName, moduleName, abilityName];
-        BaseViewController *otherVC = [[BaseViewController alloc] init];
-        otherVC.instanceName = instanceName;
-        subStageVC = (BaseViewController *)otherVC;
+        EntryEntryAbilityViewController *entryOtherVC = [[EntryEntryAbilityViewController alloc] initWithInstanceName:instanceName];
+        entryOtherVC.params = params;
+        subStageVC = (EntryEntryAbilityViewController *)entryOtherVC;
     } // other ViewController
     
     if (!subStageVC) {
@@ -90,7 +99,16 @@
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     UINavigationController *navi = [[UINavigationController alloc]initWithRootViewController:viewController];
-    self.window.rootViewController = viewController;
+    [self setNaviAppearance:navi];
+    self.window.rootViewController = navi;
+}
+
+- (void)setNaviAppearance:(UINavigationController *)navi {
+    UINavigationBarAppearance *appearance = [UINavigationBarAppearance new];
+    [appearance configureWithOpaqueBackground];
+    appearance.backgroundColor = UIColor.whiteColor;
+    navi.navigationBar.standardAppearance = appearance;
+    navi.navigationBar.scrollEdgeAppearance = navi.navigationBar.standardAppearance;
 }
 
 @end

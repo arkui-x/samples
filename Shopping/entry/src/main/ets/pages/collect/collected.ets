@@ -12,7 +12,6 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-import mediaquery from '@ohos.mediaquery'
 
 import mediaQuery from '@ohos.mediaquery'
 import router from '@ohos.router'
@@ -21,29 +20,26 @@ import { SinglePage1 } from './singlePage1'
 import { SinglePage2 } from './singlePage2'
 import { SinglePage3 } from './singlePage3'
 
+let portraitCollected = null
+
 @Entry
 @Component
 struct CollectedPage {
-  @State width1: number = 10
-  @State ratio: number = 1
+  @State width1: number = parseInt(router.getParams()['num'] as string, 10)
+  @State ratio: number = parseInt(router.getParams()['ratio'] as string, 10)
   @State opacity1: number = 1
   @State num: number = 1
   @State layoutId: number = 0
   @State collected: boolean = true
   listener = mediaQuery.matchMediaSync('(orientation:landscape)')
 
-  onPageShow() {
-    const params = router.getParams() as Record<number, string>; // 获取传递过来的参数对象
-    this.width1 = params['num']
-    this.ratio = params['ratio']
-  }
-
   aboutToAppear() {
     console.log('www data log ' + this.width)
-    this.listener.on('change', this.onPortrait)
+    portraitCollected = this.onPortrait.bind(this)
+    this.listener.on('change', portraitCollected)
   }
 
-  async onPortrait(mediaQueryResult : mediaquery.MediaQueryResult) {
+  async onPortrait(mediaQueryResult) {
     let result = mediaQueryResult.matches
     if (result) {
       this.width1 = 45
@@ -51,7 +47,6 @@ struct CollectedPage {
       this.width1 = 100
     }
   }
-
 
   build() {
     Column() {

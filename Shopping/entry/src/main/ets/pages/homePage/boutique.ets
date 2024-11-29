@@ -24,7 +24,7 @@ export struct Boutique {
   build() {
     Column() {
       Flex({ wrap: FlexWrap.Wrap, direction: FlexDirection.Row }) {
-        ForEach(this.boutiqueData, (item: BoutiqueModel) => {
+        ForEach(this.boutiqueData, item => {
           Column() {
             Text(item.text1)
               .fontSize(15 * this.ratio)
@@ -46,7 +46,7 @@ export struct Boutique {
           }
           .width('50%')
           .alignItems(HorizontalAlign.Start)
-        }, (item: BoutiqueModel) => JSON.stringify(item))
+        }, item => JSON.stringify(item))
       }
     }
     .width('92%')

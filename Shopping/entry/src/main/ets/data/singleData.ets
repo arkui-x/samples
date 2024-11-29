@@ -14,17 +14,19 @@
  */
 
 // 商品信息类型
-export class GoodsType {
-  public src: string
-  public name: string
-  public collect: string
-  public price: string
-  public collected: boolean
-  constructor(src: string, name: string, collect: string, price: string, collected: boolean) {
-    this.src = src
-    this.name = name
-    this.collect = collect
-    this.price = price
-    this.collected = collected
-  }
+export type GoodsType = {
+  src: string
+  name: string
+  collect: string
+  price: string
+  collected: boolean
+}
+
+// 商品数据
+export let goodsMsg = {
+  src: '/resources/detailImg/swiper/swiper1.png',
+  name: '【首降600+12期免息】XX/XXMate 40 Pro 5G 全网通 （亮黑色） 超大内存 极快网速 全球n多人的选择，你值得拥有',
+  collect: '300+人收藏',
+  price: '￥4500',
+  collected: true
 }

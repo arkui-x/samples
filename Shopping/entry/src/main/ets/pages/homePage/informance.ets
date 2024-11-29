@@ -74,7 +74,7 @@ export struct Information {
         .margin({ bottom: 10 })
 
         Grid() {
-          ForEach(this.information, (item: InformationModel) => {
+          ForEach(this.information, item => {
             GridItem() {
               Flex({ alignItems: ItemAlign.Center }) {
                 Column() {

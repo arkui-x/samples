@@ -13,14 +13,15 @@
  * limitations under the License.
  */
 {
-  "modelVersion": "5.0.0",
-  "devDependencies": {
-    "@ohos/hypium": "1.0.6"
-  },
-  "author": "",
   "name": "healthydiet",
+  "version": "1.0.0",
   "description": "Please describe the basic information.",
   "main": "",
-  "version": "1.0.0",
-  "dependencies": {}
+  "author": "",
+  "license": "",
+  "dependencies": {
+  },
+  "devDependencies": {
+    "@ohos/hypium": "1.0.6"
+  }
 }

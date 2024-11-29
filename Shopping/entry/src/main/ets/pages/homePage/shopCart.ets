@@ -18,7 +18,7 @@ import { Other } from './other'
 
 @Component
 export struct ShopCart {
-  @State cartNum: number[] = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+  @State cartNum: number[] = [...Array(10).keys()]
   @State isSelected1: boolean = false
   @State isSelected2: boolean = false
   @State isOn: boolean = false
@@ -97,20 +97,20 @@ export struct ShopCart {
 
           Row() {
             Column() {
-              ForEach(this.cartNum, (item: number) => {
+              ForEach(this.cartNum, item => {
                 Column() {
                   Other({ item: item % 6, ratio: this.ratio })
                 }
-              }, (item: number) => JSON.stringify(item))
+              }, item => JSON.stringify(item))
             }
             .margin(2)
 
             Column() {
-              ForEach(this.cartNum, (item: number) => {
+              ForEach(this.cartNum, item => {
                 Column() {
                   Other({ item: item % 6, ratio: this.ratio })
                 }
-              }, (item: number) => JSON.stringify(item))
+              }, item => JSON.stringify(item))
             }
             .margin(2)
           }

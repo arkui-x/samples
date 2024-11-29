@@ -93,7 +93,7 @@ export struct User {
         }
 
         Flex({ justifyContent: FlexAlign.SpaceAround, alignItems: ItemAlign.Center }) {
-          ForEach(this.record, (item: RecordModel) => {
+          ForEach(this.record, item => {
             Column() {
               Image(item.img)
                 .width(30 * this.ratio)
@@ -112,7 +112,7 @@ export struct User {
                 }
               })
             })
-          }, (item: RecordModel) => JSON.stringify(item))
+          }, item => JSON.stringify(item))
         }
 
         Flex({ justifyContent: FlexAlign.SpaceBetween, alignItems: ItemAlign.Center }) {
@@ -160,7 +160,7 @@ export struct User {
           }
 
           Flex({ justifyContent: FlexAlign.SpaceBetween, alignItems: ItemAlign.Center }) {
-            ForEach(this.orderData, (item: OrderModel) => {
+            ForEach(this.orderData, item => {
               Column() {
                 Image(item.img)
                   .width(30 * this.ratio)
@@ -170,7 +170,7 @@ export struct User {
                 Text(item.title)
                   .fontSize(12 * this.ratio)
               }
-            }, (item: OrderModel) => JSON.stringify(item))
+            }, item => JSON.stringify(item))
           }
           .margin({ top: 10 })
 
@@ -210,7 +210,7 @@ export struct User {
 
         Column() {
           Flex({ justifyContent: FlexAlign.SpaceAround, alignItems: ItemAlign.Center }) {
-            ForEach(this.discountData, (item: DiscountModel) => {
+            ForEach(this.discountData, item => {
               Column() {
                 Image(item.img)
                   .width(35 * this.ratio)
@@ -224,7 +224,7 @@ export struct User {
                   .fontSize(12 * this.ratio)
                   .fontColor(Color.Grey)
               }
-            }, (item: DiscountModel) => JSON.stringify(item))
+            }, item => JSON.stringify(item))
           }
           .margin({ top: 10 })
         }
@@ -235,7 +235,7 @@ export struct User {
 
         Column() {
           Flex({ justifyContent: FlexAlign.SpaceAround, alignItems: ItemAlign.Center }) {
-            ForEach(this.serviceData, (item: ServiceModel) => {
+            ForEach(this.serviceData, item => {
               Column() {
                 Image(item.img)
                   .width(30 * this.ratio)
@@ -245,7 +245,7 @@ export struct User {
                 Text(item.title)
                   .fontSize(12 * this.ratio)
               }
-            }, (item: ServiceModel) => JSON.stringify(item))
+            }, item => JSON.stringify(item))
           }
           .margin({ top: 10 })
         }

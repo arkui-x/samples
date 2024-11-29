@@ -14,6 +14,7 @@
  */
 
 import mediaQuery from '@ohos.mediaquery';
+import display from '@ohos.display';
 import { TabTitleModel } from '../model/homeModel'
 import { tabTitleData } from '../data/homeData'
 import { MainPage } from './homePage/main'
@@ -21,7 +22,8 @@ import { VisitPage } from './homePage/visitPage'
 import { Information } from './homePage/informance'
 import { ShopCart } from './homePage/shopCart'
 import { User } from './homePage/User'
-import mediaquery from '@ohos.mediaquery';
+
+let portraitIndex = null
 
 @Entry
 @Component
@@ -37,10 +39,18 @@ struct Index {
   listener = mediaQuery.matchMediaSync('(orientation:landscape)')
 
   aboutToAppear() {
-    this.listener.on('change', this.onPortrait)
+    // @ts-ignore
+    display.getAllDisplays((err, data) => {
+      let aspect = data[0].width / data[0].height
+      if (aspect == 0.5625) {
+        this.ratio = 1.4
+      }
+    })
+    portraitIndex = this.onPortrait.bind(this)
+    this.listener.on('change', portraitIndex)
   }
 
-  async onPortrait(mediaQueryResult:mediaquery.MediaQueryResult) {
+  async onPortrait(mediaQueryResult) {
     let result = mediaQueryResult.matches
     if (result) {
       this.width1 = 45
@@ -81,7 +91,7 @@ struct Index {
 
         Column() {
           Flex({ justifyContent: FlexAlign.SpaceAround, alignItems: ItemAlign.Center }) {
-            ForEach(this.tabTittleData, (item: TabTitleModel) => {
+            ForEach(this.tabTittleData, item => {
               Flex({
                 direction: FlexDirection.Column,
                 justifyContent: FlexAlign.Center,
@@ -101,7 +111,7 @@ struct Index {
                 this.tabsIndex = item.id
                 this.controller.changeIndex(item.id)
               })
-            },  (item: TabTitleModel) => JSON.stringify(item))
+            }, item => JSON.stringify(item))
           }
           .height('8%')
         }

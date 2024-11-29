@@ -18,13 +18,14 @@ import router from '@ohos.router';
 import { SwiperModel, PhoneTypeModel, ShowImgModel, RecommendDataModel, GoodsInfoModel, ListDataModel
 } from "../../model/detailModel"
 import { swiperData, phoneTypeData, showImgData, recommendData, goodsInfoData, listData } from '../../data/detailData'
-import mediaquery from '@ohos.mediaquery';
+
+let portraitDetail = null
 
 @Entry
 @Component
 struct Detail {
-  @State width1: number = 10
-  @State ratio: number = 10
+  @State width1: number = parseInt(router.getParams()['num'] as string, 10)
+  @State ratio: number = parseInt(router.getParams()['ratio'] as string, 10)
   @State active: boolean = false
   @State swiper: Array<SwiperModel> = swiperData
   @State phoneType: Array<PhoneTypeModel> = phoneTypeData
@@ -37,10 +38,11 @@ struct Detail {
   listener= mediaQuery.matchMediaSync('(orientation:landscape)');
 
   aboutToAppear() {
-    this.listener.on('change', this.onPortrait);
+    portraitDetail = this.onPortrait.bind(this);
+    this.listener.on('change', portraitDetail);
   }
 
-  async onPortrait(mediaQueryResult:mediaquery.MediaQueryResult) {
+  async onPortrait(mediaQueryResult) {
     let result = mediaQueryResult.matches
     if (result) {
       this.width1 = 45
@@ -48,7 +50,6 @@ struct Detail {
       this.width1 = 100
     }
   }
-
 
   build() {
     Scroll() {
@@ -86,10 +87,10 @@ struct Detail {
         .backgroundColor(Color.White)
 
         Swiper() {
-          ForEach(this.swiper, (item: SwiperModel) => {
+          ForEach(this.swiper, item => {
             Image(item.src)
               .objectFit(ImageFit.Contain)
-          }, (item: SwiperModel) => JSON.stringify(item))
+          }, item => JSON.stringify(item))
         }
         .index(0)
         .width('100%')
@@ -363,11 +364,11 @@ struct Detail {
           Flex({ justifyContent: FlexAlign.SpaceBetween, alignItems: ItemAlign.Center }) {
             Text()
             Flex({ justifyContent: FlexAlign.SpaceBetween, alignItems: ItemAlign.Center }) {
-              ForEach(this.phoneType, (item: PhoneTypeModel) => {
+              ForEach(this.phoneType, item => {
                 Image(`${item.uri}`)
                   .objectFit(ImageFit.Contain)
                   .width(35 * this.ratio)
-              }, (item: PhoneTypeModel) => JSON.stringify(item))
+              }, item => JSON.stringify(item))
               Text('共6种机身颜色可选')
                 .fontSize(13 * this.ratio)
             }
@@ -455,12 +456,12 @@ struct Detail {
           .margin({ top: 10, bottom: 10 })
 
           Row() {
-            ForEach(this.showImg, (item: ShowImgModel) => {
+            ForEach(this.showImg, item => {
               Image(item.uri)
                 .objectFit(ImageFit.Cover)
                 .width('25%')
                 .height(100 * this.ratio)
-            }, (item: ShowImgModel) => JSON.stringify(item))
+            }, item => JSON.stringify(item))
 
           }
           .backgroundColor(Color.Red)
@@ -585,7 +586,7 @@ struct Detail {
           .margin({ top: 10, bottom: 10 })
 
           Flex({ justifyContent: FlexAlign.Center, wrap: FlexWrap.Wrap, alignContent: FlexAlign.Start }) {
-            ForEach(this.recommendData, (item: RecommendDataModel) => {
+            ForEach(this.recommendData, item => {
               Column() {
                 Image(`${item.img}`)
                   .objectFit(ImageFit.Contain)
@@ -605,22 +606,22 @@ struct Detail {
               .width('33%')
               .height('48%')
               .alignItems(HorizontalAlign.Start)
-            }, (item: RecommendDataModel) => JSON.stringify(item))
+            }, item => JSON.stringify(item))
           }
           .height('45%')
         }
         .margin({ top: 10 })
 
         Column() {
-          ForEach(this.goodsList, (item: GoodsInfoModel) => {
+          ForEach(this.goodsList, item => {
             Image(`${item.img}`)
               .width('100%')
               .objectFit(ImageFit.Cover)
-          }, (item: GoodsInfoModel) => JSON.stringify(item))
+          }, item => JSON.stringify(item))
         }
 
         Flex({ justifyContent: FlexAlign.Start, wrap: FlexWrap.Wrap, alignContent: FlexAlign.Start }) {
-          ForEach(this.listImg, (item: ListDataModel) => {
+          ForEach(this.listImg, item => {
             Column() {
               Image(`${item.img}`)
                 .objectFit(ImageFit.Contain)
@@ -637,7 +638,7 @@ struct Detail {
             .height('32%')
             .margin(5)
             .alignItems(HorizontalAlign.Center)
-          }, (item: ListDataModel) => JSON.stringify(item))
+          }, item => JSON.stringify(item))
         }
 
       }

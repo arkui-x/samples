@@ -21,7 +21,7 @@ class GoodListSource implements IDataSource {
     return this.num
   }
 
-  getData(index: number): number {
+  getData(index: number): any {
     return index
   }
 
@@ -59,7 +59,7 @@ export struct GoodsList {
   build() {
     Column() {
       Grid() {
-        LazyForEach(this.data, (item: number) => {
+        LazyForEach(this.data, item => {
           GridItem() {
             Column() {
               Image(this.productData[item % 14].uri)
@@ -92,7 +92,7 @@ export struct GoodsList {
           .border({ width: 1, color: '#70808080', radius: 10 })
           .margin({ top: 3, bottom: 3 })
           .backgroundColor(Color.White)
-        }, (item: number) => JSON.stringify(item))
+        }, item => JSON.stringify(item))
       }
       .columnsTemplate('1fr 1fr')
       .padding({ bottom: 60 })

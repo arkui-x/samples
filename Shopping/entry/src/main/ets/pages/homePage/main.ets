@@ -49,7 +49,7 @@ export struct MainPage {
             .objectFit(ImageFit.Contain)
 
           Swiper() {
-            ForEach(this.searchData, (item: SearchTextModel) => {
+            ForEach(this.searchData, item => {
               Column() {
                 Text(item.searchText)
                   .fontSize(14 * (this.ratio + 0.2))
@@ -68,7 +68,7 @@ export struct MainPage {
                   }
                 })
               })
-            }, (item: SearchTextModel) => JSON.stringify(item))
+            }, item => JSON.stringify(item))
           }
           .width('65%')
           .autoPlay(true)
@@ -100,7 +100,7 @@ export struct MainPage {
         Column() {
           Row() {
             List() {
-              ForEach(this.navData, (item: NavDataModel) => {
+              ForEach(this.navData, item => {
                 ListItem() {
                   Text(item.navData)
                     .fontColor(`${item.navData == '首页' ? Color.Blue : Color.Black}`)
@@ -110,7 +110,7 @@ export struct MainPage {
                     .lineHeight(30 * this.ratio)
                 }
                 .height(30 * this.ratio)
-              }, (item: NavDataModel) => JSON.stringify(item))
+              }, item => JSON.stringify(item))
             }
             .height(30 * this.ratio)
             .width('85%')
@@ -130,7 +130,7 @@ export struct MainPage {
           .margin({ bottom: 0, left: 5, right: 5 })
 
           Swiper() {
-            ForEach(this.swiperData, (item: SwiperModel) => {
+            ForEach(this.swiperData, item => {
               Navigator({ target: 'pages/detailPage/detail' }) {
                 Image(item.img)
                   .width('100%')
@@ -142,7 +142,7 @@ export struct MainPage {
                 num: this.num,
                 ratio: this.ratio
               })
-            }, (item: SwiperModel) => JSON.stringify(item))
+            }, item => JSON.stringify(item))
           }
           .autoPlay(true)
           .loop(true)
@@ -159,7 +159,7 @@ export struct MainPage {
           .margin({ top: 10 })
 
           Flex({ justifyContent: FlexAlign.SpaceAround, alignItems: ItemAlign.Center }) {
-            ForEach(this.titleBarData, (item: TitleBarModel) => {
+            ForEach(this.titleBarData, item => {
               Column() {
                 Text(item.title)
                   .fontSize(15 * this.ratio)
@@ -172,7 +172,7 @@ export struct MainPage {
                 this.tabsIndex = item.id
                 this.controller.changeIndex(item.id)
               })
-            }, (item: TitleBarModel) => JSON.stringify(item))
+            }, item => JSON.stringify(item))
           }
           .height('7%')
           .zIndex(2)

@@ -12,16 +12,14 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-import { GoodsType} from '../../data/singleData';
+import { GoodsType, goodsMsg } from '../../data/singleData';
 
 
 @Component
 export struct  SinglePage1 {
   @Prop ratio: number
-  @State collectData: GoodsType = new GoodsType('/resources/detailImg/swiper/swiper1.png',
-    '【首降600+12期免息】XX/XXMate 40 Pro 5G 全网通 （亮黑色） 超大内存 极快网速 全球n多人的选择，你值得拥有',
-    '300+人收藏', '￥4500', true);
-  @State collected: boolean = true;
+  @State collectData: GoodsType = goodsMsg;
+  @State collected: boolean = goodsMsg.collected;
 
   build() {
     Column() {

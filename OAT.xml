@@ -57,127 +57,85 @@ Note:If the text contains special characters, please escape them according to th
         <filefilterlist>
             <filefilter name="binaryFileTypePolicyFilter" desc="ArkUI-X SDk二进制文件校验策略的过滤条件" >
                 <filteritem type="filename" name="gradle-wrapper.jar" desc="Android工程模版自带的打包工具"/>
-                <filteritem type="filename" name="icon.png" desc="app应用图标"/>
-                <filteritem type="filename" name="app_icon.png" desc="app应用图标"/>
                 <filteritem type="filepath" name="HelloWorld/ios/.*.xcuserstate" desc="iOS工程固定配置文件"/>
                 <filteritem type="filepath" name="HelloWorld/screenshots/.*.png|.*.jpg" desc="运行结果截图"/>
-                <filteritem type="filepath" name="PlatformBridge/ios/.*.xcuserstate" desc="iOS工程固定配置文件"/>
                 <filteritem type="filepath" name="Shopping/source/entry/src/main/ets/MainAbility/resources/.*.png" desc="具备版权的图片"/>
                 <filteritem type="filepath" name="Shopping/android/app/src/main/assets/js/MainAbility/resources/.*.png" desc="具备版权的图片"/>
                 <filteritem type="filepath" name="Shopping/ios/.*.xcuserstate" desc="iOS工程固定配置文件"/>
                 <filteritem type="filepath" name="Shopping/screenshots/.*.png|.*.jpg" desc="运行结果截图"/>
                 <filteritem type="filepath" name="HealthyDiet/ios/.*.xcuserstate" desc="iOS工程固定配置文件"/>
-                <filteritem type="filepath" name="Animation/entry/src/main/resources/base/media/.*.png|.*.jpg" desc="具备版权的图片"/>
-                <filteritem type="filepath" name="Animation/screenshots/.*.png" desc="运行结果截图"/>
-                <filteritem type="filepath" name="Animation/entry/src/ohosTest/resources/base/media/.*.png" desc="具备版权的图片"/>
-                <filteritem type="filepath" name="Files/screenshots/.*.png" desc="运行结果截图"/>
-                <filteritem type="filepath" name="HealthyDiet/entry/src/main/resources/base/media/.*.png" desc="具备版权的图片"/>
-                <filteritem type="filepath" name="InfiniteList/entry/src/ohosTest/resources/base/media/.*.png" desc="具备版权的图片"/>
-                <filteritem type="filepath" name="InfiniteList/screenshots/.*.png|.*.jpg" desc="运行结果截图"/>
-                <filteritem type="filepath" name="JsonExample/screenshots/.*.png" desc="运行结果截图"/>
-                <filteritem type="filepath" name="MultiAbility/AppScope/resources/base/media/.*.png" desc="具备版权的图片"/>
-                <filteritem type="filepath" name="MultiAbility/secondmodule/src/main/resources/base/media/.*.png" desc="already checked"/>
-                <filteritem type="filepath" name="Router/entry/src/main/resources/base/media/.*.png|.*.webp" desc="already checked"/>
-                <filteritem type="filepath" name="Router/screenshots/.*.png" desc="运行结果截图"/>
-                <filteritem type="filepath" name="Files/entry/src/main/resources/base/media/.*.png" desc="already checked"/>
-                <filteritem type="filepath" name="News/entry/src/ohosTest/resources/base/media/.*.png" desc="already checked"/>
-                <filteritem type="filepath" name="Library/entry/src/ohosTest/resources/base/media/.*.png" desc="already checked"/>
-                <filteritem type="filepath" name="MediaVideo/screenshots/.*.png" desc="运行结果截图"/>
-                <filteritem type="filepath" name="MultiAbility/entry/src/main/resources/base/media/.*.png" desc="already checked"/>
-                <filteritem type="filepath" name="XcomponentNative/screenshots/.*.png" desc="运行结果截图"/>
-                <filteritem type="filepath" name="FauxNativeAlbum/cross_platform/screenshots/.*.png" desc="运行结果截图"/>
-                <filteritem type="filepath" name="FauxNativeAlbum/harmony_album/AppScope/resources/base/media/.*.png" desc="already checked"/>
-                <filteritem type="filepath" name="FauxNativeAlbum/harmony_album/entry/src/main/ets/common/images/.*.png|.*.mp4" desc="already checked"/>
-                <filteritem type="filepath" name="FauxNativeAlbum/harmony_album/entry/src/main/resources/base/media/.*.png|.*.mp4" desc="already checked"/>
-                <filteritem type="filepath" name="News/entry/src/main/resources/base/media/.*.png|.*.mp4|.*.gif" desc="already checked"/>
-                <filteritem type="filepath" name="News/screenshots/.*.png" desc="运行结果截图"/>
-                <filteritem type="filepath" name="Shopping/entry/src/main/ets/resources/.*.png" desc="already checked"/>
-                <filteritem type="filepath" name="JsonExample/entry/src/main/resources/base/media/.*.png" desc="already checked"/>
-                <filteritem type="filepath" name="WebExample/entry/src/main/resources/base/media/.*.png" desc="already checked"/>
-                <filteritem type="filepath" name="WebExample/screenshots/.*.png" desc="运行结果截图"/>
-                <filteritem type="filepath" name="HelloWorld/entry/src/main/resources/base/media/.*.png" desc="already checked"/>
-                <filteritem type="filepath" name="JsonExample/AppScope/resources/base/media/.*.png" desc="already checked"/>
-                <filteritem type="filepath" name="Router/AppScope/resources/base/media/.*.png" desc="already checked"/>
-                <filteritem type="filepath" name="FauxNativeAlbum/harmony_album/screenshots/.*.png" desc="运行结果截图"/>
-                <filteritem type="filepath" name="WebExample/entry/src/main/resources/rawfile/assets/.*.png" desc="already checked"/>
-                <filteritem type="filepath" name="FauxNativeAlbum/cross_platform/entry/src/main/resources/base/media/.*.png" desc="already checked"/>
-                <filteritem type="filepath" name="PlatformNAPI/screenshots/.*.png" desc="运行结果截图"/>
-                <filteritem type="filepath" name="Router/entry/src/main/ets/pages/RedirectPage.ets" desc="ets源码"/>
-                <filteritem type="filepath" name="JsonExample/entry/src/main/ets/beans/SimpleObject.ets" desc="ets源码"/>
-                <filteritem type="filepath" name="JsonExample/entry/src/main/ets/beans/ComplicatedObject.ets" desc="ets源码"/>
-                <filteritem type="filepath" name="Shopping/entry/src/main/ets/resources/common/.*.png" desc="already checked"/>
-                <filteritem type="filepath" name="WebExample/entry/src/main/resources/rawfile/icons/.*.png" desc="already checked"/>
-                <filteritem type="filepath" name="WebExample/entry/src/main/resources/rawfile/fonts/.*.ttf" desc="already checked"/>
-            </filefilter>
-            <filefilter name="copyrightPolicyFilter" desc="Copyright文件头校验策略的过滤条件" >
-                <filteritem type="filepath" name="Animation/.*.ets|.*.ts" desc="示例展示无需添加版权头"/>
-                <filteritem type="filepath" name="FauxNativeAlbum/.*.ets|.*.ts" desc="示例展示无需添加版权头"/>
-                <filteritem type="filepath" name="Files/.*.ets|.*.ts" desc="示例展示无需添加版权头"/>
-                <filteritem type="filepath" name="HealthyDiet/.*.ets|.*.ts" desc="示例展示无需添加版权头"/>
-                <filteritem type="filepath" name="HelloWorld/.*.ets|.*.ts" desc="示例展示无需添加版权头"/>
-                <filteritem type="filepath" name="InfiniteList/.*.ets|.*.ts" desc="示例展示无需添加版权头"/>
-                <filteritem type="filepath" name="JsonExample/.*.ets|.*.ts" desc="示例展示无需添加版权头"/>
-                <filteritem type="filepath" name="Library/.*.ets|.*.ts" desc="示例展示无需添加版权头"/>
-                <filteritem type="filepath" name="MediaVideo/.*.ets|.*.ts" desc="示例展示无需添加版权头"/>
-                <filteritem type="filepath" name="MultiAbility/.*.ets|.*.ts" desc="示例展示无需添加版权头"/>
-                <filteritem type="filepath" name="Native/.*.ets|.*.ts" desc="示例展示无需添加版权头"/>
-                <filteritem type="filepath" name="News/.*.ets|.*.ts" desc="示例展示无需添加版权头"/>
-                <filteritem type="filepath" name="PlatformBridge/.*.ets|.*.ts" desc="示例展示无需添加版权头"/>
-                <filteritem type="filepath" name="PlatformNAPI/.*.ets|.*.ts" desc="示例展示无需添加版权头"/>
-                <filteritem type="filepath" name="Router/.*.ets|.*.ts" desc="示例展示无需添加版权头"/>
-                <filteritem type="filepath" name="Shopping/.*.ets|.*.ts" desc="示例展示无需添加版权头"/>
-                <filteritem type="filepath" name="WebExample/.*.ets|.*.ts" desc="示例展示无需添加版权头"/>
-                <filteritem type="filepath" name="XcomponentNative/.*.ets|.*.ts" desc="示例展示无需添加版权头"/>
-                <filteritem type="filepath" name="WebExample/entry/src/main/resources/rawfile/js/echarts.min.js" desc="import third-party ECharts file"/>
-                <filteritem type="filepath" name="WebExample/entry/src/main/resources/rawfile/js/.*.js" desc="示例展示无需添加版权头"/>
-            </filefilter>
-            <filefilter name="defaultPolicyFilter" desc="HealthyDiet License文件头校验策略的过滤条件" >
-                <filteritem type="filepath" name="Animation/.*.ets|.*.ts" desc="示例展示无需添加License头"/>
-                <filteritem type="filepath" name="FauxNativeAlbum/.*.ets|.*.ts" desc="示例展示无需添加License头"/>
-                <filteritem type="filepath" name="Files/.*.ets|.*.ts" desc="示例展示无需添加License头"/>
-                <filteritem type="filepath" name="HealthyDiet/.*.ets|.*.ts" desc="示例展示无需添加License头"/>
-                <filteritem type="filepath" name="HelloWorld/.*.ets|.*.ts" desc="示例展示无需添加License头"/>
-                <filteritem type="filepath" name="InfiniteList/.*.ets|.*.ts" desc="示例展示无需添加License头"/>
-                <filteritem type="filepath" name="JsonExample/.*.ets|.*.ts" desc="示例展示无需添加License头"/>
-                <filteritem type="filepath" name="Library/.*.ets|.*.ts" desc="示例展示无需添加License头"/>
-                <filteritem type="filepath" name="MediaVideo/.*.ets|.*.ts" desc="示例展示无需添加License头"/>
-                <filteritem type="filepath" name="MultiAbility/.*.ets|.*.ts" desc="示例展示无需添加License头"/>
-                <filteritem type="filepath" name="Native/.*.ets|.*.ts" desc="示例展示无需添加License头"/>
-                <filteritem type="filepath" name="News/.*.ets|.*.ts" desc="示例展示无需添加License头"/>
-                <filteritem type="filepath" name="PlatformBridge/.*.ets|.*.ts" desc="示例展示无需添加License头"/>
-                <filteritem type="filepath" name="PlatformNAPI/.*.ets|.*.ts" desc="示例展示无需添加License头"/>
-                <filteritem type="filepath" name="Router/.*.ets|.*.ts" desc="示例展示无需添加License头"/>
-                <filteritem type="filepath" name="Shopping/.*.ets|.*.ts" desc="示例展示无需添加License头"/>
-                <filteritem type="filepath" name="WebExample/.*.ets|.*.ts" desc="示例展示无需添加License头"/>
-                <filteritem type="filepath" name="XcomponentNative/.*.ets|.*.ts" desc="示例展示无需添加License头"/>
-                <filteritem type="filepath" name="WebExample/entry/src/main/resources/rawfile/js/echarts.min.js" desc="import third-party ECharts file"/>
-                <filteritem type="filepath" name="WebExample/entry/src/main/resources/rawfile/js/.*.js" desc="示例展示无需添加License头"/>
+                <filteritem type="filename" name="*.jpg|*.png|*.gif|*.pdf|*.jpeg" desc="already checked"/>
             </filefilter>
             <filefilter name="copyrightPolicyFilter" desc="Copyright文件头校验策略的过滤条件" >
                 <filteritem type="filename" name="gradlew" desc="Android工程编译入口脚本，无需添加版权头"/>
                 <filteritem type="filename" name="gradlew.bat" desc="Android工程编译入口脚本，无需添加版权头"/>
                 <filteritem type="filename" name="build-profile.json5" desc="OpenHarmony工程编译配置文件，无需添加版权头"/>
                 <filteritem type="filename" name="hvigorfile.js" desc="OpenHarmony工程编译配置文件，无需添加版权头"/>
-                <filteritem type="filename" name="module.json5" desc="OpenHarmony工程编译配置文件，无需添加版权头"/>
-                <filteritem type="filename" name="oh-package.json5" desc="OpenHarmony工程编译配置文件，无需添加版权头"/>
-                <filteritem type="filename" name="hvigor-config.json5" desc="OpenHarmony工程编译配置文件，无需添加版权头"/>
-                <filteritem type="filename" name="hvigorw.bat" desc="OpenHarmony工程编译配置文件，无需添加版权头"/>
-                <filteritem type="filename" name="hvigor-wrapper.js" desc="OpenHarmony工程编译配置文件，无需添加版权头"/>
-                <filteritem type="filename" name="app.json5" desc="OpenHarmony工程编译配置文件，无需添加版权头"/>
-                <filteritem type="filename" name="hvigorw" desc="OpenHarmony工程编译配置文件，无需添加版权头"/>
+                <filteritem type="filename" name="hvigorfile.ts" desc="OpenHarmony工程配置文件无需添加版权头"/>
+                <filteritem type="filename" name="hvigor-wrapper.js" desc="OpenHarmony工程配置文件无需添加版权头"/>
             </filefilter>
             <filefilter name="defaultPolicyFilter" desc="License文件头校验策略的过滤条件" >
                 <filteritem type="filename" name="gradlew" desc="Android工程编译入口脚本，无需添加License头"/>
                 <filteritem type="filename" name="gradlew.bat" desc="Android工程编译入口脚本，无需添加License头"/>
                 <filteritem type="filename" name="build-profile.json5" desc="OpenHarmony工程编译配置文件，无需添加License头"/>
                 <filteritem type="filename" name="hvigorfile.js" desc="OpenHarmony工程编译配置文件，无需添加License头"/>
-                <filteritem type="filename" name="module.json5" desc="OpenHarmony工程编译配置文件，无需添加License头"/>
-                <filteritem type="filename" name="oh-package.json5" desc="OpenHarmony工程编译配置文件，无需添加License头"/>
-                <filteritem type="filename" name="hvigor-config.json5" desc="OpenHarmony工程编译配置文件，无需添加License头"/>
-                <filteritem type="filename" name="hvigorw.bat" desc="OpenHarmony工程编译配置文件，无需添加License头"/>
-                <filteritem type="filename" name="hvigor-wrapper.js" desc="OpenHarmony工程编译配置文件，无需添加License头"/>
-                <filteritem type="filename" name="app.json5" desc="OpenHarmony工程编译配置文件，无需添加License头"/>
-                <filteritem type="filename" name="hvigorw" desc="OpenHarmony工程编译配置文件，无需添加License头"/>
+                <filteritem type="filename" name="hvigorfile.ts" desc="OpenHarmony工程配置文件无需添加License头"/>
+                <filteritem type="filename" name="hvigor-wrapper.js" desc="OpenHarmony工程配置文件无需添加License头"/>
+            </filefilter>
+            <filefilter name="copyrightPolicyFilter" desc="HealthyDiet Copyright文件头校验策略的过滤条件" >
+                <filteritem type="filepath" name="HealthyDiet/ios/.*.plist|.*.modulemap|.*.storyboard|.*.pbxproj|.*.xcworkspacedata|.*.podspec" desc="示例展示无需添加版权头"/>
+                <filteritem type="filepath" name="HealthyDiet/android/.*.xml" desc="示例展示无需添加版权头"/>
+                <filteritem type="filepath" name="HealthyDiet/android/.*.so" desc="示例展示无需添加版权头"/>
+                <filteritem type="filepath" name="HealthyDiet/android/.*.java" desc="示例展示无需添加版权头"/>
+                <filteritem type="filepath" name="HealthyDiet/source/.*.ets" desc="示例展示无需添加版权头"/>
+                <filteritem type="filepath" name="HealthyDiet/entry/hvigorfile.ts" desc="OpenHarmony工程配置文件无需添加版权头"/>
+                <filteritem type="filepath" name="HealthyDiet/hvigorfile.ts" desc="OpenHarmony工程配置文件无需添加版权头"/>
+            </filefilter>
+            <filefilter name="defaultPolicyFilter" desc="HealthyDiet License文件头校验策略的过滤条件" >
+                <filteritem type="filepath" name="HealthyDiet/ios/.*.plist|.*.modulemap|.*.storyboard|.*.pbxproj|.*.xcworkspacedata|.*.podspec" desc="示例展示无需添加License头"/>
+                <filteritem type="filepath" name="HealthyDiet/ios/etsapp/AppDelegate.h" desc="keep the AppDelegate src license"/>
+                <filteritem type="filepath" name="HealthyDiet/android/.*.xml" desc="示例展示无需添加License头"/>
+                <filteritem type="filepath" name="HealthyDiet/android/.*.so" desc="示例展示无需添加License头"/>
+                <filteritem type="filepath" name="HealthyDiet/android/.*.java" desc="示例展示无需添加License头"/>
+                <filteritem type="filepath" name="HealthyDiet/source/.*.ets" desc="示例展示无需添加License头"/>
+                <filteritem type="filepath" name="HealthyDiet/entry/hvigorfile.ts" desc="OpenHarmony工程配置文件无需添加License头"/>
+                <filteritem type="filepath" name="HealthyDiet/hvigorfile.ts" desc="OpenHarmony工程配置文件无需添加License头"/>
+            </filefilter>
+            <filefilter name="copyrightPolicyFilter" desc="Shopping Copyright文件头校验策略的过滤条件" >
+                <filteritem type="filepath" name="Shopping/ios/.*.plist|.*.modulemap|.*.storyboard|.*.pbxproj|.*.xcworkspacedata|.*.podspec" desc="示例展示无需添加版权头"/>
+                <filteritem type="filepath" name="Shopping/android/.*.xml" desc="示例展示无需添加版权头"/>
+                <filteritem type="filepath" name="Shopping/android/.*.java" desc="示例展示无需添加版权头"/>
+                <filteritem type="filepath" name="Shopping/source/.*.ets" desc="示例展示无需添加版权头"/>
+                <filteritem type="filepath" name="Shopping/entry/hvigorfile.ts" desc="OpenHarmony工程配置文件无需添加版权头"/>
+                <filteritem type="filepath" name="Shopping/hvigorfile.ts" desc="OpenHarmony工程配置文件无需添加版权头"/>
+            </filefilter>
+            <filefilter name="defaultPolicyFilter" desc="Shopping License文件头校验策略的过滤条件" >
+                <filteritem type="filepath" name="Shopping/ios/.*.plist|.*.modulemap|.*.storyboard|.*.pbxproj|.*.xcworkspacedata|.*.podspec" desc="示例展示无需添加License头"/>
+                <filteritem type="filepath" name="Shopping/android/.*.xml" desc="示例展示无需添加License头"/>
+                <filteritem type="filepath" name="Shopping/android/.*.java" desc="示例展示无需添加License头"/>
+                <filteritem type="filepath" name="Shopping/source/.*.ets" desc="示例展示无需添加License头"/>
+                <filteritem type="filepath" name="Shopping/entry/hvigorfile.ts" desc="OpenHarmony工程配置文件无需添加License头"/>
+                <filteritem type="filepath" name="Shopping/hvigorfile.ts" desc="OpenHarmony工程配置文件无需添加License头"/>
+            </filefilter>
+            <filefilter name="copyrightPolicyFilter" desc="HelloWorld Copyright文件头校验策略的过滤条件" >
+                <filteritem type="filepath" name="HelloWorld/android/.*.xml|.*.java" desc="示例展示无需添加版权头"/>
+                <filteritem type="filepath" name="HelloWorld/ios/.*.plist|.*.modulemap|.*.storyboard|.*.pbxproj|.*.xcworkspacedata|.*.podspec" desc="xcode工程文件无需添加License头"/>
+                <filteritem type="filepath" name="HelloWorld/source/.*.ets" desc="示例展示无需添加版权头"/>
+                <filteritem type="filepath" name="HelloWorld/entry/hvigorfile.ts" desc="OpenHarmony工程配置文件无需添加版权头"/>
+                <filteritem type="filepath" name="HelloWorld/hvigorfile.ts" desc="OpenHarmony工程配置文件无需添加版权头"/>
+            </filefilter>
+            <filefilter name="defaultPolicyFilter" desc="HelloWorld License文件头校验策略的过滤条件" >
+                <filteritem type="filepath" name="HelloWorld/android/.*.xml|.*.java" desc="示例展示无需添加License头"/>
+                <filteritem type="filepath" name="HelloWorld/ios/.*.plist|.*.modulemap|.*.storyboard|.*.pbxproj|.*.xcworkspacedata|.*.podspec" desc="xcode工程文件无需添加License头"/>
+                <filteritem type="filepath" name="HelloWorld/source/.*.ets" desc="示例展示无需添加License头"/>
+                <filteritem type="filepath" name="HelloWorld/entry/hvigorfile.ts" desc="OpenHarmony工程配置文件无需添加License头"/>
+                <filteritem type="filepath" name="HelloWorld/hvigorfile.ts" desc="OpenHarmony工程配置文件无需添加License头"/>
+            </filefilter>
+            <filefilter name="copyrightPolicyFilter" desc="Native Copyright文件头校验策略的过滤条件" >
+                <filteritem type="filepath" name="Native/entry/src/main/cpp/types/libentry/index.d.ts" desc="示例展示无需添加版权头"/>
+            </filefilter>
+            <filefilter name="defaultPolicyFilter" desc="Native License文件头校验策略的过滤条件" >
+                <filteritem type="filepath" name="Native/entry/src/main/cpp/types/libentry/index.d.ts" desc="示例展示无需添加License头"/>
             </filefilter>
         </filefilterlist>
     </oatconfig>

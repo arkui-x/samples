@@ -13,14 +13,13 @@
  * limitations under the License.
  */
 #include "napi/native_api.h"
-#include "uv.h"
 
 static napi_value Add(napi_env env, napi_callback_info info)
 {
     size_t argc = 2;
     napi_value args[2] = {nullptr};
 
-    napi_get_cb_info(env, info, &argc, args, nullptr, nullptr);
+    napi_get_cb_info(env, info, &argc, args , nullptr, nullptr);
 
     napi_valuetype valuetype0;
     napi_typeof(env, args[0], &valuetype0);
@@ -44,10 +43,10 @@ static napi_value Add(napi_env env, napi_callback_info info)
     napi_create_double(env, value0 + value1, &sum);
 
     return sum;
+
 }
 
-static napi_value NativeCallArkTS(napi_env env, napi_callback_info info)
-{
+static napi_value NativeCallArkTS(napi_env env, napi_callback_info info) {
     size_t argc = 1;
     napi_value args[1] = {nullptr};
     napi_get_cb_info(env, info, &argc, args, nullptr, nullptr);
@@ -68,26 +67,12 @@ static napi_value NativeCallArkTS(napi_env env, napi_callback_info info)
     return result;
 }
 
-static napi_value NativeUvLoop(napi_env env, napi_callback_info info)
-{
-    uv_loop_t *loop = new uv_loop_t;
-    int value0 = uv_loop_init(loop);
-    uv_run(loop, UV_RUN_ONCE);
-    uv_loop_close(loop);
-
-    napi_value result = nullptr;
-    napi_create_int32(env, value0, &result);
-    delete loop;
-    return result;
-}
-
 EXTERN_C_START
 static napi_value Init(napi_env env, napi_value exports)
 {
     napi_property_descriptor desc[] = {
         { "add", nullptr, Add, nullptr, nullptr, nullptr, napi_default, nullptr },
         { "nativeCallArkTS", nullptr, NativeCallArkTS, nullptr, nullptr, nullptr, napi_default, nullptr },
-        { "nativeUvLoop", nullptr, NativeUvLoop, nullptr, nullptr, nullptr, napi_default, nullptr },
     };
     napi_define_properties(env, exports, sizeof(desc) / sizeof(desc[0]), desc);
     return exports;

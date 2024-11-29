@@ -47,7 +47,7 @@ export let initDietRecords: Array<DietRecord> = [
 
 export function getDietRecords(): Array<DietRecord> {
   return DEBUG_PREVIEW ? initDietRecords.concat(mockDietRecords) :
-  AppStorage.get<Array<DietRecord>>('dietRecords') as Array<DietRecord>
+  AppStorage.Get<Array<DietRecord>>('dietRecords') as Array<DietRecord>
 }
 
 export function getFoodCategories(): Category[] {
@@ -65,7 +65,7 @@ export function getMileTimes(): string[] {
     let mealTimeResources: Resource[] = [$r("app.string.meal_time_breakfast"), $r('app.string.meal_time_lunch'), $r('app.string.meal_time_dinner'), $r('app.string.meal_time_supper'), $r('app.string.category_dessert')]
     let mealTimes: string[] = []
     mealTimeResources.forEach(item => {
-      let mealTime: string = getContext().resourceManager.getStringSync(item)
+      let mealTime: string = getContext().resourceManager.getStringSync(item.id)
       if (mealTime !== '') {
         mealTimes.push(mealTime)
       }
@@ -155,5 +155,5 @@ export function updateDietWeight(recordId: number, weight: number) {
     return record.id === recordId
   })
   dietRecords[index].weight = weight
-  AppStorage.setOrCreate<Array<DietRecord>>('dietRecords', dietRecords)
+  AppStorage.SetOrCreate<Array<DietRecord>>('dietRecords', dietRecords)
 }
