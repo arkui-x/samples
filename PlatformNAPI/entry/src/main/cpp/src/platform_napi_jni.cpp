@@ -31,8 +31,7 @@ struct {
     jobject globalRef;
 } g_pluginClass;
 
-bool PlatformNAPIJni::Register(void *env)
-{
+bool PlatformNAPIJni::Register(void *env) {
     auto *jniEnv = static_cast<JNIEnv *>(env);
     CHECK_AND_RETURN(jniEnv, "jniEnv", false);
 
@@ -49,8 +48,7 @@ bool PlatformNAPIJni::Register(void *env)
     return true;
 }
 
-void PlatformNAPIJni::NativeInit(JNIEnv *env, jobject jobj)
-{
+void PlatformNAPIJni::NativeInit(JNIEnv *env, jobject jobj) {
     g_pluginClass.globalRef = env->NewGlobalRef(jobj);
     CHECK_AND_RETURN_VOID(g_pluginClass.globalRef, "g_pluginClass.globalRef");
 
@@ -66,8 +64,7 @@ void PlatformNAPIJni::NativeInit(JNIEnv *env, jobject jobj)
     env->DeleteLocalRef(cls);
 }
 
-std::string PlatformNAPIJni::GetDeviceBrand()
-{
+std::string PlatformNAPIJni::GetDeviceBrand() {
     auto env = ARKUI_X_Plugin_GetJniEnv();
     CHECK_AND_RETURN(env, "env", "");
 
@@ -81,8 +78,7 @@ std::string PlatformNAPIJni::GetDeviceBrand()
     return resultStr;
 }
 
-std::string PlatformNAPIJni::GetProductModel()
-{
+std::string PlatformNAPIJni::GetProductModel() {
     auto env = ARKUI_X_Plugin_GetJniEnv();
     CHECK_AND_RETURN(env, "env", "");
 

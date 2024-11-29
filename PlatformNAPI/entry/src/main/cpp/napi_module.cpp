@@ -28,8 +28,7 @@
 #include "include/platform_napi.h"
 #endif
 
-static napi_value Add(napi_env env, napi_callback_info info)
-{
+static napi_value Add(napi_env env, napi_callback_info info) {
     size_t argc = 2;
     napi_value args[2] = {nullptr};
     napi_get_cb_info(env, info, &argc, args, nullptr, nullptr);
@@ -51,8 +50,7 @@ static napi_value Add(napi_env env, napi_callback_info info)
     return sum;
 }
 
-static napi_value NativeCallArkTS(napi_env env, napi_callback_info info)
-{
+static napi_value NativeCallArkTS(napi_env env, napi_callback_info info) {
     size_t argc = 1;
     napi_value args[1] = {nullptr};
     napi_get_cb_info(env, info, &argc, args, nullptr, nullptr);
@@ -74,8 +72,7 @@ static napi_value NativeCallArkTS(napi_env env, napi_callback_info info)
 }
 
 #if defined(ANDROID_PLATFORM) || defined(IOS_PLATFORM)
-static napi_value NativeUvLoop(napi_env env, napi_callback_info info)
-{
+static napi_value NativeUvLoop(napi_env env, napi_callback_info info) {
     uv_loop_t *loop = new uv_loop_t;
     int value0 = uv_loop_init(loop);
     uv_run(loop, UV_RUN_ONCE);
@@ -86,8 +83,7 @@ static napi_value NativeUvLoop(napi_env env, napi_callback_info info)
     return result;
 }
 
-static napi_value GetDeviceBrand(napi_env env, napi_callback_info info)
-{
+static napi_value GetDeviceBrand(napi_env env, napi_callback_info info) {
     auto platformNAPIPlugin = PlatformNAPI::Create();
     CHECK_AND_RETURN(platformNAPIPlugin, "platformNAPIPlugin", nullptr);
     auto value = platformNAPIPlugin->GetDeviceBrand();
@@ -96,8 +92,7 @@ static napi_value GetDeviceBrand(napi_env env, napi_callback_info info)
     return napiValue;
 }
 
-static napi_value GetProductModel(napi_env env, napi_callback_info info)
-{
+static napi_value GetProductModel(napi_env env, napi_callback_info info) {
     auto platformNAPIPlugin = PlatformNAPI::Create();
     CHECK_AND_RETURN(platformNAPIPlugin, "platformNAPIPlugin", nullptr);
     auto value = platformNAPIPlugin->GetProductModel();
@@ -108,8 +103,7 @@ static napi_value GetProductModel(napi_env env, napi_callback_info info)
 #endif
 
 EXTERN_C_START
-static napi_value Init(napi_env env, napi_value exports)
-{
+static napi_value Init(napi_env env, napi_value exports) {
     napi_property_descriptor desc[] = {
 #if defined(ANDROID_PLATFORM) || defined(IOS_PLATFORM)
         {"nativeUvLoop", nullptr, NativeUvLoop, nullptr, nullptr, nullptr, napi_default, nullptr},
@@ -135,15 +129,13 @@ static napi_module demoModule = {
 };
 
 #ifdef ANDROID_PLATFORM
-static void PlatformNAPIJniRegister()
-{
+static void PlatformNAPIJniRegister() {
     const char className[] = "com.example.platformnapi.DeviceInfo";
     ARKUI_X_Plugin_RegisterJavaPlugin(&PlatformNAPIJni::Register, className);
 }
 #endif
 
-extern "C" __attribute__((constructor)) void RegisterEntryModule(void)
-{
+extern "C" __attribute__((constructor)) void RegisterEntryModule(void) {
     napi_module_register(&demoModule);
 #ifdef ANDROID_PLATFORM
     ARKUI_X_Plugin_RunAsyncTask(&PlatformNAPIJniRegister, ARKUI_X_Plugin_Thread_Mode::ARKUI_X_PLUGIN_PLATFORM_THREAD);
