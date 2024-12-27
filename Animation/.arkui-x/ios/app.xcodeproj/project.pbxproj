@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 52;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C8DDF71F2D1E9F7D002AA3B1 /* NativeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C8DDF71D2D1E9F7D002AA3B1 /* NativeViewController.m */; };
 		DF4BEDE929F4F5280060CCEB /* EntryEntryAbilityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF4BEDE729F4F5270060CCEB /* EntryEntryAbilityViewController.m */; };
 		DF9C1B5E28B9FC3A005DCF58 /* libarkui_ios.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF9C1B5D28B9FC3A005DCF58 /* libarkui_ios.xcframework */; };
 		DF9C1B5F28B9FC3A005DCF58 /* libarkui_ios.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DF9C1B5D28B9FC3A005DCF58 /* libarkui_ios.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -32,10 +33,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		C8DDF71D2D1E9F7D002AA3B1 /* NativeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NativeViewController.m; path = "../../../../../../../../.Trash/samples/Animation/.arkui-x/ios/app/NativeViewController.m"; sourceTree = "<group>"; };
+		C8DDF71E2D1E9F7D002AA3B1 /* NativeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NativeViewController.h; path = "../../../../../../../../.Trash/samples/Animation/.arkui-x/ios/app/NativeViewController.h"; sourceTree = "<group>"; };
 		DF4BEDE729F4F5270060CCEB /* EntryEntryAbilityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EntryEntryAbilityViewController.m; sourceTree = "<group>"; };
 		DF4BEDE829F4F5280060CCEB /* EntryEntryAbilityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EntryEntryAbilityViewController.h; sourceTree = "<group>"; };
 		DF9C1B5D28B9FC3A005DCF58 /* libarkui_ios.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = libarkui_ios.xcframework; path = frameworks/libarkui_ios.xcframework; sourceTree = "<group>"; };
-		DF9C1B6028B9FC4B005DCF58 /* arkui-x */ = {isa = PBXFileReference; lastKnownFileType = folder; path = arkui-x; sourceTree = "<group>"; };
+		DF9C1B6028B9FC4B005DCF58 /* arkui-x */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "arkui-x"; sourceTree = "<group>"; };
 		F0AF1ACD27D3684F008C55DD /* app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = app.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0AF1AD027D3684F008C55DD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F0AF1AD127D3684F008C55DD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -78,6 +81,8 @@
 		F0AF1ACF27D3684F008C55DD /* app */ = {
 			isa = PBXGroup;
 			children = (
+				C8DDF71E2D1E9F7D002AA3B1 /* NativeViewController.h */,
+				C8DDF71D2D1E9F7D002AA3B1 /* NativeViewController.m */,
 				DF4BEDE829F4F5280060CCEB /* EntryEntryAbilityViewController.h */,
 				DF4BEDE729F4F5270060CCEB /* EntryEntryAbilityViewController.m */,
 				F0AF1AD027D3684F008C55DD /* AppDelegate.h */,
@@ -105,7 +110,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F0AF1AE627D36856008C55DD /* Build configuration list for PBXNativeTarget "app" */;
 			buildPhases = (
-				F6350011ABDE4DA0BD024676 /* Run Script */,
+				F6350011ABDE4DA0BD024676 /* Run My Script */,
 				F0AF1AC927D3684F008C55DD /* Sources */,
 				F0AF1ACA27D3684F008C55DD /* Frameworks */,
 				F0AF1ACB27D3684F008C55DD /* Resources */,
@@ -121,28 +126,6 @@
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
-
-/* Begin PBXShellScriptBuildPhase section */
-      F6350011ABDE4DA0BD024676 /* Run Script */ = {
-          isa = PBXShellScriptBuildPhase;
-          buildActionMask = 2147483647;
-          files = (
-          );
-          inputPaths = (
-          );
-          name = "Run My Script";
-          outputPaths = (
-          );
-          runOnlyForDeploymentPostprocessing = 0;
-          shellPath = "/bin/sh";
-          shellScript = '# Select whether you want to execute the compile arkts script.
-configBuildFlag=false
-if [ "$configBuildFlag" = "false" ]; then
-	exit 0
-fi
-sh ${SRCROOT}/buildArkTS.sh';
-      };
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXProject section */
 		F0AF1AC527D3684F008C55DD /* Project object */ = {
@@ -186,6 +169,23 @@ sh ${SRCROOT}/buildArkTS.sh';
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		F6350011ABDE4DA0BD024676 /* Run My Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Run My Script";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Select whether you want to execute the compile arkts script.\nconfigBuildFlag=false\nif [ \"$configBuildFlag\" = \"false\" ]; then\n\texit 0\nfi\nsh ${SRCROOT}/buildArkTS.sh";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		F0AF1AC927D3684F008C55DD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -194,6 +194,7 @@ sh ${SRCROOT}/buildArkTS.sh';
 				F0AF1AD227D3684F008C55DD /* AppDelegate.m in Sources */,
 				DF4BEDE929F4F5280060CCEB /* EntryEntryAbilityViewController.m in Sources */,
 				F0AF1AE327D36856008C55DD /* main.m in Sources */,
+				C8DDF71F2D1E9F7D002AA3B1 /* NativeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
