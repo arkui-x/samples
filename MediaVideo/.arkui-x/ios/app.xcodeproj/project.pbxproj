@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 52;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -11,6 +11,7 @@
 		6475C8EB50CB4D7B8B6EF2DF /* libhilog.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9BCE5D318F7F4079ABAEB58D /* libhilog.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		9F84DCA1720C4102AAE5A9D5 /* libmultimedia_media.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 23CDBFE5468F4A0EAA2ADADB /* libmultimedia_media.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		BC289A9A504A4A939B0F604B /* libmultimedia_media.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23CDBFE5468F4A0EAA2ADADB /* libmultimedia_media.xcframework */; };
+		C872ABF62D22C2CE000A94FA /* NativeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C872ABF42D22C2CE000A94FA /* NativeViewController.m */; };
 		DF4BEDE929F4F5280060CCEB /* EntryEntryAbilityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF4BEDE729F4F5270060CCEB /* EntryEntryAbilityViewController.m */; };
 		DF9C1B5E28B9FC3A005DCF58 /* libarkui_ios.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF9C1B5D28B9FC3A005DCF58 /* libarkui_ios.xcframework */; };
 		DF9C1B5F28B9FC3A005DCF58 /* libarkui_ios.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DF9C1B5D28B9FC3A005DCF58 /* libarkui_ios.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -40,6 +41,8 @@
 /* Begin PBXFileReference section */
 		23CDBFE5468F4A0EAA2ADADB /* libmultimedia_media.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = libmultimedia_media.xcframework; path = frameworks/libmultimedia_media.xcframework; sourceTree = "<group>"; };
 		9BCE5D318F7F4079ABAEB58D /* libhilog.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = libhilog.xcframework; path = frameworks/libhilog.xcframework; sourceTree = "<group>"; };
+		C872ABF42D22C2CE000A94FA /* NativeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NativeViewController.m; sourceTree = "<group>"; };
+		C872ABF52D22C2CE000A94FA /* NativeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NativeViewController.h; sourceTree = "<group>"; };
 		DF4BEDE729F4F5270060CCEB /* EntryEntryAbilityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EntryEntryAbilityViewController.m; sourceTree = "<group>"; };
 		DF4BEDE829F4F5280060CCEB /* EntryEntryAbilityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EntryEntryAbilityViewController.h; sourceTree = "<group>"; };
 		DF9C1B5D28B9FC3A005DCF58 /* libarkui_ios.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = libarkui_ios.xcframework; path = frameworks/libarkui_ios.xcframework; sourceTree = "<group>"; };
@@ -88,6 +91,8 @@
 		F0AF1ACF27D3684F008C55DD /* app */ = {
 			isa = PBXGroup;
 			children = (
+				C872ABF52D22C2CE000A94FA /* NativeViewController.h */,
+				C872ABF42D22C2CE000A94FA /* NativeViewController.m */,
 				DF4BEDE829F4F5280060CCEB /* EntryEntryAbilityViewController.h */,
 				DF4BEDE729F4F5270060CCEB /* EntryEntryAbilityViewController.m */,
 				F0AF1AD027D3684F008C55DD /* AppDelegate.h */,
@@ -183,6 +188,7 @@
 				F0AF1AD227D3684F008C55DD /* AppDelegate.m in Sources */,
 				DF4BEDE929F4F5280060CCEB /* EntryEntryAbilityViewController.m in Sources */,
 				F0AF1AE327D36856008C55DD /* main.m in Sources */,
+				C872ABF62D22C2CE000A94FA /* NativeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
