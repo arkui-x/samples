@@ -197,6 +197,5 @@ struct Index {
 
       LogInPage({ showLogIn: this.showLogIn, logInHeight: this.logInHeight })
     }
-    .margin({top: this.osName.startsWith('iOS') ? 60 : 0})
   }
 }
