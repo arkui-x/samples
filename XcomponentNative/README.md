@@ -106,6 +106,18 @@ entry/src/main/
 
 3.本示例需要使用DevEco Studio 5.0 Beta1 (Build Version: 5.0.3.403, built on June 21, 2024)及以上版本才可编译运行。
 
+##### 针对CMakeLists.txt的检查说明：
+
+- 代码路径：.arkui-x/android/app/src/main/cpp/CMakeLists.txt
+
+1. 本示例需要配置“ARKUIX_SDK_HOME”的环境变量，用于CMakeLists.txt文件读取ArkUI-X SDK的文件位置。
+
+2. CMakeLists.txt文件中的include路径需要检查对应API下的路径是否存在，例如下面路径，需要有API 13的ArkUI-X SDK存在：
+
+```shell
+set(NATIVE_INCLUDE_PATH "$ENV{ARKUIX_SDK_HOME}/13/arkui-x/engine/lib/include/")
+```
+
 ## 下载
 
 如需单独下载本工程，执行如下命令：
