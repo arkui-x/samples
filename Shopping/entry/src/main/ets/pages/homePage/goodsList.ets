@@ -15,6 +15,7 @@
 
 import { ProductDataModel } from '../../model/homeModel'
 import { productData } from '../../data/homeData'
+import { router } from '@kit.ArkUI'
 
 class GoodListSource implements IDataSource {
   totalCount(): number {
@@ -92,6 +93,11 @@ export struct GoodsList {
           .border({ width: 1, color: '#70808080', radius: 10 })
           .margin({ top: 3, bottom: 3 })
           .backgroundColor(Color.White)
+          .onClick(() => {
+            router.pushUrl({
+              url: 'pages/detailPage/detail',
+            })
+          })
         }, (item: number) => JSON.stringify(item))
       }
       .columnsTemplate('1fr 1fr')

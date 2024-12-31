@@ -15,6 +15,7 @@
 
 import { ShopCartItemDataModel } from '../../model/homeModel'
 import { shopCartItemData } from '../../data/homeData'
+import { router } from '@kit.ArkUI'
 
 @Component
 export struct Other {
@@ -63,5 +64,10 @@ export struct Other {
     .alignItems(HorizontalAlign.Start)
     .border({ radius: 10 })
     .backgroundColor(Color.White)
+    .onClick(() => {
+      router.pushUrl({
+        url: 'pages/detailPage/detail',
+      })
+    })
   }
 }

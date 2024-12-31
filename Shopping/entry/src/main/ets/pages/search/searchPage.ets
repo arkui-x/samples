@@ -74,15 +74,14 @@ struct SearchPage {
             this.active = true
           })
 
-          Flex({ justifyContent: FlexAlign.SpaceBetween }) {
+          Flex({ justifyContent: FlexAlign.SpaceAround, alignItems: ItemAlign.Center  }) {
             Column() {
               TextInput({ placeholder: this.placeholder, text: this.value })
                 .placeholderFont({ size: 10 * this.ratio })
                 .enterKeyType(EnterKeyType.Search)
-                .height(30 * this.ratio)
+                .height(35 * this.ratio)
                 .backgroundColor(Color.White)
                 .width(170 * this.ratio)
-                .enabled(false)
             }
 
             Image('/resources/icon/camera.png')

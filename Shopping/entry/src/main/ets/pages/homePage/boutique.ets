@@ -15,6 +15,7 @@
 
 import { BoutiqueModel } from '../../model/homeModel'
 import { boutiqueData } from '../../data/homeData'
+import { router } from '@kit.ArkUI'
 
 @Component
 export struct Boutique {
@@ -43,7 +44,11 @@ export struct Boutique {
                 .objectFit(ImageFit.Contain)
             }
             .width('100%')
-          }
+          }.onClick(() => {
+            router.pushUrl({
+              url: 'pages/detailPage/detail',
+            })
+          })
           .width('50%')
           .alignItems(HorizontalAlign.Start)
         }, (item: BoutiqueModel) => JSON.stringify(item))
