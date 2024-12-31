@@ -16,6 +16,7 @@
 import media from '@ohos.multimedia.media';
 import { BusinessError } from '@ohos.base'
 import common from '@ohos.app.ability.common';
+import deviceInfo from '@ohos.deviceInfo';
 
 @Entry
 @Component
@@ -24,6 +25,7 @@ struct MediaVideo {
   @State flag2: boolean = false;
   @State flag3: boolean = false;
   @State flag4: boolean = false;
+  @State hidepreview: boolean = true;
   avPlayer?: media.AVPlayer;
   surfaceId: string = '';
   private xComponentController: XComponentController = new XComponentController();
@@ -58,6 +60,7 @@ struct MediaVideo {
       this.flag2 = false
       this.flag3 = false
       this.flag4 = false
+      this.hidepreview = true
       this.avPlayer = await media.createAVPlayer()
       console.info('CreateAVPlayer success')
       setTimeout(async () => {
@@ -100,6 +103,10 @@ struct MediaVideo {
         if (!this.checkNull()) {
           this.avPlayer!.prepare().then(() => {
             console.info('Prepare success')
+            if (deviceInfo.osFullName.toLowerCase().startsWith('android')) {
+              this.showPreviewPic();
+            }
+            this.hidepreview = false
             setTimeout(() => {
               this.flag1 = false
               this.flag2 = false
@@ -117,6 +124,20 @@ struct MediaVideo {
     }
   }
 
+  showPreviewPic() {
+    this.avPlayer!.play().then(() => {
+      console.info('play success')
+      this.avPlayer!.pause().then(() => {
+        console.info('pause success')
+      }).catch((err: BusinessError) => {
+        console.info('pause failed : ' + JSON.stringify(err))
+      })
+
+    }).catch((err: BusinessError) => {
+      console.info('play failed : ' + JSON.stringify(err))
+    })
+  }
+
   Play() {
     if (this.checkNull()) {
       return
@@ -125,6 +146,7 @@ struct MediaVideo {
     this.flag2 = false
     this.flag3 = false
     this.flag4 = false
+    this.hidepreview = false
     this.avPlayer!.play().then(() => {
       this.flag1 = false
       this.flag2 = false
@@ -144,6 +166,7 @@ struct MediaVideo {
     this.flag2 = false
     this.flag3 = false
     this.flag4 = false
+    this.hidepreview = true
     this.avPlayer!.release().then(() => {
       console.info('Release success')
       setTimeout(() => {
@@ -166,15 +189,23 @@ struct MediaVideo {
             .fontWeight(FontWeight.Bold)
             .margin({ bottom: $r('app.float.marginData') })
 
-          XComponent({
-            id: 'xComponent',
-            type: 'surface',
-            controller: this.xComponentController
-          }).onLoad(() => {
-            this.surfaceId = this.xComponentController.getXComponentSurfaceId()
-          })
-            .size({ width: $r('app.float.xComponentWidth'), height: $r('app.float.xComponentHeight') })
-            .margin({ bottom: $r('app.float.marginData') })
+          Stack() {
+            XComponent({
+              id: 'xComponent',
+              type: 'surface',
+              controller: this.xComponentController
+            }).onLoad(() => {
+              this.surfaceId = this.xComponentController.getXComponentSurfaceId()
+            })
+              .size({ width: $r('app.float.xComponentWidth'), height: $r('app.float.xComponentHeight') })
+              .margin({ bottom: $r('app.float.marginData') })
+
+            Text()
+              .size({ width: $r('app.float.xComponentWidth'), height: $r('app.float.xComponentHeight') })
+              .margin({ bottom: $r('app.float.marginData') })
+              .backgroundColor("#000000")
+              .visibility(this.hidepreview ? Visibility.Visible : Visibility.None)
+          }
 
           Button($r('app.string.buttonText1'))
             .width('80%')
