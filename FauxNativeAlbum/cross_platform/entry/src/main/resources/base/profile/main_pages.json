@@ -1,8 +1,0 @@
-{
-  "src": [
-    "pages/Index",
-    "pages/PhotoRedirect",
-    "pages/DetailPage",
-    "pages/VideoDetailPage"
-  ]
-}
