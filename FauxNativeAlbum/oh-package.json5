@@ -1,9 +1,7 @@
 {
   "modelVersion": "5.0.0",
   "license": "",
-  "devDependencies": {
-    //    "@ohos/hypium": "1.0.6"
-  },
+  "devDependencies": {},
   "author": "",
   "name": "project",
   "description": "Please describe the basic information.",
