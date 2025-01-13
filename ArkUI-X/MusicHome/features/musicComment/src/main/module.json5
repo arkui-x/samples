@@ -1,0 +1,10 @@
+{
+  "module": {
+    "name": "musicComment",
+    "type": "har",
+    "description": "$string:shared_desc",
+    "deviceTypes": [
+      "default"
+    ]
+  }
+}

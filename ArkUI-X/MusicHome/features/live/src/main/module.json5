@@ -1,0 +1,10 @@
+{
+  "module": {
+    "name": "live",
+    "type": "har",
+    "description": "$string:shared_desc",
+    "deviceTypes": [
+      "default"
+    ]
+  }
+}
