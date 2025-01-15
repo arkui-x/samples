@@ -1,0 +1,15 @@
+{
+  "name": "arkuix",
+  "version": "1.0.0",
+  "description": "Please describe the basic information.",
+  "main": "",
+  "author": "",
+  "license": "",
+  "dependencies": {
+    "@ohos/utils": "file:../../../commons/utils",
+    "@ohos/main": "file:../../../features/main",
+    "@ohos/map": "file:../../../features/map",
+    "@ohos/zones": "file:../../../features/zones",
+    "@ohos/train": "file:../../../features/train"
+  }
+}

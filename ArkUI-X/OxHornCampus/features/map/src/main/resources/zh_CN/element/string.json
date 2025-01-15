@@ -1,0 +1,45 @@
+{
+  "string": [
+
+    {
+      "name": "train_station",
+      "value": "火车站"
+    },
+    {
+      "name": "mother_child_room",
+      "value": "母婴室"
+    },
+    {
+      "name": "car_road",
+      "value": "车行道"
+    },
+    {
+      "name": "cafe",
+      "value": "咖啡厅"
+    },
+    {
+      "name": "smoking_area",
+      "value": "吸烟区"
+    },
+    {
+      "name": "convenience_store",
+      "value": "便利店"
+    },
+    {
+      "name": "gymnasium",
+      "value": "健身房"
+    },
+    {
+      "name": "restaurant",
+      "value": "餐厅"
+    },
+    {
+      "name": "side_walk",
+      "value": "人行道"
+    },
+    {
+      "name": "library",
+      "value": "图书馆"
+    }
+  ]
+}

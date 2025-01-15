@@ -1,0 +1,44 @@
+{
+  "string": [
+    {
+      "name": "train_station",
+      "value": "Train Station"
+    },
+    {
+      "name": "mother_child_room",
+      "value": "Mother Room"
+    },
+    {
+      "name": "car_road",
+      "value": "Car Road"
+    },
+    {
+      "name": "cafe",
+      "value": "Cafe"
+    },
+    {
+      "name": "smoking_area",
+      "value": "Smoking Area"
+    },
+    {
+      "name": "convenience_store",
+      "value": "Convenience Store"
+    },
+    {
+      "name": "gymnasium",
+      "value": "Gymnasium"
+    },
+    {
+      "name": "restaurant",
+      "value": "Restaurant"
+    },
+    {
+      "name": "side_walk",
+      "value": "Side Walk"
+    },
+    {
+      "name": "library",
+      "value": "Library"
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "color": [
+    {
+      "name": "color_gradient_1",
+      "value": "#ff515151"
+    },
+    {
+      "name": "color_gradient_2",
+      "value": "#ff222222"
+    },
+    {
+      "name": "introduction_page_blue_lighter",
+      "value": "#8ECCE7"
+    },
+    {
+      "name": "introduction_page_red_light",
+      "value": "#DC9187"
+    },
+    {
+      "name": "introduction_page_red",
+      "value": "#AF525A"
+    },
+    {
+      "name": "introduction_page_blue_light",
+      "value": "#83AEDB"
+    },
+    {
+      "name": "introduction_page_orange_light",
+      "value": "#E5A77D"
+    },
+    {
+      "name": "introduction_page_orange_dark",
+      "value": "#B88668"
+    },
+    {
+      "name": "introduction_d_page_blue",
+      "value": "#8EA9D2"
+    },
+    {
+      "name": "introduction_c_page_blue",
+      "value": "#84C6E2"
+    },
+    {
+      "name": "introduction_b_page_blue",
+      "value": "#82B9FB"
+    },
+    {
+      "name": "introduction_page_green",
+      "value": "#346B41"
+    },
+    {
+      "name": "introduction_page_blue",
+      "value": "#244050"
+    }
+  ]
+}

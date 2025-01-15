@@ -1,0 +1,9 @@
+{
+  "module": {
+    "name": "zones",
+    "type": "har",
+    "deviceTypes": [
+      "default"
+    ]
+  }
+}

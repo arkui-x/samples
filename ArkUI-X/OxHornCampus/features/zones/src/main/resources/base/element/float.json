@@ -1,0 +1,16 @@
+{
+  "float": [
+    {
+      "name": "small_image_border_radius",
+      "value": "8vp"
+    },
+    {
+      "name": "common_border_radius",
+      "value": "16vp"
+    },
+    {
+      "name": "indicator_bottom",
+      "value": "100vp"
+    }
+  ]
+}

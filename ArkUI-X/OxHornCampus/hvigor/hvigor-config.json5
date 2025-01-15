@@ -1,0 +1,9 @@
+{
+  "modelVersion": "5.0.0",
+  "dependencies": {
+    "@ohos/hvigor-ohos-arkui-x-plugin": "4.2.4"
+  },
+  "execution": {},
+  "logging": {},
+  "debugging": {}
+}

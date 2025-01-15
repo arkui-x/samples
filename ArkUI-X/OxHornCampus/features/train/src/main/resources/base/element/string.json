@@ -1,0 +1,20 @@
+{
+  "string": [
+    {
+      "name": "line",
+      "value": "%s号线路"
+    },
+    {
+      "name": "in_operation",
+      "value": "(运营中)"
+    },
+    {
+      "name": "non_operational",
+      "value": "(非运营)"
+    },
+    {
+      "name": "train_interval",
+      "value": "约%s分钟/趟"
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "app": {
+    "signingConfigs": [
+    ],
+    "products": [
+      {
+        "name": "default",
+        "signingConfig": "default",
+        "compileSdkVersion": "5.0.0(12)",
+        "compatibleSdkVersion": "5.0.0(12)",
+        "runtimeOS": "HarmonyOS"
+      }
+    ],
+  },
+  "modules": [
+    {
+      "name": "harmonyos",
+      "srcPath": "./products/phone/harmonyos",
+      "targets": [
+        {
+          "name": "default",
+          "applyToProducts": [
+            "default"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "arkuix",
+      "srcPath": "./products/phone/arkuix",
+      "targets": [
+        {
+          "name": "default",
+          "applyToProducts": [
+            "default"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "utils",
+      "srcPath": "./commons/utils",
+    },
+    {
+      "name": "main",
+      "srcPath": "./features/main",
+    },
+    {
+      "name": "map",
+      "srcPath": "./features/map",
+    },
+    {
+      "name": "zones",
+      "srcPath": "./features/zones"
+    },
+    {
+      "name": "train",
+      "srcPath": "./features/train",
+    },
+  ]
+}
