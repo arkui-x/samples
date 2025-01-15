@@ -1,0 +1,36 @@
+{
+  "string": [
+    {
+      "name": "empty_text",
+      "value": "暂无数据"
+    },
+    {
+      "name": "commodity_piece_description",
+      "value": "【%s】%s"
+    },
+    {
+      "name": "commodity_piece",
+      "value": "￥%d"
+    },
+    {
+      "name": "home",
+      "value": "首页"
+    },
+    {
+      "name": "new_product",
+      "value": "新品"
+    },
+    {
+      "name": "cart",
+      "value": "购物车"
+    },
+    {
+      "name": "mine",
+      "value": "我的"
+    },
+    {
+      "name": "splash_desc",
+      "value": "购物总有新玩法"
+    }
+  ]
+}

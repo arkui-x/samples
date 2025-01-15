@@ -1,0 +1,184 @@
+{
+  "string": [
+    {
+      "name": "header_bar_title",
+      "value": "确认订单"
+    },
+    {
+      "name": "bottom_bar_button",
+      "value": "提交订单"
+    },
+    {
+      "name": "order_list_reward",
+      "value": "配送"
+    },
+    {
+      "name": "order_list_standard_reward",
+      "value": "标准配送"
+    },
+    {
+      "name": "order_list_invoices",
+      "value": "发票"
+    },
+    {
+      "name": "order_list_personal_invoices",
+      "value": "电子普通发票-个人"
+    },
+    {
+      "name": "bottom_bar_amount",
+      "value": "￥ %d"
+    },
+    {
+      "name": "order_commit_success",
+      "value": "提交成功"
+    },
+    {
+      "name": "order_commit_fail",
+      "value": "提交失败 %d"
+    },
+    {
+      "name": "order_money",
+      "value": "实付款"
+    },
+    {
+      "name": "product_price",
+      "value": "商品金额"
+    },
+    {
+      "name": "fee_price",
+      "value": "运费"
+    },
+    {
+      "name": "btn_pay",
+      "value": "去支付"
+    },
+    {
+      "name": "money",
+      "value": "￥%s"
+    },
+    {
+      "name": "order_id",
+      "value": "订单编号：%s"
+    },
+    {
+      "name": "pay_now",
+      "value": "立即支付"
+    },
+    {
+      "name": "confirm_pay",
+      "value": "支付"
+    },
+    {
+      "name": "confirm_harvest",
+      "value": "确认收货"
+    },
+    {
+      "name": "guess_like",
+      "value": "猜你喜欢"
+    },
+    {
+      "name": "all_orders",
+      "value": "全部"
+    },
+    {
+      "name": "pending_payment",
+      "value": "待付款"
+    },
+    {
+      "name": "waiting_shipment",
+      "value": "待发货"
+    },
+    {
+      "name": "to_be_received",
+      "value": "待收货"
+    },
+    {
+      "name": "to_be_evaluated",
+      "value": "待评价"
+    },
+    {
+      "name": "my_order",
+      "value": "我的订单"
+    },
+    {
+      "name": "goods_count",
+      "value": "共%d件商品，%s：￥%d"
+    },
+    {
+      "name": "info_success",
+      "value": "%s成功"
+    },
+    {
+      "name": "wait_pay",
+      "value": "待支付"
+    },
+    {
+      "name": "rmb",
+      "value": "￥"
+    },
+    {
+      "name": "quantity",
+      "value": "数量"
+    },
+    {
+      "name": "share",
+      "value": "分享"
+    },
+    {
+      "name": "collection",
+      "value": "收藏"
+    },
+    {
+      "name": "reduction",
+      "value": "降价通知"
+    },
+    {
+      "name": "choice",
+      "value": "已选"
+    },
+    {
+      "name": "send",
+      "value": "送至"
+    },
+    {
+      "name": "send_hint",
+      "value": "请选择您的收货地址"
+    },
+    {
+      "name": "service",
+      "value": "服务"
+    },
+    {
+      "name": "evaluate_favorable",
+      "value": "好评"
+    },
+    {
+      "name": "evaluate_show_more",
+      "value": "查看更多评价"
+    },
+    {
+      "name": "cart",
+      "value": "购物车"
+    },
+    {
+      "name": "index",
+      "value": "首页"
+    },
+    {
+      "name": "insert_cart_success",
+      "value": "加入购物车成功"
+    },
+    {
+      "name": "commodity_desc",
+      "value": "【%s】%s"
+    },
+    {
+      "name": "insert_cart",
+      "value": "加入购物车"
+    },
+    {
+      "name": "buy_now",
+      "value": "立即购买"
+    }
+  ]
+}
