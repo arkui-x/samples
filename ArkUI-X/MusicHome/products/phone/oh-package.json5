@@ -1,0 +1,15 @@
+{
+  "name": "phone",
+  "version": "1.0.0",
+  "description": "Please describe the basic information.",
+  "main": "",
+  "author": "",
+  "license": "",
+  "dependencies": {
+    "@ohos/constantsCommon": "file:../../common/constantsCommon",
+    "@ohos/mediaCommon": "file:../../common/mediaCommon",
+    "@ohos/live": "file:../../features/live",
+    "@ohos/musicComment": "file:../../features/musicComment",
+    "@ohos/musicList": "file:../../features/musicList"
+  }
+}
