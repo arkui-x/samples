@@ -1,0 +1,16 @@
+{
+  "string": [
+    {
+      "name": "page_show",
+      "value": "page from package"
+    },
+    {
+      "name": "login_failed_msg",
+      "value": "Login failed. Please try again."
+    },
+    {
+      "name": "platform_not_supported",
+      "value": "Not supported by current device platform"
+    }
+  ]
+}

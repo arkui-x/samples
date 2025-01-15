@@ -1,0 +1,34 @@
+{
+  "apiType": 'stageMode',
+  "buildOption": {
+    "arkOptions": {
+      "apPath": "./phone.ap",
+      "obfuscation": {
+        "ruleOptions": {
+          "enable": false
+        }
+      },
+      "runtimeOnly": {
+        "packages": [
+          "@ohos/discover",
+          "@ohos/audioplayer",
+          "@ohos/learning",
+          "@ohos/topic",
+          "@ohos/login",
+          "@ohos/mine"
+        ]
+      }
+    },
+    "napiLibFilterOption": {
+      "pickFirsts": [],
+      "pickLasts": [],
+      "excludes": [],
+      "enableOverride": true
+    }
+  },
+  "targets": [
+    {
+      "name": "default",
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "module": {
+    "name": "photomanager",
+    "type": "har",
+    "deviceTypes": [
+      "default"
+    ]
+  }
+}

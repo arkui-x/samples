@@ -1,0 +1,16 @@
+{
+  "string": [
+    {
+      "name": "page_show",
+      "value": "page from package"
+    },
+    {
+      "name": "user_account_error",
+      "value": "账号或密码错误，请重新输入。"
+    },
+    {
+      "name": "failed_msg_title",
+      "value": "错误信息"
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "module": {
+    "name": "topic",
+    "type": "har",
+    "description": "$string:shared_desc",
+    "deviceTypes": [
+      "default"
+    ]
+  }
+}

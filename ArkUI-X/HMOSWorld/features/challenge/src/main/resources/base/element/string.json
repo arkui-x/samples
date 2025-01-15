@@ -1,0 +1,232 @@
+{
+  "string": [
+    {
+      "name": "shared_desc",
+      "value": "description"
+    },
+    {
+      "name": "code_lab_challenge",
+      "value": "Codelabs Training Camp (San Yapo)"
+    },
+    {
+      "name": "challenge_desc",
+      "value": "Here you can enjoy the fun of compiling code!\nMore chances to win amazing prizes!"
+    },
+    {
+      "name": "go_now",
+      "value": " Go right now "
+    },
+    {
+      "name": "routes",
+      "value": "Routes"
+    },
+    {
+      "name": "my_location",
+      "value": "My Location"
+    },
+    {
+      "name": "distance_from",
+      "value": "Distance from you %s"
+    },
+    {
+      "name": "start_navi",
+      "value": "Start Navigation"
+    },
+    {
+      "name": "name_f",
+      "value": "Zone F Paris"
+    },
+    {
+      "name": "name_g",
+      "value": "Zone G Verona"
+    },
+    {
+      "name": "name_h",
+      "value": "Zone H Český Krumlov"
+    },
+    {
+      "name": "name_j",
+      "value": "Zone J Fribourg"
+    },
+    {
+      "name": "name_k",
+      "value": "Zone K Burgundy"
+    },
+    {
+      "name": "name_l",
+      "value": "Zone L Heidelberg"
+    },
+    {
+      "name": "area_name_f",
+      "value": "Zone F Paris"
+    },
+    {
+      "name": "area_name_g",
+      "value": "Zone G Verona"
+    },
+    {
+      "name": "area_name_h",
+      "value": "Zone H Český Krumlov"
+    },
+    {
+      "name": "area_name_j",
+      "value": "Zone J Fribourg"
+    },
+    {
+      "name": "area_name_k",
+      "value": "Zone K Burgundy"
+    },
+    {
+      "name": "area_name_l",
+      "value": "Zone L Heidelberg"
+    },
+    {
+      "name": "area_sub_name_f",
+      "value": "French romantic capital of culture"
+    },
+    {
+      "name": "area_sub_name_g",
+      "value": "The most romantic town"
+    },
+    {
+      "name": "area_sub_name_h",
+      "value": "The most beautiful town"
+    },
+    {
+      "name": "area_sub_name_j",
+      "value": "Small medieval city in Italy"
+    },
+    {
+      "name": "area_sub_name_k",
+      "value": "Sacred place of wine"
+    },
+    {
+      "name": "area_sub_name_l",
+      "value": "A renowned ancient and cultural city"
+    },
+    {
+      "name": "create_year_2015",
+      "value": "Founded in 2015"
+    },
+    {
+      "name": "introduction_paragraph_first_f",
+      "value": "Paris, the capital and largest city of France, is also one of the world's five major international metropolises. As the \"City of Romance\", Paris has a history of more than 1400 years, located in the central part of the Paris Basin and across the Seine River."
+    },
+    {
+      "name": "introduction_paragraph_second_f",
+      "value": "Zone F, inspired by the International University City of Paris, highlights the elegance and exquisiteness of French architecture with elaborate furnishings, French convex windows, and beige limestone."
+    },
+    {
+      "name": "introduction_paragraph_first_g",
+      "value": "Verona is one of the oldest and most beautiful cities in Italy, and the second largest city after Venice. It is not only famous for Verona marble but also known as the city of love, because it is the hometown of Shakespeare's Romeo and Juliet."
+    },
+    {
+      "name": "introduction_paragraph_second_g",
+      "value": "Zone G with Italian style is our only campus block that is surrounded by water, making it similar to the Floating City of Venice. The 7 bridges here conjure up the feeling of the ancient Verona."
+    },
+    {
+      "name": "introduction_paragraph_first_h",
+      "value": "Český Krumlov is a small town in the Czech Republic, known as the most beautiful ancient town in Europe. It was listed as a World Cultural and Natural Heritage by UNESCO in 1992."
+    },
+    {
+      "name": "introduction_paragraph_second_h",
+      "value": "Zone H reproduces the architectural features of castles, churches, and monasteries in Český Krumlov, with a beautiful winding river running through the area, making it a pleasant space for a walk."
+    },
+    {
+      "name": "introduction_paragraph_first_j",
+      "value": "Fribourg is on the cultural border between German-speaking and French-speaking Switzerland. The Gothic architecture bestows upon it an unparalleled charm, with some of the best-preserved stone-paved paths and Catholic churches in Switzerland."
+    },
+    {
+      "name": "introduction_paragraph_second_j",
+      "value": "Zone J draws on the medieval style of Fribourg, featuring the light-colored architecture with white walls and red tiles, combined with the characteristics of ancient city, creating a beautiful landscape alongside the lake."
+    },
+    {
+      "name": "introduction_paragraph_first_k",
+      "value": "Burgundy, located in southern Paris, is a world-famous wine production region with abundant sunshine, producing rich red wines and dry white wines with low tannin and alcohol and moderately high acidity."
+    },
+    {
+      "name": "introduction_paragraph_second_k",
+      "value": "Zone K, modeled after Burgundy, has a unique architectural landscape reshaped from Abbey of Fontenay and Semur-en-Auxois, which features the brown-red roof."
+    },
+    {
+      "name": "introduction_paragraph_first_l",
+      "value": "Heidelberg is a vibrant city in Germany with a unique blend of tradition and modernity, having the reddish-brown ancient castle as the landmark. The University of Heidelberg, where the thinker Hegel studied and worked, is one of the oldest educational institutions in Europe."
+    },
+    {
+      "name": "introduction_paragraph_second_l",
+      "value": "Zone L has ancient-style Heidelberg buildings with white walls and red tiles, referencing the design idea of the University of Heidelberg, which boasts renown in human sciences with a long history. The delicate and magnificent castle stands on the hills, in sharp contrast to the surrounding grid-like roads."
+    },
+    {
+      "name": "build_information_f",
+      "value": "Total area of Zone F: 118944 m2, including 63134 m2 overground and 55810 m2 underground. Administration center, accommodating 2255 staff. Parking space ratio: 34.9%."
+    },
+    {
+      "name": "build_information_g",
+      "value": "Total area of Zone G: 120231 m2, including 61718 m2 overground and 58513 m2 underground. R&D office buildings, accommodating 2204 staff. Parking space ratio: 43.6%."
+    },
+    {
+      "name": "build_information_h",
+      "value": "Total area of Zone H: 120231 m2, including 61718 m2 overground and 58513 m2 underground. R&D office buildings, accommodating 2204 staff. Parking space ratio: 43.6%."
+    },
+    {
+      "name": "build_information_j",
+      "value": "Total area of Zone J: 90907 m2, including 50007 m2 overground and 40899 m2 underground. Administration center, accommodating 1786 staff. Parking space ratio: 36%."
+    },
+    {
+      "name": "build_information_k",
+      "value": "Total area of Zone K: 99828 m2, including 38187 m2 overground and 61641 m2 underground. R&D office buildings, accommodating 1364 staff. Parking space ratio: 77.8%."
+    },
+    {
+      "name": "build_information_l",
+      "value": "Total area of Zone L: 123823 m2, including 58934 m2 overground and 64890 m2 underground. R&D office buildings, accommodating 2105 staff. Parking space ratio: 57.6%."
+    },
+    {
+      "name": "save_image_title",
+      "value": "Save Picture"
+    },
+    {
+      "name": "save_image_button_share",
+      "value": "Share with friends"
+    },
+    {
+      "name": "save_image_button_download",
+      "value": "Save to phone"
+    },
+    {
+      "name": "permission_failed_prompt_msg",
+      "value": "Failed to apply for the permission."
+    },
+    {
+      "name": "save_image_success_prompt_msg",
+      "value": "Saved to album!"
+    },
+    {
+      "name": "manually_setting_permissions",
+      "value": "If you want to use this function in the future, go to Settings - xxx to enable this permission."
+    },
+    {
+      "name": "driving",
+      "value": "Driving"
+    },
+    {
+      "name": "cycling",
+      "value": "Cycling"
+    },
+    {
+      "name": "walking",
+      "value": "Walking"
+    },
+    {
+      "name": "recommended",
+      "value": "Recommended"
+    },
+    {
+      "name": "option_one",
+      "value": "Option 1"
+    },
+    {
+      "name": "option_two",
+      "value": "Option 2"
+    }
+  ]
+}

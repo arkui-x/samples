@@ -1,0 +1,235 @@
+/*
+ * Copyright (c) 2025 Huawei Device Co., Ltd.
+ * Licensed under the Apache License,Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+import { display, router } from '@kit.ArkUI';
+import { common, ConfigurationConstant } from '@kit.AbilityKit';
+import { fileIo } from '@kit.CoreFileKit';
+import { image } from '@kit.ImageKit';
+import { ConferenceView } from '@ohos/conference';
+import { AudioPlayerService, AudioPlayerStatus } from '@ohos/audioplayer';
+import { MapView } from '@ohos/challenge';
+import { DiscoverView } from '@ohos/discover';
+import { LearningView } from '@ohos/learning';
+import {
+  BreakpointSystem,
+  BreakpointTypeEnum,
+  ContinueModel,
+  DarkModeUtil,
+  FileUtil,
+  GlobalContext,
+  LearningResource,
+  Logger,
+  ResourcesType,
+  WebUtil,
+  WindowUtil
+} from '@ohos/utils';
+import { AppConstants } from '@ohos/main';
+import { ProfileConstants } from '@ohos/photomanager';
+import { CustomTabBar } from '../common/components/CustomTabBar';
+import { TabBarType } from '../common/model/TabBarModel';
+import { MineView, UserData, UserModel } from '@ohos/mine';
+
+const TAG = '[MainPage]';
+const context = (getContext(this) as common.UIAbilityContext);
+
+@Entry
+@Component
+struct MainPage {
+  @State currentIndex: TabBarType = TabBarType.DISCOVER;
+  @State webViewController?: WebviewController = undefined;
+  @State learnedId: string = '';
+  @StorageLink('currentBreakpoint') currentBreakpoint: string = BreakpointTypeEnum.MD;
+  @State updateNodeFlag: boolean = true;
+  private breakpointSystem: BreakpointSystem = new BreakpointSystem();
+
+  dynamicLoading(): void {
+    try {
+      import('@ohos/mine/src/main/ets/views/DiscoverArticleDetailView');
+    } catch (err) {
+      Logger.error(TAG, 'dynamicLoading error:' + err);
+    }
+  }
+
+  aboutToAppear() {
+    this.dynamicLoading();
+    WebUtil.createNWeb(WebUtil.WebUrls.ACTIVITY_URL, this.getUIContext());
+    WebUtil.createNWeb(WebUtil.WebUrls.CHALLENGE_URL, this.getUIContext());
+    this.breakpointSystem.register();
+    try {
+      if (canIUse('SystemCapability.Window.SessionManager')) {
+        if (display.isFoldable()) {
+          this.changeOrientation(display.getFoldStatus());
+          display.on('foldStatusChange', (status: display.FoldStatus) => {
+            this.changeOrientation(status);
+          });
+        }
+      }
+    } catch (exception) {
+      Logger.error(TAG, 'Is not fold able device error: ' + JSON.stringify(exception));
+    }
+    WindowUtil.getWindowUtil().setMissionContinueActive(context, true);
+
+    if (ContinueModel.getInstance().isContinue) {
+      let userData: UserData = ContinueModel.getInstance().data.userData as UserData;
+      this.currentIndex = ContinueModel.getInstance().data.mainTabIndex as number;
+      UserModel.getInstance().saveDistributedUserData(userData);
+    }
+    this.createProfile()
+  }
+
+  async createProfile() {
+    let isDisProfileAccess = fileIo.accessSync(ProfileConstants.getInstance().DISTRIBUTED_PROFILE_PATH);
+    Logger.info(TAG, 'isDisProfileAccess:' + isDisProfileAccess);
+    if (isDisProfileAccess) {
+      FileUtil.copyFile(ProfileConstants.getInstance().DISTRIBUTED_PROFILE_PATH,
+        ProfileConstants.getInstance().LOCAL_PROFILE_PATH)
+    }
+    let isLocalProfileAccess = fileIo.accessSync(ProfileConstants.getInstance().LOCAL_PROFILE_PATH);
+    Logger.info(TAG, 'isLocalProfileAccess:' + isLocalProfileAccess);
+    if (isLocalProfileAccess) {
+      let imageSource: image.ImageSource = image.createImageSource(ProfileConstants.getInstance().LOCAL_PROFILE_PATH);
+      imageSource.createPixelMap((err, pixelMap) => {
+        if (!err) {
+          AppStorage.setOrCreate('profilePixelMap', pixelMap);
+        }
+        Logger.error(TAG, `LOCAL_PROFILE_PATH : ${JSON.stringify(err)}`);
+      });
+    }
+  }
+
+  changeOrientation(status: display.FoldStatus) {
+    if (status !== display.FoldStatus.FOLD_STATUS_FOLDED) {
+      AppStorage.setOrCreate('foldExpanded', true);
+      WindowUtil.getWindowUtil().setMainWindowRestricted(getContext(this));
+    } else {
+      AppStorage.setOrCreate('foldExpanded', false);
+      WindowUtil.getWindowUtil().setMainWindowPortrait(getContext(this));
+    }
+  }
+
+  aboutToDisappear() {
+    this.breakpointSystem.unregister();
+    try {
+      display.off('foldStatusChange');
+      display.off('change');
+    } catch (exception) {
+      Logger.error(TAG, 'Failed to unregister callback. Code: ' + JSON.stringify(exception));
+    }
+    WindowUtil.getWindowUtil().setMissionContinueActive(context, false);
+  }
+
+  onPageShow() {
+    if (router.getParams() != undefined) {
+      let params = router.getParams() as Record<string, string>;
+      this.learnedId = params.learningItemId as string;
+    }
+    DarkModeUtil.getDarkModeUtil().checkDarkModeSetting();
+    let jumpArticleId: string = GlobalContext.getContext().getObject('articleId') as string;
+    if (jumpArticleId) {
+      GlobalContext.getContext().deleteObject('articleId');
+      let article: LearningResource = new LearningResource();
+      article.id = jumpArticleId;
+      article.webUrl = GlobalContext.getContext().getObject('webUrl') as string;
+      article.type = GlobalContext.getContext().getObject('type') as ResourcesType;
+      router.pushNamedRoute({
+        name: 'DiscoverArticleDetailView',
+        params: new Object({
+          articleDetail: article,
+        })
+      })
+    }
+    if (this.currentIndex === TabBarType.MINE) {
+      WindowUtil.getWindowUtil().updateStatusBarColor(getContext(this), true);
+    } else {
+      WindowUtil.getWindowUtil().updateStatusBarColor(getContext(this),
+        AppStorage.get('currentColorMode') === ConfigurationConstant.ColorMode.COLOR_MODE_DARK);
+    }
+    Logger.info(TAG, 'onPageShow');
+    if (AppStorage.get<boolean>('getHomeResource')) {
+      this.currentIndex = TabBarType.DISCOVER;
+    }
+  }
+
+  onBackPress(): boolean | void {
+    if (this.currentIndex === TabBarType.ACTIVITY) {
+      let webview = WebUtil.getController(WebUtil.WebUrls.ACTIVITY_URL);
+      if (webview?.accessBackward()) {
+        webview.backward();
+      }
+      return true;
+    }
+  }
+
+  build() {
+    Navigation() {
+      Stack() {
+        if (this.currentBreakpoint === BreakpointTypeEnum.LG) {
+          Image($r('app.media.ic_user_bg'))
+            .width(AppConstants.FULL_PERCENT)
+            .height(AppConstants.FULL_PERCENT)
+        }
+
+        Flex({
+          direction: this.currentBreakpoint === BreakpointTypeEnum.LG ? FlexDirection.RowReverse : FlexDirection.Column,
+        }) {
+          Tabs({ index: this.currentIndex }) {
+            TabContent() {
+              DiscoverView()
+            }
+
+            TabContent() {
+              LearningView({ learnedId: $learnedId })
+            }
+
+            TabContent() {
+              if (canIUse('SystemCapability.Map.Core')) {
+                MapView()
+              }
+            }
+
+            TabContent() {
+              ConferenceView({ updateNodeFlag: $updateNodeFlag })
+            }
+
+            TabContent() {
+              MineView()
+            }
+          }
+          .layoutWeight(1)
+          .barHeight(0)
+          .scrollable(false)
+          .onChange((index) => {
+            this.currentIndex = index;
+            ContinueModel.getInstance().data.mainTabIndex = index;
+
+            if (AppStorage.get('audioPlayerStatus') !== AudioPlayerStatus.IDLE) {
+              AudioPlayerService.getInstance().stop().then(() => {
+                AudioPlayerService.destroy();
+              });
+            }
+          })
+
+          CustomTabBar({ currentIndex: $currentIndex })
+        }
+        .width(AppConstants.FULL_PERCENT)
+        .height(AppConstants.FULL_PERCENT)
+        .backgroundColor((this.currentBreakpoint === BreakpointTypeEnum.LG && this.currentIndex === TabBarType.MINE) ?
+        $r('app.color.clear_color') : $r('sys.color.ohos_id_color_sub_background'))
+      }
+    }
+    .hideTitleBar(true)
+    .mode(NavigationMode.Stack)
+  }
+}

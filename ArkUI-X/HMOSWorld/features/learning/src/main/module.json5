@@ -1,0 +1,10 @@
+{
+  "module": {
+    "name": "learning",
+    "type": "har",
+    "description": "$string:shared_desc",
+    "deviceTypes": [
+      "default"
+    ]
+  }
+}

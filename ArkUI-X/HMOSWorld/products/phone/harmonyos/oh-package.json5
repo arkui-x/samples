@@ -1,0 +1,24 @@
+{
+  "license": "",
+  "devDependencies": {},
+  "author": "",
+  "name": "harmonyos",
+  "description": "Please describe the basic information.",
+  "main": "",
+  "version": "1.0.0",
+  "dependencies": {
+    "@ohos/utils": "file:../../../commons/utils",
+    "@ohos/datastore": "file:../../../commons/datastore",
+    "@ohos/audioplayer": "file:../../../commons/audioplayer",
+    "@ohos/aspect": "file:../../../commons/aspect",
+    "@ohos/conference": "file:../../../features/conference",
+    "@ohos/discover": "file:../../../features/discover",
+    "@ohos/topic": "file:../../../features/topic",
+    "@ohos/mine": "file:../../../features/mine",
+    "@ohos/login": "file:../../../features/login",
+    "@ohos/learning": "file:../../../features/learning",
+    "@ohos/challenge": "file:../../../features/challenge",
+    "@ohos/main": "file:../../../features/main",
+    "@ohos/photomanager": "file:../../../commons/photomanager"
+  }
+}
