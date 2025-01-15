@@ -1,0 +1,16 @@
+{
+  "name": "phone",
+  "version": "1.0.0",
+  "description": "Please describe the basic information.",
+  "main": "",
+  "author": "",
+  "license": "",
+  "dependencies": {
+    "@ohos/common": "file:../../commons/utils",
+    "@ohos/newproduct": "file:../../features/newproduct",
+    "@ohos/home": "file:../../features/home",
+    "@ohos/personal": "file:../../features/personal",
+    "@ohos/shopcart": "file:../../features/shopcart",
+    "@ohos/orderdetail": "file:../../features/orderdetail"
+  }
+}

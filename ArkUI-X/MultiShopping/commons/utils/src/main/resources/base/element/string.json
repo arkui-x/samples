@@ -1,0 +1,36 @@
+{
+  "string": [
+    {
+      "name": "empty_text",
+      "value": "No data"
+    },
+    {
+      "name": "commodity_piece_description",
+      "value": "【%s】%s"
+    },
+    {
+      "name": "commodity_piece",
+      "value": "￥%d"
+    },
+    {
+      "name": "home",
+      "value": "Home"
+    },
+    {
+      "name": "new_product",
+      "value": "NewProduct"
+    },
+    {
+      "name": "cart",
+      "value": "ShoppingCart"
+    },
+    {
+      "name": "mine",
+      "value": "Mine"
+    },
+    {
+      "name": "splash_desc",
+      "value": "There's always a new way to shop"
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "modelVersion": "5.0.0",
+  "license": "ISC",
+  "devDependencies": {
+  },
+  "name": "multishopping",
+  "description": "example description",
+  "version": "1.0.0",
+  "dependencies": {}
+}
