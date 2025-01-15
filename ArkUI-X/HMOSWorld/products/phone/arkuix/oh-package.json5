@@ -1,0 +1,22 @@
+{
+  "license": "",
+  "devDependencies": {},
+  "author": "",
+  "name": "arkuix",
+  "description": "Please describe the basic information.",
+  "main": "",
+  "version": "1.0.0",
+  "dependencies": {
+    "@ohos/main": "file:../../../features/main",
+    "@ohos/discover": "file:../../../features/discover",
+    "@ohos/topic": "file:../../../features/topic",
+    "@ohos/mine": "file:../../../features/mine",
+    "@ohos/datastore": "file:../../../commons/datastore",
+    "@ohos/login": "file:../../../features/login",
+    "@ohos/utils": "file:../../../commons/utils",
+    "@ohos/aspect": "file:../../../commons/aspect",
+    "@ohos/learning": "file:../../../features/learning",
+    "@ohos/conference": "file:../../../features/conference",
+    "@ohos/photomanager": "file:../../../commons/photomanager"
+  }
+}

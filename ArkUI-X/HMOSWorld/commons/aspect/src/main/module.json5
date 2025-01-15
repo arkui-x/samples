@@ -1,0 +1,9 @@
+{
+  "module": {
+    "name": "aspect",
+    "type": "har",
+    "deviceTypes": [
+      "default"
+    ]
+  }
+}

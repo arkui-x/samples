@@ -1,0 +1,12 @@
+{
+  "float": [
+    {
+      "name": "tab_bar_width",
+      "value": "300vp"
+    },
+    {
+      "name": "tabbar_font_size",
+      "value": "15fp"
+    }
+  ]
+}

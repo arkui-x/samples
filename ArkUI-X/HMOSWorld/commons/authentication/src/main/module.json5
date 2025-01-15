@@ -1,0 +1,9 @@
+{
+  "module": {
+    "name": "authentication",
+    "type": "har",
+    "deviceTypes": [
+      "default"
+    ]
+  }
+}

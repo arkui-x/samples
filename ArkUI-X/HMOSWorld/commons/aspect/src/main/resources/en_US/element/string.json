@@ -1,0 +1,16 @@
+{
+  "string": [
+    {
+      "name": "page_show",
+      "value": "page from package"
+    },
+    {
+      "name": "user_account_error",
+      "value": "Incorrect account or password, Please try again."
+    },
+    {
+      "name": "failed_msg_title",
+      "value": "Error Message"
+    }
+  ]
+}

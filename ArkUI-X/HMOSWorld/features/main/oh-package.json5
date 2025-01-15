@@ -1,0 +1,16 @@
+{
+  "name": "main",
+  "version": "1.0.0",
+  "description": "Please describe the basic information.",
+  "main": "Index.ets",
+  "author": "",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "@ohos/aspect": "file:../../commons/aspect",
+    "@ohos/utils": "file:../../commons/utils",
+    "@ohos/uicomponents": "file:../../commons/uicomponents",
+    "@ohos/datastore": "file:../../commons/datastore",
+    "@ohos/topic": "file:../topic",
+    "@ohos/mine": "file:../mine"
+  }
+}
