@@ -1,0 +1,9 @@
+{
+  "module": {
+    "name": "map",
+    "type": "har",
+    "deviceTypes": [
+      "default"
+    ]
+  }
+}

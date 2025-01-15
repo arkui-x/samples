@@ -1,0 +1,20 @@
+{
+  "string": [
+    {
+      "name": "bottom_text_trains",
+      "value": "Trains"
+    },
+    {
+      "name": "bottom_text_map",
+      "value": "Map"
+    },
+    {
+      "name": "bottom_text_zones",
+      "value": "Zones"
+    },
+    {
+      "name": "skip",
+      "value": "跳过"
+    }
+  ]
+}

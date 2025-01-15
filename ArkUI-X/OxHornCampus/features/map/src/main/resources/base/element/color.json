@@ -1,0 +1,48 @@
+{
+  "color": [
+    {
+      "name": "custom_panel_background",
+      "value": "#FAFAFA"
+    },
+    {
+      "name": "train_station_color",
+      "value": "#F5AC00"
+    },
+    {
+      "name": "mother_child_room_color",
+      "value": "#EA482C"
+    },
+    {
+      "name": "car_road_color",
+      "value": "#579DFF"
+    },
+    {
+      "name": "cafe_color",
+      "value": "#F4AC00"
+    },
+    {
+      "name": "smoking_area_color",
+      "value": "#00BF36"
+    },
+    {
+      "name": "convenience_store_color",
+      "value": "#00BF36"
+    },
+    {
+      "name": "gymnasium_color",
+      "value": "#569CFF"
+    },
+    {
+      "name": "restaurant_color",
+      "value": "#F5AD00"
+    },
+    {
+      "name": "side_walk_color",
+      "value": "#EA472B"
+    },
+    {
+      "name": "library_color",
+      "value": "#549AFF"
+    }
+  ]
+}

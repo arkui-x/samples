@@ -1,0 +1,20 @@
+{
+  "string": [
+    {
+      "name": "line",
+      "value": "line%s"
+    },
+    {
+      "name": "in_operation",
+      "value": "(In operation)"
+    },
+    {
+      "name": "non_operational",
+      "value": "(Non operational)"
+    },
+    {
+      "name": "train_interval",
+      "value": "About %s minutes/trip"
+    }
+  ]
+}
