@@ -1,59 +1,70 @@
 # ArkUI-X App Samples
 
 ## Welcome
-Thank you for following the ArkUI-X project. Your contribution to this project will be highly appreciated. If you want to submit code samples or demos, go to the [Samples](https://gitee.com/arkui-x/samples) repository. Thank you again for your support.
+Thank you for following the ArkUI-X project. Your contribution to this project will be highly appreciated. If you want to submit code samples or demos, go to the [Samples](https://gitcode.com/arkui-x/samples) repository. Thank you again for your support.
 
 ### Introduction
-This repository provides a series of app samples to help you quickly learn the APIs and development process of the ArkUI-X project. Each app sample is an independent cross-platform application project. By using the code editor or [CLI](https://gitee.com/arkui-x/cli) development tool to browse code, build projects, and install and run app samples, you'll be able to familiarize yourself with the ArkUI cross-platform application development process.
+This repository provides a series of app samples to help you quickly learn the APIs and development process of the ArkUI-X project. Each app sample is an independent cross-platform application project. By using the code editor or [CLI](https://gitcode.com/arkui-x/cli) development tool to browse code, build projects, and install and run app samples, you'll be able to familiarize yourself with the ArkUI cross-platform application development process.
 
 ### App Samples
 
 - Basic apps
-  - ['HelloWorld'：HelloWorld（API12）](HelloWorld)
-  - ['Library'：Library（API12）](Library)
-  - ['Native'：Native（API12）](Native)
-  - ['MultiAbility'：MultiAbility（API12）](MultiAbility)
-  
+  - ['HelloWorld'：HelloWorld（API12）](BasicFeature/HelloWorld)
+  - ['Library'：Library（API12）](BasicFeature/Library)
+  - ['Native'：Native（API12）](BasicFeature/Native)
+  - ['MultiAbility'：MultiAbility（API12）](BasicFeature/MultiAbility)
 - Featured apps
-  - ['Animation'：Animation（API12）](Animation)
-  - ['Files'：Files（API12）](Files)
-  - ['FauxNativeAlbum'：FauxNativeAlbum（API12）](FauxNativeAlbum)
-  - ['InfiniteList'：InfiniteList（API12）](InfiniteList)
-  - ['JsonExample'：JsonExample（API12）](JsonExample)
-  - ['PlatformBridge'：PlatformBridge（API12）](PlatformBridge)
-  - ['Router'：Router（API12）](Router)
-  - ['WebExample'：WebExample（API12）](WebExample)
-  - ['MediaVideo'：MediaVideo（API12）](MediaVideo)
-  - ['PlatformNAPI'：PlatformNAPI（API12）](PlatformNAPI)
-  - ['XcomponentNative'：XcomponentNative（API12）](XcomponentNative)
-  
+  - ['Animation'：Animation（API12）](SuperFeature/Animation)
+  - ['Files'：Files（API12）](SuperFeature/Files)
+  - ['FauxNativeAlbum'：FauxNativeAlbum（API12）](SuperFeature/FauxNativeAlbum)
+  - ['InfiniteList'：InfiniteList（API12）](SuperFeature/InfiniteList)
+  - ['JsonExample'：JsonExample（API12）](SuperFeature/JsonExample)
+  - ['PlatformBridge'：PlatformBridge（API12）](SuperFeature/PlatformBridge)
+  - ['Router'：Router（API12）](SuperFeature/Router)
+  - ['WebExample'：WebExample（API12）](SuperFeature/WebExample)
+  - ['MediaVideo'：MediaVideo（API12）](SuperFeature/MediaVideo)
+  - ['PlatformNAPI'：PlatformNAPI（API12）](SuperFeature/PlatformNAPI)
+  - ['XcomponentNative'：XcomponentNative（API12）](SuperFeature/XcomponentNative)
 - Premium apps
-  - ['Shopping'：Shoppint（API12）](Shopping)
-  - ['HealthyDiet'：HealthyDiet（API12）](HealthyDiet)
-  - ['News'：News（API12）](News)
+  - ['Shopping'：Shoppint（API12）](Solutions/Shopping)
+  - ['HealthyDiet'：HealthyDiet（API12）](Solutions/HealthyDiet)
+  - ['News'：News（API12）](Solutions/News)
+- CodeLab apps
+  - ['MultiShopping'：MultiShopping（API12）](CodeLab/MultiShopping)
+  - ['OxHornCampus'：OxHornCampus（API12）](CodeLab/OxHornCampus)
+  - ['MusicHome'：MusicHome（API12）](CodeLab/MusicHome)
+  - ['HMOSWorld'：HMOSWorld（API12）](CodeLab/HMOSWorld)
 
 ## Directory Structure
 
 ```
 samples
-|---HelloWorld          # Basic apps：HelloWorld
-|---Library             # Basic apps：Library
-|---Native              # Basic apps：Native
-|---MultiAbility        # Basic apps：MultiAbility
-|---Animation           # Featured apps：Animation
-|---Files               # Featured apps：Files
-|---FauxNativeAlbum     # Featured apps：FauxNativeAlbum
-|---InfiniteList        # Featured apps：InfiniteList
-|---JsonExample         # Featured apps：JsonExample
-|---PlatformBridge      # Featured apps：PlatformBridge
-|---Router              # Featured apps：Router
-|---WebExample          # Featured apps：Web
-|---MediaVideo          # Featured apps：MediaVideo
-|---PlatformNAPI        # Featured apps：PlatformNAPI
-|---XcomponentNative    # Featured apps：XcomponentNative
-|---Shopping            # Premium apps：Shopping
-|---HealthyDiet         # Premium apps：HealthyDiet
-|---News                # Premium apps：News
+|---BasicFeature        # Basic apps
+  |---HelloWorld          # HelloWorld
+  |---Library             # Library
+  |---MultiAbility        # MultiAbility
+  |---Native              # Native
+|---SuperFeature        # Featured apps
+  |---Animation           # Animation
+  |---FauxNativeAlbum     # FauxNativeAlbum
+  |---Files               # Files
+  |---InfiniteList        # InfiniteList
+  |---JsonExample         # JsonExample
+  |---MediaVideo          # MediaVideo
+  |---PlatformBridge      # PlatformBridge
+  |---PlatformNAPI        # PlatformNAPI
+  |---Router              # Router
+  |---WebExample          # WebExample
+  |---XcomponentNative    # XcomponentNative
+|---Solutions           # Premium apps
+  |---HealthyDiet    	  # HealthyDiet
+  |---News    	          # News
+  |---Shopping    	      # Shopping
+|---CodeLab             # CodeLab apps
+  |---HMOSWorld           # HMOSWorld
+  |---MultiShopping    	  # MultiShopping
+  |---MusicHome           # MusicHome
+  |---OxHornCampus        # OxHornCampus
 ```
 
 ## Constraints
@@ -62,8 +73,8 @@ When contributing an app sample, make sure that it meets the project structure r
 
 ## How to Use
 
-1.  Run [Repo](https://gitee.com/arkui-x/manifest/blob/master/README-EN.md) commands to download all repositories of the ArkUI-X project or download the desired app samples.
-2.  Go to the directory that houses the desired sample, and run the [CLI](https://gitee.com/arkui-x/cli) commands or use DevEco Studio to build a cross-platform application.
+1.  Run [Repo](https://gitcode.com/arkui-x/manifest/blob/master/README-EN.md) commands to download all repositories of the ArkUI-X project or download the desired app samples.
+2.  Go to the directory that houses the desired sample, and run the [CLI](https://gitcode.com/arkui-x/cli) commands or use DevEco Studio to build a cross-platform application.
 3.  Install and run the application. In this way, you can view the effect on devices running different OS platforms.
 
 
@@ -74,5 +85,5 @@ When contributing an app sample, make sure that it meets the project structure r
 
 ## Repositories Involved
 
-1. [Samples](https://gitee.com/arkui-x/samples) 
-2. [CLI](https://gitee.com/arkui-x/cli)
+1. [Samples](https://gitcode.com/arkui-x/samples) 
+2. [CLI](https://gitcode.com/arkui-x/cli)
