@@ -1,0 +1,7 @@
+{
+  "src": [
+    "pages/WebView",
+    "pages/MapView",
+    "pages/Index"
+  ]
+}
