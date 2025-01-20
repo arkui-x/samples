@@ -62,6 +62,10 @@ Note:If the text contains special characters, please escape them according to th
                 <filteritem type="filepath" name="HelloWorld/ios/.*.xcuserstate" desc="iOS工程固定配置文件"/>
                 <filteritem type="filepath" name="HelloWorld/screenshots/.*.png|.*.jpg" desc="运行结果截图"/>
                 <filteritem type="filepath" name="PlatformBridge/ios/.*.xcuserstate" desc="iOS工程固定配置文件"/>
+                <filteritem type="filepath" name="PlatformView/ios/.*.xcuserstate" desc="iOS工程固定配置文件"/>
+                <filteritem type="filepath" name="PlatformView/entry/src/main/resources/base/media/.*.png" desc="应用图片"/>
+                <filteritem type="filepath" name="PlatformView/entry/src/ohosTest/resources/base/media/.*.png" desc="应用图片"/>
+                <filteritem type="filepath" name="PlatformView/AppScope/resources/base/media/.*.png" desc="应用图片"/>
                 <filteritem type="filepath" name="Shopping/source/entry/src/main/ets/MainAbility/resources/.*.png" desc="具备版权的图片"/>
                 <filteritem type="filepath" name="Shopping/android/app/src/main/assets/js/MainAbility/resources/.*.png" desc="具备版权的图片"/>
                 <filteritem type="filepath" name="Shopping/ios/.*.xcuserstate" desc="iOS工程固定配置文件"/>

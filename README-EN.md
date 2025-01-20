@@ -25,6 +25,7 @@ This repository provides a series of app samples to help you quickly learn the A
   - ['MediaVideo'：MediaVideo（API12）](SuperFeature/MediaVideo)
   - ['PlatformNAPI'：PlatformNAPI（API12）](SuperFeature/PlatformNAPI)
   - ['XcomponentNative'：XcomponentNative（API12）](SuperFeature/XcomponentNative)
+  - ['PlatformView'：PlatformView（API14）](SuperFeature/PlatformView)
 - Premium apps
   - ['Shopping'：Shoppint（API12）](Solutions/Shopping)
   - ['HealthyDiet'：HealthyDiet（API12）](Solutions/HealthyDiet)
@@ -56,6 +57,7 @@ samples
   |---Router              # Router
   |---WebExample          # WebExample
   |---XcomponentNative    # XcomponentNative
+  |---PlatformView        # 平台视图
 |---Solutions           # Premium apps
   |---HealthyDiet    	  # HealthyDiet
   |---News    	          # News
