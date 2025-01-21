@@ -12,12 +12,12 @@ import java.util.Arrays;
 import ohos.ace.adapter.WantParams;
 
 /**
- * WantActivity is a class that utilizes WantParams. This class demonstrates the usage of
+ * EntryWantActivity is a class that utilizes WantParams. This class demonstrates the usage of
  * the addValue, getValue, and toWantParamsString methods within WantParams.
  *
  * @since 2025-01-18
  */
-public class WantActivity extends Activity {
+public class EntryWantActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

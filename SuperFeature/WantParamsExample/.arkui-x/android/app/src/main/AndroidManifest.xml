@@ -21,7 +21,7 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
-        <activity android:exported="true" android:name=".WantActivity"
+        <activity android:exported="true" android:name=".EntryWantActivity"
             android:windowSoftInputMode="adjustResize |stateHidden"
             android:configChanges="orientation|keyboard|layoutDirection|screenSize|uiMode|smallestScreenSize|density"
             >
