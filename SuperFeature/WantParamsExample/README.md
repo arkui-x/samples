@@ -66,7 +66,7 @@ WantParams
 
 ### Android实现
 + 基本的页面展示封装在Index，源码参考: [Index.ets](entry/src/main/ets/pages/Index.ets)
-    + 展示基本的UI界面：Text和Button组件的基本构造实现。通过aboutToAppear获取从原生平台传递而来的数据，并将数据设置到到message中，从而在页面上显示。
+    + 展示基本的UI界面：Text和Button组件的基本构造实现。通过aboutToAppear获取从原生平台传递而来的数据，并将数据设置到message中，从而在页面上显示。
     + 点击【ArkTSTo原生】按钮跳转到原生页面：通过设置Want数据结构，指定需要加载原生原生页面，然后通过调用startAbility实现原生页面的拉起。
 + 原生的页面展示封装在EntryWantActivity，源码参考: [EntryWantActivity.java](.arkui-x/android/app/src/main/java/com/example/wantparams/EntryWantActivity.java)
     + 展示基本的UI界面：Text和Button组件的基本构造实现。通过Intent的getStringExtra获取从ArkTS传递而来的数据，并将数据显示到Text中。
@@ -74,7 +74,7 @@ WantParams
 
 ### iOS实现
 + 基本的页面展示封装在Index，源码参考: [Index.ets](entry/src/main/ets/pages/Index.ets)
-  + 展示基本的UI界面：Text和Button组件的基本构造实现。通过aboutToAppear获取从原生平台传递而来的数据，并将数据设置到到message中，从而在页面上显示。
+  + 展示基本的UI界面：Text和Button组件的基本构造实现。通过aboutToAppear获取从原生平台传递而来的数据，并将数据设置到message中，从而在页面上显示。
   + 点击【ArkTSTo原生】按钮跳转到原生页面：通过设置Want数据结构，指定需要加载原生原生页面，然后通过调用startAbility实现原生页面的拉起。
 + 原生的页面展示封装在WantViewController，源码参考: [WantViewController.m](.arkui-x/ios/app/WantViewController.m)
   + 展示基本的UI界面：Text和Button组件的基本构造实现。通过AppDelegate.m文件中的application:openURL:options:获取从ArkTS传递而来的数据，并将数据显示到Text中。
