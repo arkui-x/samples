@@ -26,6 +26,7 @@ This repository provides a series of app samples to help you quickly learn the A
   - ['PlatformNAPI'：PlatformNAPI（API12）](SuperFeature/PlatformNAPI)
   - ['XcomponentNative'：XcomponentNative（API12）](SuperFeature/XcomponentNative)
   - ['PlatformView'：PlatformView（API14）](SuperFeature/PlatformView)
+  - ['WantParamsExample'：WantParamsExample（API16）](SuperFeature/WantParamsExample)
 - Premium apps
   - ['Shopping'：Shoppint（API12）](Solutions/Shopping)
   - ['HealthyDiet'：HealthyDiet（API12）](Solutions/HealthyDiet)
@@ -55,6 +56,7 @@ samples
   |---PlatformBridge      # PlatformBridge
   |---PlatformNAPI        # PlatformNAPI
   |---Router              # Router
+  |---WantParamsExample   # WantParamsExample
   |---WebExample          # WebExample
   |---XcomponentNative    # XcomponentNative
   |---PlatformView        # 平台视图

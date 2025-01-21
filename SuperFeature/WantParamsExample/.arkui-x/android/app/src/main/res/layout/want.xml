@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@color/white">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:fillViewport="true">
+
+        <TextView
+            android:id="@+id/text_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/rounded_corner"
+            android:gravity="start"
+            android:padding="16dp"
+            android:text="@string/hello_android"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+    </ScrollView>
+    <!-- 分界符 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:padding="8dp"
+        android:background="@color/white">
+<!--        <Button-->
+<!--            android:id="@+id/btn_android_to_ets"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="40dp"-->
+<!--            android:text="@string/android_arkts"-->
+<!--            android:textColor="@color/white"-->
+<!--            android:background="@drawable/rounded_button"-->
+<!--            android:layout_marginBottom="5dp"-->
+<!--            android:textSize="16sp"-->
+<!--            android:padding="5dp"/>-->
+        <Button
+            android:id="@+id/btn_get_value"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="@string/getvalue"
+            android:textColor="@color/white"
+            android:background="@drawable/rounded_button"
+            android:layout_marginBottom="5dp"
+            android:textSize="16sp"
+            android:padding="0dp"/>
+    </LinearLayout>
+
+</LinearLayout>

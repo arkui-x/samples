@@ -1,0 +1,7 @@
+<resources>
+    <color name="white">#FFFFFF</color>
+    <color name="purple_500">#6200EE</color>
+    <color name="gray">#CCCCCC</color>
+    <color name="light_gray">#F5F5F5</color>
+    <color name="black">#000000</color>
+</resources>

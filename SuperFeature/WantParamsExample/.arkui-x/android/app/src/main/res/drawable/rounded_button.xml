@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="#3d74f8"/> <!-- 按钮背景颜色 -->
+    <corners android:radius="25dp"/> <!-- 圆角半径 -->
+    <padding android:left="10dp" android:top="10dp" android:right="10dp" android:bottom="10dp"/> <!-- 内边距 -->
+    <size android:width="100dp" android:height="50dp"/> <!-- 按钮大小 -->
+    <stroke android:width="0dp" android:color="#FFFFFF"/> <!-- 边框颜色和宽度 -->
+</shape>

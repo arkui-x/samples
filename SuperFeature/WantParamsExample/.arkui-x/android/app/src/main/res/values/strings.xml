@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">WantParams</string>
+    <string name="hello_android">Hello, Android!</string>
+    <string name="android_arkts"><![CDATA[Android->ArkTS]]></string>
+    <string name="getvalue">GetValue</string>
+    <string name="getvalue_">GetValue</string>
+</resources>
