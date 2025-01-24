@@ -27,6 +27,7 @@
   - ['PlatformNAPI'：PlatformNAPI（API12）](SuperFeature/PlatformNAPI)
   - ['XcomponentNative'：XcomponentNative（API12）](SuperFeature/XcomponentNative)
   - ['PlatformView'：PlatformView（API14）](SuperFeature/PlatformView)
+  - ['WantParamsExample'：WantParamsExample（API16）](SuperFeature/WantParamsExample)
 
 - 精品应用
   - ['Shopping'：购物示例应用（API12）](Solutions/Shopping)
@@ -59,6 +60,7 @@ samples
   |---PlatformBridge      # 平台桥接
   |---PlatformNAPI        # ArkTs与Native交互能力
   |---Router              # Router页面跳转
+  |---WantParamsExample   # WantParams使用
   |---WebExample          # Web组件
   |---XcomponentNative    # OpenGL绘制3D图形
   |---PlatformView        # 平台视图
