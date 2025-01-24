@@ -26,7 +26,7 @@ public class EntryEntryAbilityActivity extends StageActivity {
                 .addValue("intKey", 12345)
                 .addValue("doubleKey", 1.23)
                 .addValue("boolKey", true)
-                .addValue("arrayKey", new String[] { "want", "Params" } )
+                .addValue("arrayKey", new String[] {"want", "Params"})
                 .addValue("wantParamsKey",
                         new WantParams()
                                 .addValue("intKey2", 4321));

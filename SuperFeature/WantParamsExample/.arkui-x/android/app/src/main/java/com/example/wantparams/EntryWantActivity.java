@@ -46,7 +46,7 @@ public class EntryWantActivity extends Activity {
                 .addValue("intKey", 123)
                 .addValue("doubleKey", -6.9)
                 .addValue("boolKey", true)
-                .addValue("arrayKey", new boolean[] { false, true } )
+                .addValue("arrayKey", new boolean[] {false, true})
                 .addValue("wantParamsKey",
                         new WantParams()
                                 .addValue("strKey", "It's me."));
