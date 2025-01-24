@@ -46,10 +46,18 @@ public class EntryWantActivity extends Activity {
                 .addValue("intKey", 123)
                 .addValue("doubleKey", -6.9)
                 .addValue("boolKey", true)
-                .addValue("arrayKey", new boolean[] { false, true })
+                .addValue("arrayKey", new boolean[] { false, true } )
                 .addValue("wantParamsKey",
                         new WantParams()
                                 .addValue("strKey", "It's me."));
+
+        // 将WantParams数据显示在TextView中
+        btnGetValue.setOnClickListener(v -> {
+            setWantParamsText(wantParams, textView);
+        });
+    }
+
+    private void setWantParamsText(WantParams wantParams, TextView textView) {
         // 通过getValue获取WantParams中的值
         StringBuilder stringBuilder = new StringBuilder();
         stringBuilder.append("GetValue:\n");
@@ -77,10 +85,6 @@ public class EntryWantActivity extends Activity {
         if (obj instanceof WantParams) {
             stringBuilder.append("WantParams: ").append(((WantParams) obj).toWantParamsString());
         }
-
-        // 将WantParams数据显示在TextView中
-        btnGetValue.setOnClickListener(v -> {
-            textView.setText(stringBuilder.toString());
-        });
+        textView.setText(stringBuilder.toString());
     }
 }
