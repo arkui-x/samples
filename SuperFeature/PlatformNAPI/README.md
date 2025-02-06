@@ -10,7 +10,7 @@
 
    实现 ArkTS-->Native-->JAVA/OC 以及数据返回的一整套流程。
 
-   Plugin Utils 的具体工作流程可参考[Plugin Utils](https://gitee.com/arkui-x/docs/blob/master/zh-cn/application-dev/reference/native-apis/_plugin_utils.md) 。
+   Plugin Utils 的具体工作流程可参考[Plugin Utils](https://gitcode.com/arkui-x/docs/blob/master/zh-cn/application-dev/reference/native-apis/_plugin_utils.md) 。
 
 ## 效果预览
 
@@ -18,13 +18,13 @@
 
 | Android平台                                                  | iOS平台                                                      |
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| <img src="./screenshots/devices/Android1.PNG" width="350" height="900" /> | <img src="./screenshots/devices/IOS1.png" width="350" height="900"/> |
+| <img src="./screenshots/devices/Android1.PNG" width="350" height="900" /> | <img src="screenshots/devices/IOS1.png" width="350" height="900"/> |
 
 **Button点击后**
 
 | Android平台                                                  | iOS平台                                                      |
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| <img src="./screenshots/devices/Android2.PNG "  width="350" height="900" /> | <img src="./screenshots/devices/IOS2.png" width="350" height="900" /> |
+| <img src="screenshots/devices/Android2.PNG"  width="350" height="900" /> | <img src="screenshots/devices/IOS2.png" width="350" height="900" /> |
 
 ### 使用说明
 
@@ -81,9 +81,9 @@ entry/src/main
       3. c++方法：nativeCallArkTS: (a: Function) => string；Native侧实现方法，并返回string给ArkTS，源码参考:[napi_module.cpp](entry/src/main/cpp/napi_module.cpp)
       4. c++方法：nativeUvLoop: () => number；Native侧调用libuv三方库进行简单事件轮询，并返回number给ArkTS，源码参考:[napi_module.cpp](entry/src/main/cpp/napi_module.cpp)
     * Native动态库调用平台原生方法。
-      1. 调用Android平台方法（JAVA方法）需依赖ArkUI-X已封装的 [Plugin Utils](https://gitee.com/arkui-x/docs/blob/master/zh-cn/application-dev/reference/native-apis/_plugin_utils.md)  
-      2. Android侧跨平台开发参考  [Android平台扩展@ohos接口](https://gitee.com/arkui-x/docs/blob/master/zh-cn/framework-dev/tutorial/how-to-archieve-arkts-interface-on-android.md)  
-      3. iOS侧跨平台开发参考  [iOS平台扩展@ohos接口 ](https://gitee.com/arkui-x/docs/blob/master/zh-cn/framework-dev/tutorial/how-to-archieve-arkts-interface-on-ios.md)  
+      1. 调用Android平台方法（JAVA方法）需依赖ArkUI-X已封装的 [Plugin Utils](https://gitcode.com/arkui-x/docs/blob/master/zh-cn/application-dev/reference/native-apis/_plugin_utils.md)  
+      2. Android侧跨平台开发参考  [Android平台扩展@ohos接口](https://gitcode.com/arkui-x/docs/blob/master/zh-cn/framework-dev/tutorial/how-to-archieve-arkts-interface-on-android.md)  
+      3. iOS侧跨平台开发参考  [iOS平台扩展@ohos接口 ](https://gitcode.com/arkui-x/docs/blob/master/zh-cn/framework-dev/tutorial/how-to-archieve-arkts-interface-on-ios.md)  
 
 ## 相关权限
 
@@ -119,7 +119,7 @@ set(NATIVE_INCLUDE_PATH "$ENV{ARKUIX_SDK_HOME}/12/arkui-x/engine/lib/include/")
 ```
 git init
 git config core.sparsecheckout true
-echo /PlatformNAPI > .git/info/sparse-checkout
-git remote add origin https://gitee.com/arkui-x/samples.git
+echo /SuperFeature/PlatformNAPI > .git/info/sparse-checkout
+git remote add origin https://gitcode.com/arkui-x/samples.git
 git pull origin master
 ```
