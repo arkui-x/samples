@@ -11,13 +11,13 @@ XComponent控件常用于视频流的显示和游戏画面的绘制，可以配�
 
 | Android平台                                                  | iOS平台                                                      | 鸿蒙平台                                                     |
 | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| <img src=screenshots/devices/Android1.png width="300" height="650"/> | <img src=screenshots/devices/IOS1.png width="330" height="680"/> | <img src=screenshots/devices/OH1.png width="340" height="650"/> |
+| <img src="screenshots/devices/Android1.png" width=300 height=640 /> | <img src="screenshots/devices/IOS1.png" width=300 height=640 /> | <img src="screenshots/devices/OH1.png" width=300 height=640 /> |
 
 **视频播放完毕**
 
 | Android平台                                                  | iOS平台                                                      | 鸿蒙平台                                                     |
 | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| <img src=screenshots/devices/Android2.png width="300" height="650" /> | <img src=screenshots/devices/IOS2.png width="330" height="680" /> | <img src=screenshots/devices/OH2.png width="340" height="650"/> |
+| <img src="screenshots/devices/Android2.png" width=300 height=640 /> | <img src="screenshots/devices/IOS2.png" width=300 height=640 /> | <img src="screenshots/devices/OH2.png" width=300 height=640 /> |
 
 ### 使用说明
 
@@ -45,8 +45,8 @@ entry/src/main/ets
 
 ## 具体实现
 
-* media相关接口文档参考[ @ohos.multimedia.media (媒体服务)](https://gitee.com/arkui-x/docs/blob/master/zh-cn/application-dev/reference/apis/js-apis-media.md) 
-* 资源管理相关接口文档参考[ @ohos.resourceManager (资源管理))](https://gitee.com/arkui-x/docs/blob/master/zh-cn/application-dev/reference/apis/js-apis-resource-manager.md) 
+* media相关接口文档参考[ @ohos.multimedia.media (媒体服务)](https://gitcode.com/arkui-x/docs/blob/master/zh-cn/application-dev/reference/apis/js-apis-media.md) 
+* 资源管理相关接口文档参考[ @ohos.resourceManager (资源管理))](https://gitcode.com/arkui-x/docs/blob/master/zh-cn/application-dev/reference/apis/js-apis-resource-manager.md) 
 * 功能实现
     * 应用启动时，app界面初始化，Xcomponent组件绘制成功时初始化surfaceId。
     * 步骤”视频源创建“：
@@ -84,7 +84,7 @@ entry/src/main/ets
 ```
 git init
 git config core.sparsecheckout true
-echo /MediaVideo > .git/info/sparse-checkout
-git remote add origin https://gitee.com/arkui-x/samples.git
+echo /SuperFeature/MediaVideo > .git/info/sparse-checkout
+git remote add origin https://gitcode.com/arkui-x/samples.git
 git pull origin master
 ```
