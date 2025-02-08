@@ -1,9 +1,17 @@
-//
-//  WantViewController.m
-//  app
-//
-//  Created by 240506 on 2025/1/20.
-//
+/*
+ * Copyright (c) 2025 Huawei Device Co., Ltd.
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
 
 #import "WantViewController.h"
 
@@ -45,10 +53,10 @@
 - (void)btnActionGetValue{
     WantParams *wp = [[WantParams alloc]init];
     [wp addValue:@"stringKey" value:@"strArkUI"];
-    NSDictionary *dic = [wp getValue];
-    //dic需要进行判空
-    if (dic) {
-        NSString *str = [NSString stringWithFormat:@"%@",dic];
+    id params = [wp getValue:@"stringKey"];
+    //注意 params需要进行判空
+    if (params) {
+        NSString *str = [NSString stringWithFormat:@"%@",params];
         self.textView.text = str;
     }
 }
