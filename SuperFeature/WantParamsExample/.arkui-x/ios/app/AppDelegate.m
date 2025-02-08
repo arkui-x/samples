@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2023 Huawei Device Co., Ltd.
+ * Copyright (c) 2025 Huawei Device Co., Ltd.
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
@@ -26,8 +26,6 @@
 
 
 @interface AppDelegate ()
-
-@property (strong,nonatomic)NSMutableDictionary *dicParams;
 
 @end
 
@@ -61,12 +59,7 @@
     [params addValue:@"stringKey" value:@"strArkui"];
     [params addValue:@"wantParamsKey" value:wp];
     [params addValue:@"arrayKey" value:arr];
-    
-    //注意  使用getValue函数 需要返回值判空和判断类型是否为NSMutableDictionary
-    id paramsData = [params getValue];
-    if (self.dicParams == nil || [self.dicParams isKindOfClass:[NSDictionary class]]){
-        self.dicParams = [NSMutableDictionary dictionaryWithDictionary:paramsData];
-    }
+
     mainView.params = [params toWantParamsString];
     [self setNavRootVC:mainView];
     
@@ -134,7 +127,6 @@
         if ([item.name isEqualToString:@"abilityName"]) {
             abilityName = item.value;
         } else if ([item.name isEqualToString:@"params"]) {
-            NSLog(@"------------ %@",item.value);
             params = item.value;
         }
     }
@@ -142,7 +134,6 @@
     EntryEntryAbilityViewController *rootVc = (EntryEntryAbilityViewController *)rootNav.viewControllers.firstObject;
     WantViewController *vc = [[WantViewController alloc]init];
     vc.strParams = params;
-    vc.wantParams = self.dicParams;
     [rootNav pushViewController:vc animated:YES];
     return YES;
 }
