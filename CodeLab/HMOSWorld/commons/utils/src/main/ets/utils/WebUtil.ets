@@ -77,6 +77,8 @@ export function webBuilderArkUIX(data: WebData) {
     .zoomAccess(true)
     .verticalScrollBarAccess(false)
     .javaScriptAccess(true)
+    .mixedMode(MixedMode.All)
+    .domStorageAccess(true)
     .onPageBegin((event) => {
       Logger.info(TAG, 'onPageBegin:' + event?.url);
       onResourceLoadMap.get(data.url)?.(event?.url);
