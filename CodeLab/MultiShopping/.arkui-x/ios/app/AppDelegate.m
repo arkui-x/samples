@@ -99,6 +99,7 @@
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     UINavigationController *navi = [[UINavigationController alloc]initWithRootViewController:viewController];
+    navi.navigationBarHidden = YES;
     self.window.rootViewController = navi;
 }
 

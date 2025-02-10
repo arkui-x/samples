@@ -17,6 +17,8 @@ package com.example.multishopping;
 
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
+import android.view.Window;
 
 import ohos.stage.ability.adapter.StageActivity;
 
@@ -32,6 +34,11 @@ public class PhoneEntryAbilityActivity extends StageActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         Log.i(LOG_TAG, "PhoneEntryAbilityActivity onCreate");
+        Window window = getWindow();
+        View view = window.getDecorView();
+        int vis = view.getSystemUiVisibility();
+        vis |= View.SYSTEM_UI_FLAG_LIGHT_STATUS_BAR;
+        view.setSystemUiVisibility(vis);
         setInstanceName("com.example.multishopping:phone:EntryAbility:");
         super.onCreate(savedInstanceState);
     }

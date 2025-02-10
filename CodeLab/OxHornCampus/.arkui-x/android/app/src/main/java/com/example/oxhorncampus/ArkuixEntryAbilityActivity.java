@@ -17,6 +17,8 @@ package com.example.oxhorncampus;
 
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
+import android.view.Window;
 
 import ohos.stage.ability.adapter.StageActivity;
 
@@ -30,7 +32,11 @@ public class ArkuixEntryAbilityActivity extends StageActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         Log.e("HiHelloWorld", "ArkuixEntryAbilityActivity");
-
+        Window window = getWindow();
+        View view = window.getDecorView();
+        int vis = view.getSystemUiVisibility();
+        vis |= View.SYSTEM_UI_FLAG_LIGHT_STATUS_BAR;
+        view.setSystemUiVisibility(vis);
         setInstanceName("com.example.oxhorncampus:arkuix:EntryAbility:");
         super.onCreate(savedInstanceState);
     }
