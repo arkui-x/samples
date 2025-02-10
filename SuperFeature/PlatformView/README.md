@@ -66,7 +66,7 @@ entry/src/main/ets
 
 ## 依赖
 
-对于 Android 平台的 MapView，需要下载 [高德地图 3D 地图合包](https://lbs.amap.com/api/android-sdk/download/)，并将压缩包里的内容拷贝至 Android 工程的 app/libs 目录下。
+对于 Android 平台的 MapView，需要下载 [高德地图 3D 地图合包(AAR包)](https://lbs.amap.com/api/android-sdk/download/)，并将压缩包里的内容拷贝至 Android 工程的 app/libs 目录下。
 
 ## 约束与限制
 
