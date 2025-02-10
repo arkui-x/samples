@@ -20,6 +20,8 @@ import android.content.Context;
 import android.content.pm.PackageManager;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
+import android.view.Window;
 
 import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
@@ -54,6 +56,11 @@ public class ArkuixEntryAbilityActivity extends StageActivity {
     protected void onCreate(Bundle savedInstanceState) {
         Log.i(TAG, "onCreate called");
         initBridgeObject();
+        Window window = getWindow();
+        View view = window.getDecorView();
+        int vis = view.getSystemUiVisibility();
+        vis |= View.SYSTEM_UI_FLAG_LIGHT_STATUS_BAR;
+        view.setSystemUiVisibility(vis);
         setInstanceName("com.huawei.hmos.world:arkuix:EntryAbility:");
         if (ContextCompat.checkSelfPermission(this,
                 Manifest.permission.READ_EXTERNAL_STORAGE) != PackageManager.PERMISSION_GRANTED) {

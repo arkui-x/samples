@@ -7,7 +7,7 @@
 
 | HarmonyOS Next                                               | Android                                                    | iOS                                                    |
 | ------------------------------------------------------------ | ---------------------------------------------------------- | ------------------------------------------------------ |
-| <img src="screenshots/HarmonyOSNext.jpg" width=300 height=640 /> | <img src="screenshots/Android.jpg" width=300 height=640 /> | <img src="screenshots/iOS.jpg" width=300 height=640 /> |
+| <img src="screenshots/HarmonyOSNext.jpeg" width=300 height=640 /> | <img src="screenshots/Android.jpg" width=300 height=640 /> | <img src="screenshots/iOS.jpg" width=300 height=640 /> |
 |                                                              |                                                            |                                                        |
 
 ### 使用说明
@@ -227,7 +227,7 @@ MusicHome
 ```
 git init
 git config core.sparsecheckout true
-echo /ArkUI-X/MusicHome > .git/info/sparse-checkout
-git remote add origin https://gitee.com/arkui-x/samples.git
+echo /CodeLab/MusicHome > .git/info/sparse-checkout
+git remote add origin https://gitcode.com/arkui-x/samples.git
 git pull origin master
 ```

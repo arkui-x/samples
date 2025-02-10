@@ -16,6 +16,8 @@
 package com.huawei.music.musichome;
 
 import android.os.Bundle;
+import android.view.View;
+import android.view.Window;
 
 import ohos.stage.ability.adapter.StageActivity;
 
@@ -28,6 +30,11 @@ import ohos.stage.ability.adapter.StageActivity;
 public class PhoneEntryAbilityActivity extends StageActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        Window window = getWindow();
+        View view = window.getDecorView();
+        int vis = view.getSystemUiVisibility();
+        vis |= View.SYSTEM_UI_FLAG_LIGHT_STATUS_BAR;
+        view.setSystemUiVisibility(vis);
         setInstanceName("com.huawei.music.musichome:phone:EntryAbility:");
         super.onCreate(savedInstanceState);
     }

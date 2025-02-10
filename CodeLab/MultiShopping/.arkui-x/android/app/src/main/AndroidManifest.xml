@@ -9,7 +9,7 @@
         android:icon="@drawable/ic_eshop"
         android:label="@string/app_name"
         android:supportsRtl="true"
-        android:theme="@android:style/Theme.Light.NoTitleBar">
+        android:theme="@style/Theme.theme">
         <activity
             android:name=".PhoneEntryAbilityActivity"
             android:configChanges="orientation|keyboard|layoutDirection|screenSize|screenLayout|uiMode|smallestScreenSize|density"

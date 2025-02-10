@@ -33,4 +33,18 @@
     self.edgesForExtendedLayout = UIRectEdgeNone;
     self.extendedLayoutIncludesOpaqueBars = YES;
 }
+
+- (void)viewDidAppear:(BOOL)animated{
+    CGFloat statusBarHeight = 20;
+    if (@available(iOS 11.0, *)) {
+        UIEdgeInsets insets = self.view.safeAreaInsets;
+        statusBarHeight = insets.top;
+    } else {
+        if ([self respondsToSelector:@selector(topLayoutGuide)]) {
+            statusBarHeight = self.topLayoutGuide.length;
+        }
+    }
+    self.view.frame = CGRectMake(0, statusBarHeight,
+        CGRectGetWidth(self.view.frame), CGRectGetHeight(self.view.frame) - statusBarHeight);
+}
 @end
