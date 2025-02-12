@@ -29,13 +29,17 @@ import ohos.stage.ability.adapter.StageActivity;
  */
 public class EntryEntryAbilityActivity extends StageActivity {
     private Bridge bridgeImpl = null;
+
     private Bridge bridgeCodec = null;
+
     private Bridge BridgeTask = null;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         bridgeImpl = new Bridge(this, "Bridge", getBridgeManager());
         bridgeCodec = new Bridge(this, "BridgeCodec", getBridgeManager(), BridgePlugin.BridgeType.BINARY_TYPE);
-        BridgeTask = new Bridge(this, "BridgeTask", getBridgeManager(), BridgePlugin.BridgeType.BINARY_TYPE, new TaskOption());
+        BridgeTask = new Bridge(
+            this, "BridgeTask", getBridgeManager(), BridgePlugin.BridgeType.BINARY_TYPE, new TaskOption());
         setInstanceName("com.example.platformbridge:entry:EntryAbility:");
         super.onCreate(savedInstanceState);
     }

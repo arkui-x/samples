@@ -20,7 +20,7 @@ static napi_value Add(napi_env env, napi_callback_info info)
     size_t argc = 2;
     napi_value args[2] = {nullptr};
 
-    napi_get_cb_info(env, info, &argc, args, nullptr, nullptr);
+    napi_get_cb_info(env, info, &argc, args , nullptr, nullptr);
 
     napi_valuetype valuetype0;
     napi_typeof(env, args[0], &valuetype0);
@@ -44,10 +44,10 @@ static napi_value Add(napi_env env, napi_callback_info info)
     napi_create_double(env, value0 + value1, &sum);
 
     return sum;
+
 }
 
-static napi_value NativeCallArkTS(napi_env env, napi_callback_info info)
-{
+static napi_value NativeCallArkTS(napi_env env, napi_callback_info info) {
     size_t argc = 1;
     napi_value args[1] = {nullptr};
     napi_get_cb_info(env, info, &argc, args, nullptr, nullptr);
@@ -68,8 +68,7 @@ static napi_value NativeCallArkTS(napi_env env, napi_callback_info info)
     return result;
 }
 
-static napi_value NativeUvLoop(napi_env env, napi_callback_info info)
-{
+static napi_value NativeUvLoop(napi_env env,napi_callback_info info) {
     uv_loop_t *loop = new uv_loop_t;
     int value0 = uv_loop_init(loop);
     uv_run(loop, UV_RUN_ONCE);

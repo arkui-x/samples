@@ -15,6 +15,7 @@
 
 import { CoreDataModel } from '../../model/homeModel'
 import { coreData } from '../../data/homeData'
+import { router } from '@kit.ArkUI'
 
 @Component
 export struct Core2 {
@@ -39,7 +40,11 @@ export struct Core2 {
                     Text(`${this.coreData[item1 * 2 + item2].title}`)
                       .fontSize(15 * this.ratio)
                       .margin({ top: 5 })
-                  }
+                  }.onClick(() => {
+                    router.pushUrl({
+                      url: 'pages/detailPage/detail',
+                    })
+                  })
                 }
                 .width('100%')
               }, (item2: number) => JSON.stringify(item2))

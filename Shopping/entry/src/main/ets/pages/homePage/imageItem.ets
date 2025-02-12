@@ -15,6 +15,7 @@
 
 import { FindImgSrcModel, FindImgIntroModel, FindImgNameModel, FindIconSrcModel } from '../../model/homeModel'
 import { findImgSrcData, findImgIntroData, findImgNameData, findIconSrcData } from '../../data/homeData'
+import { router } from '@kit.ArkUI'
 
 @Component
 export struct ImageItem {
@@ -76,5 +77,11 @@ export struct ImageItem {
       .height('15%')
     }
     .width('50%')
+    .onClick(() => {
+      router.pushUrl({
+        url: 'pages/detailPage/detail',
+      })
+    })
+
   }
 }

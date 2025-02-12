@@ -15,9 +15,7 @@
 
 package com.example.platformbridge;
 
-import static android.widget.Toast.LENGTH_SHORT;
 import android.content.Context;
-import android.widget.Toast;
 
 import ohos.ace.adapter.ALog;
 import ohos.ace.adapter.capability.bridge.BridgeManager;
@@ -27,10 +25,24 @@ import ohos.ace.adapter.capability.bridge.IMethodResult;
 import ohos.ace.adapter.capability.bridge.MethodData;
 import ohos.ace.adapter.capability.bridge.TaskOption;
 
+/**
+ * Platform-side Bridge object, calling native methods.
+ *
+ * @since 2025-01-15
+ */
 public class Bridge extends BridgePlugin implements IMessageListener, IMethodResult {
-    public String name;
+    private String name;
+
     private Context context;
 
+    /**
+     * Func: constructor
+     *
+     * @param context       Context of the current Activity
+     * @param name          Platform bridge name
+     * @param bridgeManager BridgePlugin object manager
+     * @since 2025-01-07
+     */
     public Bridge(Context context, String name, BridgeManager bridgeManager) {
         super(context, name, bridgeManager);
         this.name = name;
@@ -39,6 +51,15 @@ public class Bridge extends BridgePlugin implements IMessageListener, IMethodRes
         setMessageListener(this);
     }
 
+    /**
+     * Func: constructor
+     *
+     * @param context       Context of the current Activity
+     * @param name          Platform bridge name
+     * @param bridgeManager BridgePlugin object manager
+     * @param codecType     Bridge Type
+     * @since 2025-01-07
+     */
     public Bridge(Context context, String name, BridgeManager bridgeManager, BridgeType codecType) {
         super(context, name, bridgeManager, codecType);
         this.name = name;
@@ -47,7 +68,18 @@ public class Bridge extends BridgePlugin implements IMessageListener, IMethodRes
         setMessageListener(this);
     }
 
-    public Bridge(Context context, String name, BridgeManager bridgeManager, BridgeType codecType, TaskOption taskOption) {
+    /**
+     * Func: constructor
+     *
+     * @param context       Context of the current Activity
+     * @param name          Platform bridge name
+     * @param bridgeManager BridgePlugin object manager
+     * @param codecType     Bridge Type
+     * @param taskOption    Task Option
+     * @since 2025-01-07
+     */
+    public Bridge(
+        Context context, String name, BridgeManager bridgeManager, BridgeType codecType, TaskOption taskOption) {
         super(context, name, bridgeManager, codecType, taskOption);
         this.name = name;
         this.context = context;
@@ -57,21 +89,32 @@ public class Bridge extends BridgePlugin implements IMessageListener, IMethodRes
 
     // java侧准备的测试函数 ---------------------------------------------------------------------------
 
+    /**
+     * Func: getHelloArkUI
+     *
+     * @param StringParam Func params
+     * @return Data
+     * @since 2025-01-07
+     */
     public String getHelloArkUI(String StringParam) {
         ALog.i("Android Bridge getHelloArkUI StringParam is ", StringParam);
         return "Hello ArkUI! " + StringParam;
     }
 
+    /**
+     * Func: methodOfPlatform
+     *
+     * @param StringParam Func params
+     * @return Data
+     * @since 2025-01-07
+     */
     public String methodOfPlatform(String StringParam) {
         ALog.i("Android Bridge methodOfPlatform StringParam is ", StringParam);
-        // 定义对象数组，存放JS侧方法形参对应的实参
-        Object[] paramObject = { StringParam };
-        // 构造JS侧方法描述对象实例, jsMethodName需根据实际情况调整。
+        Object[] paramObject = {StringParam};
         MethodData methodData = new MethodData("methodOfPlatform", paramObject);
         callMethod(methodData);
-        return "Method of Platform call successful. " + StringParam;
+        return "Method of Platform call successful." + StringParam;
     }
-
 
     // java侧准备的测试函数 ---------------------------------------------------------------------------
 
@@ -88,12 +131,13 @@ public class Bridge extends BridgePlugin implements IMessageListener, IMethodRes
 
     @Override
     public void onSuccess(Object object) {
-        if(object == null) {
-            ALog.i("bridge return data is null"," call Success");
+        if (object == null) {
+            ALog.i("bridge return data is null", "call Success");
             sendMessage("PlatformBridge successfully calls method of TS, The method is of type void");
         } else {
             ALog.i("bridge onSuccess data:", object.toString());
-            String result = "PlatformBridge successfully calls  method of TS, and the return value is " + object.toString();
+            String result =
+                "PlatformBridge successfully calls method of TS, and the return value is " + object.toString();
             sendMessage(result);
         }
     }

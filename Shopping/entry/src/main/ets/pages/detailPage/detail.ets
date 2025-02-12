@@ -24,7 +24,7 @@ import mediaquery from '@ohos.mediaquery';
 @Component
 struct Detail {
   @State width1: number = 10
-  @State ratio: number = 10
+  @State ratio: number = 1
   @State active: boolean = false
   @State swiper: Array<SwiperModel> = swiperData
   @State phoneType: Array<PhoneTypeModel> = phoneTypeData

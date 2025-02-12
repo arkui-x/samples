@@ -16,6 +16,7 @@
 #import "AppDelegate.h"
 #import "EntryEntryAbilityViewController.h"
 #import <libarkui_ios/StageApplication.h>
+#import "NativeViewController.h"
 
 #define BUNDLE_DIRECTORY @"arkui-x"
 #define BUNDLE_NAME @"com.example.animation"
@@ -31,8 +32,9 @@
     [StageApplication launchApplication];
     
     NSString *instanceName = [NSString stringWithFormat:@"%@:%@:%@",BUNDLE_NAME, @"entry", @"EntryAbility"];
-    EntryEntryAbilityViewController *mainView = [[EntryEntryAbilityViewController alloc] initWithInstanceName:instanceName];
-    [self setNavRootVC:mainView];
+    NativeViewController *nativeVC = [[NativeViewController alloc] init];
+    nativeVC.instanceName = instanceName;
+    [self setNavRootVC:nativeVC];
     return YES;
 }
 
@@ -109,6 +111,7 @@
     appearance.backgroundColor = UIColor.whiteColor;
     navi.navigationBar.standardAppearance = appearance;
     navi.navigationBar.scrollEdgeAppearance = navi.navigationBar.standardAppearance;
+    navi.navigationBarHidden = YES;
 }
 
 @end

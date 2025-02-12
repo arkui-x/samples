@@ -15,6 +15,7 @@
 
 import { CoreDataModel } from '../../model/homeModel'
 import { coreData } from '../../data/homeData'
+import { router } from '@kit.ArkUI'
 
 @Component
 export struct Core1 {
