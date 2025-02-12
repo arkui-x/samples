@@ -32,7 +32,7 @@ struct PageTransitionSample {
             .onClick(() => {
               router.pushUrl({
                 url: ANIMATION_URL,
-                params: { type: SlideEffect.Top }
+                params: { enterType: SlideEffect.Top, exitType: SlideEffect.Bottom }
               })
             })
           Text($r('app.string.page_transition_bottom'))
@@ -40,7 +40,7 @@ struct PageTransitionSample {
             .onClick(() => {
               router.pushUrl({
                 url: ANIMATION_URL,
-                params: { type: SlideEffect.Bottom }
+                params: { enterType: SlideEffect.Bottom, exitType: SlideEffect.Top }
               })
             })
           Text($r('app.string.page_transition_left'))
@@ -48,7 +48,7 @@ struct PageTransitionSample {
             .onClick(() => {
               router.pushUrl({
                 url: ANIMATION_URL,
-                params: { type: SlideEffect.Left }
+                params: { enterType: SlideEffect.Left, exitType: SlideEffect.Right }
               })
             })
           Text($r('app.string.page_transition_right'))
@@ -56,7 +56,7 @@ struct PageTransitionSample {
             .onClick(() => {
               router.pushUrl({
                 url: ANIMATION_URL,
-                params: { type: SlideEffect.Right }
+                params: { enterType: SlideEffect.Right, exitType: SlideEffect.Left }
               })
             })
           Text($r('app.string.page_transition_scale'))
@@ -64,7 +64,7 @@ struct PageTransitionSample {
             .onClick(() => {
               router.pushUrl({
                 url: ANIMATION_URL,
-                params: { type: SlideEffect.Bottom, zoom: this.zoom }
+                params: { enterType: SlideEffect.Bottom, exitType:SlideEffect.Bottom, zoom: this.zoom }
               })
             })
           Text($r('app.string.page_transition_rotate'))
@@ -72,7 +72,7 @@ struct PageTransitionSample {
             .onClick(() => {
               router.pushUrl({
                 url: ANIMATION_URL,
-                params: { type: SlideEffect.Bottom, angle: this.angle }
+                params: { enterType: SlideEffect.Bottom, exitType:SlideEffect.Bottom, angle: this.angle }
               })
             })
         }
