@@ -12,6 +12,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
+import { router } from "@kit.ArkUI"
 
 @Component
 export struct Cart {
@@ -41,6 +42,11 @@ export struct Cart {
             }
             .alignItems(HorizontalAlign.Start)
             .margin({ bottom: 20 })
+            .onClick(() => {
+              router.pushUrl({
+                url: 'pages/detailPage/detail',
+              })
+            })
 
             Flex({ justifyContent: FlexAlign.SpaceBetween, alignItems: ItemAlign.Center }) {
               Row() {

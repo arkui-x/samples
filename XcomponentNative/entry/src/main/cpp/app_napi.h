@@ -65,6 +65,7 @@ public:
     static napi_value BeginFrameRateCallback(napi_env env, napi_callback_info info);
     static napi_value EndFrameRateCallback(napi_env env, napi_callback_info info);
 
+
     void OnSurfaceCreated(OH_NativeXComponent* component, void* window);
     void OnSurfaceChanged(OH_NativeXComponent* component, void* window);
     void OnSurfaceDestroyed(OH_NativeXComponent* component, void* window);

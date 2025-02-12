@@ -18,20 +18,46 @@ package com.example.platformnapi;
 import android.os.Build;
 import android.content.Context;
 
+/**
+ * Native side method class
+ *
+ * @since 2025-01-15
+ */
 public class DeviceInfo {
-
+    /**
+     * Func constructor
+     *
+     * @param context Context of the current DeviceInfo
+     * @since 2025-01-07
+     */
     public DeviceInfo(Context context) {
         nativeInit();
     }
 
+    /**
+     * Func getDeviceBrand
+     *
+     * @return Build MODEL
+     * @since 2025-01-07
+     */
     public String getProductModel() {
         return Build.MODEL;
     }
 
+    /**
+     * Func getDeviceBrand
+     *
+     * @return Device Brand
+     * @since 2025-01-07
+     */
     public String getDeviceBrand() {
         return Build.BRAND;
     }
 
-    // 注册插件的初始化方法，供插件构造函数调用
+    /**
+     * Func nativeInit 注册插件的初始化方法，供插件构造函数调用
+     *
+     * @since 2025-01-07
+     */
     protected native void nativeInit();
 }

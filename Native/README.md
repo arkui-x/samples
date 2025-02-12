@@ -99,9 +99,23 @@ Native
 
 ## 约束与限制
 
-1. 本示例支持在Android\iOS\鸿蒙系统上运行。 
-2. 本示例已适配API version 12版本ArkUI-X SDK，版本号：2.0.0.27。
+1. 本示例支持在Android\iOS\鸿蒙系统上运行。
+
+2. 本示例已适配API version 12版本ArkUI-X SDK及以上，版本号：2.0.0.27。
+
 3. 本示例需要使用DevEco Studio NEXT Developer Beta1 (Build Version: 5.0.3.403, built on June 20, 2024)及以上版本才可编译运行。
+
+##### 针对CMakeLists.txt的检查说明：
+
+- 代码路径：.arkui-x/android/app/src/main/cpp/CMakeLists.txt
+
+1. 本示例需要配置“ARKUIX_SDK_HOME”的环境变量，用于CMakeLists.txt文件读取ArkUI-X SDK的文件位置。
+
+2. CMakeLists.txt文件中的include路径需要检查对应API下的路径是否存在，例如下面路径，需要有API 12的ArkUI-X SDK存在：
+
+```shell
+set(NATIVE_INCLUDE_PATH "$ENV{ARKUIX_SDK_HOME}/12/arkui-x/engine/lib/include/")
+```
 
 ## 下载
 

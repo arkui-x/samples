@@ -316,8 +316,7 @@ void RenderSurface::Update(float angleXOffset, float angleYOffset)
     eglSwapBuffers(mEGLDisplay, mEGLSurface);
 }
 
-void RenderSurface::UpdateSzie(float width, float height)
-{
+void RenderSurface::UpdateSzie(float width, float height) {
     mSurfaceWidth = width;
     mSurfaceHeight = height;
 }

@@ -68,7 +68,7 @@ entry/src/main/ets
 
 ## 约束与限制
 
-1.本示例仅支持标准Android/iOS上运行。<br>
+1.本示例仅支持标准Android/iOS/鸿蒙系统上运行。<br>
 
 2.本示例已适配API version 12版本的ArkUI-X SDK，版本号：2.0.0.27及以上。<br>
 

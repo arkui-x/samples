@@ -7,9 +7,8 @@ import ohos.stage.ability.adapter.StageApplication;
 /**
  * Example ace application class, which will load ArkUI-X application instance.
  * StageApplication is provided by ArkUI-X
- * @see <a href=
- * "https://gitee.com/arkui-crossplatform/doc/blob/master/contribute/tutorial/how-to-build-Android-app.md">
- * to build android library</a>
+ *
+ * @since 2025-01-15
  */
 public class MyApplication extends StageApplication {
     private static final String LOG_TAG = "HiHelloWorld";

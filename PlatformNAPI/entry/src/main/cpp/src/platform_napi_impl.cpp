@@ -19,20 +19,17 @@
 #include "native_common.h"
 #include "platform_napi_jni.h"
 
-std::unique_ptr<PlatformNAPI> PlatformNAPI::Create()
-{
+std::unique_ptr<PlatformNAPI> PlatformNAPI::Create() { 
     // Create
     return std::make_unique<PlatformNAPIImpl>();
 }
 
-std::string PlatformNAPIImpl::GetDeviceBrand()
-{
+std::string PlatformNAPIImpl::GetDeviceBrand() {
     std::string res = PlatformNAPIJni::GetDeviceBrand();
     return res;
 }
 
-std::string PlatformNAPIImpl::GetProductModel()
-{
+std::string PlatformNAPIImpl::GetProductModel() {
     std::string res = PlatformNAPIJni::GetProductModel();
     return res;
 }

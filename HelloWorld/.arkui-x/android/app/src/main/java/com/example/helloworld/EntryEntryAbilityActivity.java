@@ -10,9 +10,7 @@ import ohos.stage.ability.adapter.StageActivity;
  * Example ace activity class, which will load ArkUI-X ability instance.
  * StageActivity is provided by ArkUI-X
  *
- * @see <a href=
- * "https://gitee.com/arkui-crossplatform/doc/blob/master/contribute/tutorial/how-to-build-Android-app.md">
- * to build android library</a>
+ * @since 2025-01-15
  */
 public class EntryEntryAbilityActivity extends StageActivity {
     @Override
