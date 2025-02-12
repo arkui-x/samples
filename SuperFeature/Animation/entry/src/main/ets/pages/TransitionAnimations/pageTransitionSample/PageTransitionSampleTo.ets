@@ -13,7 +13,8 @@ struct PageTransitionSampleTo {
   @State rightX: number = 0
   @State bottomY: number = 0
   @State progress: number = 0
-  @State transitionType: SlideEffect = SlideEffect.Left
+  @State enterTransitionType: SlideEffect = SlideEffect.Left
+  @State exitTransitionType: SlideEffect = SlideEffect.Left
 
   build() {
     Column() {
@@ -45,7 +46,8 @@ struct PageTransitionSampleTo {
   }
   aboutToAppear() {
     const routerParams = router.getParams() as Record<string,SlideEffect|number>
-    this.transitionType = routerParams.type as SlideEffect
+    this.enterTransitionType = routerParams.enterType as SlideEffect
+    this.exitTransitionType = routerParams.exitType as SlideEffect
     this.angle = routerParams.angle as number
     if (!this.angle) this.angle = 0
     this.zoom = routerParams.zoom as number
@@ -55,7 +57,7 @@ struct PageTransitionSampleTo {
   pageTransition() {
     // Entry animation
     PageTransitionEnter({ duration: ANIMATION_TIME, curve: Curve.Linear })
-      .slide(this.transitionType)
+      .slide(this.enterTransitionType)
       .onEnter((type: RouteType, progress: number) => {
         this.topY = (-progress + 1) * this.topY
         this.bottomY = (-progress + 1) * this.bottomY
@@ -66,7 +68,7 @@ struct PageTransitionSampleTo {
 
     // Exit animation
     PageTransitionExit({ duration: ANIMATION_TIME, curve: Curve.Ease })
-      .slide(this.transitionType)
+      .slide(this.exitTransitionType)
       .onExit((type: RouteType, progress: number) => {
         this.topY = -ANIMATION_PROGRESS * progress
         this.bottomY = ANIMATION_PROGRESS * progress
