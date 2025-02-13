@@ -17,7 +17,14 @@ import { router } from '@kit.ArkUI';
 import { HeaderBar } from './HeaderBar';
 import { OrderListContent } from './OrderListContent';
 import { OrderDetailConstants } from '../constants/OrderDetailConstants';
-import { BreakpointConstants, EmptyComponent, OrderOperationStatus, StyleConstants } from '@ohos/common';
+import {
+  BreakpointConstants,
+  EmptyComponent,
+  OrderOperationStatus,
+  StyleConstants,
+  PlatformInfo,
+  PlatformTypeEnum
+} from '@ohos/common';
 
 @Component
 export struct OrderDetailList {
@@ -110,5 +117,8 @@ export struct OrderDetailList {
       this.OrderTabs()
     }
     .backgroundColor($r('app.color.page_background'))
+    .padding({
+      top: PlatformInfo.getPlatform() == PlatformTypeEnum.IOS ? AppStorage.get<number>('statusBarHeight') : 0
+    })
   }
 }

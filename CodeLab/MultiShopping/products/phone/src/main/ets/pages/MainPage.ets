@@ -25,7 +25,9 @@ import {
   OrderOperationStatus,
   PageConstants,
   Product,
-  StyleConstants
+  StyleConstants,
+  PlatformInfo,
+  PlatformTypeEnum
 } from '@ohos/common';
 import { Home } from '@ohos/home';
 import { NewProduct } from '@ohos/newproduct';
@@ -146,6 +148,9 @@ struct MainPage {
         }
       })
     }
+    .padding({
+      top: PlatformInfo.getPlatform() == PlatformTypeEnum.IOS ? AppStorage.get<number>('statusBarHeight') : 0
+    })
     .backgroundColor($r('app.color.page_background'))
   }
 

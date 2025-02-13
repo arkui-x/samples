@@ -24,9 +24,11 @@ import {
   Order,
   ProductSpecification,
   Specification,
-  StyleConstants
+  StyleConstants,
+  ShopProps,
+  PlatformInfo,
+  PlatformTypeEnum
 } from '@ohos/common';
-import { ShopProps } from '@ohos/common/src/main/ets/viewmodel/ProductModel';
 import { FinishType } from '../viewmodel/TypeModel';
 import { SpecificationDialog } from './SpecificationDialog';
 import { barData, BarData, Evaluate, moreEvaluate, serviceList, userEvaluate } from '../viewmodel/CommodityDetailData';
@@ -584,5 +586,8 @@ export struct CommodityDetail {
         right: $r('app.float.vp_sixteen')
       })
     }
+    .padding({
+      top: PlatformInfo.getPlatform() == PlatformTypeEnum.IOS ? AppStorage.get<number>('statusBarHeight') : 0
+    })
   }
 }
