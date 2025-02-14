@@ -33,4 +33,8 @@ export class StyleConstants {
    * Translate value of the player area on the bottom.
    */
   static readonly TRANSLATE_PLAYER_Y: string = '-48vp';
+  /**
+   * Default status height
+   */
+  static readonly DEFAULT_STATUS_HEIGHT: number = 32;
 }

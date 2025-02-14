@@ -121,7 +121,7 @@ struct Splash {
           .textAlign(TextAlign.Center)
           .position({
             x: Const.PERCENTAGE_78,
-            y: $r('app.float.35')
+            y: $r('app.float.63')
           })
         } else {
           Image($r('app.media.splash_bg'))

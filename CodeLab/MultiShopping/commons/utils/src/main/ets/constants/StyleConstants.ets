@@ -133,4 +133,8 @@ export class StyleConstants {
    * Number of value: -1.
    */
   static readonly MINUS_ONE: number = -1;
+  /**
+   * Default status height
+   */
+  static readonly DEFAULT_STATUS_HEIGHT: number = 32;
 }

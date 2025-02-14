@@ -16,6 +16,7 @@
 import { Header } from './Header';
 import { LiveList } from './LiveList';
 import { LiveConstants } from '../constants/LiveConstants';
+import { PlatformInfo, PlatformTypeEnum } from '@ohos/mediaCommon';
 
 @Entry({ routeName: 'LivePage' })
 @Component
@@ -27,5 +28,8 @@ export struct LivePage {
     }
     .width(LiveConstants.FULL_WIDTH_PERCENT)
     .height(LiveConstants.FULL_HEIGHT_PERCENT)
+    .padding({
+      top: PlatformInfo.getPlatform() == PlatformTypeEnum.IOS ? AppStorage.get<number>('statusBarHeight') : 0
+    })
   }
 }

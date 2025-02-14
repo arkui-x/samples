@@ -27,9 +27,11 @@ import {
   Logger,
   Order,
   OrderOperationStatus,
-  StyleConstants
+  StyleConstants,
+  updateOrderProps,
+  PlatformInfo,
+  PlatformTypeEnum
 } from '@ohos/common';
-import { updateOrderProps } from '@ohos/common/src/main/ets/viewmodel/OrderModel';
 
 @Component
 export struct OrderListContent {
@@ -226,6 +228,9 @@ export struct OrderListContent {
       top: $r('app.float.vp_four'),
       left: $r('app.float.vp_twelve'),
       right: $r('app.float.vp_twelve')
+    })
+    .padding({
+      top: PlatformInfo.getPlatform() == PlatformTypeEnum.IOS ? AppStorage.get<number>('statusBarHeight') : 0
     })
   }
 }

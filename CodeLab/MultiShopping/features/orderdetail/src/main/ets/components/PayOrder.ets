@@ -18,8 +18,17 @@ import { CommodityOrderList } from './CommodityOrderList';
 import { AddressInfo } from './AddressInfo';
 import { HeaderBar } from './HeaderBar';
 import { OrderDetailConstants } from '../constants/OrderDetailConstants';
-import { formatDate, GridConstants, LocalDataManager, Order, OrderOperationStatus, StyleConstants } from '@ohos/common';
-import { updateOrderProps } from '@ohos/common/src/main/ets/viewmodel/OrderModel';
+import {
+  formatDate,
+  GridConstants,
+  LocalDataManager,
+  Order,
+  OrderOperationStatus,
+  PlatformInfo,
+  PlatformTypeEnum,
+  StyleConstants,
+  updateOrderProps
+} from '@ohos/common';
 
 @Component
 export struct PayOrder {
@@ -224,5 +233,8 @@ export struct PayOrder {
     }
     .height(StyleConstants.FULL_HEIGHT)
     .backgroundColor($r('app.color.page_background'))
+    .padding({
+      top: PlatformInfo.getPlatform() == PlatformTypeEnum.IOS ? AppStorage.get<number>('statusBarHeight') : 0
+    })
   }
 }

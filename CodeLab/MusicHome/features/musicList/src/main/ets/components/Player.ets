@@ -78,6 +78,9 @@ export struct Player {
       }
       .height((100 - this.componentHeight) + '%')
     }
+    .padding({
+      top: PlatformInfo.getPlatform() == PlatformTypeEnum.IOS ? AppStorage.get<number>('statusBarHeight') : 0
+    })
     .height(StyleConstants.FULL_PERCENT)
     .width(StyleConstants.FULL_PERCENT)
     .justifyContent(FlexAlign.End)

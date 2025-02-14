@@ -13,7 +13,7 @@
  * limitations under the License.
  */
 
-import { BreakpointSystem, MediaService } from '@ohos/mediaCommon';
+import { BreakpointSystem, MediaService, PlatformInfo, PlatformTypeEnum } from '@ohos/mediaCommon';
 import { BreakpointConstants, SongConstants, StyleConstants } from '@ohos/constantsCommon';
 import { Header } from '../components/Header';
 import { Player } from '../components/Player';
@@ -50,6 +50,9 @@ export struct MusicListPage {
       if (typeof newArea.height === 'number') {
         this.deviceHeight = newArea.height;
       }
+    })
+    .padding({
+      top: PlatformInfo.getPlatform() == PlatformTypeEnum.IOS ? AppStorage.get<number>('statusBarHeight') : 0
     })
   }
 

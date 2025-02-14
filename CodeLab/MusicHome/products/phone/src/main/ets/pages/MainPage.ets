@@ -15,7 +15,7 @@
 
 import router from '@ohos.router';
 import { BreakpointConstants, HomeConstants, StyleConstants } from '@ohos/constantsCommon';
-import { IndexItemData, IndexViewModel, Logger } from '@ohos/mediaCommon';
+import { IndexItemData, IndexViewModel, Logger, PlatformInfo, PlatformTypeEnum } from '@ohos/mediaCommon';
 
 @Entry
 @Component
@@ -124,5 +124,8 @@ struct MainPage {
     .height(StyleConstants.FULL_PERCENT)
     .hideTitleBar(true)
     .hideToolBar(true)
+    .padding({
+      top: PlatformInfo.getPlatform() == PlatformTypeEnum.IOS ? AppStorage.get<number>('statusBarHeight') : 0
+    })
   }
 }

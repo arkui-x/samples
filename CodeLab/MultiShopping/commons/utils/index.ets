@@ -45,8 +45,16 @@ export { StyleConstants } from './src/main/ets/constants/StyleConstants';
 
 export { CommonDataSource } from './src/main/ets/utils/CommonDataSource';
 
+export { PlatformTypeEnum, PlatformInfo } from './src/main/ets/utils/PlatformInfo';
+
 export { PageConstants } from './src/main/ets/constants/PageConstants';
 
 export { ButtonInfoModel } from './src/main/ets/viewmodel/MainPageData';
 
 export { buttonInfo } from './src/main/ets/viewmodel/MainPageData';
+
+export { InsertOrderProps } from './src/main/ets/viewmodel/OrderModel';
+
+export { ShopProps } from './src/main/ets/viewmodel/ProductModel';
+
+export { updateOrderProps } from './src/main/ets/viewmodel/OrderModel';

@@ -13,7 +13,8 @@
  * limitations under the License.
  */
 
-import { BreakpointConstants, SongConstants, StyleConstants } from '@ohos/constantsCommon';
+import { BreakpointConstants, SongConstants, StyleConstants, } from '@ohos/constantsCommon';
+import { PlatformInfo, PlatformTypeEnum } from '@ohos/mediaCommon';
 import { Comment } from '../viewmodel/Comment';
 import CommentViewModel from '../viewmodel/CommentViewModel';
 import { ListItemComponent } from './ListItemComponent';
@@ -202,5 +203,8 @@ export struct MusicCommentPage {
       }
     }
     .backgroundColor(Color.White)
+    .padding({
+      top: PlatformInfo.getPlatform() == PlatformTypeEnum.IOS ? AppStorage.get<number>('statusBarHeight') : 0
+    })
   }
 }

@@ -16,7 +16,7 @@
 import { AbilityConstant, UIAbility, Want } from '@kit.AbilityKit';
 import { hilog } from '@kit.PerformanceAnalysisKit';
 import { display, window } from '@kit.ArkUI';
-import { BreakpointConstants } from '@ohos/constantsCommon';
+import { BreakpointConstants, StyleConstants } from '@ohos/constantsCommon';
 import { deviceInfo } from '@kit.BasicServicesKit';
 
 export default class EntryAbility extends UIAbility {
@@ -58,7 +58,7 @@ export default class EntryAbility extends UIAbility {
         this.updateBreakpoint(windowSize.width);
       })
     })
-
+    AppStorage.setOrCreate<number>('statusBarHeight', StyleConstants.DEFAULT_STATUS_HEIGHT);
     windowStage.loadContent('pages/MainPage', (err) => {
       if (err.code) {
         hilog.error(0x0000, 'testTag', 'Failed to load the content. Cause: %{public}s', JSON.stringify(err) ?? '');
