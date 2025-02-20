@@ -25,7 +25,7 @@ class itTmp {
 struct NewDetails {
   scroller: Scroller = new Scroller()
   rowScroller: Scroller = new Scroller()
-  @State shareHeight: number = -9999
+  @State shareHeight: number = 0
   @State isShare: boolean = false
   @State scrollTop: number = 0
   @State shareOpacity: number = 0
