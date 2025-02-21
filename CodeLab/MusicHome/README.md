@@ -1,6 +1,9 @@
 # 音乐专辑
 
 ## 介绍
+
+运行部署本示例前，请先参阅[跨平台应用改造指南](https://gitcode.com/arkui-x/docs/blob/master/zh-cn/application-dev/tutorial/how-to-use-arkuix-on-applicationRetrofit.md)以熟悉相关概念。
+
 基于HarmonyOS Next的[音乐专辑](https://gitee.com/harmonyos_codelabs/MusicHome)进行跨平台改造适配，主要用于呈现ArkUI-X框架的基本能力和媒体播放音频能力。<br>
 
 ## 效果预览
@@ -213,13 +216,13 @@ MusicHome
 
 ## 约束与限制
 
-1.本示例仅支持标准Android/iOS/鸿蒙系统上运行。
+1.本示例仅支持标准Android/iOS/鸿蒙系统上运行。<br>
 
-2.本示例已适配API version 12版本的ArkUI-X SDK，版本号：2.0.0.27及以上。
+2.本示例已适配API version 12版本的ArkUI-X SDK，版本号：2.0.0.27及以上。<br>
 
-3.本示例需要使用DevEco Studio 5.0 Beta1 (Build Version: 5.0.3.403, built on June 21, 2024)及以上版本才可编译运行。
+3.本示例需要使用DevEco Studio 5.0 Beta1 (Build Version: 5.0.3.403, built on June 21, 2024)及以上版本才可编译运行。<br>
 
-
+4.本示例需要修改使用的DevEco Studio相关SDK的配置项，详见[关于deveco-studio编译时报错问题解决](https://gitcode.com/arkui-x/docs/blob/master/zh-cn/application-dev/tutorial/how-to-use-arkuix-on-applicationRetrofit.md#五、关于deveco-studio编译时报错问题解决)。<br>
 
 ## 下载
 如需单独下载本工程，执行如下命令：
