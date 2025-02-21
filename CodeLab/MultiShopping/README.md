@@ -1,6 +1,9 @@
 # 购物应用
 
 ## 介绍
+
+运行部署本示例前，请先参阅[跨平台应用改造指南](https://gitcode.com/arkui-x/docs/blob/master/zh-cn/application-dev/tutorial/how-to-use-arkuix-on-applicationRetrofit.md)以熟悉相关概念。
+
 基于HarmonyOS Next的[购物应用](https://gitee.com/harmonyos_codelabs/MultiShopping)进行跨平台改造适配，主要用于呈现ArkUI-X框架的基本能力。基于自适应和响应式布局，实现一次开发，多端部署的购物应用。<br>
 
 ## 效果预览
@@ -213,6 +216,8 @@ MultiShopping
 2.本示例已适配API version 12版本的ArkUI-X SDK，版本号：2.0.0.27及以上。<br>
 
 3.本示例需要使用DevEco Studio 5.0 Beta1 (Build Version: 5.0.3.403, built on June 21, 2024)及以上版本才可编译运行。<br>
+
+4.本示例需要修改使用的DevEco Studio相关SDK的配置项，详见[关于deveco-studio编译时报错问题解决](https://gitcode.com/arkui-x/docs/blob/master/zh-cn/application-dev/tutorial/how-to-use-arkuix-on-applicationRetrofit.md#五、关于deveco-studio编译时报错问题解决)。<br>
 
 ## 下载
 如需单独下载本工程，执行如下命令：

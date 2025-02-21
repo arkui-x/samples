@@ -1,6 +1,9 @@
 # 溪村小镇
 
 ## 介绍
+
+运行部署本示例前，请先参阅[跨平台应用改造指南](https://gitcode.com/arkui-x/docs/blob/master/zh-cn/application-dev/tutorial/how-to-use-arkuix-on-applicationRetrofit.md)以熟悉相关概念。
+
 基于HarmonyOS Next的[溪村小镇](https://gitee.com/harmonyos_codelabs/OxHornCampus)进行跨平台改造适配，主要用于呈现ArkUI-X框架的基本能力。<br>
 
 ## 效果预览
@@ -10,6 +13,10 @@
 |                                                              |                                                              |                                                          |
 
 ### 使用说明
+
+- 本示例存在两个module，分别命名为arkuix和harmonyos，其中arkuix经编译后部署于Android/iOS平台；harmonyos经编译后部署于HarmonyOS平台。因此在运行时，需要根据目标部署平台来确定参与编译的module。具体实现方法为：工程[build-profile.json5](build-profile.json5)文件中，确定参与编译的module保持不变即可，使用注释方法将另一个module进行注释，禁止其参与编译。最终确定编译时仅与目标平台对应的module参与编译，另一个module不参与编译。
+
+  <img src="screenshots/image1.png" width=600 height=640 />
 - 分别在Android、iOS、HarmonyOSNext安装并打开应用。应用启动后进入启动页，之后进入应用首页。<br>
 
 - 在应用首页的“区域导览”标签页，可以上下滑动查看溪村小镇不同区域的卡片，点击卡片可以进入对应的区域详情页并查看区域的详细介绍和高清建筑风景图。<br>
@@ -237,6 +244,8 @@ OxHornCampus
 2.本示例已适配API version 12版本的ArkUI-X SDK，版本号：2.0.0.27及以上。<br>
 
 3.本示例需要使用DevEco Studio 5.0 Beta1 (Build Version: 5.0.3.403, built on June 21, 2024)及以上版本才可编译运行。<br>
+
+4.本示例需要修改使用的DevEco Studio相关SDK的配置项，详见[关于deveco-studio编译时报错问题解决](https://gitcode.com/arkui-x/docs/blob/master/zh-cn/application-dev/tutorial/how-to-use-arkuix-on-applicationRetrofit.md#五、关于deveco-studio编译时报错问题解决)。<br>
 
 ## 下载
 如需单独下载本工程，执行如下命令：

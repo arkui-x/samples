@@ -1,6 +1,9 @@
 # HMOS世界
 
 ## 介绍
+
+运行部署本示例前，请先参阅[跨平台应用改造指南](https://gitcode.com/arkui-x/docs/blob/master/zh-cn/application-dev/tutorial/how-to-use-arkuix-on-applicationRetrofit.md)以熟悉相关概念。
+
 基于分层架构和模块化设计的最佳实践。呈现ArkUI-X框架的基本能力。<br>
 
 ## 效果预览
@@ -11,7 +14,12 @@
 
 ### 使用说明
 - 本示例运行安装时随意修改本示例的bundleName可能会导致网络请求失败。<br>
+
 - 本示例用到了地图和华为快捷登录功能，如果想体验这两个功能，需要用本示例build-profile.json5文件中配置的签名信息安装运行。<br>
+
+- 本示例存在两个module，分别命名为arkuix和harmonyos，其中arkuix经编译后部署于Android/iOS平台；harmonyos经编译后部署于HarmonyOS平台。因此在运行时，需要根据目标部署平台来确定参与编译的module。具体实现方法为：工程[build-profile.json5](build-profile.json5)文件中，确定参与编译的module保持不变即可，使用注释方法将另一个module进行注释，禁止其参与编译。最终确定编译时仅与目标平台对应的module参与编译，另一个module不参与编译。
+
+  <img src="screenshots/image1.png" width=600 height=640 />
 
 1. 分别在Android、iOS、HarmonyOSNext安装并打开应用。应用启动后进入用户隐私确认页，确认后进入启动页，展示启动动画。<br>
 2. 启动动画结束后进入登录页面，可直接点击登录按钮进入。仅HarmonyOSNext设备支持华为快捷登录功能。<br>
@@ -561,11 +569,13 @@ HMOSWorld
 
 ## 约束与限制
 
-1.本示例仅支持标准Android/iOS/鸿蒙系统上运行。
+1.本示例仅支持标准Android/iOS/鸿蒙系统上运行。<br>
 
-2.本示例已适配API version 12版本的ArkUI-X SDK，版本号：2.0.0.27及以上。
+2.本示例已适配API version 12版本的ArkUI-X SDK，版本号：2.0.0.27及以上。<br>
 
-3.本示例需要使用DevEco Studio 5.0 Beta1 (Build Version: 5.0.3.403, built on June 21, 2024)及以上版本才可编译运行。
+3.本示例需要使用DevEco Studio 5.0 Beta1 (Build Version: 5.0.3.403, built on June 21, 2024)及以上版本才可编译运行。<br>
+
+4.本示例需要修改使用的DevEco Studio相关SDK的配置项，详见[关于deveco-studio编译时报错问题解决](https://gitcode.com/arkui-x/docs/blob/master/zh-cn/application-dev/tutorial/how-to-use-arkuix-on-applicationRetrofit.md#五、关于deveco-studio编译时报错问题解决)。<br>
 
 ## 下载
 如需单独下载本工程，执行如下命令：
