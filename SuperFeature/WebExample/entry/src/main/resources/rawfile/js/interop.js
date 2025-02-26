@@ -8,7 +8,7 @@
     const counterBtn = document.querySelector('#countBtn'); // counter中的计数值
     const textField = document.querySelector('#textField'); // textfield
     const custom = document.querySelector('#custom'); // customer app
-    const counter_increment = document.querySelector('#counter_increment'); // counter中的点击按钮
+    const counterIncrement = document.querySelector('#counter_increment'); // counter中的点击按钮
     valueField.setAttribute('value', 0);
     /* 设置下拉框变更事件 */
     screenSelector.addEventListener('change', (event) => {
@@ -42,7 +42,7 @@
         counterBtn.innerHTML = value;
     });
     /* 设置counter内计数按钮点击事件 */
-    counter_increment.addEventListener('click', (event) => {
+    counterIncrement.addEventListener('click', (event) => {
         let value = valueField.getAttribute('value');
         valueField.setAttribute('value', ++value);
         counterBtn.innerHTML = value;
@@ -51,54 +51,54 @@
     // 监听文本域输入，高度自动变化
     function makeExpandingArea(el) {
         let timer = null;
-        const setStyle = function (el, auto) {
-            const parent_el_height = el.parentElement.clientHeight;
-            if (parent_el_height === 0) {
+        const setStyle = function (elInner, auto) {
+            const parentHeight = elInner.parentElement.clientHeight;
+            if (parentHeight === 0) {
                 return;
             }
             if (auto) {
-                el.style.height = 'auto';
+                elInner.style.height = 'auto';
             }
-            el.style.cssText = `height: ${el.scrollHeight}px;max-height: ${
-                parent_el_height - 20
+            elInner.style.cssText = `height: ${elInner.scrollHeight}px;max-height: ${
+                parentHeight - 20
             }px;`;
-            if (el.scrollHeight > parent_el_height) {
-                el.style.cssText += 'overflow-y: scroll;';
+            if (elInner.scrollHeight > parentHeight) {
+                elInner.style.cssText += 'overflow-y: scroll;';
             }
         };
-        const delayedResize = function (el) {
+        const delayedResize = function (elInner) {
             if (timer) {
                 clearTimeout(timer);
                 timer = null;
             }
-            timer = setTimeout(function () {
-                setStyle(el);
+            timer = setTimeout(() => {
+                setStyle(elInner);
             }, 200);
         };
         if (el.addEventListener) {
             el.addEventListener(
                 'input',
-                function () {
+                () => {
                     setStyle(el, 1);
                 },
                 false
             );
             setStyle(el);
         } else if (el.attachEvent) {
-            el.attachEvent('onpropertychange', function () {
+            el.attachEvent('onpropertychange', () => {
                 setStyle(el);
             });
             setStyle(el);
         }
         if (window.VBArray && window.addEventListener) {
             // IE9
-            el.attachEvent('onkeydown', function () {
+            el.attachEvent('onkeydown', () => {
                 const key = window.event.keyCode;
                 if (key === 8 || key === 46) {
                     delayedResize(el);
                 }
             });
-            el.attachEvent('oncut', function () {
+            el.attachEvent('oncut', () => {
                 delayedResize(el);
             }); // 处理粘贴
         }

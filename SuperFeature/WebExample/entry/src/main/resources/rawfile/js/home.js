@@ -1,14 +1,14 @@
 // @ts-nocheck
 'use strict';
-var barchart_1Opts = null;
-var barchart_2Opts = null;
-var barchart_3Opts = null;
+let barChart1Opts = null;
+let barChart2Opts = null;
+let barChart3Opts = null;
 
 function init() {
-    const barchart_1 = document.getElementById('barchart_1');
-    const barchart_2 = document.getElementById('barchart_2');
-    const barchart_3 = document.getElementById('barchart_3');
-    const option_1 = {
+    const barChart1 = document.getElementById('barchart_1');
+    const barChart2 = document.getElementById('barchart_2');
+    const barChart3 = document.getElementById('barchart_3');
+    const option1 = {
         color: ['#52894e'],
         grid: {
             left: '20%',
@@ -35,7 +35,7 @@ function init() {
             },
         ],
     };
-    const option_2 = {
+    const option2 = {
         color: ['#1c68d4'],
         grid: {
             left: '20%',
@@ -63,7 +63,7 @@ function init() {
             },
         ],
     };
-    const option_3 = {
+    const option3 = {
         grid: {
             left: '20%',
             right: '20%',
@@ -90,25 +90,25 @@ function init() {
             },
         ],
     };
-    barchart_1Opts = echarts.init(barchart_1);
-    barchart_2Opts = echarts.init(barchart_2);
-    barchart_3Opts = echarts.init(barchart_3);
+    barChart1Opts = echarts.init(barChart1);
+    barChart2Opts = echarts.init(barChart2);
+    barChart3Opts = echarts.init(barChart3);
 
-    barchart_1Opts.setOption(option_1);
-    barchart_2Opts.setOption(option_2);
-    barchart_3Opts.setOption(option_3);
+    barChart1Opts.setOption(option1);
+    barChart2Opts.setOption(option2);
+    barChart3Opts.setOption(option3);
 
     window.addEventListener('resize', (event) => {
-        barchart_1Opts.resize();
-        barchart_2Opts.resize();
-        barchart_3Opts.resize();
+        barChart1Opts.resize();
+        barChart2Opts.resize();
+        barChart3Opts.resize();
     });
 }
 
 function barChartResize() {
-    barchart_1Opts.resize();
-    barchart_2Opts.resize();
-    barchart_3Opts.resize();
+    barChart1Opts.resize();
+    barChart2Opts.resize();
+    barChart3Opts.resize();
 }
 
 (function () {
