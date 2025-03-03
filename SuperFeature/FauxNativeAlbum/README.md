@@ -36,12 +36,12 @@ entry/src/main/ets
 |   |---Index.ets                          // 仿相册首页
 ```
 ## 具体实现
-* 首页封装在Index，源码参考:[Index.ets](harmony_album/entry/src/main/ets/pages/Index.ets)
+* 首页封装在Index，源码参考:[Index.ets](entry/src/main/ets/pages/Index.ets)
     * 在首页中通过photoAccessHelper.PhotoViewPicker的select方法，拉起手机原生图库，选择对应的文件。
-* 点击图片或视频后携带数据跳转到展示详情页面[DetailPage.ets](harmony_album/entry/src/main/ets/pages/DetailPage.ets)，以查看图片，播放视频。
+* 点击图片或视频后携带数据跳转到展示详情页面[DetailPage.ets](entry/src/main/ets/pages/DetailPage.ets)，以查看图片，播放视频。
 
 ## 相关权限
-[ohos.permission.READ_MEDIA](https://gitee.com/openharmony/docs/blob/master/zh-cn/application-dev/security/AccessToken/permissions-for-all.md#ohospermissionread_media)
+[ohos.permission.READ_MEDIA](https://gitcode.com/openharmony/docs/blob/master/zh-cn/application-dev/security/AccessToken/permissions-for-all-user.md#ohospermissionread_media)
 本项目使用媒体读取权限。
 
 ## 依赖
