@@ -2,9 +2,9 @@
 'use strict';
 (function () {
     const table = document.querySelector('.table');
-    const tbody = table.children[1];
+    const tbody = table.querySelector('tbody');
     const tableData = [];
-    const data = [
+    const [date, name, city, district, address, postcode] = [
         '2016-05-03',
         '王小虎',
         '上海',
@@ -13,7 +13,7 @@
         200333,
     ];
     for (let index = 0; index < 40; index++) {
-        tableData.push(data);
+        tableData.push([date, name, city, district, address, postcode]);
     }
     tableData.forEach((item) => {
         const tr = document.createElement('tr');
@@ -24,7 +24,7 @@
             td.appendChild(div);
             tr.appendChild(td);
         });
-        table.children[1].appendChild(tr);
+        tbody.appendChild(tr);
     });
-    tbody.style.cssText = `max-height: ${table.clientHeight}px;`;
+    tbody.style.maxHeight = `${table.clientHeight}px`;
 })();
