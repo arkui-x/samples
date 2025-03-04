@@ -97,21 +97,21 @@ Note:If the text contains special characters, please escape them according to th
                 <filteritem type="filepath" name="News/screenshots/.*.png" desc="运行结果截图"/>
                 <filteritem type="filepath" name="Shopping/entry/src/main/ets/resources/.*.png" desc="already checked"/>
                 <filteritem type="filepath" name="JsonExample/entry/src/main/resources/base/media/.*.png" desc="already checked"/>
-                <filteritem type="filepath" name="WebExample/entry/src/main/resources/base/media/.*.png" desc="already checked"/>
-                <filteritem type="filepath" name="WebExample/screenshots/.*.png" desc="运行结果截图"/>
+                <filteritem type="filepath" name="SuperFeature/WebExample/entry/src/main/resources/base/media/.*.png" desc="already checked"/>
+                <filteritem type="filepath" name="SuperFeature/WebExample/screenshots/.*.png" desc="运行结果截图"/>
                 <filteritem type="filepath" name="HelloWorld/entry/src/main/resources/base/media/.*.png" desc="already checked"/>
                 <filteritem type="filepath" name="JsonExample/AppScope/resources/base/media/.*.png" desc="already checked"/>
                 <filteritem type="filepath" name="Router/AppScope/resources/base/media/.*.png" desc="already checked"/>
                 <filteritem type="filepath" name="FauxNativeAlbum/harmony_album/screenshots/.*.png" desc="运行结果截图"/>
-                <filteritem type="filepath" name="WebExample/entry/src/main/resources/rawfile/assets/.*.png" desc="already checked"/>
+                <filteritem type="filepath" name="SuperFeature/WebExample/entry/src/main/resources/rawfile/assets/.*.png" desc="already checked"/>
                 <filteritem type="filepath" name="FauxNativeAlbum/cross_platform/entry/src/main/resources/base/media/.*.png" desc="already checked"/>
                 <filteritem type="filepath" name="PlatformNAPI/screenshots/.*.png" desc="运行结果截图"/>
                 <filteritem type="filepath" name="Router/entry/src/main/ets/pages/RedirectPage.ets" desc="ets源码"/>
                 <filteritem type="filepath" name="JsonExample/entry/src/main/ets/beans/SimpleObject.ets" desc="ets源码"/>
                 <filteritem type="filepath" name="JsonExample/entry/src/main/ets/beans/ComplicatedObject.ets" desc="ets源码"/>
                 <filteritem type="filepath" name="Shopping/entry/src/main/ets/resources/common/.*.png" desc="already checked"/>
-                <filteritem type="filepath" name="WebExample/entry/src/main/resources/rawfile/icons/.*.png" desc="already checked"/>
-                <filteritem type="filepath" name="WebExample/entry/src/main/resources/rawfile/fonts/.*.ttf" desc="already checked"/>
+                <filteritem type="filepath" name="SuperFeature/WebExample/entry/src/main/resources/rawfile/icons/.*.png" desc="already checked"/>
+                <filteritem type="filepath" name="SuperFeature/WebExample/entry/src/main/resources/rawfile/fonts/.*.ttf" desc="already checked"/>
             </filefilter>
             <filefilter name="copyrightPolicyFilter" desc="Copyright文件头校验策略的过滤条件" >
                 <filteritem type="filepath" name="Animation/.*.ets|.*.ts" desc="示例展示无需添加版权头"/>
@@ -130,10 +130,10 @@ Note:If the text contains special characters, please escape them according to th
                 <filteritem type="filepath" name="PlatformNAPI/.*.ets|.*.ts" desc="示例展示无需添加版权头"/>
                 <filteritem type="filepath" name="Router/.*.ets|.*.ts" desc="示例展示无需添加版权头"/>
                 <filteritem type="filepath" name="Shopping/.*.ets|.*.ts" desc="示例展示无需添加版权头"/>
-                <filteritem type="filepath" name="WebExample/.*.ets|.*.ts" desc="示例展示无需添加版权头"/>
+                <filteritem type="filepath" name="SuperFeature/WebExample/.*.ets|.*.ts" desc="示例展示无需添加版权头"/>
                 <filteritem type="filepath" name="XcomponentNative/.*.ets|.*.ts" desc="示例展示无需添加版权头"/>
-                <filteritem type="filepath" name="WebExample/entry/src/main/resources/rawfile/js/echarts.min.js" desc="import third-party ECharts file"/>
-                <filteritem type="filepath" name="WebExample/entry/src/main/resources/rawfile/js/.*.js" desc="示例展示无需添加版权头"/>
+                <filteritem type="filepath" name="SuperFeature/WebExample/entry/src/main/resources/rawfile/js/echarts.min.js" desc="import third-party ECharts file"/>
+                <filteritem type="filepath" name="SuperFeature/WebExample/entry/src/main/resources/rawfile/js/.*.js" desc="示例展示无需添加版权头"/>
             </filefilter>
             <filefilter name="defaultPolicyFilter" desc="HealthyDiet License文件头校验策略的过滤条件" >
                 <filteritem type="filepath" name="Animation/.*.ets|.*.ts" desc="示例展示无需添加License头"/>
@@ -152,10 +152,10 @@ Note:If the text contains special characters, please escape them according to th
                 <filteritem type="filepath" name="PlatformNAPI/.*.ets|.*.ts" desc="示例展示无需添加License头"/>
                 <filteritem type="filepath" name="Router/.*.ets|.*.ts" desc="示例展示无需添加License头"/>
                 <filteritem type="filepath" name="Shopping/.*.ets|.*.ts" desc="示例展示无需添加License头"/>
-                <filteritem type="filepath" name="WebExample/.*.ets|.*.ts" desc="示例展示无需添加License头"/>
+                <filteritem type="filepath" name="SuperFeature/WebExample/.*.ets|.*.ts" desc="示例展示无需添加License头"/>
                 <filteritem type="filepath" name="XcomponentNative/.*.ets|.*.ts" desc="示例展示无需添加License头"/>
-                <filteritem type="filepath" name="WebExample/entry/src/main/resources/rawfile/js/echarts.min.js" desc="import third-party ECharts file"/>
-                <filteritem type="filepath" name="WebExample/entry/src/main/resources/rawfile/js/.*.js" desc="示例展示无需添加License头"/>
+                <filteritem type="filepath" name="SuperFeature/WebExample/entry/src/main/resources/rawfile/js/echarts.min.js" desc="import third-party ECharts file"/>
+                <filteritem type="filepath" name="SuperFeature/WebExample/entry/src/main/resources/rawfile/js/.*.js" desc="示例展示无需添加License头"/>
             </filefilter>
             <filefilter name="copyrightPolicyFilter" desc="Copyright文件头校验策略的过滤条件" >
                 <filteritem type="filename" name="gradlew" desc="Android工程编译入口脚本，无需添加版权头"/>

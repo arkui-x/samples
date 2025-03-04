@@ -5,19 +5,19 @@
     const tollbar = document.querySelector('.toolbar'); // 获取控制展开、隐藏的DIV
     const menu = document.querySelector('.menu'); // 菜单栏
     const main = document.querySelector('.main'); // 展示内容区域
-    const hidden_class = 'hidden';
-    const active_class = 'actived';
+    const hiddenClass = 'hidden';
+    const activeClass = 'actived';
     tollbar.addEventListener('click', (event) => {
-        const currentShow = tollbar.children[0].classList.contains(hidden_class);
+        const currentShow = tollbar.children[0].classList.contains(hiddenClass);
         if (!currentShow) {
-            tollbar.children[0].classList.add(hidden_class);
-            tollbar.children[1].classList.remove(hidden_class);
+            tollbar.children[0].classList.add(hiddenClass);
+            tollbar.children[1].classList.remove(hiddenClass);
             tollbar.setAttribute('title', '展开');
             aside.style.cssText = 'width: 0 !important;';
             aside.classList.remove('aside-show');
         } else {
-            tollbar.children[0].classList.remove(hidden_class);
-            tollbar.children[1].classList.add(hidden_class);
+            tollbar.children[0].classList.remove(hiddenClass);
+            tollbar.children[1].classList.add(hiddenClass);
             tollbar.setAttribute('title', '隐藏');
             aside.classList.add('aside-show');
             aside.style.cssText = '';
@@ -29,10 +29,10 @@
         const el = menu.children[index];
         el.addEventListener('click', (event) => {
             main.children[index].classList.remove('hide');
-            el.classList.add(active_class); // 给当前节点添加选中样式
+            el.classList.add(activeClass); // 给当前节点添加选中样式
             for (let i = 0; i < len; i++) {
                 if (i !== index) {
-                    menu.children[i].classList.remove(active_class); // 删除其余节点的选中样式
+                    menu.children[i].classList.remove(activeClass); // 删除其余节点的选中样式
                     main.children[i].classList.add('hide');
                 }
             }
