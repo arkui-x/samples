@@ -18,7 +18,7 @@
             setTarget.parentNode.insertBefore(handheld, setTarget);
             handheld.append(setTarget);
             handheld.append(attribution);
-            window.setTimeout(function () {
+            window.setTimeout(() => {
                 handheld.classList.remove('hidden');
             }, 100);
             // Disable all effects on the flutter container
@@ -26,14 +26,14 @@
             setOtherFxEnabled(false);
         } else {
             handheld.classList.add('hidden');
-            window.setTimeout(function () {
+            window.setTimeout(() => {
                 handheld.parentNode.insertBefore(setTarget, handheld);
                 handheld.remove();
                 handheld = null;
             }, 210);
             setOtherFxEnabled(true);
         }
-        window.requestAnimationFrame(function () {
+        window.requestAnimationFrame(() => {
             // Let the browser flush the DOM...
             setTarget.classList.toggle(fx);
         });
@@ -55,8 +55,8 @@
         });
     }
 
-    controlButtons.addEventListener('click', (event) => {
-        let fx = event.target.dataset.fx;
+    controlButtons.addEventListener('click', ({ target }) => {
+        let fx = target.dataset.fx;
         if (fx === 'handheld') {
             handleHandHeld(fx);
             return;
