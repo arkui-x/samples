@@ -1,7 +1,9 @@
 #import <Foundation/Foundation.h>
+
 #import "MyPlatformViewFactory.h"
 #import "MyWebview.h"
 #import "MyMapView.h"
+#import "MyVideoView.h"
 
 @implementation MyPlatformViewFactory {
 
@@ -18,6 +20,9 @@
         return view;
     } else if ([xComponentId isEqualToString:@"MapView"]) {
         NSObject<IPlatformView> * view = [[MyMapView alloc] initWithFrame];
+        return view;
+    } else if ([xComponentId isEqualToString:@"VideoView"]) {
+        NSObject<IPlatformView> * view = [[MyVideoView alloc] initWithFrame];
         return view;
     }
     return nil;

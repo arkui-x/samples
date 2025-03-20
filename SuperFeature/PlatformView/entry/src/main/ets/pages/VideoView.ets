@@ -19,16 +19,18 @@ import PlatformView, { PlatformViewAttribute } from '@arkui-x.platformview';
 @Entry
 @Component
 struct Index {
-  @State title: string = 'PlatformView WebView'
+  @State title: string = 'PlatformView VideoView'
 
   build() {
     Row() {
       Column() {
         MainPageComponent()
-        PlatformView('WebView')
+          PlatformView('VideoView')
+          .width(216)
+          .height(384)
       }
+      .height('100%')
       .width('100%')
     }
-    .height('100%')
   }
 }

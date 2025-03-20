@@ -1,5 +1,5 @@
-#ifndef MY_WEBVIEW_H
-#define MY_WEBVIEW_H
+#ifndef MYVIDEOVIEW_H
+#define MYVIDEOVIEW_H
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
@@ -7,7 +7,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface MyWebview : NSObject<IPlatformView>
+@interface MyVideoView : NSObject<IPlatformView>
 - (UIView *) view;
 - (void) onDispose;
 - (NSString *) getPlatformViewID;
@@ -16,4 +16,4 @@ NS_ASSUME_NONNULL_BEGIN
 
 NS_ASSUME_NONNULL_END
 
-#endif /* MY_WEBVIEW_H */
+#endif /* MYVIDEOVIEW_H */

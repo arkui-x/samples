@@ -2,25 +2,25 @@
 
 ## 介绍
 
-本示例使用 PlatformView 功能（原生组件嵌入 ArkUI 界面中）在 ArkUI 界面中使用原生 Mapview 和 WebView。
+本示例使用 PlatformView 功能（原生组件嵌入 ArkUI 界面中）在 ArkUI 界面中使用原生 Mapview , WebView 和 播放视频。
 
 ## 效果预览
 
-| Android 平台                                                  |                                                              |                                                              |
-| ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| 主页面展示效果                                               | PlatformView MapView 展示效果                                | PlatformView Webview 展示效果                                |
-| <img src="./screenshots/android_main.jpg" width =" " alt="android_main" /> | <img src="./screenshots/android_mapview.jpg" alt="android_mapview" /> | <img src="./screenshots/android_webview.jpg" alt="android_webview" /> |
-| **iOS 平台**                                                  |                                                              |                                                              |
-| 主页面展示效果                                               | PlatformView MapView 展示效果                                | PlatformView Webview 展示效果                                |
-| <img src="./screenshots/ios_main.jpg" alt="ios_main" />      | <img src="./screenshots/ios_mapview.jpg" alt="ios_mapview" /> | <img src="./screenshots/ios_webview.jpg" alt="ios_webview" /> |
+| Android 平台                                                 |                                                              |                                                              |                                                              |
+| ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
+| 主页面展示效果                                               | PlatformView MapView 展示效果                                | PlatformView Webview 展示效果                                | PlatformView Videoview 展示效果                              |
+| <img src="./screenshots/android_main.jpg" width =" " alt="android_main" /> | <img src="./screenshots/android_mapview.jpg" alt="android_mapview" /> | <img src="./screenshots/android_webview.jpg" alt="android_webview" /> | <img src="./screenshots/android_videoview.jpg" alt="android_videoview" /> |
+| **iOS 平台**                                                 |                                                              |                                                              |                                                              |
+| 主页面展示效果                                               | PlatformView MapView 展示效果                                | PlatformView Webview 展示效果                                | PlatformView Videoview 展示效果                              |
+| <img src="./screenshots/ios_main.png" alt="ios_main" />      | <img src="./screenshots/ios_mapview.png" alt="ios_mapview" /> | <img src="./screenshots/ios_webview.png" alt="ios_webview" /> | <img src="./screenshots/ios_videoview.png" alt="ios_videoview" /> |
 
 
 
 ### 使用说明
 
-1.打开 app，主页面显示 MapView 和 WebView 对应按钮。
+1.打开 app，主页面显示 MapView, WebView 和VideoView对应按钮。
 
-2.点击按钮进入对应界面，使用原生的 MapView 或 WebView 功能。
+2.点击按钮进入对应界面，使用原生的 MapView , WebView 和VideoView 功能。
 
 ## 工程目录
 
@@ -31,6 +31,7 @@
 |   |---MyPlatformViewFactory.java					// Android侧PlatformViewFactory接口实现
 |   |---MyMapView.java								// Android侧IPlatformView接口实现，使用原生地图组件
 |   |---MyWebView.java								// Android侧IPlatformView接口实现，使用原生WebView
+|   |---MyVideoView.java							// Android侧IPlatformView接口实现，使用原生播放视频
 |---/ios/app
 |   |---EntryEntryAbilityActivity.m	         		// iOS侧注册PlatformViewFactory类
 |   |---MyPlatformViewFactory.h						// iOS侧PlatformViewFactory接口实现
@@ -39,12 +40,15 @@
 |   |---MyMapView.m									// iOS侧IPlatformView接口实现，使用原生地图组件
 |   |---MyWebView.h									// iOS侧IPlatformView接口实现，使用原生WebView
 |   |---MyWebView.m									// iOS侧IPlatformView接口实现，使用原生WebView
+|   |---MyVideoView.h								// iOS侧IPlatformView接口实现，使用原生播放视频
+|   |---MyVideoView.m								// iOS侧IPlatformView接口实现，使用原生播放视频
 entry/src/main/ets
 |---entryability
 |---pages
 |   |---index.ets                          			// 主页面
 |   |---MapView.ets									// arkui-x ets侧PlatformView-MapView实现
 |   |---WebView.ets									// arkui-x ets侧PlatformView-WebView实现
+|   |---VideoView.ets								// arkui-x ets侧PlatformView-VideoView
 ```
 
 ## 具体实现
@@ -84,6 +88,6 @@ entry/src/main/ets
 git init
 git config core.sparsecheckout true
 echo /SuperFeature/PlatformView > .git/info/sparse-checkout
-git remote add origin https://gitcode.com/arkui-x2/samples.git
+git remote add origin https://gitcode.com/arkui-x/samples.git
 git pull origin master
 ```

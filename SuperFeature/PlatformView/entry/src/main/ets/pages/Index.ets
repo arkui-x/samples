@@ -17,14 +17,13 @@ import router from '@ohos.router';
 @Entry
 @Component
 struct Index {
-  @State title: string = 'PlatformView Demo'
+  @State title: string = 'PlatformView'
 
   build() {
     Row() {
       Column() {
         Text(this.title)
           .fontSize(35)
-          .fontWeight(FontWeight.Bold)
           .margin(5)
         Button('MapView')
           .width('75%')
@@ -41,6 +40,14 @@ struct Index {
           .margin(5)
           .onClick(() => {
             router.pushUrl({ url: 'pages/WebView' });
+          })
+        Button('VideoView')
+          .width('75%')
+          .height(50)
+          .fontSize(15)
+          .margin(5)
+          .onClick(() => {
+            router.pushUrl({ url: 'pages/VideoView' });
           })
       }
       .width('100%')
