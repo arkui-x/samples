@@ -1,7 +1,8 @@
 {
   "src": [
+    "pages/Index",
     "pages/WebView",
-    "pages/MapView",
-    "pages/Index"
+    "pages/VideoView",
+    "pages/MapView"
   ]
 }

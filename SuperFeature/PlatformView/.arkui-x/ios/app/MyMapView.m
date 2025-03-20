@@ -1,5 +1,6 @@
 #import <Foundation/Foundation.h>
 #import <MapKit/MapKit.h>
+
 #import "MyMapView.h"
 
 @interface MyMapView () <CLLocationManagerDelegate>
@@ -37,8 +38,4 @@
 - (NSString*) getPlatformViewID {
     return viewTag;
 }
-
-- (void)dispose {
-}
-
 @end

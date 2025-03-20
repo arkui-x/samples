@@ -7,13 +7,14 @@
  *     http://www.apache.org/licenses/LICENSE-2.0
  *
  * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-import router from '@ohos.router';
+
+import { MainPageComponent } from 'effectkit';
 import PlatformView, { PlatformViewAttribute } from '@arkui-x.platformview';
+
 @Entry
 @Component
 struct Index {
@@ -22,22 +23,8 @@ struct Index {
   build() {
     Row() {
       Column() {
-        Text(this.title)
-          .fontSize(35)
-          .fontWeight(FontWeight.Bold)
-          .margin(5)
-        Button('Back')
-          .width('75%')
-          .height(50)
-          .fontSize(15)
-          .margin(5)
-          .onClick(() => {
-            router.back({ url: 'pages/Index' });
-          })
+        MainPageComponent()
         PlatformView('MapView')
-          .width('75%')
-          .height('75%')
-          .borderWidth(5)
       }
       .width('100%')
     }

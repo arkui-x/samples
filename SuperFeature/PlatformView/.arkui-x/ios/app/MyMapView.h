@@ -9,9 +9,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface MyMapView : NSObject<IPlatformView>
 - (UIView *) view;
-- (void) dispose;
+- (void) onDispose;
 - (NSString *) getPlatformViewID;
-- initWithFrame;
+- (instancetype)initWithFrame;
 @end
 
 NS_ASSUME_NONNULL_END

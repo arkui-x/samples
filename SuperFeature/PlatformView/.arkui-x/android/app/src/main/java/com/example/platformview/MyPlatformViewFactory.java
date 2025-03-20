@@ -21,6 +21,8 @@ public class MyPlatformViewFactory extends PlatformViewFactory {
             return new MyMapView(context, savedInstanceState);
         } else if ("WebView".equals(Id)) {
             return new MyWebView(context);
+        } else if ("VideoView".equals(Id)) {
+            return new MyVideoView(context);
         }
         return null;
     }

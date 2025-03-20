@@ -35,6 +35,10 @@
           ]
         }
       ]
+    },
+    {
+      "name": "effectkit",
+      "srcPath": "./effectkit"
     }
   ]
 }
