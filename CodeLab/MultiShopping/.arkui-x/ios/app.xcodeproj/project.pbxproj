@@ -3,25 +3,43 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7BD007C32D01DB3000254785 /* PhoneEntryAbilityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BD007C22D01DB3000254785 /* PhoneEntryAbilityViewController.m */; };
-		DF9C1B6128B9FC4B005DCF58 /* arkui-x in Resources */ = {isa = PBXBuildFile; fileRef = DF9C1B6028B9FC4B005DCF58 /* arkui-x */; };
+		21CC48E1764BBED056605E05 /* libhilog.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28EC0082793A556E85943F3F /* libhilog.xcframework */; };
+		298A5847D0941E666180A931 /* libpromptaction.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E25331D6045E94260509087 /* libpromptaction.xcframework */; };
+		5EE3BC519A83628108404CDC /* libdeviceinfo.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1CC7DE5A42E3455346CFB3A5 /* libdeviceinfo.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		7E8B4F8EC5CD26D28D429438 /* librouter.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D219D4827A5D6FCC91D79D86 /* librouter.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		841C2899AFDDAF789FE7380A /* libdeviceinfo.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CC7DE5A42E3455346CFB3A5 /* libdeviceinfo.xcframework */; };
+		89E41E4629F505CD0004F33E /* libarkui_ios.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF9C1B5D28B9FC3A005DCF58 /* libarkui_ios.xcframework */; };
+		89E41E4729F505CD0004F33E /* libarkui_ios.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DF9C1B5D28B9FC3A005DCF58 /* libarkui_ios.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CBDE29A82D9B9458005591B0 /* PhoneEntryAbilityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CBDE29A62D9B9458005591B0 /* PhoneEntryAbilityViewController.m */; };
+		DED5B68C4C754ECC0026BE31 /* libpromptaction.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5E25331D6045E94260509087 /* libpromptaction.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		DFC5555629D7F36400B63EB3 /* arkui-x in Resources */ = {isa = PBXBuildFile; fileRef = DFC5555529D7F36400B63EB3 /* arkui-x */; };
 		F0AF1AD227D3684F008C55DD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F0AF1AD127D3684F008C55DD /* AppDelegate.m */; };
 		F0AF1ADD27D36856008C55DD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F0AF1ADC27D36856008C55DD /* Assets.xcassets */; };
 		F0AF1AE027D36856008C55DD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0AF1ADE27D36856008C55DD /* LaunchScreen.storyboard */; };
 		F0AF1AE327D36856008C55DD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F0AF1AE227D36856008C55DD /* main.m */; };
+		F61FF61CD04FFFD3217268E9 /* librouter.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = D219D4827A5D6FCC91D79D86 /* librouter.xcframework */; };
+		F851E302E65A47FF13A69C27 /* libmediaquery.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CAC52863186375CA22287EB0 /* libmediaquery.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		FE16F6C10ADE482FFF8909DF /* libhilog.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 28EC0082793A556E85943F3F /* libhilog.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		FF7EC5DD9C3EFF986E93ECD7 /* libmediaquery.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = CAC52863186375CA22287EB0 /* libmediaquery.xcframework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		BB8712F427D450E2000E4763 /* Embed Frameworks */ = {
+		89E41E4829F505CD0004F33E /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				DED5B68C4C754ECC0026BE31 /* libpromptaction.xcframework in Embed Frameworks */,
+				F851E302E65A47FF13A69C27 /* libmediaquery.xcframework in Embed Frameworks */,
+				7E8B4F8EC5CD26D28D429438 /* librouter.xcframework in Embed Frameworks */,
+				5EE3BC519A83628108404CDC /* libdeviceinfo.xcframework in Embed Frameworks */,
+				FE16F6C10ADE482FFF8909DF /* libhilog.xcframework in Embed Frameworks */,
+				89E41E4729F505CD0004F33E /* libarkui_ios.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -29,9 +47,15 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		7BD007C12D01DB3000254785 /* PhoneEntryAbilityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhoneEntryAbilityViewController.h; sourceTree = "<group>"; };
-		7BD007C22D01DB3000254785 /* PhoneEntryAbilityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhoneEntryAbilityViewController.m; sourceTree = "<group>"; };
-		DF9C1B6028B9FC4B005DCF58 /* arkui-x */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "arkui-x"; sourceTree = "<group>"; };
+		1CC7DE5A42E3455346CFB3A5 /* libdeviceinfo.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = libdeviceinfo.xcframework; path = frameworks/libdeviceinfo.xcframework; sourceTree = "<group>"; };
+		28EC0082793A556E85943F3F /* libhilog.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = libhilog.xcframework; path = frameworks/libhilog.xcframework; sourceTree = "<group>"; };
+		5E25331D6045E94260509087 /* libpromptaction.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = libpromptaction.xcframework; path = frameworks/libpromptaction.xcframework; sourceTree = "<group>"; };
+		CAC52863186375CA22287EB0 /* libmediaquery.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = libmediaquery.xcframework; path = frameworks/libmediaquery.xcframework; sourceTree = "<group>"; };
+		CBDE29A62D9B9458005591B0 /* PhoneEntryAbilityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhoneEntryAbilityViewController.m; sourceTree = "<group>"; };
+		CBDE29A72D9B9458005591B0 /* PhoneEntryAbilityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhoneEntryAbilityViewController.h; sourceTree = "<group>"; };
+		D219D4827A5D6FCC91D79D86 /* librouter.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = librouter.xcframework; path = frameworks/librouter.xcframework; sourceTree = "<group>"; };
+		DF9C1B5D28B9FC3A005DCF58 /* libarkui_ios.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = libarkui_ios.xcframework; path = frameworks/libarkui_ios.xcframework; sourceTree = "<group>"; };
+		DFC5555529D7F36400B63EB3 /* arkui-x */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "arkui-x"; sourceTree = "<group>"; };
 		F0AF1ACD27D3684F008C55DD /* app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = app.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0AF1AD027D3684F008C55DD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F0AF1AD127D3684F008C55DD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -46,6 +70,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				298A5847D0941E666180A931 /* libpromptaction.xcframework in Frameworks */,
+				FF7EC5DD9C3EFF986E93ECD7 /* libmediaquery.xcframework in Frameworks */,
+				F61FF61CD04FFFD3217268E9 /* librouter.xcframework in Frameworks */,
+				841C2899AFDDAF789FE7380A /* libdeviceinfo.xcframework in Frameworks */,
+				21CC48E1764BBED056605E05 /* libhilog.xcframework in Frameworks */,
+				89E41E4629F505CD0004F33E /* libarkui_ios.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -55,7 +85,7 @@
 		F0AF1AC427D3684F008C55DD = {
 			isa = PBXGroup;
 			children = (
-				DF9C1B6028B9FC4B005DCF58 /* arkui-x */,
+				DFC5555529D7F36400B63EB3 /* arkui-x */,
 				F0AF1ACF27D3684F008C55DD /* app */,
 				F0AF1ACE27D3684F008C55DD /* Products */,
 				F0AF1AEB27D36948008C55DD /* Frameworks */,
@@ -73,8 +103,8 @@
 		F0AF1ACF27D3684F008C55DD /* app */ = {
 			isa = PBXGroup;
 			children = (
-				7BD007C12D01DB3000254785 /* PhoneEntryAbilityViewController.h */,
-				7BD007C22D01DB3000254785 /* PhoneEntryAbilityViewController.m */,
+				CBDE29A72D9B9458005591B0 /* PhoneEntryAbilityViewController.h */,
+				CBDE29A62D9B9458005591B0 /* PhoneEntryAbilityViewController.m */,
 				F0AF1AD027D3684F008C55DD /* AppDelegate.h */,
 				F0AF1AD127D3684F008C55DD /* AppDelegate.m */,
 				F0AF1ADC27D36856008C55DD /* Assets.xcassets */,
@@ -88,6 +118,12 @@
 		F0AF1AEB27D36948008C55DD /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				DF9C1B5D28B9FC3A005DCF58 /* libarkui_ios.xcframework */,
+				5E25331D6045E94260509087 /* libpromptaction.xcframework */,
+				CAC52863186375CA22287EB0 /* libmediaquery.xcframework */,
+				D219D4827A5D6FCC91D79D86 /* librouter.xcframework */,
+				1CC7DE5A42E3455346CFB3A5 /* libdeviceinfo.xcframework */,
+				28EC0082793A556E85943F3F /* libhilog.xcframework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -99,11 +135,10 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F0AF1AE627D36856008C55DD /* Build configuration list for PBXNativeTarget "app" */;
 			buildPhases = (
-				B88CA669C5E640F0A7C8A37E /* Run My Script */,
 				F0AF1AC927D3684F008C55DD /* Sources */,
 				F0AF1ACA27D3684F008C55DD /* Frameworks */,
 				F0AF1ACB27D3684F008C55DD /* Resources */,
-				BB8712F427D450E2000E4763 /* Embed Frameworks */,
+				89E41E4829F505CD0004F33E /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -151,29 +186,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				F0AF1AE027D36856008C55DD /* LaunchScreen.storyboard in Resources */,
-				DF9C1B6128B9FC4B005DCF58 /* arkui-x in Resources */,
+				DFC5555629D7F36400B63EB3 /* arkui-x in Resources */,
 				F0AF1ADD27D36856008C55DD /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		B88CA669C5E640F0A7C8A37E /* Run My Script */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Run My Script";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "# Select whether you want to execute the compile arkts script.\nconfigBuildFlag=false\nif [ \"$configBuildFlag\" = \"false\" ]; then\n\texit 0\nfi\nsh ${SRCROOT}/buildArkTS.sh";
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		F0AF1AC927D3684F008C55DD /* Sources */ = {
@@ -181,7 +199,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F0AF1AD227D3684F008C55DD /* AppDelegate.m in Sources */,
-				7BD007C32D01DB3000254785 /* PhoneEntryAbilityViewController.m in Sources */,
+				CBDE29A82D9B9458005591B0 /* PhoneEntryAbilityViewController.m in Sources */,
 				F0AF1AE327D36856008C55DD /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -323,10 +341,14 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = "";
 				ENABLE_BITCODE = NO;
+				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = app/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "购物应用";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleDarkContent;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -338,6 +360,7 @@
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/frameworks/libarkui_ios.xcframework/ios-arm64/libarkui_ios.framework/Headers/include";
 			};
 			name = Debug;
 		};
@@ -352,10 +375,14 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = "";
 				ENABLE_BITCODE = NO;
+				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = app/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "购物应用";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleDarkContent;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -367,6 +394,7 @@
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/frameworks/libarkui_ios.xcframework/ios-arm64/libarkui_ios.framework/Headers/include";
 			};
 			name = Release;
 		};
