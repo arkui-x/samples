@@ -3,29 +3,121 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7BA14E872D0C2E4A00250AAA /* BridgeAspectUtil.h in Sources */ = {isa = PBXBuildFile; fileRef = 7BA14E852D0C2E4A00250AAA /* BridgeAspectUtil.h */; };
-		7BA14E8D2D0D4B1A00250AAA /* BridgeWindowUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BA14E8C2D0D4B1A00250AAA /* BridgeWindowUtil.m */; };
-		7BA14E8F2D0FCE8900250AAA /* BridgeAspectUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BA14E8E2D0FCE8900250AAA /* BridgeAspectUtil.m */; };
-		7BD005F22D01850500254785 /* ArkuixEntryAbilityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BD005F02D01850500254785 /* ArkuixEntryAbilityViewController.m */; };
-		7BED63DE2D156250003D9308 /* BridgePhotoManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BED63DD2D156250003D9308 /* BridgePhotoManager.m */; };
-		DF9C1B6128B9FC4B005DCF58 /* arkui-x in Resources */ = {isa = PBXBuildFile; fileRef = DF9C1B6028B9FC4B005DCF58 /* arkui-x */; };
+		0408BE137603F65EEF1D775C /* libdeviceinfo.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4E5EF405371E7B18677156C /* libdeviceinfo.xcframework */; };
+		05F34E6D6527E29021347951 /* libfile_fs.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0321DA3AB8B61B830EC8A10 /* libfile_fs.xcframework */; };
+		19F0BBC94FDE2D7D2E0C7AFB /* libnet_utils.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 49DB64DEC8363D84C4CC69E5 /* libnet_utils.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1D5BCAA042A0654DFD27908C /* libdisplay.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FAFDED1D66FB642262055658 /* libdisplay.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		284D98F8538F7D9EB6DBDDA1 /* libnet_utils.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49DB64DEC8363D84C4CC69E5 /* libnet_utils.xcframework */; };
+		291AFA05E0FD08D7075B633E /* libhilog.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E97ED5B198C643FCB6210C6 /* libhilog.xcframework */; };
+		2F203FFC78B1765D270DDEA2 /* libutil.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAB259A8EF7516C3FE884268 /* libutil.xcframework */; };
+		2F6080981CDF754FE7209F8F /* libnet_utils.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DE40B9233ECE8CF41A9DDBDE /* libnet_utils.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		35A68A9DCEFD458711EDB933 /* librouter.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9395C7DF3993CCCD03C78D5F /* librouter.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		385CC853CAF21A11630C5806 /* librouter.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9395C7DF3993CCCD03C78D5F /* librouter.xcframework */; };
+		386A29D6CBB8A882F6845C6F /* libcrypto_openssl.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5BC32702F1657F3941579F2 /* libcrypto_openssl.xcframework */; };
+		39E8E62FFB5C2A91CBC763F3 /* libdata_preferences.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEC73728652D00ED9B186735 /* libdata_preferences.xcframework */; };
+		3CB20AE28AD59EB7D5AF5B6F /* libmediaquery.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = E88B0BD2511008EE7217F3D1 /* libmediaquery.xcframework */; };
+		3D6FA702B436FC9713CCF6C0 /* libutil_list.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2EC169EAC993CB6D11AD815E /* libutil_list.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		44F09DB75FE650A14476001C /* libutil_list.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EC169EAC993CB6D11AD815E /* libutil_list.xcframework */; };
+		45F608B2DC33E50CEBBF8E7B /* libbuffer.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7A38C21ABEDF6AA49E9347FA /* libbuffer.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		4AFDAF6C368AE03D22CB47A8 /* libdeviceinfo.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C4E5EF405371E7B18677156C /* libdeviceinfo.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		4B16AA685946C06AEC16616B /* libdata_datasharepredicates.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F64B4DB2A850295451701D9 /* libdata_datasharepredicates.xcframework */; };
+		4EA5661830DC67DAC383EF65 /* librequest.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86EF25FFCE59AFBDC82ABC98 /* librequest.xcframework */; };
+		50208268925A9946C8499935 /* librequest.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 86EF25FFCE59AFBDC82ABC98 /* librequest.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		510FB11561852554CBC175FB /* libdisplay.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAFDED1D66FB642262055658 /* libdisplay.xcframework */; };
+		536BBA91B7D0E3838E299537 /* libweb_webview.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 433D45B770893A29A6386B35 /* libweb_webview.xcframework */; };
+		5E0B5741C5FFF1DAAB4D82AD /* liburl.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 15155B43CB615466DDB41FEC /* liburl.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		5FB9254C23868DC7F1D10794 /* libcrypto_openssl.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D5BC32702F1657F3941579F2 /* libcrypto_openssl.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		63D8B713B188F8EA75D81B68 /* libfile_fs.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B0321DA3AB8B61B830EC8A10 /* libfile_fs.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		669AA633746BD4B85B693AD1 /* libutil_json.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F64DD64D7DB15EEDAA4F1DA4 /* libutil_json.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		6861A05D76391EF0787EBA83 /* libzlib.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B67D3F8CBF320957453DF2F /* libzlib.xcframework */; };
+		6F6D7042EC424163D0AEBC98 /* libutil_arraylist.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 433B2576AD4694F3B8673CD8 /* libutil_arraylist.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		709DEBA2820774A79948FB78 /* libpromptaction.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = E91922F8EDCA188E01B8FD65 /* libpromptaction.xcframework */; };
+		72F2071F31309ED64B585308 /* libpromptaction.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E91922F8EDCA188E01B8FD65 /* libpromptaction.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		77C51691748E7C2883EFE275 /* libxml2_shared.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CA43910E83B9F39A3CC15622 /* libxml2_shared.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		7F515A75C6AEFC4593505AA2 /* libfile_photoaccesshelper.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6F1C7AA000AD678BD9AA29D1 /* libfile_photoaccesshelper.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		89E41E4629F505CD0004F33E /* libarkui_ios.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF9C1B5D28B9FC3A005DCF58 /* libarkui_ios.xcframework */; };
+		89E41E4729F505CD0004F33E /* libarkui_ios.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DF9C1B5D28B9FC3A005DCF58 /* libarkui_ios.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		89EAF2FB352092EB1BF53C6F /* libxml2_shared.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA43910E83B9F39A3CC15622 /* libxml2_shared.xcframework */; };
+		8E372555A200B274E32D1907 /* libbuffer.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A38C21ABEDF6AA49E9347FA /* libbuffer.xcframework */; };
+		9A4783B5A7769A0013CF7587 /* libdata_datasharepredicates.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0F64B4DB2A850295451701D9 /* libdata_datasharepredicates.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		AA508675E68ABE03E3B5C13E /* libweb_webview.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 433D45B770893A29A6386B35 /* libweb_webview.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		AB5C2A78E2A92FEA6981E223 /* libhilog.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1E97ED5B198C643FCB6210C6 /* libhilog.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B19DFFB2A65804017BDBD077 /* libnet_websocket.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FCF57A22578C0A5FD78D5B21 /* libnet_websocket.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B899604439670A3F5107AAB6 /* libnet_connection.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1E36F1EC13E24B265A8FDC0 /* libnet_connection.xcframework */; };
+		BA31B996ECB0FB4F467455F6 /* libfile_photoaccesshelper.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F1C7AA000AD678BD9AA29D1 /* libfile_photoaccesshelper.xcframework */; };
+		BB793866D9A8C08105D76856 /* libnet_connection.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F1E36F1EC13E24B265A8FDC0 /* libnet_connection.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		BCA480E99FCE305518506752 /* libmediaquery.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E88B0BD2511008EE7217F3D1 /* libmediaquery.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CA00CA6D92996EAA7CFCC0C4 /* libutil.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BAB259A8EF7516C3FE884268 /* libutil.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CB8B0C3C2D9AC4AD007D73AD /* ArkuixEntryAbilityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CB8B0C3A2D9AC4AD007D73AD /* ArkuixEntryAbilityViewController.m */; };
+		CB8B0C482D9AC5C0007D73AD /* BridgeWindowUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = CB8B0C452D9AC5C0007D73AD /* BridgeWindowUtil.m */; };
+		CB8B0C492D9AC5C0007D73AD /* BridgePhotoManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CB8B0C462D9AC5C0007D73AD /* BridgePhotoManager.m */; };
+		CB8B0C4A2D9AC5C0007D73AD /* BridgeAspectUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = CB8B0C472D9AC5C0007D73AD /* BridgeAspectUtil.m */; };
+		D27321F9BAD7B582FE24F806 /* libabilityaccessctrl.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E05C05F680F407575E59D015 /* libabilityaccessctrl.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D3D4FCA9C078C74DA9B5C429 /* libabilityaccessctrl.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = E05C05F680F407575E59D015 /* libabilityaccessctrl.xcframework */; };
+		D4464685FE81FF02AA7E7ECD /* libdata_preferences.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BEC73728652D00ED9B186735 /* libdata_preferences.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D651B462E791975EF1D1EC70 /* libsecurity_cryptoframework.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FB62DB20B960EB306FD5336 /* libsecurity_cryptoframework.xcframework */; };
+		D90088C5F0F64CDF8490DECA /* libnet_http.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F0EFC13935B42FF3C868F3B5 /* libnet_http.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D9ED9017C9DCA8A400DBCB8A /* libnet_utils.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE40B9233ECE8CF41A9DDBDE /* libnet_utils.xcframework */; };
+		DC07BE98A95B1F4CD5865AD9 /* libbridge.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9183E32D2DA1AB7A07759532 /* libbridge.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		DD01BB22868503E788367A53 /* libsecurity_cryptoframework.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2FB62DB20B960EB306FD5336 /* libsecurity_cryptoframework.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		DFC5555629D7F36400B63EB3 /* arkui-x in Resources */ = {isa = PBXBuildFile; fileRef = DFC5555529D7F36400B63EB3 /* arkui-x */; };
+		E5D40D9735ACD63FFC486296 /* libanimator.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1C60A01A6171BDB84D3C3AA9 /* libanimator.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		EB4AD4357F0EE865BB338115 /* libnet_http.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0EFC13935B42FF3C868F3B5 /* libnet_http.xcframework */; };
+		ECE295CF42F8902B11BA3FC9 /* libzlib.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6B67D3F8CBF320957453DF2F /* libzlib.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		EF6D7C0D556712EBAC0FE235 /* liburl.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15155B43CB615466DDB41FEC /* liburl.xcframework */; };
 		F0AF1AD227D3684F008C55DD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F0AF1AD127D3684F008C55DD /* AppDelegate.m */; };
 		F0AF1ADD27D36856008C55DD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F0AF1ADC27D36856008C55DD /* Assets.xcassets */; };
 		F0AF1AE027D36856008C55DD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0AF1ADE27D36856008C55DD /* LaunchScreen.storyboard */; };
 		F0AF1AE327D36856008C55DD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F0AF1AE227D36856008C55DD /* main.m */; };
+		F2DDB75B2E8F35898A50C0C6 /* libutil_json.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = F64DD64D7DB15EEDAA4F1DA4 /* libutil_json.xcframework */; };
+		F3FCAA9AC3084AD18235BD00 /* libnet_websocket.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCF57A22578C0A5FD78D5B21 /* libnet_websocket.xcframework */; };
+		F4A68DB0B8B1A2BF22D22758 /* libutil_arraylist.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 433B2576AD4694F3B8673CD8 /* libutil_arraylist.xcframework */; };
+		F728F2D3A6580CA4D3340571 /* libanimator.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C60A01A6171BDB84D3C3AA9 /* libanimator.xcframework */; };
+		FB44FBB133571D1D325BBB21 /* libbridge.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9183E32D2DA1AB7A07759532 /* libbridge.xcframework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		BB8712F427D450E2000E4763 /* Embed Frameworks */ = {
+		89E41E4829F505CD0004F33E /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				19F0BBC94FDE2D7D2E0C7AFB /* libnet_utils.xcframework in Embed Frameworks */,
+				D90088C5F0F64CDF8490DECA /* libnet_http.xcframework in Embed Frameworks */,
+				2F6080981CDF754FE7209F8F /* libnet_utils.xcframework in Embed Frameworks */,
+				B19DFFB2A65804017BDBD077 /* libnet_websocket.xcframework in Embed Frameworks */,
+				6F6D7042EC424163D0AEBC98 /* libutil_arraylist.xcframework in Embed Frameworks */,
+				ECE295CF42F8902B11BA3FC9 /* libzlib.xcframework in Embed Frameworks */,
+				1D5BCAA042A0654DFD27908C /* libdisplay.xcframework in Embed Frameworks */,
+				45F608B2DC33E50CEBBF8E7B /* libbuffer.xcframework in Embed Frameworks */,
+				DD01BB22868503E788367A53 /* libsecurity_cryptoframework.xcframework in Embed Frameworks */,
+				5E0B5741C5FFF1DAAB4D82AD /* liburl.xcframework in Embed Frameworks */,
+				50208268925A9946C8499935 /* librequest.xcframework in Embed Frameworks */,
+				E5D40D9735ACD63FFC486296 /* libanimator.xcframework in Embed Frameworks */,
+				3D6FA702B436FC9713CCF6C0 /* libutil_list.xcframework in Embed Frameworks */,
+				9A4783B5A7769A0013CF7587 /* libdata_datasharepredicates.xcframework in Embed Frameworks */,
+				7F515A75C6AEFC4593505AA2 /* libfile_photoaccesshelper.xcframework in Embed Frameworks */,
+				DC07BE98A95B1F4CD5865AD9 /* libbridge.xcframework in Embed Frameworks */,
+				D27321F9BAD7B582FE24F806 /* libabilityaccessctrl.xcframework in Embed Frameworks */,
+				77C51691748E7C2883EFE275 /* libxml2_shared.xcframework in Embed Frameworks */,
+				D4464685FE81FF02AA7E7ECD /* libdata_preferences.xcframework in Embed Frameworks */,
+				BB793866D9A8C08105D76856 /* libnet_connection.xcframework in Embed Frameworks */,
+				AA508675E68ABE03E3B5C13E /* libweb_webview.xcframework in Embed Frameworks */,
+				669AA633746BD4B85B693AD1 /* libutil_json.xcframework in Embed Frameworks */,
+				AB5C2A78E2A92FEA6981E223 /* libhilog.xcframework in Embed Frameworks */,
+				5FB9254C23868DC7F1D10794 /* libcrypto_openssl.xcframework in Embed Frameworks */,
+				CA00CA6D92996EAA7CFCC0C4 /* libutil.xcframework in Embed Frameworks */,
+				BCA480E99FCE305518506752 /* libmediaquery.xcframework in Embed Frameworks */,
+				63D8B713B188F8EA75D81B68 /* libfile_fs.xcframework in Embed Frameworks */,
+				4AFDAF6C368AE03D22CB47A8 /* libdeviceinfo.xcframework in Embed Frameworks */,
+				72F2071F31309ED64B585308 /* libpromptaction.xcframework in Embed Frameworks */,
+				35A68A9DCEFD458711EDB933 /* librouter.xcframework in Embed Frameworks */,
+				89E41E4729F505CD0004F33E /* libarkui_ios.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -33,15 +125,41 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		7BA14E852D0C2E4A00250AAA /* BridgeAspectUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BridgeAspectUtil.h; sourceTree = "<group>"; };
-		7BA14E8B2D0D4ACA00250AAA /* BridgeWindowUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BridgeWindowUtil.h; sourceTree = "<group>"; };
-		7BA14E8C2D0D4B1A00250AAA /* BridgeWindowUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BridgeWindowUtil.m; sourceTree = "<group>"; };
-		7BA14E8E2D0FCE8900250AAA /* BridgeAspectUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BridgeAspectUtil.m; sourceTree = "<group>"; };
-		7BD005F02D01850500254785 /* ArkuixEntryAbilityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArkuixEntryAbilityViewController.m; sourceTree = "<group>"; };
-		7BD005F12D01850500254785 /* ArkuixEntryAbilityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArkuixEntryAbilityViewController.h; sourceTree = "<group>"; };
-		7BED63DA2D156237003D9308 /* BridgePhotoManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BridgePhotoManager.h; sourceTree = "<group>"; };
-		7BED63DD2D156250003D9308 /* BridgePhotoManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BridgePhotoManager.m; sourceTree = "<group>"; };
-		DF9C1B6028B9FC4B005DCF58 /* arkui-x */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "arkui-x"; sourceTree = "<group>"; };
+		0F64B4DB2A850295451701D9 /* libdata_datasharepredicates.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = libdata_datasharepredicates.xcframework; path = frameworks/libdata_datasharepredicates.xcframework; sourceTree = "<group>"; };
+		15155B43CB615466DDB41FEC /* liburl.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = liburl.xcframework; path = frameworks/liburl.xcframework; sourceTree = "<group>"; };
+		1C60A01A6171BDB84D3C3AA9 /* libanimator.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = libanimator.xcframework; path = frameworks/libanimator.xcframework; sourceTree = "<group>"; };
+		1E97ED5B198C643FCB6210C6 /* libhilog.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = libhilog.xcframework; path = frameworks/libhilog.xcframework; sourceTree = "<group>"; };
+		2EC169EAC993CB6D11AD815E /* libutil_list.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = libutil_list.xcframework; path = frameworks/libutil_list.xcframework; sourceTree = "<group>"; };
+		2FB62DB20B960EB306FD5336 /* libsecurity_cryptoframework.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = libsecurity_cryptoframework.xcframework; path = frameworks/libsecurity_cryptoframework.xcframework; sourceTree = "<group>"; };
+		433B2576AD4694F3B8673CD8 /* libutil_arraylist.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = libutil_arraylist.xcframework; path = frameworks/libutil_arraylist.xcframework; sourceTree = "<group>"; };
+		433D45B770893A29A6386B35 /* libweb_webview.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = libweb_webview.xcframework; path = frameworks/libweb_webview.xcframework; sourceTree = "<group>"; };
+		49DB64DEC8363D84C4CC69E5 /* libnet_utils.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = libnet_utils.xcframework; path = frameworks/libnet_utils.xcframework; sourceTree = "<group>"; };
+		6B67D3F8CBF320957453DF2F /* libzlib.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = libzlib.xcframework; path = frameworks/libzlib.xcframework; sourceTree = "<group>"; };
+		6F1C7AA000AD678BD9AA29D1 /* libfile_photoaccesshelper.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = libfile_photoaccesshelper.xcframework; path = frameworks/libfile_photoaccesshelper.xcframework; sourceTree = "<group>"; };
+		7A38C21ABEDF6AA49E9347FA /* libbuffer.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = libbuffer.xcframework; path = frameworks/libbuffer.xcframework; sourceTree = "<group>"; };
+		86EF25FFCE59AFBDC82ABC98 /* librequest.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = librequest.xcframework; path = frameworks/librequest.xcframework; sourceTree = "<group>"; };
+		9183E32D2DA1AB7A07759532 /* libbridge.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = libbridge.xcframework; path = frameworks/libbridge.xcframework; sourceTree = "<group>"; };
+		9395C7DF3993CCCD03C78D5F /* librouter.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = librouter.xcframework; path = frameworks/librouter.xcframework; sourceTree = "<group>"; };
+		B0321DA3AB8B61B830EC8A10 /* libfile_fs.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = libfile_fs.xcframework; path = frameworks/libfile_fs.xcframework; sourceTree = "<group>"; };
+		BAB259A8EF7516C3FE884268 /* libutil.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = libutil.xcframework; path = frameworks/libutil.xcframework; sourceTree = "<group>"; };
+		BEC73728652D00ED9B186735 /* libdata_preferences.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = libdata_preferences.xcframework; path = frameworks/libdata_preferences.xcframework; sourceTree = "<group>"; };
+		C4E5EF405371E7B18677156C /* libdeviceinfo.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = libdeviceinfo.xcframework; path = frameworks/libdeviceinfo.xcframework; sourceTree = "<group>"; };
+		CA43910E83B9F39A3CC15622 /* libxml2_shared.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = libxml2_shared.xcframework; path = frameworks/libxml2_shared.xcframework; sourceTree = "<group>"; };
+		CB8B0C3A2D9AC4AD007D73AD /* ArkuixEntryAbilityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArkuixEntryAbilityViewController.m; sourceTree = "<group>"; };
+		CB8B0C3B2D9AC4AD007D73AD /* ArkuixEntryAbilityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArkuixEntryAbilityViewController.h; sourceTree = "<group>"; };
+		CB8B0C412D9AC5C0007D73AD /* BridgeAspectUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BridgeAspectUtil.h; sourceTree = "<group>"; };
+		CB8B0C422D9AC5C0007D73AD /* BridgeWindowUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BridgeWindowUtil.h; sourceTree = "<group>"; };
+		CB8B0C432D9AC5C0007D73AD /* BridgePhotoManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BridgePhotoManager.h; sourceTree = "<group>"; };
+		CB8B0C452D9AC5C0007D73AD /* BridgeWindowUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BridgeWindowUtil.m; sourceTree = "<group>"; };
+		CB8B0C462D9AC5C0007D73AD /* BridgePhotoManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BridgePhotoManager.m; sourceTree = "<group>"; };
+		CB8B0C472D9AC5C0007D73AD /* BridgeAspectUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BridgeAspectUtil.m; sourceTree = "<group>"; };
+		D5BC32702F1657F3941579F2 /* libcrypto_openssl.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = libcrypto_openssl.xcframework; path = frameworks/libcrypto_openssl.xcframework; sourceTree = "<group>"; };
+		DE40B9233ECE8CF41A9DDBDE /* libnet_utils.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = libnet_utils.xcframework; path = frameworks/libnet_utils.xcframework; sourceTree = "<group>"; };
+		DF9C1B5D28B9FC3A005DCF58 /* libarkui_ios.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = libarkui_ios.xcframework; path = frameworks/libarkui_ios.xcframework; sourceTree = "<group>"; };
+		DFC5555529D7F36400B63EB3 /* arkui-x */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "arkui-x"; sourceTree = "<group>"; };
+		E05C05F680F407575E59D015 /* libabilityaccessctrl.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = libabilityaccessctrl.xcframework; path = frameworks/libabilityaccessctrl.xcframework; sourceTree = "<group>"; };
+		E88B0BD2511008EE7217F3D1 /* libmediaquery.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = libmediaquery.xcframework; path = frameworks/libmediaquery.xcframework; sourceTree = "<group>"; };
+		E91922F8EDCA188E01B8FD65 /* libpromptaction.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = libpromptaction.xcframework; path = frameworks/libpromptaction.xcframework; sourceTree = "<group>"; };
 		F0AF1ACD27D3684F008C55DD /* app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = app.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0AF1AD027D3684F008C55DD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F0AF1AD127D3684F008C55DD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -49,6 +167,11 @@
 		F0AF1ADF27D36856008C55DD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F0AF1AE127D36856008C55DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F0AF1AE227D36856008C55DD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F0EFC13935B42FF3C868F3B5 /* libnet_http.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = libnet_http.xcframework; path = frameworks/libnet_http.xcframework; sourceTree = "<group>"; };
+		F1E36F1EC13E24B265A8FDC0 /* libnet_connection.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = libnet_connection.xcframework; path = frameworks/libnet_connection.xcframework; sourceTree = "<group>"; };
+		F64DD64D7DB15EEDAA4F1DA4 /* libutil_json.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = libutil_json.xcframework; path = frameworks/libutil_json.xcframework; sourceTree = "<group>"; };
+		FAFDED1D66FB642262055658 /* libdisplay.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = libdisplay.xcframework; path = frameworks/libdisplay.xcframework; sourceTree = "<group>"; };
+		FCF57A22578C0A5FD78D5B21 /* libnet_websocket.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = libnet_websocket.xcframework; path = frameworks/libnet_websocket.xcframework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,37 +179,68 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				284D98F8538F7D9EB6DBDDA1 /* libnet_utils.xcframework in Frameworks */,
+				EB4AD4357F0EE865BB338115 /* libnet_http.xcframework in Frameworks */,
+				D9ED9017C9DCA8A400DBCB8A /* libnet_utils.xcframework in Frameworks */,
+				F3FCAA9AC3084AD18235BD00 /* libnet_websocket.xcframework in Frameworks */,
+				F4A68DB0B8B1A2BF22D22758 /* libutil_arraylist.xcframework in Frameworks */,
+				6861A05D76391EF0787EBA83 /* libzlib.xcframework in Frameworks */,
+				510FB11561852554CBC175FB /* libdisplay.xcframework in Frameworks */,
+				8E372555A200B274E32D1907 /* libbuffer.xcframework in Frameworks */,
+				D651B462E791975EF1D1EC70 /* libsecurity_cryptoframework.xcframework in Frameworks */,
+				EF6D7C0D556712EBAC0FE235 /* liburl.xcframework in Frameworks */,
+				4EA5661830DC67DAC383EF65 /* librequest.xcframework in Frameworks */,
+				F728F2D3A6580CA4D3340571 /* libanimator.xcframework in Frameworks */,
+				44F09DB75FE650A14476001C /* libutil_list.xcframework in Frameworks */,
+				4B16AA685946C06AEC16616B /* libdata_datasharepredicates.xcframework in Frameworks */,
+				BA31B996ECB0FB4F467455F6 /* libfile_photoaccesshelper.xcframework in Frameworks */,
+				FB44FBB133571D1D325BBB21 /* libbridge.xcframework in Frameworks */,
+				D3D4FCA9C078C74DA9B5C429 /* libabilityaccessctrl.xcframework in Frameworks */,
+				89EAF2FB352092EB1BF53C6F /* libxml2_shared.xcframework in Frameworks */,
+				39E8E62FFB5C2A91CBC763F3 /* libdata_preferences.xcframework in Frameworks */,
+				B899604439670A3F5107AAB6 /* libnet_connection.xcframework in Frameworks */,
+				536BBA91B7D0E3838E299537 /* libweb_webview.xcframework in Frameworks */,
+				F2DDB75B2E8F35898A50C0C6 /* libutil_json.xcframework in Frameworks */,
+				291AFA05E0FD08D7075B633E /* libhilog.xcframework in Frameworks */,
+				386A29D6CBB8A882F6845C6F /* libcrypto_openssl.xcframework in Frameworks */,
+				2F203FFC78B1765D270DDEA2 /* libutil.xcframework in Frameworks */,
+				3CB20AE28AD59EB7D5AF5B6F /* libmediaquery.xcframework in Frameworks */,
+				05F34E6D6527E29021347951 /* libfile_fs.xcframework in Frameworks */,
+				0408BE137603F65EEF1D775C /* libdeviceinfo.xcframework in Frameworks */,
+				709DEBA2820774A79948FB78 /* libpromptaction.xcframework in Frameworks */,
+				385CC853CAF21A11630C5806 /* librouter.xcframework in Frameworks */,
+				89E41E4629F505CD0004F33E /* libarkui_ios.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		7BA14E842D0C2E0C00250AAA /* BridgeSrc */ = {
+		CB8B0C3F2D9AC5C0007D73AD /* BridgeSrc */ = {
 			isa = PBXGroup;
 			children = (
-				7BA14E882D0C2E7E00250AAA /* include */,
-				7BA14E892D0C2E8400250AAA /* src */,
+				CB8B0C402D9AC5C0007D73AD /* include */,
+				CB8B0C442D9AC5C0007D73AD /* src */,
 			);
 			path = BridgeSrc;
 			sourceTree = "<group>";
 		};
-		7BA14E882D0C2E7E00250AAA /* include */ = {
+		CB8B0C402D9AC5C0007D73AD /* include */ = {
 			isa = PBXGroup;
 			children = (
-				7BED63DA2D156237003D9308 /* BridgePhotoManager.h */,
-				7BA14E8B2D0D4ACA00250AAA /* BridgeWindowUtil.h */,
-				7BA14E852D0C2E4A00250AAA /* BridgeAspectUtil.h */,
+				CB8B0C412D9AC5C0007D73AD /* BridgeAspectUtil.h */,
+				CB8B0C422D9AC5C0007D73AD /* BridgeWindowUtil.h */,
+				CB8B0C432D9AC5C0007D73AD /* BridgePhotoManager.h */,
 			);
 			path = include;
 			sourceTree = "<group>";
 		};
-		7BA14E892D0C2E8400250AAA /* src */ = {
+		CB8B0C442D9AC5C0007D73AD /* src */ = {
 			isa = PBXGroup;
 			children = (
-				7BED63DD2D156250003D9308 /* BridgePhotoManager.m */,
-				7BA14E8E2D0FCE8900250AAA /* BridgeAspectUtil.m */,
-				7BA14E8C2D0D4B1A00250AAA /* BridgeWindowUtil.m */,
+				CB8B0C452D9AC5C0007D73AD /* BridgeWindowUtil.m */,
+				CB8B0C462D9AC5C0007D73AD /* BridgePhotoManager.m */,
+				CB8B0C472D9AC5C0007D73AD /* BridgeAspectUtil.m */,
 			);
 			path = src;
 			sourceTree = "<group>";
@@ -94,7 +248,7 @@
 		F0AF1AC427D3684F008C55DD = {
 			isa = PBXGroup;
 			children = (
-				DF9C1B6028B9FC4B005DCF58 /* arkui-x */,
+				DFC5555529D7F36400B63EB3 /* arkui-x */,
 				F0AF1ACF27D3684F008C55DD /* app */,
 				F0AF1ACE27D3684F008C55DD /* Products */,
 				F0AF1AEB27D36948008C55DD /* Frameworks */,
@@ -112,9 +266,9 @@
 		F0AF1ACF27D3684F008C55DD /* app */ = {
 			isa = PBXGroup;
 			children = (
-				7BA14E842D0C2E0C00250AAA /* BridgeSrc */,
-				7BD005F12D01850500254785 /* ArkuixEntryAbilityViewController.h */,
-				7BD005F02D01850500254785 /* ArkuixEntryAbilityViewController.m */,
+				CB8B0C3F2D9AC5C0007D73AD /* BridgeSrc */,
+				CB8B0C3B2D9AC4AD007D73AD /* ArkuixEntryAbilityViewController.h */,
+				CB8B0C3A2D9AC4AD007D73AD /* ArkuixEntryAbilityViewController.m */,
 				F0AF1AD027D3684F008C55DD /* AppDelegate.h */,
 				F0AF1AD127D3684F008C55DD /* AppDelegate.m */,
 				F0AF1ADC27D36856008C55DD /* Assets.xcassets */,
@@ -128,6 +282,37 @@
 		F0AF1AEB27D36948008C55DD /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				DF9C1B5D28B9FC3A005DCF58 /* libarkui_ios.xcframework */,
+				49DB64DEC8363D84C4CC69E5 /* libnet_utils.xcframework */,
+				F0EFC13935B42FF3C868F3B5 /* libnet_http.xcframework */,
+				DE40B9233ECE8CF41A9DDBDE /* libnet_utils.xcframework */,
+				FCF57A22578C0A5FD78D5B21 /* libnet_websocket.xcframework */,
+				433B2576AD4694F3B8673CD8 /* libutil_arraylist.xcframework */,
+				6B67D3F8CBF320957453DF2F /* libzlib.xcframework */,
+				FAFDED1D66FB642262055658 /* libdisplay.xcframework */,
+				7A38C21ABEDF6AA49E9347FA /* libbuffer.xcframework */,
+				2FB62DB20B960EB306FD5336 /* libsecurity_cryptoframework.xcframework */,
+				15155B43CB615466DDB41FEC /* liburl.xcframework */,
+				86EF25FFCE59AFBDC82ABC98 /* librequest.xcframework */,
+				1C60A01A6171BDB84D3C3AA9 /* libanimator.xcframework */,
+				2EC169EAC993CB6D11AD815E /* libutil_list.xcframework */,
+				0F64B4DB2A850295451701D9 /* libdata_datasharepredicates.xcframework */,
+				6F1C7AA000AD678BD9AA29D1 /* libfile_photoaccesshelper.xcframework */,
+				9183E32D2DA1AB7A07759532 /* libbridge.xcframework */,
+				E05C05F680F407575E59D015 /* libabilityaccessctrl.xcframework */,
+				CA43910E83B9F39A3CC15622 /* libxml2_shared.xcframework */,
+				BEC73728652D00ED9B186735 /* libdata_preferences.xcframework */,
+				F1E36F1EC13E24B265A8FDC0 /* libnet_connection.xcframework */,
+				433D45B770893A29A6386B35 /* libweb_webview.xcframework */,
+				F64DD64D7DB15EEDAA4F1DA4 /* libutil_json.xcframework */,
+				1E97ED5B198C643FCB6210C6 /* libhilog.xcframework */,
+				D5BC32702F1657F3941579F2 /* libcrypto_openssl.xcframework */,
+				BAB259A8EF7516C3FE884268 /* libutil.xcframework */,
+				E88B0BD2511008EE7217F3D1 /* libmediaquery.xcframework */,
+				B0321DA3AB8B61B830EC8A10 /* libfile_fs.xcframework */,
+				C4E5EF405371E7B18677156C /* libdeviceinfo.xcframework */,
+				E91922F8EDCA188E01B8FD65 /* libpromptaction.xcframework */,
+				9395C7DF3993CCCD03C78D5F /* librouter.xcframework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -139,11 +324,10 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F0AF1AE627D36856008C55DD /* Build configuration list for PBXNativeTarget "app" */;
 			buildPhases = (
-				89B3BF08827B4B5FAB98877C /* Run My Script */,
 				F0AF1AC927D3684F008C55DD /* Sources */,
 				F0AF1ACA27D3684F008C55DD /* Frameworks */,
 				F0AF1ACB27D3684F008C55DD /* Resources */,
-				BB8712F427D450E2000E4763 /* Embed Frameworks */,
+				89E41E4829F505CD0004F33E /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -191,41 +375,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				F0AF1AE027D36856008C55DD /* LaunchScreen.storyboard in Resources */,
-				DF9C1B6128B9FC4B005DCF58 /* arkui-x in Resources */,
+				DFC5555629D7F36400B63EB3 /* arkui-x in Resources */,
 				F0AF1ADD27D36856008C55DD /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
-/* Begin PBXShellScriptBuildPhase section */
-		89B3BF08827B4B5FAB98877C /* Run My Script */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Run My Script";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "# Select whether you want to execute the compile arkts script.\nconfigBuildFlag=false\nif [ \"$configBuildFlag\" = \"false\" ]; then\n\texit 0\nfi\nsh ${SRCROOT}/buildArkTS.sh";
-		};
-/* End PBXShellScriptBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
 		F0AF1AC927D3684F008C55DD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7BA14E872D0C2E4A00250AAA /* BridgeAspectUtil.h in Sources */,
-				7BA14E8F2D0FCE8900250AAA /* BridgeAspectUtil.m in Sources */,
-				7BD005F22D01850500254785 /* ArkuixEntryAbilityViewController.m in Sources */,
-				7BA14E8D2D0D4B1A00250AAA /* BridgeWindowUtil.m in Sources */,
-				7BED63DE2D156250003D9308 /* BridgePhotoManager.m in Sources */,
+				CB8B0C4A2D9AC5C0007D73AD /* BridgeAspectUtil.m in Sources */,
+				CB8B0C482D9AC5C0007D73AD /* BridgeWindowUtil.m in Sources */,
+				CB8B0C3C2D9AC4AD007D73AD /* ArkuixEntryAbilityViewController.m in Sources */,
 				F0AF1AD227D3684F008C55DD /* AppDelegate.m in Sources */,
+				CB8B0C492D9AC5C0007D73AD /* BridgePhotoManager.m in Sources */,
 				F0AF1AE327D36856008C55DD /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -367,11 +533,15 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = "";
 				ENABLE_BITCODE = NO;
+				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = app/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "HMOS世界";
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -383,6 +553,7 @@
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/frameworks/libarkui_ios.xcframework/ios-arm64/libarkui_ios.framework/Headers/include";
 			};
 			name = Debug;
 		};
@@ -397,11 +568,15 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = "";
 				ENABLE_BITCODE = NO;
+				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = app/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "HMOS世界";
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -409,11 +584,11 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/frameworks/libarkui_ios.xcframework/ios-arm64/libarkui_ios.framework/Headers/include";
 			};
 			name = Release;
 		};
