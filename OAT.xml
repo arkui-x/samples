@@ -112,6 +112,7 @@ Note:If the text contains special characters, please escape them according to th
                 <filteritem type="filepath" name="Shopping/entry/src/main/ets/resources/common/.*.png" desc="already checked"/>
                 <filteritem type="filepath" name="SuperFeature/WebExample/entry/src/main/resources/rawfile/icons/.*.png" desc="already checked"/>
                 <filteritem type="filepath" name="SuperFeature/WebExample/entry/src/main/resources/rawfile/fonts/.*.ttf" desc="already checked"/>
+                <filteritem type="filepath" name="SuperFeature/WantParamsExample/screenshots/devices/.*.png" desc="already checked"/>
             </filefilter>
             <filefilter name="copyrightPolicyFilter" desc="Copyright文件头校验策略的过滤条件" >
                 <filteritem type="filepath" name="Animation/.*.ets|.*.ts" desc="示例展示无需添加版权头"/>
