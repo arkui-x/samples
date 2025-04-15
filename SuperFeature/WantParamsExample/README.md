@@ -45,6 +45,33 @@
 2. 点击Button【ArkTSTo原生】按键，跳转到原生页面，原生页面显示ArkTS传递到原生平台层的Want数据和一个Button【GetValue】。
 3. 点击原生页面中的Button【GetValue】按钮，显示通过getValue接口获取的Want数据。
 
+### 注意 ###
+如果iOS工程出现下列截图问题,请尝试使用以下解决办法
+  <table>
+  <tr>
+      <td>
+          <center>
+              <img src="./screenshots/devices/ios_problemImage.png">
+          </center>
+      </td>
+  </tr>
+  </table>
+解决方法：
+
+   1. 点击“Assets”
+   2. 点击底部 “➕” 加号按钮	
+   3. 点击“iOS”，然后点击 “iOS App Icon” ，再次编译运行项目即可。
+  <table>
+  <tr>
+      <td>
+          <center>
+              <img src="./screenshots/devices/ios_solutionImage.png">
+          </center>
+      </td>
+  </tr>
+  </table>
+
+
 ## 工程目录
 
 ```
