@@ -1,6 +1,6 @@
 {
-  crossplatform: true,
-  modules: [
-    "arkuix",
-  ],
+  "crossplatform": true,
+  "modules": [
+    "arkuix"
+  ]
 }
