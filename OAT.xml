@@ -113,6 +113,9 @@ Note:If the text contains special characters, please escape them according to th
                 <filteritem type="filepath" name="SuperFeature/WebExample/entry/src/main/resources/rawfile/icons/.*.png" desc="already checked"/>
                 <filteritem type="filepath" name="SuperFeature/WebExample/entry/src/main/resources/rawfile/fonts/.*.ttf" desc="already checked"/>
                 <filteritem type="filepath" name="SuperFeature/WantParamsExample/screenshots/devices/.*.png" desc="already checked"/>
+                <filteritem type="filepath" name="RustFeature/Rust/RustDev/entry/src/main/resources/base/media/.*.png" desc="应用图片"/>
+                <filteritem type="filepath" name="RustFeature/Rust/RustDev/AppScope/resources/base/media/.*.png" desc="应用图片"/>
+                <filteritem type="filepath" name="RustFeature/Rust/rust_add/build.rs" desc="rust源码"/>
             </filefilter>
             <filefilter name="copyrightPolicyFilter" desc="Copyright文件头校验策略的过滤条件" >
                 <filteritem type="filepath" name="Animation/.*.ets|.*.ts" desc="示例展示无需添加版权头"/>
@@ -130,6 +133,7 @@ Note:If the text contains special characters, please escape them according to th
                 <filteritem type="filepath" name="PlatformBridge/.*.ets|.*.ts" desc="示例展示无需添加版权头"/>
                 <filteritem type="filepath" name="PlatformNAPI/.*.ets|.*.ts" desc="示例展示无需添加版权头"/>
                 <filteritem type="filepath" name="Router/.*.ets|.*.ts" desc="示例展示无需添加版权头"/>
+                <filteritem type="filepath" name="RustFeature/Rust/rust_add/.*.rs|.*.toml" desc="示例展示无需添加版权头"/>
                 <filteritem type="filepath" name="Shopping/.*.ets|.*.ts" desc="示例展示无需添加版权头"/>
                 <filteritem type="filepath" name="SuperFeature/WebExample/.*.ets|.*.ts" desc="示例展示无需添加版权头"/>
                 <filteritem type="filepath" name="XcomponentNative/.*.ets|.*.ts" desc="示例展示无需添加版权头"/>
@@ -152,6 +156,7 @@ Note:If the text contains special characters, please escape them according to th
                 <filteritem type="filepath" name="PlatformBridge/.*.ets|.*.ts" desc="示例展示无需添加License头"/>
                 <filteritem type="filepath" name="PlatformNAPI/.*.ets|.*.ts" desc="示例展示无需添加License头"/>
                 <filteritem type="filepath" name="Router/.*.ets|.*.ts" desc="示例展示无需添加License头"/>
+                <filteritem type="filepath" name="RustFeature/Rust/rust_add/.*.rs|.*.toml" desc="示例展示无需添加License头"/>
                 <filteritem type="filepath" name="Shopping/.*.ets|.*.ts" desc="示例展示无需添加License头"/>
                 <filteritem type="filepath" name="SuperFeature/WebExample/.*.ets|.*.ts" desc="示例展示无需添加License头"/>
                 <filteritem type="filepath" name="XcomponentNative/.*.ets|.*.ts" desc="示例展示无需添加License头"/>

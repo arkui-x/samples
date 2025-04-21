@@ -39,6 +39,9 @@
   - ['MusicHome'：音乐专辑（API12）](CodeLab/MusicHome)
   - ['HMOSWorld'：鸿蒙世界（API12）](CodeLab/HMOSWorld)
 
+- ArkUI-X支持Rust
+  - ['Rust'：Rust示例应用（API16）](RustFeature/Rust)
+
 ## 目录
 
 Samples仓下所展示的组件能力
@@ -73,6 +76,8 @@ samples
   |---MultiShopping    	  # 购物应用
   |---MusicHome           # 音乐专辑
   |---OxHornCampus        # 溪村小镇
+|---RustFeature         # ArkUI-X支持Rust
+  |---Rust                # Rust示例应用
 ```
 
 ## 约束
