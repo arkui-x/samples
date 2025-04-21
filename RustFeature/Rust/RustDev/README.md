@@ -586,7 +586,7 @@ cargo build --target aarch64-apple-ios --release
 ```
 git init
 git config core.sparsecheckout true
-echo /Rust > .git/info/sparse-checkout
-git remote add origin https://gitee.com/arkui-x/samples.git
+echo /RustFeature/Rust > .git/info/sparse-checkout
+git remote add origin https://gitcode.com/arkui-x/samples.git
 git pull origin master
 ```
