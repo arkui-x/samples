@@ -210,7 +210,7 @@ export OHOS_NDK_HOME=/Applications/DevEco-Studio.app/Contents/sdk/default/openha
 
 需要在环境变量中配置，如下图：
 
-![](./screenshots/devices/OHOS_NDK_environment.png)
+![](./screenshots/devices/OHOS_environment.png)
 
 ```shell
 变量：OHOS_NDK_HOME，值：OpenHarmony SDK路径
