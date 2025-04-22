@@ -1,6 +1,6 @@
 # ArkUI-X支持Rust sample开发
 ## 介绍
-本示例通过DevEco 5.0.4 Release创建一个Native C++跨平台工程，用来实现HarmonyOS、Android和iOS调用rust接口。 
+本示例通过DevEco 5.0.4 Release创建一个Native C++跨平台工程，用来实现鸿蒙、Android和iOS调用rust接口。 
 
 ## 效果预览
 
@@ -170,7 +170,7 @@ cargo --version
 
 #### 2、需要安装 Rust 的 toolchain 来帮助构建相应平台的动态库
 
-**HarmonyOS平台**
+**鸿蒙平台**
 
 ```shell
 rustup target add aarch64-unknown-linux-ohos
@@ -194,7 +194,7 @@ rustup target add x86_64-apple-ios
 rustup target add aarch64-apple-ios-sim
 ```
 
-### HarmonyOS上如何调用rust
+### 鸿蒙上如何调用rust
 
 #### 环境
 
@@ -274,7 +274,7 @@ ohrs build
 
 执行完成后会生成一个dist目录，其中含有librust_add.so文件和index.d.ts文件。
 
-4、使用HarmonyOS开发工具DevEco 5.0.4 Release创建一个Native C++ 工程。
+4、使用鸿蒙开发工具DevEco 5.0.4 Release创建一个Native C++ 工程。
 
 5、之后可以参考：[示例文档](https://developer.huawei.com/consumer/cn/blog/topic/03166271011531112)中的第3-5步，手动改造工程，进行编译引用。
 
@@ -322,7 +322,7 @@ fn main() {
     // 指定某个源文件如果有修改就重新编译
     println!("cargo:rerun-if-changed=src/lib.rs");
 
-    // HarmonyOS 构建配置
+    // 鸿蒙 构建配置
     if env::var("OHOS_BUILD").is_ok() {
         return;
     }
@@ -350,7 +350,7 @@ fn main() {
 
     // iOS 构建配置
     if target.contains("apple") {
-    	// 获取项目根目录的绝对路径
+    	// 获取项目根目录的路径
         let manifest_dir = env::var("CARGO_MANIFEST_DIR").unwrap();
         // 根据项目的实际目录进行修改
         let framework_dir = Path::new(&manifest_dir)
@@ -363,7 +363,7 @@ fn main() {
         };
         let framework_path = framework_dir.join(platform_subdir);
 
-		// 输出绝对路径（但路径是基于项目结构的相对路径生成的）
+		// 输出路径（基于项目结构的相对路径生成的）
         println!("cargo:rustc-link-search=framework={}", framework_path.display());
         println!("cargo:rustc-link-lib=framework=libarkui_ios");
         println!("cargo:rustc-link-lib=framework=JavaScriptCore");
@@ -409,37 +409,37 @@ rust工程/target/aarch64-apple-ios/release/librust_add.dylib
 
 #### 环境
 
-1、配置Android NDK环境变量（以Android NDK版本28.0.13004108和CMake版本3.31.6为例）
+1、配置AndroidNDK环境变量（以AndroidNDK版本28.0.13004108和CMake版本3.31.6为例）
 
 **Mac端**
 
 ```shell
-export ANDROID_NDK_HOME=/Android NDK路径/28.0.13004108
+export ANDROID_NDK_HOME=/AndroidNDK路径/28.0.13004108
 ```
 
 **Windows端**
 
 需要在环境变量中配置，如下图：
 
-![](./screenshots/devices/Android_NDK_environment.png)
+![](./screenshots/devices/Android_environment.png)
 
 ```shell
-变量：ANDROID_NDK_HOME 值：Android NDK路径/28.0.13004108
+变量：ANDROID_NDK_HOME 值：AndroidNDK路径/28.0.13004108
 ```
 
-2、Android NDK（Native Development Kit）生成一个独立的工具链
+2、使用AndroidNDK（Native Development Kit）生成一个独立的工具链
 
 **该步骤仅需Mac端配置**
 
 ```shell
 # aarch64-linux-android
-python3 /Android NDK路径/28.0.13004108/build/tools/make_standalone_toolchain.py --api 30 --arch arm64 --install-dir 自定义路径/arm64
+python3 /AndroidNDK路径/28.0.13004108/build/tools/make_standalone_toolchain.py --api 30 --arch arm64 --install-dir 自定义路径/arm64
 
 # armv7-linux-androideabi
-python3 /Android NDK路径/28.0.13004108/build/tools/make_standalone_toolchain.py --api 30 --arch arm --install-dir 自定义路径/arm
+python3 /AndroidNDK路径/28.0.13004108/build/tools/make_standalone_toolchain.py --api 30 --arch arm --install-dir 自定义路径/arm
 
 # x86_64-linux-android
-python3 /Android NDK路径/28.0.13004108/build/tools/make_standalone_toolchain.py  --api 30 --arch x86_64 --install-dir 自定义路径/x86_64
+python3 /AndroidNDK路径/28.0.13004108/build/tools/make_standalone_toolchain.py  --api 30 --arch x86_64 --install-dir 自定义路径/x86_64
 ```
 
 3、编辑 .cargo目录中的config.toml文件，加入以下内容
@@ -484,16 +484,16 @@ linker = "生成的独立工具链路径/x86/bin/i686-linux-android-clang"
 
 ```shell
 [target.aarch64-linux-android]
-ar = "Android NDK路径/28.0.13004108/toolchains/llvm/prebuilt/windows-x86_64/bin/llvm-ar"
-linker = "Android NDK路径/28.0.13004108/toolchains/llvm/prebuilt/windows-x86_64/bin/aarch64-linux-android35-clang.cmd"
+ar = "AndroidNDK路径/28.0.13004108/toolchains/llvm/prebuilt/windows-x86_64/bin/llvm-ar"
+linker = "AndroidNDK路径/28.0.13004108/toolchains/llvm/prebuilt/windows-x86_64/bin/aarch64-linux-android35-clang.cmd"
 
 [target.armv7-linux-androideabi]
-ar = "Android NDK路径/28.0.13004108/toolchains/llvm/prebuilt/windows-x86_64/bin/llvm-ar"
-linker = "Android NDK路径/28.0.13004108/toolchains/llvm/prebuilt/windows-x86_64/bin/armv7a-linux-androideabi35-clang.cmd"
+ar = "AndroidNDK路径/28.0.13004108/toolchains/llvm/prebuilt/windows-x86_64/bin/llvm-ar"
+linker = "AndroidNDK路径/28.0.13004108/toolchains/llvm/prebuilt/windows-x86_64/bin/armv7a-linux-androideabi35-clang.cmd"
 
 [target.x86_64-linux-android]
-ar = "Android NDK路径/28.0.13004108/toolchains/llvm/prebuilt/windows-x86_64/bin/llvm-ar"
-linker = "Android NDK路径/28.0.13004108/toolchains/llvm/prebuilt/windows-x86_64/bin/x86_64-linux-android35-clang.cmd"
+ar = "AndroidNDK路径/28.0.13004108/toolchains/llvm/prebuilt/windows-x86_64/bin/llvm-ar"
+linker = "AndroidNDK路径/28.0.13004108/toolchains/llvm/prebuilt/windows-x86_64/bin/x86_64-linux-android35-clang.cmd"
 ```
 
 #### 编译
@@ -574,7 +574,7 @@ cargo build --target aarch64-apple-ios --release
 
 ## 约束与限制 
 
-1.本示例仅支持标准Android/iOS/HarmonyOS系统上运行。
+1.本示例仅支持标准Android/iOS/鸿蒙系统上运行。
 
 2.本示例已适配API version 20版本的ArkUI-X SDK，版本号：5.1.0.61及以上。
 
