@@ -141,7 +141,7 @@ curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 
 **Windows端**
 
-需要进入Rust官网下载rustup-init.exe，进行安装。
+需要进入[Rust官网](https://www.rust-lang.org/zh-CN/tools/install)下载rustup-init.exe，进行安装。
 
 （2）激活环境变量
 
