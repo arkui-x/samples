@@ -213,7 +213,7 @@ export OHOS_NDK_HOME=/Applications/DevEco-Studio.app/Contents/sdk/default/openha
 ![](./screenshots/devices/OHOS_environment.png)
 
 ```shell
-变量：OHOS_NDK_HOME，值：OpenHarmony SDK路径
+变量：OHOS_NDK_HOME，值：/DevEco安装目录/sdk/default/openharmony
 ```
 
 2、使用cargo安装脚手架工具ohrs
@@ -373,7 +373,7 @@ fn main() {
 }
 ```
 
-2、先进入ArkUI-X跨平台工程，进入DevEco 5.0.4 Release点击菜单上的构建->编译Hap(s)/APP(s)->编译APP(s)按钮，以同步信息与动态库到ArkUI-X跨平台工程中。
+2、使用DevEco 5.0.4 Release打开ArkUI-X跨平台工程，点击菜单上的构建->编译Hap(s)/APP(s)->编译APP(s)按钮，以同步信息与动态库到ArkUI-X跨平台工程中。
 
 3、进入rust工程中，编译target为iOS的.dylib文件：
 
@@ -409,12 +409,12 @@ rust工程/target/aarch64-apple-ios/release/librust_add.dylib
 
 #### 环境
 
-1、配置AndroidNDK环境变量（以AndroidNDK版本28.0.13004108和CMake版本3.31.6为例）
+1、配置Android NDK环境变量（以Android NDK版本28.0.13004108和CMake版本3.31.6为例）
 
 **Mac端**
 
 ```shell
-export ANDROID_NDK_HOME=/AndroidNDK路径/28.0.13004108
+export ANDROID_NDK_HOME=/Android SDK路径/ndk/28.0.13004108
 ```
 
 **Windows端**
@@ -424,29 +424,29 @@ export ANDROID_NDK_HOME=/AndroidNDK路径/28.0.13004108
 ![](./screenshots/devices/Android_environment.png)
 
 ```shell
-变量：ANDROID_NDK_HOME 值：AndroidNDK路径/28.0.13004108
+变量：ANDROID_NDK_HOME 值：/Android SDK路径/ndk/28.0.13004108
 ```
 
-2、使用AndroidNDK（Native Development Kit）生成一个独立的工具链
+2、使用Android NDK（Native Development Kit）生成一个独立的工具链
 
 **该步骤仅需Mac端配置**
 
 ```shell
 # aarch64-linux-android
-python3 /AndroidNDK路径/28.0.13004108/build/tools/make_standalone_toolchain.py --api 30 --arch arm64 --install-dir 自定义路径/arm64
+python3 /Android SDK路径/ndk/28.0.13004108/build/tools/make_standalone_toolchain.py --api 30 --arch arm64 --install-dir 自定义路径/arm64
 
 # armv7-linux-androideabi
-python3 /AndroidNDK路径/28.0.13004108/build/tools/make_standalone_toolchain.py --api 30 --arch arm --install-dir 自定义路径/arm
+python3 /Android SDK路径/ndk/28.0.13004108/build/tools/make_standalone_toolchain.py --api 30 --arch arm --install-dir 自定义路径/arm
 
 # x86_64-linux-android
-python3 /AndroidNDK路径/28.0.13004108/build/tools/make_standalone_toolchain.py  --api 30 --arch x86_64 --install-dir 自定义路径/x86_64
+python3 /Android SDK路径/ndk/28.0.13004108/build/tools/make_standalone_toolchain.py  --api 30 --arch x86_64 --install-dir 自定义路径/x86_64
 ```
 
 3、编辑 .cargo目录中的config.toml文件，加入以下内容
 
 **Mac端**
 
-以下为api设置为27版本时生成的：
+以下为api设置为27版本时添加的配置内容：
 
 ```shell
 [target.aarch64-linux-android]
@@ -462,7 +462,7 @@ ar = "生成的独立工具链路径/x86_64/bin/llvm-ar"
 linker = "生成的独立工具链路径/x86_64/bin/x86_64-linux-android-clang"
 ```
 
-以下为api设置为30版本时生成的：
+以下为api设置为30版本时添加的配置内容：
 
 如果生成的工具链中没有aarch64-linux-android-ar等ar文件，则可以使用llvm-ar，例如：ar = "生成的独立工具链路径/arm64/bin/llvm-ar"
 
@@ -484,16 +484,16 @@ linker = "生成的独立工具链路径/x86/bin/i686-linux-android-clang"
 
 ```shell
 [target.aarch64-linux-android]
-ar = "AndroidNDK路径/28.0.13004108/toolchains/llvm/prebuilt/windows-x86_64/bin/llvm-ar"
-linker = "AndroidNDK路径/28.0.13004108/toolchains/llvm/prebuilt/windows-x86_64/bin/aarch64-linux-android35-clang.cmd"
+ar = "Android SDK路径/ndk/28.0.13004108/toolchains/llvm/prebuilt/windows-x86_64/bin/llvm-ar"
+linker = "Android SDK路径/ndk/28.0.13004108/toolchains/llvm/prebuilt/windows-x86_64/bin/aarch64-linux-android35-clang.cmd"
 
 [target.armv7-linux-androideabi]
-ar = "AndroidNDK路径/28.0.13004108/toolchains/llvm/prebuilt/windows-x86_64/bin/llvm-ar"
-linker = "AndroidNDK路径/28.0.13004108/toolchains/llvm/prebuilt/windows-x86_64/bin/armv7a-linux-androideabi35-clang.cmd"
+ar = "Android SDK路径/ndk/28.0.13004108/toolchains/llvm/prebuilt/windows-x86_64/bin/llvm-ar"
+linker = "Android SDK路径/ndk/28.0.13004108/toolchains/llvm/prebuilt/windows-x86_64/bin/armv7a-linux-androideabi35-clang.cmd"
 
 [target.x86_64-linux-android]
-ar = "AndroidNDK路径/28.0.13004108/toolchains/llvm/prebuilt/windows-x86_64/bin/llvm-ar"
-linker = "AndroidNDK路径/28.0.13004108/toolchains/llvm/prebuilt/windows-x86_64/bin/x86_64-linux-android35-clang.cmd"
+ar = "Android SDK路径/ndk/28.0.13004108/toolchains/llvm/prebuilt/windows-x86_64/bin/llvm-ar"
+linker = "Android SDK路径/ndk/28.0.13004108/toolchains/llvm/prebuilt/windows-x86_64/bin/x86_64-linux-android35-clang.cmd"
 ```
 
 #### 编译
@@ -502,7 +502,7 @@ linker = "AndroidNDK路径/28.0.13004108/toolchains/llvm/prebuilt/windows-x86_64
 
 1、修改rust工程中的build.rs文件为如下内容：[参考代码](#编译-2)。
 
-2、先进入ArkUI-X跨平台工程中，进入DevEco 5.0.4 Release点击菜单上的构建->编译Hap(s)/APP(s)->编译APP(s)按钮，以同步信息与动态库到ArkUI-X跨平台工程中。
+2、使用DevEco 5.0.4 Release打开ArkUI-X跨平台工程，点击菜单上的构建->编译Hap(s)/APP(s)->编译APP(s)按钮，以同步信息与动态库到ArkUI-X跨平台工程中。
 
 3、进入rust工程中，编译target为Android 的.so文件：
 
@@ -543,7 +543,7 @@ ohrs build
 
 3、在ArkUI-X工程中添加subtract方法的调用，并打印返回结果。
 
-4、进入ArkUI-X跨平台工程中，进入DevEco 5.0.4 Release点击菜单上的构建->编译Hap(s)/APP(s)->编译APP(s)按钮，重新同步信息到ArkUI-X跨平台工程中。
+4、使用DevEco 5.0.4 Release打开ArkUI-X跨平台工程，点击菜单上的构建->编译Hap(s)/APP(s)->编译APP(s)按钮，以同步信息与动态库到ArkUI-X跨平台工程中。
 
 5、重新编译rust工程：
 
