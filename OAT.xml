@@ -116,6 +116,7 @@ Note:If the text contains special characters, please escape them according to th
                 <filteritem type="filepath" name="RustFeature/Rust/RustDev/entry/src/main/resources/base/media/.*.png" desc="应用图片"/>
                 <filteritem type="filepath" name="RustFeature/Rust/RustDev/AppScope/resources/base/media/.*.png" desc="应用图片"/>
                 <filteritem type="filepath" name="RustFeature/Rust/rust_add/build.rs" desc="rust源码"/>
+                <filteritem type="filepath" name="RustFeature/Rust/RustDev/screenshots/.*.png" desc="运行结果截图"/>
             </filefilter>
             <filefilter name="copyrightPolicyFilter" desc="Copyright文件头校验策略的过滤条件" >
                 <filteritem type="filepath" name="Animation/.*.ets|.*.ts" desc="示例展示无需添加版权头"/>
