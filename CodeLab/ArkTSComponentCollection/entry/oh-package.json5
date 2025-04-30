@@ -1,0 +1,12 @@
+{
+  "license": "ISC",
+  "name": "entry",
+  "description": "example description",
+  "version": "1.0.0",
+  "dependencies": {
+    "RouterModule": "file:../RouterModule",
+    "@ohos/harA": "file:../harA",
+    "@ohos/harB": "file:../harB"
+  }
+}
+
