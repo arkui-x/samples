@@ -1,0 +1,24 @@
+{
+  "integer": [
+    {
+      "name": "customcalendarpickerdialog_train_image_size",
+      "value": 20
+    },
+    {
+      "name": "customcalendarpickerdialog_check_button_height",
+      "value": 40
+    },
+    {
+      "name": "customcalendarpickerdialog_card_padding",
+      "value": 16
+    },
+    {
+      "name": "customcalendarpickerdialog_text_height",
+      "value": 40
+    },
+    {
+      "name": "customcalendarpickerdialog_month_text",
+      "value": 240
+    }
+  ]
+}

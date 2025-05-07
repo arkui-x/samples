@@ -1,0 +1,10 @@
+{
+  "routerMap": [
+    {
+      "name": "webpdfviewer/WebPDFViewer",
+      "pageModule": "webpdfviewer",
+      "pageSourceFile": "src/main/ets/generated/RouterBuilder.ets",
+      "registerFunction": "webPDFViewerRegister"
+    }
+  ]
+}

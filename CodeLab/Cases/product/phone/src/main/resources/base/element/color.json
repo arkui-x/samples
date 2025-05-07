@@ -1,0 +1,44 @@
+{
+  "color": [
+    {
+      "name": "entry_start_window_background",
+      "value": "#B3CFFF"
+    },
+    {
+      "name": "main_background_color",
+      "value": "#F1F1F1"
+    },
+    {
+      "name": "helper_bindsheet_bgc",
+      "value": "#303643"
+    },
+    {
+      "name": "nav_destination_title_image_background_color",
+      "value": "#E5E7E9"
+    },
+    {
+      "name": "advertising_backgroundColor",
+      "value": "#f1f3f5"
+    },
+    {
+      "name": "privacy_agreement_dialog_font_color1",
+      "value": "#383838"
+    },
+    {
+      "name": "privacy_agreement_dialog_font_color2",
+      "value": "#3C7CFC"
+    },
+    {
+      "name": "privacy_agreement_dialog_button_confirm",
+      "value": "#00000040"
+    },
+    {
+      "name": "privacy_agreement_dialog_button_refuse_font_color",
+      "value": "#A6A6A6"
+    },
+    {
+      "name": "home_option_badge_color",
+      "value": "#FA2A2D"
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "routerMap": [
+    {
+      "name": "slidetohideanddisplace/SlideToHideAndDisplace",
+      "pageModule": "slidetohideanddisplace",
+      "pageSourceFile": "src/main/ets/generated/RouterBuilder.ets",
+      "registerFunction": "slideToHideAndDisplaceRegister"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "color": [
+    {
+      "name": "web_pdf_viewer_font_color",
+      "value": "#444444"
+    },
+    {
+      "name": "web_pdf_viewer_selected_font_color",
+      "value": "#0A59F7"
+    },
+    {
+      "name": "web_pdf_viewer_progress_line_color",
+      "value": "#0A59F7"
+    },
+    {
+      "name": "web_pdf_viewer_tab_content_color",
+      "value": "#F1F3F5"
+    }
+  ]
+}

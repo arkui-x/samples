@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .image-container {
+          width: 95%;
+          justify-content: center;
+          align-items: center;
+          display:flex
+        }
+        .save-img {
+          width: 260px;
+          height: 260px;
+        }
+        .web-title {
+          text-align: center;
+        }
+        .web-message {
+          font-size: 16px;
+          text-align: center;
+          margin-top: 10px;
+          font-weight: 270;
+          width: 80%;
+        }
+        .message-container {
+          width: 100%;
+          justify-content: center;
+          align-items: center;
+          display:flex
+        }
+    </style>
+</head>
+<body>
+<div>
+    <h2 class="web-title">长按保存图片</h2>
+    <div class="message-container">
+        <p class="web-message">
+            本示例中，长按web资源弹出保存弹窗，点击保存后通过询问是否允许保存来获取将web图片保存到相册的权限，给予权限后，即可将web上的图片保存到相册。
+        </p>
+    </div>
+    <div class="image-container">
+        <img class="save-img"
+             src="https://gitee.com/harmonyos-cases/cases/raw/master/CommonAppDevelopment/feature/variablewatch/src/main/resources/base/media/variablewatch_grape.png"
+             alt="图片">
+    </div>
+</div>
+</body>
+</html>

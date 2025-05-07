@@ -1,0 +1,88 @@
+{
+  "string": [
+    {
+      "name": "fit_for_dark_mode_light_string",
+      "value": "Light"
+    },
+    {
+      "name": "fit_for_dark_mode_product_title00",
+      "value": "充电宝"
+    },
+    {
+      "name": "fit_for_dark_mode_product_title01",
+      "value": "笔记本电脑"
+    },
+    {
+      "name": "fit_for_dark_mode_product_title02",
+      "value": "移动手机"
+    },
+    {
+      "name": "fit_for_dark_mode_product_title03",
+      "value": "电动按摩椅"
+    },
+    {
+      "name": "fit_for_dark_mode_product_title04",
+      "value": "折叠屏"
+    },
+    {
+      "name": "fit_for_dark_mode_product_title05",
+      "value": "极简潮流背包"
+    },
+    {
+      "name": "fit_for_dark_mode_product_price00",
+      "value": "￥79.9"
+    },
+    {
+      "name": "fit_for_dark_mode_product_price01",
+      "value": "￥6975.8"
+    },
+    {
+      "name": "fit_for_dark_mode_product_price02",
+      "value": "￥4279.6"
+    },
+    {
+      "name": "fit_for_dark_mode_product_price03",
+      "value": "￥5385.4"
+    },
+    {
+      "name": "fit_for_dark_mode_product_price04",
+      "value": "￥1252.9"
+    },
+    {
+      "name": "fit_for_dark_mode_product_price05",
+      "value": "￥105.3"
+    },
+    {
+      "name": "fit_for_dark_mode_product_view00",
+      "value": "3.2W"
+    },
+    {
+      "name": "fit_for_dark_mode_product_view01",
+      "value": "9.8k"
+    },
+    {
+      "name": "fit_for_dark_mode_product_view02",
+      "value": "1.8k"
+    },
+    {
+      "name": "fit_for_dark_mode_product_view03",
+      "value": "859"
+    },
+    {
+      "name": "fit_for_dark_mode_product_view04",
+      "value": "4.7W"
+    },
+    {
+      "name": "fit_for_dark_mode_product_view05",
+      "value": "1.2W"
+    },
+    {
+      "name": "fit_for_dark_mode_search_text",
+      "value": "精品好礼"
+    },
+    {
+      "name": "fit_for_dark_mode_new_product_text",
+      "value": "新品首发"
+    }
+  ]
+}

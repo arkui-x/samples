@@ -1,0 +1,10 @@
+{
+  "routerMap": [
+    {
+      "name": "limitedheightbottomdialog/LimitedHeightBottomDialogView",
+      "pageModule": "limitedheightbottomdialog",
+      "pageSourceFile": "src/main/ets/generated/RouterBuilder.ets",
+      "registerFunction": "limitedHeightBottomDialogViewRegister"
+    }
+  ]
+}

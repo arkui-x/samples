@@ -1,0 +1,28 @@
+{
+  "string": [
+    {
+      "name": "customsafekeyboard_keyboard_title",
+      "value": "安全输入法"
+    },
+    {
+      "name": "customsafekeyboard_keyboard_submit",
+      "value": "完成"
+    },
+    {
+      "name": "customsafekeyboard_account_name",
+      "value": "198*****798"
+    },
+    {
+      "name": "customsafekeyboard_login_button_label",
+      "value": "登录"
+    },
+    {
+      "name": "customsafekeyboard_placeholder",
+      "value": "请输入密码"
+    },
+    {
+      "name": "customsafekeyboard_one_hundred_percent",
+      "value": "100%"
+    }
+  ]
+}

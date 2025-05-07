@@ -1,0 +1,10 @@
+{
+  "routerMap": [
+    {
+      "name": "floatwindow/FloatWindowMainPageComponent",
+      "pageModule": "floatwindow",
+      "pageSourceFile": "src/main/ets/generated/RouterBuilder.ets",
+      "registerFunction": "floatWindowMainPageComponentRegister"
+    }
+  ]
+}

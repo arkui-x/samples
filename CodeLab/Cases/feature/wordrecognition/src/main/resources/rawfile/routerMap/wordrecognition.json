@@ -1,0 +1,10 @@
+{
+  "routerMap": [
+    {
+      "name": "wordrecognition/WordRecognition",
+      "pageModule": "wordrecognition",
+      "pageSourceFile": "src/main/ets/generated/RouterBuilder.ets",
+      "registerFunction": "wordRecognitionRegister"
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "float": [
+    {
+      "name": "imagegridlayout_mask_opacity",
+      "value": "0.5"
+    },
+    {
+      "name": "imagegridlayout_mask_font_size",
+      "value": "30"
+    },
+    {
+      "name": "imagegridlayout_padding_20",
+      "value": "20"
+    },
+    {
+      "name": "imagegridlayout_text_margin",
+      "value": "20"
+    },
+    {
+      "name": "imagegridlayout_divider_margin",
+      "value": "20"
+    }
+  ]
+}

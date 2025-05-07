@@ -1,0 +1,104 @@
+{
+  "integer": [
+    {
+      "name": "multimodaltransion_border_radius",
+      "value": 1
+    },
+    {
+      "name": "multimodaltransion_border_radius_mid",
+      "value": 16
+    },
+    {
+      "name": "multimodaltransion_other_ways_border_radius",
+      "value": 16
+    },
+    {
+      "name": "multimodaltransion_duration",
+      "value": 800
+    },
+    {
+      "name": "multimodaltransion_user_image_height",
+      "value": 40
+    },
+    {
+      "name": "multimodaltransion_font_size_middle",
+      "value": 25
+    },
+    {
+      "name": "multimodaltransion_font_size_big",
+      "value": 25
+    },
+    {
+      "name": "multimodaltransion_padding_default",
+      "value": 12
+    },
+    {
+      "name": "multimodaltransion_padding_to_top",
+      "value": 100
+    },
+    {
+      "name": "multimodaltransion_padding_mid",
+      "value": 20
+    },
+    {
+      "name": "multimodaltransion_height_fifty",
+      "value": 50
+    },
+    {
+      "name": "multimodaltransion_height_twenty_five",
+      "value": 20
+    },
+    {
+      "name": "multimodaltransion_height_fifty_five",
+      "value": 15
+    },
+    {
+      "name": "multimodaltransion_margin_default",
+      "value": 10
+    },
+    {
+      "name": "multimodaltransion_margin_close_top",
+      "value": 50
+    },
+    {
+      "name": "multimodaltransion_margin_close_left",
+      "value": 20
+    },
+    {
+      "name": "multimodaltransion_margin_left",
+      "value": 20
+    },
+    {
+      "name": "multimodaltransion_padding_top",
+      "value": 100
+    },
+    {
+      "name": "multimodaltransion_other_ways_icon_height",
+      "value": 32
+    },
+    {
+      "name": "multimodaltransion_arrow_right_height",
+      "value": 16
+    },
+    {
+      "name": "multimodaltransion_row_padding_bottom",
+      "value": 10
+    },
+    {
+      "name": "multimodaltransion_row_padding_top",
+      "value": 10
+    },
+    {
+      "name": "multimodaltransion_row_text_font_size",
+      "value": 15
+    },
+    {
+      "name": "multimodaltransion_check_box_size",
+      "value": 15
+    },
+    {
+      "name": "multimodaltransion_padding_top_size",
+      "value": 100
+    }
+  ]
+}

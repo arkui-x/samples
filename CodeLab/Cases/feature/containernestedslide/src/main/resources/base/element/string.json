@@ -1,0 +1,148 @@
+{
+  "string": [
+    {
+      "name": "module_desc",
+      "value": "module description"
+    },
+    {
+      "name": "EntryAbility_desc",
+      "value": "description"
+    },
+    {
+      "name": "internet_reason",
+      "value": "This permission is required for images to load network resources"
+    },
+    {
+      "name": "container_nested_color_evaluate",
+      "value": "用户评价 (200+)"
+    },
+    {
+      "name": "container_nested_color_ninety_nine_percent",
+      "value": "99%"
+    },
+    {
+      "name": "container_nested_color_praise",
+      "value": "好评"
+    },
+    {
+      "name": "container_nested_publish",
+      "value": "发布"
+    },
+    {
+      "name": "container_nested_page_show",
+      "value": "page from package"
+    },
+    {
+      "name": "container_nested_percent_100",
+      "value": "100%"
+    },
+    {
+      "name": "container_nested_percent_30",
+      "value": "30%"
+    },
+    {
+      "name": "container_nested_percent_95",
+      "value": "95%"
+    },
+    {
+      "name": "container_nested_text_input_hint",
+      "value": "发表商品评价"
+    },
+    {
+      "name": "container_nested_reply",
+      "value": "回复 >"
+    },
+    {
+      "name": "container_nested_cur_user",
+      "value": "兔子不吃窝边草"
+    },
+    {
+      "name": "container_nested_prompt_text",
+      "value": "仅演示，可自行实现业务功能"
+    },
+    {
+      "name": "container_nested_time_place",
+      "value": "   昨天23:24·杭州"
+    },
+    {
+      "name": "container_nested_time_place1",
+      "value": "刚刚·杭州"
+    },
+    {
+      "name": "container_nested_reply_success",
+      "value": "评论成功"
+    },
+    {
+      "name": "container_nested_time_place2",
+      "value": "   刚刚·杭州"
+    },
+    {
+      "name": "container_nested_row_width",
+      "value": "60%"
+    },
+    {
+      "name": "container_nested_one_percent",
+      "value": "100%"
+    },
+    {
+      "name": "container_nested_only_show_for_ux",
+      "value": "仅做样式展示"
+    },
+    {
+      "name": "container_nested_publish_width",
+      "value": "25%"
+    },
+    {
+      "name": "container_nested_comment_text",
+      "value": "评论 306"
+    },
+    {
+      "name": "container_nested_comment1_text",
+      "value": "526 赞 | 49 转发"
+    },
+    {
+      "name": "container_nested_share_text",
+      "value": "分享"
+    },
+    {
+      "name": "container_nested_comment3_text",
+      "value": "评论"
+    },
+    {
+      "name": "container_nested_star_text",
+      "value": "点赞"
+    },
+    {
+      "name": "container_nested_collect_text",
+      "value": "收藏"
+    },
+    {
+      "name": "container_nested_listen",
+      "value": "听"
+    },
+    {
+      "name": "container_nested_search_value",
+      "value": "搜你想看的"
+    },
+    {
+      "name": "container_nested_follow",
+      "value": "+关注"
+    },
+    {
+      "name": "container_nested_followed",
+      "value": "已关注"
+    },
+    {
+      "name": "container_nested_publish_comment",
+      "value": "发布评论"
+    },
+    {
+      "name": "container_nested_icons_width",
+      "value": "253px"
+    },
+    {
+      "name": "container_nested_search_width",
+      "value": "780px"
+    }
+  ]
+}

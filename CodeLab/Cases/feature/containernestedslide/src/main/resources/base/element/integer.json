@@ -1,0 +1,316 @@
+{
+  "integer": [
+    {
+      "name": "container_nested_text_input_height",
+      "value": 40
+    },
+    {
+      "name": "container_nested_text_sixteen",
+      "value": 16
+    },
+    {
+      "name": "container_nested_text_input_padding_right",
+      "value": 50
+    },
+    {
+      "name": "container_nested_text_input_padding_top",
+      "value": 3
+    },
+    {
+      "name": "container_nested_text_input_padding_bottom",
+      "value": 3
+    },
+    {
+      "name": "container_nested_text_input_margin_top",
+      "value": 10
+    },
+    {
+      "name": "container_nested_image_camera_margin_top",
+      "value": 10
+    },
+    {
+      "name": "container_nested_button_publish_width",
+      "value": 60
+    },
+    {
+      "name": "container_nested_button_publish_height",
+      "value": 30
+    },
+    {
+      "name": "container_nested_button_publish_border_radius",
+      "value": 15
+    },
+    {
+      "name": "container_nested_image_camera_width",
+      "value": 30
+    },
+    {
+      "name": "container_nested_image_camera_height",
+      "value": 30
+    },
+    {
+      "name": "container_nested_relative_container_input_height",
+      "value": 50
+    },
+    {
+      "name": "container_nested_column_input_padding",
+      "value": 10
+    },
+    {
+      "name": "container_nested_image_avatar_height",
+      "value": 50
+    },
+    {
+      "name": "container_nested_image_avatar_width",
+      "value": 50
+    },
+    {
+      "name": "container_nested_image_avatar_border_radius",
+      "value": 25
+    },
+    {
+      "name": "container_nested_comment_column_info_margin_left",
+      "value": 5
+    },
+    {
+      "name": "container_nested_text_comment_margin_top",
+      "value": 5
+    },
+    {
+      "name": "container_nested_list_comment_image_margin_top",
+      "value": 5
+    },
+    {
+      "name": "container_nested_view_comment_padding",
+      "value": 10
+    },
+    {
+      "name": "container_nested_container_nested_image_width",
+      "value": 100
+    },
+    {
+      "name": "container_nested_container_nested_width",
+      "value": 500
+    },
+    {
+      "name": "container_nested_container_nested_image_border_radius",
+      "value": 5
+    },
+    {
+      "name": "container_nested_list_comment_image_space",
+      "value": 10
+    },
+    {
+      "name": "container_nested_list_comment_image_height",
+      "value": 120
+    },
+    {
+      "name": "container_nested_list_comment_image_padding_top",
+      "value": 10
+    },
+    {
+      "name": "container_nested_list_comment_image_padding_bottom",
+      "value": 10
+    },
+    {
+      "name": "container_nested_text_hot_comment_height",
+      "value": 40
+    },
+    {
+      "name": "container_nested_text_hot_comment_padding_left",
+      "value": 10
+    },
+    {
+      "name": "container_nested_text_hot_comment_border_width_bottom",
+      "value": 1
+    },
+    {
+      "name": "container_nested_list_comment_margin_bottom",
+      "value": 50
+    },
+    {
+      "name": "container_nested_text_no_comment_margin_bottom",
+      "value": 50
+    },
+    {
+      "name": "container_nested_text_input_hint_height",
+      "value": 40
+    },
+    {
+      "name": "container_nested_text_input_hint_border_radius",
+      "value": 30
+    },
+    {
+      "name": "container_nested_text_input_hint_padding_left",
+      "value": 15
+    },
+    {
+      "name": "container_nested_text_input_hint_border_width",
+      "value": 1
+    },
+    {
+      "name": "container_nested_row_input_hint_border_width_top",
+      "value": 1
+    },
+    {
+      "name": "container_nested_row_input_hint_height",
+      "value": 50
+    },
+    {
+      "name": "container_nested_column_input_dialog_offset_y",
+      "value": 20
+    },
+    {
+      "name": "container_nested_image_delete_height",
+      "value": 20
+    },
+    {
+      "name": "container_nested_image_delete_width",
+      "value": 20
+    },
+    {
+      "name": "container_nested_image_relative_container_height",
+      "value": 110
+    },
+    {
+      "name": "container_nested_image_relative_container_width",
+      "value": 110
+    },
+    {
+      "name": "container_nested_dialog_offset_x",
+      "value": 0
+    },
+    {
+      "name": "container_nested_dialog_offset_y",
+      "value": -20
+    },
+    {
+      "name": "container_nested_font_size",
+      "value": 14
+    },
+    {
+      "name": "container_nested_font_weight_high",
+      "value": 500
+    },
+    {
+      "name": "container_nested_url_width_height",
+      "value": 30
+    },
+    {
+      "name": "container_nested_url_margin_bottom",
+      "value": 25
+    },
+    {
+      "name": "container_nested_reply_margin_left",
+      "value": 10
+    },
+    {
+      "name": "container_nested_column_padding_left",
+      "value": 12
+    },
+    {
+      "name": "container_nested_column_padding_top",
+      "value": 10
+    },
+    {
+      "name": "container_nested_row_margin_bottom",
+      "value": 10
+    },
+    {
+      "name": "container_nested_row_margin_top",
+      "value": 10
+    },
+    {
+      "name": "container_nested_root_column_margin_left",
+      "value": 30
+    },
+    {
+      "name": "container_nested_root_column_margin_top",
+      "value": 10
+    },
+    {
+      "name": "container_nested_root_text_input_height",
+      "value": 40
+    },
+    {
+      "name": "container_nested_root_text_input_padding_left",
+      "value": 10
+    },
+    {
+      "name": "container_nested_root_text_input_padding_right",
+      "value": 50
+    },
+    {
+      "name": "container_nested_root_text_input_padding_top",
+      "value": 3
+    },
+    {
+      "name": "container_nested_root_text_input_padding_bottom",
+      "value": 3
+    },
+    {
+      "name": "container_nested_root_text_input_margin_right",
+      "value": 10
+    },
+    {
+      "name": "container_nested_root_btn_width",
+      "value": 60
+    },
+    {
+      "name": "container_nested_root_btn_height",
+      "value": 30
+    },
+    {
+      "name": "container_nested_relative_container_height",
+      "value": 50
+    },
+    {
+      "name": "container_nested_column_padding",
+      "value": 10
+    },
+    {
+      "name": "container_nested_text_padding_right",
+      "value": 10
+    },
+    {
+      "name": "container_nested_img_width",
+      "value": 6
+    },
+    {
+      "name": "container_nested_img_height",
+      "value": 12
+    },
+    {
+      "name": "container_nested_list_margin_left",
+      "value": 5
+    },
+    {
+      "name": "container_nested_list_margin_bottom",
+      "value": 10
+    },
+    {
+      "name": "container_nested_column2_padding_top",
+      "value": 12
+    },
+    {
+      "name": "container_nested_column2_padding_bottom",
+      "value": 12
+    },
+    {
+      "name": "container_nested_column2_padding_left_right",
+      "value": 16
+    },
+    {
+      "name": "container_nested_text_line_height",
+      "value": 20
+    },
+    {
+      "name": "container_nested_img_width_height",
+      "value": 30
+    },
+    {
+      "name": "container_nested_img_margin_bottom",
+      "value": 25
+    }
+  ]
+}

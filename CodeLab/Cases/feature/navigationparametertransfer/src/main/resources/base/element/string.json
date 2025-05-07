@@ -1,0 +1,96 @@
+{
+  "string": [
+    {
+      "name": "navigation_parametertransfer_bookingInfo",
+      "value": "您的购票信息为："
+    },
+    {
+      "name": "navigation_parametertransfer_date",
+      "value": "出发时间："
+    },
+    {
+      "name": "navigation_parametertransfer_price",
+      "value": "价格："
+    },
+    {
+      "name": "navigation_parametertransfer_user_info",
+      "value": "用户信息"
+    },
+    {
+      "name": "navigation_parametertransfer_user_name",
+      "value": "用户姓名："
+    },
+    {
+      "name": "navigation_parametertransfer_user_id",
+      "value": "身份证号："
+    },
+    {
+      "name": "navigation_parametertransfer_user_seatNo",
+      "value": "座位号："
+    },
+    {
+      "name": "navigation_parametertransfer_next_page",
+      "value": "下一步"
+    },
+    {
+      "name": "navigation_parametertransfer_btn_submit",
+      "value": "提交订单"
+    },
+    {
+      "name": "navigation_parametertransfer_btn_select",
+      "value": "换个座位"
+    },
+    {
+      "name": "navigation_parametertransfer_btn_back",
+      "value": "返回"
+    },
+    {
+      "name": "navigation_parametertransfer_todo",
+      "value": "非案例功能，暂未开放"
+    },
+    {
+      "name": "navigation_parametertransfer_padding_start",
+      "value": "12"
+    },
+    {
+      "name": "navigation_parametertransfer_font_size_txt",
+      "value": "18"
+    },
+    {
+      "name": "navigation_parametertransfer_font_size_14",
+      "value": "14"
+    },
+    {
+      "name": "navigation_parametertransfer_margin",
+      "value": "5"
+    },
+    {
+      "name": "navigation_parametertransfer_title_margin",
+      "value": "10"
+    },
+    {
+      "name": "navigation_parametertransfer_radius",
+      "value": "10"
+    },
+    {
+      "name": "navigation_parametertransfer_margin12",
+      "value": "12"
+    },
+    {
+      "name": "navigation_parametertransfer_padding",
+      "value": "12"
+    },
+    {
+      "name": "navigation_parametertransfer_width_left",
+      "value": "35%"
+    },
+    {
+      "name": "navigation_parametertransfer_width_mid",
+      "value": "20%"
+    },
+    {
+      "name": "navigation_parametertransfer_width_right",
+      "value": "55%"
+    }
+  ]
+}

@@ -1,0 +1,144 @@
+{
+  "string": [
+    {
+      "name": "addressrecognize_address_recognize_toast",
+      "value": "请输入详细地址信息！"
+    },
+    {
+      "name": "addressrecognize_name_null_msg",
+      "value": "真实姓名不能为空！"
+    },
+    {
+      "name": "addressrecognize_tel_null_msg",
+      "value": "电话不能为空！"
+    },
+    {
+      "name": "addressrecognize_address_null_msg",
+      "value": "详细地址不能为空！"
+    },
+    {
+      "name": "addressrecognize_recognize_text",
+      "value": "正在识别中！"
+    },
+    {
+      "name": "addressrecognize_recognize_fail_text",
+      "value": "识别失败！"
+    },
+    {
+      "name": "addressrecognize_recognize_image_fail_text",
+      "value": "未获取到图片信息，识别失败！"
+    },
+    {
+      "name": "addressrecognize_crop_area_fail_text",
+      "value": "请重新选择裁剪区域，不要超出图片边界！"
+    },
+    {
+      "name": "addressrecognize_page_title",
+      "value": "新增地址"
+    },
+    {
+      "name": "addressrecognize_address_placeholder",
+      "value": "粘贴文本到此处，将自动识别收货信息 例：涛涛，18888888888，浙江省杭州市西湖区某小区"
+    },
+    {
+      "name": "addressrecognize_recognize_image_button",
+      "value": "图片识别"
+    },
+    {
+      "name": "addressrecognize_transfer_address_button",
+      "value": "识别"
+    },
+    {
+      "name": "addressrecognize_contact_label",
+      "value": "联系人信息"
+    },
+    {
+      "name": "addressrecognize_input_placeholder_name",
+      "value": "真实姓名"
+    },
+    {
+      "name": "addressrecognize_input_placeholder_tel",
+      "value": "电话"
+    },
+    {
+      "name": "addressrecognize_input_placeholder_address",
+      "value": "详细地址"
+    },
+    {
+      "name": "addressrecognize_take_photo_button",
+      "value": "拍照"
+    },
+    {
+      "name": "addressrecognize_picker_button",
+      "value": "从相册选择"
+    },
+    {
+      "name": "addressrecognize_ok_button",
+      "value": "保存地址"
+    },
+    {
+      "name": "addressrecognize_complete_button",
+      "value": "完成"
+    },
+    {
+      "name": "addressrecognize_cancel_button",
+      "value": "取消"
+    },
+    {
+      "name": "addressrecognize_save_success",
+      "value": "保存成功！"
+    },
+    {
+      "name": "addressrecognize_image_edit_bottom_percent",
+      "value": "7%"
+    },
+    {
+      "name": "addressrecognize_width_percent_full",
+      "value": "100%"
+    },
+    {
+      "name": "addressrecognize_size_percent_eighty",
+      "value": "80%"
+    },
+    {
+      "name": "addressrecognize_size_percent_ninety",
+      "value": "90%"
+    },
+    {
+      "name": "addressrecognize_editAddress",
+      "value": "管理"
+    },
+    {
+      "name": "addressrecognize_addAddress",
+      "value": "新增地址"
+    },
+    {
+      "name": "addressrecognize_deliveryAddress",
+      "value": "收货地址"
+    },
+    {
+      "name": "addressrecognize_copy",
+      "value": "智能粘贴"
+    },
+    {
+      "name": "addressrecognize_one_hundred_percent",
+      "value": "100%"
+    },
+    {
+      "name": "addressrecognize_tag",
+      "value": "地址标签"
+    },
+    {
+      "name": "addressrecognize_default",
+      "value": "默认"
+    },
+    {
+      "name": "addressrecognize_default_address",
+      "value": "默认地址"
+    },
+    {
+      "name": "addressrecognize_undeveloped_feature",
+      "value": "功能暂未实现"
+    }
+  ]
+}

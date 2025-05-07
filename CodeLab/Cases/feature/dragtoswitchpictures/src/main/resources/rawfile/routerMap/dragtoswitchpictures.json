@@ -1,0 +1,10 @@
+{
+  "routerMap": [
+    {
+      "name": "dragtoswitchpictures/DragToSwitchPictures",
+      "pageModule": "dragtoswitchpictures",
+      "pageSourceFile": "src/main/ets/generated/RouterBuilder.ets",
+      "registerFunction": "dragToSwitchPicturesRegister"
+    }
+  ]
+}

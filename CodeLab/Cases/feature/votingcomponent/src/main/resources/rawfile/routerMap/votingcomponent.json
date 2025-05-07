@@ -1,0 +1,10 @@
+{
+  "routerMap": [
+    {
+      "name": "votingcomponent/VotingComponent",
+      "pageModule": "votingcomponent",
+      "pageSourceFile": "src/main/ets/generated/RouterBuilder.ets",
+      "registerFunction": "votingComponentRegister"
+    }
+  ]
+}

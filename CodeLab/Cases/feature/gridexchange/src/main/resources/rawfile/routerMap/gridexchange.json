@@ -1,0 +1,10 @@
+{
+  "routerMap": [
+    {
+      "name": "gridexchange/GridExchange",
+      "pageModule": "gridexchange",
+      "pageSourceFile": "src/main/ets/generated/RouterBuilder.ets",
+      "registerFunction": "gridExchangeRegister"
+    }
+  ]
+}

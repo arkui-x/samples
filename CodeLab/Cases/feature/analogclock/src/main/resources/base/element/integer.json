@@ -1,0 +1,12 @@
+{
+  "integer": [
+    {
+      "name": "analog_clock_font_size",
+      "value": 30
+    },
+    {
+      "name": "analog_clock_text_margin",
+      "value": 50
+    }
+  ]
+}

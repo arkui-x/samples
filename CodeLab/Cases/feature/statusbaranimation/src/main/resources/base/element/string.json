@@ -1,0 +1,40 @@
+{
+  "string": [
+    {
+      "name": "status_bar_animation_prompt_text",
+      "value": "仅演示，可自行实现业务功能"
+    },
+    {
+      "name": "status_bar_animation_beautiful_text",
+      "value": "美图美文"
+    },
+    {
+      "name": "status_bar_animation_location_text",
+      "value": "杭州"
+    },
+    {
+      "name": "status_bar_animation_weather_text",
+      "value": "晴27℃"
+    },
+    {
+      "name": "status_bar_animation_top_up_text",
+      "value": "回顶部"
+    },
+    {
+      "name": "status_bar_animation_search_text",
+      "value": "风光无限"
+    },
+    {
+      "name": "status_bar_animation_photography_works",
+      "value": "摄影作品"
+    },
+    {
+      "name": "status_bar_animation_natural_scenery",
+      "value": "自然风光"
+    },
+    {
+      "name": "status_bar_animation_back_error_message",
+      "value": "请实现页面返回功能"
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "string": [
+    {
+      "name": "click_animation_other_function",
+      "value": "仅演示，可自行实现业务功能"
+    },
+    {
+      "name": "click_animation_review",
+      "value": "说点什么"
+    },
+    {
+      "name": "click_animation_live_today",
+      "value": "今日直播"
+    },
+    {
+      "name": "click_animation_viewers_location",
+      "value": "58613 观看 | 杭州"
+    },
+    {
+      "name": "click_animation_follow",
+      "value": "关注"
+    },
+    {
+      "name": "click_animation_welcome_message",
+      "value": "欢迎来到直播间，关注主播享受更多福利"
+    },
+    {
+      "name": "click_animation_review_list_width",
+      "value": "65%"
+    },
+    {
+      "name": "click_animation_review_width",
+      "value": "60%"
+    },
+    {
+      "name": "click_animation_full_size",
+      "value": "100%"
+    },
+    {
+      "name": "android_click_animation_full_size",
+      "value": "105%"
+    }
+  ]
+}

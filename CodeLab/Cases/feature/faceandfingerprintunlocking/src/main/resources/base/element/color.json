@@ -1,0 +1,12 @@
+{
+  "color": [
+    {
+      "name": "face_and_fingerprint_unlocking_arrow_right",
+      "value": "#ccc"
+    },
+    {
+      "name": "face_and_fingerprint_unlocking_background",
+      "value": "#ddd"
+    }
+  ]
+}

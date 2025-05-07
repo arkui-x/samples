@@ -1,0 +1,32 @@
+{
+  "color": [
+    {
+      "name": "database_upgrade_table_border_color",
+      "value": "#DBDBDB"
+    },
+    {
+      "name": "database_upgrade_table_background_color",
+      "value": "#E8EAED"
+    },
+    {
+      "name": "database_upgrade_rollback_background",
+      "value": "#0D000000"
+    },
+    {
+      "name": "database_upgrade_font_color",
+      "value": "#0A59F7"
+    },
+    {
+      "name": "database_upgrade_border_color",
+      "value": "#317AF7"
+    },
+    {
+      "name": "database_upgrade_background_color",
+      "value": "#FFFFFF"
+    },
+    {
+      "name": "ohos_id_color_sub_background",
+      "value": "#F1F3F5"
+    }
+  ]
+}

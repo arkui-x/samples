@@ -1,0 +1,40 @@
+{
+  "string": [
+    {
+      "name": "web_pdf_viewer_tab_index_one_title",
+      "value": "预览本地PDF"
+    },
+    {
+      "name": "web_pdf_viewer_tab_index_two_title",
+      "value": "预览网络PDF"
+    },
+    {
+      "name": "web_viewer_excel_online",
+      "value": "预览网络Excel"
+    },
+    {
+      "name": "web_viewer_ppt_online",
+      "value": "预览网络PPT"
+    },
+    {
+      "name": "web_pdf_viewer_progress_width",
+      "value": "100%"
+    },
+    {
+      "name": "web_pdf_viewer_tab_content_width",
+      "value": "100%"
+    },
+    {
+      "name": "web_pdf_viewer_progress_line_width",
+      "value": "70%"
+    },
+    {
+      "name": "web_pdf_viewer_tab_width",
+      "value": "33.3%"
+    },
+    {
+      "name": "web_pdf_viewer_bar_width",
+      "value": "100%"
+    }
+  ]
+}

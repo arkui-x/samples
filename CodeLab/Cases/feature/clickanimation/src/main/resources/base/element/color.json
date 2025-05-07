@@ -1,0 +1,40 @@
+{
+  "color": [
+    {
+      "name": "click_animation_text_color_light",
+      "value": "#F1F1F1"
+    },
+    {
+      "name": "click_animation_text_color_secondary",
+      "value": "#c0baad"
+    },
+    {
+      "name": "click_animation_button_linear_gradient_start",
+      "value": "#f8425d"
+    },
+    {
+      "name": "click_animation_button_linear_gradient_end",
+      "value": "#ff0000"
+    },
+    {
+      "name": "click_animation_function_module_bg",
+      "value": "#55000000"
+    },
+    {
+      "name": "click_animation_review_item_background_color",
+      "value": "#33000000"
+    },
+    {
+      "name": "click_animation_review_user_name_color",
+      "value": "#fdeac2"
+    },
+    {
+      "name": "click_animation_image_fill_color",
+      "value": "#f8f8f8"
+    },
+    {
+      "name": "click_animation_like_text_bg",
+      "value": "#d32d3c"
+    }
+  ]
+}

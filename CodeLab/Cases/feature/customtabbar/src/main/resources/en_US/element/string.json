@@ -1,0 +1,32 @@
+{
+  "string": [
+    {
+      "name": "custom_tab_home",
+      "value": "home"
+    },
+    {
+      "name": "custom_tab_news",
+      "value": "news"
+    },
+    {
+      "name": "custom_tab_video",
+      "value": "video"
+    },
+    {
+      "name": "custom_tab_friend",
+      "value": "friend"
+    },
+    {
+      "name": "custom_tab_mine",
+      "value": "mine"
+    },
+    {
+      "name": "custom_tab_full_size",
+      "value": "100%"
+    },
+    {
+      "name": "custom_tab_scene_description",
+      "value": "There is a circular arc outline effect in the middle of the Tab tab. Clicking on the TabBar tab will change the icon display and have a short animation effect"
+    }
+  ]
+}

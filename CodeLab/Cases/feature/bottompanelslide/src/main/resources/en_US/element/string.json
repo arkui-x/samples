@@ -1,0 +1,20 @@
+{
+  "string": [
+    {
+      "name": "bottompanelslide_open",
+      "value": "open"
+    },
+    {
+      "name": "bottompanelslide_watch_later",
+      "value": "watchlater"
+    },
+    {
+      "name": "bottompanelslide_choose_file",
+      "value": "choose_file"
+    },
+    {
+      "name": "bottompanelslide_new_file",
+      "value": "newfile"
+    }
+  ]
+}

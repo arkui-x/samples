@@ -1,0 +1,88 @@
+{
+  "string": [
+    {
+      "name": "voice_record_dynamic_effect_width_full",
+      "value": "100%"
+    },
+    {
+      "name": "voice_record_dynamic_effect_height_full",
+      "value": "98%"
+    },
+    {
+      "name": "voice_record_dynamic_effect_height_text",
+      "value": "70%"
+    },
+    {
+      "name": "voice_record_border_radius_percent",
+      "value": "50"
+    },
+    {
+      "name": "voice_record_height_mode",
+      "value": "50%"
+    },
+    {
+      "name": "voice_record_water_height",
+      "value": "30%"
+    },
+    {
+      "name": "voice_record_mode_height",
+      "value": "20%"
+    },
+    {
+      "name": "voice_record_dynamic_effect_top_fig",
+      "value": "上划取消"
+    },
+    {
+      "name": "voice_record_dynamic_effect_button",
+      "value": "按住说话"
+    },
+    {
+      "name": "voice_record_dynamic_effect_width_half",
+      "value": "80%"
+    },
+    {
+      "name": "voice_record_dynamic_effect_app_name",
+      "value": "需要权限"
+    },
+    {
+      "name": "voice_record_dynamic_effect_width_nine",
+      "value": "90%"
+    },
+    {
+      "name": "voice_record_dynamic_effect_friend",
+      "value": "群聊"
+    },
+    {
+      "name": "voice_record_dynamic_effect_color_stack",
+      "value": "#b92b2b2b"
+    },
+    {
+      "name": "voice_record_water_ripples_bg",
+      "value": "#ab8bf58b"
+    },
+    {
+      "name": "voice_record_water_ripples_bg_over",
+      "value": "#abFF0000"
+    },
+    {
+      "name": "voice_record_dynamic_effect_send_message",
+      "value": "松开发送"
+    },
+    {
+      "name": "voice_record_cancel_send",
+      "value": "松开取消"
+    },
+    {
+      "name": "voice_record_translate_word",
+      "value": "转文字"
+    },
+    {
+      "name": "voice_record_word",
+      "value": "文"
+    },
+    {
+      "name": "voice_record_verify_too_short",
+      "value": "说话时间太短！"
+    }
+  ]
+}

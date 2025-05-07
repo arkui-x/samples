@@ -1,0 +1,16 @@
+{
+  "color": [
+    {
+      "name": "send_message_font",
+      "value": "#A19FA2"
+    },
+    {
+      "name": "send_message_divider",
+      "value": "#F1F3F5"
+    },
+    {
+      "name": "send_message_already_sent",
+      "value": "#F2F0F3"
+    }
+  ]
+}

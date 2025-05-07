@@ -1,0 +1,20 @@
+{
+  "routerMap": [
+    {
+      "name": "Web页面长截图",
+      "pageSourceFile": "src/main/ets/components/mainpage/WebPage.ets",
+      "buildFunction": "WebPageBuilder",
+      "data": {
+        "description": "this is pageOne"
+      }
+    },
+    {
+      "name": "滚动组件页面长截图",
+      "pageSourceFile": "src/main/ets/components/mainpage/ScrollableComponentPage.ets",
+      "buildFunction": "ScrollableComponentPageBuilder",
+      "data": {
+        "description": "this is pageTwo"
+      }
+    }
+  ]
+}

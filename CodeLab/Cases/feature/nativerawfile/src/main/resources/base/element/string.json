@@ -1,0 +1,56 @@
+{
+  "string": [
+    {
+      "name": "nativerawfile_font_size_20",
+      "value": "20"
+    },
+    {
+      "name": "nativerawfile_font_size_14",
+      "value": "14"
+    },
+    {
+      "name": "nativerawfile_margin",
+      "value": "10"
+    },
+    {
+      "name": "nativerawfile_radius",
+      "value": "10"
+    },
+    {
+      "name": "nativerawfile_borderRadius",
+      "value": "12"
+    },
+    {
+      "name": "nativerawfile_margin12",
+      "value": "12"
+    },
+    {
+      "name": "nativerawfile_padding",
+      "value": "12"
+    },
+    {
+      "name": "nativerawfile_rawFileContent",
+      "value": "Rawfile内容:"
+    },
+    {
+      "name": "nativerawfile_ReadStartPos",
+      "value": "读取位置:"
+    },
+    {
+      "name": "nativerawfile_ReadLength",
+      "value": "读取长度:"
+    },
+    {
+      "name": "nativerawfile_ReadLength_toast",
+      "value": "读取位置和读取长度的和不能超过Rawfile内容长度"
+    },
+    {
+      "name": "nativerawfile_ReadResult",
+      "value": "读取结果:"
+    },
+    {
+      "name": "nativerawfile_ReadButton",
+      "value": "开始读取"
+    }
+  ]
+}

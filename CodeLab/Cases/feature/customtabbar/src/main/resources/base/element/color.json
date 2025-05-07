@@ -1,0 +1,12 @@
+{
+  "color": [
+    {
+      "name": "custom_tab_selected_text_color",
+      "value": "#0091FF"
+    },
+    {
+      "name": "custom_tab_text_color",
+      "value": "#6D7278"
+    }
+  ]
+}

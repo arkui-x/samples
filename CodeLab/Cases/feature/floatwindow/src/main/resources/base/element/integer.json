@@ -1,0 +1,20 @@
+{
+  "integer": [
+    {
+      "name": "float_window_border_width",
+      "value": 2
+    },
+    {
+      "name": "float_window_selected_padding",
+      "value": 16
+    },
+    {
+      "name": "float_window_icon_width",
+      "value": 16
+    },
+    {
+      "name": "float_window_content_border_radius",
+      "value": 14
+    }
+  ]
+}

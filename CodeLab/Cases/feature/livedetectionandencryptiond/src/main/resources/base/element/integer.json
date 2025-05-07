@@ -1,0 +1,36 @@
+{
+  "integer": [
+    {
+      "name": "identifyPatterns_title_margin_top",
+      "value": 40
+    },
+    {
+      "name": "identifyPatterns_title_font_size",
+      "value": 24
+    },
+    {
+      "name": "identifyPatterns_title_text_padding",
+      "value": 4
+    },
+    {
+      "name": "identifyPatterns_margin_top",
+      "value": 30
+    },
+    {
+      "name": "userInformationItem_title_text_font_size",
+      "value": 16
+    },
+    {
+      "name": "userInformationItem_content_text_font_size",
+      "value": 18
+    },
+    {
+      "name": "start_encrypt_facial_check_button_width",
+      "value": 150
+    },
+    {
+      "name": "start_encrypt_facial_check_button_height",
+      "value": 40
+    }
+  ]
+}

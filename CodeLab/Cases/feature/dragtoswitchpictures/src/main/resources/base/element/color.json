@@ -1,0 +1,60 @@
+{
+  "color": [
+    {
+      "name": "dragtoswitchpictures_before_text_backgroundcolor",
+      "value": "#512D5435"
+    },
+    {
+      "name": "dragtoswitchpictures_after_text_backgroundcolor",
+      "value": "#60ffffff"
+    },
+    {
+      "name": "dragtoswitchpictures_before_text_fontcolor",
+      "value": "#ffffffff"
+    },
+    {
+      "name": "dragtoswitchpictures_after_text_fontcolor",
+      "value": "#ff0a0a0a"
+    },
+    {
+      "name": "dragtoswitchpictures_home_page_backgroundcolor",
+      "value": "#fcd7d5d5"
+    },
+    {
+      "name": "dragtoswitchpictures_designcattleview_column_row_text_backgroundcolor",
+      "value": "#ff2fb72f"
+    },
+    {
+      "name": "dragtoswitchpictures_designcattleview_column_designcattle_fontcolor",
+      "value": "#000000"
+    },
+    {
+      "name": "dragtoswitchpictures_ai_design_fontcolor",
+      "value": "#ffffff"
+    },
+    {
+      "name": "dragtoswitchpictures_ai_design_backgroundcolor",
+      "value": "#74025602"
+    },
+    {
+      "name": "dragtoswitchpictures_go_to_try_button_backgroundcolor",
+      "value": "#000000"
+    },
+    {
+      "name": "dragtoswitchpictures_designcattleview_backgroundcolor",
+      "value": "#ffe2eee5"
+    },
+    {
+      "name": "dragtoswitchpictures_tabbar_lineargradient_color0",
+      "value": "#CCDFFF"
+    },
+    {
+      "name": "dragtoswitchpictures_tabbar_lineargradient_color1",
+      "value": "#F3F4F7"
+    },
+    {
+      "name": "dragtoswitchpictures_waterflow_column_backgroundcolor",
+      "value": "#fcd7d5d5"
+    }
+  ]
+}

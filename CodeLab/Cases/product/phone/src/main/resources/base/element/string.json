@@ -1,0 +1,148 @@
+{
+  "string": [
+    {
+      "name": "module_desc",
+      "value": "module description"
+    },
+    {
+      "name": "PhoneAbility_desc",
+      "value": "description"
+    },
+    {
+      "name": "PhoneAbility_label",
+      "value": "我的开发案例"
+    },
+    {
+      "name": "no_network_prompt_msg",
+      "value": "此功能需联网使用"
+    },
+    {
+      "name": "app_exit_toast_msg",
+      "value": "再滑一次退出"
+    },
+    {
+      "name": "entry_half_size",
+      "value": "50%"
+    },
+    {
+      "name": "swiper_image_foldable_width",
+      "value": "100%"
+    },
+    {
+      "name": "app_open_emulator_toast_msg",
+      "value": "当前运行环境为模拟器，性能文章数据仅供参考"
+    },
+    {
+      "name": "page_show",
+      "value": "page from npm package"
+    },
+    {
+      "name": "skip",
+      "value": "跳过"
+    },
+    {
+      "name": "advertising_page",
+      "value": "通用场景开发案例集"
+    },
+    {
+      "name": "advertising_description",
+      "value": "帮助开发者快速上手鸿蒙应用开发"
+    },
+    {
+      "name": "advertising_description_backgroundColor",
+      "value": "rgba(0,0,0,0.3)"
+    },
+    {
+      "name": "PhoneFormAbility_desc",
+      "value": "form_description"
+    },
+    {
+      "name": "PhoneFormAbility_label",
+      "value": "form_label"
+    },
+    {
+      "name": "widget_desc",
+      "value": "This is a service widget."
+    },
+    {
+      "name": "widget_display_name",
+      "value": "widget"
+    },
+    {
+      "name": "widget_display_full_width_percent",
+      "value": "100%"
+    },
+    {
+      "name": "widget_display_full_height_percent",
+      "value": "100%"
+    },
+    {
+      "name": "widget_display_part_width_percent",
+      "value": "50%"
+    },
+    {
+      "name": "widget_form_ability_name",
+      "value": "100%"
+    },
+    {
+      "name": "widget_message_content",
+      "value": "getData"
+    },
+    {
+      "name": "cases_version_number",
+      "value": "我的开发案例 version：2.0.0"
+    },
+    {
+      "name": "privacy_agreement",
+      "value": "隐私协议"
+    },
+    {
+      "name": "user_agreement",
+      "value": "用户协议"
+    },
+    {
+      "name": "privacy_agreement_dialog_title",
+      "value": "用户协议与隐私协议"
+    },
+    {
+      "name": "privacy_agreement_dialog_content0",
+      "value": "感谢您使用我的开发案例。"
+    },
+    {
+      "name": "privacy_agreement_dialog_content1",
+      "value": "  亲爱的用户，感谢您信任并使用我的开发案例，我们依据相关法律制定了"
+    },
+    {
+      "name": "privacy_agreement_dialog_content2",
+      "value": "《用户协议》"
+    },
+    {
+      "name": "privacy_agreement_dialog_content3",
+      "value": "和"
+    },
+    {
+      "name": "privacy_agreement_dialog_content4",
+      "value": "《隐私协议》"
+    },
+    {
+      "name": "privacy_agreement_dialog_content6",
+      "value": "，请您再点击同意之前仔细阅读并充分理解相关条款。"
+    },
+    {
+      "name": "privacy_agreement_dialog_content5",
+      "value": "  在您仔细阅读并充分理解上述隐私政策内容后，点击 “同意” 按钮代表您授权我们依据本政策收集、使用、存储等处理您的个人信息，开启便捷的 APP 使用之旅；若您不同意，很遗憾我们无法为您提供完整服务，但您仍可卸载本APP。"
+    },
+    {
+      "name": "privacy_agreement_dialog_confirm",
+      "value": "同意并继续"
+    },
+    {
+      "name": "privacy_agreement_dialog_refuse",
+      "value": "不同意"
+    },
+    {
+      "name": "entry_quick_share",
+      "value": "分享一下"
+    }
+  ]
+}

@@ -1,0 +1,100 @@
+{
+  "string": [
+    {
+      "name": "dynamicattributes_module_desc",
+      "value": "module description"
+    },
+    {
+      "name": "dynamicattributes_EntryAbility_desc",
+      "value": "description"
+    },
+    {
+      "name": "dynamicattributes_EntryAbility_label",
+      "value": "label"
+    },
+    {
+      "name": "dynamicattributes_shared_desc",
+      "value": "description"
+    },
+    {
+      "name": "dynamicattributes_shopping_cart",
+      "value": "购物车"
+    },
+    {
+      "name": "dynamicattributes_store_name",
+      "value": "xxx旗舰店"
+    },
+    {
+      "name": "dynamicattributes_commodity_name",
+      "value": "商品"
+    },
+    {
+      "name": "dynamicattributes_commodity_model",
+      "value": "商品型号"
+    },
+    {
+      "name": "dynamicattributes_commodity_price",
+      "value": "¥300"
+    },
+    {
+      "name": "dynamicattributes_text",
+      "value": "文本"
+    },
+    {
+      "name": "dynamicattributes_text_one",
+      "value": "文本1"
+    },
+    {
+      "name": "dynamicattributes_text_two",
+      "value": "文本2"
+    },
+    {
+      "name": "dynamicattributes_text_three",
+      "value": "文本3"
+    },
+    {
+      "name": "dynamicattributes_full_reduction",
+      "value": "每满300减40"
+    },
+    {
+      "name": "dynamicattributes_sold",
+      "value": "已售88"
+    },
+    {
+      "name": "dynamicattributes_coupon_collection",
+      "value": "领券"
+    },
+    {
+      "name": "dynamicattributes_buy_now",
+      "value": "立即购买"
+    },
+    {
+      "name": "dynamicattributes_add_cart",
+      "value": "加入购物车"
+    },
+    {
+      "name": "dynamicattributes_settlement",
+      "value": "结算"
+    },
+    {
+      "name": "dynamicattributes_only_show",
+      "value": "此样式仅为案例展示"
+    },
+    {
+      "name": "dynamicattributes_text_proportion",
+      "value": "40%"
+    },
+    {
+      "name": "dynamicattributes_image_proportion",
+      "value": "60%"
+    },
+    {
+      "name": "dynamicattributes_max_size",
+      "value": "100%"
+    },
+    {
+      "name": "dynamicattributes_list_height",
+      "value": "calc(100% - 50vp)"
+    }
+  ]
+}

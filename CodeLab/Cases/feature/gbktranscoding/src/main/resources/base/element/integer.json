@@ -1,0 +1,88 @@
+{
+  "integer": [
+    {
+      "name": "gbk_friends_page_title_font_size",
+      "value": 24
+    },
+    {
+      "name": "gbk_friends_page_title_height",
+      "value": 33
+    },
+    {
+      "name": "gbk_friends_page_title_bar_height",
+      "value": 56
+    },
+    {
+      "name": "gbk_friends_page_contact_image_width",
+      "value": 40
+    },
+    {
+      "name": "gbk_friends_page_contact_image_height",
+      "value": 40
+    },
+    {
+      "name": "gbk_friends_page_contact_image_border_radius",
+      "value": 20
+    },
+    {
+      "name": "gbk_friends_page_contact_text_width",
+      "value": 248
+    },
+    {
+      "name": "gbk_friends_page_contact_text_height",
+      "value": 22
+    },
+    {
+      "name": "gbk_friends_page_contact_text_font_size",
+      "value": 16
+    },
+    {
+      "name": "gbk_friends_page_contact_text_margin_left",
+      "value": 16
+    },
+    {
+      "name": "gbk_friends_page_contact_row_height",
+      "value": 64
+    },
+    {
+      "name": "gbk_friends_page_divider_width",
+      "value": 1
+    },
+    {
+      "name": "gbk_friends_page_search_divider_start_margin",
+      "value": 56
+    },
+    {
+      "name": "gbk_search_font_size",
+      "value": 16
+    },
+    {
+      "name": "gbk_search_svg_height",
+      "value": 18
+    },
+    {
+      "name": "gbk_search_inline_height",
+      "value": 40
+    },
+    {
+      "name": "gbk_search_border_radius",
+      "value": 20
+    },
+    {
+      "name": "gbk_search_outline_height",
+      "value": 56
+    },
+    {
+      "name": "gbk_discovery_list_margin_top",
+      "value": 10
+    },
+    {
+      "name": "gbk_friends_page_padding",
+      "value": 24
+    },
+    {
+      "name": "gbk_friends_page_tip_font_size",
+      "value": 20
+    }
+  ]
+}

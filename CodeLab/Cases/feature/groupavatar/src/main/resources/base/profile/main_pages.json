@@ -1,0 +1,6 @@
+{
+  "src": [
+    "view/GroupAvatarMainPage",
+    "view/GroupAvatarAddPage"
+  ]
+}

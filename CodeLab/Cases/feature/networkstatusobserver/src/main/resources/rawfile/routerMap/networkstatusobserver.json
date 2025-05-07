@@ -1,0 +1,10 @@
+{
+  "routerMap": [
+    {
+      "name": "networkstatusobserver/NetworkStatusObserverComponent",
+      "pageModule": "networkstatusobserver",
+      "pageSourceFile": "src/main/ets/generated/RouterBuilder.ets",
+      "registerFunction": "networkStatusObserverComponentRegister"
+    }
+  ]
+}

@@ -1,0 +1,188 @@
+{
+  "integer": [
+    {
+      "name": "image_comment_text_input_height",
+      "value": 40
+    },
+    {
+      "name": "image_comment_text_input_padding_left",
+      "value": 10
+    },
+    {
+      "name": "image_comment_text_input_padding_right",
+      "value": 50
+    },
+    {
+      "name": "image_comment_text_input_padding_top",
+      "value": 3
+    },
+    {
+      "name": "image_comment_text_input_padding_bottom",
+      "value": 3
+    },
+    {
+      "name": "image_comment_text_input_margin_top",
+      "value": 10
+    },
+    {
+      "name": "image_comment_image_camera_margin_top",
+      "value": 10
+    },
+    {
+      "name": "image_comment_button_publish_width",
+      "value": 60
+    },
+    {
+      "name": "image_comment_button_publish_height",
+      "value": 30
+    },
+    {
+      "name": "image_comment_button_publish_border_radius",
+      "value": 15
+    },
+    {
+      "name": "image_comment_image_camera_width",
+      "value": 30
+    },
+    {
+      "name": "image_comment_image_camera_height",
+      "value": 30
+    },
+    {
+      "name": "image_comment_relative_container_input_height",
+      "value": 50
+    },
+    {
+      "name": "image_comment_column_input_padding",
+      "value": 10
+    },
+    {
+      "name": "image_comment_image_avatar_height",
+      "value": 50
+    },
+    {
+      "name": "image_comment_image_avatar_width",
+      "value": 50
+    },
+    {
+      "name": "image_comment_image_avatar_border_radius",
+      "value": 25
+    },
+    {
+      "name": "image_comment_comment_column_info_margin_left",
+      "value": 5
+    },
+    {
+      "name": "image_comment_text_comment_margin_top",
+      "value": 5
+    },
+    {
+      "name": "image_comment_list_comment_image_margin_top",
+      "value": 5
+    },
+    {
+      "name": "image_comment_view_comment_padding",
+      "value": 10
+    },
+    {
+      "name": "image_comment_image_comment_image_width",
+      "value": 100
+    },
+    {
+      "name": "image_comment_image_comment_image_height",
+      "value": 100
+    },
+    {
+      "name": "image_comment_image_comment_image_border_radius",
+      "value": 5
+    },
+    {
+      "name": "image_comment_list_comment_image_space",
+      "value": 10
+    },
+    {
+      "name": "image_comment_list_comment_image_height",
+      "value": 120
+    },
+    {
+      "name": "image_comment_list_comment_image_padding_top",
+      "value": 10
+    },
+    {
+      "name": "image_comment_list_comment_image_padding_bottom",
+      "value": 10
+    },
+    {
+      "name": "image_comment_text_hot_comment_height",
+      "value": 40
+    },
+    {
+      "name": "image_comment_text_hot_comment_padding_left",
+      "value": 10
+    },
+    {
+      "name": "image_comment_text_hot_comment_border_width_bottom",
+      "value": 1
+    },
+    {
+      "name": "image_comment_list_comment_margin_bottom",
+      "value": 50
+    },
+    {
+      "name": "image_comment_text_no_comment_margin_bottom",
+      "value": 50
+    },
+    {
+      "name": "image_comment_text_input_hint_height",
+      "value": 40
+    },
+    {
+      "name": "image_comment_text_input_hint_border_radius",
+      "value": 30
+    },
+    {
+      "name": "image_comment_text_input_hint_padding_left",
+      "value": 15
+    },
+    {
+      "name": "image_comment_text_input_hint_border_width",
+      "value": 1
+    },
+    {
+      "name": "image_comment_row_input_hint_border_width_top",
+      "value": 1
+    },
+    {
+      "name": "image_comment_row_input_hint_height",
+      "value": 50
+    },
+    {
+      "name": "image_comment_column_input_dialog_offset_y",
+      "value": 20
+    },
+    {
+      "name": "image_comment_image_delete_height",
+      "value": 20
+    },
+    {
+      "name": "image_comment_image_delete_width",
+      "value": 20
+    },
+    {
+      "name": "image_comment_image_relative_container_height",
+      "value": 110
+    },
+    {
+      "name": "image_comment_image_relative_container_width",
+      "value": 110
+    },
+    {
+      "name": "image_comment_dialog_offset_x",
+      "value": 0
+    },
+    {
+      "name": "image_comment_dialog_offset_y",
+      "value": -20
+    }
+  ]
+}

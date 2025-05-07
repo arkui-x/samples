@@ -1,0 +1,10 @@
+{
+  "routerMap": [
+    {
+      "name": "eventpropagation/EventPropagation",
+      "pageModule": "eventpropagation",
+      "pageSourceFile": "src/main/ets/generated/RouterBuilder.ets",
+      "registerFunction": "eventPropagationRegister"
+    }
+  ]
+}

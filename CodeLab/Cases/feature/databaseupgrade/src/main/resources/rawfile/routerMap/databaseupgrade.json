@@ -1,0 +1,10 @@
+{
+  "routerMap": [
+    {
+      "name": "databaseupgrade/DatabaseUpgrade",
+      "pageModule": "databaseupgrade",
+      "pageSourceFile": "src/main/ets/generated/RouterBuilder.ets",
+      "registerFunction": "databaseUpgradeRegister"
+    }
+  ]
+}

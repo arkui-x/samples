@@ -1,0 +1,28 @@
+{
+  "color": [
+    {
+      "name": "mini_player_animation_bg",
+      "value": "#F6F9FC"
+    },
+    {
+      "name": "mini_player_animation_track_color",
+      "value": "#ADD8E6"
+    },
+    {
+      "name": "mini_player_animation_selected_color",
+      "value": "#FAFAFA"
+    },
+    {
+      "name": "mini_player_animation_light_blue_color",
+      "value": "#FFC3E5F6"
+    },
+    {
+      "name": "mini_player_animation_light_gray_color",
+      "value": "#FFFAFAFA"
+    },
+    {
+      "name": "mini_player_animation_home_page_color",
+      "value": "#F1F3F5"
+    }
+  ]
+}

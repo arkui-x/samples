@@ -1,0 +1,124 @@
+{
+  "integer": [
+    {
+      "name": "image_compression_padding_twenty",
+      "value": 20
+    },
+    {
+      "name": "image_compression_font_size_thirteen",
+      "value": 13
+    },
+    {
+      "name": "image_compression_font_size_fourteen",
+      "value": 14
+    },
+    {
+      "name": "image_compression_font_size_fifteen",
+      "value": 15
+    },
+    {
+      "name": "image_compression_font_size_sixteen",
+      "value": 16
+    },
+    {
+      "name": "image_compression_font_size_twenty",
+      "value": 20
+    },
+    {
+      "name": "image_compression_padding_thirteen",
+      "value": 13
+    },
+    {
+      "name": "image_compression_eighteen",
+      "value": 18
+    },
+    {
+      "name": "image_compression_fifteen",
+      "value": 15
+    },
+    {
+      "name": "image_compression_fifty",
+      "value": 50
+    },
+    {
+      "name": "image_compression_thirty",
+      "value": 30
+    },
+    {
+      "name": "image_compression_twenty",
+      "value": 20
+    },
+    {
+      "name": "image_compression_ten",
+      "value": 10
+    },
+    {
+      "name": "image_compression_hundred_fifty",
+      "value": 150
+    },
+    {
+      "name": "image_compression_five",
+      "value": 5
+    },
+    {
+      "name": "image_compression_forty_eight",
+      "value": 48
+    },
+    {
+      "name": "image_compression_hundred",
+      "value": 100
+    },
+    {
+      "name": "image_compression_thirty_six",
+      "value": 36
+    },
+    {
+      "name": "image_compression_twelve",
+      "value": 12
+    },
+    {
+      "name": "image_compression_opacity_one",
+      "value": 1
+    },
+    {
+      "name": "image_compression_two_hundred_fifty_six",
+      "value": 256
+    },
+    {
+      "name": "image_compression_eight",
+      "value": 8
+    },
+    {
+      "name": "image_compression_eighty",
+      "value": 80
+    },
+    {
+      "name": "image_compression_ninety_six",
+      "value": 96
+    },
+    {
+      "name": "image_compression_twenty_two",
+      "value": 22
+    },
+    {
+      "name": "image_compression_sixteen",
+      "value": 16
+    },
+    {
+      "name": "image_compression_forty",
+      "value": 40
+    },
+    {
+      "name": "image_compression_one_hundred_seventy",
+      "value": 170
+    },
+    {
+      "name": "image_compression_size_twenty_four",
+      "value": 24
+    },
+    {
+      "name": "image_compression_size_twenty_eight",
+      "value": 28
+    }
+  ]
+}

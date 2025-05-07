@@ -1,0 +1,10 @@
+{
+  "routerMap": [
+    {
+      "name": "bottompanelslide/BottomPanelSlide",
+      "pageModule": "bottompanelslide",
+      "pageSourceFile": "src/main/ets/generated/RouterBuilder.ets",
+      "registerFunction": "bottomPanelSlideRegister"
+    }
+  ]
+}

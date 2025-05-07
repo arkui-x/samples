@@ -1,0 +1,24 @@
+{
+  "color": [
+    {
+      "name": "immersive_comment_reply_font_color",
+      "value": "#ff5b5b5b"
+    },
+    {
+      "name": "navdialog_shop_bar_welcome_prompt",
+      "value": "#ffb7b7b7"
+    },
+    {
+      "name": "navdialog_shop_bar_bg",
+      "value": "#ff353535"
+    },
+    {
+      "name": "navdialog_shop_bar_cart_bg",
+      "value": "#ffffa05a"
+    },
+    {
+      "name": "navdialog_shop_bar_purchase_bg",
+      "value": "#ffff320f"
+    }
+  ]
+}

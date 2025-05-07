@@ -1,0 +1,80 @@
+{
+  "color": [
+    {
+      "name": "editaddress_btn_bgc",
+      "value": "#FEFEFE"
+    },
+    {
+      "name": "editaddress_bind_sheet_title_bgc",
+      "value": "#f6f6f6"
+    },
+    {
+      "name": "editaddress_grey_3",
+      "value": "#777777"
+    },
+    {
+      "name": "editaddress_transparent_f",
+      "value": "#00ffffff"
+    },
+    {
+      "name": "editaddress_transparent_7",
+      "value": "#00777777"
+    },
+    {
+      "name": "editaddress_grey_e",
+      "value": "#EEEEEE"
+    },
+    {
+      "name": "editaddress_grey_6",
+      "value": "#666666"
+    },
+    {
+      "name": "editaddress_grey_9",
+      "value": "#999999"
+    },
+    {
+      "name": "editaddress_grey_7",
+      "value": "#777777"
+    },
+    {
+      "name": "editaddress_btn_bgc1",
+      "value": "#FEFEFE"
+    },
+    {
+      "name": "editaddress_half_modal_btn_bgc",
+      "value": "#A3A3A3"
+    },
+    {
+      "name": "editaddress_border_color",
+      "value": "#9F9F9F"
+    },
+    {
+      "name": "editaddress_font_color",
+      "value": "#256fb5"
+    },
+    {
+      "name": "editaddress_column_bgc_color",
+      "value": "#f1f3f5"
+    },
+    {
+      "name": "editaddress_editaddress_save_bgc_color",
+      "value": "#ff7101"
+    },
+    {
+      "name": "editaddress_textStyle_font_color",
+      "value": "#ff182431"
+    },
+    {
+      "name": "editaddress_selectedTextStyle_font_color",
+      "value": "#ff007dff"
+    },
+    {
+      "name": "editaddress_halfModalLogin_font_color",
+      "value": "#256fb5"
+    },
+    {
+      "name": "editaddress_textInput_bgc_color",
+      "value": "#f9f9f9"
+    }
+  ]
+}

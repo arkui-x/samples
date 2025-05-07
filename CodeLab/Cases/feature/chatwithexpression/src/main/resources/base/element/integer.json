@@ -1,0 +1,164 @@
+{
+  "integer": [
+    {
+      "name": "chat_with_expression_title_font_size",
+      "value": 18
+    },
+    {
+      "name": "chat_with_expression_title_text_height",
+      "value": 33
+    },
+    {
+      "name": "chat_with_expression_title_line_height",
+      "value": 33
+    },
+    {
+      "name": "chat_with_expression_title_margin",
+      "value": 30
+    },
+    {
+      "name": "chat_with_expression_title_height",
+      "value": 56
+    },
+    {
+      "name": "chat_with_expression_list_padding_left",
+      "value": 10
+    },
+    {
+      "name": "chat_with_expression_list_padding_right",
+      "value": 10
+    },
+    {
+      "name": "chat_with_expression_express_margin_top",
+      "value": 5
+    },
+    {
+      "name": "chat_with_expression_express_margin_left",
+      "value": 16
+    },
+    {
+      "name": "chat_with_expression_head_margin_left",
+      "value": 5
+    },
+    {
+      "name": "chat_with_expression_head_margin_right",
+      "value": 15
+    },
+    {
+      "name": "chat_with_expression_chat_margin_top",
+      "value": 20
+    },
+    {
+      "name": "chat_with_expression_list_padding_bottom",
+      "value": 10
+    },
+    {
+      "name": "chat_with_expression_opt_layout_voice_image_width",
+      "value": 24
+    },
+    {
+      "name": "chat_with_expression_opt_layout_voice_image_padding",
+      "value": 5
+    },
+    {
+      "name": "chat_with_expression_chat_font_size",
+      "value": 16
+    },
+    {
+      "name": "chat_with_expression_chat_express_size",
+      "value": 32
+    },
+    {
+      "name": "chat_with_expression_chat_input_height",
+      "value": 40
+    },
+    {
+      "name": "chat_with_expression_send_button_width",
+      "value": 80
+    },
+    {
+      "name": "chat_with_expression_btn_border_radius",
+      "value": 20
+    },
+    {
+      "name": "chat_with_expression_chat_border_radius",
+      "value": 20
+    },
+    {
+      "name": "chat_with_expression_chat_outline_height",
+      "value": 74
+    },
+    {
+      "name": "chat_with_expression_chat_outline_padding",
+      "value": 17
+    },
+    {
+      "name": "chat_with_expression_chat_text_height",
+      "value": 22
+    },
+    {
+      "name": "chat_with_expression_chat_inline_height",
+      "value": 26
+    },
+    {
+      "name": "chat_with_expression_chat_item_padding_left",
+      "value": 13
+    },
+    {
+      "name": "chat_with_expression_chat_item_padding_bottom",
+      "value": 8
+    },
+    {
+      "name": "chat_with_expression_chat_item_padding_right",
+      "value": 13
+    },
+    {
+      "name": "chat_with_expression_chat_item_padding_top",
+      "value": 8
+    },
+    {
+      "name": "chat_with_expression_chat_item_border",
+      "value": 24
+    },
+    {
+      "name": "chat_with_expression_chat_item_border_top_right",
+      "value": 24
+    },
+    {
+      "name": "chat_with_expression_chat_item_border_bottom_left",
+      "value": 24
+    },
+    {
+      "name": "chat_with_expression_chat_item_border_bottom_right",
+      "value": 24
+    },
+    {
+      "name": "chat_with_expression_chat_item_margin_left",
+      "value": 8
+    },
+    {
+      "name": "chat_with_expression_chat_item_margin_right",
+      "value": 8
+    },
+    {
+      "name": "chat_with_expression_chat_item_margin_top",
+      "value": 12
+    },
+    {
+      "name": "chat_with_expression_chat_item_padding",
+      "value": 20
+    },
+    {
+      "name": "chat_with_expression_grid_columns_gap",
+      "value": 10
+    },
+    {
+      "name": "chat_with_expression_grid_rows_gap",
+      "value": 20
+    },
+    {
+      "name": "chat_with_expression_grid_item_margin",
+      "value": 10
+    }
+  ]
+}

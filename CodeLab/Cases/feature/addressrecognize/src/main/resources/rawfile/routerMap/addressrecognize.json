@@ -1,0 +1,10 @@
+{
+  "routerMap": [
+    {
+      "name": "addressrecognize/AddressRecognizeComponent",
+      "pageModule": "addressrecognize",
+      "pageSourceFile": "src/main/ets/generated/RouterBuilder.ets",
+      "registerFunction": "addressRecognizeComponentRegister"
+    }
+  ]
+}

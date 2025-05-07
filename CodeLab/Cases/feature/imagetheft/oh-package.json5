@@ -1,0 +1,17 @@
+{
+  "license": "Apache-2.0",
+  "devDependencies": {},
+  "author": "",
+  "name": "imagetheft",
+  "description": "Please describe the basic information.",
+  "main": "Index.ets",
+  "version": "1.0.0",
+  "dynamicDependencies": {},
+  "dependencies": {
+    // 图像加载缓存库
+    "@ohos/imageknife": "^2.3.0-rc.0",
+    // 动态路由模块，用于配置动态路由
+    "routermodule": "file:../../common/routermodule",
+    "utils": "file:../../common/utils"
+  }
+}

@@ -1,0 +1,176 @@
+{
+  "integer": [
+    {
+      "name": "component_stack_user_portrait_width",
+      "value": 30
+    },
+    {
+      "name": "component_stack_user_portrait_border_radius",
+      "value": 15
+    },
+    {
+      "name": "component_stack_scan_width",
+      "value": 30
+    },
+    {
+      "name": "component_stack_search_font_size",
+      "value": 16
+    },
+    {
+      "name": "component_stack_flex_padding_left",
+      "value": 15
+    },
+    {
+      "name": "component_stack_flex_padding_right",
+      "value": 15
+    },
+    {
+      "name": "component_stack_flex_padding_top",
+      "value": 5
+    },
+    {
+      "name": "component_stack_flex_height",
+      "value": 50
+    },
+    {
+      "name": "component_stack_search_width",
+      "value": 20
+    },
+    {
+      "name": "component_stack_search_icon_margin_left",
+      "value": 20
+    },
+    {
+      "name": "component_stack_search_text_margin_left",
+      "value": 10
+    },
+    {
+      "name": "component_stack_search_border_radius",
+      "value": 12
+    },
+    {
+      "name": "component_stack_search_view_border_radius",
+      "value": 16
+    },
+    {
+      "name": "component_stack_icon_list_height3",
+      "value": 110
+    },
+    {
+      "name": "component_stack_icon_list_height1",
+      "value": 200
+    },
+    {
+      "name": "component_stack_function_description_margin_top",
+      "value": 12
+    },
+    {
+      "name": "component_stack_stack_padding_top",
+      "value": 12
+    },
+    {
+      "name": "component_stack_function_description_padding",
+      "value": 12
+    },
+    {
+      "name": "component_stack_margin_search_view",
+      "value": 50
+    },
+    {
+      "name": "component_stack_scroll_padding",
+      "value": 12
+    },
+    {
+      "name": "component_stack_icon_view_width",
+      "value": 40
+    },
+    {
+      "name": "component_stack_icon_view_width2",
+      "value": 50
+    },
+    {
+      "name": "component_stack_icon_view_title_font_size",
+      "value": 16
+    },
+    {
+      "name": "component_stack_icon_view_image_width",
+      "value": 120
+    },
+    {
+      "name": "component_stack_icon_view_padding_right",
+      "value": 20
+    },
+    {
+      "name": "component_stack_icon_view_title_font_size2",
+      "value": 18
+    },
+    {
+      "name": "component_stack_icon_view_height",
+      "value": 90
+    },
+    {
+      "name": "component_stack_icon_view_height2",
+      "value": 85
+    },
+    {
+      "name": "component_stack_icon_view_height3",
+      "value": 95
+    },
+    {
+      "name": "component_stack_icon_view_border_radius",
+      "value": 10
+    },
+    {
+      "name": "component_stack_icon_view_image_margin_left",
+      "value": 20
+    },
+    {
+      "name": "component_stack_water_flow_image_margin_top",
+      "value": 5
+    },
+    {
+      "name": "component_stack_water_flow_title_font_size",
+      "value": 16
+    },
+    {
+      "name": "component_stack_water_flow_price_font_size",
+      "value": 20
+    },
+    {
+      "name": "component_stack_water_flow_insurance_font_size",
+      "value": 12
+    },
+    {
+      "name": "component_stack_water_flow_insurance_border_width",
+      "value": 1
+    },
+    {
+      "name": "component_stack_water_flow_insurance_border_radius",
+      "value": 4
+    },
+    {
+      "name": "component_stack_water_flow_insurance_padding_horizontal",
+      "value": 8
+    },
+    {
+      "name": "component_stack_water_flow_insurance_padding_vertical",
+      "value": 3
+    },
+    {
+      "name": "component_stack_water_flow_insurance_margin_top",
+      "value": 10
+    },
+    {
+      "name": "component_stack_water_flow_column_padding_left",
+      "value": 20
+    },
+    {
+      "name": "component_stack_water_flow_column_height",
+      "value": 245
+    },
+    {
+      "name": "component_stack_water_flow_column_border_radius",
+      "value": 10
+    }
+  ]
+}

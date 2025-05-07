@@ -1,0 +1,28 @@
+{
+  "string": [
+    {
+      "name": "hand_writing_revert",
+      "value": "撤销"
+    },
+    {
+      "name": "hand_writing_reset",
+      "value": "重置"
+    },
+    {
+      "name": "hand_writing_pack_to_file",
+      "value": "packToFile保存图片"
+    },
+    {
+      "name": "hand_writing_packing",
+      "value": "packing保存图片"
+    },
+    {
+      "name": "hand_writing_image_save_path",
+      "value": "图片沙箱路径："
+    },
+    {
+      "name": "hand_writing_image_one_percent",
+      "value": "100%"
+    }
+  ]
+}

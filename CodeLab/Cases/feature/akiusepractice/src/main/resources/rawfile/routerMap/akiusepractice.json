@@ -1,0 +1,10 @@
+{
+  "routerMap": [
+    {
+      "name": "akiusepractice/AkiView",
+      "pageModule": "akiusepractice",
+      "pageSourceFile": "src/main/ets/generated/RouterBuilder.ets",
+      "registerFunction": "akiViewRegister"
+    }
+  ]
+}

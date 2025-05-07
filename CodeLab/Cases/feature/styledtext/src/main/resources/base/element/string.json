@@ -1,0 +1,72 @@
+{
+  "string": [
+    {
+      "name": "styled_text_share",
+      "value": "分享"
+    },
+    {
+      "name": "styled_text_thumbsup",
+      "value": "点赞"
+    },
+    {
+      "name": "styled_text_message",
+      "value": "评论"
+    },
+    {
+      "name": "styled_text_other_function",
+      "value": "仅演示，可自行实现业务功能"
+    },
+    {
+      "name": "styled_text_demo_function_message",
+      "value": "仅演示，可自行实现长按分享、点赞、收藏功能"
+    },
+    {
+      "name": "styled_text_content_details_toast_message",
+      "value": "仅演示，可自行实现跳转正文详情功能"
+    },
+    {
+      "name": "styled_text_hashtag_toast_message",
+      "value": "仅演示，可自行实现跳转话题详情功能"
+    },
+    {
+      "name": "styled_text_user_page_toast_message",
+      "value": "仅演示，可自行实现跳转用户主页功能"
+    },
+    {
+      "name": "styled_text_video_function_message",
+      "value": "仅演示，可自行实现跳转视频功能"
+    },
+    {
+      "name": "styled_text_layout_full_size",
+      "value": "100%"
+    },
+    {
+      "name": "styled_text_other_function_text_opacity",
+      "value": "0.6"
+    },
+    {
+      "name": "styled_text_card_margin_start",
+      "value": "12"
+    },
+    {
+      "name": "styled_text_font_size_default",
+      "value": "14"
+    },
+    {
+      "name": "styled_text_headline_font_size",
+      "value": "20"
+    },
+    {
+      "name": "styled_text_card_padding_start",
+      "value": "12"
+    },
+    {
+      "name": "styled_text_tab_bar_one",
+      "value": "Text&Span"
+    },
+    {
+      "name": "styled_text_tab_bar_two",
+      "value": "StyledString"
+    }
+  ]
+}

@@ -1,0 +1,172 @@
+{
+  "string": [
+    {
+      "name": "photopickandsave_image_request_fail",
+      "value": "图片加载失败，请检查网络"
+    },
+    {
+      "name": "photopickandsave_image_request_success",
+      "value": "图片下载到图库成功"
+    },
+    {
+      "name": "photopickandsave_title",
+      "value": "下载并保存网络图片"
+    },
+    {
+      "name": "photopickandsave_content",
+      "value": "本示例介绍使用http、photoAccessHelper、fs接口从网络下载图片的场景。"
+    },
+    {
+      "name": "photopickandsave_upload_desc",
+      "value": "本示例介绍使用PhotoViewPicker选择图片预览的场景,点击“+”从图库中选择图片，并在当前当前页面显示选择的图片。"
+    },
+    {
+      "name": "photopickandsave_MainAbility_label",
+      "value": "图片处理"
+    },
+    {
+      "name": "photopickandsave_recently_added",
+      "value": "最近添加"
+    },
+    {
+      "name": "photopickandsave_choice_photo",
+      "value": "选照片"
+    },
+    {
+      "name": "photopickandsave_choice_video",
+      "value": "选视频"
+    },
+    {
+      "name": "photopickandsave_photograph",
+      "value": "拍照"
+    },
+    {
+      "name": "photopickandsave_take_video",
+      "value": "拍视频"
+    },
+    {
+      "name": "photopickandsave_choice_number",
+      "value": "最多选择六张图片"
+    },
+    {
+      "name": "photopickandsave_user_tip",
+      "value": "功能开发中"
+    },
+    {
+      "name": "photopickandsave_picker_save",
+      "value": "下载到指定路径"
+    },
+    {
+      "name": "photopickandsave_photo_preview",
+      "value": "选择图片预览"
+    },
+    {
+      "name": "photopickandsave_download_photo",
+      "value": "下载保存图片到图库"
+    },
+    {
+      "name": "photopickandsave_save_picture",
+      "value": "下载保存图片到指定路径成功"
+    },
+    {
+      "name": "photopickandsave_savebutton_width",
+      "value": "143"
+    },
+    {
+      "name": "photopickandsave_button_height",
+      "value": "43"
+    },
+    {
+      "name": "photopickandsave_request_permissions_reason",
+      "value": "user_grant"
+    },
+    {
+      "name": "ohos_id_text_size_headline",
+      "value": "20"
+    },
+    {
+      "name": "ohos_id_elements_margin_vertical_m",
+      "value": "8"
+    },
+    {
+      "name": "ohos_id_corner_radius_default_m",
+      "value": "12"
+    },
+    {
+      "name": "ohos_id_card_padding_start",
+      "value": "12"
+    },
+    {
+      "name": "ohos_id_card_margin_start",
+      "value": "12"
+    },
+    {
+      "name": "photo_pick_and_save_success_message",
+      "value": "保存成功"
+    },
+    {
+      "name": "photo_pick_and_save_bind_popup_width",
+      "value": "170"
+    },
+    {
+      "name": "photo_pick_and_save_bind_popup_offset_y",
+      "value": "300"
+    },
+    {
+      "name": "photo_pick_and_save_bind_popup_message_font_size",
+      "value": "20"
+    },
+    {
+      "name": "photo_pick_and_save_bind_popup_message_font_weight",
+      "value": "20"
+    },
+    {
+      "name": "photo_pick_and_save_tab_width",
+      "value": "400"
+    },
+    {
+      "name": "photo_pick_and_save_tab_height",
+      "value": "40"
+    },
+    {
+      "name": "photo_pick_and_save_is_save_picture",
+      "value": "是否保存图片"
+    },
+    {
+      "name": "photo_pick_and_save_picture_message",
+      "value": "保存图片"
+    },
+    {
+      "name": "photo_pick_and_save_cancel_save",
+      "value": "取消"
+    },
+    {
+      "name": "photo_pick_and_save_is_save_picture_message_font_size",
+      "value": "24"
+    },
+    {
+      "name": "photo_pick_and_save_is_save_picture_message_height",
+      "value": "100"
+    },
+    {
+      "name": "photo_pick_and_save_button_width",
+      "value": "110"
+    },
+    {
+      "name": "photo_pick_and_save_button_font_size",
+      "value": "16"
+    },
+    {
+      "name": "photo_pick_and_save_button_container_width",
+      "value": "270"
+    },
+    {
+      "name": "photo_pick_and_save_pop_container_width",
+      "value": "320"
+    },
+    {
+      "name": "photo_pick_and_save_pop_container_height",
+      "value": "160"
+    }
+  ]
+}

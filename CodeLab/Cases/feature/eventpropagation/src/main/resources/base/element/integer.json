@@ -1,0 +1,72 @@
+{
+  "integer": [
+    {
+      "name": "event_propagation_enable_toggle_module_height",
+      "value": 56
+    },
+    {
+      "name": "event_propagation_common_space_size",
+      "value": 10
+    },
+    {
+      "name": "event_propagation_enable_toggle_text_font_size",
+      "value": 16
+    },
+    {
+      "name": "event_propagation_button_click_event_area_height",
+      "value": 200
+    },
+    {
+      "name": "event_propagation_button_click_event_area_height_fold",
+      "value": 180
+    },
+    {
+      "name": "event_propagation_response_text_font_size",
+      "value": 14
+    },
+    {
+      "name": "event_propagation_describe_text_font_size",
+      "value": 16
+    },
+    {
+      "name": "event_propagation_button_width_size",
+      "value": 260
+    },
+    {
+      "name": "event_propagation_button_height_size",
+      "value": 30
+    },
+    {
+      "name": "event_propagation_photo_width_size",
+      "value": 200
+    },
+    {
+      "name": "event_propagation_child_component_font_size",
+      "value": 16
+    },
+    {
+      "name": "event_propagation_photo_height_size",
+      "value": 100
+    },
+    {
+      "name": "event_propagation_child_component_border_radius",
+      "value": 30
+    },
+    {
+      "name": "event_propagation_parent_component_text_width_size",
+      "value": 150
+    },
+    {
+      "name": "event_propagation_parent_component_text_translate_size",
+      "value": 40
+    },
+    {
+      "name": "event_propagation_parent_component_text_font_size",
+      "value": 14
+    },
+    {
+      "name": "event_propagation_text_max_lines",
+      "value": 2
+    }
+  ]
+}

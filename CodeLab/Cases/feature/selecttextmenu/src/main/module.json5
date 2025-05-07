@@ -1,0 +1,11 @@
+{
+  "module": {
+    "name": "selecttextmenu",
+    "type": "har",
+    "deviceTypes": [
+      "default",
+      "tablet",
+      "2in1"
+    ]
+  }
+}

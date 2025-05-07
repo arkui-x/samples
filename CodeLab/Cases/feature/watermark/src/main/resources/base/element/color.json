@@ -1,0 +1,20 @@
+{
+  "color": [
+    {
+      "name": "water_mark_color_1",
+      "value": "#F3F3F3"
+    },
+    {
+      "name": "water_mark_color_2",
+      "value": "#F92344"
+    },
+    {
+      "name": "water_mark_color_3",
+      "value": "#CFCCCD"
+    },
+    {
+      "name": "water_mark_color_4",
+      "value": "#BD5F6B"
+    }
+  ]
+}

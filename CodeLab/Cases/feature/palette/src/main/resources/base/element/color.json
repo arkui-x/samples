@@ -1,0 +1,32 @@
+{
+  "color": [
+    {
+      "name": "palette_top_and_bottom_line_background_color",
+      "value": "#cc212224"
+    },
+    {
+      "name": "palette_divider_color",
+      "value": "#cccccc"
+    },
+    {
+      "name": "palette_pen_color_circle_border_color",
+      "value": "#999999"
+    },
+    {
+      "name": "palette_pen_shape_text_color",
+      "value": "#FA6400"
+    },
+    {
+      "name": "palette_hsl_palette_container_background_color",
+      "value": "#212224"
+    },
+    {
+      "name": "palette_color_background",
+      "value": "#FFFFFF"
+    },
+    {
+      "name": "palette_color_foreground",
+      "value": "#000000"
+    }
+  ]
+}

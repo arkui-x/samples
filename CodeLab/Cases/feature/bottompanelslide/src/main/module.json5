@@ -1,0 +1,11 @@
+{
+  "module": {
+    "name": "bottompanelslide",
+    "type": "har",
+    "deviceTypes": [
+      "default",
+      "tablet",
+      "2in1"
+    ]
+  }
+}

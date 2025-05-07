@@ -1,0 +1,92 @@
+{
+  "integer": [
+    {
+      "name": "cube_animation_search_height",
+      "value": 30
+    },
+    {
+      "name": "cube_animation_search_radius",
+      "value": 5
+    },
+    {
+      "name": "cube_animation_icon_size",
+      "value": 24
+    },
+    {
+      "name": "cube_animation_header_height",
+      "value": 46
+    },
+    {
+      "name": "cube_animation_padding_common",
+      "value": 16
+    },
+    {
+      "name": "cube_animation_text_large",
+      "value": 24
+    },
+    {
+      "name": "cube_animation_text_medium",
+      "value": 18
+    },
+    {
+      "name": "cube_animation_text_small",
+      "value": 14
+    },
+    {
+      "name": "cube_animation_margin_large",
+      "value": 20
+    },
+    {
+      "name": "cube_animation_margin_medium",
+      "value": 16
+    },
+    {
+      "name": "cube_animation_margin_small",
+      "value": 8
+    },
+    {
+      "name": "cube_animation_margin_xs",
+      "value": 4
+    },
+    {
+      "name": "cube_animation_bg_height",
+      "value": 200
+    },
+    {
+      "name": "cube_animation_banner_height",
+      "value": 120
+    },
+    {
+      "name": "cube_animation_dot_width",
+      "value": 24
+    },
+    {
+      "name": "cube_animation_dot_height",
+      "value": 4
+    },
+    {
+      "name": "cube_animation_radius_medium",
+      "value": 12
+    },
+    {
+      "name": "cube_animation_grid_height",
+      "value": 150
+    },
+    {
+      "name": "cube_animation_hot_grid_height",
+      "value": 200
+    },
+    {
+      "name": "cube_animation_tab_height",
+      "value": 56
+    },
+    {
+      "name": "cube_animation_divider_width",
+      "value": 1
+    },
+    {
+      "name": "cube_animation_margin_negative",
+      "value": -150
+    }
+  ]
+} 

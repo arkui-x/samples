@@ -1,0 +1,32 @@
+{
+  "float": [
+    {
+      "name": "image_depthcopy_size_3",
+      "value": "3"
+    },
+    {
+      "name": "image_depthcopy_size_5",
+      "value": "5"
+    },
+    {
+      "name": "image_depthcopy_size_10",
+      "value": "10"
+    },
+    {
+      "name": "image_depthcopy_size_14",
+      "value": "14"
+    },
+    {
+      "name": "image_depthcopy_size_20",
+      "value": "20"
+    },
+    {
+      "name": "image_depthcopy_size_30",
+      "value": "30"
+    },
+    {
+      "name": "image_depthcopy_size_32",
+      "value": "32"
+    }
+  ]
+}

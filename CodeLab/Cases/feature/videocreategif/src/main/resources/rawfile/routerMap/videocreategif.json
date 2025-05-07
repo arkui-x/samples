@@ -1,0 +1,16 @@
+{
+  "routerMap": [
+    {
+      "name": "videocreategif/VideoCreateGifView",
+      "pageModule": "videocreategif",
+      "pageSourceFile": "src/main/ets/generated/RouterBuilder.ets",
+      "registerFunction": "videoCreateGifViewRegister"
+    },
+    {
+      "name": "videocreategif/VideoPlayPage",
+      "pageModule": "videocreategif",
+      "pageSourceFile": "src/main/ets/generated/RouterBuilder.ets",
+      "registerFunction": "videoPlayPageRegister"
+    }
+  ]
+}

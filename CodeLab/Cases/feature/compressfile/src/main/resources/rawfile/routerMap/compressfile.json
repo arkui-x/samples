@@ -1,0 +1,10 @@
+{
+  "routerMap": [
+    {
+      "name": "compressfile/CompressFileView",
+      "pageModule": "compressfile",
+      "pageSourceFile": "src/main/ets/generated/RouterBuilder.ets",
+      "registerFunction": "compressFileViewRegister"
+    }
+  ]
+}

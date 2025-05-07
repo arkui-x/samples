@@ -1,0 +1,104 @@
+{
+  "string": [
+    {
+      "name": "marquee_my_trip",
+      "value": "我的行程"
+    },
+    {
+      "name": "marquee_plan_text",
+      "value": "计划出发"
+    },
+    {
+      "name": "marquee_ticket_entrance",
+      "value": "检票口:"
+    },
+    {
+      "name": "marquee_vehicle_model",
+      "value": "车型:"
+    },
+    {
+      "name": "marquee_title",
+      "value": "跑马灯案例"
+    },
+    {
+      "name": "marquee_content",
+      "value": "文本宽度过宽时，则实现跑马灯效果(文本循环滚动，每循环一次之后会停滞一段时间后再滚动)"
+    },
+    {
+      "name": "marquee_train_number_data_1",
+      "value": "K101"
+    },
+    {
+      "name": "marquee_whole_course_data_1",
+      "value": "全程2h8m/100km"
+    },
+    {
+      "name": "marquee_time_difference_data_1",
+      "value": "距出发 50m"
+    },
+    {
+      "name": "marquee_origin_data",
+      "value": "北京"
+    },
+    {
+      "name": "marquee_destination_data_1",
+      "value": "上海"
+    },
+    {
+      "name": "marquee_ticket_entrance_data_1",
+      "value": "候车地点:第七候车室"
+    },
+    {
+      "name": "marquee_vehicle_model_data_1",
+      "value": "普快"
+    },
+    {
+      "name": "marquee_whole_course_data_2",
+      "value": "全程2h8m/100km"
+    },
+    {
+      "name": "marquee_time_difference_data_2",
+      "value": "距出发 14h50m"
+    },
+    {
+      "name": "marquee_destination_data_2",
+      "value": "洛阳"
+    },
+    {
+      "name": "marquee_ticket_entrance_data_2",
+      "value": "检票口15A"
+    },
+    {
+      "name": "marquee_vehicle_model_data_2",
+      "value": "高铁"
+    },
+    {
+      "name": "marquee_scroll_tablet_width",
+      "value": "25%"
+    },
+    {
+      "name": "marquee_scroll_phone_width",
+      "value": "30%"
+    },
+    {
+      "name": "ohos_id_card_padding_start",
+      "value": "12"
+    },
+    {
+      "name": "ohos_id_text_size_headline",
+      "value": "20"
+    },
+    {
+      "name": "ohos_id_elements_margin_vertical_l",
+      "value": "16"
+    },
+    {
+      "name": "ohos_id_corner_radius_default_m",
+      "value": "12"
+    },
+    {
+      "name": "ohos_id_elements_margin_vertical_m",
+      "value": "8"
+    }
+  ]
+}

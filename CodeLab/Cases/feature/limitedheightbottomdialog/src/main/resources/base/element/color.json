@@ -1,0 +1,12 @@
+{
+  "color": [
+    {
+      "name": "limited_height_bottom_dialog_background_color",
+      "value": "#f5f5f5"
+    },
+    {
+      "name": "limited_height_bottom_dialog_divider_color",
+      "value": "#f5f5f5"
+    }
+  ]
+}

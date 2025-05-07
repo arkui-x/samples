@@ -1,0 +1,12 @@
+{
+  "integer": [
+    {
+      "name": "page_turning_animation_font_size",
+      "value": 80
+    },
+    {
+      "name": "page_turning_animation_border_radius",
+      "value": 20
+    }
+  ]
+}

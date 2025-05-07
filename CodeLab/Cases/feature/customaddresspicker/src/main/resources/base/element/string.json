@@ -1,0 +1,48 @@
+{
+  "string": [
+    {
+      "name": "custom_address_picker_full_size",
+      "value": "100%"
+    },
+    {
+      "name": "custom_address_picker_get_address_info",
+      "value": "获取地址信息"
+    },
+    {
+      "name": "custom_address_picker_percent_ninety",
+      "value": "90%"
+    },
+    {
+      "name": "custom_address_picker_scenario_one",
+      "value": "场景一：传入空地址"
+    },
+    {
+      "name": "custom_address_picker_scenario_two",
+      "value": "场景二：传入有效地址"
+    },
+    {
+      "name": "custom_address_picker_percent_eighty_five",
+      "value": "85%"
+    },
+    {
+      "name": "custom_address_picker_percent_eighty",
+      "value": "80%"
+    },
+    {
+      "name": "custom_address_picker_percent_twenty",
+      "value": "20%"
+    },
+    {
+      "name": "custom_address_picker_percent_fifteen",
+      "value": "15%"
+    },
+    {
+      "name": "custom_address_picker_area",
+      "value": "所在地区"
+    },
+    {
+      "name": "custom_address_picker_percent_seventy",
+      "value": "70%"
+    }
+  ]
+}

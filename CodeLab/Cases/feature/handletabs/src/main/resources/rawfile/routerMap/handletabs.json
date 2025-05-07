@@ -1,0 +1,10 @@
+{
+  "routerMap": [
+    {
+      "name": "handletabs/HandleTabs",
+      "pageModule": "handletabs",
+      "pageSourceFile": "src/main/ets/generated/RouterBuilder.ets",
+      "registerFunction": "handleTabsRegister"
+    }
+  ]
+}

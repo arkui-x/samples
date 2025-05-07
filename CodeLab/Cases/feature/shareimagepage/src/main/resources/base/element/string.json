@@ -1,0 +1,44 @@
+{
+  "string": [
+    {
+      "name": "share_image_page_text_detail_data0",
+      "value": "给你分享个鸿蒙开发范例合集"
+    },
+    {
+      "name": "share_image_page_text_detail_data1",
+      "value": "快发来我看看"
+    },
+    {
+      "name": "share_image_page_prompt_message",
+      "value": "无图片读取权限，无法进行分享"
+    },
+    {
+      "name": "share_image_page_send_button",
+      "value": "发送"
+    },
+    {
+      "name": "share_image_page_list_height",
+      "value": "86%"
+    },
+    {
+      "name": "share_image_page_input_text_input_background_color",
+      "value": "rgba(0,0,0,0.05)"
+    },
+    {
+      "name": "share_image_page_permission_reason",
+      "value": "是否允许应用访问本地图片"
+    },
+    {
+      "name": "share_image_page_width",
+      "value": "100%"
+    },
+    {
+      "name": "share_image_page_divider_color",
+      "value": "#f3f3f3"
+    },
+    {
+      "name": "share_image_page_other_function",
+      "value": "仅演示，可自行实现业务功能"
+    }
+  ]
+}

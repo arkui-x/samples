@@ -1,0 +1,14 @@
+{
+  "name": "bluetooth",
+  "version": "1.0.0",
+  "description": "Please describe the basic information.",
+  "main": "Index.ets",
+  "author": "",
+  "license": "Apache-2.0",
+  "dependencies": {
+    // 路由管理模块
+    "routermodule": "file:../../common/routermodule",
+    // 公共模块
+    "utils": "file:../../common/utils"
+  }
+}

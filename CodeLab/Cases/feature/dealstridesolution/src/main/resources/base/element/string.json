@@ -1,0 +1,48 @@
+{
+  "string": [
+    {
+      "name": "deal_stride_solution_camera_reason",
+      "value": "This permission is required for using the camera"
+    },
+    {
+      "name": "deal_stride_solution_all_percentage",
+      "value": "100%"
+    },
+    {
+      "name": "deal_stride_solution_image_view_crop",
+      "value": "方案一"
+    },
+    {
+      "name": "deal_stride_solution_image_view_uint",
+      "value": "方案二"
+    },
+    {
+      "name": "deal_stride_solution_component_view",
+      "value": "方案三"
+    },
+    {
+      "name": "deal_stride_solution_prompt_title",
+      "value": "提示说明"
+    },
+    {
+      "name": "deal_stride_solution_prompt_message",
+      "value": "因用户拒绝授权相机权限，导致本案例无法正常使用"
+    },
+    {
+      "name": "deal_stride_solution_image_view_crop_text",
+      "value": "image+cropSync"
+    },
+    {
+      "name": "deal_stride_solution_image_view_uint_text",
+      "value": "image+Uint8Array"
+    },
+    {
+      "name": "deal_stride_solution_component_view_text",
+      "value": "XComponent"
+    },
+    {
+      "name": "deal_stride_solution_tab_description",
+      "value": "方案说明"
+    }
+  ]
+}

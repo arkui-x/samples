@@ -1,0 +1,10 @@
+{
+  "routerMap": [
+    {
+      "name": "applicationexception/ApplicationExceptionComponent",
+      "pageModule": "applicationexception",
+      "pageSourceFile": "src/main/ets/generated/RouterBuilder.ets",
+      "registerFunction": "applicationExceptionComponentRegister"
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "float": [
+    {
+      "name": "image_compression_opacity_zero_point_eight",
+      "value": "0.8"
+    },
+    {
+      "name": "image_compression_opacity_zero_point_five",
+      "value": "0.5"
+    }
+  ]
+}

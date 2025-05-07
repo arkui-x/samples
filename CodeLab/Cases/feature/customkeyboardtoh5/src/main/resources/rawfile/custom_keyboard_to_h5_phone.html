@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html style="width:100%;height:100%;">
+<style>
+  .searchArea {
+    font-size: 1.9rem;
+    position: relative;
+    margin: 0 auto;
+    box-shadow: 0 4px 10px rgb(0 0 0 / 10%);
+    width: 80%;
+    z-index: 4;
+  }
+
+  .searchFirm {
+    width: 33px;
+    height: 33px;
+    float: left;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    position: absolute;
+    left: 10px;
+    z-index: 2;
+  }
+
+  .searchFirmIcon {
+    width: 20px;
+    height: 20px;
+    margin: 16px auto;
+    cursor: pointer;
+    background-position: 24px -24px;
+    background-size: 20px;
+    background-repeat: no-repeat;
+  }
+
+  .sfBaidu {
+    background-position: 0 -40px;
+  }
+
+  #searchCon {
+    height: 100%;
+    background: transparent;
+    float: left;
+    border: none;
+    margin: 0 33px 0 0;
+    width: calc(100% - 80px);
+    font-size: 18px;
+    z-index: 2;
+    position: absolute;
+    right: 0;
+    outline: none;
+  }
+</style>
+<script>
+  function initPad() {
+    func1();
+  }
+  function adapterDevice() {
+    var v = document.querySelector('meta[name="viewport"]');
+    if (v) {
+      v.setAttribute('content', 'width=720, user-scalable=yes');
+    } else {
+      var m = document.createElement('meta');
+      m.content = 'width=720, user-scalable=yes';
+      m.name = 'viewport';
+      document.getElementsByTagName('head')[0].appendChild(m);
+    }
+  }
+  function func1() {
+    var div = document.getElementById("test");
+    div.className = "tablet";
+  }
+  function tapInput() {
+    document.activeElement.blur();
+    let input = document.getElementById("searchCon");
+    etsObj.openDialog(input.value);
+  }
+  function setInput(value) {
+    let input = document.getElementById("searchCon");
+    input.value = value;
+  }
+
+  function login() {
+    etsObj.login();
+  }
+
+</script>
+
+<body style="margin:0px; padding:0px;background-image: url(./custom_keyboard_to_h5_background_img.jpg);background-size:cover;height:100%;" onload="initPad()">
+  <div style="display:flex;flex-direction:column;width:100%;height:100%;justify-content:start;">
+    <div style="font-size: 80px;position: relative;margin:0 auto;margin-top: 20%;width: 20%;">
+        <img src="./custom_keyboard_to_h5_avatar.svg" style="width: 100%; height: 100%;">
+    </div>
+    <p style="font-size: 60px;text-align: center;">
+      198*****798
+    </p>
+    <div class="searchArea"
+      style="border-radius: 80px; display: block; background-color: rgba(255, 255, 255, 0.7);flex-shrink: 0;height: 8%;">
+      <form autocomplete="off">
+        <input id="searchCon" type="password" style="border-bottom-right-radius: 8px;border-top-right-radius: 8px; text-align: center; font-size: 45px;" placeholder="请输入密码" onfocus="tapInput()">
+      </form>
+    </div>
+    <button type="button" style="font-size: 40px;color: white;text-align: center;margin:0 auto;margin-top: 80px;width: 25%;height: 6%;background-color:dodgerblue;border-radius: 60px;border:none;" onclick="login()">
+      登录
+    </button>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,128 @@
+{
+  "integer": [
+    {
+      "name": "group_avatar_bottom_icon_size",
+      "value": 26
+    },
+    {
+      "name": "group_avatar_bottom_font_size",
+      "value": 12
+    },
+    {
+      "name": "group_avatar_bottom_margin_top",
+      "value": 3
+    },
+    {
+      "name": "group_avatar_bottom_height",
+      "value": 84
+    },
+    {
+      "name": "group_avatar_component_space",
+      "value": 2
+    },
+    {
+      "name": "group_avatar_custom_loading_drawing_size",
+      "value": 64
+    },
+    {
+      "name": "group_avatar_custom_loading_progress_size",
+      "value": 40
+    },
+    {
+      "name": "group_avatar_custom_loading_font_size",
+      "value": 16
+    },
+    {
+      "name": "group_avatar_custom_loading_size",
+      "value": 120
+    },
+    {
+      "name": "group_avatar_custom_loading_radius",
+      "value": 20
+    },
+    {
+      "name": "group_avatar_navigation_icon_size",
+      "value": 24
+    },
+    {
+      "name": "group_avatar_navigation_title_font_size",
+      "value": 18
+    },
+    {
+      "name": "group_avatar_navigation_icon_column_width",
+      "value": 50
+    },
+    {
+      "name": "group_avatar_navigation_icon_search_width",
+      "value": 30
+    },
+    {
+      "name": "group_avatar_navigation_icon_column_height",
+      "value": 60
+    },
+    {
+      "name": "group_avatar_person_selected_header_size",
+      "value": 40
+    },
+    {
+      "name": "group_avatar_person_selected_header_radius",
+      "value": 5
+    },
+    {
+      "name": "group_avatar_person_header_column_height",
+      "value": 50
+    },
+    {
+      "name": "group_avatar_person_header_search_icon_size",
+      "value": 20
+    },
+    {
+      "name": "group_avatar_person_header_search_font_size",
+      "value": 14
+    },
+    {
+      "name": "group_avatar_person_list_height",
+      "value": 47
+    },
+    {
+      "name": "group_avatar_person_list_font_size",
+      "value": 15
+    },
+    {
+      "name": "group_avatar_person_header_size",
+      "value": 15
+    },
+    {
+      "name": "group_avatar_person_header_flex_size",
+      "value": 51
+    },
+    {
+      "name": "group_avatar_person_name_font_size",
+      "value": 16
+    },
+    {
+      "name": "group_avatar_person_name_height",
+      "value": 50
+    },
+    {
+      "name": "group_avatar_session_header_size",
+      "value": 65
+    },
+    {
+      "name": "group_avatar_add_button_width",
+      "value": 80
+    },
+    {
+      "name": "group_avatar_add_button_height",
+      "value": 30
+    },
+    {
+      "name": "group_avatar_add_button_component_height",
+      "value": 70
+    },
+    {
+      "name": "group_avatar_bottom_bar_padding_top",
+      "value": 6
+    }
+  ]
+}

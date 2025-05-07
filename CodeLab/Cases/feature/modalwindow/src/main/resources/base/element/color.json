@@ -1,0 +1,40 @@
+{
+  "color": [
+    {
+      "name": "modalwindow_main_bkg",
+      "value": "#ffa7c8"
+    },
+    {
+      "name": "modalwindow_grey_3",
+      "value": "#333333"
+    },
+    {
+      "name": "modalwindow_transparent_f",
+      "value": "#00ffffff"
+    },
+    {
+      "name": "modalwindow_transparent_7",
+      "value": "#00777777"
+    },
+    {
+      "name": "modalwindow_grey_e",
+      "value": "#eeeeee"
+    },
+    {
+      "name": "modalwindow_grey_6",
+      "value": "#666666"
+    },
+    {
+      "name": "modalwindow_grey_9",
+      "value": "#999999"
+    },
+    {
+      "name": "modalwindow_grey_2",
+      "value": "#222222"
+    },
+    {
+      "name": "modalwindow_grey_7",
+      "value": "#777777"
+    }
+  ]
+}

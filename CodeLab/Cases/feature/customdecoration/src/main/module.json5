@@ -1,0 +1,11 @@
+{
+  "module": {
+    "name": "customdecoration",
+    "type": "har",
+    "deviceTypes": [
+      "default",
+      "tablet",
+      "2in1"
+    ]
+  }
+}

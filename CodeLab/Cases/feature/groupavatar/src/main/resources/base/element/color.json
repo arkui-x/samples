@@ -1,0 +1,60 @@
+{
+  "color": [
+    {
+      "name": "start_window_background",
+      "value": "#FFFFFF"
+    },
+    {
+      "name": "group_avatar_navigation",
+      "value": "#EDEDED"
+    },
+    {
+      "name": "group_avatar_white",
+      "value": "#FFFFFF"
+    },
+    {
+      "name": "group_avatar_black",
+      "value": "#000000"
+    },
+    {
+      "name": "group_avatar_loading_background_color",
+      "value": "#40000000"
+    },
+    {
+      "name": "group_avatar_menu_background_color",
+      "value": "#4C4C4C"
+    },
+    {
+      "name": "group_avatar_menu_font_color",
+      "value": "#FFFFFFFF"
+    },
+    {
+      "name": "group_avatar_selected_person_list_background_color",
+      "value": "#FFFFFFFF"
+    },
+    {
+      "name": "group_avatar_selected_person_component_background_color",
+      "value": "#FFD6D5D5"
+    },
+    {
+      "name": "group_avatar_selected_person_checkbox",
+      "value": "#02C25F"
+    },
+    {
+      "name": "group_avatar_head_image_background_color",
+      "value": "#FF969494"
+    },
+    {
+      "name": "group_avatar_add_page_button_background_color",
+      "value": "#04C05E"
+    },
+    {
+      "name": "group_avatar_add_page_button_disabled_background_color",
+      "value": "#EAEAEA"
+    },
+    {
+      "name": "group_avatar_add_page_button_component_background_color",
+      "value": "#F7F7F7"
+    }
+  ]
+}

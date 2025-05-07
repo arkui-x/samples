@@ -1,0 +1,10 @@
+{
+  "routerMap": [
+    {
+      "name": "customkeyboardtoh5/CustomKeyboardToH5",
+      "pageModule": "customkeyboardtoh5",
+      "pageSourceFile": "src/main/ets/generated/RouterBuilder.ets",
+      "registerFunction": "customKeyboardToH5Register"
+    }
+  ]
+}

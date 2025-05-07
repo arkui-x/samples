@@ -1,0 +1,12 @@
+{
+  "string": [
+    {
+      "name": "decode_heif_image_title",
+      "value": "HEIF图片软解码"
+    },
+    {
+      "name": "decode_heif_image_button_label",
+      "value": "展示HEIF网络图片"
+    }
+  ]
+}

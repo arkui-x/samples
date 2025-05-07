@@ -1,0 +1,10 @@
+{
+  "routerMap": [
+    {
+      "name": "clockin/ClockInPage",
+      "pageModule": "clockin",
+      "pageSourceFile": "src/main/ets/generated/RouterBuilder.ets",
+      "registerFunction": "clockInPageRegister"
+    }
+  ]
+}

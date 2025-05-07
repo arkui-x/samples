@@ -1,0 +1,52 @@
+{
+  "string": [
+    {
+      "name": "image_theft_title",
+      "value": "获取防盗链图片"
+    },
+    {
+      "name": "image_theft_content",
+      "value": "通过设置正确的Referer和图片原始URL，获取防盗链图片。"
+    },
+    {
+      "name": "image_theft_image_url",
+      "value": "图片URL："
+    },
+    {
+      "name": "image_theft_image_refer",
+      "value": "Referer："
+    },
+    {
+      "name": "image_theft_button_request",
+      "value": "请求"
+    },
+    {
+      "name": "image_theft_button_reset",
+      "value": "重置"
+    },
+    {
+      "name": "image_theft_textarea_width",
+      "value": "calc(100% - 80vp)"
+    },
+    {
+      "name": "image_theft_column_margin_width",
+      "value": "100%"
+    },
+    {
+      "name": "image_theft_corner_radius_default_m",
+      "value": "12"
+    },
+    {
+      "name": "image_theft_card_padding_start",
+      "value": "12"
+    },
+    {
+      "name": "image_theft_elements_margin_vertical_m",
+      "value": "8"
+    },
+    {
+      "name": "image_theft_text_size_headline",
+      "value": "20"
+    }
+  ]
+}

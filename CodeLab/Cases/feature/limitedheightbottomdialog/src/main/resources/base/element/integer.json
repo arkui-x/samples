@@ -1,0 +1,104 @@
+{
+  "integer": [
+    {
+      "name": "limited_height_bottom_dialog_left_and_right_padding",
+      "value": 16
+    },
+    {
+      "name": "limited_height_bottom_dialog_top_padding",
+      "value": 32
+    },
+    {
+      "name": "limited_height_bottom_dialog_section_border_radius",
+      "value": 16
+    },
+    {
+      "name": "limited_height_bottom_dialog_section_gap",
+      "value": 20
+    },
+    {
+      "name": "limited_height_bottom_dialog_section_left_and_right_padding",
+      "value": 16
+    },
+    {
+      "name": "limited_height_bottom_dialog_section_item_title_font_size",
+      "value": 15
+    },
+    {
+      "name": "limited_height_bottom_dialog_section_item_sub_title_font_size",
+      "value": 11
+    },
+    {
+      "name": "limited_height_bottom_dialog_section_item_sub_title_left_margin",
+      "value": 8
+    },
+    {
+      "name": "limited_height_bottom_dialog_right_arrow_width",
+      "value": 24
+    },
+    {
+      "name": "limited_height_bottom_dialog_right_arrow_height",
+      "value": 24
+    },
+    {
+      "name": "limited_height_bottom_dialog_section_item_height",
+      "value": 50
+    },
+    {
+      "name": "limited_height_bottom_dialog_nickname_font_size",
+      "value": 18
+    },
+    {
+      "name": "limited_height_bottom_dialog_avatar_diameter",
+      "value": 60
+    },
+    {
+      "name": "limited_height_bottom_dialog_avatar_radius",
+      "value": 30
+    },
+    {
+      "name": "limited_height_bottom_dialog_nickname_left_margin",
+      "value": 16
+    },
+    {
+      "name": "limited_height_bottom_dialog_dialog_radius",
+      "value": 16
+    },
+    {
+      "name": "limited_height_bottom_dialog_common_setting_left_and_right_padding",
+      "value": 16
+    },
+    {
+      "name": "limited_height_bottom_dialog_common_setting_top_padding",
+      "value": 8
+    },
+    {
+      "name": "limited_height_bottom_dialog_common_setting_bottom_padding",
+      "value": 20
+    },
+    {
+      "name": "limited_height_bottom_dialog_dialog_title_font_size",
+      "value": 17
+    },
+    {
+      "name": "limited_height_bottom_dialog_dialog_close_width",
+      "value": 36
+    },
+    {
+      "name": "limited_height_bottom_dialog_dialog_close_padding",
+      "value": 12
+    },
+    {
+      "name": "limited_height_bottom_dialog_dialog_close_x_offset",
+      "value": -12
+    },
+    {
+      "name": "limited_height_bottom_dialog_dialog_top_bar_height",
+      "value": 48
+    },
+    {
+      "name": "limited_height_bottom_dialog_explain_font_size",
+      "value": 11
+    }
+  ]
+}

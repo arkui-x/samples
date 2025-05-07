@@ -1,0 +1,200 @@
+{
+  "integer": [
+    {
+      "name": "multiple_screening_info_card_list_padding",
+      "value": 20
+    },
+    {
+      "name": "multiple_screening_info_card_list_border_radius",
+      "value": 30
+    },
+    {
+      "name": "multiple_screening_info_card_list_margin",
+      "value": 10
+    },
+    {
+      "name": "multiple_screening_info_card_site_image_width",
+      "value": 80
+    },
+    {
+      "name": "multiple_screening_info_card_site_image_margin",
+      "value": 10
+    },
+    {
+      "name": "multiple_screening_info_card_site_name_text",
+      "value": 20
+    },
+    {
+      "name": "multiple_screening_info_card_site_address_text",
+      "value": 16
+    },
+    {
+      "name": "multiple_screening_info_card_site_address_margin",
+      "value": 5
+    },
+    {
+      "name": "multiple_screening_info_card_site_discount_font",
+      "value": 16
+    },
+    {
+      "name": "multiple_screening_info_card_site_discount_padding",
+      "value": 2
+    },
+    {
+      "name": "multiple_screening_info_card_site_discount_border_width",
+      "value": 2
+    },
+    {
+      "name": "multiple_screening_info_card_site_discount_border_radius",
+      "value": 5
+    },
+    {
+      "name": "multiple_screening_info_card_product_details_image_width",
+      "value": 24
+    },
+    {
+      "name": "multiple_screening_info_card_product_details_border_width",
+      "value": 2
+    },
+    {
+      "name": "multiple_screening_info_card_product_details_padding_top",
+      "value": 15
+    },
+    {
+      "name": "multiple_screening_info_card_product_details_padding_bottom",
+      "value": 15
+    },
+    {
+      "name": "multiple_screening_info_card_product_list_margin_left",
+      "value": 10
+    },
+    {
+      "name": "multiple_screening_filter_component_filter_text",
+      "value": 18
+    },
+    {
+      "name": "multiple_screening_filter_component_filter_image",
+      "value": 18
+    },
+    {
+      "name": "multiple_screening_filter_component_sort_padding",
+      "value": 10
+    },
+    {
+      "name": "multiple_screening_filter_component_padding_left",
+      "value": 15
+    },
+    {
+      "name": "multiple_screening_filter_component_padding_bottom",
+      "value": 5
+    },
+    {
+      "name": "multiple_screening_filter_component_filter_card_height",
+      "value": 350
+    },
+    {
+      "name": "multiple_screening_filter_component_filter_card_position_x",
+      "value": 0
+    },
+    {
+      "name": "multiple_screening_filter_component_filter_card_position_y",
+      "value": 40
+    },
+    {
+      "name": "multiple_screening_filter_component_reset_height",
+      "value": 40
+    },
+    {
+      "name": "multiple_screening_filter_component_reset_width",
+      "value": 150
+    },
+    {
+      "name": "multiple_screening_filter_data_item_name_font",
+      "value": 16
+    },
+    {
+      "name": "multiple_screening_filter_data_item_name_height",
+      "value": 30
+    },
+    {
+      "name": "multiple_screening_filter_data_options_height",
+      "value": 40
+    },
+    {
+      "name": "multiple_screening_filter_data_grid_border_radius",
+      "value": 4
+    },
+    {
+      "name": "multiple_screening_filter_data_rows_gap",
+      "value": 16
+    },
+    {
+      "name": "multiple_screening_filter_data_margin_top",
+      "value": 8
+    },
+    {
+      "name": "multiple_screening_custom_title_text_font",
+      "value": 24
+    },
+    {
+      "name": "multiple_screening_custom_title_search_height",
+      "value": 45
+    },
+    {
+      "name": "multiple_screening_custom_title_search_margin",
+      "value": 10
+    },
+    {
+      "name": "multiple_screening_custom_title_search_size",
+      "value": 24
+    },
+    {
+      "name": "multiple_screening_custom_title_map_size",
+      "value": 30
+    },
+    {
+      "name": "multiple_screening_custom_title_map_margin",
+      "value": 0
+    },
+    {
+      "name": "multiple_screening_custom_title_map_text",
+      "value": 10
+    },
+    {
+      "name": "multiple_screening_custom_title_map_text_margin",
+      "value": 3
+    },
+    {
+      "name": "multiple_screening_custom_title_map_text_padding",
+      "value": 1
+    },
+    {
+      "name": "multiple_screening_custom_tab_bar_height",
+      "value": 60
+    },
+    {
+      "name": "multiple_screening_custom_tab_bar_initial_image_width",
+      "value": 40
+    },
+    {
+      "name": "multiple_screening_custom_tab_bar_initial_image_height",
+      "value": 38
+    },
+    {
+      "name": "multiple_screening_custom_tab_bar_image_height",
+      "value": 24
+    },
+    {
+      "name": "multiple_screening_custom_tab_bar_text",
+      "value": 10
+    },
+    {
+      "name": "multiple_screening_custom_tab_bar_text_margin",
+      "value": 5
+    },
+    {
+      "name": "multiple_screening_custom_tab_bar_item_padding",
+      "value": 2
+    }
+  ]
+}

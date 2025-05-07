@@ -1,0 +1,64 @@
+{
+  "string": [
+    {
+      "name": "navigationbarchange_width_and_height_fifteen_percent",
+      "value": "15%"
+    },
+    {
+      "name": "navigationbarchange_width_and_height_twenty_five_percent",
+      "value": "25%"
+    },
+    {
+      "name": "navigationbarchange_width_and_height_thirty_percent",
+      "value": "30%"
+    },
+    {
+      "name": "navigationbarchange_width_and_height_thirty_two_percent",
+      "value": "32%"
+    },
+    {
+      "name": "navigationbarchange_width_and_height_eighty_percent",
+      "value": "80%"
+    },
+    {
+      "name": "navigationbarchange_width_and_height_ninety_two_percent",
+      "value": "92%"
+    },
+    {
+      "name": "navigationbarchange_width_and_height_one_hundred_percent",
+      "value": "100%"
+    },
+    {
+      "name": "navigationbarchange_text_welcome",
+      "value": "欢迎 ！！！"
+    },
+    {
+      "name": "navigationbarchange_text_new_user_registration",
+      "value": "新用户享特别大礼包！"
+    },
+    {
+      "name": "navigationbarchange_text_load",
+      "value": "登录/注册"
+    },
+    {
+      "name": "navigationbarchange_text_shopping",
+      "value": "购物区"
+    },
+    {
+      "name": "navigationbarchange_text_happy",
+      "value": "娱乐区"
+    },
+    {
+      "name": "navigationbarchange_text_relaxation",
+      "value": "休闲区"
+    },
+    {
+      "name": "navigationbarchange_text_mine",
+      "value": "我的"
+    },
+    {
+      "name": "navigationbarchange_prompt_action",
+      "value": "仅演示,具体功能自行实现"
+    }
+  ]
+}

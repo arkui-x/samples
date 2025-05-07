@@ -1,0 +1,48 @@
+{
+  "color": [
+    {
+      "name": "cube_animation_search_bg",
+      "value": "#F3F5F9"
+    },
+    {
+      "name": "cube_animation_search_placeholder",
+      "value": "#999999"
+    },
+    {
+      "name": "cube_animation_text_light",
+      "value": "#FFFFFF"
+    },
+    {
+      "name": "cube_animation_text_gray",
+      "value": "#666666"
+    },
+    {
+      "name": "cube_animation_bg_white",
+      "value": "#FFFFFF"
+    },
+    {
+      "name": "cube_animation_bg_gray",
+      "value": "#F3F5F9"
+    },
+    {
+      "name": "cube_animation_mask",
+      "value": "#000000"
+    },
+    {
+      "name": "cube_animation_dot_normal",
+      "value": "#808080"
+    },
+    {
+      "name": "cube_animation_dot_selected",
+      "value": "#FFFFFF"
+    },
+    {
+      "name": "cube_animation_tab_selected",
+      "value": "#1296DB"
+    },
+    {
+      "name": "cube_animation_tab_normal",
+      "value": "#2D2D2D"
+    }
+  ]
+}

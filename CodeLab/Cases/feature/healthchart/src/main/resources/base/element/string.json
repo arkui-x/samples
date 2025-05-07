@@ -1,0 +1,44 @@
+{
+  "string": [
+    {
+      "name": "bar_chart_health_fitness_record",
+      "value": "健身记录"
+    },
+    {
+      "name": "bar_chart_health_font_family",
+      "value": "HarmonyHeiTi"
+    },
+    {
+      "name": "bar_chart_health_fitness_date",
+      "value": "1/1 - 1/7"
+    },
+    {
+      "name": "bar_chart_health_fitness_rate",
+      "value": "近7天：达标 71%"
+    },
+    {
+      "name": "bar_chart_health_layout_full_size",
+      "value": "100%"
+    },
+    {
+      "name": "bar_chart_health_layout_forty",
+      "value": "40%"
+    },
+    {
+      "name": "bar_chart_health_record",
+      "value": "健康数据"
+    },
+    {
+      "name": "bar_chart_health_date",
+      "value": "1/7"
+    },
+    {
+      "name": "bar_chart_health_heart_rate",
+      "value": "心率"
+    },
+    {
+      "name": "bar_chart_health_step_number",
+      "value": "步数"
+    }
+  ]
+}

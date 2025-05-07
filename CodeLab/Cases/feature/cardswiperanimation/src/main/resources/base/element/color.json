@@ -1,0 +1,12 @@
+{
+  "color": [
+    {
+      "name": "photo_preview_build_background",
+      "value": "#FFEAEAEA"
+    },
+    {
+      "name": "card_shadow_color",
+      "value": "#ABAAAA"
+    }
+  ]
+}

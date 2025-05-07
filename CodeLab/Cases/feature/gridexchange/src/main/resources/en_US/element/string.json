@@ -1,0 +1,133 @@
+{
+  "string": [
+    {
+      "name": "grid_exchange_cancel",
+      "value": "cancel"
+    },
+    {
+      "name": "grid_exchange_toast_message",
+      "value": "The edited content has not been saved yet. Do you want to save it"
+    },
+    {
+      "name": "grid_exchange_save",
+      "value": "save"
+    },
+    {
+      "name": "grid_exchange_management_applications",
+      "value": "Management applications"
+    },
+    {
+      "name": "grid_exchange_edit",
+      "value": "edit"
+    },
+    {
+      "name": "grid_exchange_edit_message",
+      "value": "Click on edit to enter editing"
+    },
+
+    {
+      "name": "grid_exchange_operation_message",
+      "value": "Long press and drag to adjust application position, click to delete application"
+    },
+    {
+      "name": "grid_exchange_title_message",
+      "value": "Homepage application"
+    },
+    {
+      "name": "grid_exchange_color1",
+      "value": "0x317aff"
+    },
+    {
+      "name": "grid_exchange_big_title_font_size",
+      "value": "20"
+    },
+    {
+      "name": "grid_exchange_button_width",
+      "value": "60"
+    },
+    {
+      "name": "grid_exchange_button_height",
+      "value": "25"
+    },
+    {
+      "name": "grid_exchange_button_border_radius",
+      "value": "5"
+    },
+    {
+      "name": "grid_exchange_edit_message_font_size",
+      "value": "14"
+    },
+    {
+      "name": "grid_exchange_title_padding_size",
+      "value": "12"
+    },
+    {
+      "name": "grid_exchange_title_height",
+      "value": "50"
+    },
+    {
+      "name": "grid_exchange_app_container_height",
+      "value": "38%"
+    },
+    {
+      "name": "grid_exchange_app_container_border_radius",
+      "value": "20"
+    },
+    {
+      "name": "grid_exchange_app_container_margin_size",
+      "value": "12"
+    },
+    {
+      "name": "grid_exchange_grid_container_height",
+      "value": "90%"
+    },
+    {
+      "name": "grid_exchange_container_size",
+      "value": "100%"
+    },
+    {
+      "name": "grid_exchange_icon_size",
+      "value": "40"
+    },
+    {
+      "name": "grid_exchange_remove_icon_size",
+      "value": "20"
+    },
+    {
+      "name": "grid_exchange_app_name_width",
+      "value": "40"
+    },
+    {
+      "name": "grid_exchange_app_name_font_size",
+      "value": "13"
+    },
+    {
+      "name": "grid_exchange_grid_item_width",
+      "value": "40"
+    },
+    {
+      "name": "grid_exchange_grid_item_height",
+      "value": "72"
+    },
+    {
+      "name": "grid_exchange_title_bar_padding_left",
+      "value": "22"
+    },
+    {
+      "name": "grid_exchange_title_bar_padding_right",
+      "value": "22"
+    },
+    {
+      "name": "grid_exchange_title_bar_padding_top",
+      "value": "10"
+    },
+    {
+      "name": "grid_exchange_title_name_font_size",
+      "value": "20"
+    },
+    {
+      "name": "grid_exchange_builder_width",
+      "value": "50"
+    }
+  ]
+}

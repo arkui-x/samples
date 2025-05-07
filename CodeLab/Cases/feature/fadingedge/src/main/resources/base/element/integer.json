@@ -1,0 +1,60 @@
+{
+  "integer": [
+    {
+      "name": "fadingedge_example_image_height",
+      "value": 120
+    },
+    {
+      "name": "fadingedge_example_image_width",
+      "value": 200
+    },
+    {
+      "name": "fadingedge_example_image_border_radius",
+      "value": 8
+    },
+    {
+      "name": "fadingedge_menu_padding",
+      "value": 10
+    },
+    {
+      "name": "fadingedge_menu_border_radius",
+      "value": 8
+    },
+    {
+      "name": "fadingedge_banner_border_radius",
+      "value": 6
+    },
+    {
+      "name": "fadingedge_banner_backgroud_color",
+      "value": 6
+    },
+    {
+      "name": "fadingedge_banner_padding",
+      "value": 10
+    },
+    {
+      "name": "fadingedge_list_height",
+      "value": 120
+    },
+    {
+      "name": "fadingedge_other_border_radius",
+      "value": 8
+    },
+    {
+      "name": "fadingedge_root_padding",
+      "value": 10
+    },
+    {
+      "name": "fadingedge_menu_item_image_width",
+      "value": 35
+    },
+    {
+      "name": "fadingedge_menu_item_image_height",
+      "value": 35
+    },
+    {
+      "name": "fadingedge_menu_item_padding",
+      "value": 6
+    }
+  ]
+}

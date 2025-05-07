@@ -1,0 +1,84 @@
+{
+  "integer": [
+    {
+      "name": "share_image_page_user_image_width_height",
+      "value": 50
+    },
+    {
+      "name": "share_image_page_user_image_border_radius",
+      "value": 20
+    },
+    {
+      "name": "share_image_page_user_image_margin_left",
+      "value": 5
+    },
+    {
+      "name": "share_image_page_user_image_margin_right",
+      "value": 10
+    },
+    {
+      "name": "share_image_page_user_text_column_border_radius",
+      "value": 6
+    },
+    {
+      "name": "share_image_page_user_text_column_padding",
+      "value": 8
+    },
+    {
+      "name": "share_image_page_user_share_image_height",
+      "value": 300
+    },
+    {
+      "name": "share_image_page_chat_item_margin_top",
+      "value": 20
+    },
+    {
+      "name": "share_image_page_list_divider_stroke_width",
+      "value": 2
+    },
+    {
+      "name": "share_image_page_list_padding",
+      "value": 10
+    },
+    {
+      "name": "share_image_page_input_image_left_height",
+      "value": 24
+    },
+    {
+      "name": "share_image_page_input_image_left_margin",
+      "value": 16
+    },
+    {
+      "name": "share_image_page_input_text_input_width",
+      "value": 230
+    },
+    {
+      "name": "share_image_page_input_text_input_height",
+      "value": 40
+    },
+    {
+      "name": "share_image_page_input_text_input_border_radius",
+      "value": 20
+    },
+    {
+      "name": "share_image_page_input_button_height",
+      "value": 40
+    },
+    {
+      "name": "share_image_page_input_button_border_radius",
+      "value": 20
+    },
+    {
+      "name": "share_image_page_input_button_width",
+      "value": 80
+    },
+    {
+      "name": "share_image_page_input_button_margin",
+      "value": 16
+    },
+    {
+      "name": "share_image_page_column_padding",
+      "value": 17
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "routerMap": [
+    {
+      "name": "webcustompressmenu/WebCustomPressMenu",
+      "pageModule": "webcustompressmenu",
+      "pageSourceFile": "src/main/ets/generated/RouterBuilder.ets",
+      "registerFunction": "webCustomPressMenuRegister"
+    }
+  ]
+}

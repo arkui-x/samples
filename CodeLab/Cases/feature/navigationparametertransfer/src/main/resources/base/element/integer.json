@@ -1,0 +1,20 @@
+{
+  "integer": [
+    {
+      "name": "navigation_parametertransfer_common_padding_top",
+      "value": 5
+    },
+    {
+      "name": "navigation_parametertransfer_common_margin_left",
+      "value": 10
+    },
+    {
+      "name": "navigation_parametertransfer_common_radius",
+      "value": 10
+    },
+    {
+      "name": "navigation_parametertransfer_common_padding",
+      "value": 10
+    }
+  ]
+}

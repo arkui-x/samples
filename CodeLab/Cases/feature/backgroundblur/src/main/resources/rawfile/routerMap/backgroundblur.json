@@ -1,0 +1,10 @@
+{
+  "routerMap": [
+    {
+      "name": "backgroundblur/BackgroundBlurView",
+      "pageModule": "backgroundblur",
+      "pageSourceFile": "src/main/ets/generated/RouterBuilder.ets",
+      "registerFunction": "backgroundBlurViewRegister"
+    }
+  ]
+}

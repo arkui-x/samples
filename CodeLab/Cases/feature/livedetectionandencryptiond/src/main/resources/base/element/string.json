@@ -1,0 +1,52 @@
+{
+  "string": [
+    {
+      "name": "facial_recognition_page_title",
+      "value": "您好，欢迎登录"
+    },
+    {
+      "name": "facial_recognition_login",
+      "value": "登录"
+    },
+    {
+      "name": "encryption_bind_sheet_title",
+      "value": "身份验证"
+    },
+    {
+      "name": "facial_recognition_bind_sheet_text1",
+      "value": "对你进行身份验证并获取本次认证过程中拍摄的人脸照片，请确保为"
+    },
+    {
+      "name": "facial_recognition_bind_sheet_text2",
+      "value": "王**"
+    },
+    {
+      "name": "facial_recognition_bind_sheet_text3",
+      "value": "本人操作"
+    },
+    {
+      "name": "decryption_image_prompt_action_success_message",
+      "value": "人脸验证加密成功，登录成功，仅做演示"
+    },
+    {
+      "name": "decryption_image_prompt_action_fail_message",
+      "value": "未进行活体检测"
+    },
+    {
+      "name": "facial_recognition_bind_sheet_agree",
+      "value": "同意协议认证"
+    },
+    {
+      "name": "facial_recognition_bind_sheet_disagree",
+      "value": "暂不认证"
+    },
+    {
+      "name": "start_decrypt_error_text",
+      "value": "活体检测成功异常，请重试"
+    },
+    {
+      "name": "start_decrypt_success_text",
+      "value": "活体检测成功"
+    }
+  ]
+}

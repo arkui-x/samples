@@ -1,0 +1,19 @@
+{
+  "module": {
+    "name": "voicerecordynamiceffect",
+    "type": "har",
+    "deviceTypes": [
+      "default",
+      "tablet",
+      "2in1"
+    ],
+    "requestPermissions": [{
+      "name": "ohos.permission.MICROPHONE",
+      "reason": "$string:voice_record_dynamic_effect_app_name",
+      "usedScene": {
+        "abilities": ["EntryAbility"],
+        "when": "inuse"
+      }
+    }]
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "color": [
+    {
+      "name": "gbk_start_window_background",
+      "value": "#FFFFFF"
+    },
+    {
+      "name": "gbk_title_font_color",
+      "value": "#182431"
+    },
+    {
+      "name": "gbk_friends_page_divider_color",
+      "value": "#0c000000"
+    },
+    {
+      "name": "gbk_search_outline_background_color",
+      "value": "#ffffff"
+    },
+    {
+      "name": "gbk_friends_page_background",
+      "value": "#ffffff"
+    }
+  ]
+}

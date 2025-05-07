@@ -1,0 +1,10 @@
+{
+  "routerMap": [
+    {
+      "name": "pipwindow/PipWindowView",
+      "pageModule": "pipwindow",
+      "pageSourceFile": "src/main/ets/generated/RouterBuilder.ets",
+      "registerFunction": "pipWindowViewRegister"
+    }
+  ]
+}

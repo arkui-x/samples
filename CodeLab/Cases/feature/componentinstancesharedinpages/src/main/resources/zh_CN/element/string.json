@@ -1,0 +1,24 @@
+{
+  "string": [
+    {
+      "name": "componentinstancesharedinpages_demo_toast_tips",
+      "value": "仅用作美化，请根据业务需要自行实现"
+    },
+    {
+      "name": "location_popup_address_for_test",
+      "value": "航天城桔子酒店（某某路与某某路交叉路口）"
+    },
+    {
+      "name": "location_tip_for_test",
+      "value": "上次上车点"
+    },
+    {
+      "name": "image_click_tip_for_test",
+      "value": "点击了实景图，可根据需要设置点击事件的回调"
+    },
+    {
+      "name": "addr_click_tip_for_test",
+      "value": "点击了地址，可根据需要设置点击事件的回调"
+    }
+  ]
+}

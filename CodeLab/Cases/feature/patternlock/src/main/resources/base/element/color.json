@@ -1,0 +1,20 @@
+{
+  "color": [
+    {
+      "name": "pattern_lock_path_color",
+      "value": "#90EE90"
+    },
+    {
+      "name": "pattern_lock_active_color",
+      "value": "#B0C4DE"
+    },
+    {
+      "name": "pattern_lock_active_circle_color",
+      "value": "#90EE90"
+    },
+    {
+      "name": "pattern_lock_selected_color",
+      "value": "#228B22"
+    }
+  ]
+}

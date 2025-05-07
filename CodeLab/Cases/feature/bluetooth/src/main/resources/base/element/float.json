@@ -1,0 +1,36 @@
+{
+  "float": [
+    {
+      "name": "ble_text_size_least",
+      "value": "10"
+    },
+    {
+      "name": "ble_text_size_small",
+      "value": "12"
+    },
+    {
+      "name": "ble_text_size_normal",
+      "value": "14"
+    },
+    {
+      "name": "ble_text_size_medium",
+      "value": "16"
+    },
+    {
+      "name": "ble_text_size_big",
+      "value": "18"
+    },
+    {
+      "name": "ble_text_size_bigger",
+      "value": "20"
+    },
+    {
+      "name": "ble_text_size_title",
+      "value": "22"
+    },
+    {
+      "name": "ble_text_size_master",
+      "value": "32"
+    }
+  ]
+}

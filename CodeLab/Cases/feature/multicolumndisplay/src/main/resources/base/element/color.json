@@ -1,0 +1,20 @@
+{
+  "color": [
+    {
+      "name": "start_window_background",
+      "value": "#FFFFFF"
+    },
+    {
+      "name": "water_flow_section_item_name_font_color",
+      "value": "#000"
+    },
+    {
+      "name": "water_flow_section_item_description_font_color",
+      "value": "#A6A6A6"
+    },
+    {
+      "name": "water_flow_bottom_item_describe_text_font_color",
+      "value": "#a6a6a6"
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "string": [
+    {
+      "name": "fontdynamicregistration_module_desc",
+      "value": "module description"
+    },
+    {
+      "name": "fontdynamicregistration_EntryAbility_desc",
+      "value": "description"
+    },
+    {
+      "name": "fontdynamicregistration_EntryAbility_label",
+      "value": "label"
+    },
+    {
+      "name": "fontdynamicregistration_font_sans",
+      "value": "HarmonyOS Sans"
+    },
+    {
+      "name": "fontdynamicregistration_font_SourceHanSerif",
+      "value": "思源宋体"
+    },
+    {
+      "name": "fontdynamicregistration_main_title",
+      "value": "字体样式"
+    },
+    {
+      "name": "fontdynamicregistration_question",
+      "value": "怎么动态注册并调整字体样式呢？"
+    },
+    {
+      "name": "fontdynamicregistration_answer",
+      "value": "点击下方按钮，可以切换不同的字体样式哦，快来试试吧。"
+    },
+    {
+      "name": "fontdynamicregistration_target_font",
+      "value": "当前字体: "
+    },
+    {
+      "name": "fontdynamicregistration_toast_message",
+      "value": "下载成功！"
+    },
+    {
+      "name": "fontdynamicregistration_downloading",
+      "value": "下载中..."
+    },
+    {
+      "name": "fontdynamicregistration_text_dialog_width",
+      "value": "70%"
+    },
+    {
+      "name": "fontdynamicregistration_text_wrapper_width",
+      "value": "100%"
+    },{
+      "name": "fontdynamicregistration_bottom_wrapper_width",
+      "value": "100%"
+    },
+    {
+      "name": "fontdynamicregistration_top_wrapper_size",
+      "value": "100%"
+    },
+    {
+      "name": "fontdynamicregistration_second_wrapper_size",
+      "value": "85%"
+    }
+  ]
+}

@@ -1,0 +1,80 @@
+{
+  "string": [
+    {
+      "name": "text_expand_show_button",
+      "value": "展示用按钮"
+    },
+    {
+      "name": "text_expand_search_placeholder",
+      "value": "搜你想搜..."
+    },
+    {
+      "name": "text_expand_text_name",
+      "value": "学习号"
+    },
+    {
+      "name": "text_expand_text_date",
+      "value": "3-17 12:00"
+    },
+    {
+      "name": "text_expand_layout_100",
+      "value": "100%"
+    },
+    {
+      "name": "text_expand_layout_95",
+      "value": "95%"
+    },
+    {
+      "name": "text_expand_expand_title",
+      "value": "展开"
+    },
+    {
+      "name": "text_expand_collapse_title",
+      "value": "收起"
+    },
+    {
+      "name": "text_expand_long_title",
+      "value": "深入学习贯彻新时代中国特色社会主义思想，既要全面准确领会其丰富内涵、思想体系和实践要求，又要深刻把握贯穿其中的马克思主义世界观和方法论，将其转化为增强“四个意识”、坚定“四个自信”、做到“两个维护”的具体行动，转化为应对风险挑战、推动事业发展的能力和水平，全力投身新时代中国特色社会主义伟大实践，奋力谱写全面建设社会主义现代化国家的精彩华章。"
+    },
+    {
+      "name": "text_expand_url1",
+      "value": "text_expand_img1"
+    },
+    {
+      "name": "text_expand_url2",
+      "value": "text_expand_img2"
+    },
+    {
+      "name": "text_expand_url3",
+      "value": "text_expand_img3"
+    },
+    {
+      "name": "text_expand_url4",
+      "value": "text_expand_img4"
+    },
+    {
+      "name": "text_expand_measure_font_size",
+      "value": "16fp"
+    },
+    {
+      "name": "text_expand_tab_name_main_page",
+      "value": "首页"
+    },
+    {
+      "name": "text_expand_tab_name_hot",
+      "value": "热门"
+    },
+    {
+      "name": "text_expand_tab_name_same_city",
+      "value": "同城"
+    },
+    {
+      "name": "text_expand_tab_name_else",
+      "value": "其他"
+    },
+    {
+      "name": "text_expand_item_main_body_title_width",
+      "value": "350vp"
+    }
+  ]
+}

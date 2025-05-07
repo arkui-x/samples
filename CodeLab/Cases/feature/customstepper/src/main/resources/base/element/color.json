@@ -1,0 +1,12 @@
+{
+  "color": [
+    {
+      "name": "start_window_background",
+      "value": "#FFFFFF"
+    },
+    {
+      "name": "stepper_divider_color",
+      "value": "#FFD4D4D4"
+    }
+  ]
+}

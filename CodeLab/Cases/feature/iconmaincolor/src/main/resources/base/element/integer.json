@@ -1,0 +1,52 @@
+{
+  "integer": [
+    {
+      "name":"icon_main_color_image_margin_left",
+      "value": 10
+    },
+    {
+      "name":"icon_main_color_image_size_height",
+      "value": 40
+    },
+    {
+      "name":"icon_main_color_image_size_width",
+      "value": 40
+    },
+    {
+      "name":"icon_main_color_text_name_font_size",
+      "value": 15
+    },
+    {
+      "name":"icon_main_color_text_description_font_size",
+      "value": 10
+    },
+    {
+      "name":"icon_main_color_text_description_margin_top",
+      "value": 10
+    },
+    {
+      "name":"icon_main_color_icon_column_height",
+      "value": 40
+    },
+    {
+      "name":"icon_main_color_icon_column_margin_left",
+      "value": 10
+    },
+    {
+      "name":"icon_main_color_icon_row_padding_left",
+      "value": 20
+    },
+    {
+      "name":"icon_main_color_icon_row_height",
+      "value": 60
+    },
+    {
+      "name":"icon_main_color_icon_image_border_radius",
+      "value": 6
+    },
+    {
+      "name":"icon_main_color_column_padding_top",
+      "value": 100
+    }
+  ]
+}

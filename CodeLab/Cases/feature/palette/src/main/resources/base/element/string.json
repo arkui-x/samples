@@ -1,0 +1,32 @@
+{
+  "string": [
+    {
+      "name": "palette_toast",
+      "value": "仅用于UX展示，开发者自行实现功能"
+    },
+    {
+      "name": "palette_full_size",
+      "value": "100%"
+    },
+    {
+      "name": "palette_pen_shape_text",
+      "value": "涂鸦"
+    },
+    {
+      "name": "palette_hsl_palette_container_width",
+      "value": "90%"
+    },
+    {
+      "name": "palette_card_padding_start",
+      "value": "12"
+    },
+    {
+      "name": "palette_text_size_body1",
+      "value": "14"
+    },
+    {
+      "name": "palette_corner_radius_default_m",
+      "value": "12"
+    }
+  ]
+}

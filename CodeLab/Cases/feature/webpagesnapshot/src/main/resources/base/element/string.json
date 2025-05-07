@@ -1,0 +1,192 @@
+{
+  "string": [
+    {
+      "name": "web_page_snap_shot_main_page_button_height",
+      "value": "40"
+    },
+    {
+      "name": "web_page_snap_shot_main_page_button_margin",
+      "value": "15"
+    },
+    {
+      "name": "web_page_snap_shot_main_page_size_proportion",
+      "value": "80%"
+    },
+    {
+      "name": "web_page_snap_shot_web_page_title",
+      "value": "Web页面长截图"
+    },
+    {
+      "name": "web_page_snap_shot_component_page_title",
+      "value": "滚动组件页面长截图"
+    },
+    {
+      "name": "web_page_snap_shot_web_snap_full_size",
+      "value": "100%"
+    },
+    {
+      "name": "web_page_snap_shot_web_snap_page_title",
+      "value": "Web组件长截图"
+    },
+    {
+      "name": "web_page_snap_shot_scrollable_component_snap_page_title",
+      "value": "滚动组件长截图"
+    },
+    {
+      "name": "web_page_snap_shot_web_snap_snapshot_button_title",
+      "value": "截图"
+    },
+    {
+      "name": "web_page_snap_shot_scrollable_component_snapshot_button_title",
+      "value": "滚动截图"
+    },
+    {
+      "name": "web_page_snap_shot_snapshot_button_title",
+      "value": "一键截图"
+    },
+    {
+      "name": "web_page_snap_shot_web_snap_finish_load_prompt",
+      "value": "网页加载完成"
+    },
+    {
+      "name": "web_page_snap_shot_web_snap_concat_image",
+      "value": "正在生成截图..."
+    },
+    {
+      "name": "web_page_snap_shot_web_snap_saved_to_album",
+      "value": "已保存至相册。"
+    },
+    {
+      "name": "web_page_snap_shot_web_snap_saved_to_album_fail",
+      "value": "设置权限失败"
+    },
+    {
+      "name": "web_page_snap_shot_web_snap_button_backgrounp_color",
+      "value": "#FFCFCFCF"
+    },
+    {
+      "name": "web_page_snap_shot_web_snap_window_bottom_backgrounp_color",
+      "value": "#FFCFCFCF"
+    },
+    {
+      "name": "web_page_snap_shot_web_snap_text_popup_backgroundcolor",
+      "value": "#bea3a3a3"
+    },
+    {
+      "name": "web_page_snap_shot_web_snap_prompt_snapshotting",
+      "value": "正在截图，请勿操作..."
+    },
+    {
+      "name": "web_page_snap_shot_web_snap_popup_prompt_snapshotting",
+      "value": "正在截图，请稍等..."
+    },
+    {
+      "name": "web_page_snap_shot_web_snap_cancel",
+      "value": "取消"
+    },
+    {
+      "name": "web_page_snap_shot_ohos_id_text_size_headline",
+      "value": "20"
+    },
+    {
+      "name": "web_page_snap_shot_ohos_id_corner_radius_default_m",
+      "value": "12"
+    },
+    {
+      "name": "web_page_snap_shot_ohos_id_card_margin_start",
+      "value": "12"
+    },
+    {
+      "name": "web_page_snap_shot_ohos_id_card_padding_start",
+      "value": "12"
+    },
+    {
+      "name": "web_page_snap_shot_web_page_card_margin_start",
+      "value": "10"
+    },
+    {
+      "name": "web_page_snap_shot_list_element_text_height",
+      "value": "100"
+    },
+    {
+      "name": "web_page_snap_shot_list_element_text_font_size",
+      "value": "16"
+    },
+    {
+      "name": "web_page_snap_shot_list_element_text_border_radius",
+      "value": "10"
+    },
+    {
+      "name": "web_page_snap_shot_list_scroll_friction",
+      "value": "0.6"
+    },
+    {
+      "name": "web_page_snap_shot_list_divider_stroke_width",
+      "value": "2"
+    },
+    {
+      "name": "web_page_snap_shot_list_divider_start_end_margin",
+      "value": "20"
+    },
+    {
+      "name": "save_permission",
+      "value": "保存到相册权限"
+    },
+    {
+      "name": "print_permission",
+      "value": "打印需要申请权限"
+    },
+    {
+      "name": "web_page_snap_shot_print",
+      "value": "打印"
+    },
+    {
+      "name": "web_page_snap_shot_web_print_button_title",
+      "value": "打印"
+    },
+    {
+      "name": "web_page_snap_shot_scrollable_component_background_color",
+      "value": "#FFDCDCDC"
+    },
+    {
+      "name": "web_page_snap_shot_list_background_color",
+      "value": "#FFFFFFFF"
+    },
+    {
+      "name": "web_page_snap_shot_comment_image_width",
+      "value": "50"
+    },
+    {
+      "name": "web_page_snap_shot_comment_image_border_radius",
+      "value": "15"
+    },
+    {
+      "name": "web_page_snap_shot_comment_image_left_margin",
+      "value": "12"
+    },
+    {
+      "name": "web_page_snap_shot_comment_image_right_margin",
+      "value": "10"
+    },
+    {
+      "name": "web_page_snap_shot_comment_text_space",
+      "value": "5"
+    },
+    {
+      "name": "web_page_snap_shot_comment_text_name_fontsize",
+      "value": "12"
+    },
+    {
+      "name": "web_page_snap_shot_comment_text_content_fontsize",
+      "value": "15"
+    },
+    {
+      "name": "web_page_snap_shot_comment_text_content_width",
+      "value": "75%"
+    },
+    {
+      "name": "web_page_snap_shot_comment_text_time_address_span",
+      "value": "."
+    }
+  ]
+}

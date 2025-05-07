@@ -1,0 +1,24 @@
+{
+  "string": [
+    {
+      "name": "card_swiper_full_size",
+      "value": "100%"
+    },
+    {
+      "name": "card_swiper_photo_preview_width",
+      "value": "90%"
+    },
+    {
+      "name": "card_swiper_tablet_preview_width",
+      "value": "45%"
+    },
+    {
+      "name": "card_swiper_animation_component_size",
+      "value": "100%"
+    },
+    {
+      "name": "card_swiper_component_size",
+      "value": "100%"
+    }
+  ]
+}

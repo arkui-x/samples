@@ -1,0 +1,20 @@
+{
+  "integer": [
+    {
+      "name": "digging_hole_screen_title_font_size",
+      "value": 16
+    },
+    {
+      "name": "digging_hole_screen_text_padding_left",
+      "value": 12
+    },
+    {
+      "name": "digging_hole_screen_text_padding_right",
+      "value": 16
+    },
+    {
+      "name": "digging_hole_screen_text_margin_top",
+      "value": 14
+    }
+  ]
+}

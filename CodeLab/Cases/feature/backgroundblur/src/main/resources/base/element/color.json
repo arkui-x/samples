@@ -1,0 +1,12 @@
+{
+  "color": [
+    {
+      "name": "background_blur_selected_text_color",
+      "value": "#1296db"
+    },
+    {
+      "name": "background_blur_tabs_bar_background_color",
+      "value": "#FFE9E9E9"
+    }
+  ]
+}

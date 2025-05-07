@@ -1,0 +1,324 @@
+{
+  "integer": [
+    {
+      "name": "text_flow_text_input_height",
+      "value": 40
+    },
+    {
+      "name": "text_flow_text_sixteen",
+      "value": 16
+    },
+    {
+      "name": "text_flow_text_input_padding_right",
+      "value": 50
+    },
+    {
+      "name": "text_flow_text_input_padding_top",
+      "value": 3
+    },
+    {
+      "name": "text_flow_text_input_padding_bottom",
+      "value": 3
+    },
+    {
+      "name": "text_flow_text_input_margin_top",
+      "value": 10
+    },
+    {
+      "name": "text_flow_image_camera_margin_top",
+      "value": 10
+    },
+    {
+      "name": "text_flow_button_publish_width",
+      "value": 60
+    },
+    {
+      "name": "text_flow_button_publish_height",
+      "value": 30
+    },
+    {
+      "name": "text_flow_button_publish_border_radius",
+      "value": 15
+    },
+    {
+      "name": "text_flow_image_camera_width",
+      "value": 30
+    },
+    {
+      "name": "text_flow_image_camera_height",
+      "value": 30
+    },
+    {
+      "name": "text_flow_relative_container_input_height",
+      "value": 50
+    },
+    {
+      "name": "text_flow_column_input_padding",
+      "value": 10
+    },
+    {
+      "name": "text_flow_image_avatar_height",
+      "value": 50
+    },
+    {
+      "name": "text_flow_image_avatar_width",
+      "value": 50
+    },
+    {
+      "name": "text_flow_image_avatar_border_radius",
+      "value": 25
+    },
+    {
+      "name": "text_flow_comment_column_info_margin_left",
+      "value": 5
+    },
+    {
+      "name": "text_flow_text_comment_margin_top",
+      "value": 5
+    },
+    {
+      "name": "text_flow_list_comment_image_margin_top",
+      "value": 5
+    },
+    {
+      "name": "text_flow_view_comment_padding",
+      "value": 10
+    },
+    {
+      "name": "text_flow_text_flow_image_width",
+      "value": 100
+    },
+    {
+      "name": "text_flow_text_flow_width",
+      "value": 500
+    },
+    {
+      "name": "text_flow_text_flow_image_border_radius",
+      "value": 5
+    },
+    {
+      "name": "text_flow_list_comment_image_space",
+      "value": 10
+    },
+    {
+      "name": "text_flow_list_comment_image_height",
+      "value": 120
+    },
+    {
+      "name": "text_flow_list_comment_image_padding_top",
+      "value": 10
+    },
+    {
+      "name": "text_flow_list_comment_image_padding_bottom",
+      "value": 10
+    },
+    {
+      "name": "text_flow_text_hot_comment_height",
+      "value": 40
+    },
+    {
+      "name": "text_flow_text_hot_comment_padding_left",
+      "value": 10
+    },
+    {
+      "name": "text_flow_text_hot_comment_border_width_bottom",
+      "value": 1
+    },
+    {
+      "name": "text_flow_list_comment_margin_bottom",
+      "value": 50
+    },
+    {
+      "name": "text_flow_text_no_comment_margin_bottom",
+      "value": 50
+    },
+    {
+      "name": "text_flow_text_input_hint_height",
+      "value": 40
+    },
+    {
+      "name": "text_flow_text_input_hint_border_radius",
+      "value": 30
+    },
+    {
+      "name": "text_flow_text_input_hint_padding_left",
+      "value": 15
+    },
+    {
+      "name": "text_flow_text_input_hint_border_width",
+      "value": 1
+    },
+    {
+      "name": "text_flow_row_input_hint_border_width_top",
+      "value": 1
+    },
+    {
+      "name": "text_flow_row_input_hint_height",
+      "value": 50
+    },
+    {
+      "name": "text_flow_column_input_dialog_offset_y",
+      "value": 20
+    },
+    {
+      "name": "text_flow_image_delete_height",
+      "value": 20
+    },
+    {
+      "name": "text_flow_image_delete_width",
+      "value": 20
+    },
+    {
+      "name": "text_flow_image_relative_container_height",
+      "value": 110
+    },
+    {
+      "name": "text_flow_image_relative_container_width",
+      "value": 110
+    },
+    {
+      "name": "text_flow_dialog_offset_x",
+      "value": 0
+    },
+    {
+      "name": "text_flow_dialog_offset_y",
+      "value": -20
+    },
+    {
+      "name": "text_flow_font_size",
+      "value": 14
+    },
+    {
+      "name": "text_flow_font_weight_high",
+      "value": 500
+    },
+    {
+      "name": "text_flow_url_width_height",
+      "value": 30
+    },
+    {
+      "name": "text_flow_url_margin_bottom",
+      "value": 25
+    },
+    {
+      "name": "text_flow_url_margin_top",
+      "value": 10
+    },
+    {
+      "name": "text_flow_url_margin_left",
+      "value": 15
+    },
+    {
+      "name": "text_flow_reply_margin_left",
+      "value": 10
+    },
+    {
+      "name": "text_flow_column_padding_left",
+      "value": 12
+    },
+    {
+      "name": "text_flow_column_padding_top",
+      "value": 10
+    },
+    {
+      "name": "text_flow_row_margin_bottom",
+      "value": 10
+    },
+    {
+      "name": "text_flow_row_margin_top",
+      "value": 10
+    },
+    {
+      "name": "text_flow_root_column_margin_left",
+      "value": 30
+    },
+    {
+      "name": "text_flow_root_column_margin_top",
+      "value": 10
+    },
+    {
+      "name": "text_flow_root_text_input_height",
+      "value": 40
+    },
+    {
+      "name": "text_flow_root_text_input_padding_left",
+      "value": 10
+    },
+    {
+      "name": "text_flow_root_text_input_padding_right",
+      "value": 50
+    },
+    {
+      "name": "text_flow_root_text_input_padding_top",
+      "value": 3
+    },
+    {
+      "name": "text_flow_root_text_input_padding_bottom",
+      "value": 3
+    },
+    {
+      "name": "text_flow_root_text_input_margin_right",
+      "value": 10
+    },
+    {
+      "name": "text_flow_root_btn_width",
+      "value": 60
+    },
+    {
+      "name": "text_flow_root_btn_height",
+      "value": 30
+    },
+    {
+      "name": "text_flow_relative_container_height",
+      "value": 50
+    },
+    {
+      "name": "text_flow_column_padding",
+      "value": 10
+    },
+    {
+      "name": "text_flow_text_padding_right",
+      "value": 10
+    },
+    {
+      "name": "text_flow_img_width",
+      "value": 6
+    },
+    {
+      "name": "text_flow_img_height",
+      "value": 12
+    },
+    {
+      "name": "text_flow_list_margin_left",
+      "value": 5
+    },
+    {
+      "name": "text_flow_list_margin_bottom",
+      "value": 10
+    },
+    {
+      "name": "text_flow_column2_padding_top",
+      "value": 12
+    },
+    {
+      "name": "text_flow_column2_padding_bottom",
+      "value": 12
+    },
+    {
+      "name": "text_flow_column2_padding_left_right",
+      "value": 16
+    },
+    {
+      "name": "text_flow_text_line_height",
+      "value": 20
+    },
+    {
+      "name": "text_flow_img_width_height",
+      "value": 30
+    },
+    {
+      "name": "text_flow_img_margin_bottom",
+      "value": 25
+    }
+  ]
+}

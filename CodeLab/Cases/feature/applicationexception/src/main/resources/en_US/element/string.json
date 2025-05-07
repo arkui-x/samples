@@ -1,0 +1,32 @@
+{
+  "string": [
+    {
+      "name": "application_exception_crash_event",
+      "value": "Click to build application crash event"
+    },
+    {
+      "name": "application_exception_freeze_event",
+      "value": "Click to build application stuck event"
+    },
+    {
+      "name": "application_exception_application_fault_title",
+      "value": "Application fault message"
+    },
+    {
+      "name": "application_exception_application_fault_description_harmonyos",
+      "value": "Click to build an abnormal event. the system abnormal event will be triggered. You need to restart the application and enter this page to obtain the reason for the last abnormal exit"
+    },
+    {
+      "name": "application_exception_application_fault_description_arkuix",
+      "value": "Click to build an exception event, Due to specifications and actual machine performance reasons, it will take about 1 minute to obtain the exception data"
+    },
+    {
+      "name": "application_exception_no_message",
+      "value": "no_message"
+    },
+    {
+      "name": "application_exception_data_delay_toast",
+      "value": "数据大约在1-3min会进行更新"
+    }
+  ]
+}

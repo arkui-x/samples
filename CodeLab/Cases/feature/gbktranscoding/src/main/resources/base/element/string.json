@@ -1,0 +1,40 @@
+{
+  "string": [
+    {
+      "name": "gbk_contacts",
+      "value": "通讯录"
+    },
+    {
+      "name": "gbk_harmony_hei_ti",
+      "value": "HarmonyHeiTi"
+    },
+    {
+      "name": "gbk_layout_100",
+      "value": "100%"
+    },
+    {
+      "name": "gbk_search_place_holder",
+      "value": "搜索..."
+    },
+    {
+      "name": "gbk_search_inline_border_color",
+      "value": "rgba(24,36,49,0.20)"
+    },
+    {
+      "name": "gbk_friends_page_height",
+      "value": "82%"
+    },
+    {
+      "name": "gbk_friends_pages_tips_title",
+      "value": "功能描述"
+    },
+    {
+      "name": "gbk_friends_pages_tips_content",
+      "value": "使用Axios获取编码格式为GBK的数据，使用TextDecoder解码成UTF-8。"
+    },
+    {
+      "name": "gbk_only_show",
+      "value": "此样式仅为案例展示"
+    }
+  ]
+}

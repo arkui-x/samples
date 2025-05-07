@@ -1,0 +1,72 @@
+{
+  "string": [
+    {
+      "name": "custom_keyboard_to_h5_login_button",
+      "value": "登录按钮"
+    },
+    {
+      "name": "custom_keyboard_to_h5_keyboard_title",
+      "value": "安全输入法"
+    },
+    {
+      "name": "custom_keyboard_to_h5_keyboard_submit",
+      "value": "完成"
+    },
+    {
+      "name": "custom_keyboard_to_h5_one_hundred_percent",
+      "value": "100%"
+    },
+    {
+      "name": "page_show",
+      "value": "page from package"
+    },
+    {
+      "name": "custom_keyboard_to_h5_request_permissions_reason",
+      "value": "user_grant"
+    },
+    {
+      "name": "custom_keyboard_to_h5_layout_100",
+      "value": "100%"
+    },
+    {
+      "name": "custom_keyboard_to_h5_layout_33",
+      "value": "33%"
+    },
+    {
+      "name": "custom_keyboard_to_h5_layout_40",
+      "value": "40%"
+    },
+    {
+      "name": "custom_keyboard_to_h5_layout_50",
+      "value": "50%"
+    },
+    {
+      "name": "custom_keyboard_to_h5_layout_80",
+      "value": "80%"
+    },
+    {
+      "name": "custom_keyboard_to_h5_need_network",
+      "value": "此功能需联网使用"
+    },
+    {
+      "name": "custom_keyboard_to_h5_input_url",
+      "value": "输入网址..."
+    },
+    {
+      "name": "custom_keyboard_to_h5_keep_visit",
+      "value": "继续访问"
+    },
+    {
+      "name": "custom_keyboard_to_h5_risky_content",
+      "value": "此网页疑似含有风险内容"
+    },
+    {
+      "name": "custom_keyboard_to_h5_risky_url",
+      "value": "您访问的网页疑似含有不良/违规内容，请谨慎访问"
+    },
+    {
+      "name": "custom_keyboard_to_h5_button_back",
+      "value": "返回"
+    }
+  ]
+}

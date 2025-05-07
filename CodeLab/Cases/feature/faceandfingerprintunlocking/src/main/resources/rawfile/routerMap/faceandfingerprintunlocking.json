@@ -1,0 +1,10 @@
+{
+  "routerMap": [
+    {
+      "name": "faceandfingerprintunlocking/FaceAndFingerprintUnlockingComponent",
+      "pageModule": "faceandfingerprintunlocking",
+      "pageSourceFile": "src/main/ets/generated/RouterBuilder.ets",
+      "registerFunction": "faceAndFingerprintUnlockingComponentRegister"
+    }
+  ]
+}

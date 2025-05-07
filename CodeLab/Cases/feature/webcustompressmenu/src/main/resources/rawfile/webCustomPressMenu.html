@@ -1,0 +1,81 @@
+<!--
+  ~ Copyright (c) 2024 Huawei Device Co., Ltd.
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~     http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web自定义长按菜单</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: rgb(213, 230,243);
+            color: #333;
+        }
+        .container {
+            border-radius: 15px;
+            overflow: hidden;
+            background-color: rgb(213, 230,243);
+        }
+        header {
+            background-color: rgb(213, 230,243);
+            padding: 20px;
+            text-align: left;
+        }
+        .content {
+            max-width: 600px;
+            margin: auto;
+            text-align: left;
+            padding: 20px;
+            background-color: rgb(213, 230,243);
+        }
+        a.button {
+            display: inline-block;
+            background-color: #000;
+            color: #fff;
+            border-radius: 50px;
+            padding: 10px 20px;
+            text-decoration: none;
+            cursor: pointer;
+            -webkit-tap-highlight-color: rgba(0,0,0,0);
+        }
+        img {
+            width: 100%;
+            padding-top: 30px;
+            padding-bottom: 30px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1>Web自定义长按菜单</h1>
+    </header>
+
+    <div class="content">
+        <p>长按特定元素（例如图片，链接）或鼠标右键，跳出菜单。给Web组件绑定popup弹窗，并设置弹窗内容，交互逻辑和显示状态。</p> <!-- 在这里添加完整的文本 -->
+
+        <a id="web_custom_press_menu_link" href="https://developer.huawei.com/consumer/cn/next" class="button">链接元素</a>
+
+    </div>
+
+    <img id="web_custom_press_menu_image" src="example.png" alt="Icon">
+
+</div>
+
+</body>
+</html>

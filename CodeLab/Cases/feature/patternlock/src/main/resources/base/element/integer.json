@@ -1,0 +1,44 @@
+{
+  "integer": [
+    {
+      "name": "pattern_lock_message_fontsize",
+      "value": 16
+    },
+    {
+      "name": "pattern_lock_border_radius",
+      "value": 10
+    },
+    {
+      "name": "pattern_lock_side_length",
+      "value": 300
+    },
+    {
+      "name": "pattern_lock_circle_radius",
+      "value": 10
+    },
+    {
+      "name": "pattern_lock_path_stroke_width",
+      "value": 14
+    },
+    {
+      "name": "pattern_lock_row_space",
+      "value": 20
+    },
+    {
+      "name": "pattern_lock_row_margin",
+      "value": 30
+    },
+    {
+      "name": "pattern_lock_button_width",
+      "value": 300
+    },
+    {
+      "name": "pattern_lock_new_page_text_fontsize",
+      "value": 18
+    },
+    {
+      "name": "pattern_lock_new_page_text_margin_top",
+      "value": 20
+    }
+  ]
+}

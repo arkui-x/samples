@@ -1,0 +1,48 @@
+{
+  "integer": [
+    {
+      "name": "nativesavepictosandbox_common_padding_top",
+      "value": 5
+    },
+    {
+      "name": "nativesavepictosandbox_common_margin_left",
+      "value": 10
+    },
+    {
+      "name": "nativesavepictosandbox_common_radius",
+      "value": 10
+    },
+    {
+      "name": "nativesavepictosandbox_common_padding",
+      "value": 10
+    },
+    {
+      "name": "nativesavepictosandbox_padding12",
+      "value": 12
+    },
+    {
+      "name": "nativesavepictosandbox_margin",
+      "value": 10
+    },
+    {
+      "name": "nativesavepictosandbox_margin12",
+      "value": 12
+    },
+    {
+      "name": "nativesavepictosandbox_image_width",
+      "value": 96
+    },
+    {
+      "name": "nativesavepictosandbox_image_height",
+      "value": 140
+    },
+    {
+      "name": "nativesavepictosandbox_image_height180",
+      "value": 180
+    },
+    {
+      "name": "nativesavepictosandbox_font_size_14",
+      "value": 14
+    }
+  ]
+}

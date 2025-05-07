@@ -1,0 +1,20 @@
+{
+  "color": [
+    {
+      "name": "ohos_id_color_palette8",
+      "value": "#0A59F7"
+    },
+    {
+      "name": "ohos_id_color_text_secondary",
+      "value": "#99000000"
+    },
+    {
+      "name": "ohos_id_color_background",
+      "value": "#FFFFFF"
+    },
+    {
+      "name": "ohos_id_color_foreground",
+      "value": "#000000"
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "color": [
+    {
+      "name": "encapsulation_dialog_box_shadow",
+      "value": "#ffd2d2d2"
+    },{
+      "name": "encapsulation_dialog_color_33000000",
+      "value": "#33000000"
+    },{
+      "name": "encapsulation_dialog_color_A6A6A6",
+      "value": "#A6A6A6"
+    },{
+      "name": "encapsulation_dialog_color_FEFEFE",
+      "value": "#FEFEFE"
+    },{
+      "name": "encapsulation_dialog_color_3C7CFC",
+      "value": "#3C7CFC"
+    },{
+      "name": "encapsulation_dialog_color_383838",
+      "value": "#383838"
+    },{
+      "name": "encapsulation_dialog_color_F7F7F7",
+      "value": "#F7F7F7"
+    },{
+      "name": "encapsulation_dialog_color_FF0A59F7",
+      "value": "#FF0A59F7"
+    },{
+      "name": "encapsulation_dialog_color_E5E5E5",
+      "value": "#E5E5E5"
+    },{
+      "name": "encapsulation_dialog_color_F5F7FA",
+      "value": "#F5F7FA"
+    },{
+      "name": "encapsulation_dialog_color_182431",
+      "value": "#182431"
+    },{
+      "name": "encapsulation_dialog_color_8A9095",
+      "value": "#8A9095"
+    },{
+      "name": "encapsulation_dialog_color_80CCCCCC",
+      "value": "#80CCCCCC"
+    }
+  ]
+}

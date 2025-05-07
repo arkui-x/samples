@@ -1,0 +1,12 @@
+{
+  "color": [
+    {
+      "name": "nativerawfile_background_color",
+      "value": "#DFDFDF"
+    },
+    {
+      "name": "nativerawfile_border_color",
+      "value": "#317AF7"
+    }
+  ]
+}

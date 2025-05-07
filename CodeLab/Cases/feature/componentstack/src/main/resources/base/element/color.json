@@ -1,0 +1,16 @@
+{
+  "color": [
+    {
+      "name": "component_stack_product_warning",
+      "value": "#E84026"
+    },
+    {
+      "name": "component_stack_product_alert",
+      "value": "#ED6F21"
+    },
+    {
+      "name": "component_stack_product_background",
+      "value": "#F1F3F5"
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "integer": [
+    {
+      "name": "stepper_header_image_height",
+      "value": 40
+    },
+    {
+      "name": "stepper_category_font_size",
+      "value": 20
+    },
+    {
+      "name": "stepper_table_font_size",
+      "value": 20
+    },
+    {
+      "name": "stepper_title_font_size",
+      "value": 24
+    },
+    {
+      "name": "stepper_usernotice_font_size",
+      "value": 20
+    }
+  ]
+}

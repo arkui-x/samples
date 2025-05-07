@@ -1,0 +1,108 @@
+{
+  "integer": [
+    {
+      "name": "bar_chart_padding_top",
+      "value": 5
+    },
+    {
+      "name": "bar_chart_margin_left",
+      "value": 10
+    },
+    {
+      "name": "bar_chart_radius",
+      "value": 10
+    },
+    {
+      "name": "bar_chart_padding",
+      "value": 10
+    },
+    {
+      "name": "bar_chart_margin_right_twenty_five",
+      "value": 25
+    },
+    {
+      "name": "bar_chart_radius_top",
+      "value": 8
+    },
+    {
+      "name": "bar_chart_menu_text_size",
+      "value": 16
+    },
+    {
+      "name": "bar_chart_menu_image_size",
+      "value": 24
+    },
+    {
+      "name": "bar_chart_menu_item_height",
+      "value": 48
+    },
+    {
+      "name": "bar_chart_menu_item_width",
+      "value": 192
+    },
+    {
+      "name": "bar_chart_menu_border_radius",
+      "value": 20
+    },
+    {
+      "name": "bar_chart_menu_width",
+      "value": 224
+    },
+    {
+      "name": "bar_chart_height",
+      "value": 250
+    },
+    {
+      "name": "bar_chart_border_padding",
+      "value": 10
+    },
+    {
+      "name": "bar_chart_list_small_text_size",
+      "value": 14
+    },
+    {
+      "name": "bar_chart_list_small_text_margin",
+      "value": 12
+    },
+    {
+      "name": "bar_chart_list_small_text_height",
+      "value": 30
+    },
+    {
+      "name": "bar_chart_list_big_text_size",
+      "value": 16
+    },
+    {
+      "name": "bar_chart_list_checkbox_size",
+      "value": 20
+    },
+    {
+      "name": "bar_chart_list_item_height",
+      "value": 48
+    },
+    {
+      "name": "bar_chart_list_item_padding",
+      "value": 12
+    },
+    {
+      "name": "bar_chart_padding_bottom",
+      "value": 280
+    },
+    {
+      "name": "bar_chart_list_card_padding",
+      "value": 4
+    },
+    {
+      "name": "bar_chart_list_card_margin",
+      "value": 8
+    },
+    {
+      "name": "bar_chart_list_card_border_radius",
+      "value": 14
+    },
+    {
+      "name": "bar_chart_spinner_width",
+      "value": 22
+    }
+  ]
+}

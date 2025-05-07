@@ -1,0 +1,20 @@
+{
+  "color": [
+    {
+      "name": "ohos_id_color_sub_background",
+      "value": "#F1F3F5"
+    },
+    {
+      "name": "photo_pick_and_save_bind_popup_color",
+      "value": "#fefefe"
+    },
+    {
+      "name": "photo_pick_and_save_button_background_color",
+      "value": "#317AFF"
+    },
+    {
+      "name": "photo_pick_and_save_bind_popup_mask_color",
+      "value": "#33000000"
+    }
+  ]
+}

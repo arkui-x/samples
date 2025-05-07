@@ -1,0 +1,20 @@
+{
+  "string": [
+    {
+      "name": "background_blur_main",
+      "value": "首页"
+    },
+    {
+      "name": "background_blur_discover",
+      "value": "发现"
+    },
+    {
+      "name": "background_blur_hot",
+      "value": "热点"
+    },
+    {
+      "name": "background_blur_my",
+      "value": "我的"
+    }
+  ]
+}

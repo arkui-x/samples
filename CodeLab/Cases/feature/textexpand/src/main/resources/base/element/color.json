@@ -1,0 +1,40 @@
+{
+  "color": [
+    {
+      "name": "text_expand_tab_name",
+      "value": "#182431"
+    },
+    {
+      "name": "text_expand_selected_tab_name",
+      "value": "#007DFF"
+    },
+    {
+      "name": "text_expand_divider_color",
+      "value": "#007DFF"
+    },
+    {
+      "name": "text_expand_search_background_color",
+      "value": "#F5F5F5"
+    },
+    {
+      "name": "text_expand_divider_0c_color",
+      "value": "#cccccc"
+    },
+    {
+      "name": "text_expand_bar_background_color",
+      "value": "#F1F3F5"
+    },
+    {
+      "name": "text_expand_item_text_font_color",
+      "value": "#ffcac8c8"
+    },
+    {
+      "name": "text_expand_black_font_color",
+      "value": "#000000"
+    },
+    {
+      "name": "text_expand_search_bg_color",
+      "value": "#FFFFFF"
+    }
+  ]
+}

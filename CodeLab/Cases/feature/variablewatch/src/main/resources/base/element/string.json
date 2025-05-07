@@ -1,0 +1,60 @@
+{
+  "string": [
+    {
+      "name": "variablewatch_page_show",
+      "value": "page from package"
+    },
+    {
+      "name": "variablewatch_mall",
+      "value": "商城"
+    },
+    {
+      "name": "variablewatch_top_recommend",
+      "value": "热门推荐"
+    },
+    {
+      "name": "variablewatch_refresh_data",
+      "value": "刷新商品和价格（仅演示）"
+    },
+    {
+      "name": "variablewatch_full_size",
+      "value": "100%"
+    },
+    {
+      "name": "variablewatch_picture_size",
+      "value": "40%"
+    },
+    {
+      "name": "variablewatch_headline",
+      "value": "功能介绍"
+    },
+    {
+      "name": "variablewatch_function_introduction",
+      "value": "该方案展示了三层类嵌套对象的监听，使用@ObjectLink和@Observed类装饰器进行双向数据同步，其中的图片和价格是第三层的数据，点击按钮更新数据，图片和价格也会刷新显示"
+    },
+    {
+      "name": "variablewatch_text_size_headline",
+      "value": "20"
+    },
+    {
+      "name": "variablewatch_text_size_body1",
+      "value": "14"
+    },
+    {
+      "name": "variablewatch_card_margin_start",
+      "value": "12"
+    },
+    {
+      "name": "variablewatch_corner_radius_default_m",
+      "value": "12"
+    },
+    {
+      "name": "variablewatch_elements_margin_vertical_m",
+      "value": "8"
+    },
+    {
+      "name": "variablewatch_text_size_body2",
+      "value": "14"
+    }
+  ]
+}

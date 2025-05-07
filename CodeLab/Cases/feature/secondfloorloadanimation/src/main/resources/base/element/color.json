@@ -1,0 +1,32 @@
+{
+  "color": [
+    {
+      "name": "start_window_background",
+      "value": "#FFFFFF"
+    },
+    {
+      "name": "second_floor_navigation_bar_color",
+      "value": "#EDEDED"
+    },
+    {
+      "name": "second_floor_circular_color",
+      "value": "#ff242424"
+    },
+    {
+      "name": "second_floor_screen_color",
+      "value": "#EDEDED"
+    },
+    {
+      "name": "second_floor_chat_view_userinfo_last_msg_font_color",
+      "value": "#999999"
+    },
+    {
+      "name": "second_floor_chat_view_border_color",
+      "value": "#e4e4e4"
+    },
+    {
+      "name": "second_floor_second_floor_title_color",
+      "value": "#ffffff"
+    }
+  ]
+}

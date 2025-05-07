@@ -1,0 +1,40 @@
+{
+  "string": [
+    {
+      "name": "handletabs_handle_tabs_shared_desc",
+      "value": "description"
+    },
+    {
+      "name": "handletabs_handle_tabs_handle_tabs",
+      "value": "增删页签"
+    },
+    {
+      "name": "handletabs_handle_tabs_handle_tabs_desc",
+      "value": "本示例介绍使用了实现自定义增删Tab页签的功能。该场景多用于浏览器等场景。"
+    },
+    {
+      "name": "handletabs_handle_tabs_new_sheet",
+      "value": "新增标签"
+    },
+    {
+      "name": "handletabs_handle_toast",
+      "value": "最多6个标签"
+    },
+    {
+      "name": "handletabs_corner_radius_default_m",
+      "value": "12"
+    },
+    {
+      "name": "handletabs_card_padding_start",
+      "value": "12"
+    },
+    {
+      "name": "handletabs_elements_margin_vertical_m",
+      "value": "8"
+    },
+    {
+      "name": "handletabs_text_size_headline",
+      "value": "20"
+    }
+  ]
+}

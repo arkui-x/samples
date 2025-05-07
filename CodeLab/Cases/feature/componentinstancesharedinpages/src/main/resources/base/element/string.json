@@ -1,0 +1,24 @@
+{
+  "string": [
+    {
+      "name": "componentinstancesharedinpages_demo_toast_tips",
+      "value": "For aesthetic purposes only, please implement according to your business needs."
+    },
+    {
+      "name": "location_popup_address_for_test",
+      "value": "Orange Hotel in Sky City (intersection of XX Road and XX Road)"
+    },
+    {
+      "name": "location_tip_for_test",
+      "value": "Last pick-up point"
+    },
+    {
+      "name": "image_click_tip_for_test",
+      "value": "If you click on the real image, you can set the callback of the click event as needed"
+    },
+    {
+      "name": "addr_click_tip_for_test",
+      "value": "If you click the address, you can set the callback of the click event as needed"
+    }
+  ]
+}

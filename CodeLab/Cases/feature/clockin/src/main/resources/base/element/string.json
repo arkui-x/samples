@@ -1,0 +1,52 @@
+{
+  "string": [
+    {
+      "name": "clock_in_permission_request_reason",
+      "value": "用于打卡定位"
+    },
+    {
+      "name": "clock_in_top_text",
+      "value": "考勤打卡"
+    },
+    {
+      "name": "clock_in_button_text_clock_in",
+      "value": "上班打卡"
+    },
+    {
+      "name": "clock_in_button_text_update",
+      "value": "更新打卡"
+    },
+    {
+      "name": "clock_in_button_text_clock_out",
+      "value": "下班打卡"
+    },
+    {
+      "name": "clock_in_toast_message_out_of_range",
+      "value": "打卡范围外，请先前往打卡范围打卡"
+    },
+    {
+      "name": "clock_in_today_message",
+      "value": "今天是%1$s"
+    },
+    {
+      "name": "clock_in_policy_message",
+      "value": "根据考勤制度，严禁员工代打卡，一经发现严肃处理!"
+    },
+    {
+      "name": "clock_in_checked_in",
+      "value": "已签到"
+    },
+    {
+      "name": "clock_in_checked_out",
+      "value": "已签退"
+    },
+    {
+      "name": "clock_in_full_size",
+      "value": "100%"
+    },
+    {
+      "name": "clock_in_map_container_height",
+      "value": "calc(100% + 16vp)"
+    }
+  ]
+}

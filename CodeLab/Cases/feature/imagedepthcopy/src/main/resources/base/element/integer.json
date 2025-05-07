@@ -1,0 +1,20 @@
+{
+  "integer": [
+    {
+      "name": "image_depthcopy_margin_12",
+      "value": 12
+    },
+    {
+      "name": "image_depthcopy_margin_20",
+      "value": 20
+    },
+    {
+      "name": "image_depthcopy_padding_12",
+      "value": 12
+    },
+    {
+      "name": "image_depthcopy_padding_20",
+      "value": 20
+    }
+  ]
+}

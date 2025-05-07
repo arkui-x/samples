@@ -1,0 +1,16 @@
+{
+  "routerMap": [
+    {
+      "name": "groupavatar/GroupAvatarMainPage",
+      "pageModule": "groupavatar",
+      "pageSourceFile": "src/main/ets/generated/RouterBuilder.ets",
+      "registerFunction": "groupAvatarMainPageRegister"
+    },
+    {
+      "name": "groupavatar/GroupAvatarAddPage",
+      "pageModule": "groupavatar",
+      "pageSourceFile": "src/main/ets/generated/RouterBuilder.ets",
+      "registerFunction": "groupAvatarAddPageRegister"
+    }
+  ]
+}

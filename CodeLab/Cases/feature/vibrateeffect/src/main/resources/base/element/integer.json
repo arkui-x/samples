@@ -1,0 +1,52 @@
+{
+  "integer": [
+    {
+      "name": "vibrateeffect_vibrate_time",
+      "value": 600
+    },
+    {
+      "name": "vibrateeffect_elements_height",
+      "value": 100
+    },
+    {
+      "name": "vibrateeffect_text_width",
+      "value": 100
+    },
+    {
+      "name": "vibrateeffect_image_size",
+      "value": 80
+    },
+    {
+      "name": "vibrateeffect_image_size2",
+      "value": 10
+    },
+    {
+      "name": "vibrateeffect_circle_icon_size",
+      "value": 15
+    },
+    {
+      "name": "vibrateeffect_circle_elements_width",
+      "value": 20
+    },
+    {
+      "name": "vibrateeffect_circle_elements_height",
+      "value": 15
+    },
+    {
+      "name": "vibrateeffect_mark_height",
+      "value": 20
+    },
+    {
+      "name": "vibrateeffect_total_mark_height",
+      "value": 30
+    },
+    {
+      "name": "vibrateeffect_flex_shrink",
+      "value": 1
+    },
+    {
+      "name": "vibrateeffect_flex_margin",
+      "value": 5
+    }
+  ]
+}

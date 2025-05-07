@@ -1,0 +1,12 @@
+{
+  "color": [
+    {
+      "name": "sideslipintercept_start_window_background",
+      "value": "#FFFFFF"
+    },
+    {
+      "name": "sideslipintercept_button_text_color",
+      "value": "#0000FF"
+    }
+  ]
+}

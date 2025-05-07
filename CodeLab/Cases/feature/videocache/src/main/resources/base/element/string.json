@@ -1,0 +1,24 @@
+{
+  "string": [
+    {
+      "name": "video_cache_progress_width_size",
+      "value": "68%"
+    },
+    {
+      "name": "video_cache_container_width_size",
+      "value": "100%"
+    },
+    {
+      "name": "video_cache_container_height_size",
+      "value": "100%"
+    },
+    {
+      "name": "ohos_id_elements_margin_vertical_m",
+      "value": "8"
+    },
+    {
+      "name": "ohos_id_card_padding_start",
+      "value": "12"
+    }
+  ]
+}

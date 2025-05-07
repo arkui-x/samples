@@ -1,0 +1,88 @@
+{
+  "string": [
+    {
+      "name": "database_upgrade_table_width",
+      "value": "33%"
+    },
+    {
+      "name": "database_upgrade_case_title",
+      "value": "数据库版本升级案例"
+    },
+    {
+      "name": "database_upgrade_arrowhead_text",
+      "value": "↓"
+    },
+    {
+      "name": "database_upgrade_version_upgrade_text",
+      "value": "版本升级"
+    },
+    {
+      "name": "database_upgrade_upgrade_to_v2_button_text",
+      "value": "升级至V2"
+    },
+    {
+      "name": "database_upgrade_upgrade_to_v3_button_text",
+      "value": "升级至V3"
+    },
+    {
+      "name": "database_upgrade_version_restore_text",
+      "value": "版本回退"
+    },
+    {
+      "name": "database_upgrade_restore_to_v2",
+      "value": "回退到V2"
+    },
+    {
+      "name": "database_upgrade_restore_to_v1",
+      "value": "回退到V1"
+    },
+    {
+      "name": "database_upgrade_ninety_percent",
+      "value": "90%"
+    },
+    {
+      "name": "database_upgrade_hundred_percent",
+      "value": "100%"
+    },
+    {
+      "name": "database_upgrade_forty_percent",
+      "value": "30%"
+    },
+    {
+      "name": "database_upgrade_delete_class_name",
+      "value": "delete className"
+    },
+    {
+      "name": "database_upgrade_add_teacher_name",
+      "value": "add teacherName"
+    },
+    {
+      "name": "database_upgrade_add_teacher_first_name",
+      "value": "add teacherFirstName"
+    },
+    {
+      "name": "database_upgrade_rename_teacher_name",
+      "value": "rename teacherName"
+    },
+    {
+      "name": "database_upgrade_to_teacher_first_name",
+      "value": "to teacherFirstName"
+    },
+    {
+      "name": "ohos_id_text_size_headline",
+      "value": "20"
+    },
+    {
+      "name": "ohos_id_elements_margin_vertical_m",
+      "value": "8"
+    },
+    {
+      "name": "ohos_id_corner_radius_default_m",
+      "value": "12"
+    },
+    {
+      "name": "ohos_id_card_padding_start",
+      "value": "12"
+    }
+  ]
+}

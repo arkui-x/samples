@@ -1,0 +1,112 @@
+{
+  "integer": [
+    {
+      "name": "navdialog_comment_reply_font_size",
+      "value": 13
+    },
+    {
+      "name": "navdialog_comment_time_font_size",
+      "value": 12
+    },
+    {
+      "name": "navdialog_comment_padding",
+      "value": 10
+    },
+    {
+      "name": "navdialog_comment_textinput_height",
+      "value": 50
+    },
+    {
+      "name": "navdialog_comment_like_icon_size",
+      "value": 15
+    },
+    {
+      "name": "navdialog_shopbar_shop_name_size",
+      "value": 15
+    },
+    {
+      "name": "navdialog_shopbar_welcome_prompt_font_size",
+      "value": 13
+    },
+    {
+      "name": "navdialog_shopbar_buy_button_width",
+      "value": 90
+    },
+    {
+      "name": "navdialog_shopbar_buy_button_height",
+      "value": 35
+    },
+    {
+      "name": "navdialog_shopbar_cart_img_size",
+      "value": 18
+    },
+    {
+      "name": "navdialog_shopbar_cart_img_radius",
+      "value": 15
+    },
+    {
+      "name": "navdialog_shopbar_purchase_font_size",
+      "value": 13
+    },
+    {
+      "name": "navdialog_shopbar_purchase_radius",
+      "value": 15
+    },
+    {
+      "name": "navdialog_comment_title_height",
+      "value": 35
+    },
+    {
+      "name": "navdialog_comment_title_blank_width",
+      "value": 40
+    },
+    {
+      "name": "navdialog_comment_title_font_size",
+      "value": 15
+    },
+    {
+      "name": "navdialog_comment_title_font_width",
+      "value": 100
+    },
+    {
+      "name": "navdialog_comment_title_close_button_width",
+      "value": 40
+    },
+    {
+      "name": "navdialog_comment_title_close_button_height",
+      "value": 30
+    },
+    {
+      "name": "navdialog_comment_title_close_img_size",
+      "value": 18
+    },
+    {
+      "name": "navdialog_comment_portrait_size",
+      "value": 24
+    },
+    {
+      "name": "navdialog_comment_portrait_radius",
+      "value": 16
+    },
+    {
+      "name": "navdialog_comment_username_font_size",
+      "value": 12
+    },
+    {
+      "name": "navdialog_comment_image_size",
+      "value": 100
+    },
+    {
+      "name": "navdialog_comment_image_radius",
+      "value": 10
+    },
+    {
+      "name": "navdialog_comment_info_blank_width",
+      "value": 20
+    },
+    {
+      "name": "navdialog_comment_dialog_radius",
+      "value": 10
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "routerMap": [
+    {
+      "name": "cardswiperanimation/CardSwiperAnimation",
+      "pageModule": "cardswiperanimation",
+      "pageSourceFile": "src/main/ets/generated/RouterBuilder.ets",
+      "registerFunction": "cardSwiperAnimationRegister"
+    }
+  ]
+}

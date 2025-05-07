@@ -1,0 +1,55 @@
+{
+  "color": [
+    {
+      "name": "status_bar_animation_white",
+      "value": "#FFFFFF"
+    },
+    {
+      "name": "status_bar_animation_text_white",
+      "value": "#FFFFFFFF"
+    },
+    {
+      "name": "status_bar_animation_search_title_black",
+      "value": "#DD000000"
+    },
+    {
+      "name": "status_bar_animation_search_title_white",
+      "value": "#DDFFFFFF"
+    },
+    {
+      "name": "status_bar_animation_text_black",
+      "value": "#B3000000"
+    },
+    {
+      "name": "status_bar_animation_background_black",
+      "value": "#38000000"
+    },
+    {
+      "name": "status_bar_animation_background_white",
+      "value": "#FFECECEC"
+    },
+    {
+      "name": "status_bar_animation_beautiful_background_color",
+      "value": "#FFF1F3F5"
+    },
+    {
+      "name": "status_bar_animation_articles_list_background_color",
+      "value": "#FFF1F3F5"
+    },
+    {
+      "name": "status_bar_animation_photography_works_font_color",
+      "value": "#FF3E50"
+    },
+    {
+      "name": "status_bar_animation_photography_works_background_color",
+      "value": "#1AFF3E50"
+    },{
+      "name": "status_bar_animation_natural_scenery_font_color",
+      "value": "#0A59F7"
+    },
+    {
+      "name": "status_bar_animation_natural_scenery_background_color",
+      "value": "#1A0A59F7"
+    }
+  ]
+}

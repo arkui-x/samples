@@ -1,0 +1,24 @@
+{
+  "color": [
+    {
+      "name": "compress_file_message_color",
+      "value": "#F1F3F5"
+    },
+    {
+      "name": "compress_file_linear_gradient_start",
+      "value": "#8054A1FF"
+    },
+    {
+      "name": "compress_file_linear_gradient_end",
+      "value": "#B354A1FF"
+    },
+    {
+      "name": "compress_file_title_bar_background_color",
+      "value": "#94c4f5"
+    },
+    {
+      "name": "compress_file_list_item_divider_color",
+      "value": "#A5AAA3"
+    }
+  ]
+}

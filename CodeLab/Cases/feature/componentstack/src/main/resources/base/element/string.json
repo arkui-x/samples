@@ -1,0 +1,92 @@
+{
+  "string": [
+    {
+      "name": "component_stack_product_title00",
+      "value": "充电宝"
+    },
+    {
+      "name": "component_stack_product_title01",
+      "value": "笔记本电脑"
+    },
+    {
+      "name": "component_stack_product_title02",
+      "value": "移动手机"
+    },
+    {
+      "name": "component_stack_product_title03",
+      "value": "电动按摩椅"
+    },
+    {
+      "name": "component_stack_product_title04",
+      "value": "折叠屏"
+    },
+    {
+      "name": "component_stack_product_title05",
+      "value": "极简潮流背包"
+    },
+    {
+      "name": "component_stack_product_price00",
+      "value": "￥79.9"
+    },
+    {
+      "name": "component_stack_product_price01",
+      "value": "￥6975.8"
+    },
+    {
+      "name": "component_stack_product_price02",
+      "value": "￥4279.6"
+    },
+    {
+      "name": "component_stack_product_price03",
+      "value": "￥5385.4"
+    },
+    {
+      "name": "component_stack_product_price04",
+      "value": "￥1252.9"
+    },
+    {
+      "name": "component_stack_product_price05",
+      "value": "￥105.3"
+    },
+    {
+      "name": "component_stack_product_insurance00",
+      "value": "7天保价"
+    },
+    {
+      "name": "component_stack_product_insurance01",
+      "value": "15天保价"
+    },
+    {
+      "name": "component_stack_product_insurance02",
+      "value": "30天保价"
+    },
+    {
+      "name": "component_stack_product_insurance03",
+      "value": "7天保价"
+    },
+    {
+      "name": "component_stack_product_insurance04",
+      "value": "30天保价"
+    },
+    {
+      "name": "component_stack_product_insurance05",
+      "value": "30天保价"
+    },
+    {
+      "name": "component_stack_search_title",
+      "value": "好物精选"
+    },
+    {
+      "name": "component_stack_warning_text_title",
+      "value": "功能描述"
+    },
+    {
+      "name": "component_stack_warning_text",
+      "value": "本示例介绍运用Stack组件以构建多层次堆叠的视觉效果。通过绑定Scroll组件的onScroll滚动事件回调函数，精准捕获滚动动作的发生。当滚动时，实时地调节组件的透明度、高度等属性，从而成功实现了嵌套滚动效果、透明度动态变化以及平滑的组件切换。"
+    },
+    {
+      "name": "component_stack_other_function",
+      "value": "仅演示，可自行实现业务功能"
+    }
+  ]
+}

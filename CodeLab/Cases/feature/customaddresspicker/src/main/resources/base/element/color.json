@@ -1,0 +1,32 @@
+{
+  "color": [
+    {
+      "name": "custom_address_picker_bg",
+      "value": "#ffececec"
+    },
+    {
+      "name": "custom_address_picker_select_font_color",
+      "value": "#fffcb850"
+    },
+    {
+      "name": "custom_address_picker_font_color_black",
+      "value": "#cc000000"
+    },
+    {
+      "name": "custom_address_picker_font_color_gray",
+      "value": "#ff8d8d8d"
+    },
+    {
+      "name": "custom_address_picker_divider_color",
+      "value": "#fffcb850"
+    },
+    {
+      "name": "custom_address_picker_area_name_divider_color",
+      "value": "#F1F3F5"
+    },
+    {
+      "name": "custom_address_picker_name_font_color",
+      "value": "#ffacacac"
+    }
+  ]
+}

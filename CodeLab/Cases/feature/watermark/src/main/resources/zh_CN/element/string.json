@@ -1,0 +1,36 @@
+{
+  "string": [
+    {
+      "name": "water_mark_user_name",
+      "value": "追逐繁星的太阳"
+    },
+    {
+      "name": "water_mark_toast_message",
+      "value": "功能待开发......"
+    },
+    {
+      "name": "water_mark_care_text",
+      "value": "关注"
+    },
+    {
+      "name": "water_mark_content",
+      "value": "#日出\n太阳离开地平线的时候，红彤彤的，仿佛是一个光彩夺目的玛瑙盘，周围在霞光的照耀下，尽染无余。"
+    },
+    {
+      "name": "water_mark_share_text",
+      "value": "分享到聊天应用"
+    },
+    {
+      "name": "water_mark_identify_images_text",
+      "value": "识图搜同款"
+    },
+    {
+      "name": "water_mark_save_text",
+      "value": "保存"
+    },
+    {
+      "name": "water_mark_interested_text",
+      "value": "感兴趣"
+    }
+  ]
+}

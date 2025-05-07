@@ -1,0 +1,32 @@
+{
+  "integer": [
+    {
+      "name": "video_cache_loading_image_size",
+      "value": 36
+    },
+    {
+      "name": "video_cache_play_image_size",
+      "value": 24
+    },
+    {
+      "name": "video_cache_download_image_size",
+      "value": 24
+    },
+    {
+      "name": "video_cache_download_progress_size",
+      "value": 40
+    },
+    {
+      "name": "video_cache_cases_back_image_size",
+      "value": 25
+    },
+    {
+      "name": "video_cache_cases_back_image_position",
+      "value": 0
+    },
+    {
+      "name": "video_cache_cases_back_image_zIndex",
+      "value": 0
+    }
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "string": [
+    {
+      "name": "page_show",
+      "value": "page from package"
+    },
+    {
+      "name": "pattern_lock_size_full",
+      "value": "100%"
+    },
+    {
+      "name": "pattern_lock_size_seventy_five",
+      "value": "75%"
+    },
+    {
+      "name": "pattern_lock_size_twenty",
+      "value": "20%"
+    },
+    {
+      "name": "pattern_lock_message_1",
+      "value": "请使用图形密码解锁！"
+    },
+    {
+      "name": "pattern_lock_message_2",
+      "value": "图形密码长度需大于5位，请确认！"
+    },
+    {
+      "name": "pattern_lock_message_3",
+      "value": "解锁成功！"
+    },
+    {
+      "name": "pattern_lock_message_4",
+      "value": "解锁失败，请确认图形密码是否正确或设置新密码！"
+    },
+    {
+      "name": "pattern_lock_message_5",
+      "value": "图形密码设置成功，请使用图形密码解锁！"
+    },
+    {
+      "name": "pattern_lock_message_6",
+      "value": "两次图形密码设置不一致，请确认！"
+    },
+    {
+      "name": "pattern_lock_message_7",
+      "value": "请再次设置图形密码！"
+    },
+    {
+      "name": "pattern_lock_message_8",
+      "value": "请设置图形密码！"
+    },
+    {
+      "name": "pattern_lock_message_9",
+      "value": "已恢复初始密码，请使用图形密码解锁！"
+    },
+    {
+      "name": "pattern_lock_button_1",
+      "value": "重新设置图形密码"
+    },
+    {
+      "name": "pattern_lock_button_2",
+      "value": "恢复初始图形密码"
+    },
+    {
+      "name": "pattern_lock_button_3",
+      "value": "返回上一页"
+    },
+    {
+      "name": "pattern_lock_message_new_page",
+      "value": "这是一个新的页面"
+    },
+    {
+      "name": "pattern_lock_message_new_page_height_up",
+      "value": "90%"
+    },
+    {
+      "name": "pattern_lock_message_new_page_height_down",
+      "value": "10%"
+    },
+    {
+      "name": "pattern_lock_message_without_controller",
+      "value": "未传入图案密码锁组件控制器，会导致部分功能失效！"
+    }
+  ]
+}

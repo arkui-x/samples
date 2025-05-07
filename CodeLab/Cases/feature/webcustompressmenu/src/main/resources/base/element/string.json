@@ -1,0 +1,44 @@
+{
+  "string": [
+    {
+      "name": "web_press_full_size",
+      "value": "100%"
+    },
+    {
+      "name": "web_press_common_menu_item_height",
+      "value": "50"
+    },
+    {
+      "name": "web_press_copy_image",
+      "value": "复制图片"
+    },
+    {
+      "name": "web_press_cut",
+      "value": "剪切"
+    },
+    {
+      "name": "web_press_copy",
+      "value": "复制"
+    },
+    {
+      "name": "web_press_paste",
+      "value": "粘贴"
+    },
+    {
+      "name": "web_press_select_all",
+      "value": "全选"
+    },
+    {
+      "name": "web_press_open_link",
+      "value": "浏览器打开"
+    },
+    {
+      "name": "web_press_input_field",
+      "value": "输入框"
+    },
+    {
+      "name": "web_press_copy_link",
+      "value": "复制链接"
+    }
+  ]
+}

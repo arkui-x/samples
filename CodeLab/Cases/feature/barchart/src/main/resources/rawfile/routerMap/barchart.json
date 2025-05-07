@@ -1,0 +1,10 @@
+{
+  "routerMap": [
+    {
+      "name": "barchart/BarChartPage",
+      "pageModule": "barchart",
+      "pageSourceFile": "src/main/ets/generated/RouterBuilder.ets",
+      "registerFunction": "barChartPageRegister"
+    }
+  ]
+}

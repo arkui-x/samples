@@ -1,0 +1,10 @@
+{
+  "routerMap": [
+    {
+      "name": "h5cache/H5CacheComponent",
+      "pageModule": "h5cache",
+      "pageSourceFile": "src/main/ets/generated/RouterBuilder.ets",
+      "registerFunction": "h5CacheComponentRegister"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "color": [
+    {
+      "name": "slidetohideanddisplace_color_transparent_aa",
+      "value": "#aaffffff"
+    },
+    {
+      "name": "slidetohideanddisplace_color_transparent_55",
+      "value": "#55ffffff"
+    },
+    {
+      "name": "slidetohideanddisplace_member1",
+      "value": "#ffffdd00"
+    },
+    {
+      "name": "slidetohideanddisplace_member2",
+      "value": "#ffcd9900"
+    },
+    {
+      "name": "slidetohideanddisplace_member3",
+      "value": "#ffffd247"
+    },
+    {
+      "name": "slidetohideanddisplace_shopping",
+      "value": "#ffa4750d"
+    }
+  ]
+}

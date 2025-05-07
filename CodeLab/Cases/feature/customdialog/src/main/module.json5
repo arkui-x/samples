@@ -1,0 +1,11 @@
+{
+  "module": {
+    "name": "customdialog",
+    "type": "har",
+    "deviceTypes": [
+      "default",
+      "tablet",
+      "2in1"
+    ]
+  }
+}

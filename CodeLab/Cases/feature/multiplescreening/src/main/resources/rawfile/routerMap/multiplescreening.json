@@ -1,0 +1,10 @@
+{
+  "routerMap": [
+    {
+      "name": "multiplescreening/MultipleScreening",
+      "pageModule": "multiplescreening",
+      "pageSourceFile": "src/main/ets/generated/RouterBuilder.ets",
+      "registerFunction": "multipleScreeningRegister"
+    }
+  ]
+}

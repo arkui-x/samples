@@ -1,0 +1,10 @@
+{
+  "routerMap": [
+    {
+      "name": "webpagesnapshot/WebPageSnapshot",
+      "pageModule": "webpagesnapshot",
+      "pageSourceFile": "src/main/ets/generated/RouterBuilder.ets",
+      "registerFunction": "webPageSnapshotRegister"
+    }
+  ]
+}

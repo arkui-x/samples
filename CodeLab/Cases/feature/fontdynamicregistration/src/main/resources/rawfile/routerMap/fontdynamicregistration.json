@@ -1,0 +1,10 @@
+{
+  "routerMap": [
+    {
+      "name": "fontdynamicregistration/FontDynamicRegistration",
+      "pageModule": "fontdynamicregistration",
+      "pageSourceFile": "src/main/ets/generated/RouterBuilder.ets",
+      "registerFunction": "fontDynamicRegistrationRegister"
+    }
+  ]
+}

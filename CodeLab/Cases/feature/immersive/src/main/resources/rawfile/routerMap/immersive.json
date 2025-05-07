@@ -1,0 +1,10 @@
+{
+  "routerMap": [
+    {
+      "name": "immersive/ImmersiveView",
+      "pageModule": "immersive",
+      "pageSourceFile": "src/main/ets/generated/RouterBuilder.ets",
+      "registerFunction": "immersiveViewRegister"
+    }
+  ]
+}

@@ -1,0 +1,98 @@
+{
+  "integer": [
+    {
+      "name": "highlightguide_first_indicator_width",
+      "value": 300
+    },
+    {
+      "name": "highlightguide_first_indicator_height",
+      "value": 150
+    },
+    {
+      "name": "highlightguide_sort_order_width",
+      "value": 30
+    },
+    {
+      "name": "highlightguide_sort_order_height",
+      "value": 30
+    },
+    {
+      "name": "highlightguide_access_font_size",
+      "value": 14
+    },
+    {
+      "name": "highlightguide_access_width",
+      "value": 100
+    },
+    {
+      "name": "highlightguide_border_radius",
+      "value": 10
+    },
+    {
+      "name": "highlightguide_builder_size",
+      "value": 25
+    },
+    {
+      "name": "highlightguide_search_height",
+      "value": 40
+    },
+    {
+      "name": "highlightguide_swiper_width",
+      "value": 330
+    },
+    {
+      "name": "highlightguide_high_light_swiper_height",
+      "value": 150
+    },
+    {
+      "name": "highlightguide_mid_font_size",
+      "value": 12
+    },
+    {
+      "name": "highlightguide_tab_bar_width",
+      "value": 360
+    },
+    {
+      "name": "highlightguide_tab_bar_height",
+      "value": 56
+    },
+    {
+      "name": "highlightguide_common_margin",
+      "value": 20
+    },
+    {
+      "name": "highlightguide_common_margin_top",
+      "value": 5
+    },
+    {
+      "name": "highlightguide_high_light_button_width",
+      "value": 120
+    },
+    {
+      "name": "highlightguide_grid_width",
+      "value": 380
+    },
+    {
+      "name": "highlightguide_font_weight",
+      "value": 400
+    },
+    {
+      "name": "highlightguide_font_weight_select",
+      "value": 500
+    },
+    {
+      "name": "highlightguide_image_right",
+      "value": -10
+    },
+    {
+      "name": "highlightguide_text_left",
+      "value": -5
+    },
+    {
+      "name": "highlightguide_line_height",
+      "value": 22
+    }
+
+
+  ]
+}

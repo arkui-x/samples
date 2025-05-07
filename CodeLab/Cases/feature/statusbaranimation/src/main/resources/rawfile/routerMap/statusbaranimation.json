@@ -1,0 +1,10 @@
+{
+  "routerMap": [
+    {
+      "name": "statusbaranimation/StatusBarAnimation",
+      "pageModule": "statusbaranimation",
+      "pageSourceFile": "src/main/ets/generated/RouterBuilder.ets",
+      "registerFunction": "statusBarAnimationRegister"
+    }
+  ]
+}

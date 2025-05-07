@@ -1,0 +1,32 @@
+{
+  "integer": [
+    {
+      "name": "paint_component_title_margin_bottom",
+      "value": 100
+    },
+    {
+      "name": "paint_component_outer_circle_stroke_width",
+      "value": 5
+    },
+    {
+      "name": "paint_component_path_stroke_width",
+      "value": 1
+    },
+    {
+      "name": "paint_component_stack_margin_bottom",
+      "value": 120
+    },
+    {
+      "name": "paint_component_decrease_button_margin_right",
+      "value": 50
+    },
+    {
+      "name": "paint_component_progress_percentage_symbol_font_size",
+      "value": 30
+    },
+    {
+      "name": "paint_component_progress_percentage_font_size",
+      "value": 60
+    }
+  ]
+}

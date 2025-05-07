@@ -1,0 +1,84 @@
+{
+  "integer": [
+    {
+      "name": "navigationbarchange_top_interval_minus_five",
+      "value": -5
+    },
+    {
+      "name": "navigationbarchange_top_interval_ten",
+      "value": 10
+    },
+    {
+      "name": "navigationbarchange_top_interval_twenty",
+      "value": 20
+    },
+    {
+      "name": "navigationbarchange_top_interval_sixty",
+      "value": 60
+    },
+    {
+      "name": "navigationbarchange_left_interval_value",
+      "value": -10
+    },
+    {
+      "name": "navigationbarchange_right_interval_value",
+      "value": -10
+    },
+    {
+      "name": "navigationbarchange_bottom_interval_minus_five",
+      "value": -5
+    },
+    {
+      "name": "navigationbarchange_bottom_interval_five",
+      "value": 5
+    },
+    {
+      "name": "navigationbarchange_bottom_interval_minus_ten",
+      "value": -10
+    },
+    {
+      "name": "navigationbarchange_font_size_fourteen",
+      "value": 14
+    },
+    {
+      "name": "navigationbarchange_font_size_eighteen",
+      "value": 18
+    },
+    {
+      "name": "navigationbarchange_font_size_twenty",
+      "value": 20
+    },
+    {
+      "name": "navigationbarchange_font_size_twenty_two",
+      "value": 22
+    },
+    {
+      "name": "navigationbarchange_width_and_height_thirty",
+      "value": 30
+    },
+    {
+      "name": "navigationbarchange_width_and_height_thirty_five",
+      "value": 35
+    },
+    {
+      "name": "navigationbarchange_width_and_height_forty",
+      "value": 40
+    },
+    {
+      "name": "navigationbarchange_width_and_height_sixty",
+      "value": 60
+    },
+    {
+      "name": "navigationbarchange_width_and_height_one_hundred_and_thirty",
+      "value": 130
+    },
+    {
+      "name": "navigationbarchange_borderRadius_twelve",
+      "value": 12
+    },
+    {
+      "name": "navigationbarchange_positionY",
+      "value": 110
+    }
+  ]
+}
