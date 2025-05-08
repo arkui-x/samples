@@ -13,8 +13,8 @@
  * limitations under the License.
  */
 
-#ifndef _NATIVE_COMMON_H_
-#define _NATIVE_COMMON_H_
+#ifndef NATIVE_COMMON_H_
+#define NATIVE_COMMON_H_
 
 #define NAPI_RETVAL_NOTHING
 

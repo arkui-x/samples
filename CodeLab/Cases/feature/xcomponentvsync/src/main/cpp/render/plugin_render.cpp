@@ -23,7 +23,8 @@ std::unordered_map<std::string, PluginRender *> PluginRender::instance_;
 OH_NativeXComponent_Callback PluginRender::callback_;
 
 // 根据 surfaceID 创建 EGLsurface
-void OnSurfaceCreatedCB(OH_NativeXComponent *component, void *window) {
+void OnSurfaceCreatedCB(OH_NativeXComponent *component, void *window)
+{
     LOGD("PluginRender::OnSurfaceCreatedCB");
     int32_t ret;
     char idStr[OH_XCOMPONENT_ID_LEN_MAX + 1] = {};
@@ -38,7 +39,8 @@ void OnSurfaceCreatedCB(OH_NativeXComponent *component, void *window) {
 }
 
 // 监听 surfaceID 变化，变换 EGLsurface
-void OnSurfaceChangedCB(OH_NativeXComponent *component, void *window) {
+void OnSurfaceChangedCB(OH_NativeXComponent *component, void *window)
+{
     LOGD("PluginRender::OnSurfaceChangedCB");
     int32_t ret;
     char idStr[OH_XCOMPONENT_ID_LEN_MAX + 1] = {};
@@ -53,7 +55,8 @@ void OnSurfaceChangedCB(OH_NativeXComponent *component, void *window) {
 }
 
 // 监听 surfaceID 销毁，销毁 EGLsurface
-void OnSurfaceDestroyedCB(OH_NativeXComponent *component, void *window) {
+void OnSurfaceDestroyedCB(OH_NativeXComponent *component, void *window)
+{
     LOGD("PluginRender::OnSurfaceDestroyedCB");
     int32_t ret;
     char idStr[OH_XCOMPONENT_ID_LEN_MAX + 1] = {};
@@ -67,7 +70,8 @@ void OnSurfaceDestroyedCB(OH_NativeXComponent *component, void *window) {
     render->OnSurfaceDestroyed(component, window);
 }
 
-PluginRender::PluginRender(std::string &id) : id_(id) {
+PluginRender::PluginRender(std::string &id) : id_(id)
+{
     eglCore_ = new EGLCore(id);
     if (eglCore_ != nullptr) {
         LOGI("PluginRender::new EGLCore success.");
@@ -80,7 +84,8 @@ PluginRender::PluginRender(std::string &id) : id_(id) {
     renderCallback->OnSurfaceDestroyed = OnSurfaceDestroyedCB;
 }
 
-PluginRender *PluginRender::GetInstance(std::string &id) {
+PluginRender *PluginRender::GetInstance(std::string &id)
+{
     if (instance_.find(id) == instance_.end()) {
         LOGI("PluginRender::PluginRender::GetInstance new id: [%{public}s]", &id);
         PluginRender *instance = new PluginRender(id);
@@ -94,11 +99,13 @@ PluginRender *PluginRender::GetInstance(std::string &id) {
 
 OH_NativeXComponent_Callback *PluginRender::GetNXComponentCallback() { return &PluginRender::callback_; }
 
-void PluginRender::SetNativeXComponent(OH_NativeXComponent *component) {
+void PluginRender::SetNativeXComponent(OH_NativeXComponent *component)
+{
     OH_NativeXComponent_RegisterCallback(component, &PluginRender::callback_);
 }
 
-void PluginRender::OnSurfaceCreated(OH_NativeXComponent *component, void *window) {
+void PluginRender::OnSurfaceCreated(OH_NativeXComponent *component, void *window)
+{
     LOGD("PluginRender::OnSurfaceCreated");
     int32_t ret = OH_NativeXComponent_GetXComponentSize(component, window, &width_, &height_);
     if (ret == OH_NATIVEXCOMPONENT_RESULT_SUCCESS && nullptr != eglCore_) {
@@ -106,7 +113,8 @@ void PluginRender::OnSurfaceCreated(OH_NativeXComponent *component, void *window
     }
 }
 
-void PluginRender::OnSurfaceChanged(OH_NativeXComponent *component, void *window) {
+void PluginRender::OnSurfaceChanged(OH_NativeXComponent *component, void *window)
+{
     LOGD("PluginRender::OnSurfaceChanged");
     int32_t ret = OH_NativeXComponent_GetXComponentSize(component, window, &width_, &height_);
     if (ret == OH_NATIVEXCOMPONENT_RESULT_SUCCESS && nullptr != eglCore_) {
@@ -114,7 +122,8 @@ void PluginRender::OnSurfaceChanged(OH_NativeXComponent *component, void *window
     }
 }
 
-void PluginRender::OnSurfaceDestroyed(OH_NativeXComponent *component, void *window) {
+void PluginRender::OnSurfaceDestroyed(OH_NativeXComponent *component, void *window)
+{
     LOGW("PluginRender::OnSurfaceDestroyed begin");
     char idStr[OH_XCOMPONENT_ID_LEN_MAX + 1] = {};
     uint64_t idSize = OH_XCOMPONENT_ID_LEN_MAX + 1;

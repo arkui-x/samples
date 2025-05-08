@@ -15,4 +15,4 @@
 
 #include "./include/global_handlers.h"
 // 定义全局对象global_handlers，用于存储so库和dlopen加载so库所得句柄的映射关系
-std::unordered_map<std::string, void *> global_handlers;
+std::unordered_map<std::string, void *> g_globalHandlers;

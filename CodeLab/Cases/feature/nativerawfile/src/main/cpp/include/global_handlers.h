@@ -19,6 +19,6 @@
 #include <unordered_map>
 #include <string>
 
-extern std::unordered_map<std::string, void *> global_handlers;
+extern std::unordered_map<std::string, void *> g_globalHandlers;
 
 #endif // GLOBAL_HANDLERS_H

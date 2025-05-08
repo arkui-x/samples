@@ -18,7 +18,8 @@
 #include "manager/plugin_manager.h"
 #include "napi/native_api.h"
 
-static napi_value Init(napi_env env, napi_value exports) {
+static napi_value Init(napi_env env, napi_value exports)
+{
     LOGW("PluginRender::Init");
     bool ret = PluginManager::GetInstance()->Export(env, exports);
     if (!ret) {

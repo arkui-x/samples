@@ -28,33 +28,37 @@ struct MemoryStruct {
     size_t size;
 
     // 构造函数
-    MemoryStruct() : memory(nullptr), size(0) {
-        memory = (char *)malloc(1); // 初始分配1字节
+    MemoryStruct() : memory(nullptr), size(0)
+    {
+        memory = (char*)malloc(1); // 初始分配1字节
         if (memory) {
             memory[0] = '\0'; // 确保字符串以空字符结尾
         }
     }
 
     // 析构函数
-    ~MemoryStruct() { 
-        OH_LOG_Print(LOG_APP, LOG_INFO, GLOBAL_RESMGR, TAG, "析构 MemoryStruct"); 
+    ~MemoryStruct()
+    {
+        OH_LOG_Print(LOG_APP, LOG_INFO, GLOBAL_RESMGR, TAG, "析构 MemoryStruct");
     }
 };
 
 struct DecodeResult {
     uint8_t *data;
-    int heif_image_stride;
-    int heif_image_width;
-    int heif_image_height;
+    int heifImageStride;
+    int heifImageWidth;
+    int heifImageHeight;
 
-    DecodeResult(uint8_t *data, int stride, int width, int height) {
+    DecodeResult(uint8_t *data, int stride, int width, int height)
+    {
         this->data = data;
-        this->heif_image_stride = stride;
-        this->heif_image_width = width;
-        this->heif_image_height = height;
+        this->heifImageStride = stride;
+        this->heifImageWidth = width;
+        this->heifImageHeight = height;
     }
 
-    ~DecodeResult() {
+    ~DecodeResult()
+    {
         this->data = nullptr;
         OH_LOG_Print(LOG_APP, LOG_INFO, GLOBAL_RESMGR, TAG, "析构 DecodeResult");
     }

@@ -23,7 +23,7 @@ const GLfloat squareVerticles[] = {
 };
 
 // ELG 绘制程序
-char vertexShader[] = "#version 300 es\n"
+char g_vertexShader[] = "#version 300 es\n"
                       "layout(location = 0) in vec4 a_position;\n"
                       "layout(location = 1) in vec4 a_color;\n"
                       "out vec4 fragCoord;\n"
@@ -36,7 +36,7 @@ char vertexShader[] = "#version 300 es\n"
                       "}\n";
 
 // ELG 绘制程序
-char fragmentShader[] = "#version 300 es\n"
+char g_fragmentShader[] = "#version 300 es\n"
                         "precision mediump float;\n"
                         "uniform vec3 iResolution;\n"
                         "uniform float iTime;\n"
@@ -115,7 +115,8 @@ struct SyncParam {
     void *window = nullptr;
 };
 
-static EGLConfig getConfig(EGLDisplay eglDisplay) {
+static EGLConfig getConfig(EGLDisplay eglDisplay)
+{
     int attribList[] = {EGL_SURFACE_TYPE,
                         EGL_WINDOW_BIT,
                         EGL_RED_SIZE,
@@ -129,17 +130,18 @@ static EGLConfig getConfig(EGLDisplay eglDisplay) {
                         EGL_RENDERABLE_TYPE,
                         EGL_OPENGL_ES2_BIT,
                         EGL_NONE};
-    EGLConfig configs = NULL;
+    EGLConfig configs = nullptr;
     int configsNum;
     if (!eglChooseConfig(eglDisplay, attribList, &configs, 1, &configsNum)) {
         LOGE("EGLCore::eglChooseConfig ERROR");
-        return NULL;
+        return nullptr;
     }
     return configs;
 }
 
 // 创建 EGLSurface 实例，绘制信息先绘制到 EGLSurface 上，通过 EGLDisplay 显示
-void EGLCore::OnSurfaceCreated(void *window, int w, int h) {
+void EGLCore::OnSurfaceCreated(void *window, int w, int h)
+{
     LOGD("EGLCore::OnSurfaceCreated window = %{public}p, w = %{public}d, h = %{public}d.", window, w, h);
 
     width_ = w;
@@ -148,8 +150,8 @@ void EGLCore::OnSurfaceCreated(void *window, int w, int h) {
     SyncParam *param = new SyncParam();
     param->eglCore = this;
     param->window = window;
-
-    mVsync = OH_NativeVSync_Create(GAME_SYNC_NAME, 3);
+    int32_t three = 3;
+    mVsync = OH_NativeVSync_Create(GAME_SYNC_NAME, three);
     if (!mVsync) {
         if (param != nullptr) {
             delete param;
@@ -194,7 +196,8 @@ void EGLCore::OnSurfaceCreated(void *window, int w, int h) {
             }
             LOGI("EGLCore::OnSurfaceCreated eglGetDisplay success.");
 
-            EGLint eglMajVers, eglMinVers;
+            EGLint eglMajVers;
+            EGLint eglMinVers;
             if (!eglInitialize(eglCore->mEGLDisplay, &eglMajVers, &eglMinVers)) {
                 eglCore->mEGLDisplay = EGL_NO_DISPLAY;
                 if (syncParam != nullptr) {
@@ -247,7 +250,7 @@ void EGLCore::OnSurfaceCreated(void *window, int w, int h) {
                 return;
             }
             LOGI("EGLCore::OnSurfaceCreated eglCreateContext success.");
-            eglCore->mProgramHandle = eglCore->CreateProgram(vertexShader, fragmentShader);
+            eglCore->mProgramHandle = eglCore->CreateProgram(g_vertexShader, g_fragmentShader);
             if (!eglCore->mProgramHandle) {
                 if (syncParam != nullptr) {
                     delete syncParam;
@@ -260,19 +263,19 @@ void EGLCore::OnSurfaceCreated(void *window, int w, int h) {
             eglCore->DrawSquare();
             LOGI("EGLCore::OnSurfaceCreated DrawSquare success.");
 
-            if (!eglCore->switchSpecular()) {
+            if (!eglCore->SwitchSpecular()) {
                 if (syncParam != nullptr) {
                     delete syncParam;
                     syncParam = nullptr;
                 }
-                LOGE("EGLCore::OnSurfaceCreated switchSpecular fail.");
+                LOGE("EGLCore::OnSurfaceCreated SwitchSpecular fail.");
                 return;
             }
-            LOGI("EGLCore::OnSurfaceCreated switchSpecular success.");
-            if (eglCore->switchAmbient()) {
-                LOGI("EGLCore::OnSurfaceCreated switchAmbient success.");
+            LOGI("EGLCore::OnSurfaceCreated SwitchSpecular success.");
+            if (eglCore->SwitchAmbient()) {
+                LOGI("EGLCore::OnSurfaceCreated SwitchAmbient success.");
             } else {
-                LOGE("EGLCore::OnSurfaceCreated switchAmbient fail.");
+                LOGE("EGLCore::OnSurfaceCreated SwitchAmbient fail.");
             }
             if (syncParam != nullptr) {
                 delete syncParam;
@@ -284,7 +287,10 @@ void EGLCore::OnSurfaceCreated(void *window, int w, int h) {
 }
 
 // 绘制几何图形
-void EGLCore::DrawSquare() {
+void EGLCore::DrawSquare()
+{
+    int32_t two = 2;
+    int32_t four = 4;
     GLfloat color[] = {0.5f, 0.6f, 0.3f, 1.0f};
 
     const GLfloat squareVerticles[] = {
@@ -295,7 +301,7 @@ void EGLCore::DrawSquare() {
     glClear(GL_COLOR_BUFFER_BIT);
     glUseProgram(mProgramHandle);
     positionHandle = glGetAttribLocation(mProgramHandle, "a_position");
-    glVertexAttribPointer(positionHandle, 2, GL_FLOAT, GL_FALSE, 2 * 4, squareVerticles);
+    glVertexAttribPointer(positionHandle, two, GL_FLOAT, GL_FALSE, two * four, squareVerticles);
     glEnableVertexAttribArray(positionHandle);
     glVertexAttrib4fv(1, color);
 
@@ -304,7 +310,7 @@ void EGLCore::DrawSquare() {
     GLint resolutionHandle = glGetUniformLocation(mProgramHandle, "iResolution");
     glUniform3f(resolutionHandle, static_cast<GLfloat>(width_), static_cast<GLfloat>(height_), 1.0f);
 
-    glDrawArrays(GL_TRIANGLE_STRIP, 0, 4);
+    glDrawArrays(GL_TRIANGLE_STRIP, 0, four);
     glDisableVertexAttribArray(positionHandle);
     glFlush();
     glFinish();
@@ -313,7 +319,10 @@ void EGLCore::DrawSquare() {
 
 
 // EGL实现漫反射效果
-void EGLCore::switchDiffuse() {
+void EGLCore::SwitchDiffuse()
+{
+    int32_t two = 2;
+    int32_t three = 3;
     GLfloat color[] = {0.5f, 0.6f, 0.3f, 1.0f};
     const GLfloat triangleVertices[] = {0.0f, 1.0f, -1.0f, -1.0f, 1.0f, -1.0f};
 
@@ -322,7 +331,7 @@ void EGLCore::switchDiffuse() {
     glClear(GL_COLOR_BUFFER_BIT);
     glUseProgram(mProgramHandle);
     GLint positionHandle = glGetAttribLocation(mProgramHandle, "a_position");
-    glVertexAttribPointer(positionHandle, 2, GL_FLOAT, GL_FALSE, 0, triangleVertices);
+    glVertexAttribPointer(positionHandle, two, GL_FLOAT, GL_FALSE, 0, triangleVertices);
     glEnableVertexAttribArray(positionHandle);
     glVertexAttrib4fv(1, color);
 
@@ -331,7 +340,7 @@ void EGLCore::switchDiffuse() {
     GLint resolutionHandle = glGetUniformLocation(mProgramHandle, "iResolution");
     glUniform3f(resolutionHandle, static_cast<GLfloat>(width_), static_cast<GLfloat>(height_), 1.0f);
 
-    glDrawArrays(GL_TRIANGLES, 0, 3);
+    glDrawArrays(GL_TRIANGLES, 0, three);
     glDisableVertexAttribArray(positionHandle);
     glDisableVertexAttribArray(resolutionHandle);
     glFlush();
@@ -341,9 +350,10 @@ void EGLCore::switchDiffuse() {
 
 
 // EGL实现环境光效果
-bool EGLCore::switchAmbient() {
+bool EGLCore::SwitchAmbient()
+{
     if (!eglMakeCurrent(mEGLDisplay, mEGLSurface, mEGLSurface, mEGLContext)) {
-        LOGE("EGLCore::switchAmbient eglMakeCurrent error = %{public}d", eglGetError());
+        LOGE("EGLCore::SwitchAmbient eglMakeCurrent error = %{public}d", eglGetError());
         return false;
     }
     iTime++;
@@ -351,7 +361,7 @@ bool EGLCore::switchAmbient() {
         iTime = 0;
     }
     GLfloat tempColor = sin(iTime / 100.0f);
-    LOGI("EGLCore::switchAmbient tempColor = %{public}f", tempColor);
+    LOGI("EGLCore::SwitchAmbient tempColor = %{public}f", tempColor);
     GLfloat color[] = {0.7f * tempColor, 0.2f * tempColor, 0.2f * tempColor, 1.0f};
 
     const GLfloat triangleVertices[] = {-1.0f, 1.0f, -1.0f, -1.0f, 1.0f, 0.0f};
@@ -361,50 +371,55 @@ bool EGLCore::switchAmbient() {
     glClear(GL_COLOR_BUFFER_BIT);
     glUseProgram(mProgramHandle);
     GLint positionHandle = glGetAttribLocation(mProgramHandle, "a_position");
-    glVertexAttribPointer(positionHandle, 2, GL_FLOAT, GL_FALSE, 0, triangleVertices);
+    int32_t two = 2;
+    int32_t three = 3;
+    glVertexAttribPointer(positionHandle, two, GL_FLOAT, GL_FALSE, 0, triangleVertices);
     glEnableVertexAttribArray(positionHandle);
     glVertexAttrib4fv(1, color);
     glUniform1f(iTimeHandle, iTime);
-    glDrawArrays(GL_TRIANGLES, 0, 3);
+    glDrawArrays(GL_TRIANGLES, 0, three);
     glDisableVertexAttribArray(positionHandle);
     Update();
-    LOGI("EGLCore::switchAmbient  success");
+    LOGI("EGLCore::SwitchAmbient  success");
     return true;
 }
 
 // EGL实现镜面光照效果
-bool EGLCore::switchSpecular() {
+bool EGLCore::SwitchSpecular()
+{
     std::lock_guard<std::mutex> lock(mtx);
     if (!eglMakeCurrent(mEGLDisplay, mEGLSurface, mEGLSurface, mEGLContext)) {
-        LOGE("EGLCore::eglMakeCurrent switchSpecular error = %{public}d", eglGetError());
+        LOGE("EGLCore::eglMakeCurrent SwitchSpecular error = %{public}d", eglGetError());
         return false;
     }
     LOGI("EGLCore::mEGLDisplay iTime %{public}f", iTime);
 
     iTime++;
     GLfloat tempColor = sin(iTime / 100);
-    LOGI("EGLCore::switchSpecular tempColor = %{public}f", tempColor);
+    LOGI("EGLCore::SwitchSpecular tempColor = %{public}f", tempColor);
 
     glClearColor(0.0, 0.0, 0.0, 1.0);
     glClear(GL_COLOR_BUFFER_BIT);
     glUseProgram(mProgramHandle);
     glEnableVertexAttribArray(positionHandle);
-    glVertexAttribPointer(positionHandle, 2, GL_FLOAT, GL_FALSE, 2 * 4, squareVerticles);
+    int32_t two = 2;
+    int32_t four = 4;
+    glVertexAttribPointer(positionHandle, two, GL_FLOAT, GL_FALSE, two * four, squareVerticles);
 
     glUniform1f(iTimeHandle, iTime);
-    glDrawArrays(GL_TRIANGLE_STRIP, 0, 4);
+    glDrawArrays(GL_TRIANGLE_STRIP, 0, four);
     glDisableVertexAttribArray(positionHandle);
     Update();
     if (mVsync) {
         OH_NativeVSync_RequestFrame(
             mVsync,
             [](long long timestamp, void *data) {
-                LOGI("EGLCore::switchSpecular, OH_NativeVSync_RequestFrame timestamp = %{public}lld", timestamp);
-                (reinterpret_cast<EGLCore *>(data))->switchSpecular();
+                LOGI("EGLCore::SwitchSpecular, OH_NativeVSync_RequestFrame timestamp = %{public}lld", timestamp);
+                (reinterpret_cast<EGLCore *>(data))->SwitchSpecular();
             },
             (void *)this);
     } else {
-        LOGE("EGLCore:: switchSpecular fail, mVsync is null");
+        LOGE("EGLCore:: SwitchSpecular fail, mVsync is null");
         return false;
     }
     return true;
@@ -418,7 +433,8 @@ bool EGLCore::switchSpecular() {
 void EGLCore::Update() { eglSwapBuffers(mEGLDisplay, mEGLSurface); }
 
 // 获取着色器
-GLuint EGLCore::LoadShader(GLenum type, const char *shaderSrc) {
+GLuint EGLCore::LoadShader(GLenum type, const char *shaderSrc)
+{
     GLuint shader_;
     GLint compiled_;
 
@@ -456,7 +472,8 @@ GLuint EGLCore::LoadShader(GLenum type, const char *shaderSrc) {
  * 3、链接程序（glLinkProgram）
  * 4、使用程序（glUseProgram）
  */
-GLuint EGLCore::CreateProgram(const char *vertexShader, const char *fragShader) {
+GLuint EGLCore::CreateProgram(const char *vertexShader, const char *fragShader)
+{
     GLuint vertex_;
     GLuint fragment_;
     GLuint program_;
@@ -505,7 +522,8 @@ GLuint EGLCore::CreateProgram(const char *vertexShader, const char *fragShader) 
     return program_;
 }
 
-GLuint EGLCore::CreateProgramError(const char *vertexShader, const char *fragShader) {
+GLuint EGLCore::CreateProgramError(const char *vertexShader, const char *fragShader)
+{
     LOGD("EGLCore::CreateProgramError begin");
     GLuint vertex;
     GLuint fragment;
@@ -536,7 +554,8 @@ GLuint EGLCore::CreateProgramError(const char *vertexShader, const char *fragSha
 }
 
 // 销毁 vsyunc 示例
-void EGLCore::OnSurfaceDestroyed() {
+void EGLCore::OnSurfaceDestroyed()
+{
     LOGW("EGLCore::OnSurfaceDestroyed begin");
     std::lock_guard<std::mutex> lock(mtx);
     if (nullptr != mVsync) {

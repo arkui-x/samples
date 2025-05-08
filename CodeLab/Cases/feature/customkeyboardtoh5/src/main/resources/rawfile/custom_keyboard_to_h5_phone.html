@@ -54,27 +54,27 @@
     func1();
   }
   function adapterDevice() {
-    var v = document.querySelector('meta[name="viewport"]');
+    let v = document.querySelector('meta[name="viewport"]');
     if (v) {
       v.setAttribute('content', 'width=720, user-scalable=yes');
     } else {
-      var m = document.createElement('meta');
+      let m = document.createElement('meta');
       m.content = 'width=720, user-scalable=yes';
       m.name = 'viewport';
       document.getElementsByTagName('head')[0].appendChild(m);
     }
   }
   function func1() {
-    var div = document.getElementById("test");
-    div.className = "tablet";
+    let div = document.getElementById('test');
+    div.className = 'tablet';
   }
   function tapInput() {
     document.activeElement.blur();
-    let input = document.getElementById("searchCon");
+    let input = document.getElementById('searchCon');
     etsObj.openDialog(input.value);
   }
   function setInput(value) {
-    let input = document.getElementById("searchCon");
+    let input = document.getElementById('searchCon');
     input.value = value;
   }
 

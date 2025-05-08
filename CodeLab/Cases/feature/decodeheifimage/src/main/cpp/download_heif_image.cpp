@@ -12,13 +12,15 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
+
 #include "download_heif_image.h"
+#include "curl.h"
+#include "easy.h"
+
 #ifndef COMMONAPPDEVELOPMENT_DOWNLOAD_HEIF_IMAGE_CPP
 #define COMMONAPPDEVELOPMENT_DOWNLOAD_HEIF_IMAGE_CPP
 
 extern "C" {
-#include "curl.h"
-#include "easy.h"
 /**
  * 下载HEIF图像（.heic格式网络图片）
  * @param imageUrl HEIF图像下载链接
@@ -35,7 +37,8 @@ DownloadHEIFImage::~DownloadHEIFImage(){}; // 析构函数
  * @param userp
  * @return
  */
-size_t DownloadHEIFImage::HttpPostWriteBack(void *contents, size_t size, size_t nmemb, void *userp) {
+size_t DownloadHEIFImage::HttpPostWriteBack(void *contents, size_t size, size_t nmemb, void *userp)
+{
     size_t realsize = size * nmemb; // 一次回调返回的数据量
     auto *mem = static_cast<MemoryStruct *>(userp);
 
@@ -46,13 +49,14 @@ size_t DownloadHEIFImage::HttpPostWriteBack(void *contents, size_t size, size_t 
     }
 
     mem->memory = ptr;
-    memcpy(&(mem->memory[mem->size]), contents, realsize);
+    memcpy_s(&(mem->memory[mem->size]), sizeof(mem->memory) - mem->size, contents, realsize);
     mem->size += realsize;
     mem->memory[mem->size] = '\0'; // 确保以空字符结尾
     return realsize;
 }
 
-MemoryStruct DownloadHEIFImage::get(std::string imageUrl) {
+MemoryStruct DownloadHEIFImage::get(std::string imageUrl)
+{
     CURL *curl = curl_easy_init();
     // 获取数据
     MemoryStruct chunk;

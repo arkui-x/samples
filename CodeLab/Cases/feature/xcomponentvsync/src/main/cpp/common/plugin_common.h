@@ -13,8 +13,8 @@
  * limitations under the License.
  */
 
-#ifndef _PLUGIN_COMMON_H_
-#define _PLUGIN_COMMON_H_
+#ifndef PLUGIN_COMMON_H_
+#define PLUGIN_COMMON_H_
 
 #include <hilog/log.h>
 #define APP_LOG_DOMAIN 0x0001

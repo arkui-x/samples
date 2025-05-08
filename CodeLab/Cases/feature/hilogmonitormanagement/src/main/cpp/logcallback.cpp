@@ -27,17 +27,18 @@ const int GLOBAL_RESMGR = 0xFF00;
 const char *TAG = "[testTag]";
 
 #define MAX_LOG_LEN 512
-char logToFilter[MAX_LOG_LEN] = {};      // 要过滤的日志内容
+char g_logToFilter[MAX_LOG_LEN] = {};      // 要过滤的日志内容
 napi_env g_env;
 napi_ref callbackRef = nullptr;         // ArkTs端回调函数的引用
 
-// TODO: 知识点： 自定义的日志处理函数
+//  自定义的日志处理函数
 static void HiLogCallbackFilter(const LogType type, const LogLevel level, const unsigned int domain, const char *tag,
-                    const char *msg) {
-    std::string strMsg(msg, strlen(msg) + 1);    
-    // TODO: 知识点： 过滤要查找的日志
-    size_t foundIndex = strMsg.find(logToFilter);
-    if(foundIndex != -1) {
+    const char *msg)
+{
+    std::string strMsg(msg, strlen(msg) + 1);
+    //  过滤要查找的日志
+    size_t foundIndex = strMsg.find(g_logToFilter);
+    if (foundIndex != -1) {
         // ArkTS回调函数
         napi_value callback = nullptr;
         napi_get_reference_value(g_env, callbackRef, &callback);
@@ -45,25 +46,26 @@ static void HiLogCallbackFilter(const LogType type, const LogLevel level, const 
         napi_value hilogArg;
         napi_create_string_utf8(g_env, msg, NAPI_AUTO_LENGTH, &hilogArg);
         napi_value ret;
-        // TODO: 知识点： 调用ArkTS端传入的回调函数
+        //  调用ArkTS端传入的回调函数
         napi_call_function(g_env, nullptr, callback, 1, &hilogArg, &ret);
     }
     return;
 }
 
-// TODO: 知识点：注册日志回调函数
-static napi_value SetLogCallback(napi_env env, napi_callback_info info) {
+// 注册日志回调函数
+static napi_value SetLogCallback(napi_env env, napi_callback_info info)
+{
     size_t argc = 2;
     napi_value args[2] = {nullptr};
     napi_get_cb_info(env, info, &argc, args, nullptr, nullptr);
     // 解析要过滤的日志
     size_t logSize;
-    napi_get_value_string_utf8(env, args[0], logToFilter, MAX_LOG_LEN, &logSize);
+    napi_get_value_string_utf8(env, args[0], g_logToFilter, MAX_LOG_LEN, &logSize);
 
     // 解析ArkTS端的回调函数
     napi_valuetype valueType = napi_undefined;
     napi_typeof(env, args[1], &valueType);
-    if(valueType != napi_function) {
+    if (valueType != napi_function) {
         OH_LOG_Print(LOG_APP, LOG_ERROR, GLOBAL_RESMGR, TAG, "SetLogCallback fail，param[2] is not a function！");
         return nullptr;
     }
@@ -76,8 +78,9 @@ static napi_value SetLogCallback(napi_env env, napi_callback_info info) {
     return nullptr;
 }
 
-// TODO: 知识点：关闭日志回调功能
-static napi_value CancelLogCallback(napi_env env, napi_callback_info info) {
+// 关闭日志回调功能
+static napi_value CancelLogCallback(napi_env env, napi_callback_info info)
+{
     // 关闭日志回调
     OH_LOG_SetCallback(nullptr);
     OH_LOG_Print(LOG_APP, LOG_INFO, GLOBAL_RESMGR, TAG, "TestLogCallback CancelLogCallback end");
@@ -87,7 +90,8 @@ static napi_value CancelLogCallback(napi_env env, napi_callback_info info) {
 }
 
 EXTERN_C_START
-static napi_value Init(napi_env env, napi_value exports) {
+static napi_value Init(napi_env env, napi_value exports)
+{
     napi_property_descriptor desc[] = {
         {"setLogCallback", nullptr, SetLogCallback, nullptr, nullptr, nullptr, napi_default, nullptr},
         {"cancelLogCallback", nullptr, CancelLogCallback, nullptr, nullptr, nullptr, napi_default, nullptr}};

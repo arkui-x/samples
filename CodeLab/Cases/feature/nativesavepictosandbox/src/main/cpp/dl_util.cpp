@@ -13,30 +13,33 @@
  * limitations under the License.
  */
 
-#include <stdio.h>
+#include <cstdio>
 #include <dlfcn.h>
 
-void *load_library(const char *library_path) {
+void *LoadLibrary(const char *libraryPath)
+{
     // 打开共享库
-    void *handle = dlopen(library_path, RTLD_LAZY);
+    void *handle = dlopen(libraryPath, RTLD_LAZY);
     if (!handle) {
         fprintf(stderr, "Error opening library: %s\n", dlerror());
-        return NULL;
+        return nullptr;
     }
     return handle;
 }
 
-void *get_function(void *handle, const char *function_name) {
+void *GetFunction(void *handle, const char *functionName)
+{
     // 获取共享库中的函数指针
-    void *function_ptr = dlsym(handle, function_name);
-    if (!function_ptr) {
+    void *functionPtr = dlsym(handle, functionName);
+    if (!functionPtr) {
         fprintf(stderr, "Error getting function: %s\n", dlerror());
-        return NULL;
+        return nullptr;
     }
-    return function_ptr;
+    return functionPtr;
 }
 
-void close_library(void *handle) {
+void CloseLibrary(void *handle)
+{
     // 关闭共享库
     if (handle) {
         dlclose(handle);

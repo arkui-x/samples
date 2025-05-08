@@ -17,7 +17,8 @@
 #include "mock.h"
 
 EXTERN_C_START
-static napi_value Init(napi_env env, napi_value exports) {
+static napi_value Init(napi_env env, napi_value exports)
+{
     napi_property_descriptor desc[] = {
         {"registryDocumentViewPickerFn", nullptr, EtsWrapper::TS::RegistryDocumentViewPickerFn, nullptr, nullptr,
          nullptr, napi_default, nullptr},

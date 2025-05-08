@@ -13,41 +13,46 @@
  * limitations under the License.
  */
 
-#include "napi/native_api.h"
 #include <thread>
 
+#include "napi/native_api.h"
+
 const int GLOBAL_RESMGR = 0xFF00;
-const char *TAG = "[nativeprogressnotify]";
+const char* TAG = "[nativeprogressnotify]";
 typedef struct CallbackContext {
     napi_env env = nullptr;
     napi_threadsafe_function tsfn = nullptr; // 线程安全函数
     int progress = 0;
 } CallbackContext;
 
-// TODO：知识点：回调ts侧函数，将进度信息通知到ts侧
-static void callTS(napi_env env, napi_value jsCb, void *context, void *data) {
-    CallbackContext *arg = (CallbackContext *)data;
+// 回调ts侧函数，将进度信息通知到ts侧
+static void callTS(napi_env env, napi_value jsCb, void* context, void* data)
+{
+    CallbackContext* arg = (CallbackContext*)data;
     napi_value progress;
     napi_create_int32(arg->env, arg->progress, &progress);
     napi_call_function(arg->env, nullptr, jsCb, 1, &progress, nullptr);
 }
 
 /**
- * TODO 知识点：模拟下载任务，这里因为调用了ts侧函数，所以要使用线程安全函数
+ * 模拟下载任务，这里因为调用了ts侧函数，所以要使用线程安全函数
  */
-void downloadTask(CallbackContext *context) {
-    while (context && context->progress < 100) {
+void DownloadTask(CallbackContext* context)
+{
+    int32_t hundred = 100;
+    while (context && context->progress < hundred) {
         context->progress += 1;
         napi_acquire_threadsafe_function(context->tsfn);
-        napi_call_threadsafe_function(context->tsfn, (void *)context, napi_tsfn_blocking);
-        std::this_thread::sleep_for(std::chrono::milliseconds(100));
+        napi_call_threadsafe_function(context->tsfn, (void*)context, napi_tsfn_blocking);
+        std::this_thread::sleep_for(std::chrono::milliseconds(hundred));
     }
     delete context;
 };
 
-static napi_value startDownload(napi_env env, napi_callback_info info) {
+static napi_value startDownload(napi_env env, napi_callback_info info)
+{
     size_t argc = 1;
-    napi_value args[1] = {nullptr};
+    napi_value args[1] = { nullptr };
     napi_get_cb_info(env, info, &argc, args, nullptr, nullptr);
 
     auto asyncContext = new CallbackContext();
@@ -58,16 +63,17 @@ static napi_value startDownload(napi_env env, napi_callback_info info) {
     napi_threadsafe_function tsfn;
     napi_create_threadsafe_function(env, args[0], nullptr, workName, 0, 1, nullptr, nullptr, nullptr, callTS, &tsfn);
     asyncContext->tsfn = tsfn;
-    // TODO 知识点：启动下载线程，在子线程中执行下载任务并实时将进度通知到arkts线程
-    std::thread downloadThread(downloadTask, asyncContext);
+    // 启动下载线程，在子线程中执行下载任务并实时将进度通知到arkts线程
+    std::thread downloadThread(DownloadTask, asyncContext);
     downloadThread.detach();
     return nullptr;
 }
 
 EXTERN_C_START
-static napi_value Init(napi_env env, napi_value exports) {
-    napi_property_descriptor desc[] = {
-        {"startDownload", nullptr, startDownload, nullptr, nullptr, nullptr, napi_default, nullptr}};
+static napi_value Init(napi_env env, napi_value exports)
+{
+    napi_property_descriptor desc[] = { { "startDownload", nullptr, startDownload, nullptr, nullptr, nullptr,
+        napi_default, nullptr } };
     napi_define_properties(env, exports, sizeof(desc) / sizeof(desc[0]), desc);
     return exports;
 }
@@ -79,10 +85,11 @@ static napi_module demoModule = {
     .nm_filename = nullptr,
     .nm_register_func = Init,
     .nm_modname = "nativeprogressnotify",
-    .nm_priv = ((void *)0),
-    .reserved = {0},
+    .nm_priv = ((void*)0),
+    .reserved = { 0 },
 };
 
-extern "C" __attribute__((constructor)) void RegisterNativeprocessnotifyModule(void) {
+extern "C" __attribute__((constructor)) void RegisterNativeprocessnotifyModule(void)
+{
     napi_module_register(&demoModule);
 }

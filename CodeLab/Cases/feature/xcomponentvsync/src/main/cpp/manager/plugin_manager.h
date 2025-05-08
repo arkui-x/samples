@@ -13,8 +13,8 @@
  * limitations under the License.
  */
 
-#ifndef _PLUGIN_MANAGER_H_
-#define _PLUGIN_MANAGER_H_
+#ifndef PLUGIN_MANAGER_H_
+#define PLUGIN_MANAGER_H_
 
 #include <string>
 #include <unordered_map>
@@ -48,4 +48,4 @@ private:
     std::unordered_map<std::string, PluginRender *> pluginRenderMap_;
 };
 
-#endif // _PLUGIN_MANAGER_H_
+#endif // PLUGIN_MANAGER_H_

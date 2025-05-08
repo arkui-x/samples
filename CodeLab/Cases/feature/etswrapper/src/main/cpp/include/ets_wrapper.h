@@ -29,7 +29,7 @@
 #define LOG_TAG "DocumentViewPickerWrapper"
 
 /**
- * TODO：知识点：
+ * 知识点
  * 统一处理异常
  */
 #define NODE_API_CALL(env, call)                                                                                       \
@@ -107,7 +107,7 @@ namespace EtsWrapper {
     } // namespace TSFn
 
     /**
-     * TODO：知识点：
+     * 知识点
      * ts侧对应数据结构，当ts侧传递error对象到native侧后，使用本结构接收
      * 因为ts侧中的data属性使用了模板，因此这里无法对应的具体类型，这里进行了忽略
      */
@@ -142,14 +142,14 @@ namespace EtsWrapper {
     };
 
     /**
-     * TODO：知识点：
+     * 知识点
      * 开发者回调函数类型
      */
     typedef void (*DocumentSelectThenFn)(std::list<std::string> value);
     typedef DocumentSelectThenFn DocumentSaveThenFn;
     typedef void (*DocumentCatchFn)(BusinessError error);
     /**
-     * TODO：知识点：
+     * 知识点
      * then回调函数wrapper，调用时真正调用的是Call方法，Call方法中调用真正的回调
      */
     class DocumentViewPickerSelectThenCbWrapper {
@@ -179,7 +179,7 @@ namespace EtsWrapper {
         static napi_value Call(napi_env env, napi_callback_info info);
     };
     /**
-     * TODO：知识点：
+     * 知识点
      * 调用者传递的参数封装，包括select时的options参数、select的then回调、catch回调
      */
     class DocumentViewPickerSelectParam {
@@ -196,7 +196,7 @@ namespace EtsWrapper {
     };
 
     /**
-     * TODO：知识点：
+     * 知识点
      * 同步等待结果的工具
      */
     struct ResultWaitUtil {
@@ -206,7 +206,7 @@ namespace EtsWrapper {
     };
 
     /**
-     * TODO：知识点：
+     * 知识点
      * picker执行的上下文，保存一些全局数据，包括：注册的方法，js线程id，当前活跃ability的id，uiAbilityID及其对应uiContext的映射，锁
      */
     struct UniContext {
@@ -225,7 +225,7 @@ namespace EtsWrapper {
     };
     UniContext *const g_uniContext = new UniContext();
     /**
-     * TODO：知识点：
+     * 知识点
      * 供开发者真正调用的方法，以cpp的形式暴露
      */
     void DocumentViewPickerSelect(DocumentSelectOptions options, DocumentSelectThenFn thenFn, DocumentCatchFn catchFn);

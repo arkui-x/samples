@@ -33,7 +33,7 @@
       // 如果返回的图片列表是空的，则不显示
       if (tFile === 0) {
         document.getElementById('image_preview').style.display = 'block';
-        document.getElementById('image_preview').innerHTML = "未选择图片";
+        document.getElementById('image_preview').innerHTML = '未选择图片';
         return;
       }
       document.getElementById('image').setAttribute('src', URL.createObjectURL(tFile[0]));

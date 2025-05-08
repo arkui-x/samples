@@ -13,7 +13,8 @@
  * limitations under the License.
  */
 
-#define _GL_CORE_
+#ifndef EGL_CORE_SHADER_H_
+#define EGL_CORE_SHADER_H_
 
 #include <GLES3/gl3.h>
 #include <EGL/egl.h>
@@ -25,9 +26,9 @@
 class EGLCore {
 public:
     explicit EGLCore(std::string &id) : id_(id){};
-    bool switchAmbient();
-    void switchDiffuse();
-    bool switchSpecular();
+    bool SwitchAmbient();
+    void SwitchDiffuse();
+    bool SwitchSpecular();
     void DrawSquare();
     void OnSurfaceCreated(void *window, int w, int h);
     void OnSurfaceChanged(void *window, int w, int h);
@@ -56,3 +57,5 @@ private:
     GLint positionHandle;
     OH_NativeVSync *mVsync = nullptr;
 };
+
+#endif // EGL_CORE_SHADER_H_

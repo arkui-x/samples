@@ -16,10 +16,10 @@
 #ifndef COMMONAPPDEVELOPMENT_DL_UTIL_H
 #define COMMONAPPDEVELOPMENT_DL_UTIL_H
 
-void *load_library(const char *library_path);
+void *LoadLibrary(const char *libraryPath);
 
-void *get_function(void *handle, const char *function_name);
+void *GetFunction(void *handle, const char *functionName);
 
-void close_library(void *handle);
+void CloseLibrary(void *handle);
 
 #endif

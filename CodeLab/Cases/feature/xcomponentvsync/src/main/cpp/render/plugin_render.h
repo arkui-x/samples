@@ -13,8 +13,8 @@
  * limitations under the License.
  */
 
-#ifndef _PLUGIN_RENDER_H_
-#define _PLUGIN_RENDER_H_
+#ifndef PLUGIN_RENDER_H_
+#define PLUGIN_RENDER_H_
 
 #include <string>
 #include <unordered_map>
@@ -53,4 +53,4 @@ public:
     OH_NativeXComponent_TouchEvent touchEvent_;
 };
 
-#endif // _PLUGIN_RENDER_H_
+#endif // PLUGIN_RENDER_H_

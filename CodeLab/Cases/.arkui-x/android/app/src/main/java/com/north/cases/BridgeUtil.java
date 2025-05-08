@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2025 Huawei Device Co., Ltd.
+ * Copyright (c) Huawei Technologies Co., Ltd. 2025-2025. All rights reserved.
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
@@ -16,7 +16,6 @@
 package com.north.cases;
 
 import android.content.Context;
-import android.util.Log;
 
 import ohos.ace.adapter.capability.bridge.BridgeManager;
 import ohos.ace.adapter.capability.bridge.BridgePlugin;
@@ -27,7 +26,7 @@ import ohos.ace.adapter.capability.bridge.BridgePlugin;
  * @since 2025-01-07
  */
 public class BridgeUtil extends BridgePlugin {
-    private final String TAG = "[BridgeUtil]";
+    private static final String TAG = "[BridgeUtil]";
 
     private String name;
 
@@ -36,7 +35,7 @@ public class BridgeUtil extends BridgePlugin {
     /**
      * Func: constructor
      *
-     * @param context       Context of the current Activity
+     * @param context       Context
      * @param name          Platform bridge name
      * @param bridgeManager BridgePlugin object manager
      * @since 2025-01-07
@@ -53,7 +52,6 @@ public class BridgeUtil extends BridgePlugin {
      * @since 2025-01-07
      */
     public void exit() {
-        Log.w(TAG, "Warning app will force quit.");
         System.exit(0);
     }
 }

@@ -58,7 +58,8 @@ export struct Comment {
       .justifyContent(FlexAlign.SpaceBetween)
       .padding({
         left: $r('app.integer.navdialog_comment_padding'),
-        right: $r('app.integer.navdialog_comment_padding')
+        right: $r('app.integer.navdialog_comment_padding'),
+        bottom: 30
       })
 
       // commets list
@@ -89,18 +90,6 @@ export struct Comment {
         }
       })
       .layoutWeight(1) // 自适应布局
-
-      Row() {
-        TextInput({ placeholder: $r('app.string.navdialog_comment_textinput_placeholder') })
-          .defaultFocus(false)
-          .enableKeyboardOnFocus(false)
-      }
-      .height($r('app.integer.navdialog_comment_textinput_height'))
-      .width($r('app.string.navdialog_full_size'))
-      .padding({
-        left: $r('app.integer.navdialog_comment_padding'),
-        right: $r('app.integer.navdialog_comment_padding')
-      })
     }
     .width($r('app.string.navdialog_full_size'))
     .height($r('app.string.navdialog_full_size'))

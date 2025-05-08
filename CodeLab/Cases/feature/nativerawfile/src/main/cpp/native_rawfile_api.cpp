@@ -35,7 +35,8 @@
 
 #if defined(IOS_PLATFORM)
 namespace LIB_RAWFILE {
-static napi_value GetTotalRawFileContent(napi_env env, napi_callback_info info) {
+static napi_value GetTotalRawFileContent(napi_env env, napi_callback_info info)
+{
     size_t argc = 2;
     napi_value argv[2] = {nullptr};
     napi_get_cb_info(env, info, &argc, argv, nullptr, nullptr);
@@ -61,7 +62,11 @@ static napi_value GetTotalRawFileContent(napi_env env, napi_callback_info info) 
     long len = OH_ResourceManager_GetRawFileSize(rawFile);
 
     char *buf = (char *)malloc(len + 1);
-    memset(buf, 0, len + 1);
+    errno_t err = memset_s(buf, len + 1, 0, len + 1);
+    if (err != 0) {
+        OH_ResourceManager_ReleaseNativeResourceManager(mNativeResMgr);
+        return nullptr;
+    }
     int ret;
     if ((ret = pread(descriptor.fd, buf, len, descriptor.start)) == -1) {
     } else {
@@ -73,11 +78,12 @@ static napi_value GetTotalRawFileContent(napi_env env, napi_callback_info info) 
     OH_ResourceManager_CloseRawFile(rawFile);
     OH_ResourceManager_ReleaseNativeResourceManager(mNativeResMgr);
     free(buf);
-    buf = NULL;
+    buf = nullptr;
     return strContent;
 }
 
-static napi_value GetRawFileContent(napi_env env, napi_callback_info info) {
+static napi_value GetRawFileContent(napi_env env, napi_callback_info info)
+{
     size_t argc = 4;
     napi_value argv[4] = {nullptr};
     napi_get_cb_info(env, info, &argc, argv, nullptr, nullptr);
@@ -92,10 +98,12 @@ static napi_value GetRawFileContent(napi_env env, napi_callback_info info) {
     // 获取读取位置与长度参数
     int32_t startPos = 0;
     int32_t lenContent = 0;
-    napi_get_value_int32(env, argv[2], &startPos);
-    napi_get_value_int32(env, argv[3], &lenContent);
+    int32_t two = 2;
+    int32_t three = 3;
+    napi_get_value_int32(env, argv[two], &startPos);
+    napi_get_value_int32(env, argv[three], &lenContent);
 
-    // TODO：知识点：通过Rawfile的API接口OH_ResourceManager_OpenRawFile打开文件。
+    // 通过Rawfile的API接口OH_ResourceManager_OpenRawFile打开文件。
     RawFile *rawFile = OH_ResourceManager_OpenRawFile(mNativeResMgr, filename.c_str());
     if (rawFile == nullptr) {
         // 释放资源
@@ -120,9 +128,9 @@ static napi_value GetRawFileContent(napi_env env, napi_callback_info info) {
     }
 
     char *buf = (char *)malloc(lenContent + 1);
-    memset(buf, 0, lenContent + 1);
+    memset_s(buf, lenContent + 1, 0, lenContent + 1);
     int ret;
-    // TODO 知识点：通过pread读取文件部分内容。
+    // 通过pread读取文件部分内容。
     if ((ret = pread(descriptor.fd, buf, lenContent, descriptor.start + startPos)) == -1) {
     } else {
         buf[lenContent] = '\0';
@@ -133,30 +141,31 @@ static napi_value GetRawFileContent(napi_env env, napi_callback_info info) {
     OH_ResourceManager_CloseRawFile(rawFile);
     OH_ResourceManager_ReleaseNativeResourceManager(mNativeResMgr);
     free(buf);
-    buf = NULL;
+    buf = nullptr;
     return strContent;
 }
 } // namespace LIB_RAWFILE
 #endif
 
 // 获取并调用so库中的GetTotalRawFileContentWrapper函数，返回调用结果
-static napi_value GetTotalRawFileContent(napi_env env, napi_callback_info info) {
+static napi_value GetTotalRawFileContent(napi_env env, napi_callback_info info)
+{
 #if defined(IOS_PLATFORM)
     napi_value result = LIB_RAWFILE::GetTotalRawFileContent(env, info);
     return result;
 #else
     // 从全局对象中获取指定so库的句柄
-    void *handler = global_handlers["libnativerawfile.so"];
+    void *handler = g_globalHandlers["libnativerawfile.so"];
     if (handler == nullptr) {
         // 处理句柄为空的情况
         return nullptr;
     }
     // 声明函数指针类型
     typedef napi_value (*GetTotalRawFileContentWrapperFunc)(napi_env, napi_callback_info);
-    // TODO：知识点：使用dlsym查找和调用so库中的符号
+    // 使用dlsym查找和调用so库中的符号
     GetTotalRawFileContentWrapperFunc getTotalRawFileContentWrapper =
         reinterpret_cast<GetTotalRawFileContentWrapperFunc>(dlsym(handler, "GetTotalRawFileContentWrapper"));
-    if (getTotalRawFileContentWrapper) {
+    if (getTotalRawFileContentWrapper) {
         // 调用 GetRawFileContentWrapper 函数
         napi_value result = getTotalRawFileContentWrapper(env, info);
         return result;
@@ -168,13 +177,14 @@ static napi_value GetTotalRawFileContent(napi_env env, napi_callback_info info) 
 }
 
 // 获取并调用so库中的GetRawFileContentWrapper函数，返回调用结果
-static napi_value GetRawFileContent(napi_env env, napi_callback_info info) {
+static napi_value GetRawFileContent(napi_env env, napi_callback_info info)
+{
 #if defined(IOS_PLATFORM)
     napi_value result = LIB_RAWFILE::GetRawFileContent(env, info);
     return result;
 #else
     // 从全局对象中获取指定so库的句柄
-    void *handler = global_handlers["libnativerawfile.so"];
+    void *handler = g_globalHandlers["libnativerawfile.so"];
     if (handler == nullptr) {
         // 处理句柄为空的情况
         return nullptr;
@@ -195,7 +205,8 @@ static napi_value GetRawFileContent(napi_env env, napi_callback_info info) {
 }
 
 EXTERN_C_START
-static napi_value Init(napi_env env, napi_value exports) {
+static napi_value Init(napi_env env, napi_value exports)
+{
     napi_property_descriptor desc[] = {
         {"getTotalRawFileContent", nullptr, GetTotalRawFileContent, nullptr, nullptr, nullptr, napi_default, nullptr},
         {"getRawFileContent", nullptr, GetRawFileContent, nullptr, nullptr, nullptr, napi_default, nullptr}};

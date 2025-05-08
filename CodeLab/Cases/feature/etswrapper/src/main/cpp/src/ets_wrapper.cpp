@@ -14,7 +14,8 @@
  */
 #include "ets_wrapper.h"
 
-std::string EtsWrapper::FNS::ConvertNapiValue2String(napi_env env, napi_value value) {
+std::string EtsWrapper::FNS::ConvertNapiValue2String(napi_env env, napi_value value)
+{
     napi_status status;
     napi_valuetype type;
     status = napi_typeof(env, value, &type);
@@ -30,17 +31,22 @@ std::string EtsWrapper::FNS::ConvertNapiValue2String(napi_env env, napi_value va
     return str;
 }
 
-std::thread::id EtsWrapper::FNS::GetCurrentThreadID() { return std::this_thread::get_id(); }
+std::thread::id EtsWrapper::FNS::GetCurrentThreadID()
+{
+    return std::this_thread::get_id();
+}
 
-napi_value EtsWrapper::FNS::ParseNapiRef(napi_env env, napi_ref ref) {
+napi_value EtsWrapper::FNS::ParseNapiRef(napi_env env, napi_ref ref)
+{
     napi_value value;
     NODE_API_CALL(env, napi_get_reference_value(env, ref, &value));
     return value;
 }
 
-napi_value EtsWrapper::TS::SetTopAbilityID(napi_env env, napi_callback_info info) {
+napi_value EtsWrapper::TS::SetTopAbilityID(napi_env env, napi_callback_info info)
+{
     size_t argc = 1;
-    napi_value args[] = {nullptr};
+    napi_value args[] = { nullptr };
     NODE_API_CALL(env, napi_get_cb_info(env, info, &argc, args, nullptr, nullptr));
     napi_valuetype type;
     NODE_API_CALL(env, napi_typeof(env, args[0], &type));
@@ -55,10 +61,11 @@ napi_value EtsWrapper::TS::SetTopAbilityID(napi_env env, napi_callback_info info
     return nullptr;
 }
 
-napi_value EtsWrapper::TS::RegistryDocumentViewPickerFn(napi_env env, napi_callback_info info) {
+napi_value EtsWrapper::TS::RegistryDocumentViewPickerFn(napi_env env, napi_callback_info info)
+{
     size_t argc = 2;
     size_t originArgc = argc;
-    napi_value args[] = {nullptr, nullptr};
+    napi_value args[] = { nullptr, nullptr };
     NODE_API_CALL(env, napi_get_cb_info(env, info, &argc, args, nullptr, nullptr));
     if (argc != originArgc) {
         return nullptr;
@@ -70,15 +77,16 @@ napi_value EtsWrapper::TS::RegistryDocumentViewPickerFn(napi_env env, napi_callb
             return nullptr;
         }
     }
-    napi_value selectWork, saveWork;
+    napi_value selectWork;
+    napi_value saveWork;
     NODE_API_CALL(env, napi_create_string_utf8(env, "selectWork", NAPI_AUTO_LENGTH, &selectWork));
     NODE_API_CALL(env, napi_create_string_utf8(env, "saveWork", NAPI_AUTO_LENGTH, &saveWork));
     {
         std::lock_guard<std::mutex> guard(g_uniContext->lock);
         NODE_API_CALL(env, napi_create_threadsafe_function(env, args[0], nullptr, selectWork, 0, 1, nullptr, nullptr,
-                                                           nullptr, TSFn::CallJSSelect, &(g_uniContext->selectTsfn)));
+                               nullptr, TSFn::CallJSSelect, &(g_uniContext->selectTsfn)));
         NODE_API_CALL(env, napi_create_threadsafe_function(env, args[1], nullptr, saveWork, 0, 1, nullptr, nullptr,
-                                                           nullptr, TSFn::CallJSSave, &(g_uniContext->saveTsfn)));
+                               nullptr, TSFn::CallJSSave, &(g_uniContext->saveTsfn)));
         NODE_API_CALL(env, napi_create_reference(env, args[0], 1, &(g_uniContext->selectRef)));
         NODE_API_CALL(env, napi_create_reference(env, args[1], 1, &(g_uniContext->saveRef)));
         g_uniContext->pickerEnv = env;
@@ -87,9 +95,10 @@ napi_value EtsWrapper::TS::RegistryDocumentViewPickerFn(napi_env env, napi_callb
     return nullptr;
 }
 
-napi_value EtsWrapper::TS::AddUIContext(napi_env env, napi_callback_info info) {
+napi_value EtsWrapper::TS::AddUIContext(napi_env env, napi_callback_info info)
+{
     size_t argc = 2;
-    napi_value args[] = {nullptr, nullptr};
+    napi_value args[] = { nullptr, nullptr };
 
     NODE_API_CALL(env, napi_get_cb_info(env, info, &argc, args, nullptr, nullptr));
     std::string abilityID = FNS::ConvertNapiValue2String(env, args[0]);
@@ -102,9 +111,10 @@ napi_value EtsWrapper::TS::AddUIContext(napi_env env, napi_callback_info info) {
     return nullptr;
 }
 
-napi_value EtsWrapper::TS::RemoveUIContext(napi_env env, napi_callback_info info) {
+napi_value EtsWrapper::TS::RemoveUIContext(napi_env env, napi_callback_info info)
+{
     size_t argc = 1;
-    napi_value args[] = {nullptr};
+    napi_value args[] = { nullptr };
     NODE_API_CALL(env, napi_get_cb_info(env, info, &argc, args, nullptr, nullptr));
     napi_valuetype type;
     NODE_API_CALL(env, napi_typeof(env, args[0], &type));
@@ -128,9 +138,10 @@ napi_value EtsWrapper::TS::RemoveUIContext(napi_env env, napi_callback_info info
     return nullptr;
 }
 
-void EtsWrapper::TSFn::CallJSSelect(napi_env env, napi_value jscb, void *context, void *data) {
+void EtsWrapper::TSFn::CallJSSelect(napi_env env, napi_value jscb, void* context, void* data)
+{
     napi_status status;
-    DocumentViewPickerSelectParam *param = (DocumentViewPickerSelectParam *)data;
+    DocumentViewPickerSelectParam* param = (DocumentViewPickerSelectParam*)data;
     napi_value selectOptions = param->options_.Convert2NapiValue(env);
     napi_value thenWrapper = param->selectThen_.Convert2NapiValue(env);
     napi_value catchWrapper = param->selectCatch_.Convert2NapiValue(env);
@@ -140,8 +151,9 @@ void EtsWrapper::TSFn::CallJSSelect(napi_env env, napi_value jscb, void *context
         return;
     }
     napi_value uiContext = FNS::ParseNapiRef(env, it->second);
-    napi_value argv[] = {uiContext, selectOptions, thenWrapper, catchWrapper};
-    status = napi_call_function(env, nullptr, jscb, 4, argv, nullptr);
+    napi_value argv[] = { uiContext, selectOptions, thenWrapper, catchWrapper };
+    int32_t four = 4;
+    status = napi_call_function(env, nullptr, jscb, four, argv, nullptr);
     if (status != napi_ok) {
     }
     delete param;
@@ -153,11 +165,13 @@ void EtsWrapper::TSFn::CallJSSelect(napi_env env, napi_value jscb, void *context
     }
 }
 
-void EtsWrapper::TSFn::CallJSSave(napi_env env, napi_value jscb, void *context, void *data) {
+void EtsWrapper::TSFn::CallJSSave(napi_env env, napi_value jscb, void* context, void* data)
+{
     // 参照CallJSSelect
 }
 
-napi_value EtsWrapper::DocumentSelectOptions::Convert2NapiValue(napi_env env) {
+napi_value EtsWrapper::DocumentSelectOptions::Convert2NapiValue(napi_env env)
+{
     napi_value opt;
     NODE_API_CALL(env, napi_create_object(env, &opt));
     if (this->defaultFilePathUri.length()) {
@@ -193,35 +207,37 @@ napi_value EtsWrapper::DocumentSelectOptions::Convert2NapiValue(napi_env env) {
     return opt;
 }
 
-napi_value EtsWrapper::DocumentViewPickerSelectThenCbWrapper::Convert2NapiValue(napi_env env) {
+napi_value EtsWrapper::DocumentViewPickerSelectThenCbWrapper::Convert2NapiValue(napi_env env)
+{
     napi_value object;
-    DocumentViewPickerSelectThenCbWrapper *thenWrapper = new DocumentViewPickerSelectThenCbWrapper(this->thenFn_);
+    DocumentViewPickerSelectThenCbWrapper* thenWrapper = new DocumentViewPickerSelectThenCbWrapper(this->thenFn_);
     NODE_API_CALL(env, napi_create_object(env, &object));
-    NODE_API_CALL(env, napi_wrap(
-                           env, object, thenWrapper,
-                           [](napi_env env, void *finalize_data, void *finalize_hint) -> void {
-                               delete reinterpret_cast<DocumentViewPickerSelectThenCbWrapper *>(finalize_data);
-                           },
-                           nullptr, nullptr));
+    NODE_API_CALL(
+        env, napi_wrap(env, object, thenWrapper,
+        [](napi_env env, void* finalize_data, void* finalize_hint) -> void {
+            delete reinterpret_cast<DocumentViewPickerSelectThenCbWrapper*>(finalize_data);
+        },
+        nullptr, nullptr));
     napi_property_descriptor desc[] = {
-        {"call", nullptr, DocumentViewPickerSelectThenCbWrapper::Call, nullptr, nullptr, nullptr, napi_default,
-         nullptr},
+        { "call", nullptr, DocumentViewPickerSelectThenCbWrapper::Call, nullptr, nullptr, nullptr, napi_default,
+            nullptr },
     };
     NODE_API_CALL(env, napi_define_properties(env, object, sizeof(desc) / sizeof(*desc), desc));
     return object;
 }
 
-napi_value EtsWrapper::DocumentViewPickerSelectThenCbWrapper::Call(napi_env env, napi_callback_info info) {
+napi_value EtsWrapper::DocumentViewPickerSelectThenCbWrapper::Call(napi_env env, napi_callback_info info)
+{
     size_t argc = 1;
     size_t originArgc = 1;
-    napi_value args[] = {nullptr};
+    napi_value args[] = { nullptr };
     napi_value thisArg;
     NODE_API_CALL(env, napi_get_cb_info(env, info, &argc, args, &thisArg, nullptr));
     if (argc != originArgc) {
         return nullptr;
     }
-    DocumentViewPickerSelectThenCbWrapper *thenWrapper;
-    NODE_API_CALL(env, napi_unwrap(env, thisArg, reinterpret_cast<void **>(&thenWrapper)));
+    DocumentViewPickerSelectThenCbWrapper* thenWrapper;
+    NODE_API_CALL(env, napi_unwrap(env, thisArg, reinterpret_cast<void**>(&thenWrapper)));
     uint32_t arraySize;
     NODE_API_CALL(env, napi_get_array_length(env, args[0], &arraySize));
     std::list<std::string> data;
@@ -230,8 +246,7 @@ napi_value EtsWrapper::DocumentViewPickerSelectThenCbWrapper::Call(napi_env env,
         napi_open_handle_scope(env, &scope);
         napi_value ele;
         NODE_API_CALL(env, napi_get_element(env, args[0], i, &ele));
-        std::string fileName;
-        fileName = FNS::ConvertNapiValue2String(env, ele);
+        std::string fileName = FNS::ConvertNapiValue2String(env, ele);
         data.push_back(fileName);
         napi_close_handle_scope(env, scope);
     }
@@ -239,12 +254,14 @@ napi_value EtsWrapper::DocumentViewPickerSelectThenCbWrapper::Call(napi_env env,
     return nullptr;
 }
 
-napi_value EtsWrapper::DocumentViewPickerSelectCatchCbWrapper::Convert2NapiValue(napi_env env) {
+napi_value EtsWrapper::DocumentViewPickerSelectCatchCbWrapper::Convert2NapiValue(napi_env env)
+{
     // 参照DocumentViewPickerSelectThenCbWrapper
     return nullptr;
 }
 
-napi_value EtsWrapper::DocumentViewPickerSelectCatchCbWrapper::Call(napi_env env, napi_callback_info info) {
+napi_value EtsWrapper::DocumentViewPickerSelectCatchCbWrapper::Call(napi_env env, napi_callback_info info)
+{
     // 参照DocumentViewPickerSelectThenCbWrapper
     return nullptr;
 }
@@ -255,19 +272,19 @@ napi_value EtsWrapper::DocumentViewPickerSelectCatchCbWrapper::Call(napi_env env
  * @param thenFn
  * @param catchFn
  */
-void EtsWrapper::DocumentViewPickerSelect(DocumentSelectOptions options, DocumentSelectThenFn thenFn,
-                                          DocumentCatchFn catchFn) {
+void EtsWrapper::DocumentViewPickerSelect(
+    DocumentSelectOptions options, DocumentSelectThenFn thenFn, DocumentCatchFn catchFn)
+{
     DocumentViewPickerSelectThenCbWrapper thenWrapper(thenFn);
     DocumentViewPickerSelectCatchCbWrapper catchWrapper(catchFn);
-    DocumentViewPickerSelectParam *selectParam = new DocumentViewPickerSelectParam(options, thenWrapper, catchWrapper);
+    DocumentViewPickerSelectParam* selectParam = new DocumentViewPickerSelectParam(options, thenWrapper, catchWrapper);
     /**
-     * TODO：知识点：
+     *
      * 虽然本例无需等待返回值，但是本例旨在打造通用的框架，因此这里实现了ts侧有返回值的场景
      * 如果是在非js线程发起调用，这里就需要调用线程安全函数，并等待其结果
      */
     if (g_uniContext->jsThreadID != FNS::GetCurrentThreadID()) {
-        napi_status status;
-        status = napi_acquire_threadsafe_function(g_uniContext->selectTsfn);
+        napi_status status = napi_acquire_threadsafe_function(g_uniContext->selectTsfn);
         if (status != napi_ok) {
             return;
         }
@@ -279,7 +296,7 @@ void EtsWrapper::DocumentViewPickerSelect(DocumentSelectOptions options, Documen
         return;
     } else {
         /**
-         * TODO：知识点：
+         *
          * 如果是在js线程发起的调用，就无需使用线程安全函数，也不能直接等待
          */
         napi_status status;
@@ -297,10 +314,11 @@ void EtsWrapper::DocumentViewPickerSelect(DocumentSelectOptions options, Documen
         status = napi_get_reference_value(g_uniContext->pickerEnv, (*it).second, &uiContext);
         if (status != napi_ok) {
         }
-        napi_value args[] = {uiContext, options.Convert2NapiValue(g_uniContext->pickerEnv),
-                             thenWrapper.Convert2NapiValue(g_uniContext->pickerEnv),
-                             catchWrapper.Convert2NapiValue(g_uniContext->pickerEnv)};
-        status = napi_call_function(g_uniContext->pickerEnv, nullptr, tsSelect, 4, args, &result);
+        napi_value args[] = { uiContext, options.Convert2NapiValue(g_uniContext->pickerEnv),
+            thenWrapper.Convert2NapiValue(g_uniContext->pickerEnv),
+            catchWrapper.Convert2NapiValue(g_uniContext->pickerEnv) };
+        int32_t four = 4;
+        status = napi_call_function(g_uniContext->pickerEnv, nullptr, tsSelect, four, args, &result);
         if (status != napi_ok) {
             return;
         }
@@ -308,7 +326,7 @@ void EtsWrapper::DocumentViewPickerSelect(DocumentSelectOptions options, Documen
     return;
 }
 
-void EtsWrapper::DocumentViewPickerSave(DocumentSaveOptions options, DocumentSaveThenFn thenFn,
-                                        DocumentCatchFn catchFn) {
+void EtsWrapper::DocumentViewPickerSave(DocumentSaveOptions options, DocumentSaveThenFn thenFn, DocumentCatchFn catchFn)
+{
     // 参照documentViewPickerSelect
 }

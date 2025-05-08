@@ -14,23 +14,28 @@
  */
 #include "mock.h"
 
-void Mock::DocumentSelectThenFn(std::list<std::string> value) {
+void Mock::DocumentSelectThenFn(std::list<std::string> value)
+{
     for (auto it = value.begin(); it != value.end(); it++) {
     }
 }
 
-void Mock::DocumentSelectCatchFn(EtsWrapper::BusinessError error) {
+void Mock::DocumentSelectCatchFn(EtsWrapper::BusinessError error)
+{
 }
 
-napi_value Mock::MockDocumentViewPickerSelectJSThread(napi_env env, napi_callback_info info) {
+napi_value Mock::MockDocumentViewPickerSelectJSThread(napi_env env, napi_callback_info info)
+{
+    int32_t three = 3;
     EtsWrapper::DocumentSelectOptions options{};
-    options.maxSelectNumber = 3;
+    options.maxSelectNumber = three;
     EtsWrapper::DocumentViewPickerSelect(options, DocumentSelectThenFn, DocumentSelectCatchFn);
     return nullptr;
 }
 
-napi_value Mock::MockDocumentViewPickerSelectPThread(napi_env env, napi_callback_info info) {
+napi_value Mock::MockDocumentViewPickerSelectPThread(napi_env env, napi_callback_info info)
+{
     std::thread otherThread(MockDocumentViewPickerSelectJSThread, env, info);
-    otherThread.detach(); // TODO：知识点：这里必须detach，不能join，这与js的线程模型相关
+    otherThread.detach(); // 这里必须detach，不能join，这与js的线程模型相关
     return nullptr;
 }

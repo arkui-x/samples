@@ -22,7 +22,8 @@
 
 PluginManager PluginManager::manager_;
 
-bool PluginManager::Export(napi_env env, napi_value exports) {
+bool PluginManager::Export(napi_env env, napi_value exports)
+{
     napi_status status;
     napi_value exportInstance = nullptr;
     OH_NativeXComponent *nativeXComponent = nullptr;
@@ -59,7 +60,8 @@ bool PluginManager::Export(napi_env env, napi_value exports) {
     return false;
 }
 
-void PluginManager::SetNativeXComponent(std::string &id, OH_NativeXComponent *nativeXComponent) {
+void PluginManager::SetNativeXComponent(std::string &id, OH_NativeXComponent *nativeXComponent)
+{
     if (nativeXComponent == nullptr) {
         return;
     }
@@ -74,7 +76,8 @@ void PluginManager::SetNativeXComponent(std::string &id, OH_NativeXComponent *na
     }
 }
 
-PluginRender *PluginManager::GetRender(std::string &id) {
+PluginRender *PluginManager::GetRender(std::string &id)
+{
     if (pluginRenderMap_.find(id) == pluginRenderMap_.end()) {
         PluginRender *instance = PluginRender::GetInstance(id);
         pluginRenderMap_[id] = instance;

@@ -12,11 +12,12 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-#include "common.h"
-#include <string>
 
 #ifndef COMMONAPPDEVELOPMENT_DOWNLOAD_HEIF_IMAGE_H
 #define COMMONAPPDEVELOPMENT_DOWNLOAD_HEIF_IMAGE_H
+
+#include "common.h"
+#include <string>
 
 class DownloadHEIFImage {
 public:

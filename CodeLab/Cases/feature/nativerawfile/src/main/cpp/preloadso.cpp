@@ -26,7 +26,8 @@
 #include <dlfcn.h>           // 包含 dlopen 函数的头文件
 #include "./include/global_handlers.h" // 包含全局对象global_handlers的头文件
 
-static napi_value Preload(napi_env env, napi_callback_info info) {
+static napi_value Preload(napi_env env, napi_callback_info info)
+{
     size_t argc = 1;
     napi_value args[1] = {nullptr};
 
@@ -57,15 +58,15 @@ static napi_value Preload(napi_env env, napi_callback_info info) {
             // 处理获取路径失败的情况
             continue;
         }
-        // TODO：知识点：使用dlopen动态加载so库，返回so库的句柄
-        void *handler= dlopen(path, RTLD_LAZY);
+        // 使用dlopen动态加载so库，返回so库的句柄
+        void *handler = dlopen(path, RTLD_LAZY);
         if (handler == nullptr) {
-            // TODO：知识点：dlerror抛出加载库失败的错误
+            // dlerror抛出加载库失败的错误
             dlerror();
             continue; // 加载下一个
         }
         // 将句柄保存到全局对象global_handlers中
-        global_handlers[std::string(path)] = handler;
+        g_globalHandlers[std::string(path)] = handler;
         // 将成功加载的库的路径添加到结果数组中
         napi_set_element(env, result, i, pathString);
     }
@@ -73,10 +74,11 @@ static napi_value Preload(napi_env env, napi_callback_info info) {
 }
 
 EXTERN_C_START
-static napi_value Init(napi_env env, napi_value exports) {
-    // TODO：知识点：napi_property_descriptor 为结构体，做用是描述扩展暴露的 属性/方法 的描述。
+static napi_value Init(napi_env env, napi_value exports)
+{
+    // napi_property_descriptor 为结构体，做用是描述扩展暴露的 属性/方法 的描述。
     napi_property_descriptor desc[] = {{"preload", nullptr, Preload, nullptr, nullptr, nullptr, napi_default, nullptr}};
-    // TODO: 知识点：定义暴露的方法
+    // 定义暴露的方法
     napi_define_properties(env, exports, sizeof(desc) / sizeof(desc[0]), desc);
     return exports;
 }
