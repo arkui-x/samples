@@ -1,0 +1,26 @@
+<!Document>
+<html>
+<head>
+    <title>viewhtml</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+</head>
+<body>
+<div>
+    <div id="bodyId">
+        <embed id="nativeSearch" type = "native/component" width="100%" height="100%" src="view"/>
+    </div>
+</div>
+<script>
+let nativeEmbed = {
+  nativeSearch : document.getElementById('nativeSearch'),
+  events:{},
+  init:function() {
+    let self = this;
+    self.nativeSearch.addEventListener('touchstart', self.events, false);
+  }
+};
+nativeEmbed.init();
+</script>
+
+</body>
+</html>

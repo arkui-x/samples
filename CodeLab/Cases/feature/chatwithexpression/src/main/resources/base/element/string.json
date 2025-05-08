@@ -1,0 +1,48 @@
+{
+  "string": [
+    {
+      "name": "chat_with_expression_input_background",
+      "value": "rgba(0,0,0,0.05)"
+    },
+    {
+      "name": "chat_with_expression_layout_100",
+      "value": "100%"
+    },
+    {
+      "name": "chat_with_expression_layout_80",
+      "value": "80%"
+    },
+    {
+      "name": "chat_with_expression_layout_20",
+      "value": "20%"
+    },
+    {
+      "name": "chat_with_expression_layout_10",
+      "value": "10%"
+    },
+    {
+      "name": "chat_with_expression_input_button",
+      "value": "发送"
+    },
+    {
+      "name": "chat_with_expression_msg_1",
+      "value": "正是江南好风景。resource://RAWFILE/12.png"
+    },
+    {
+      "name": "chat_with_expression_msg_2",
+      "value": "江南好, 落花时节又resource://RAWFILE/01.png逢君。resource://RAWFILE/02.png"
+    },
+    {
+      "name": "chat_with_expression_msg_3",
+      "value": "江南好, resource://RAWFILE/14.png风景旧曾谙。日出江花resource://RAWFILE/01.png红胜火,春来江水绿如resource://RAWFILE/03.png蓝。"
+    },
+    {
+      "name": "chat_with_expression_last_emoji",
+      "value": "最近使用"
+    },
+    {
+      "name": "chat_with_expression_all_emoji",
+      "value": "全部表情"
+    }
+  ]
+}

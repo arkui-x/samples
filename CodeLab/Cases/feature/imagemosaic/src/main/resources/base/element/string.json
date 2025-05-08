@@ -1,0 +1,16 @@
+{
+  "string": [
+    {
+      "name": "mosaic_btn_restore",
+      "value": "恢复原图"
+    },
+    {
+      "name": "mosaic_percent_50",
+      "value": "50%"
+    },
+    {
+      "name": "mosaic_percent_100",
+      "value": "100%"
+    }
+  ]
+}

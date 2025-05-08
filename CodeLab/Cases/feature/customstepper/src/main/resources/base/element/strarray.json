@@ -1,0 +1,35 @@
+{
+  "strarray": [
+    {
+      "name": "stepper_title_array",
+      "value": [
+        {
+          "value": "用户须知"
+        },
+        {
+          "value": "申请人员类别"
+        },
+        {
+          "value": "在线填表"
+        }
+      ]
+    },
+    {
+      "name": "stepper_category_array",
+      "value": [
+        {
+          "value": "具有普通高校本科及具有普通全日制高校本科及以上学历"
+        },
+        {
+          "value": "具有中级及以上技术职务任职资格"
+        },
+        {
+          "value": "留学归国人员"
+        },
+        {
+          "value": "符合特殊条件"
+        }
+      ]
+    }
+  ]
+}

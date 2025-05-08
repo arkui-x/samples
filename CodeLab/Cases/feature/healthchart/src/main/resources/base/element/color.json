@@ -1,0 +1,12 @@
+{
+  "color": [
+    {
+      "name": "bar_chart_health_divider",
+      "value": "#2c182431"
+    },
+    {
+      "name": "bar_chart_health_bg_color",
+      "value": "#99000000"
+    }
+  ]
+}

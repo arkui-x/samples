@@ -1,0 +1,10 @@
+{
+  "routerMap": [
+    {
+      "name": "modalwindow/ModalWindow",
+      "pageModule": "modalwindow",
+      "pageSourceFile": "src/main/ets/generated/RouterBuilder.ets",
+      "registerFunction": "modalWindowRegister"
+    }
+  ]
+}

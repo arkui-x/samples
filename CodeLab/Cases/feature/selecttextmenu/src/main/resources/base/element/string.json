@@ -1,0 +1,44 @@
+{
+  "string": [
+    {
+      "name": "page_show",
+      "value": "page from package"
+    },
+    {
+      "name": "select_text_menu_tips",
+      "value": "功能仅做展示，请根据业务需要自行实现"
+    },
+    {
+      "name": "select_text_menu_search_menu",
+      "value": "搜索"
+    },
+    {
+      "name": "select_text_menu_share_menu",
+      "value": "分享"
+    },
+    {
+      "name": "select_text_menu_translate_menu",
+      "value": "翻译"
+    },
+    {
+      "name": "select_text_menu_editor_height",
+      "value": "100%"
+    },
+    {
+      "name": "select_text_menu_editor_width",
+      "value": "100%"
+    },
+    {
+      "name": "select_text_menu_body_width",
+      "value": "100%"
+    },
+    {
+      "name": "select_text_menu_body_height",
+      "value": "100%"
+    },
+    {
+      "name": "select_text_menu_toolbar_width",
+      "value": "100%"
+    }
+  ]
+}

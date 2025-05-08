@@ -1,0 +1,300 @@
+{
+  "integer": [
+    {
+      "name": "status_bar_animation_beautiful_text_font",
+      "value": 17
+    },
+    {
+      "name": "status_bar_animation_beautiful_text_height",
+      "value": 40
+    },
+    {
+      "name": "status_bar_animation_beautiful_padding_left",
+      "value": 12
+    },
+    {
+      "name": "status_bar_animation_beautiful_padding_top",
+      "value": 10
+    },
+    {
+      "name": "status_bar_animation_location_text_font",
+      "value": 17
+    },
+    {
+      "name": "status_bar_animation_location_text_height",
+      "value": 25
+    },
+    {
+      "name": "status_bar_animation_location_text_width",
+      "value": 50
+    },
+    {
+      "name": "status_bar_animation_weather_text_font",
+      "value": 13
+    },
+    {
+      "name": "status_bar_animation_weather_text_height",
+      "value": 15
+    },
+    {
+      "name": "status_bar_animation_weather_text_width",
+      "value": 50
+    },
+    {
+      "name": "status_bar_animation_weather_padding_left",
+      "value": 5
+    },
+    {
+      "name": "status_bar_animation_top_up_width",
+      "value": 25
+    },
+    {
+      "name": "status_bar_animation_top_up_text_font",
+      "value": 11
+    },
+    {
+      "name": "status_bar_animation_top_up_text_height",
+      "value": 13
+    },
+    {
+      "name": "status_bar_animation_top_up_text_width",
+      "value": 50
+    },
+    {
+      "name": "status_bar_animation_top_up_padding_left",
+      "value": 5
+    },
+    {
+      "name": "status_bar_animation_favor_width",
+      "value": 30
+    },
+    {
+      "name": "status_bar_animation_highlight_width",
+      "value": 30
+    },
+    {
+      "name": "status_bar_animation_collected_width",
+      "value": 30
+    },
+    {
+      "name": "status_bar_animation_search_image_width",
+      "value": 20
+    },
+    {
+      "name": "status_bar_animation_search_image_margin_left",
+      "value": 5
+    },
+    {
+      "name": "status_bar_animation_search_text_font",
+      "value": 15
+    },
+    {
+      "name": "status_bar_animation_search_text_height",
+      "value": 30
+    },
+    {
+      "name": "status_bar_animation_search_text_margin_left",
+      "value": 8
+    },
+    {
+      "name": "status_bar_animation_search_height",
+      "value": 30
+    },
+    {
+      "name": "status_bar_animation_search_width",
+      "value": 30
+    },
+    {
+      "name": "status_bar_animation_search_margin_left",
+      "value": 10
+    },
+    {
+      "name": "status_bar_animation_search_margin_right",
+      "value": 10
+    },
+    {
+      "name": "status_bar_animation_share_width",
+      "value": 30
+    },
+    {
+      "name": "status_bar_animation_share_height",
+      "value": 30
+    },
+    {
+      "name": "status_bar_animation_share_image_width",
+      "value": 20
+    },
+    {
+      "name": "status_bar_animation_scan_width",
+      "value": 30
+    },
+    {
+      "name": "status_bar_animation_scan_height",
+      "value": 30
+    },
+    {
+      "name": "status_bar_animation_scan_image_width",
+      "value": 20
+    },
+    {
+      "name": "status_bar_animation_setting_width",
+      "value": 30
+    },
+    {
+      "name": "status_bar_animation_setting_height",
+      "value": 30
+    },
+    {
+      "name": "status_bar_animation_setting_image_width",
+      "value": 20
+    },
+    {
+      "name": "status_bar_animation_tool_view_width",
+      "value": 120
+    },
+    {
+      "name": "status_bar_animation_articles_list_padding_left",
+      "value": 12
+    },
+    {
+      "name": "status_bar_animation_articles_list_padding_right",
+      "value": 12
+    },
+    {
+      "name": "status_bar_animation_articles_list_padding_bottom",
+      "value": 12
+    },
+    {
+      "name": "status_bar_animation_eye_iamge_width",
+      "value": 18
+    },
+    {
+      "name": "status_bar_animation_eye_iamge_margin_right",
+      "value": 4
+    },
+    {
+      "name": "status_bar_animation_eye_width",
+      "value": 36
+    },
+    {
+      "name": "status_bar_animation_eye_text_font",
+      "value": 14
+    },
+    {
+      "name": "status_bar_animation_good_iamge_width",
+      "value": 18
+    },
+    {
+      "name": "status_bar_animation_good_iamge_margin_right",
+      "value": 4
+    },
+    {
+      "name": "status_bar_animation_good_width",
+      "value": 36
+    },
+    {
+      "name": "status_bar_animation_good_text_font",
+      "value": 14
+    },
+    {
+      "name": "status_bar_animation_collect_iamge_width",
+      "value": 18
+    },
+    {
+      "name": "status_bar_animation_collect_iamge_margin_right",
+      "value": 4
+    },
+    {
+      "name": "status_bar_animation_collect_width",
+      "value": 36
+    },
+    {
+      "name": "status_bar_animation_collect_text_font",
+      "value": 14
+    },
+    {
+      "name": "status_bar_animation_photography_works_font_size",
+      "value": 10
+    },
+    {
+      "name": "status_bar_animation_photography_works_padding_left",
+      "value": 8
+    },
+    {
+      "name": "status_bar_animation_photography_works_padding_right",
+      "value": 8
+    },
+    {
+      "name": "status_bar_animation_photography_works_padding_top",
+      "value": 2
+    },
+    {
+      "name": "status_bar_animation_photography_works_padding_bottom",
+      "value": 2
+    },
+    {
+      "name": "status_bar_animation_natural_scenery_font_size",
+      "value": 10
+    },
+    {
+      "name": "status_bar_animation_natural_scenery_padding_left",
+      "value": 8
+    },
+    {
+      "name": "status_bar_animation_natural_scenery_padding_right",
+      "value": 8
+    },
+    {
+      "name": "status_bar_animation_natural_scenery_padding_top",
+      "value": 2
+    },
+    {
+      "name": "status_bar_animation_natural_scenery_padding_bottom",
+      "value": 2
+    },
+    {
+      "name": "status_bar_animation_item_title_font_size",
+      "value": 14
+    },
+    {
+      "name": "status_bar_animation_item_content_font_size",
+      "value": 12
+    },
+    {
+      "name": "status_bar_animation_item_content_margin_top",
+      "value": 4
+    },
+    {
+      "name": "status_bar_animation_item_function_height",
+      "value": 40
+    },
+    {
+      "name": "status_bar_animation_item_label_height",
+      "value": 40
+    },
+    {
+      "name": "status_bar_animation_item_label_margin_left",
+      "value": 8
+    },
+    {
+      "name": "status_bar_animation_item_label_margin_right",
+      "value": 8
+    },
+    {
+      "name": "status_bar_animation_function_padding",
+      "value": 12
+    },
+    {
+      "name": "status_bar_animation_item_image_width",
+      "value": 80
+    },
+    {
+      "name": "status_bar_animation_item_image_margin_right",
+      "value": 12
+    },
+    {
+      "name": "status_bar_animation_item_height",
+      "value": 102
+    }
+  ]
+}

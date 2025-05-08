@@ -1,0 +1,216 @@
+{
+  "integer": [
+    {
+      "name": "danmaku_player_current_brightness",
+      "value": 10
+    },
+    {
+      "name": "danmaku_player_buttonPadding_horizontal",
+      "value": 4
+    },
+    {
+      "name": "danmaku_player_buttonPadding_flex",
+      "value": 2
+    },
+    {
+      "name": "danmaku_player_second",
+      "value": 3
+    },
+    {
+      "name": "danmaku_player_process_maxvalue",
+      "value": 100
+    },
+    {
+      "name": "danmaku_player_danmaku_padding",
+      "value": 5
+    },
+    {
+      "name": "danmaku_player_time_range",
+      "value": 1200
+    },
+    {
+      "name": "danmaku_player_new_danmaku_fontsize",
+      "value": 20
+    },
+    {
+      "name": "danmaku_player_back_icon_width",
+      "value": 15
+    },
+    {
+      "name": "danmaku_player_back_icon_height",
+      "value": 20
+    },
+    {
+      "name": "danmaku_player_back_icon_margin_top",
+      "value": 10
+    },
+    {
+      "name": "danmaku_player_back_icon_margin_left",
+      "value": 15
+    },
+    {
+      "name": "danmaku_player_title_margin_top",
+      "value": 10
+    },
+    {
+      "name": "danmaku_player_title_margin_left",
+      "value": 5
+    },
+    {
+      "name": "danmaku_player_top_title_padding",
+      "value": 10
+    },
+    {
+      "name": "danmaku_player_play_icon_width",
+      "value": 30
+    },
+    {
+      "name": "danmaku_player_lock_icon_width",
+      "value": 20
+    },
+    {
+      "name":"danmaku_player_lock_margin",
+      "value": 15
+    },
+    {
+      "name": "danmaku_player_time_margin",
+      "value": 10
+    },
+    {
+      "name": "danmaku_player_total_time_right_margin",
+      "value": 10
+    },
+    {
+      "name": "danmaku_player_enlarge_icon_width",
+      "value": 15
+    },
+    {
+      "name": "danmaku_player_enlarge_icon_margin",
+      "value": 15
+    },
+    {
+      "name": "danmaku_player_seek_icon_width",
+      "value": 30
+    },
+    {
+      "name": "danmaku_player_seek_icon_height",
+      "value": 30
+    },
+    {
+      "name": "danmaku_player_brightness_icon_width",
+      "value": 30
+    },
+    {
+      "name": "danmaku_player_brightness_icon_height",
+      "value": 30
+    },
+    {
+      "name": "danmaku_player_brightness_text_width",
+      "value": 80
+    },
+    {
+      "name": "danmaku_player_brightness_UI_width",
+      "value": 80
+    },
+    {
+      "name": "danmaku_player_max_brightness",
+      "value": 255
+    },
+    {
+      "name": "danmaku_player_min_brightness",
+      "value": 5
+    },
+    {
+      "name": "danmaku_player_seek_progress_margin_top",
+      "value": 10
+    },
+    {
+      "name": "danmaku_player_progress_total",
+      "value": 100
+    },
+    {
+      "name": "danmaku_player_progress_stroke_width",
+      "value": 5
+    },
+    {
+      "name": "danmaku_player_seek_padding_Left",
+      "value": 10
+    },
+    {
+      "name": "danmaku_player_seek_padding_right",
+      "value": 10
+    },
+    {
+      "name":"danmaku_player_seek_margin_top",
+      "value": 10
+    },
+    {
+      "name": "danmaku_player_seek_margin_bottom",
+      "value": 10
+    },
+    {
+      "name": "danmaku_player_seek_progress_width",
+      "value": 200
+    },
+    {
+      "name": "danmaku_player_height_difference",
+      "value": 50
+    },
+    {
+      "name": "danmaku_player_max_danmaku_lines",
+      "value": 5
+    },
+    {
+      "name": "danmaku_player_danmaku_style_example",
+      "value": 3
+    },
+    {
+      "name":"danmaku_player_danmaku_margin",
+      "value": 40
+    },
+    {
+      "name": "danmaku_player_screen_width_standard",
+      "value": 1000
+    },
+    {
+      "name": "danmaku_player_completion_time",
+      "value": 10
+    },
+    {
+      "name": "danmaku_player_ms_unit",
+      "value": 1000
+    },
+    {
+      "name": "danmaku_player_second_unit",
+      "value": 60
+    },
+    {
+      "name": "danmaku_player_minute_unit",
+      "value": 60
+    },
+    {
+      "name":"danmaku_player_second_in_hour",
+      "value": 3600
+    },
+    {
+      "name": "danmaku_player_time_multiple",
+      "value": 100
+    },
+    {
+      "name": "danmaku_player_percent",
+      "value": 100
+    },
+    {
+      "name": "danmaku_player_count_backwards",
+      "value": 3
+    },
+    {
+      "name": "danmaku_player_interval_time",
+      "value": 1000
+    },
+    {
+      "name": "danmaku_player_send_danmu_padding",
+      "value": 10
+    }
+  ]
+}

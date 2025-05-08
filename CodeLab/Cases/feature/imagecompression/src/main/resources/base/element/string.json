@@ -1,0 +1,180 @@
+{
+  "string": [
+    {
+      "name": "image_compression_prompt_enter_value_greater_than_zero",
+      "value": "请输入大于0的值"
+    },
+    {
+      "name": "image_compression_prompt_not_require_compression",
+      "value": "符合压缩要求，无需压缩"
+    },
+    {
+      "name": "image_compression_image_get_failed",
+      "value": "图片获取失败"
+    },
+    {
+      "name": "image_compression_info_image_quality_value",
+      "value": "图片质量：取值范围为0-100。0质量最低，100质量最高，质量越高生成图片所占空间越大。\n需要注意，png是无损压缩格式,所以设置图片质量无效。"
+    },
+    {
+      "name": "image_compression_info_image_scale_value",
+      "value": "图片尺寸：图片宽高缩放倍数。这里自定义取值范围1%-100%。100%表示图片原宽高尺寸。这里不考虑图片宽高缩小到1%以下的情况。"
+    },
+    {
+      "name": "image_compression_info_output_format_set",
+      "value": "注意点1：同一张图片，转成不同格式进行保存，保存的图片大小是存在差异的，和不同格式的编码算法相关。比如一张8M的jpeg格式图片转成png格式，保存的png图片大小可能是24MB，保存为webp格式的图片大小可能是15MB。\n注意点2：一张图片，图片质量参数设置100，图片尺寸设置100%，直接压缩，可能会遇到压缩后图片大小比压缩前图片还大的情况，这个情况的可能原因是压缩前的图片原来就已经被压缩过，如果原图片已经被压缩过，然后图片质量设置100，就会出现上述的情况。"
+    },
+    {
+      "name": "image_compression_info_compress_mode",
+      "value": "自动模式：需要输入图片压缩目标大小，然后点击压缩按钮，自动压缩图片。压缩后的图片大小小于等于指定图片压缩目标大小。\n手动模式：手动调整要压缩的图片质量和尺寸进行压缩。"
+    },
+    {
+      "name": "image_compression_info_after_compress",
+      "value": "'压缩后'所展示的图片大小，是该图片在内存中作为ArrayBuffer数据的压缩后大小，这一数值并不直接等同于该图片在最终保存到相册时的实际文件大小。由于多种因素（包括但不限于图片编码格式、压缩算法的细节实现、以及存储设备的文件系统特性等）的影响，两者间可能存在一定的差异。"
+    },
+    {
+      "name": "image_compression_info_max_compress_image_size",
+      "value": "图片压缩目标大小：压缩后的图片文件大小不超过预设的目标值。"
+    },
+    {
+      "name": "image_compression_info_every_time_reduce_scale",
+      "value": "scale每次缩小倍数：在用到scale进行压缩的过程中每次尺寸减小的程度。这里出于性能考虑，默认值设置0.4。设置0.4表示图片在第一次压缩时会将其尺寸缩小到原来的40%。如果压缩后的图片大小仍然超过目标值，会继续压缩，第二次压缩时会将其尺寸缩小到原来的80%。scale每次缩小倍数设置得越小，图片在压缩过程中尺寸减小的幅度就越小，这样做的好处是压缩后的图片大小可能会更接近设定的目标大小，但相应地，可能需要更多的压缩步骤和计算资源，从而影响压缩的效率或性能。因此，在选择这个参数时，需要权衡压缩效果与性能之间的关系。"
+    },
+    {
+      "name": "image_compression_info_compress_priority",
+      "value": "优先压缩质量：优先通过调整图片质量进行压缩。如果图片质量压缩到最低仍然超过目标值，则会再采用scale进行二次压缩。对于通过调整质量就能满足目标大小要求的图片，如果想要找到那个既能保持图片质量又尽可能接近目标大小的'最佳压缩质量'，可以使用下面的“packing最小二分单位”进行调整。\n\n优先压缩尺寸：优先通过调整图片尺寸进行压缩。可以使用下面的'最低图片质量'设置一个最低图片质量的参数，这个参数会确保在压缩尺寸时，图片质量不会低于设定的这个最低标准。这样能有效地减小图片大小，又能保持其一定的清晰度。"
+    },
+    {
+      "name": "image_compression_info_min_bisect_unit",
+      "value": "packing最小二分单位：对于通过调整图片质量就能满足目标大小要求的图片，如果想要找到那个既能保持图片质量又尽可能接近目标大小的'最佳压缩质量'，可以调整packing最小二分单位。这里出于性能考虑，默认值设置10。packing最小二分单位设置得越小，压缩后的图片大小可能会更接近设定的目标大小，但是相应的压缩性能也会更差。"
+    },
+    {
+      "name": "image_compression_info_min_quality",
+      "value": "最低图片质量：设置一个最低图片质量的参数。这个参数会确保在scale压缩尺寸时，图片质量不会低于设定的这个最低标准。这样能有效地减小图片大小，又能保持其一定的清晰度。"
+    },
+    {
+      "name": "image_compression_compress_completed",
+      "value": "压缩完成！"
+    },
+    {
+      "name": "image_compression_scale_priority_compress_msg",
+      "value": "当前在设置的scale每次缩小倍数条件下，无法压缩到目标大小，建议调低scale每次缩小倍数后再试"
+    },
+    {
+      "name": "image_compression_save_image_msg",
+      "value": "已保存至相册！"
+    },
+    {
+      "name": "image_compression_before_compression",
+      "value": "压缩前："
+    },
+    {
+      "name": "image_compression_before_compression_kb",
+      "value": " kb  格式："
+    },
+    {
+      "name": "image_compression_click_add_image",
+      "value": "点击添加图片"
+    },
+    {
+      "name": "image_compression_after_compression",
+      "value": "压缩后："
+    },
+    {
+      "name": "image_compression_compress_mode",
+      "value": "压缩模式："
+    },
+    {
+      "name": "image_compression_auto_mode",
+      "value": "自动模式"
+    },
+    {
+      "name": "image_compression_manual_mode",
+      "value": "手动模式"
+    },
+    {
+      "name": "image_compression_max_compressed_image_size",
+      "value": "图片压缩目标大小："
+    },
+    {
+      "name": "image_compression_kb",
+      "value": "KB"
+    },
+    {
+      "name": "image_compression_reduce_scale",
+      "value": "scale每次缩小倍数："
+    },
+    {
+      "name": "image_compression_compress_priority",
+      "value": "压缩偏好："
+    },
+    {
+      "name": "image_compression_quality_priority",
+      "value": "优先压缩质量"
+    },
+    {
+      "name": "image_compression_scale_priority",
+      "value": "优先压缩尺寸"
+    },
+    {
+      "name": "image_compression_bisect_unit",
+      "value": "packing最小二分单位："
+    },
+    {
+      "name": "image_compression_min_quality",
+      "value": "最低图片质量："
+    },
+    {
+      "name": "image_compression_image_quality",
+      "value": "图片质量："
+    },
+    {
+      "name": "image_compression_image_scale",
+      "value": "图片尺寸："
+    },
+    {
+      "name": "image_compression_percentage",
+      "value": " %"
+    },
+    {
+      "name": "image_compression_output_format",
+      "value": "输出格式："
+    },
+    {
+      "name": "image_compression_compress",
+      "value": "压缩"
+    },
+    {
+      "name": "image_compression_add_image_compressed_first",
+      "value": "请先添加待压缩的图片"
+    },
+    {
+      "name": "image_compression_input_max_compressed_image_size",
+      "value": "请输入图片压缩目标大小"
+    },
+    {
+      "name": "image_compression_please_compress_first",
+      "value": "请先压缩"
+    },
+    {
+      "name": "image_compression_compress_output_format_first_try_again",
+      "value": "请先压缩该输出格式后再试"
+    },
+    {
+      "name": "image_compression_full_size",
+      "value": "100%"
+    },
+    {
+      "name": "image_compression_seventy_percent",
+      "value": "70%"
+    },
+    {
+      "name": "image_compression_save_test_image",
+      "value": "测试图片已保存至图库！"
+    },
+    {
+      "name": "image_compression_use_test_image",
+      "value": "使用测试图片："
+    }
+  ]
+}

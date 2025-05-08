@@ -1,0 +1,108 @@
+{
+  "string": [
+    {
+      "name": "float_window_send_to",
+      "value": "送至"
+    },
+    {
+      "name": "float_window_selected",
+      "value": "已选"
+    },
+    {
+      "name": "float_window_select_configuration",
+      "value": "仲夏紫.8GB+128GB.4G全网通.官网标配.x1 4G全网通官网标配.x1 "
+    },
+    {
+      "name": "float_window_service",
+      "value": "服务"
+    },
+    {
+      "name": "float_window_free_hipping",
+      "value": "免运费"
+    },
+    {
+      "name": "float_window_store_delivery",
+      "value": "店铺发货"
+    },
+    {
+      "name": "float_window_return_goods",
+      "value": "7天无理由退货"
+    },
+    {
+      "name": "float_window_address",
+      "value": "北京市朝阳区"
+    },
+    {
+      "name": "float_window_price",
+      "value": "￥1388"
+    },
+    {
+      "name": "float_window_product",
+      "value": "智能手机"
+    },
+    {
+      "name": "float_window_live_text",
+      "value": "直播回放中"
+    },
+    {
+      "name": "float_window_opacity",
+      "value": "0.6"
+    },
+    {
+      "name": "float_window_full_size",
+      "value": "100%"
+    },
+    {
+      "name": "float_window_text_size_headline",
+      "value": "20"
+    },
+    {
+      "name": "float_window_text_font_family_medium",
+      "value": "medium"
+    },
+    {
+      "name": "float_window_text_size_body1",
+      "value": "14"
+    },
+    {
+      "name": "float_window_text_size_body2",
+      "value": "14"
+    },
+    {
+      "name": "float_window_text_size_body3",
+      "value": "12"
+    },
+    {
+      "name": "float_window_text_size_caption",
+      "value": "10"
+    },
+    {
+      "name": "float_window_corner_radius_default_l",
+      "value": "16"
+    },
+    {
+      "name": "float_window_corner_radius_default_m",
+      "value": "12"
+    },
+    {
+      "name": "float_window_corner_radius_subtab",
+      "value": "4"
+    },
+    {
+      "name": "float_window_card_margin_start",
+      "value": "12"
+    },
+    {
+      "name": "float_window_card_padding_start",
+      "value": "12"
+    },
+    {
+      "name": "float_window_elements_margin_vertical_m",
+      "value": "8"
+    },
+    {
+      "name": "float_window_elements_margin_vertical_l",
+      "value": "16"
+    }
+  ]
+}

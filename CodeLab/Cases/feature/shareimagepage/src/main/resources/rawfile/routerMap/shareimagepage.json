@@ -1,0 +1,10 @@
+{
+  "routerMap": [
+    {
+      "name": "shareimagepage/ShareImagePage",
+      "pageModule": "shareimagepage",
+      "pageSourceFile": "src/main/ets/generated/RouterBuilder.ets",
+      "registerFunction": "shareImagePageRegister"
+    }
+  ]
+}

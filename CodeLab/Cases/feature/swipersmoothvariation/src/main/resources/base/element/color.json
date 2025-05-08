@@ -1,0 +1,32 @@
+{
+  "color": [
+    {
+      "name": "swipersmoothvariation_swiper_jump_bg_color",
+      "value": "#08182431"
+    },
+    {
+      "name": "swipersmoothvariation_swiper_selected_color",
+      "value": "#FFEC6553"
+    },
+    {
+      "name": "swipersmoothvariation_swiper_unselected_color",
+      "value": "#FFFF8662"
+    },
+    {
+      "name": "swipersmoothvariation_color_white",
+      "value": "#FFFFFF"
+    },
+    {
+      "name": "swipersmoothvariation_text_color",
+      "value": "#FFE7EFFC"
+    },
+    {
+      "name": "swipersmoothvariation_stack_color",
+      "value": "#FFF5F5F3"
+    },
+    {
+      "name": "swipersmoothvariation_badge_color",
+      "value": "#EEFD5217"
+    }
+  ]
+}

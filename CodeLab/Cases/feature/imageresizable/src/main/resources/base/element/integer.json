@@ -1,0 +1,52 @@
+{
+  "integer": [
+    {
+      "name": "imageresizable_product_discount_image_resizable_top",
+      "value": 3
+    },
+    {
+      "name": "imageresizable_product_discount_image_resizable_right",
+      "value": 5
+    },
+    {
+      "name": "imageresizable_product_discount_image_resizable_bottom",
+      "value": 3
+    },
+    {
+      "name": "imageresizable_product_discount_image_resizable_left",
+      "value": 5
+    },
+    {
+      "name": "imageresizable_product_discount_font_size",
+      "value": 12
+    },
+    {
+      "name": "imageresizable_product_discount_padding",
+      "value": 5
+    },
+    {
+      "name": "imageresizable_product_sale_font_size",
+      "value": 12
+    },
+    {
+      "name": "imageresizable_product_sale_margin_top",
+      "value": 5
+    },
+    {
+      "name": "imageresizable_product_title_margin_bottom",
+      "value": 5
+    },
+    {
+      "name": "imageresizable_product_border_radius",
+      "value": 5
+    },
+    {
+      "name": "imageresizable_product_padding",
+      "value": 10
+    },
+    {
+      "name": "imageresizable_product_margin",
+      "value": 10
+    }
+  ]
+}

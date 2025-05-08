@@ -1,0 +1,12 @@
+{
+  "module": {
+    "name": "listslidetohistory",
+    "type": "har",
+    "description": "$string:list_slide_to_history_shared_desc",
+    "deviceTypes": [
+      "phone",
+      "tablet",
+      "2in1"
+    ],
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "routerMap": [
+    {
+      "name": "chatwithexpression/ChatWithExpression",
+      "pageModule": "chatwithexpression",
+      "pageSourceFile": "src/main/ets/generated/RouterBuilder.ets",
+      "registerFunction": "chatWithExpressionRegister"
+    }
+  ]
+}

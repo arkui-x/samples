@@ -1,0 +1,96 @@
+{
+  "string": [
+    {
+      "name": "dragtoswitchpictures_full_size",
+      "value": "100%"
+    },
+    {
+      "name": "dragtoswitchpictures_before_decoration",
+      "value": "装修前"
+    },
+    {
+      "name": "dragtoswitchpictures_after_decoration",
+      "value": "装修后"
+    },
+    {
+      "name": "dragtoswitchpictures_design_cattle",
+      "value": "设计狮"
+    },
+    {
+      "name": "dragtoswitchpictures_ai_design",
+      "value": "AI设计"
+    },
+    {
+      "name": "dragtoswitchpictures_10s_text",
+      "value": "10s生成装修方案"
+    },
+    {
+      "name": "dragtoswitchpictures_95_size",
+      "value": "95%"
+    },
+    {
+      "name": "dragtoswitchpictures_83_size",
+      "value": "83%"
+    },
+    {
+      "name": "dragtoswitchpictures_10_size",
+      "value": "10%"
+    },
+    {
+      "name": "dragtoswitchpictures_90_size",
+      "value": "90%"
+    },
+    {
+      "name": "dragtoswitchpictures_49_size",
+      "value": "49%"
+    },
+    {
+      "name": "dragtoswitchpictures_6_size",
+      "value": "6%"
+    },
+    {
+      "name": "dragtoswitchpictures_2_5_size",
+      "value": "2.5%"
+    },
+    {
+      "name": "dragtoswitchpictures_columnstemplate",
+      "value": "1fr 1fr"
+    },
+    {
+      "name": "dragtoswitchpictures_recommendation",
+      "value": "推荐"
+    },
+    {
+      "name": "dragtoswitchpictures_new_house",
+      "value": "新房"
+    },
+    {
+      "name": "dragtoswitchpictures_second_hand_house",
+      "value": "二手房"
+    },
+    {
+      "name": "dragtoswitchpictures_renting",
+      "value": "租房"
+    },
+    {
+      "name": "dragtoswitchpictures_decoration",
+      "value": "装修"
+    },
+    {
+      "name": "dragtoswitchpictures_go_to_try",
+      "value": "试一试"
+    },
+    {
+      "name": "dragtoswitchpictures_title",
+      "value": "点击下图中间按钮左右拖动切换图片"
+    },
+    {
+      "name": "dragtoswitchpictures_toast_one",
+      "value": "该视图仅供展示使用"
+    },
+    {
+      "name": "dragtoswitchpictures_toast_two",
+      "value": "该按钮仅供展示使用"
+    }
+  ]
+}

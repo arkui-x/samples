@@ -1,0 +1,60 @@
+{
+  "string": [
+    {
+      "name": "nativesavepictosandbox_font_size_20",
+      "value": "20"
+    },
+    {
+      "name": "nativesavepictosandbox_font_size_14",
+      "value": "14"
+    },
+    {
+      "name": "nativesavepictosandbox_margin",
+      "value": "10"
+    },
+    {
+      "name": "nativesavepictosandbox_radius",
+      "value": "10"
+    },
+    {
+      "name": "nativesavepictosandbox_borderRadius",
+      "value": "12"
+    },
+    {
+      "name": "nativesavepictosandbox_margin12",
+      "value": "12"
+    },
+    {
+      "name": "nativesavepictosandbox_padding",
+      "value": "12"
+    },
+    {
+      "name": "nativesavepictosandbox_sandBox_path",
+      "value": "沙箱路径:"
+    },
+    {
+      "name": "nativesavepictosandbox_tbn_RawFilePicture",
+      "value": "保存Rawfile图片"
+    },
+    {
+      "name": "nativesavepictosandbox_tbn_InternetPicture",
+      "value": "保存网络图片"
+    },
+    {
+      "name": "nativesavepictosandbox_title",
+      "value": "Native保存图片到应用沙箱"
+    },
+    {
+      "name": "nativesavepictosandbox_internet_file_write_fail",
+      "value": "网络图片写入失败"
+    },
+    {
+      "name": "nativesavepictosandbox_rawfile_write_fail",
+      "value": "Rawfile图片写入失败"
+    },
+    {
+      "name": "ohos_id_card_padding_start",
+      "value": "12"
+    }
+  ]
+}

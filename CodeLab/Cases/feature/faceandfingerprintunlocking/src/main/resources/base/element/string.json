@@ -1,0 +1,28 @@
+{
+  "string": [
+    {
+      "name": "face_and_fingerprint_unlocking_layout_100",
+      "value": "100%"
+    },
+    {
+      "name": "face_and_fingerprint_unlocking_not_support",
+      "value": "当前设备不支持此设备"
+    },
+    {
+      "name": "face_and_fingerprint_unlocking_low_security",
+      "value": "当前安全等级过低"
+    },
+    {
+      "name": "face_and_fingerprint_unlocking_unlock_type",
+      "value": "请先设置当前解锁方式"
+    },
+    {
+      "name": "face_and_fingerprint_unlocking_token_expired",
+      "value": "密码过期，请重新设置"
+    },
+    {
+      "name": "face_and_fingerprint_unlocking_show_button",
+      "value": "展示用按钮"
+    }
+  ]
+}

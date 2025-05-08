@@ -1,0 +1,84 @@
+{
+  "integer": [
+    {
+      "name": "refreshtimeline_opacity_Value",
+      "value": 0
+    },
+    {
+      "name": "refreshtimeline_position_X",
+      "value": -4
+    },
+    {
+      "name": "refreshtimeline_position_Y",
+      "value": 50
+    },
+    {
+      "name": "refreshtimeline_margin_top_five",
+      "value": 5
+    },
+    {
+      "name": "refreshtimeline_margin_top_fifteen",
+      "value": 15
+    },
+    {
+      "name": "refreshtimeline_margin_left_ten",
+      "value": 10
+    },
+    {
+      "name": "refreshtimeline_margin_left_twelve",
+      "value": 12
+    },
+    {
+      "name": "refreshtimeline_margin_left_twenty",
+      "value": 20
+    },
+    {
+      "name": "refreshtimeline_margin_bottom_five",
+      "value": 5
+    },
+    {
+      "name": "refreshtimeline_font_size_fourteen",
+      "value": 14
+    },
+    {
+      "name": "refreshtimeline_font_size_sixteen",
+      "value": 16
+    },
+    {
+      "name": "refreshtimeline_width_and_height_zero",
+      "value": 0
+    },
+    {
+      "name": "refreshtimeline_width_and_height_ten",
+      "value": 10
+    },
+    {
+      "name": "refreshtimeline_width_and_height_twenty",
+      "value": 20
+    },
+    {
+      "name": "refreshtimeline_width_and_height_one_hundred_and_twenty",
+      "value": 120
+    },
+    {
+      "name": "refreshtimeline_width_and_height_one_hundred_and_forty",
+      "value": 140
+    },
+    {
+      "name": "refreshtimeline_width_and_height_two_hundred",
+      "value": 200
+    },
+    {
+      "name": "refreshtimeline_width_and_height_four_hundred",
+      "value": 400
+    },
+    {
+      "name": "refreshtimeline_borderRadius_ten",
+      "value": 10
+    },
+    {
+      "name": "refreshtimeline_borderRadius_fifty",
+      "value": 50
+    }
+  ]
+}

@@ -1,0 +1,132 @@
+{
+  "string": [
+    {
+      "name": "limited_height_bottom_dialog_my_order",
+      "value": "我的订单"
+    },
+    {
+      "name": "limited_height_bottom_dialog_my_collect",
+      "value": "我的收藏"
+    },
+    {
+      "name": "limited_height_bottom_dialog_footprint",
+      "value": "足迹"
+    },
+    {
+      "name": "limited_height_bottom_dialog_coupon",
+      "value": "优惠券"
+    },
+    {
+      "name": "limited_height_bottom_dialog_common_setting",
+      "value": "常用设置"
+    },
+    {
+      "name": "limited_height_bottom_dialog_security_setting",
+      "value": "安全设置"
+    },
+    {
+      "name": "limited_height_bottom_dialog_feedback",
+      "value": "意见反馈"
+    },
+    {
+      "name": "limited_height_bottom_dialog_about",
+      "value": "关于"
+    },
+    {
+      "name": "limited_height_bottom_dialog_nickname",
+      "value": "购物小达人"
+    },
+    {
+      "name": "limited_height_bottom_dialog_full_width",
+      "value": "100%"
+    },
+    {
+      "name": "limited_height_bottom_dialog_toast_tips",
+      "value": "仅用作美化，请根据业务需要自行实现"
+    },
+    {
+      "name": "limited_height_bottom_dialog_shipping_address",
+      "value": "收货地址"
+    },
+    {
+      "name": "limited_height_bottom_dialog_my_file",
+      "value": "我的档案"
+    },
+    {
+      "name": "limited_height_bottom_dialog_invoice_management",
+      "value": "发票管理"
+    },
+    {
+      "name": "limited_height_bottom_dialog_mode_switch",
+      "value": "模式切换"
+    },
+    {
+      "name": "limited_height_bottom_dialog_theme_skin_peeler",
+      "value": "主题换肤"
+    },
+    {
+      "name": "limited_height_bottom_dialog_dark_mode",
+      "value": "夜间模式"
+    },
+    {
+      "name": "limited_height_bottom_dialog_clear_cache",
+      "value": "清理缓存"
+    },
+    {
+      "name": "limited_height_bottom_dialog_message_notification",
+      "value": "消息通知"
+    },
+    {
+      "name": "limited_height_bottom_dialog_personalized_recommendation",
+      "value": "个性化推荐"
+    },
+    {
+      "name": "limited_height_bottom_dialog_network_detection",
+      "value": "网络检测"
+    },
+    {
+      "name": "limited_height_bottom_dialog_personal_information_collection_list",
+      "value": "个人信息收集清单"
+    },
+    {
+      "name": "limited_height_bottom_dialog_third_party_sharing_personal_information_list",
+      "value": "第三方共享个人信息清单"
+    },
+    {
+      "name": "limited_height_bottom_dialog_service_agreement",
+      "value": "服务协议"
+    },
+    {
+      "name": "limited_height_bottom_dialog_privacy_statement",
+      "value": "隐私声明"
+    },
+    {
+      "name": "limited_height_bottom_dialog_account_center",
+      "value": "账号中心"
+    },
+    {
+      "name": "limited_height_bottom_dialog_modify_password",
+      "value": "修改密码"
+    },
+    {
+      "name": "limited_height_bottom_dialog_wallet",
+      "value": "钱包"
+    },
+    {
+      "name": "limited_height_bottom_dialog_pay",
+      "value": "支付"
+    },
+    {
+      "name": "limited_height_bottom_dialog_see_reached_the_limit_height_bottom_dialog",
+      "value": "点击查看已达到限制高度的底部弹窗"
+    },
+    {
+      "name": "limited_height_bottom_dialog_see_not_reached_the_limit_height_bottom_dialog",
+      "value": "点击查看未达到限制高度的底部弹窗"
+    },
+    {
+      "name": "limited_height_bottom_dialog_explain",
+      "value": "说明：底部弹窗的高度如果达到限制高度，弹窗内部的内容可能无法全部展示，需要滚动查看。如果未达到限制高度，弹窗内部的内容全部展示。"
+    }
+  ]
+}

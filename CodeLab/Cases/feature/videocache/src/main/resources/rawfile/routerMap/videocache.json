@@ -1,0 +1,10 @@
+{
+  "routerMap": [
+    {
+      "name": "videocache/VideoCacheView",
+      "pageModule": "videocache",
+      "pageSourceFile": "src/main/ets/generated/RouterBuilder.ets",
+      "registerFunction": "videoCacheViewRegister"
+    }
+  ]
+}

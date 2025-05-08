@@ -1,0 +1,136 @@
+{
+  "float": [
+    {
+      "name": "mini_player_animation_image_size",
+      "value": "24"
+    },
+    {
+      "name": "mini_player_animation_pause_image_size",
+      "value": "26"
+    },
+    {
+      "name": "mini_player_animation_down_arrow_size",
+      "value": "40"
+    },
+    {
+      "name": "mini_player_animation_size",
+      "value": "30"
+    },
+    {
+      "name": "mini_player_animation_tab_bar_font_size",
+      "value": "10"
+    },
+    {
+      "name": "mini_player_animation_select_tab_bar_opacity",
+      "value": "1"
+    },
+    {
+      "name": "mini_player_animation_not_select_tab_bar_opacity",
+      "value": "0.6"
+    },
+    {
+      "name": "mini_player_animation_offset",
+      "value": "12"
+    },
+    {
+      "name": "mini_player_animation_margin_right",
+      "value": "16"
+    },
+    {
+      "name": "mini_player_animation_margin_size",
+      "value": "20"
+    },
+    {
+      "name": "mini_player_animation_singer_font_size",
+      "value": "16"
+    },
+    {
+      "name": "mini_player_animation_font_size",
+      "value": "13"
+    },
+    {
+      "name": "mini_player_animation_song_opacity",
+      "value": "0.38"
+    },
+    {
+      "name": "mini_player_animation_down_arrow_opacity",
+      "value": "0.4"
+    },
+    {
+      "name": "mini_player_animation_transparent",
+      "value": "0"
+    },
+    {
+      "name": "mini_player_animation_margin_bottom",
+      "value": "30"
+    },
+    {
+      "name": "mini_player_animation_time_opacity",
+      "value": "0.8"
+    },
+    {
+      "name": "mini_player_animation_track_thickness",
+      "value": "4"
+    },
+    {
+      "name": "mini_player_animation_margin",
+      "value": "40"
+    },
+    {
+      "name": "mini_player_animation_play_size",
+      "value": "48"
+    },
+    {
+      "name": "mini_player_animation_big_play_size",
+      "value": "88"
+    },
+    {
+      "name": "mini_player_animation_recommendation_font_size",
+      "value": "25"
+    },
+    {
+      "name": "mini_player_animation_song_sheet_border_radius",
+      "value": "8"
+    },
+    {
+      "name": "mini_player_animation_song_sheet_size",
+      "value": "120"
+    },
+    {
+      "name": "mini_player_animation_music_column_font_size",
+      "value": "18"
+    },
+    {
+      "name": "mini_player_animation_music_more_font_size",
+      "value": "16"
+    },
+    {
+      "name": "mini_player_animation_music_column_opacity",
+      "value": "0.6"
+    },
+    {
+      "name": "mini_player_animation_grid_space",
+      "value": "10"
+    },
+    {
+      "name": "mini_player_animation_grid_height",
+      "value": "250"
+    },
+    {
+      "name": "mini_player_animation_border_radius",
+      "value": "24"
+    },
+    {
+      "name": "mini_player_animation_recommendation_height",
+      "value": "56"
+    },
+    {
+      "name": "mini_player_animation_padding_left",
+      "value": "20"
+    },
+    {
+      "name": "mini_player_animation_size_ten",
+      "value": "10"
+    }
+  ]
+}

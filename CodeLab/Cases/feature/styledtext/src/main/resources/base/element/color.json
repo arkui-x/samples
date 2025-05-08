@@ -1,0 +1,48 @@
+{
+  "color": [
+    {
+      "name": "styled_text_default_font_color",
+      "value": "#182431"
+    },
+    {
+      "name": "styled_text_list_divider_color",
+      "value": "#dedede"
+    },
+    {
+      "name": "styled_text_user_name_color",
+      "value": "#de6363"
+    },
+    {
+      "name": "styled_text_subtitle_color",
+      "value": "#999999"
+    },
+    {
+      "name": "styled_text_long_press_background_color",
+      "value": "#efefef"
+    },
+    {
+      "name": "styled_text_link_font_color",
+      "value": "#117aec"
+    },
+    {
+      "name": "styled_text_link_clicked_background_color",
+      "value": "#85bce5"
+    },
+    {
+      "name": "styled_text_tab_name",
+      "value": "#182431"
+    },
+    {
+      "name": "styled_text_selected_tab_name",
+      "value": "#007DFF"
+    },
+    {
+      "name": "styled_text_bar_background_color",
+      "value": "#F1F3F5"
+    },
+    {
+      "name": "styled_text_color_background",
+      "value": "#FFFFFF"
+    }
+  ]
+}

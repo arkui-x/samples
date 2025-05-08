@@ -1,0 +1,108 @@
+{
+  "integer": [
+    {
+      "name": "text_expand_text_font_size",
+      "value": 16
+    },
+    {
+      "name": "text_expand_text_line_height",
+      "value": 22
+    },
+    {
+      "name": "text_expand_text_margin_top",
+      "value": 17
+    },
+    {
+      "name": "text_expand_text_margin_bottom",
+      "value": 7
+    },
+    {
+      "name": "text_expand_divider_opacity_1",
+      "value": 1
+    },
+    {
+      "name": "text_expand_divider_opacity_0",
+      "value": 0
+    },
+    {
+      "name": "text_expand_search_height",
+      "value": 40
+    },
+    {
+      "name": "text_expand_search_placeholder_font_size",
+      "value": 14
+    },
+    {
+      "name": "text_expand_divider_stroke_width",
+      "value": 1
+    },
+    {
+      "name": "text_expand_tab_bar_width",
+      "value": 360
+    },
+    {
+      "name": "text_expand_tab_bar_height",
+      "value": 56
+    },
+    {
+      "name": "text_expand_image_width",
+      "value": 36
+    },
+    {
+      "name": "text_expand_image_height",
+      "value": 36
+    },
+    {
+      "name": "text_expand_image_border_radius",
+      "value": 18
+    },
+    {
+      "name": "text_expand_item_text_font_size",
+      "value": 16
+    },
+    {
+      "name": "text_expand_item_text_date_font_size",
+      "value": 14
+    },
+    {
+      "name": "text_expand_item_column_margin",
+      "value": 12
+    },
+    {
+      "name": "text_expand_item_row_margin",
+      "value": 20
+    },
+    {
+      "name": "text_expand_item_main_body_font",
+      "value": 16
+    },
+    {
+      "name": "text_expand_item_main_body_column_margin",
+      "value": 20
+    },
+    {
+      "name": "text_expand_item_main_body_image_width",
+      "value": 110
+    },
+    {
+      "name": "text_expand_item_main_body_image_height",
+      "value": 110
+    },
+    {
+      "name": "text_expand_item_main_body_image_margin",
+      "value": 10
+    },
+    {
+      "name": "text_expand_item_main_body_title_width",
+      "value": 350
+    },
+    {
+      "name": "text_expand_search_image_width",
+      "value": 20
+    },
+    {
+      "name": "text_expand_search_margin_left",
+      "value": 20
+    }
+  ]
+}

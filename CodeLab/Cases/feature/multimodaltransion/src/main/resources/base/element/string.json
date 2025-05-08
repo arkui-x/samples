@@ -1,0 +1,200 @@
+{
+  "string": [
+    {
+      "name": "multimodaltransion_phone_back",
+      "value": "手机验证码登录"
+    },
+    {
+      "name": "multimodaltransion_auto_after_login",
+      "value": "首次登录将自动注册"
+    },
+    {
+      "name": "multimodaltransion_verify_server_tip",
+      "value": "认证服务由橘子提供"
+    },
+    {
+      "name": "multimodaltransion_read_and_agree",
+      "value": "我已阅读并同意"
+    },
+    {
+      "name": "multimodaltransion_server_proxy_rule_detail",
+      "value": "服务协议及个人信息处理规则"
+    },
+    {
+      "name": "multimodaltransion_phone_start_login",
+      "value": "手机号码一键登录"
+    },
+    {
+      "name": "multimodaltransion_login_success",
+      "value": "登录成功"
+    },
+    {
+      "name": "multimodaltransion_please_read_and_agree",
+      "value": "请先阅读并同意协议"
+    },
+    {
+      "name": "multimodaltransion_please_input_account_and_pwd",
+      "value": "请输入账号或密码"
+    },
+    {
+      "name": "multimodaltransion_other_way_login",
+      "value": "其他登录方式"
+    },
+    {
+      "name": "multimodaltransion_login_problems",
+      "value": "遇到问题"
+    },
+    {
+      "name": "multimodaltransion_click_show_login_dialogController",
+      "value": "点击按钮唤出登录弹窗"
+    },
+    {
+      "name": "multimodaltransion_click_show_proxy",
+      "value": "点击了协议"
+    },
+    {
+      "name": "multimodaltransion_click_show_cancel",
+      "value": "点击了取消"
+    },
+    {
+      "name": "multimodaltransion_click_show_confirm",
+      "value": "点击了确认"
+    },
+    {
+      "name": "multimodaltransion_half_screen_modal_login_description",
+      "value": "点击跳转到半模态登录页"
+    },
+    {
+      "name": "multimodaltransion_service",
+      "value": "服务条款"
+    },
+    {
+      "name": "multimodaltransion_and1",
+      "value": "和"
+    },
+    {
+      "name": "multimodaltransion_privacy",
+      "value": "隐私政策"
+    },
+    {
+      "name": "multimodaltransion_and2",
+      "value": "以及"
+    },
+    {
+      "name": "multimodaltransion_account",
+      "value": "天翼账号服务协议"
+    },
+    {
+      "name": "multimodaltransion_not_this",
+      "value": "不是此账号？用其他账号"
+    },
+    {
+      "name": "multimodaltransion_login",
+      "value": "登录"
+    },
+    {
+      "name": "multimodaltransion_phone_login",
+      "value": "手机号登录"
+    },
+    {
+      "name": "multimodaltransion_new",
+      "value": "首次登录将产生新账号"
+    },
+    {
+      "name": "multimodaltransion_input_phone_number",
+      "value": "请输入手机号"
+    },
+    {
+      "name": "multimodaltransion_verify",
+      "value": "发送短信验证码"
+    },
+    {
+      "name": "multimodaltransion_86",
+      "value": "+86"
+    },
+    {
+      "name": "multimodaltransion_size_full",
+      "value": "100%"
+    },
+    {
+      "name": "multimodaltransion_page_size_full",
+      "value": "120%"
+    },
+    {
+      "name": "multimodaltransion_size_ninety_percent",
+      "value": "90%"
+    },
+    {
+      "name": "multimodaltransion_size_eighty_percent",
+      "value": "80%"
+    },
+    {
+      "name": "multimodaltransion_size_account_width",
+      "value": "79%"
+    },
+    {
+      "name": "multimodaltransion_size_eighty_two_percent",
+      "value": "83%"
+    },
+    {
+      "name": "multimodaltransion_account_login_text",
+      "value": "账号密码登录"
+    },
+    {
+      "name": "multimodaltransion_place_holder",
+      "value": "请输入账号"
+    },
+    {
+      "name": "multimodaltransion_text_input_place_holder",
+      "value": "请输入密码"
+    },
+    {
+      "name": "multimodaltransion_row_text",
+      "value": "手机验证码登录"
+    },
+    {
+      "name": "multimodaltransion_account_btn_text",
+      "value": "登录"
+    },
+    {
+      "name": "multimodaltransion_captcha_change_title_text",
+      "value": "账号密码登录"
+    },
+    {
+      "name": "multimodaltransion_captcha_get",
+      "value": "登录"
+    },
+    {
+      "name": "multimodaltransion_captcha_sent",
+      "value": "验证码已发送"
+    },
+    {
+      "name": "multimodaltransion_after_login_more_service",
+      "value": "登录体验更多服务"
+    },
+    {
+      "name": "multimodaltransion_user_phone_number",
+      "value": "122****2222"
+    },
+    {
+      "name": "multimodaltransion_get_service",
+      "value": "中国XX提供认证服务"
+    },
+    {
+      "name": "multimodaltransion_captcha_login_text",
+      "value": "验证码登录"
+    },
+    {
+      "name": "multimodaltransion_only_show_ui",
+      "value": "此样式仅为案例展示"
+    },
+    {
+      "name": "multimodaltransion_show_password_already_max",
+      "value": "密码不能超过15位"
+    },
+    {
+      "name": "multimodaltransion_show_id_already_max",
+      "value": "账号不能超过15位"
+    }
+  ]
+}

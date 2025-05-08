@@ -1,0 +1,16 @@
+{
+  "color": [
+    {
+      "name": "pendingitems_white",
+      "value": "#FFFFFF"
+    },
+    {
+      "name": "pendingitems_pageBcColor",
+      "value": "#fff1f3f5"
+    },
+    {
+      "name": "pendingitems_borderColor",
+      "value": "#ffdcdfdf"
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "color": [
+    {
+      "name": "event_propagation_toggle_selectedColor",
+      "value": "#007DFF"
+    },
+    {
+      "name": "event_propagation_toggle_switchpointColor",
+      "value": "#FFFFFF"
+    },
+    {
+      "name": "event_propagation_click_event_area_background_color",
+      "value": "#ffd2c8c8"
+    }
+  ]
+}

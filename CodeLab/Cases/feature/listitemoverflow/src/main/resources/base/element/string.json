@@ -1,0 +1,108 @@
+{
+  "string": [
+    {
+      "name": "listitem_overflow_full_size",
+      "value": "100%"
+    },
+    {
+      "name": "listitem_overflow_nickname",
+      "value": "请设置昵称"
+    },
+    {
+      "name": "listitem_overflow_signature",
+      "value": "这个人很懒，没有设置签名"
+    },
+    {
+      "name": "listitem_overflow_purse",
+      "value": "钱包"
+    },
+    {
+      "name": "listitem_overflow_gift_cards",
+      "value": "礼品卡"
+    },
+    {
+      "name": "listitem_overflow_credit_card",
+      "value": "信用卡"
+    },
+    {
+      "name": "listitem_overflow_payment",
+      "value": "缴费"
+    },
+    {
+      "name": "listitem_overflow_health",
+      "value": "医疗服务"
+    },
+    {
+      "name": "listitem_overflow_travel",
+      "value": "出行"
+    },
+    {
+      "name": "listitem_overflow_ticket",
+      "value": "电影演出"
+    },
+    {
+      "name": "listitem_overflow_favorite",
+      "value": "收藏"
+    },
+    {
+      "name": "listitem_overflow_settings",
+      "value": "设置"
+    },
+    {
+      "name": "listitem_overflow_about",
+      "value": "关于"
+    },
+    {
+      "name": "listitem_overflow_logout",
+      "value": "退出登录"
+    },
+    {
+      "name": "listitem_overflow_toast_no_edit",
+      "value": "编辑功能暂未开放"
+    },
+    {
+      "name": "listitem_overflow_toast_no_card",
+      "value": "未绑定银行卡"
+    },
+    {
+      "name": "listitem_overflow_toast_no_gift_cards",
+      "value": "没有礼品卡"
+    },
+    {
+      "name": "listitem_overflow_toast_no_credit_card",
+      "value": "没有信用卡"
+    },
+    {
+      "name": "listitem_overflow_toast_no_payment",
+      "value": "暂未开通缴费功能"
+    },
+    {
+      "name": "listitem_overflow_toast_no_health",
+      "value": "暂未开通医疗服务"
+    },
+    {
+      "name": "listitem_overflow_toast_no_travel",
+      "value": "暂未开通出行服务"
+    },
+    {
+      "name": "listitem_overflow_toast_no_ticket",
+      "value": "暂未开通电影演出服务"
+    },
+    {
+      "name": "listitem_overflow_toast_no_favorite",
+      "value": "没有收藏"
+    },
+    {
+      "name": "listitem_overflow_toast_no_settings",
+      "value": "无可设置的项目"
+    },
+    {
+      "name": "listitem_overflow_toast_about",
+      "value": "元素超出List区域案例"
+    },
+    {
+      "name": "pageflip_back_error_message",
+      "value": "请实现页面返回功能"
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "string": [
+    {
+      "name": "custom_dialog_title",
+      "value": "分享领红包"
+    },
+    {
+      "name": "custom_dialog_sum",
+      "value": "0.00"
+    },
+    {
+      "name": "custom_dialog_sum2",
+      "value": "0.50"
+    },
+    {
+      "name": "custom_dialog_yuan",
+      "value": "元"
+    },
+    {
+      "name": "custom_dialog_content",
+      "value": "发红包"
+    },
+    {
+      "name": "custom_dialog_content2",
+      "value": "分享必得红包"
+    },
+    {
+      "name": "custom_dialog_content3",
+      "value": "领取红包"
+    },
+    {
+      "name": "custom_dialog_withdrawal",
+      "value": "提现"
+    },
+    {
+      "name": "custom_dialog_prompt_text",
+      "value": "仅演示，可自行实现业务功能"
+    },
+    {
+      "name": "custom_dialog_bind_card",
+      "value": "请先绑定储蓄卡再提现"
+    },
+    {
+      "name": "custom_dialog_cancel",
+      "value": "取消"
+    },
+    {
+      "name": "custom_dialog_goto",
+      "value": "去绑定"
+    },
+    {
+      "name": "custom_dialog_mask_color",
+      "value": "#57050505"
+    },
+    {
+      "name": "ohos_id_card_padding_start",
+      "value": "12"
+    },
+    {
+      "name": "ohos_id_corner_radius_default_m",
+      "value": "12"
+    }
+  ]
+}

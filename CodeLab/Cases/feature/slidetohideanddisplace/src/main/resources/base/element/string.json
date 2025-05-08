@@ -1,0 +1,124 @@
+{
+  "string": [
+    {
+      "name": "slidetohideanddisplace_user_name",
+      "value": "蝙蝠侠"
+    },
+    {
+      "name": "slidetohideanddisplace_choose_identity",
+      "value": "选择身份"
+    },
+    {
+      "name": "slidetohideanddisplace_satisfaction",
+      "value": "满意度调查"
+    },
+    {
+      "name": "slidetohideanddisplace_vip",
+      "value": "VIP"
+    },
+    {
+      "name": "slidetohideanddisplace_member_services",
+      "value": "会员服务"
+    },
+    {
+      "name": "slidetohideanddisplace_description_slide",
+      "value": "上滑页面，用户头像逐渐缩小并移动到返回文字的后方，原本展示的手机号/选择身份/满意度调查的文本渐隐，顶部手机号文本渐显；下滑页面，用户头像逐渐放大并向下移动，顶部手机号文本渐隐，下方手机号/选择身份/满意度调查的文本渐显"
+    },
+    {
+      "name": "slidetohideanddisplace_payment",
+      "value": "待支付"
+    },
+    {
+      "name": "slidetohideanddisplace_receiving",
+      "value": "待收货"
+    },
+    {
+      "name": "slidetohideanddisplace_comments",
+      "value": "待评价"
+    },
+    {
+      "name": "slidetohideanddisplace_more",
+      "value": "更多"
+    },
+    {
+      "name": "slidetohideanddisplace_fans",
+      "value": "粉丝"
+    },
+    {
+      "name": "slidetohideanddisplace_favorites",
+      "value": "收藏"
+    },
+    {
+      "name": "slidetohideanddisplace_follow",
+      "value": "关注"
+    },
+    {
+      "name": "slidetohideanddisplace_history",
+      "value": "历史"
+    },
+    {
+      "name": "slidetohideanddisplace_focus_on_hot_topics",
+      "value": "聚焦热点"
+    },
+    {
+      "name": "slidetohideanddisplace_recommended_by_friends",
+      "value": "朋友推荐"
+    },
+    {
+      "name": "slidetohideanddisplace_news_directly_arrived",
+      "value": "新闻直通"
+    },
+    {
+      "name": "slidetohideanddisplace_photography_sharing",
+      "value": "摄影分享"
+    },
+    {
+      "name": "slidetohideanddisplace_width_of_elements_in_orders",
+      "value": "25%"
+    },
+    {
+      "name": "slidetohideanddisplace_width_of_elements_in_interaction",
+      "value": "25%"
+    },
+    {
+      "name": "slidetohideanddisplace_size_ninety_percent",
+      "value": "90%"
+    },
+    {
+      "name": "slidetohideanddisplace_size_full",
+      "value": "100%"
+    },
+    {
+      "name": "slidetohideanddisplace_size_one_hundred_and_twenty",
+      "value": "120%"
+    },
+    {
+      "name": "slidetohideanddisplace_member",
+      "value": "开通会员"
+    },
+    {
+      "name": "slidetohideanddisplace_get_off_your_purchases",
+      "value": "购物享首单立减"
+    },
+    {
+      "name": "slidetohideanddisplace_in_the_end",
+      "value": "到底了~"
+    },
+    {
+      "name": "slidetohideanddisplace_center_of_right",
+      "value": "权益中心"
+    },
+    {
+      "name": "slidetohideanddisplace_guess_your_like",
+      "value": "猜你喜欢"
+    },
+    {
+      "name": "slidetohideanddisplace_settings",
+      "value": "设置"
+    },
+    {
+      "name": "slidetohideanddisplace_customer_service",
+      "value": "客服"
+    }
+  ]
+}

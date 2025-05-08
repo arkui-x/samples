@@ -1,0 +1,36 @@
+{
+  "module": {
+    "name": "clockin",
+    "type": "har",
+    "deviceTypes": [
+      "default",
+      "tablet",
+      "2in1"
+    ],
+    "requestPermissions":[
+      {
+        "name" : "ohos.permission.INTERNET",
+      },
+      {
+        "name" : "ohos.permission.LOCATION",
+        "reason": "$string:clock_in_permission_request_reason",
+        "usedScene": {
+          "abilities": [
+            "FormAbility"
+          ],
+          "when":"inuse"
+        }
+      },
+      {
+        "name" : "ohos.permission.APPROXIMATELY_LOCATION",
+        "reason": "$string:clock_in_permission_request_reason",
+        "usedScene": {
+          "abilities": [
+            "FormAbility"
+          ],
+          "when":"inuse"
+        }
+      }
+    ]
+  }
+}

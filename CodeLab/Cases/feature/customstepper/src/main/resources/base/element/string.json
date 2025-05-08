@@ -1,0 +1,52 @@
+{
+  "string": [
+    {
+      "name": "module_desc",
+      "value": "module description"
+    },
+    {
+      "name": "EntryAbility_desc",
+      "value": "description"
+    },
+    {
+      "name": "stepper_prev_label",
+      "value": "上一页"
+    },
+    {
+      "name": "stepper_next_label",
+      "value": "下一页"
+    },
+    {
+      "name": "stepper_submit",
+      "value": "提交"
+    },
+    {
+      "name": "stepper_not_implement_prompt",
+      "value": "此功能仅供UI展示"
+    },
+    {
+      "name": "stepper_header_back_text",
+      "value": "返回"
+    },
+    {
+      "name": "stepper_submit_prompt",
+      "value": "数据已提交"
+    },
+    {
+      "name": "stepper_info_not_filled",
+      "value": "数据填写不完整"
+    },
+    {
+      "name": "stepper_input_item1",
+      "value": "姓名"
+    },
+    {
+      "name": "stepper_input_item2",
+      "value": "年龄"
+    },
+    {
+      "name": "stepper_usernotice",
+      "value": "1. 本页面主要用于显示此方案下页面滑动的解决方案\n2. 方案不唯一，您也可根据您的实际业务场景选择\n3. 本页显示所有信息均无任何法律效力\n4. 请确保您填写的信息都是正确的\n5. 如果您填写的信息有误，也没有任何问题\n6. 想不出来内容了，随便写两首诗吧\n7. 床前明月光，疑是地上霜\n8. 举头望明月，低头思故乡\n9. 君不见黄河之水天上来，奔流到海不复回\n10. 花间一壶酒，独酌无相亲。举杯邀明月，对影成三人\n11. 天若不爱酒，酒星不在天。地若不爱酒，地应无酒泉。天地既爱酒，爱酒不愧天\n12. 我闻琵琶已叹息，又闻此语重唧唧。同是天涯沦落人，相逢何必曾相识\n13. 铁衣远戍辛勤久，玉箸应啼别离后\n14. 少妇城南欲断肠，征人蓟北空回首\n15. 边庭飘飖那可度，绝域苍茫更何有\n16. 杀气三时作阵云，寒声一夜传刁斗\n17. 相看白刃血纷纷，死节从来岂顾勋？君不见沙场征战苦，至今犹忆李将军\n18. 出师未捷身先死，长使英雄泪满襟\n19. 汉家天子今神武，不肯和亲归去来\n20. 玉颜不及寒鸦色，犹带昭阳日影来"
+    }
+  ]
+}

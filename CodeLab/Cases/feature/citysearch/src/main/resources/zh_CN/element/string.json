@@ -1,0 +1,16 @@
+{
+  "string": [
+    {
+      "name": "citysearch_module_desc",
+      "value": "模块描述"
+    },
+    {
+      "name": "citysearch_EntryAbility_desc",
+      "value": "description"
+    },
+    {
+      "name": "citysearch_address",
+      "value": "请选择您的收获地址"
+    }
+  ]
+}

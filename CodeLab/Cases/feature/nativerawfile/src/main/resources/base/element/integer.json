@@ -1,0 +1,20 @@
+{
+  "integer": [
+    {
+      "name": "nativerawfile_common_padding_top",
+      "value": 5
+    },
+    {
+      "name": "nativerawfile_common_margin_left",
+      "value": 10
+    },
+    {
+      "name": "nativerawfile_common_radius",
+      "value": 10
+    },
+    {
+      "name": "nativerawfile_common_padding",
+      "value": 10
+    }
+  ]
+}

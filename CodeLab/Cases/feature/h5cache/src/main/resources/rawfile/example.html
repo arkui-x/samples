@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>示例页面</title>
+    <style>
+        button {
+          padding: 10px;
+          font-size: 16px;
+        }
+        .container{
+          display: flex;
+          flex-wrap: wrap;
+          position: relative;
+          width: 100vw;
+        }
+        img{
+          position: absolute;
+          height: 70vw;
+          width: 100vw;
+        }
+        span{
+          position: absolute;
+        }
+    </style>
+</head>
+
+<body>
+<div id="app">
+    <h1>示例页面</h1>
+    <div class="container">
+        <img src="https://gitee.com/harmonyos-cases/cases/raw/master/CommonAppDevelopment/feature/imageenableanalyzer/src/main/resources/base/media/imageenableanalyzer_cat2.JPG"/>
+        <span>
+            首次加载时h5页面从网络中加载图片和vue.global.js，并同时保存到本地内存/磁盘中。后续重新打开该页面，将从本地加载资源。
+        </span>
+    </div>
+</div>
+<!-- 公用CDN -->
+<script src="http://unpkg.com/vue@3/dist/vue.global.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const { createApp } = Vue;
+      // 创建 Vue 应用
+      createApp({
+        // 定义初始数据
+        data() {
+          return {
+            title: '示例页面'
+          };
+        },
+        // 定义方法
+        methods: {
+        }
+      }).mount('#app');
+    });
+</script>
+</body>
+</html>

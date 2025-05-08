@@ -1,0 +1,85 @@
+{
+  "module": {
+    "name": "phone",
+    "compressNativeLibs": true,
+    "type": "entry",
+    "description": "$string:module_desc",
+    "mainElement": "PhoneAbility",
+    "srcEntry": "./ets/abilityStage/MyAbilityStage.ets",
+    "deviceTypes": [
+      "phone"
+    ],
+    "metadata": [
+      {
+        "name": "avoid_cutout",
+        "value": "true",
+      }
+    ],
+    "deliveryWithInstall": true,
+    "installationFree": false,
+    "pages": "$profile:main_pages",
+    "abilities": [
+      {
+        "launchType": "singleton",
+        "name": "PhoneAbility",
+        "srcEntry": "./ets/phoneability/PhoneAbility.ets",
+        "description": "$string:PhoneAbility_desc",
+        "icon": "$media:icon",
+        "label": "$string:PhoneAbility_label",
+        "startWindowIcon": "$media:icon_startwindow",
+        "startWindowBackground": "$color:entry_start_window_background",
+        "exported": true,
+        "backgroundModes": [
+          "audioPlayback"
+        ],
+        "skills": [
+          {
+            "entities": [
+              "entity.system.home"
+            ],
+            "actions": [
+              "action.system.home",
+              "ohos.want.action.sendData"
+            ],
+            "uris": [
+              {
+                "scheme": "file",
+                "utd": "general.image",
+                "maxFileSupported": 1
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "requestPermissions": [
+      {
+        "name": "ohos.permission.INTERNET"
+      },
+      {
+        "name": "ohos.permission.GET_NETWORK_INFO"
+      },
+      {
+        "name": "ohos.permission.KEEP_BACKGROUND_RUNNING"
+      },
+      {
+        "name": "ohos.permission.ACCESS_BIOMETRIC"
+      }
+    ],
+    "extensionAbilities": [
+      {
+        "name": "PhoneFormAbility",
+        "srcEntry": "./ets/phoneformability/PhoneFormAbility.ets",
+        "label": "$string:PhoneFormAbility_label",
+        "description": "$string:PhoneFormAbility_desc",
+        "type": "form",
+        "metadata": [
+          {
+            "name": "ohos.extension.form",
+            "resource": "$profile:form_config"
+          }
+        ]
+      }
+    ]
+  }
+}

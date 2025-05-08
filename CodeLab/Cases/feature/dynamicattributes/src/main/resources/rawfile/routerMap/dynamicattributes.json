@@ -1,0 +1,16 @@
+{
+  "routerMap": [
+    {
+      "name": "dynamicattributes/ShoppingCart",
+      "pageModule": "dynamicattributes",
+      "pageSourceFile": "src/main/ets/generated/RouterBuilder.ets",
+      "registerFunction": "shoppingCartRegister"
+    },
+    {
+      "name": "dynamicattributes/Details",
+      "pageModule": "dynamicattributes",
+      "pageSourceFile": "src/main/ets/generated/RouterBuilder.ets",
+      "registerFunction": "detailsRegister"
+    }
+  ]
+}

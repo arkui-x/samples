@@ -1,0 +1,22 @@
+{
+  "routerMap": [
+    {
+      "name": "highlyloadedcomponentrender/MainPage",
+      "pageModule": "highlyloadedcomponentrender",
+      "pageSourceFile": "src/main/ets/generated/RouterBuilder.ets",
+      "registerFunction": "mainPageRegister"
+    },
+    {
+      "name": "highlyloadedcomponentrender/ReusePage",
+      "pageModule": "highlyloadedcomponentrender",
+      "pageSourceFile": "src/main/ets/generated/RouterBuilder.ets",
+      "registerFunction": "reusePageRegister"
+    },
+    {
+      "name": "highlyloadedcomponentrender/ReuseFramePage",
+      "pageModule": "highlyloadedcomponentrender",
+      "pageSourceFile": "src/main/ets/generated/RouterBuilder.ets",
+      "registerFunction": "reuseFramePageRegister"
+    }
+  ]
+}

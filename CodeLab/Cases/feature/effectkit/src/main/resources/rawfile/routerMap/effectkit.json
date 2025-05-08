@@ -1,0 +1,10 @@
+{
+  "routerMap": [
+    {
+      "name": "effectKit/MainPage",
+      "pageModule": "effectkit",
+      "pageSourceFile": "src/main/ets/generated/RouterBuilder.ets",
+      "registerFunction": "mainPageRegister"
+    }
+  ]
+}

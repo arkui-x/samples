@@ -1,0 +1,20 @@
+{
+  "string": [
+    {
+      "name": "custom_tab_home",
+      "value": "首页"
+    },
+    {
+      "name": "custom_tab_news",
+      "value": "新品"
+    },
+    {
+      "name": "custom_tab_friend",
+      "value": "商城"
+    },
+    {
+      "name": "custom_tab_mine",
+      "value": "我的"
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "routerMap": [
+    {
+      "name": "analogclock/AnalogClocks",
+      "pageModule": "analogclock",
+      "pageSourceFile": "src/main/ets/generated/RouterBuilder.ets",
+      "registerFunction": "analogClocksRegister"
+    }
+  ]
+}

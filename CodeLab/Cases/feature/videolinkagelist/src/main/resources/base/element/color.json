@@ -1,0 +1,44 @@
+{
+  "color": [
+    {
+      "name": "video_linkage_list_tabbar_default",
+      "value": "#182431"
+    },
+    {
+      "name": "video_linkage_list_tabbar_selected",
+      "value": "#007DFF"
+    },
+    {
+      "name": "video_linkage_list_linear_gradient_start",
+      "value": "#edf2fb"
+    },
+    {
+      "name": "video_linkage_list_linear_gradient_end",
+      "value": "#f8f0ed"
+    },
+    {
+      "name": "video_linkage_list_rate_background",
+      "value": "#edf2fb"
+    },
+    {
+      "name": "video_linkage_list_progress_background",
+      "value": "#66FFFFFF"
+    },
+    {
+      "name": "video_linkage_list_default_color",
+      "value": "#7987a7"
+    },
+    {
+      "name": "video_linkage_list_item_selected",
+      "value": "#E02020"
+    },
+    {
+      "name": "video_linkage_color_background",
+      "value": "#FFFFFF"
+    },
+    {
+      "name": "video_linkage_color_foreground",
+      "value": "#000000"
+    }
+  ]
+}

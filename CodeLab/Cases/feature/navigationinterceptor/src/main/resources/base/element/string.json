@@ -1,0 +1,261 @@
+{
+  "string": [
+    {
+      "name": "naviagtion_interceptor_phone_back",
+      "value": "手机验证码登录"
+    },
+    {
+      "name": "naviagtion_interceptor_has_login",
+      "value": "已登录"
+    },
+    {
+      "name": "naviagtion_interceptor_verify_server_tip",
+      "value": "认证服务由橘子提供"
+    },
+    {
+      "name": "naviagtion_interceptor_read_and_agree",
+      "value": "我已阅读并同意"
+    },
+    {
+      "name": "naviagtion_interceptor_server_proxy_rule_detail",
+      "value": "服务协议及个人信息处理规则"
+    },
+    {
+      "name": "naviagtion_interceptor_phone_start_login",
+      "value": "手机号码一键登录"
+    },
+    {
+      "name": "naviagtion_interceptor_login_success",
+      "value": "登录成功"
+    },
+    {
+      "name": "naviagtion_interceptor_please_read_and_agree",
+      "value": "请先阅读并同意协议"
+    },
+    {
+      "name": "naviagtion_interceptor_please_input_account_and_pwd",
+      "value": "请输入账号或密码"
+    },
+    {
+      "name": "naviagtion_interceptor_other_way_login",
+      "value": "其他登录方式"
+    },
+    {
+      "name": "naviagtion_interceptor_login_problems",
+      "value": "遇到问题"
+    },
+    {
+      "name": "naviagtion_interceptor_click_show_login_dialogController",
+      "value": "点击按钮唤出登录弹窗"
+    },
+    {
+      "name": "naviagtion_interceptor_click_show_proxy",
+      "value": "点击了协议"
+    },
+    {
+      "name": "naviagtion_interceptor_click_show_cancel",
+      "value": "点击了取消"
+    },
+    {
+      "name": "naviagtion_interceptor_click_show_confirm",
+      "value": "点击了确认"
+    },
+    {
+      "name": "naviagtion_interceptor_half_screen_modal_login_description",
+      "value": "点击跳转到半模态登录页"
+    },
+    {
+      "name": "naviagtion_interceptor_service",
+      "value": "服务条款"
+    },
+    {
+      "name": "naviagtion_interceptor_and1",
+      "value": "和"
+    },
+    {
+      "name": "naviagtion_interceptor_privacy",
+      "value": "隐私政策"
+    },
+    {
+      "name": "naviagtion_interceptor_and2",
+      "value": "以及"
+    },
+    {
+      "name": "naviagtion_interceptor_account",
+      "value": "天翼账号服务协议"
+    },
+    {
+      "name": "naviagtion_interceptor_not_this",
+      "value": "不是此账号？用其他账号"
+    },
+    {
+      "name": "naviagtion_interceptor_login",
+      "value": "登录"
+    },
+    {
+      "name": "naviagtion_interceptor_phone_login",
+      "value": "手机号登录"
+    },
+    {
+      "name": "naviagtion_interceptor_new",
+      "value": "首次登录将产生新账号"
+    },
+    {
+      "name": "naviagtion_interceptor_input_phone_number",
+      "value": "请输入手机号"
+    },
+    {
+      "name": "naviagtion_interceptor_verify",
+      "value": "发送短信验证码"
+    },
+    {
+      "name": "naviagtion_interceptor_86",
+      "value": "+86"
+    },
+    {
+      "name": "naviagtion_interceptor_size_full",
+      "value": "100%"
+    },
+    {
+      "name": "naviagtion_interceptor_size_ninety_percent",
+      "value": "90%"
+    },
+    {
+      "name": "naviagtion_interceptor_size_eighty_percent",
+      "value": "100%"
+    },
+    {
+      "name": "naviagtion_interceptor_size_eighty_three_percent",
+      "value": "83%"
+    },
+    {
+      "name": "naviagtion_interceptor_size_eighty_two_percent",
+      "value": "83%"
+    },
+    {
+      "name": "naviagtion_interceptor_account_login_text",
+      "value": "账号密码登录"
+    },
+    {
+      "name": "naviagtion_interceptor_place_holder",
+      "value": "请输入账号"
+    },
+    {
+      "name": "naviagtion_interceptor_text_input_place_holder",
+      "value": "请输入密码"
+    },
+    {
+      "name": "naviagtion_interceptor_row_text",
+      "value": "手机验证码登录"
+    },
+    {
+      "name": "naviagtion_interceptor_account_btn_text",
+      "value": "登录"
+    },
+    {
+      "name": "naviagtion_interceptor_captcha_change_title_text",
+      "value": "账号密码登录"
+    },
+    {
+      "name": "naviagtion_interceptor_loginout",
+      "value": "退出登录"
+    },
+    {
+      "name": "naviagtion_interceptor_captcha_sent",
+      "value": "验证码已发送"
+    },
+    {
+      "name": "naviagtion_interceptor_after_login_more_service",
+      "value": "登录体验更多服务"
+    },
+    {
+      "name": "naviagtion_interceptor_user_phone_number",
+      "value": "122****2222"
+    },
+    {
+      "name": "naviagtion_interceptor_get_service",
+      "value": "中国XX提供认证服务"
+    },
+    {
+      "name": "naviagtion_interceptor_captcha_login_text",
+      "value": "验证码登录"
+    },
+    {
+      "name": "naviagtion_interceptor_only_show_ui",
+      "value": "此样式仅为案例展示"
+    },
+    {
+      "name": "naviagtion_interceptor_right",
+      "value": "权益"
+    },
+    {
+      "name": "naviagtion_interceptor_moment",
+      "value": "动态"
+    },
+    {
+      "name": "naviagtion_interceptor_alipay",
+      "value": "钱包(支付宝)"
+    },
+    {
+      "name": "naviagtion_interceptor_collect",
+      "value": "收藏"
+    },
+    {
+      "name": "naviagtion_interceptor_find",
+      "value": "发现"
+    },
+    {
+      "name": "naviagtion_interceptor_setting",
+      "value": "设置与隐私"
+    },
+    {
+      "name": "naviagtion_interceptor_help",
+      "value": "客服与帮助"
+    },
+    {
+      "name": "naviagtion_interceptor_layout_100",
+      "value": "100%"
+    },
+    {
+      "name": "naviagtion_interceptor_myself",
+      "value": "自己"
+    },
+    {
+      "name": "naviagtion_interceptor_harmony_hei_ti",
+      "value": "HarmonyHeiTi"
+    },
+    {
+      "name": "naviagtion_interceptor_prompt_text",
+      "value": "仅演示，可自行实现业务功能"
+    },
+    {
+      "name": "naviagtion_interceptor_self_page",
+      "value": "个人主页 >"
+    },
+    {
+      "name": "naviagtion_interceptor_new_thing",
+      "value": "记录新鲜事"
+    },
+    {
+      "name": "naviagtion_interceptor_logout",
+      "value": "退出成功"
+    },
+    {
+      "name": "naviagtion_interceptor_more_service",
+      "value": "更多服务"
+    },
+    {
+      "name": "naviagtion_interceptor_send",
+      "value": "+ 发布"
+    },
+
+    {
+      "name": "naviagtion_interceptor_row_width",
+      "value": "100%"
+    },
+    {
+      "name": "naviagtion_interceptor_text_position_x",
+      "value": "80%"
+    }
+  ]
+}

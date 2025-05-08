@@ -1,0 +1,20 @@
+{
+  "color": [
+    {
+      "name": "refreshtimeline_time_node_color",
+      "value": "#FF9EA5AB"
+    },
+    {
+      "name": "refreshtimeline_time_line_color",
+      "value": "#FFC6CACE"
+    },
+    {
+      "name": "refreshtimeline_time_line_mode_back_color",
+      "value": "#FFEEEFF2"
+    },
+    {
+      "name": "refreshtimeline_back_color",
+      "value": "#FFEEEFF2"
+    }
+  ]
+}

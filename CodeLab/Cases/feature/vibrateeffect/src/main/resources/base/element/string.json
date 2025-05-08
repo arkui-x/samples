@@ -1,0 +1,84 @@
+{
+  "string": [
+    {
+      "name": "vibrateeffect_full_size",
+      "value": "100%"
+    },
+    {
+      "name": "vibrateeffect_other_login_methods",
+      "value": "其他号码登录/注册"
+    },
+    {
+      "name": "vibrateeffect_login_in",
+      "value": "本机号码一键登录"
+    },
+    {
+      "name": "vibrateeffect_read_and_check",
+      "value": "请阅读并勾选协议"
+    },
+    {
+      "name": "vibrateeffect_read_and_agreed",
+      "value": "我已阅读并同意"
+    },
+    {
+      "name": "vibrateeffect_services_and_policies",
+      "value": "「**账号服务与隐私政策」"
+    },
+    {
+      "name": "vibrateeffect_service_agreement",
+      "value": "「服务协议」"
+    },
+    {
+      "name": "vibrateeffect_privacy_policy",
+      "value": "「隐私政策」"
+    },
+    {
+      "name": "vibrateeffect_and",
+      "value": "和"
+    },
+    {
+      "name": "vibrateeffect_phone_number",
+      "value": "188******74"
+    },
+    {
+      "name": "vibrateeffect_reason",
+      "value": "get vibrate permission"
+    },
+    {
+      "name": "vibrateeffect_login_text",
+      "value": "登录成功，仅演示"
+    },
+    {
+      "name": "vibrateeffect_prompt_text",
+      "value": "仅演示，可自行实现业务功能"
+    },
+    {
+      "name": "ohos_id_corner_radius_default_m",
+      "value": "12"
+    },
+    {
+      "name": "ohos_id_text_size_headline",
+      "value": "20"
+    },
+    {
+      "name": "ohos_id_text_size_caption",
+      "value": "10"
+    },
+    {
+      "name": "ohos_id_corner_radius_subtab",
+      "value": "4"
+    },
+    {
+      "name": "ohos_id_text_size_body1",
+      "value": "14"
+    },
+    {
+      "name": "ohos_id_text_size_body2",
+      "value": "14"
+    },
+    {
+      "name": "ohos_id_text_size_body3",
+      "value": "12"
+    }
+  ]
+}

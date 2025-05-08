@@ -1,0 +1,16 @@
+{
+  "routerMap": [
+    {
+      "name": "collapsemenu/ArticleWebComponent",
+      "pageModule": "collapsemenu",
+      "pageSourceFile": "src/main/ets/generated/RouterBuilder.ets",
+      "registerFunction": "articleWebComponentRegister"
+    },
+    {
+      "name": "collapsemenu/CollapseMenu",
+      "pageModule": "collapsemenu",
+      "pageSourceFile": "src/main/ets/generated/RouterBuilder.ets",
+      "registerFunction": "collapseMenuRegister"
+    }
+  ]
+}

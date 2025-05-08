@@ -1,0 +1,44 @@
+{
+  "integer": [
+    {
+      "name": "custom_tab_height_size",
+      "value": 60
+    },
+    {
+      "name": "custom_tab_community_image_size",
+      "value": 43
+    },
+    {
+      "name": "custom_tab_image_size",
+      "value": 28
+    },
+    {
+      "name": "custom_tab_community_image_container_size",
+      "value": 52
+    },
+    {
+      "name": "custom_tab_community_image_container_border_radius_size",
+      "value": 24
+    },
+    {
+      "name": "custom_tab_image_container_size",
+      "value": 37
+    },
+    {
+      "name": "custom_tab_text_font_size",
+      "value": 14
+    },
+    {
+      "name": "custom_tab_common_size_0",
+      "value": 0
+    },
+    {
+      "name": "custom_tab_title_font_size",
+      "value": 26
+    },
+    {
+      "name": "custom_tab_padding_size",
+      "value": 20
+    }
+  ]
+}

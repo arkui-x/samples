@@ -1,0 +1,10 @@
+{
+  "routerMap": [
+    {
+      "name": "marquee/MarqueeView",
+      "pageModule": "marquee",
+      "pageSourceFile": "src/main/ets/generated/RouterBuilder.ets",
+      "registerFunction": "marqueeViewRegister"
+    }
+  ]
+}

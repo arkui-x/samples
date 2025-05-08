@@ -1,0 +1,10 @@
+{
+  "routerMap": [
+    {
+      "name": "styledtext/StyledTextMainPage",
+      "pageModule": "styledtext",
+      "pageSourceFile": "src/main/ets/generated/RouterBuilder.ets",
+      "registerFunction": "styledTextMainPageRegister"
+    }
+  ]
+}

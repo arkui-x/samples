@@ -1,0 +1,10 @@
+{
+  "routerMap": [
+    {
+      "name": "imagemosaic/ImageMosaicView",
+      "pageModule": "imagemosaic",
+      "pageSourceFile": "src/main/ets/generated/RouterBuilder.ets",
+      "registerFunction": "imageMosaicViewRegister"
+    }
+  ]
+}

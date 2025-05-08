@@ -1,0 +1,12 @@
+{
+  "integer": [
+    {
+      "name": "image_mosaic_font_size",
+      "value": 20
+    },
+    {
+      "name": "image_mosaic_padding",
+      "value": 20
+    }
+  ]
+}

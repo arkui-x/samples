@@ -1,0 +1,172 @@
+{
+  "string": [
+    {
+      "name": "editaddress_bind_sheet_cancel",
+      "value": "取消"
+    },
+    {
+      "name": "editaddress_bind_sheet_title",
+      "value": "地区选择"
+    },
+    {
+      "name": "editaddress_bind_sheet_verify",
+      "value": "确认"
+    },
+    {
+      "name": "editaddress_only_show_ui",
+      "value": "此样式仅为案例展示"
+    },
+    {
+      "name": "editaddress_name_judge",
+      "value": "姓名不能为空"
+    },
+    {
+      "name": "editaddress_phone_judge",
+      "value": "手机号不能为空"
+    },
+    {
+      "name": "editaddress_phone_judge_less_eleven",
+      "value": "手机号不能少于11位"
+    },
+    {
+      "name": "editaddress_phone_judge_more_eleven",
+      "value": "手机号不能超过11位"
+    },
+    {
+      "name": "editaddress_place_judge",
+      "value": "省市区不能为空"
+    },
+    {
+      "name": "editaddress_detail_address_judge",
+      "value": "详细地址不能为空"
+    },
+    {
+      "name": "editaddress_save_success",
+      "value": "保存成功，此样式仅为案例展示"
+    },
+    {
+      "name": "editaddress_save",
+      "value": "保存"
+    },
+    {
+      "name": "editaddress_address_msg",
+      "value": "地址信息"
+    },
+    {
+      "name": "editaddress_receiver",
+      "value": "收件人"
+    },
+    {
+      "name": "editaddress_receiver_name",
+      "value": "收件人名字"
+    },
+    {
+      "name": "editaddress_phone_number",
+      "value": "手机号"
+    },
+    {
+      "name": "editaddress_local",
+      "value": "所在地区"
+    },
+    {
+      "name": "editaddress_pca",
+      "value": "省、市、区"
+    },
+    {
+      "name": "editaddress_detail_address",
+      "value": "详细地址"
+    },
+    {
+      "name": "editaddress_86",
+      "value": "+86"
+    },
+    {
+      "name": "editaddress_detail_msg",
+      "value": "小区、写字楼、门牌号等"
+    },
+    {
+      "name": "editaddress_address_tag",
+      "value": "地址标签"
+    },
+    {
+      "name": "editaddress_AI_write",
+      "value": "智能填写"
+    },
+    {
+      "name": "editaddress_AI_write_msg",
+      "value": "粘贴收获信息到此处，将自动识别姓名/电话/地址"
+    },
+    {
+      "name": "editaddress_paste",
+      "value": "粘贴并识别"
+    },
+    {
+      "name": "editaddress_size_eighty_two_percent",
+      "value": "83%"
+    },
+    {
+      "name": "editaddress_captcha_get",
+      "value": "登录"
+    },
+    {
+      "name": "editaddress_only_show_ui2",
+      "value": "此样式仅为案例展示"
+    },
+    {
+      "name": "editaddress_show_password_already_max",
+      "value": "密码不能超过15位"
+    },
+    {
+      "name": "editaddress_textStyle_font_size",
+      "value": "16fp"
+    },
+    {
+      "name": "editaddress_selectedTextStyle_font_size",
+      "value": "20vp"
+    },
+    {
+      "name": "editaddress_address_width",
+      "value": "100%"
+    },
+    {
+      "name": "editaddress_column_width",
+      "value": "100%"
+    },
+    {
+      "name": "editaddress_column_height",
+      "value": "100%"
+    },
+    {
+      "name": "editaddress_row_width",
+      "value": "100%"
+    },
+    {
+      "name": "editaddress_button_width",
+      "value": "95%"
+    },
+    {
+      "name": "editaddress_stack_width",
+      "value": "73%"
+    },
+    {
+      "name": "editaddress_textInput_width",
+      "value": "73%"
+    },
+    {
+      "name": "editaddress_label_check",
+      "value": "-4"
+    },
+    {
+      "name": "editaddress_list_width",
+      "value": "95%"
+    },
+    {
+      "name": "editaddress_margin_left",
+      "value": "23"
+    },
+    {
+      "name": "editaddress_one_percent",
+      "value": "100%"
+    }
+  ]
+}

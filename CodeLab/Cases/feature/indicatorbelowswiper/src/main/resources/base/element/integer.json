@@ -1,0 +1,16 @@
+{
+  "integer": [
+    {
+      "name": "indicatorbelowswiper_borderRadius_value",
+      "value": 10
+    },
+    {
+      "name": "indicatorbelowswiper_offset_value",
+      "value": 15
+    },
+    {
+      "name": "indicatorbelowswiper_blank_space_height",
+      "value": 50
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "color": [
+    {
+      "name": "navigation_parametertransfer_background_color",
+      "value": "#FFFFFF"
+    },
+    {
+      "name": "navigation_parametertransfer_border_color",
+      "value": "#317AF7"
+    }
+  ]
+}

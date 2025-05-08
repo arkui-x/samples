@@ -1,0 +1,92 @@
+{
+  "string": [
+    {
+      "name": "mini_player_animation_home",
+      "value": "首页"
+    },
+    {
+      "name": "mini_player_animation_rank",
+      "value": "排行"
+    },
+    {
+      "name": "mini_player_animation_user",
+      "value": "我的"
+    },
+    {
+      "name": "mini_player_animation_full_size",
+      "value": "100%"
+    },
+    {
+      "name": "mini_player_animation_prompt_info",
+      "value": "仅用于UX展示"
+    },
+    {
+      "name": "mini_player_animation_song_name",
+      "value": "爱从未离开"
+    },
+    {
+      "name": "mini_player_animation_singer",
+      "value": "小碗你好"
+    },
+    {
+      "name": "mini_player_animation_response_region",
+      "value": "0%"
+    },
+    {
+      "name": "mini_player_animation_playback_duration",
+      "value": "02:15"
+    },
+    {
+      "name": "mini_player_animation_total_playback_duration",
+      "value": "02:30"
+    },
+    {
+      "name": "mini_player_animation_slider_width",
+      "value": "80%"
+    },
+    {
+      "name": "mini_player_animation_row_width",
+      "value": "95%"
+    },
+    {
+      "name": "mini_player_animation_recommendation",
+      "value": "推荐"
+    },
+    {
+      "name": "mini_player_animation_recommendation_music_sheet",
+      "value": "歌单推荐"
+    },
+    {
+      "name": "mini_player_animation_recommendation_exclusive",
+      "value": "专属推荐"
+    },
+    {
+      "name": "mini_player_animation_music_column_height",
+      "value": "60%"
+    },
+    {
+      "name": "mini_player_animation_music_common_height",
+      "value": "7%"
+    },
+    {
+      "name": "mini_player_animation_common_width",
+      "value": "90%"
+    },
+    {
+      "name": "mini_player_animation_big_image_height",
+      "value": "25%"
+    },
+    {
+      "name": "mini_player_animation_music_column_more",
+      "value": "更多"
+    },
+    {
+      "name": "mini_player_animation_search",
+      "value": "猜你喜欢-周周"
+    },
+    {
+      "name": "mini_player_animation_one_hundred_four_percent",
+      "value": "104%"
+    }
+  ]
+}

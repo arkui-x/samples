@@ -1,0 +1,24 @@
+{
+  "color": [
+    {
+      "name": "decompress_file_linear_gradient_start",
+      "value": "#8054A1FF"
+    },
+    {
+      "name": "decompress_file_linear_gradient_end",
+      "value": "#B354A1FF"
+    },
+    {
+      "name": "decompress_file_result_background",
+      "value": "#4CADD8FF"
+    },
+    {
+      "name": "ohos_id_color_background",
+      "value": "#FFFFFF"
+    },
+    {
+      "name": "ohos_id_color_sub_background",
+      "value": "#F1F3F5"
+    }
+  ]
+}

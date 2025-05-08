@@ -1,0 +1,40 @@
+{
+  "string": [
+    {
+      "name": "secondarylinkage_shared_desc",
+      "value": "description"
+    },
+    {
+      "name": "secondarylinkage_secondary_link",
+      "value": "二级联动"
+    },
+    {
+      "name": "secondarylinkage_secondary_link_desc",
+      "value": "当前界面主要展示了通过选择一个列表（一级列表），来更新另一个列表（二级列表）的选项的效果"
+    },
+    {
+      "name": "secondarylinkage_nomore",
+      "value": "没有更多了"
+    },
+    {
+      "name": "secondarylinkage_one_hundred_percent",
+      "value": "100%"
+    },
+    {
+      "name": "secondarylinkage_text_size_headline",
+      "value": "20"
+    },
+    {
+      "name": "secondarylinkage_elements_margin_vertical_m",
+      "value": "8"
+    },
+    {
+      "name": "secondarylinkage_corner_radius_default_m",
+      "value": "12"
+    },
+    {
+      "name": "secondarylinkage_card_padding_start",
+      "value": "12"
+    }
+  ]
+}

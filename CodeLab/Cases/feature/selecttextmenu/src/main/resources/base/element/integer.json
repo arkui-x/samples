@@ -1,0 +1,24 @@
+{
+  "integer": [
+    {
+      "name": "select_text_menu_editor_margin_left",
+      "value": 40
+    },
+    {
+      "name": "select_text_menu_editor_margin_right",
+      "value": 40
+    },
+    {
+      "name": "select_text_menu_editor_margin_top",
+      "value": 20
+    },
+    {
+      "name": "select_text_menu_editor_fontsize",
+      "value": 24
+    },
+    {
+      "name": "select_text_menu_toolbar_height",
+      "value": 60
+    }
+  ]
+}

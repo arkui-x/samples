@@ -1,0 +1,11 @@
+{
+  "module": {
+    "name": "danmakuplayer",
+    "type": "har",
+    "deviceTypes": [
+      "default",
+      "tablet",
+      "2in1"
+    ]
+  }
+}

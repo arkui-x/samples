@@ -1,0 +1,20 @@
+{
+  "color": [
+    {
+      "name": "custom_keyboard_to_h5_progress_color",
+      "value": "#0000ff"
+    },
+    {
+      "name": "custom_keyboard_to_h5_divider_color",
+      "value": "#c6c6c6"
+    },
+    {
+      "name": "custom_keyboard_to_h5_down_color",
+      "value": "#e4e4e4"
+    },
+    {
+      "name": "custom_keyboard_to_h5_up_color",
+      "value": "#00000000"
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "color": [
+    {
+      "name": "container_nested_color_blank",
+      "value": "#000000"
+    },
+    {
+      "name": "start_window_background",
+      "value": "#000000"
+    },
+    {
+      "name": "container_nested_color_red",
+      "value": "#ed394b"
+    },
+    {
+      "name": "container_nested_color_divider",
+      "value": "#EEEEEE"
+    },
+    {
+      "name": "container_nested_color_comment_text_border",
+      "value": "#EEEEEE"
+    },
+    {
+      "name": "container_nested_color_comment_text_background",
+      "value": "#F6F7F9"
+    },
+    {
+      "name": "container_nested_button_publish_background",
+      "value": "#be1d1d"
+    },
+    {
+      "name": "container_nested_note_color",
+      "value": "#368AEF"
+    },
+    {
+      "name": "container_nested_note_follow_font_color",
+      "value": "#ff3d36"
+    },
+    {
+      "name": "container_nested_note_followed_font_color",
+      "value": "#a0a1a6"
+    },
+    {
+      "name": "container_nested_note_nested_follow_bgc_color",
+      "value": "#ffeeee"
+    },
+    {
+      "name": "container_nested_note_nested_followed_bgc_color",
+      "value": "#f4f5f7"
+    },
+    {
+      "name": "container_nested_note_nested_list_bgc_color",
+      "value": "#ffffff"
+    }
+  ]
+}

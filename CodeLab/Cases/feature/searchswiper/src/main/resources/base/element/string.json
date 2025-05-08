@@ -1,0 +1,41 @@
+{
+  "string": [
+    {
+      "name": "search_swiper_text_data_search_text",
+      "value": "热搜排行"
+    },
+    {
+      "name": "search_swiper_text_data_searchTex",
+      "value": "爆款商品"
+    },
+    {
+      "name": "search_swiper_text_data_searchTe",
+      "value": "新闻热点"
+    },
+    {
+      "name": "search_swiper_full_width",
+      "value": "100%"
+    },
+    {
+      "name": "search_swiper_button",
+      "value": "搜索"
+    },
+    {
+      "name": "search_swiper_image_width",
+      "value": "40%"
+    },
+    {
+      "name": "search_swiper_tips_title",
+      "value": "功能描述"
+    },
+    {
+      "name": "search_swiper_tips_content",
+      "value": "搜索框为空时显示热搜关键字并自动切换，在编辑时控制显隐。"
+    },
+    {
+      "name": "search_swiper_only_show",
+      "value": "此样式仅为案例展示。"
+    }
+
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "color": [
+    {
+      "name": "ohos_id_color_background",
+      "value": "#FFFFFF"
+    },
+    {
+      "name": "custom_dialog_packet_color",
+      "value": "#ffd02c16"
+    },
+    {
+      "name": "custom_dialog_packet_color2",
+      "value": "#fff3cc3f"
+    },
+    {
+      "name": "ohos_id_color_palette_aux9",
+      "value": "#ED955F"
+    },
+    {
+      "name": "ohos_id_color_palette11",
+      "value": "#F7CE00"
+    },
+    {
+      "name": "ohos_id_color_text_secondary",
+      "value": "#99000000"
+    },
+    {
+      "name": "ohos_id_color_emphasize",
+      "value": "#0A59F7"
+    },
+    {
+      "name": "ohos_id_color_foreground",
+      "value": "#000000"
+    }
+  ]
+}

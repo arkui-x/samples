@@ -1,0 +1,36 @@
+{
+  "color": [
+    {
+      "name": "dynamicattributes_white",
+      "value": "#FFFFFF"
+    },
+    {
+      "name": "dynamicattributes_red",
+      "value": "#FF0000"
+    },
+    {
+      "name": "dynamicattributes_orange",
+      "value": "#FF4500"
+    },
+    {
+      "name": "dynamicattributes_buttonColor",
+      "value": "#EE7600"
+    },
+    {
+      "name": "dynamicattributes_iconColor",
+      "value": "#B22222"
+    },
+    {
+      "name": "dynamicattributes_imageColor",
+      "value": "#ccc"
+    },
+    {
+      "name": "dynamicattributes_selectColor",
+      "value": "#FF8247"
+    },
+    {
+      "name": "dynamicattributes_barColor",
+      "value": "#F5F5F5"
+    }
+  ]
+}

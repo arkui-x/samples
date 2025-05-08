@@ -1,0 +1,68 @@
+{
+  "integer": [
+    {
+      "name": "customsafekeyboard_row_height",
+      "value": 80
+    },
+    {
+      "name": "customsafekeyboard_avatar_height",
+      "value": 80
+    },
+    {
+      "name": "customsafekeyboard_avatar_weight",
+      "value": 80
+    },
+    {
+      "name": "customsafekeyboard_common_margin_padding",
+      "value": 24
+    },
+    {
+      "name": "customsafekeyboard_text_font_size",
+      "value": 32
+    },
+    {
+      "name": "customsafekeyboard_text_input_height",
+      "value": 48
+    },
+    {
+      "name": "customsafekeyboard_login_button_font_size",
+      "value": 20
+    },
+    {
+      "name": "customsafekeyboard_login_button_width",
+      "value": 160
+    },
+    {
+      "name": "customsafekeyboard_login_button_height",
+      "value": 48
+    },
+    {
+      "name": "customsafekeyboard_login_button_margin",
+      "value": 48
+    },
+    {
+      "name": "customsafekeyboard_key_image_size",
+      "value": 24
+    },
+    {
+      "name": "customsafekeyboard_keyboard_title_font_size",
+      "value": 20
+    },
+    {
+      "name": "customsafekeyboard_keyboard_title_margin_top",
+      "value": 12
+    },
+    {
+      "name": "customsafekeyboard_keyboard_title_margin_bottom",
+      "value": 10
+    },
+    {
+      "name": "customsafekeyboard_keyboard_radius",
+      "value": 4
+    },
+    {
+      "name": "customsafekeyboard_keyboard_marin_bottom",
+      "value": 20
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "integer": [
+    {
+      "name": "sideslipintercept_text_area_width",
+      "value": 380
+    },
+    {
+      "name": "sideslipintercept_text_area_height",
+      "value": 150
+    },
+    {
+      "name": "sideslipintercept_text_area_margin",
+      "value": 80
+    },
+    {
+      "name": "sideslipintercept_text_area_font_size",
+      "value": 20
+    },
+    {
+      "name": "sideslipintercept_text_area_font_width",
+      "value": 400
+    }
+  ]
+}

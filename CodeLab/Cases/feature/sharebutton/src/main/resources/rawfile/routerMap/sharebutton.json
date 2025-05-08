@@ -1,0 +1,10 @@
+{
+  "routerMap": [
+    {
+      "name": "sharebutton/MockSharePage",
+      "pageModule": "sharebutton",
+      "pageSourceFile": "src/main/ets/generated/RouterBuilder.ets",
+      "registerFunction": "mockSharePageRegister"
+    }
+  ]
+}

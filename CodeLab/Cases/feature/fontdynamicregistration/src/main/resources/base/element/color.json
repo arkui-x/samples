@@ -1,0 +1,16 @@
+{
+  "color": [
+    {
+      "name": "fontdynamicregistration_start_window_background",
+      "value": "#FFFFFF"
+    },
+    {
+      "name": "fontdynamicregistration_global_bg",
+      "value": "#ff3f89fd"
+    },
+    {
+      "name": "fontdynamicregistration_gery_bg",
+      "value": "#ffefefef"
+    }
+  ]
+}

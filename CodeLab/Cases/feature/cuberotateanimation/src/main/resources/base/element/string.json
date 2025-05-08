@@ -1,0 +1,64 @@
+{
+  "string": [
+    {
+      "name": "cube_animation_main",
+      "value": "首页"
+    },
+    {
+      "name": "cube_animation_hot",
+      "value": "热点"
+    },
+    {
+      "name": "cube_animation_find",
+      "value": "发现"
+    },
+    {
+      "name": "cube_animation_my",
+      "value": "我的"
+    },
+    {
+      "name": "cube_animation_full_size",
+      "value": "100%"
+    },
+    {
+      "name": "cube_animation_center_x",
+      "value": "100%"
+    },
+    {
+      "name": "cube_animation_center_x_start",
+      "value": "0%"
+    },
+    {
+      "name": "cube_animation_center_y",
+      "value": "50%"
+    },
+    {
+      "name": "cube_animation_search_width",
+      "value": "85%"
+    },
+    {
+      "name": "cube_animation_search_placeholder",
+      "value": "你想要什么帮助？"
+    },
+    {
+      "name": "cube_animation_greeting",
+      "value": "中午好!"
+    },
+    {
+      "name": "cube_animation_weather",
+      "value": "今日气象 >"
+    },
+    {
+      "name": "cube_animation_popular",
+      "value": "热门"
+    },
+    {
+      "name": "cube_animation_more",
+      "value": "更多 >"
+    },
+    {
+      "name": "cube_animation_toast",
+      "value": "仅演示，可自行实现业务功能"
+    }
+  ]
+}

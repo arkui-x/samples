@@ -1,0 +1,16 @@
+{
+  "string": [
+    {
+      "name": "blend_mode_avatar_pendant",
+      "value": "Avatar pendant"
+    },
+    {
+      "name": "blend_mode_container_size",
+      "value": "100%"
+    },
+    {
+      "name": "blend_mode_pendant",
+      "value": "pendant"
+    }
+  ]
+}

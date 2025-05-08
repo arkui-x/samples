@@ -1,0 +1,56 @@
+{
+  "integer": [
+    {
+      "name": "sidebaranimation_sidebar_button_height",
+      "value": 40
+    },
+    {
+      "name": "sidebaranimation_sidebar_button_width",
+      "value": 20
+    },
+    {
+      "name": "sidebaranimation_sidebar_button_radius",
+      "value": 6
+    },
+    {
+      "name": "sidebaranimation_headIconSize",
+      "value": 50
+    },
+    {
+      "name": "sidebaranimation_headIconRadius",
+      "value": 25
+    },
+    {
+      "name": "sidebaranimation_input_box_height",
+      "value": 200
+    },
+    {
+      "name": "sidebaranimation_sidebar_member_list_head_icon_size",
+      "value": 40
+    },
+    {
+      "name": "sidebaranimation_sidebar_member_list_head_icon_radius",
+      "value": 20
+    },
+    {
+      "name": "sidebaranimation_sidebar_member_list_name_height",
+      "value": 20
+    },
+    {
+      "name": "sidebaranimation_back_btn_response_width",
+      "value": 40
+    },
+    {
+      "name": "sidebaranimation_back_btn_x",
+      "value": -10
+    },
+    {
+      "name": "sidebaranimation_back_btn_response_height",
+      "value": 60
+    },
+    {
+      "name": "sidebaranimation_back_btn_y",
+      "value": -10
+    }
+  ]
+}

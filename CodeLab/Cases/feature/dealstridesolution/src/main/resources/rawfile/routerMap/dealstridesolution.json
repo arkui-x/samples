@@ -1,0 +1,10 @@
+{
+  "routerMap": [
+    {
+      "name": "dealstridesolution/DealStrideSolution",
+      "pageModule": "dealstridesolution",
+      "pageSourceFile": "src/main/ets/generated/RouterBuilder.ets",
+      "registerFunction": "dealStrideSolutionRegister"
+    }
+  ]
+}

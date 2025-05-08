@@ -1,0 +1,10 @@
+{
+  "routerMap": [
+    {
+      "name": "navigationinterceptor/InterceptorPage",
+      "pageModule": "navigationinterceptor",
+      "pageSourceFile": "src/main/ets/generated/RouterBuilder.ets",
+      "registerFunction": "interceptorPageRegister"
+    }
+  ]
+}

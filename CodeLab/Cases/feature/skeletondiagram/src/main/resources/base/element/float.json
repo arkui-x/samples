@@ -1,0 +1,136 @@
+{
+  "float": [
+    {
+      "name": "ske_xs_font_size",
+      "value": "10fp"
+    },
+    {
+      "name": "ske_small_text_size",
+      "value": "12fp"
+    },
+    {
+      "name": "ske_normal_text_size",
+      "value": "14fp"
+    },
+    {
+      "name": "ske_failure_img_size",
+      "value": "120vp"
+    },
+    {
+      "name": "ske_reload_btn_height",
+      "value": "32vp"
+    },
+    {
+      "name": "ske_reload_btn_width",
+      "value": "80vp"
+    },
+    {
+      "name": "ske_large_border_radius",
+      "value": "8vp"
+    },
+    {
+      "name": "ske_small_border_radius",
+      "value": "8vp"
+    },
+    {
+      "name": "ske_xs_border_radius",
+      "value": "4vp"
+    },
+    {
+      "name": "ske_lg_topic_width",
+      "value": "58vp"
+    },
+    {
+      "name": "ske_topic_height",
+      "value": "16vp"
+    },
+    {
+      "name": "ske_action_area_width",
+      "value": "58vp"
+    },
+    {
+      "name": "ske_action_area_height",
+      "value": "20vp"
+    },
+    {
+      "name": "ske_card_height",
+      "value": "102vp"
+    },
+    {
+      "name": "ske_card_title_height",
+      "value": "20vp"
+    },
+    {
+      "name": "ske_card_text_height",
+      "value": "20vp"
+    },
+    {
+      "name": "ske_image_height",
+      "value": "80vp"
+    },
+    {
+      "name": "ske_image_width",
+      "value": "128vp"
+    },
+    {
+      "name": "ske_type_width",
+      "value": "28vp"
+    },
+    {
+      "name": "ske_type_height",
+      "value": "16vp"
+    },
+    {
+      "name": "ske_sm_margin",
+      "value": "5vp"
+    },
+    {
+      "name": "ske_topic_width",
+      "value": "132vp"
+    },
+    {
+      "name": "ske_xxl_padding_margin",
+      "value": "24vp"
+    },
+    {
+      "name": "ske_xl_padding_margin",
+      "value": "20vp"
+    },
+    {
+      "name": "ske_md_padding_margin",
+      "value": "12vp"
+    },
+    {
+      "name": "ske_sm_padding_margin",
+      "value": "8vp"
+    },
+    {
+      "name": "ske_xs_padding_margin",
+      "value": "4vp"
+    },
+    {
+      "name": "ske_xxs_padding_margin",
+      "value": "2vp"
+    },
+    {
+      "name": "ske_icon_size",
+      "value": "18vp"
+    },
+    {
+      "name": "ske_navigation_height",
+      "value": "56vp"
+    },
+    {
+      "name": "ske_none_view_image_size",
+      "value": "120vp"
+    },
+    {
+      "name": "ske_view_count_icon_width",
+      "value": "36vp"
+    },
+    {
+      "name": "ske_row_height",
+      "value": "40vp"
+    }
+  ]
+}

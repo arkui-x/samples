@@ -1,0 +1,76 @@
+{
+  "integer": [
+    {
+      "name": "highlyloadedcomponentrender_list_padding_left",
+      "value": 10
+    },
+    {
+      "name": "highlyloadedcomponentrender_list_padding_right",
+      "value": 10
+    },
+    {
+      "name": "highlyloadedcomponentrender_column_padding_bottom",
+      "value": 12
+    },
+    {
+      "name": "highlyloadedcomponentrender_year_height",
+      "value": 40
+    },
+    {
+      "name": "highlyloadedcomponentrender_month_font_size",
+      "value": 25
+    },
+    {
+      "name": "highlyloadedcomponentrender_month_height",
+      "value": 40
+    },
+    {
+      "name": "highlyloadedcomponentrender_month_width",
+      "value": 350
+    },
+    {
+      "name": "highlyloadedcomponentrender_month_margin_top",
+      "value": 5
+    },
+    {
+      "name": "highlyloadedcomponentrender_week_font_size",
+      "value": 20
+    },
+    {
+      "name": "highlyloadedcomponentrender_year_font_size",
+      "value": 20
+    },
+    {
+      "name": "highlyloadedcomponentrender_week_height",
+      "value": 30
+    },
+    {
+      "name": "highlyloadedcomponentrender_week_width",
+      "value": 50
+    },
+    {
+      "name": "highlyloadedcomponentrender_week_border_radius",
+      "value": 10
+    },
+    {
+      "name": "highlyloadedcomponentrender_day_font_size",
+      "value": 20
+    },
+    {
+      "name": "highlyloadedcomponentrender_day_lunar_font_size",
+      "value": 15
+    },
+    {
+      "name": "highlyloadedcomponentrender_day_height",
+      "value": 50
+    },
+    {
+      "name": "highlyloadedcomponentrender_day_width",
+      "value": 50
+    },
+    {
+      "name": "highlyloadedcomponentrender_day_border_radius",
+      "value": 10
+    }
+  ]
+}

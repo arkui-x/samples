@@ -1,0 +1,116 @@
+{
+  "string": [
+    {
+      "name": "swipercomponent_page_show",
+      "value": "page from package"
+    },
+    {
+      "name": "swipercomponent_tab_title_data_Native",
+      "value": "Native"
+    },
+    {
+      "name": "swipercomponent_tab_title_data_arkui",
+      "value": "UI布局"
+    },
+    {
+      "name": "swipercomponent_tab_title_data_other",
+      "value": "其他"
+    },
+    {
+      "name": "swipercomponent_tab_title_data_tripartite_library",
+      "value": "三方库"
+    },
+    {
+      "name": "swipercomponent_tab_title_data_dynamic_effect",
+      "value": "动效"
+    },
+    {
+      "name": "swipercomponent_main_page_top_borderRadius",
+      "value": "8"
+    },
+    {
+      "name": "swipercomponent_main_page_list_borderRadius",
+      "value": "6"
+    },
+    {
+      "name": "swipercomponent_main_page_padding1",
+      "value": "10"
+    },
+    {
+      "name": "swipercomponent_main_page_padding2",
+      "value": "12"
+    },
+    {
+      "name": "swipercomponent_main_page_padding3",
+      "value": "16"
+    },
+    {
+      "name": "swipercomponent_main_page_padding4",
+      "value": "18"
+    },
+    {
+      "name": "swipercomponent_main_page_padding5",
+      "value": "8"
+    },
+    {
+      "name": "swipercomponent_main_page_padding_list_bottom",
+      "value": "350"
+    },
+    {
+      "name": "swipercomponent_main_page_swiper_height",
+      "value": "200"
+    },
+    {
+      "name": "swipercomponent_main_page_text_height",
+      "value": "16"
+    },
+    {
+      "name": "swipercomponent_main_page_text_font_size",
+      "value": "12"
+    },
+    {
+      "name": "swipercomponent_main_page_margin1",
+      "value": "10"
+    },
+    {
+      "name": "swipercomponent_main_page_margin2",
+      "value": "12"
+    },
+    {
+      "name": "swipercomponent_main_page_tab_text_underline",
+      "value": "2"
+    },
+    {
+      "name": "swipercomponent_main_page_water_flow_gap",
+      "value": "12"
+    },
+    {
+      "name": "swipercomponent_bottom_title_height",
+      "value": "36"
+    },
+    {
+      "name": "swipercomponent_swiper_stack_height1",
+      "value": "130"
+    },
+    {
+      "name": "swipercomponent_swiper_stack_height2",
+      "value": "180"
+    },
+    {
+      "name": "swipercomponent_swiper_stack_width",
+      "value": "310"
+    },
+    {
+      "name": "swipercomponent_swiper_data1",
+      "value": "MpChart图表实现案例"
+    },
+    {
+      "name": "swipercomponent_swiper_data2",
+      "value": "Lottie动画"
+    },
+    {
+      "name": "swipercomponent_swiper_data3",
+      "value": "滚动吸顶效果实现案例"
+    }
+  ]
+}

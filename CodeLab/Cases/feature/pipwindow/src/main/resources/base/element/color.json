@@ -1,0 +1,32 @@
+{
+  "color": [
+    {
+      "name": "pip_window_component_stack_text",
+      "value": "#686868"
+    },
+    {
+      "name": "pip_window_component_stack_background_color",
+      "value": "#000"
+    },
+    {
+      "name": "pip_window_tab_view_border_color_bottom",
+      "value": "#ffd0d0d0"
+    },
+    {
+      "name": "pip_window_tab_item_font_color_true",
+      "value": "#ffeeecec"
+    },
+    {
+      "name": "pip_window_tab_item_font_color",
+      "value": "#ff1f1f1f"
+    },
+    {
+      "name": "pip_window_vip_card_background_color",
+      "value": "#fff8c371"
+    },
+    {
+      "name": "pip_window_progress_color",
+      "value": "#FD836E"
+    }
+  ]
+}

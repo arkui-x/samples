@@ -1,0 +1,10 @@
+{
+  "routerMap": [
+    {
+      "name": "operaterdbintaskpool/OperateRDBInTaskPoolComponent",
+      "pageModule": "operaterdbintaskpool",
+      "pageSourceFile": "src/main/ets/generated/RouterBuilder.ets",
+      "registerFunction": "operateRDBInTaskPoolComponentRegister"
+    }
+  ]
+}

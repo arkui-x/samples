@@ -1,0 +1,63 @@
+{
+  "module": {
+    "name": "bluetooth",
+    "type": "har",
+    "deviceTypes": [
+      "default",
+      "tablet",
+      "2in1"
+    ],
+    "requestPermissions": [
+      {
+        "name": 'ohos.permission.USE_BLUETOOTH',
+        "reason": '$string:ble_permission_reason_use_bluetooth',
+        "usedScene": {
+          "abilities": [
+            "EntryAbility"
+          ],
+          "when": "inuse"
+        }
+      },
+      {
+        "name": 'ohos.permission.DISCOVER_BLUETOOTH',
+        "reason": '$string:ble_permission_reason_discovery_bluetooth',
+        "usedScene": {
+          "abilities": [
+            "EntryAbility"
+          ],
+          "when": "inuse"
+        }
+      },
+      {
+        "name": 'ohos.permission.APPROXIMATELY_LOCATION',
+        "reason": '$string:ble_permission_reason_approximately_location',
+        "usedScene": {
+          "abilities": [
+            "EntryAbility"
+          ],
+          "when": "inuse"
+        }
+      },
+      {
+        "name": 'ohos.permission.LOCATION',
+        "reason": '$string:ble_permission_reason_location',
+        "usedScene": {
+          "abilities": [
+            "EntryAbility"
+          ],
+          "when": "inuse"
+        }
+      },
+      {
+        "name": 'ohos.permission.ACCESS_BLUETOOTH',
+        "reason": '$string:ble_permission_reason_location',
+        "usedScene": {
+          "abilities": [
+            "EntryAbility"
+          ],
+          "when": "inuse"
+        }
+      }
+    ]
+  }
+}

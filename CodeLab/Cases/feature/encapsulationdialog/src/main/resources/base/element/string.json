@@ -1,0 +1,90 @@
+{
+  "string": [
+    {
+      "name": "encapsulation_dialog_title",
+      "value": "文件管理"
+    },{
+      "name": "encapsulation_dialog_new_file",
+      "value": "新增文件"
+    },{
+      "name": "encapsulation_dialog_file_name",
+      "value": "文件名：%s"
+    },{
+      "name": "encapsulation_dialog_file_type_",
+      "value": "文件类型：%s"
+    },{
+      "name": "encapsulation_dialog_file_size_",
+      "value": "文件大小：%s"
+    },{
+      "name": "encapsulation_dialog_file_update_time_",
+      "value": "更新日期：%s"
+    },{
+      "name": "encapsulation_dialog_file_type",
+      "value": "文件类型"
+    },{
+      "name": "encapsulation_dialog_ok",
+      "value": "确定"
+    },{
+      "name": "encapsulation_dialog_cancel",
+      "value": "取消"
+    },{
+      "name": "encapsulation_dialog_clear",
+      "value": "清除筛选"
+    },{
+      "name": "encapsulation_dialog_tips",
+      "value": "提示"
+    },{
+      "name": "encapsulation_dialog_sure_to_delete",
+      "value": "确认删除该文件吗？"
+    },{
+      "name": "encapsulation_dialog_delete",
+      "value": "删除"
+    },{
+      "name": "encapsulation_dialog_detail",
+      "value": "详情"
+    },{
+      "name": "encapsulation_dialog_file_name_not_empty",
+      "value": "文件名不能为空"
+    },
+    {
+      "name": "encapsulation_dialog_hundred_percent",
+      "value": "100%"
+    },
+    {
+      "name": "encapsulation_dialog_percent_32",
+      "value": "32%"
+    },
+    {
+      "name": "encapsulation_dialog_percent_40",
+      "value": "40%"
+    },
+    {
+      "name": "encapsulation_dialog_percent_300",
+      "value": "300%"
+    },
+    {
+      "name": "encapsulation_dialog_divider_stroke_width",
+      "value": "1vp"
+    },
+    {
+      "name": "encapsulation_dialog_title_bar_height",
+      "value": "69vp"
+    },
+    {
+      "name": "encapsulation_dialog_title_bar_padding",
+      "value": "20vp"
+    },
+    {
+      "name": "encapsulation_dialog_add_icon_size",
+      "value": "28vp"
+    },
+    {
+      "name": "encapsulation_dialog_title_size",
+      "value": "20vp"
+    },
+    {
+      "name": "encapsulation_dialog_sift_icon_size",
+      "value": "28vp"
+    }
+  ]
+}

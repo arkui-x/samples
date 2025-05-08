@@ -1,0 +1,16 @@
+{
+  "color": [
+    {
+      "name": "video_create_gif_button_background_color",
+      "value": "#66000000"
+    },
+    {
+      "name": "video_create_gif_view_background_color",
+      "value": "#D2000000"
+    },
+    {
+      "name": "video_create_gif_view_save_button_background_color",
+      "value": "#1a000000"
+    }
+  ]
+}

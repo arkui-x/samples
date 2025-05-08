@@ -1,0 +1,16 @@
+{
+  "string": [
+    {
+      "name": "water_ripples_sound_hound",
+      "value": "听歌识曲"
+    },
+    {
+      "name": "water_ripples_is_listening",
+      "value": "正在聆听..."
+    },
+    {
+      "name": "water_ripples_click_to_listen",
+      "value": "点击开始识曲"
+    }
+  ]
+}

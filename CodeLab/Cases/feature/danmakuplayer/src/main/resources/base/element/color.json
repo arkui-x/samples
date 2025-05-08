@@ -1,0 +1,40 @@
+{
+  "color": [
+    {
+      "name": "danmaku_player_time_color",
+      "value": "#FFFFFF"
+    },
+    {
+      "name": "danmaku_player_title_color",
+      "value": "#FFFFFF"
+    },
+    {
+      "name": "danmaku_player_bottom_controls_color",
+      "value": "#99000000"
+    },
+    {
+      "name": "danmaku_player_color_add_danmaku",
+      "value": "#808080"
+    },
+    {
+      "name": "danmaku_player_color_add_text_danmaku",
+      "value": "#ffffff"
+    },
+    {
+      "name": "danmaku_player_color_show_danmaku",
+      "value": "#ffffff"
+    },
+    {
+      "name": "danmaku_player_toggle_color",
+      "value": "#007DFF"
+    },
+    {
+      "name": "danmaku_player_switchPoint_color",
+      "value": "#FFFFFF"
+    },
+    {
+      "name": "danmaku_player_seek_to_dialog_background",
+      "value": "#55bcbcbc"
+    }
+  ]
+}

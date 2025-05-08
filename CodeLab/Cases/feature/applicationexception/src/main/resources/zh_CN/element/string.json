@@ -1,0 +1,32 @@
+{
+  "string": [
+    {
+      "name": "application_exception_crash_event",
+      "value": "构建应用崩溃事件"
+    },
+    {
+      "name": "application_exception_freeze_event",
+      "value": "构建应用卡死事件"
+    },
+    {
+      "name": "application_exception_application_fault_title",
+      "value": "应用异常信息获取"
+    },
+    {
+      "name": "application_exception_application_fault_description_harmonyos",
+      "value": "点击构建异常事件，需要重新启动应用并进入本页面，由于规格原因需等待1min左右才能获取异常数据"
+    },
+    {
+      "name": "application_exception_application_fault_description_arkuix",
+      "value": "点击构建异常事件，由于规格和真机性能原因需等待1min左右才能获取异常数据"
+    },
+    {
+      "name": "application_exception_no_message",
+      "value": "暂无信息"
+    },
+    {
+      "name": "application_exception_data_delay_toast",
+      "value": "由于规格原因，当前异常事件接收有延迟，数据大约在1min左右会进行更新"
+    }
+  ]
+}

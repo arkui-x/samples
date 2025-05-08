@@ -1,0 +1,72 @@
+{
+  "string": [
+    {
+      "name": "video_create_gif_select_prompt",
+      "value": "已选择%s秒，最多选择%s秒"
+    },
+    {
+      "name": "video_create_gif_hot_teleplay",
+      "value": "热播剧集"
+    },
+    {
+      "name": "video_create_gif_toast_tips",
+      "value": "仅用作美化，请根据业务需要自行实现"
+    },
+    {
+      "name": "video_create_gif_truncate_gif",
+      "value": "截GIF"
+    },
+    {
+      "name": "video_create_gif_next_step",
+      "value": "下一步"
+    },
+    {
+      "name": "video_create_gif_creating",
+      "value": "正在生成"
+    },
+    {
+      "name": "video_create_gif_create_success",
+      "value": "生成成功"
+    },
+    {
+      "name": "video_create_gif_create_fail",
+      "value": "生成失败"
+    },
+    {
+      "name": "video_create_gif_failed_to_set_permission",
+      "value": "设置权限失败！"
+    },
+    {
+      "name": "video_create_gif_share",
+      "value": "分享"
+    },
+    {
+      "name": "video_create_gif_comment",
+      "value": "评论"
+    },
+    {
+      "name": "video_create_gif_save_success",
+      "value": "保存成功"
+    },
+    {
+      "name": "video_create_gif_save_fail",
+      "value": "保存失败"
+    },
+    {
+      "name": "video_create_gif_full_width",
+      "value": "100%"
+    },
+    {
+      "name": "video_create_gif_half_full_width",
+      "value": "50%"
+    },
+    {
+      "name": "video_create_gif_action_gif_prompt",
+      "value": "请在视频播放时进行截取gif的操作"
+    },
+    {
+      "name": "video_create_gif_loading",
+      "value": "正在加载"
+    }
+  ]
+}

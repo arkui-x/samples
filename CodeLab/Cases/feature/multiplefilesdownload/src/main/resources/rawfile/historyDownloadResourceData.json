@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "url": "https://gitee.com/openharmony/applications_app_samples/raw/master/code/Solutions/Shopping/OrangeShopping/feature/navigationHome/src/main/resources/base/media/favor_list_tea.png",
+    "fileStatus": 0,
+    "downloadTime": 1728529510880
+  },
+  {
+    "id": 2,
+    "url": "https://gitee.com/harmonyos-cases/cases/blob/master/CommonAppDevelopment/product/entry/src/main/resources/base/media/after_cache.png",
+    "fileStatus": 0,
+    "downloadTime": 1728529510880
+  },
+  {
+    "id": 3,
+    "url": "https://gitee.com/harmonyos-cases/cases/blob/master/CommonAppDevelopment/product/entry/src/main/resources/base/media/icon_main_color.png",
+    "fileStatus": 0,
+    "downloadTime": 1728529510880
+  },
+  {
+    "id": 4,
+    "url": "https://gitee.com/harmonyos-cases/cases/blob/master/CommonAppDevelopment/product/entry/src/main/resources/base/media/image_resizable.png",
+    "fileStatus": 0,
+    "downloadTime": 1728529510880
+  },
+  {
+    "id": 5,
+    "url": "https://gitee.com/harmonyos-cases/cases/blob/master/CommonAppDevelopment/product/entry/src/main/resources/base/media/text_overflow_detail.png",
+    "fileStatus": 0,
+    "downloadTime": 1728529510880
+  }
+]

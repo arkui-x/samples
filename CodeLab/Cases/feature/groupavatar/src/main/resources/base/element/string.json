@@ -1,0 +1,83 @@
+{
+  "string": [
+    {
+      "name": "module_desc",
+      "value": "module_desc"
+    },
+    {
+      "name": "EntryAbility_desc",
+      "value": "EntryAbility_desc"
+    },
+    {
+      "name": "group_avatar_bottom_tab_wechat",
+      "value": "会话"
+    },
+    {
+      "name": "group_avatar_bottom_tab_contact",
+      "value": "通讯录"
+    },
+    {
+      "name": "group_avatar_bottom_tab_discovery",
+      "value": "发现"
+    },
+    {
+      "name":"group_avatar_bottom_tab_me",
+      "value": "我"
+    },
+    {
+      "name": "group_avatar_toast_message_no_supported",
+      "value": "功能暂不支持"
+    },
+    {
+      "name": "group_avatar_loading_message",
+      "value": "正在发起群聊.."
+    },
+    {
+      "name": "group_avatar_menu_title_session",
+      "value": "发起群聊"
+    },{
+      "name": "group_avatar_add_page_title",
+      "value": "发起群聊"
+    },
+    {
+      "name": "group_avatar_menu_title_add",
+      "value": "添加朋友"
+    },
+    {
+      "name": "group_avatar_menu_title_scan",
+      "value": "扫一扫"
+    },
+    {
+      "name": "group_avatar_menu_title_pay",
+      "value": "收付款"
+    },
+    {
+      "name": "group_avatar_search",
+      "value": "搜索"
+    },
+    {
+      "name": "group_avatar_add_page_select_group",
+      "value": "选择一个群"
+    },
+    {
+      "name": "group_avatar_add_page_face_group",
+      "value": "面对面建群"
+    },
+    {
+      "name": "group_avatar_add_page_business_group",
+      "value": "企业联系人"
+    },
+    {
+      "name": "group_avatar_full_size",
+      "value": "100%"
+    },
+    {
+      "name": "group_avatar_person_search_width",
+      "value": "96%"
+    },
+    {
+      "name": "group_avatar_person_header_size",
+      "value": "70%"
+    }
+  ]
+}

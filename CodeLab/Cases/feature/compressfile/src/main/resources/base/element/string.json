@@ -1,0 +1,108 @@
+{
+  "string": [
+    {
+      "name": "compress_file_message",
+      "value": "文件压缩"
+    },
+    {
+      "name": "compress_file_message_font_size",
+      "value": "28"
+    },
+    {
+      "name": "compress_file_title_message",
+      "value": "使用@ohos.zlib在Worker子线程压缩文件"
+    },
+    {
+      "name": "compress_file_title_message_container_width",
+      "value": "220"
+    },
+    {
+      "name": "compress_file_top_bar_icon_width",
+      "value": "60"
+    },
+    {
+      "name": "compress_file_top_bar_icon_height",
+      "value": "60"
+    },
+    {
+      "name": "compress_file_top_bar_padding_size",
+      "value": "20"
+    },
+    {
+      "name": "compress_file_top_bar_container_height",
+      "value": "120"
+    },
+    {
+      "name": "compress_file_top_bar_container_border_radius",
+      "value": "12"
+    },
+    {
+      "name": "compress_file_container_padding_size",
+      "value": "12"
+    },
+    {
+      "name": "compress_file_compress_success_tips",
+      "value": "压缩成功"
+    },
+    {
+      "name": "compress_file_title_font_size",
+      "value": "18"
+    },
+    {
+      "name": "compress_file_title_padding_size",
+      "value": "10"
+    },
+    {
+      "name": "compress_file_title_margin_size",
+      "value": "5"
+    },
+    {
+      "name": "compress_file_compress_button_width",
+      "value": "60"
+    },
+    {
+      "name": "compress_file_compress_button_height",
+      "value": "32"
+    },
+    {
+      "name": "compress_file_icon_height",
+      "value": "20"
+    },
+    {
+      "name": "compress_file_icon_width",
+      "value": "20"
+    },
+    {
+      "name": "compress_file_icon_margin_size",
+      "value": "5"
+    },
+    {
+      "name": "compress_file_name_font_size",
+      "value": "14"
+    },
+    {
+      "name": "compress_file_be_compress_title_message",
+      "value": "待压缩文件"
+    },
+    {
+      "name": "compress_file_compress_button_message",
+      "value": "压缩"
+    },
+    {
+      "name": "compress_file_compress_result_message",
+      "value": "压缩结果"
+    },
+    {
+      "name": "compress_file_list_item_height",
+      "value": "50"
+    },
+    {
+      "name": "compress_file_container_width",
+      "value": "100%"
+    },
+    {
+      "name": "compress_file_list_height_size",
+      "value": "150"
+    }
+  ]
+}

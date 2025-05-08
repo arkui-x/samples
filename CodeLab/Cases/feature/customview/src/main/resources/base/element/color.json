@@ -1,0 +1,20 @@
+{
+  "color": [
+    {
+      "name": "custom_view_font_selected_state",
+      "value": "#111111"
+    },
+    {
+      "name": "custom_view_font_unselected_state",
+      "value": "#999999"
+    },
+    {
+      "name": "custom_view_color_bar",
+      "value": "#3366FF"
+    },
+    {
+      "name": "custom_view_theme_color",
+      "value": "#EEEEEE"
+    }
+  ]
+}

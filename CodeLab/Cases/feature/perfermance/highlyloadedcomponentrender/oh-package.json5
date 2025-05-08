@@ -1,0 +1,17 @@
+{
+  "name": "highlyloadedcomponentrender",
+  "version": "1.0.0",
+  "description": "Please describe the basic information.",
+  "main": "Index.ets",
+  "author": "",
+  "license": "Apache-2.0",
+  "dependencies": {
+    // 基础工具类，需要使用日志打印
+    "utils": "file:../../../common/utils",
+    // 农历日期三方库，用于计算农历日期
+    "lunar_lite": "^1.0.0",
+    // 动态路由模块，用于配置动态路由
+    "routermodule": "file:../../../common/routermodule"
+  }
+}
+

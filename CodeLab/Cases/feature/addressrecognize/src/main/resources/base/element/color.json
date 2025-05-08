@@ -1,0 +1,36 @@
+{
+  "color": [
+    {
+      "name": "addressrecognize_start_window_background",
+      "value": "#FFFFFF"
+    },
+    {
+      "name": "addressrecognize_divider_color",
+      "value": "#cccccc"
+    },
+    {
+      "name": "addressrecognize_recognize_background",
+      "value": "#fff8f3f3"
+    },
+    {
+      "name": "addressrecognize_loading_mask_color",
+      "value": "#00000000"
+    },
+    {
+      "name": "addressrecognize_orange",
+      "value": "#ff5000"
+    },
+    {
+      "name": "addressrecognize_tag_bg",
+      "value": "#faebd7"
+    },
+    {
+      "name": "addressrecognize_secondary",
+      "value": "#f1f3f5"
+    },
+    {
+      "name": "addressrecognize_default_fon_color",
+      "value": "#000000"
+    }
+  ]
+}

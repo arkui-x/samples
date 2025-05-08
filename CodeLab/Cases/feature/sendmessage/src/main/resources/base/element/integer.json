@@ -1,0 +1,64 @@
+{
+  "integer": [
+    {
+      "name": "send_message_text_font_size",
+      "value": 23
+    },
+    {
+      "name": "send_message_col_margin_top",
+      "value": 40
+    },
+    {
+      "name": "send_message_btn_height",
+      "value": 46
+    },
+    {
+      "name": "send_message_text1_font_size",
+      "value": 16
+    },
+    {
+      "name": "send_message_text1_margin_left",
+      "value": 16
+    },
+    {
+      "name": "send_message_span1_font_size",
+      "value": 16
+    },
+    {
+      "name": "send_message_span2_font_size",
+      "value": 14
+    },
+    {
+      "name": "send_message_col_title_margin_top",
+      "value": 70
+    },
+    {
+      "name": "send_message_number_margin_left",
+      "value": 32
+    },
+    {
+      "name": "send_message_question_font_size",
+      "value": 14
+    },
+    {
+      "name": "send_message_fee_font_size",
+      "value": 13
+    },
+    {
+      "name": "send_message_btn_margin_left",
+      "value": 12
+    },
+    {
+      "name": "send_message_btn_margin_bottom",
+      "value": 10
+    },
+    {
+      "name": "send_message_btn_margin_top",
+      "value": 30
+    },
+    {
+      "name": "send_message_already_sent_btn_margin_top",
+      "value": 30
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "routerMap": [
+    {
+      "name": "customscan/CustomScanPage",
+      "pageModule": "customscan",
+      "pageSourceFile": "src/main/ets/generated/RouterBuilder.ets",
+      "registerFunction": "customScanPageRegister"
+    }
+  ]
+}

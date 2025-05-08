@@ -1,0 +1,12 @@
+{
+  "color": [
+    {
+      "name": "page_turning_animation_color_dark_blue",
+      "value": "#18183C"
+    },
+    {
+      "name": "page_turning_animation_stack_background_color",
+      "value": "#A4AE77"
+    }
+  ]
+}

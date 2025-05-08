@@ -1,0 +1,12 @@
+{
+  "integer": [
+    {
+      "name": "nativeprogressnotify_progress_size",
+      "value": 100
+    },
+    {
+      "name": "nativeprogressnotify_column_space",
+      "value": 10
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "routerMap": [
+    {
+      "name": "videotrimmer/VideoTrimmer",
+      "pageModule": "videotrimmer",
+      "pageSourceFile": "src/main/ets/generated/RouterBuilder.ets",
+      "registerFunction": "videoTrimmerRegister"
+    },
+    {
+      "name": "videotrimmer/VideoDetail",
+      "pageModule": "videotrimmer",
+      "pageSourceFile": "src/main/ets/generated/RouterBuilder.ets",
+      "registerFunction": "videoDetailRegister"
+    },
+    {
+      "name": "videotrimmer/VideoUpload",
+      "pageModule": "videotrimmer",
+      "pageSourceFile": "src/main/ets/generated/RouterBuilder.ets",
+      "registerFunction": "videoUploadRegister"
+    }
+  ]
+}

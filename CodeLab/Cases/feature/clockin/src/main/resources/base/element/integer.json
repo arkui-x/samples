@@ -1,0 +1,144 @@
+{
+  "integer": [
+    {
+      "name": "clock_in_top_text_height",
+      "value": 40
+    },
+    {
+      "name": "clock_in_button_text_font_size",
+      "value": 18
+    },
+    {
+      "name": "clock_in_button_width",
+      "value": 100
+    },
+    {
+      "name": "clock_in_button_height",
+      "value": 100
+    },
+    {
+      "name": "clock_in_button_radius",
+      "value": 50
+    },
+    {
+      "name": "clock_in_duration",
+      "value": 100
+    },
+    {
+      "name": "clock_in_detail_space",
+      "value": 8
+    },
+    {
+      "name": "clock_in_detail_text_font_size",
+      "value": 14
+    },
+    {
+      "name": "clock_in_detail_padding",
+      "value": 3
+    },
+    {
+      "name": "clock_in_detail_margin_left",
+      "value": 10
+    },
+    {
+      "name": "clock_in_icon_height",
+      "value": 16
+    },
+    {
+      "name": "clock_in_icon_margin_right",
+      "value": 5
+    },
+    {
+      "name": "clock_in_detail_padding_top",
+      "value": 70
+    },
+    {
+      "name": "clock_in_detail_padding_left",
+      "value": 16
+    },
+    {
+      "name": "clock_in_detail_padding_right",
+      "value": 16
+    },
+    {
+      "name": "clock_in_detail_padding_bottom",
+      "value": 16
+    },
+    {
+      "name": "clock_in_detail_border_radius",
+      "value": 16
+    },
+    {
+      "name": "clock_in_info_window_line_height",
+      "value": 24
+    },
+    {
+      "name": "clock_in_info_window_font_size",
+      "value": 16
+    },
+    {
+      "name": "clock_in_line_height",
+      "value": 24
+    },
+    {
+      "name": "clock_in_font_size",
+      "value": 16
+    },
+    {
+      "name": "clock_in_padding",
+      "value": 10
+    },
+    {
+      "name": "clock_in_border_radius",
+      "value": 10
+    },
+    {
+      "name": "clock_in_max_width",
+      "value": 300
+    },
+    {
+      "name": "clock_in_height",
+      "value": 80
+    },
+    {
+      "name": "clock_in_image_width",
+      "value": 36
+    },
+    {
+      "name": "clock_in_image_height",
+      "value": 36
+    },
+    {
+      "name": "clock_in_image_padding",
+      "value": 4
+    },
+    {
+      "name": "clock_in_image_radius",
+      "value": 18
+    },
+    {
+      "name": "clock_in_location_button_right",
+      "value": 16
+    },
+    {
+      "name": "clock_in_location_button_bottom",
+      "value": 24
+    },
+    {
+      "name": "clock_in_loading_progress_width",
+      "value": 120
+    },
+    {
+      "name": "clock_in_loading_progress_height",
+      "value": 120
+    },
+    {
+      "name": "clock_in_loading_progress_border_radius",
+      "value": 20
+    },
+    {
+      "name": "clock_in_loading_progress_padding",
+      "value": 30
+    }
+  ]
+}

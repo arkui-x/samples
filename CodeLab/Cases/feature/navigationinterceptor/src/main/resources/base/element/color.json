@@ -1,0 +1,68 @@
+{
+  "color": [
+    {
+      "name": "naviagtion_interceptor_main_bkg",
+      "value": "#ffa7c8"
+    },
+    {
+      "name": "naviagtion_interceptor_grey_3",
+      "value": "#777777"
+    },
+    {
+      "name": "naviagtion_interceptor_transparent_f",
+      "value": "#00ffffff"
+    },
+    {
+      "name": "naviagtion_interceptor_transparent_7",
+      "value": "#00777777"
+    },
+    {
+      "name": "naviagtion_interceptor_grey_e",
+      "value": "#eeeeee"
+    },
+    {
+      "name": "naviagtion_interceptor_grey_6",
+      "value": "#666666"
+    },
+    {
+      "name": "naviagtion_interceptor_grey_9",
+      "value": "#999999"
+    },
+    {
+      "name": "naviagtion_interceptor_red",
+      "value": "#E72A2B"
+    },
+    {
+      "name": "naviagtion_interceptor_grey_7",
+      "value": "#777777"
+    },
+    {
+      "name": "naviagtion_interceptor_btn_bgc",
+      "value": "#FEFEFE"
+    },
+    {
+      "name": "naviagtion_interceptor_half_modal_btn_bgc",
+      "value": "#A3A3A3"
+    },
+    {
+      "name": "naviagtion_interceptor_border_color",
+      "value": "#9F9F9F"
+    },
+    {
+      "name": "naviagtion_interceptor_note_color",
+      "value": "#7EB2F2"
+    },
+    {
+      "name": "naviagtion_interceptor_setting_text_color",
+      "value": "#000000"
+    },
+    {
+      "name": "naviagtion_interceptor_burble_bgc_color",
+      "value": "#FFFFFF"
+    },
+    {
+      "name": "naviagtion_interceptor_bgc_color",
+      "value": "#F1F3F5"
+    }
+  ]
+}

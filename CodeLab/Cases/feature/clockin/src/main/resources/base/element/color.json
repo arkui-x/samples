@@ -1,0 +1,36 @@
+{
+  "color": [
+    {
+      "name": "clock_in_button_gradient_start",
+      "value": "#d72c2e"
+    },
+    {
+      "name": "clock_in_button_gradient_end",
+      "value": "#e6595e"
+    },
+    {
+      "name": "clock_in_detail_text_color",
+      "value": "#6e6e6e"
+    },
+    {
+      "name": "clock_in_detail_background_color",
+      "value": "#e7f4e7"
+    },
+    {
+      "name": "clock_in_divider_color",
+      "value": "#f8f8f8"
+    },
+    {
+      "name": "clock_in_loading_progress_color",
+      "value": "#0091FF"
+    },
+    {
+      "name": "clock_in_loading_progress_background",
+      "value": "#FFFFFF"
+    },
+    {
+      "name": "clock_in_loading_mask_background",
+      "value": "#33333333"
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "routerMap": [
+    {
+      "name": "customstepper/CustomStepperView",
+      "pageModule": "customstepper",
+      "pageSourceFile": "src/main/ets/generated/RouterBuilder.ets",
+      "registerFunction": "customStepperViewRegister"
+    }
+  ]
+}

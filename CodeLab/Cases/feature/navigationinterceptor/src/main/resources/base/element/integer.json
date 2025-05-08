@@ -1,0 +1,292 @@
+{
+  "integer": [
+    {
+      "name": "naviagtion_interceptor_border_radius",
+      "value": 1
+    },
+    {
+      "name": "naviagtion_interceptor_border_radius_mid",
+      "value": 16
+    },
+    {
+      "name": "naviagtion_interceptor_other_ways_border_radius",
+      "value": 16
+    },
+    {
+      "name": "naviagtion_interceptor_duration",
+      "value": 800
+    },
+    {
+      "name": "naviagtion_interceptor_user_image_height",
+      "value": 40
+    },
+    {
+      "name": "naviagtion_interceptor_font_size_middle",
+      "value": 25
+    },
+    {
+      "name": "naviagtion_interceptor_font_size_big",
+      "value": 25
+    },
+    {
+      "name": "naviagtion_interceptor_padding_default",
+      "value": 12
+    },
+    {
+      "name": "naviagtion_interceptor_padding_to_top",
+      "value": 100
+    },
+    {
+      "name": "naviagtion_interceptor_padding_mid",
+      "value": 20
+    },
+    {
+      "name": "naviagtion_interceptor_height_fifty",
+      "value": 50
+    },
+    {
+      "name": "naviagtion_interceptor_height_twenty_five",
+      "value": 20
+    },
+    {
+      "name": "naviagtion_interceptor_height_fifty_five",
+      "value": 15
+    },
+    {
+      "name": "naviagtion_interceptor_margin_default",
+      "value": 10
+    },
+    {
+      "name": "naviagtion_interceptor_margin_close_top",
+      "value": 50
+    },
+    {
+      "name": "naviagtion_interceptor_margin_close_left",
+      "value": 20
+    },
+    {
+      "name": "naviagtion_interceptor_margin_left",
+      "value": 20
+    },
+    {
+      "name": "naviagtion_interceptor_padding_top",
+      "value": 100
+    },
+    {
+      "name": "naviagtion_interceptor_other_ways_icon_height",
+      "value": 32
+    },
+    {
+      "name": "naviagtion_interceptor_arrow_right_height",
+      "value": 16
+    },
+    {
+      "name": "naviagtion_interceptor_row_padding_bottom",
+      "value": 10
+    },
+    {
+      "name": "naviagtion_interceptor_row_padding_top",
+      "value": 10
+    },
+    {
+      "name": "naviagtion_interceptor_row_text_font_size",
+      "value": 15
+    },
+    {
+      "name": "naviagtion_interceptor_check_box_size",
+      "value": 15
+    },
+    {
+      "name": "naviagtion_interceptor_padding_top_size",
+      "value": 100
+    },
+    {
+      "name": "naviagtion_interceptor_setting_head_image_width",
+      "value": 48
+    },
+    {
+      "name": "naviagtion_interceptor_setting_my_icon_border_radius",
+      "value": 30
+    },
+    {
+      "name": "naviagtion_interceptor_setting_name_line_height",
+      "value": 28
+    },
+    {
+      "name": "naviagtion_interceptor_setting_name_font_size",
+      "value": 20
+    },
+    {
+      "name": "naviagtion_interceptor_setting_head_column_height",
+      "value": 40
+    },
+    {
+      "name": "naviagtion_interceptor_setting_padding_left",
+      "value": 12
+    },
+    {
+      "name": "naviagtion_interceptor_self_page_font_size",
+      "value": 12
+    },
+    {
+      "name": "naviagtion_interceptor_back_image_width",
+      "value": 30
+    },
+    {
+      "name": "naviagtion_interceptor_back_padding",
+      "value": 12
+    },
+    {
+      "name": "naviagtion_interceptor_head_image_position_x",
+      "value": 16
+    },
+    {
+      "name": "naviagtion_interceptor_head_image_position_y",
+      "value": 1
+    },
+    {
+      "name": "naviagtion_interceptor_image_aspectRatio",
+      "value": 1
+    },
+    {
+      "name": "naviagtion_interceptor_myself_margin_left",
+      "value": 14
+    },
+    {
+      "name": "naviagtion_interceptor_self_page_margin_left",
+      "value": 5
+    },
+    {
+      "name": "naviagtion_interceptor_myself_position_x",
+      "value": 60
+    },
+    {
+      "name": "naviagtion_interceptor_myself_position_y",
+      "value": 8
+    },
+    {
+      "name": "naviagtion_interceptor_appcast3_margin_top",
+      "value": 35
+    },
+    {
+      "name": "naviagtion_interceptor_appcast_margin_bottom",
+      "value": 12
+    },
+    {
+      "name": "naviagtion_interceptor_text_position_y",
+      "value": 8
+    },
+    {
+      "name": "naviagtion_interceptor_text_font_size",
+      "value": 13
+    },
+    {
+      "name": "naviagtion_interceptor_text_margin_top",
+      "value": 9
+    },
+    {
+      "name": "naviagtion_interceptor_text_width",
+      "value": 100
+    },
+    {
+      "name": "naviagtion_interceptor_row_padding",
+      "value": 12
+    },
+    {
+      "name": "naviagtion_interceptor_btn_width",
+      "value": 70
+    },
+    {
+      "name": "naviagtion_interceptor_btn_height",
+      "value": 30
+    },
+    {
+      "name": "naviagtion_interceptor_btn_font_size",
+      "value": 12
+    },
+    {
+      "name": "naviagtion_interceptor_btn_margin_left",
+      "value": 20
+    },
+    {
+      "name": "naviagtion_interceptor_btn_border_width",
+      "value": 1
+    },
+    {
+      "name": "naviagtion_interceptor_cate_img_width",
+      "value": 20
+    },
+    {
+      "name": "naviagtion_interceptor_cate_text_font_size",
+      "value": 10
+    },
+    {
+      "name": "naviagtion_interceptor_cate_text_margin_top",
+      "value": 5
+    },
+    {
+      "name": "naviagtion_interceptor_one",
+      "value": 1
+    },
+    {
+      "name": "naviagtion_interceptor_two",
+      "value": 2
+    },
+    {
+      "name": "naviagtion_interceptor_three",
+      "value": 3
+    },
+    {
+      "name": "naviagtion_interceptor_four",
+      "value": 4
+    },
+    {
+      "name": "naviagtion_interceptor_five",
+      "value": 5
+    },
+    {
+      "name": "naviagtion_interceptor_six",
+      "value": 6
+    },
+    {
+      "name": "naviagtion_interceptor_seven",
+      "value": 7
+    },
+    {
+      "name": "naviagtion_interceptor_eight",
+      "value": 8
+    },
+    {
+      "name": "naviagtion_interceptor_nine",
+      "value": 9
+    },
+    {
+      "name": "naviagtion_interceptor_ten",
+      "value": 10
+    },
+    {
+      "name": "naviagtion_interceptor_ten_one",
+      "value": 11
+    },
+    {
+      "name": "naviagtion_interceptor_ten_two",
+      "value": 12
+    },
+    {
+      "name": "naviagtion_interceptor_cate_margin_top",
+      "value": 12
+    },
+    {
+      "name": "naviagtion_interceptor_cate_margin_bottom",
+      "value": 12
+    },
+    {
+      "name": "naviagtion_interceptor_cate_margin_left",
+      "value": 8
+    },
+    {
+      "name": "naviagtion_interceptor_cate_padding",
+      "value": 8
+    }
+  ]
+}

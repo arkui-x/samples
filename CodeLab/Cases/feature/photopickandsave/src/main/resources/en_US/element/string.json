@@ -1,0 +1,84 @@
+{
+  "string": [
+    {
+      "name": "photopickandsave_image_request_fail",
+      "value": "Image loading failed, please check the network"
+    },
+    {
+      "name": "photopickandsave_image_request_success",
+      "value": "Image download successful"
+    },
+    {
+      "name": "photopickandsave_title",
+      "value": "Download network images"
+    },
+    {
+      "name": "photopickandsave_content",
+      "value": "This example introduces the scenario of downloading images from the network using the http, photoAccessHelper, and fs interfaces."
+    },
+    {
+      "name": "photopickandsave_MainAbility_label",
+      "value": "图片处理"
+    },
+    {
+      "name": "photopickandsave_recently_added",
+      "value": "最近添加"
+    },
+    {
+      "name": "photopickandsave_choice_photo",
+      "value": "选照片"
+    },
+    {
+      "name": "photopickandsave_choice_video",
+      "value": "选视频"
+    },
+    {
+      "name": "photopickandsave_upload_desc",
+      "value": "本示例介绍使用PhotoViewPicker选择图片预览的场景,点击“+”从图库中选择图片，并在当前当前页面显示选择的图片。"
+    },
+    {
+      "name": "photopickandsave_photograph",
+      "value": "拍照"
+    },
+    {
+      "name": "photopickandsave_take_video",
+      "value": "拍视频"
+    },
+    {
+      "name": "photopickandsave_choice_number",
+      "value": "最多选择六张图片"
+    },
+    {
+      "name": "photopickandsave_user_tip",
+      "value": "功能开发中"
+    },
+    {
+      "name": "photopickandsave_picker_save",
+      "value": "save photo through picker method"
+    },
+    {
+      "name": "photopickandsave_photo_preview",
+      "value": "choose photo preview"
+    },
+    {
+      "name": "photopickandsave_download_photo",
+      "value": "download save photo"
+    },
+    {
+      "name": "photopickandsave_save_picture",
+      "value": "save_picture"
+    },
+    {
+      "name": "photopickandsave_request_permissions_reason",
+      "value": "user_grant"
+    },
+    {
+      "name": "photopickandsave_savebutton_width",
+      "value": "143"
+    },
+    {
+      "name": "photopickandsave_button_height",
+      "value": "43"
+    }
+  ]
+}

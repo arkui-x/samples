@@ -1,0 +1,711 @@
+{
+  "app": {
+    "signingConfigs": [],
+    "products": [
+      {
+        "name": "default",
+        "signingConfig": "default",
+        "compatibleSdkVersion": "5.0.2(14)",
+        "runtimeOS": "HarmonyOS",
+      }
+    ],
+    "buildModeSet": [
+      {
+        "name": "debug",
+      },
+      {
+        "name": "release"
+      }
+    ]
+  },
+  "modules": [
+    {
+      "name": "phone",
+      "srcPath": "./product/phone",
+      "targets": [
+        {
+          "name": "default",
+          "applyToProducts": [
+            "default"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "utils",
+      "srcPath": "./common/utils"
+    },
+    {
+      "name": "routermodule",
+      "srcPath": "./common/routermodule"
+    },
+    {
+      "name": "addressexchange",
+      "srcPath": "./feature/addressexchange"
+    },
+    {
+      "name": "customtabbar",
+      "srcPath": "./feature/customtabbar"
+    },
+    {
+      "name": "modalwindow",
+      "srcPath": "./feature/modalwindow"
+    },
+    {
+      "name": "barchart",
+      "srcPath": "./feature/barchart"
+    },
+    {
+      "name": "slidetohideanddisplace",
+      "srcPath": "./feature/slidetohideanddisplace"
+    },
+    {
+      "name": "functionalscenes",
+      "srcPath": "./feature/functionalscenes"
+    },
+    {
+      "name": "imageviewer",
+      "srcPath": "./feature/imageviewer"
+    },
+    {
+      "name": "eventpropagation",
+      "srcPath": "./feature/eventpropagation"
+    },
+    {
+      "name": "secondarylinkage",
+      "srcPath": "./feature/secondarylinkage"
+    },
+    {
+      "name": "pendingitems",
+      "srcPath": "./feature/pendingitems"
+    },
+    {
+      "name": "nativerawfile",
+      "srcPath": "./feature/nativerawfile"
+    },
+    {
+      "name": "gbktranscoding",
+      "srcPath": "./feature/gbktranscoding"
+    },
+    {
+      "name": "handletabs",
+      "srcPath": "./feature/handletabs"
+    },
+    {
+      "name": "akiusepractice",
+      "srcPath": "./feature/akiusepractice"
+    },
+    {
+      "name": "variablewatch",
+      "srcPath": "./feature/variablewatch"
+    },
+    {
+      "name": "photopickandsave",
+      "srcPath": "./feature/photopickandsave"
+    },
+    {
+      "name": "applicationexception",
+      "srcPath": "./feature/applicationexception"
+    },
+    {
+      "name": "fitfordarkmode",
+      "srcPath": "./feature/fitfordarkmode"
+    },
+    {
+      "name": "marquee",
+      "srcPath": "./feature/marquee"
+    },
+    {
+      "name": "pulltorefreshnews",
+      "srcPath": "./feature/pulltorefreshnews"
+    },
+    {
+      "name": "pageturninganimation",
+      "srcPath": "./feature/pageturninganimation"
+    },
+    {
+      "name": "nativeprogressnotify",
+      "srcPath": "./feature/nativeprogressnotify"
+    },
+    {
+      "name": "verifycode",
+      "srcPath": "./feature/verifycode"
+    },
+    {
+      "name": "vibrateeffect",
+      "srcPath": "./feature/vibrateeffect"
+    },
+    {
+      "name": "navigationbarchange",
+      "srcPath": "./feature/navigationbarchange"
+    },
+    {
+      "name": "navigationparametertransfer",
+      "srcPath": "./feature/navigationparametertransfer"
+    },
+    {
+      "name": "mediafullscreen",
+      "srcPath": "./feature/mediafullscreen"
+    },
+    {
+      "name": "imagecomment",
+      "srcPath": "./feature/imagecomment"
+    },
+    {
+      "name": "foldablescreencases",
+      "srcPath": "./feature/foldablescreencases"
+    },
+    {
+      "name": "decompressfile",
+      "srcPath": "./feature/decompressfile"
+    },
+    {
+      "name": "customview",
+      "srcPath": "./feature/customview"
+    },
+    {
+      "name": "componentstack",
+      "srcPath": "./feature/componentstack"
+    },
+    {
+      "name": "customcalendarpickerdialog",
+      "srcPath": "./feature/customcalendarpickerdialog"
+    },
+    {
+      "name": "waterripples",
+      "srcPath": "./feature/waterripples"
+    },
+    {
+      "name": "swipersmoothvariation",
+      "srcPath": "./feature/swipersmoothvariation"
+    },
+    {
+      "name": "searchcomponent",
+      "srcPath": "./feature/searchcomponent"
+    },
+    {
+      "name": "swipercomponent",
+      "srcPath": "./feature/swipercomponent"
+    },
+    {
+      "name": "citysearch",
+      "srcPath": "./feature/citysearch"
+    },
+    {
+      "name": "shortvideo",
+      "srcPath": "./feature/shortvideo"
+    },
+    {
+      "name": "nativesavepictosandbox",
+      "srcPath": "./feature/nativesavepictosandbox"
+    },
+    {
+      "name": "pageloading",
+      "srcPath": "./feature/pageloading"
+    },
+    {
+      "name": "sidebaranimation",
+      "srcPath": "./feature/sidebaranimation"
+    },
+    {
+      "name": "lottieview",
+      "srcPath": "./feature/lottieview"
+    },
+    {
+      "name": "imagecompression",
+      "srcPath": "./feature/imagecompression"
+    },
+    {
+      "name": "paintcomponent",
+      "srcPath": "./feature/paintcomponent"
+    },
+    {
+      "name": "expandtitle",
+      "srcPath": "./feature/expandtitle"
+    },
+    {
+      "name": "listslidetohistory",
+      "srcPath": "./feature/listslidetohistory"
+    },
+    {
+      "name": "imageenableanalyzer",
+      "srcPath": "./feature/imageenableanalyzer"
+    },
+    {
+      "name": "digitalscrollanimation",
+      "srcPath": "./feature/digitalscrollanimation"
+    },
+    {
+      "name": "listitemoverflow",
+      "srcPath": "./feature/listitemoverflow"
+    },
+    {
+      "name": "webgetcameraimage",
+      "srcPath": "./feature/webgetcameraimage"
+    },
+    {
+      "name": "bigfilecopy",
+      "srcPath": "./feature/bigfilecopy"
+    },
+    {
+      "name": "healthchart",
+      "srcPath": "./feature/healthchart",
+    },
+    {
+      "name": "bottomdrawerslidecase",
+      "srcPath": "./feature/bottomdrawerslidecase"
+    },
+    {
+      "name": "chinesetopinyin",
+      "srcPath": "./feature/chinesetopinyin"
+    },
+    {
+      "name": "votingcomponent",
+      "srcPath": "./feature/votingcomponent"
+    },
+    {
+      "name": "dragtoswitchpictures",
+      "srcPath": "./feature/dragtoswitchpictures"
+    },
+    {
+      "name": "diggingholescreen",
+      "srcPath": "./feature/diggingholescreen"
+    },
+    {
+      "name": "customsafekeyboard",
+      "srcPath": "./feature/customsafekeyboard"
+    },
+    {
+      "name": "multiplefilesdownload",
+      "srcPath": "./feature/multiplefilesdownload"
+    },
+    {
+      "name": "componentinstancesharedinpages",
+      "srcPath": "./feature/componentinstancesharedinpages"
+    },
+    {
+      "name": "nativeembed",
+      "srcPath": "./feature/nativeembed"
+    },
+    {
+      "name": "etswrapper",
+      "srcPath": "./feature/etswrapper"
+    },
+    {
+      "name": "sideslipintercept",
+      "srcPath": "./feature/sideslipintercept"
+    },
+    {
+      "name": "indicatorbelowswiper",
+      "srcPath": "./feature/indicatorbelowswiper"
+    },
+    {
+      "name": "transitionanimation",
+      "srcPath": "./feature/transitionanimation"
+    },
+    {
+      "name": "multimodaltransion",
+      "srcPath": "./feature/multimodaltransion"
+    },
+    {
+      "name": "handwritingtoimage",
+      "srcPath": "./feature/handwritingtoimage"
+    },
+    {
+      "name": "imagetheft",
+      "srcPath": "./feature/imagetheft"
+    },
+    {
+      "name": "hilogmonitormanagement",
+      "srcPath": "./feature/hilogmonitormanagement"
+    },
+    {
+      "name": "highlightguide",
+      "srcPath": "./feature/highlightguide"
+    },
+    {
+      "name": "databaseupgrade",
+      "srcPath": "./feature/databaseupgrade"
+    },
+    {
+      "name": "imagegridlayout",
+      "srcPath": "./feature/imagegridlayout"
+    },
+    {
+      "name": "dynamicattributes",
+      "srcPath": "./feature/dynamicattributes"
+    },
+    {
+      "name": "imagedepthcopy",
+      "srcPath": "./feature/imagedepthcopy"
+    },
+    {
+      "name": "webpdfviewer",
+      "srcPath": "./feature/webpdfviewer"
+    },
+    {
+      "name": "cardswiperanimation",
+      "srcPath": "./feature/cardswiperanimation"
+    },
+    {
+      "name": "customscan",
+      "srcPath": "./feature/customscan"
+    },
+    {
+      "name": "iconmaincolor",
+      "srcPath": "./feature/iconmaincolor"
+    },
+    {
+      "name": "wordrecognition",
+      "srcPath": "./feature/wordrecognition"
+    },
+    {
+      "name": "effectkit",
+      "srcPath": "./feature/effectkit"
+    },
+    {
+      "name": "videocache",
+      "srcPath": "./feature/videocache"
+    },
+    {
+      "name": "fontdynamicregistration",
+      "srcPath": "./feature/fontdynamicregistration"
+    },
+    {
+      "name": "listexchange",
+      "srcPath": "./feature/listexchange"
+    },
+    {
+      "name": "bottompanelslide",
+      "srcPath": "./feature/bottompanelslide"
+    },
+    {
+      "name": "voicerecordynamiceffect",
+      "srcPath": "./feature/voicerecordynamiceffect"
+    },
+    {
+      "name": "pageflip",
+      "srcPath": "./feature/pageflip"
+    },
+    {
+      "name": "webcustompressmenu",
+      "srcPath": "./feature/webcustompressmenu"
+    },
+    {
+      "name": "floatwindow",
+      "srcPath": "./feature/floatwindow"
+    },
+    {
+      "name": "danmakuplayer",
+      "srcPath": "./feature/danmakuplayer"
+    },
+    {
+      "name": "dragandexchange",
+      "srcPath": "./feature/dragandexchange"
+    },
+    {
+      "name": "analogclock",
+      "srcPath": "./feature/analogclock"
+    },
+    {
+      "name": "xcomponentvsync",
+      "srcPath": "./feature/xcomponentvsync"
+    },
+    {
+      "name": "tabcontentoverflow",
+      "srcPath": "./feature/tabcontentoverflow"
+    },
+    {
+      "name": "miniplayeranimation",
+      "srcPath": "./feature/miniplayeranimation"
+    },
+    {
+      "name": "webpagesnapshot",
+      "srcPath": "./feature/webpagesnapshot"
+    },
+    {
+      "name": "chatwithexpression",
+      "srcPath": "./feature/chatwithexpression"
+    },
+    {
+      "name": "refreshtimeline",
+      "srcPath": "./feature/refreshtimeline"
+    },
+    {
+      "name": "gridexchange",
+      "srcPath": "./feature/gridexchange"
+    },
+    {
+      "name": "blendmode",
+      "srcPath": "./feature/blendmode"
+    },
+    {
+      "name": "secondfloorloadanimation",
+      "srcPath": "./feature/secondfloorloadanimation"
+    },
+    {
+      "name": "styledtext",
+      "srcPath": "./feature/styledtext"
+    },
+    {
+      "name": "navigationinterceptor",
+      "srcPath": "./feature/navigationinterceptor"
+    },
+    {
+      "name": "customdialog",
+      "srcPath": "./feature/customdialog"
+    },
+    {
+      "name": "textexpand",
+      "srcPath": "./feature/textexpand"
+    },
+    {
+      "name": "imageresizable",
+      "srcPath": "./feature/imageresizable"
+    },
+    {
+      "name": "watermark",
+      "srcPath": "./feature/watermark"
+    },
+    {
+      "name": "textoverflow",
+      "srcPath": "./feature/textoverflow"
+    },
+    {
+      "name": "fadingedge",
+      "srcPath": "./feature/fadingedge"
+    },
+    {
+      "name": "customstepper",
+      "srcPath": "./feature/customstepper"
+    },
+    {
+      "name": "searchswiper",
+      "srcPath": "./feature/searchswiper"
+    },
+    {
+      "name": "highlyloadedcomponentrender",
+      "srcPath": "./feature/perfermance/highlyloadedcomponentrender"
+    },
+    {
+      "name": "videolinkagelist",
+      "srcPath": "./feature/videolinkagelist"
+    },
+    {
+      "name": "navdestinationdialog",
+      "srcPath": "./feature/navdestinationdialog"
+    },
+    {
+      "name": "customkeyboardtoh5",
+      "srcPath": "./feature/customkeyboardtoh5"
+    },
+    {
+      "name": "customreusablepool",
+      "srcPath": "./feature/perfermance/customreusablepool"
+    },
+    {
+      "name": "operaterdbintaskpool",
+      "srcPath": "./feature/perfermance/operaterdbintaskpool"
+    },
+    {
+      "name": "sendmessage",
+      "srcPath": "./feature/sendmessage"
+    },
+    {
+      "name": "skeletondiagram",
+      "srcPath": "./feature/skeletondiagram",
+    },
+    {
+      "name": "palette",
+      "srcPath": "./feature/palette",
+    },
+    {
+      "name": "imagemosaic",
+      "srcPath": "./feature/imagemosaic",
+    },
+    {
+      "name": "calendarswitch",
+      "srcPath": "./feature/calendarswitch",
+    },
+    {
+      "name": "eraser",
+      "srcPath": "./feature/eraser",
+    },
+    {
+      "name": "bluetooth",
+      "srcPath": "./feature/bluetooth",
+    },
+    {
+      "name": "imperativedynamiclayouts",
+      "srcPath": "./feature/perfermance/imperativedynamiclayouts",
+    },
+    {
+      "name": "customdecoration",
+      "srcPath": "./feature/customdecoration",
+    },
+    {
+      "name": "videolistautoplay",
+      "srcPath": "./feature/videolistautoplay",
+    },
+    {
+      "name": "videoscreendirectionswitching",
+      "srcPath": "./feature/videoscreendirectionswitching"
+    },
+    {
+      "name": "editaddress",
+      "srcPath": "./feature/editaddress"
+    },
+    {
+      "name": "customdrawtabbar",
+      "srcPath": "./feature/customdrawtabbar",
+    },
+    {
+      "name": "statusbaranimation",
+      "srcPath": "./feature/statusbaranimation"
+    },
+    {
+      "name": "verticalhorizontallinkage",
+      "srcPath": "./feature/verticalhorizontallinkage"
+    },
+    {
+      "name": "groupavatar",
+      "srcPath": "./feature/groupavatar"
+    },
+    {
+      "name": "addressrecognize",
+      "srcPath": "./feature/addressrecognize"
+    },
+    {
+      "name": "h5cache",
+      "srcPath": "./feature/h5cache"
+    },
+    {
+      "name": "decodeheifimage",
+      "srcPath": "./feature/decodeheifimage"
+    },
+    {
+      "name": "collapsemenu",
+      "srcPath": "./feature/collapsemenu"
+    },
+    {
+      "name": "livedetectionandencryptiond",
+      "srcPath": "./feature/livedetectionandencryptiond",
+    },
+    {
+      "name": "customanimationtab",
+      "srcPath": "./feature/customanimationtab"
+    },
+    {
+      "name": "keyboardavoid",
+      "srcPath": "./feature/keyboardavoid",
+    },
+    {
+      "name": "patternlock",
+      "srcPath": "./feature/patternlock"
+    },
+    {
+      "name": "mapthumbtack",
+      "srcPath": "./feature/mapthumbtack"
+    },
+    {
+      "name": "publishmultimediaupdates",
+      "srcPath": "./feature/publishmultimediaupdates",
+    },
+    {
+      "name": "immersive",
+      "srcPath": "./feature/immersive",
+    },
+    {
+      "name": "containernestedslide",
+      "srcPath": "./feature/containernestedslide"
+    },
+    {
+      "name": "backgroundblur",
+      "srcPath": "./feature/backgroundblur",
+    },
+    {
+      "name": "shareimagepage",
+      "srcPath": "./feature/shareimagepage",
+    },
+    {
+      "name": "selecttextmenu",
+      "srcPath": "./feature/selecttextmenu"
+    },
+    {
+      "name": "pipwindow",
+      "srcPath": "./feature/pipwindow",
+    },
+    {
+      "name": "clockin",
+      "srcPath": "./feature/clockin",
+    },
+    {
+      "name": "compressfile",
+      "srcPath": "./feature/compressfile"
+    },
+    {
+      "name": "privacyagreement",
+      "srcPath": "./feature/privacyagreement",
+    },
+    {
+      "name": "customaddresspicker",
+      "srcPath": "./feature/customaddresspicker"
+    },
+    {
+      "name": "videocreategif",
+      "srcPath": "./feature/videocreategif"
+    },
+    {
+      "name": "clickanimation",
+      "srcPath": "./feature/clickanimation"
+    },
+    {
+      "name": "toolbox",
+      "srcPath": "./feature/toolbox"
+    },
+    {
+      "name": "networkstatusobserver",
+      "srcPath": "./feature/networkstatusobserver"
+    },
+    {
+      "name": "multiplescreening",
+      "srcPath": "./feature/multiplescreening"
+    },
+    {
+      "name": "limitedheightbottomdialog",
+      "srcPath": "./feature/limitedheightbottomdialog"
+    },
+    {
+      "name": "faceandfingerprintunlocking",
+      "srcPath": "./feature/faceandfingerprintunlocking",
+    },
+    {
+      "name": "cuberotateanimation",
+      "srcPath": "./feature/cuberotateanimation",
+    },
+    {
+      "name": "multicolumndisplay",
+      "srcPath": "./feature/multicolumndisplay",
+    },
+    {
+      "name": "dealstridesolution",
+      "srcPath": "./feature/dealstridesolution",
+    },
+    {
+      "name": "videotrimmer",
+      "srcPath": "./feature/videotrimmer"
+    },
+    {
+      "name": "encapsulationdialog",
+      "srcPath": "./feature/encapsulationdialog",
+    },
+    {
+      "name": "smartfill",
+      "srcPath": "./feature/smartfill",
+    },
+    {
+      "name": "sharebutton",
+      "srcPath": "./feature/sharebutton"
+    }
+  ]
+}

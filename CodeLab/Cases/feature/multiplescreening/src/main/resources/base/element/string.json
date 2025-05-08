@@ -1,0 +1,100 @@
+{
+  "string": [
+    {
+      "name": "multiple_screening_all_percentage",
+      "value": "100%"
+    },
+    {
+      "name": "multiple_screening_info_card_list_width",
+      "value": "95%"
+    },
+    {
+      "name": "multiple_screening_info_card_site_address_width",
+      "value": "85%"
+    },
+    {
+      "name": "multiple_screening_info_card_product_details_row",
+      "value": "80%"
+    },
+    {
+      "name": "multiple_screening_info_card_product_list_row_width",
+      "value": "65%"
+    },
+    {
+      "name": "multiple_screening_info_card_product_list_price_width",
+      "value": "21%"
+    },
+    {
+      "name": "multiple_screening_filter_component_national_width",
+      "value": "50%"
+    },
+    {
+      "name": "multiple_screening_filter_component_filter_button_width",
+      "value": "90%"
+    },
+    {
+      "name": "multiple_screening_filter_data_min_height",
+      "value": "15%"
+    },
+    {
+      "name": "multiple_screening_tab_main",
+      "value": "首页"
+    },
+    {
+      "name": "multiple_screening_tab_discount",
+      "value": "找优惠"
+    },
+    {
+      "name": "multiple_screening_tab_select",
+      "value": "车位优选"
+    },
+    {
+      "name": "multiple_screening_tab_parking",
+      "value": "找车位"
+    },
+    {
+      "name": "multiple_screening_tab_mine",
+      "value": "我的"
+    },
+    {
+      "name": "multiple_screening_filter_component_national",
+      "value": "全国"
+    },
+    {
+      "name": "multiple_screening_filter_component_sort",
+      "value": "推荐排序"
+    },
+    {
+      "name": "multiple_screening_filter_component_filter",
+      "value": "筛选类型"
+    },
+    {
+      "name": "multiple_screening_filter_component_reset",
+      "value": "重置"
+    },
+    {
+      "name": "multiple_screening_filter_component_confirm",
+      "value": "确认"
+    },
+    {
+      "name": "multiple_screening_filter_component_confirm_prompt",
+      "value": "未找到相关数据"
+    },
+    {
+      "name": "multiple_screening_custom_title_text",
+      "value": "车位优选"
+    },
+    {
+      "name": "multiple_screening_custom_title_search",
+      "value": "你想在哪停车？"
+    },
+    {
+      "name": "multiple_screening_custom_title_map",
+      "value": "地图模式"
+    },
+    {
+      "name": "multiple_screening_toast_tips",
+      "value": "仅用作美化，请根据业务需要自行实现"
+    }
+  ]
+}

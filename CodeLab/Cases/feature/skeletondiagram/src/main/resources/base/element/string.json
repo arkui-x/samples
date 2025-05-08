@@ -1,0 +1,28 @@
+{
+  "string": [
+    {
+      "name": "ske_load_failed",
+      "value": "网络加载失败"
+    },
+    {
+      "name": "ske_reload",
+      "value": "重新加载"
+    },
+    {
+      "name": "ske_to_view",
+      "value": "去浏览第一篇文章"
+    },
+    {
+      "name": "ske_photography_works",
+      "value": "摄影作品"
+    },
+    {
+      "name": "ske_natural_scenery",
+      "value": "自然风光"
+    },
+    {
+      "name": "ske_prompt_text",
+      "value": "仅演示，可自行实现业务功能"
+    }
+  ]
+}

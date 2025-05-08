@@ -1,0 +1,68 @@
+{
+  "integer": [
+    {
+      "name": "slidetohideanddisplace_icon_default_height",
+      "value": 32
+    },
+    {
+      "name": "slidetohideanddisplace_margin_between_icon_and_description",
+      "value": 5
+    },
+    {
+      "name": "slidetohideanddisplace_margin_small",
+      "value": 10
+    },
+    {
+      "name": "slidetohideanddisplace_margin_default",
+      "value": 12
+    },
+    {
+      "name": "slidetohideanddisplace_margin_mid",
+      "value": 20
+    },
+    {
+      "name": "slidetohideanddisplace_margin_large",
+      "value": 30
+    },
+    {
+      "name": "slidetohideanddisplace_padding_small",
+      "value": 10
+    },
+    {
+      "name": "slidetohideanddisplace_border_radius",
+      "value": 8
+    },
+    {
+      "name": "slidetohideanddisplace_button_height",
+      "value": 20
+    },
+    {
+      "name": "slidetohideanddisplace_button_width",
+      "value": 80
+    },
+    {
+      "name": "slidetohideanddisplace_icon_height_small",
+      "value": 24
+    },
+    {
+      "name": "slidetohideanddisplace_grid_height",
+      "value": 460
+    },
+    {
+      "name": "slidetohideanddisplace_height_one_hundred",
+      "value": 80
+    },
+    {
+      "name": "slidetohideanddisplace_font_size_mid",
+      "value": 20
+    },
+    {
+      "name": "slidetohideanddisplace_height_eighty",
+      "value": 80
+    },
+    {
+      "name": "slidetohideanddisplace_vip_font_size",
+      "value": 17
+    }
+  ]
+}

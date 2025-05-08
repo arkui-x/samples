@@ -1,0 +1,52 @@
+{
+  "string": [
+    {
+      "name": "video_linkage_list_full_size",
+      "value": "100%"
+    },
+    {
+      "name": "video_linkage_list_discover",
+      "value": "发现"
+    },
+    {
+      "name": "video_linkage_list_discover_title",
+      "value": "新闻资讯"
+    },
+    {
+      "name": "video_linkage_list_video_card_width",
+      "value": "calc(100% - 32vp)"
+    },
+    {
+      "name": "video_linkage_list_rate",
+      "value": "1.0X"
+    },
+    {
+      "name": "video_linkage_list_function_toast",
+      "value": "仅展示，开发者自行实现相应功能"
+    },
+    {
+      "name": "video_linkage_list_first_data_toast",
+      "value": "已经是第一条数据了"
+    },
+    {
+      "name": "video_linkage_list_last_data_toast",
+      "value": "已经是最后一条数据了"
+    },
+    {
+      "name": "video_linkage_corner_radius_default_l",
+      "value": "16"
+    },
+    {
+      "name": "video_linkage_card_padding_start",
+      "value": "12"
+    },
+    {
+      "name": "video_linkage_card_margin_start",
+      "value": "12"
+    },
+    {
+      "name": "video_linkage_text_size_headline",
+      "value": "20"
+    }
+  ]
+}

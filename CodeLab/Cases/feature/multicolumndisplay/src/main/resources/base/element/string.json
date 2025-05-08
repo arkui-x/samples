@@ -1,0 +1,124 @@
+{
+  "string": [
+    {
+      "name": "water_flow_section_item_margin_left",
+      "value": "10"
+    },
+    {
+      "name": "water_flow_section_item_margin_right",
+      "value": "4"
+    },
+    {
+      "name": "water_flow_section_item_margin_bottom",
+      "value": "15"
+    },
+    {
+      "name": "water_flow_section_item_border_radius",
+      "value": "10"
+    },
+    {
+      "name": "water_flow_section_item_one_column_columns_gap",
+      "value": "5vp"
+    },
+    {
+      "name": "water_flow_section_item_two_column_columns_gap",
+      "value": "8vp"
+    },
+    {
+      "name": "water_flow_section_padding",
+      "value": "12"
+    },
+    {
+      "name": "water_flow_section_width",
+      "value": "100%"
+    },
+    {
+      "name": "water_flow_section_height",
+      "value": "100%"
+    },
+    {
+      "name": "water_flow_item_width",
+      "value": "100%"
+    },
+    {
+      "name": "water_flow_item_image_width",
+      "value": "100%"
+    },
+    {
+      "name": "water_flow_item_text_height",
+      "value": "16"
+    },
+    {
+      "name": "water_flow_item_text_font_size",
+      "value": "12"
+    },
+    {
+      "name": "water_flow_item_text_margin_size",
+      "value": "6"
+    },
+    {
+      "name": "water_flow_item_text_margin_left_size",
+      "value": "6"
+    },
+    {
+      "name": "water_flow_item_describe_text_height",
+      "value": "10"
+    },
+    {
+      "name": "water_flow_item_describe_text_font_size",
+      "value": "8"
+    },
+    {
+      "name": "water_flow_item_describe_text_line_height",
+      "value": "10"
+    },
+    {
+      "name": "water_flow_item_image_border_radius_size",
+      "value": "10"
+    },
+    {
+      "name": "water_flow_item_container_radius_size",
+      "value": "10"
+    },
+    {
+      "name": "water_flow_item_container_width",
+      "value": "100%"
+    },
+    {
+      "name": "water_flow_container_width",
+      "value": "100%"
+    },
+    {
+      "name": "water_flow_container_height",
+      "value": "100%"
+    },
+    {
+      "name": "water_flow_bottom_title_text",
+      "value": "HUAWEI—构造万物互联的智能世界"
+    },
+    {
+      "name": "water_flow_bottom_describe_text",
+      "value": "致力于把数字世界带入每个人、每个家庭、每个组织,构建万物互联的智能世界"
+    },
+    {
+      "name": "water_flow_bottom_item_title_height",
+      "value": "22"
+    },
+    {
+      "name": "water_flow_bottom_item_title_font_size",
+      "value": "18"
+    },
+    {
+      "name": "water_flow_bottom_item_text_margin_size",
+      "value": "8"
+    },
+    {
+      "name": "water_flow_bottom_item_describe_text_height",
+      "value": "15"
+    },
+    {
+      "name": "water_flow_bottom_item_describe_text_font_size",
+      "value": "8"
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "string": [
+    {
+      "name": "water_mark_user_name",
+      "value": "Chasing the starry sun"
+    },
+    {
+      "name": "water_mark_toast_message",
+      "value": "Features to be developed......"
+    },
+    {
+      "name": "water_mark_care_text",
+      "value": "Care"
+    },
+    {
+      "name": "water_mark_content",
+      "value": "Text introduction xxxxx"
+    },
+    {
+      "name": "water_mark_share_text",
+      "value": "Share to chat app"
+    },
+    {
+      "name": "water_mark_identify_images_text",
+      "value": "Identify images and search for the same model"
+    },
+    {
+      "name": "water_mark_save_text",
+      "value": "Save"
+    },
+    {
+      "name": "water_mark_interested_text",
+      "value": "Interested"
+    }
+  ]
+}

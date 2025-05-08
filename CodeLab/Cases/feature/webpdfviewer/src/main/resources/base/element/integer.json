@@ -1,0 +1,12 @@
+{
+  "integer": [
+    {
+      "name": "web_pdf_viewer_progress_height",
+      "value": 3
+    },
+    {
+      "name": "web_pdf_viewer_tab_content_height",
+      "value": 56
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "routerMap": [
+    {
+      "name": "bluetooth/BluetoothView",
+      "pageModule": "bluetooth",
+      "pageSourceFile": "src/main/ets/generated/RouterBuilder.ets",
+      "registerFunction": "bluetoothViewRegister"
+    },
+    {
+      "name": "bluetooth/HeartRate",
+      "pageModule": "bluetooth",
+      "pageSourceFile": "src/main/ets/generated/RouterBuilder.ets",
+      "registerFunction": "heartRateRegister"
+    },
+    {
+      "name": "bluetooth/BluetoothAdvertiser",
+      "pageModule": "bluetooth",
+      "pageSourceFile": "src/main/ets/generated/RouterBuilder.ets",
+      "registerFunction": "bluetoothAdvertiserRegister"
+    },
+    {
+      "name": "bluetooth/BluetoothClient",
+      "pageModule": "bluetooth",
+      "pageSourceFile": "src/main/ets/generated/RouterBuilder.ets",
+      "registerFunction": "bluetoothClientRegister"
+    }
+  ]
+}

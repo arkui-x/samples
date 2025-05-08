@@ -1,0 +1,16 @@
+{
+  "color": [
+    {
+      "name": "start_window_background",
+      "value": "#FFFFFF"
+    },
+    {
+      "name": "image_compression_display_image_color",
+      "value": "#ff0e9eff"
+    },
+    {
+      "name": "image_compression_bg_color",
+      "value": "#99e3e3e3"
+    }
+  ]
+}

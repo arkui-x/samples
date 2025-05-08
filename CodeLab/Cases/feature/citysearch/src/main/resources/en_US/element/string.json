@@ -1,0 +1,16 @@
+{
+  "string": [
+    {
+      "name": "citysearch_module_desc",
+      "value": "module description"
+    },
+    {
+      "name": "citysearch_EntryAbility_desc",
+      "value": "description"
+    },
+    {
+      "name": "citysearch_address",
+      "value": "address"
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "routerMap": [
+    {
+      "name": "patternlock/PatternLockComponent",
+      "pageModule": "patternlock",
+      "pageSourceFile": "src/main/ets/generated/RouterBuilder.ets",
+      "registerFunction": "patternLockComponentRegister"
+    }
+  ]
+}

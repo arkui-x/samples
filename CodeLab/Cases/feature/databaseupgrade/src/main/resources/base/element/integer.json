@@ -1,0 +1,32 @@
+{
+  "integer": [
+    {
+      "name": "database_upgrade_table_border_width",
+      "value": 1
+    },
+    {
+      "name": "database_upgrade_table_font_size",
+      "value": 10
+    },
+    {
+      "name": "database_upgrade_table_height",
+      "value": 30
+    },
+    {
+      "name": "database_upgrade_case_title_font_size",
+      "value": 30
+    },
+    {
+      "name": "database_upgrade_case_title_margin_bottom",
+      "value": 10
+    },
+    {
+      "name": "database_upgrade_production_font_size",
+      "value": 15
+    },
+    {
+      "name": "database_upgrade_production_margin_bottom",
+      "value": 20
+    }
+  ]
+}

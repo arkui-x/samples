@@ -1,0 +1,88 @@
+{
+  "integer": [
+    {
+      "name": "custom_keyboard_to_h5_keyboard_radius",
+      "value": 4
+    },
+    {
+      "name": "custom_keyboard_to_h5_keyboard_marin_bottom",
+      "value": 20
+    },
+    {
+      "name": "custom_keyboard_to_h5_keyboard_title_margin_top",
+      "value": 12
+    },
+    {
+      "name": "custom_keyboard_to_h5_keyboard_title_margin_bottom",
+      "value": 10
+    },
+    {
+      "name": "custom_keyboard_to_h5_key_image_size",
+      "value": 24
+    },
+    {
+      "name": "custom_keyboard_to_h5_keyboard_title_font_size",
+      "value": 20
+    },
+    {
+      "name": "custom_keyboard_to_h5_text_input_place_holder_size",
+      "value": 18
+    },
+    {
+      "name": "custom_keyboard_to_h5_text_input_size",
+      "value": 18
+    },
+    {
+      "name": "custom_keyboard_to_h5_text_input_margin",
+      "value": 2
+    },
+    {
+      "name": "custom_keyboard_to_h5_title_bar_button_margin",
+      "value": 8
+    },
+    {
+      "name": "custom_keyboard_to_h5_title_bar_row_padding",
+      "value": 5
+    },
+    {
+      "name": "custom_keyboard_to_h5_warning_icon_width",
+      "value": 60
+    },
+    {
+      "name": "custom_keyboard_to_h5_warning_icon_height",
+      "value": 60
+    },
+    {
+      "name": "custom_keyboard_to_h5_warning_text_size",
+      "value": 20
+    },
+    {
+      "name": "custom_keyboard_to_h5_warning_text_margin",
+      "value": 10
+    },
+    {
+      "name": "custom_keyboard_to_h5_warning_text_font",
+      "value": 14
+    },
+    {
+      "name": "custom_keyboard_to_h5_warning_divider_height",
+      "value": 30
+    },
+    {
+      "name": "custom_keyboard_to_h5_warning_dialog_padding",
+      "value": 20
+    },
+    {
+      "name": "custom_keyboard_to_h5_button_width",
+      "value": 22
+    },
+    {
+      "name": "custom_keyboard_to_h5_button_height",
+      "value": 22
+    },
+    {
+      "name": "custom_keyboard_to_h5_button_radius",
+      "value": 4
+    }
+  ]
+}

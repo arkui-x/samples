@@ -1,0 +1,10 @@
+{
+  "routerMap": [
+    {
+      "name": "refreshtimeline/RefreshTimeLine",
+      "pageModule": "refreshtimeline",
+      "pageSourceFile": "src/main/ets/generated/RouterBuilder.ets",
+      "registerFunction": "refreshTimeLineRegister"
+    }
+  ]
+}

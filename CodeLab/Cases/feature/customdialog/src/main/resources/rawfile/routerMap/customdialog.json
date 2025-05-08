@@ -1,0 +1,10 @@
+{
+  "routerMap": [
+    {
+      "name": "customdialog/CustomDialog",
+      "pageModule": "customdialog",
+      "pageSourceFile": "src/main/ets/generated/RouterBuilder.ets",
+      "registerFunction": "customDialogRegister"
+    }
+  ]
+}

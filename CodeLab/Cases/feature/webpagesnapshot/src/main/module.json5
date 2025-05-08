@@ -1,0 +1,27 @@
+{
+  "module": {
+    "name": "webpagesnapshot",
+    "type": "har",
+    "routerMap": "$profile:route_map",
+    "requestPermissions": [
+      {
+        "name": 'ohos.permission.PRINT',
+        "reason": '$string:print_permission',
+        "usedScene": {
+          "abilities": [
+            "EntryAbility"
+          ],
+          "when": "inuse"
+        }
+      },
+      {
+        "name": "ohos.permission.INTERNET"
+      }
+    ],
+    "deviceTypes": [
+      "default",
+      "tablet",
+      "2in1"
+    ]
+  }
+}

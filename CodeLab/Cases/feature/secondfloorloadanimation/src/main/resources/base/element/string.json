@@ -1,0 +1,56 @@
+{
+  "string": [
+    {
+      "name": "second_floor_search",
+      "value": "搜索"
+    },
+    {
+      "name": "second_floor_main_page_title",
+      "value": "SecondFloor"
+    },
+    {
+      "name": "second_floor_recently",
+      "value": "最近"
+    },
+    {
+      "name": "second_floor_usefulness_mini_apps_title",
+      "value": "听一听"
+    },
+    {
+      "name": "second_floor_recently_played",
+      "value": "最近播放"
+    },
+    {
+      "name": "second_floor_recently_used_mini_apps",
+      "value": "最近使用的小程序"
+    },
+    {
+      "name": "second_floor_more",
+      "value": "更多"
+    },
+    {
+      "name": "second_floor_recently_played_content",
+      "value": "暂无内容"
+    },
+    {
+      "name": "second_floor_full_size",
+      "value": "100%"
+    },
+    {
+      "name": "second_floor_second_floor_title_height",
+      "value": "8%"
+    },
+    {
+      "name": "second_floor_usefulness_mini_apps_width",
+      "value": "90%"
+    },
+    {
+      "name": "second_floor_recently_used_mini_apps_width",
+      "value": "95%"
+    },
+    {
+      "name": "second_floor_toast_tips",
+      "value": "仅用作美化，请根据业务需要自行实现"
+    }
+  ]
+}

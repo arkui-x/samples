@@ -1,0 +1,60 @@
+{
+  "float": [
+    {
+      "name": "custom_address_picker_size_twenty",
+      "value": "20"
+    },
+    {
+      "name": "custom_address_picker_size_sixteen",
+      "value": "16"
+    },
+    {
+      "name": "custom_address_picker_size_forty",
+      "value": "40"
+    },
+    {
+      "name": "custom_address_picker_size_twenty_four",
+      "value": "24"
+    },
+    {
+      "name": "custom_address_picker_size_fifteen",
+      "value": "15"
+    },
+    {
+      "name": "custom_address_picker_size_thirty",
+      "value": "30"
+    },
+    {
+      "name": "custom_address_picker_size_ten",
+      "value": "10"
+    },
+    {
+      "name": "custom_address_picker_size_fourteen",
+      "value": "14"
+    },
+    {
+      "name": "custom_address_picker_size_forty_eight",
+      "value": "48"
+    },
+    {
+      "name": "custom_address_picker_friction",
+      "value": "0.6"
+    },
+    {
+      "name": "custom_address_picker_size_zero",
+      "value": "0"
+    },
+    {
+      "name": "custom_address_picker_size_one",
+      "value": "1"
+    },
+    {
+      "name": "custom_address_picker_size_fifty_four",
+      "value": "54"
+    },
+    {
+      "name": "custom_address_picker_size_two",
+      "value": "2"
+    }
+  ]
+}

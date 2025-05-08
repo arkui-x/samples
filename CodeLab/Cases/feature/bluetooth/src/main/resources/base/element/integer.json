@@ -1,0 +1,80 @@
+{
+  "integer": [
+    {
+      "name": "ble_icon_width",
+      "value": 16
+    },
+    {
+      "name": "ble_main_margin",
+      "value": 16
+    },
+    {
+      "name": "ble_image_right_size",
+      "value": 24
+    },
+    {
+      "name": "ble_search_width",
+      "value": 180
+    },
+    {
+      "name": "ble_search_height",
+      "value": 40
+    },
+    {
+      "name": "ble_search_margin",
+      "value": 24
+    },
+    {
+      "name": "ble_name_fontsize",
+      "value": 16
+    },
+    {
+      "name": "ble_title_margin_right",
+      "value": 24
+    },
+    {
+      "name": "ble_title_margin_left",
+      "value": 24
+    },
+    {
+      "name": "ble_navigation_image_width",
+      "value": 28
+    },
+    {
+      "name": "ble_empty_image_width",
+      "value": 120
+    },
+    {
+      "name": "ble_margin_top",
+      "value": 8
+    },
+    {
+      "name": "ble_image_margin_left",
+      "value": 8
+    },
+    {
+      "name": "ble_text_margin",
+      "value": 8
+    },
+    {
+      "name": "ble_border_list_item",
+      "value": 16
+    },
+    {
+      "name": "ble_height_list",
+      "value": 76
+    },
+    {
+      "name": "ble_list_item_left_padding",
+      "value": 12
+    },
+    {
+      "name": "ble_list_item_top_padding",
+      "value": 4
+    },
+    {
+      "name": "ble_connect_padding",
+      "value": 20
+    }
+  ]
+}

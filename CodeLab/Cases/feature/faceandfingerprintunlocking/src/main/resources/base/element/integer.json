@@ -1,0 +1,28 @@
+{
+  "integer": [
+    {
+      "name": "face_and_fingerprint_unlocking_list_item_height",
+      "value": 50
+    },
+    {
+      "name": "face_and_fingerprint_unlocking_list_item_margin_bottom",
+      "value": 2
+    },
+    {
+      "name": "face_and_fingerprint_unlocking_arrow_width",
+      "value": 16
+    },
+    {
+      "name": "face_and_fingerprint_unlocking_row_padding_left",
+      "value": 15
+    },
+    {
+      "name": "face_and_fingerprint_unlocking_row_padding_right",
+      "value": 20
+    },
+    {
+      "name": "face_and_fingerprint_unlocking_text_fontsize",
+      "value": 18
+    }
+  ]
+}

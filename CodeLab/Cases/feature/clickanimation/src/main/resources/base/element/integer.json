@@ -1,0 +1,136 @@
+{
+  "integer": [
+    {
+      "name": "click_animation_font_size_large",
+      "value": 16
+    },
+    {
+      "name": "click_animation_font_size_medium",
+      "value": 14
+    },
+    {
+      "name": "click_animation_font_size_small",
+      "value": 10
+    },
+    {
+      "name": "click_animation_shop_icon_size",
+      "value": 32
+    },
+    {
+      "name": "click_animation_shop_icon_border_radius",
+      "value": 16
+    },
+    {
+      "name": "click_animation_margin",
+      "value": 5
+    },
+    {
+      "name": "click_animation_button_width",
+      "value": 50
+    },
+    {
+      "name": "click_animation_button_height",
+      "value": 30
+    },
+    {
+      "name": "click_animation_button_border_radius",
+      "value": 15
+    },
+    {
+      "name": "click_animation_streaming_account_module_height",
+      "value": 40
+    },
+    {
+      "name": "click_animation_streaming_account_module_radius",
+      "value": 20
+    },
+    {
+      "name": "click_animation_streaming_account_module_padding",
+      "value": 4
+    },
+    {
+      "name": "click_animation_more_icon_size",
+      "value": 18
+    },
+    {
+      "name": "click_animation_handle_module_width",
+      "value": 70
+    },
+    {
+      "name": "click_animation_handle_module_height",
+      "value": 28
+    },
+    {
+      "name": "click_animation_handle_module_radius",
+      "value": 14
+    },
+    {
+      "name": "click_animation_review_item_padding",
+      "value": 8
+    },
+    {
+      "name": "click_animation_review_item_radius",
+      "value": 16
+    },
+    {
+      "name": "click_animation_review_list_max_height",
+      "value": 200
+    },
+    {
+      "name": "click_animation_offset_y",
+      "value": -6
+    },
+    {
+      "name": "click_animation_text_indent",
+      "value": 20
+    },
+    {
+      "name": "click_animation_text_radius",
+      "value": 20
+    },
+    {
+      "name": "click_animation_image_padding",
+      "value": 8
+    },
+    {
+      "name": "click_animation_image_size",
+      "value": 40
+    },
+    {
+      "name": "click_animation_image_radius",
+      "value": 20
+    },
+    {
+      "name": "click_animation_like_text_width",
+      "value": 34
+    },
+    {
+      "name": "click_animation_like_text_height",
+      "value": 12
+    },
+    {
+      "name": "click_animation_like_text_radius",
+      "value": 6
+    },
+    {
+      "name": "click_animation_like_text_x",
+      "value": 3
+    },
+    {
+      "name": "click_animation_like_text_y",
+      "value": -5
+    },
+    {
+      "name": "click_animation_bottom_row_height",
+      "value": 40
+    },
+    {
+      "name": "click_animation_other_function_module_padding",
+      "value": 12
+    },
+    {
+      "name": "click_animation_bottom_row_offset_y",
+      "value": -24
+    }
+  ]
+}

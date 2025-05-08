@@ -1,0 +1,16 @@
+{
+  "string": [
+    {
+      "name": "module_desc",
+      "value": "module description"
+    },
+    {
+      "name": "AddressrecognizeAbility_desc",
+      "value": "description"
+    },
+    {
+      "name": "AddressrecognizeAbility_label",
+      "value": "label"
+    }
+  ]
+}

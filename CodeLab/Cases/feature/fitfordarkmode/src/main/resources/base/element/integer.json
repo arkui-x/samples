@@ -1,0 +1,108 @@
+{
+  "integer": [
+    {
+      "name": "fit_for_dark_mode_warning_text_height",
+      "value": 60
+    },
+    {
+      "name": "fit_for_dark_mode_image_width",
+      "value": 32
+    },
+    {
+      "name": "fit_for_dark_mode_flex_height",
+      "value": 32
+    },
+    {
+      "name": "fit_for_dark_mode_search_image_width",
+      "value": 20
+    },
+    {
+      "name": "fit_for_dark_mode_search_image_margin_left",
+      "value": 20
+    },
+    {
+      "name": "fit_for_dark_mode_text_margin_left",
+      "value": 20
+    },
+    {
+      "name": "fit_for_dark_mode_row_height",
+      "value": 40
+    },
+    {
+      "name": "fit_for_dark_mode_row_border_radius",
+      "value": 20
+    },
+    {
+      "name": "fit_for_dark_mode_column_padding",
+      "value": 12
+    },
+    {
+      "name": "fit_for_dark_mode_column_height",
+      "value": 100
+    },
+    {
+      "name": "fit_for_dark_mode_banner_height",
+      "value": 160
+    },
+    {
+      "name": "fit_for_dark_mode_banner_border_radius",
+      "value": 20
+    },
+    {
+      "name": "fit_for_dark_mode_new_goods_font",
+      "value": 18
+    },
+    {
+      "name": "fit_for_dark_mode_new_goods_height",
+      "value": 45
+    },
+    {
+      "name": "fit_for_dark_mode_ew_goods_padding_top",
+      "value": 5
+    },
+    {
+      "name": "fit_for_dark_mode_column_border_radius",
+      "value": 20
+    },
+    {
+      "name": "fit_for_dark_mode_column_padding_bottom",
+      "value": 12
+    },
+    {
+      "name": "fit_for_dark_mode_goods_image_margin_bottom",
+      "value": 12
+    },
+    {
+      "name": "fit_for_dark_mode_goods_font",
+      "value": 14
+    },
+    {
+      "name": "fit_for_dark_mode_grid_row_padding",
+      "value": 12
+    },
+    {
+      "name": "fit_for_dark_mode_goods_border_radius",
+      "value": 10
+    },
+    {
+      "name": "fit_for_dark_mode_goods_column_padding_left",
+      "value": 10
+    },
+    {
+      "name": "fit_for_dark_mode_view_image_width",
+      "value": 20
+    },
+    {
+      "name": "fit_for_dark_mode_view_font",
+      "value": 14
+    },
+    {
+      "name": "fit_for_dark_mode_view_margin_left",
+      "value": 5
+    },
+    {
+      "name": "fit_for_dark_mode_flex_margin_top",
+      "value": 6
+    }
+  ]
+}

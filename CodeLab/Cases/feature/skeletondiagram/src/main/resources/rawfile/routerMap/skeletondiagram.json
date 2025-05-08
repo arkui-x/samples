@@ -1,0 +1,10 @@
+{
+  "routerMap": [
+    {
+      "name": "skeletondiagram/SkeletonDiagram",
+      "pageModule": "skeletondiagram",
+      "pageSourceFile": "src/main/ets/generated/RouterBuilder.ets",
+      "registerFunction": "skeletonDiagramRegister"
+    }
+  ]
+}

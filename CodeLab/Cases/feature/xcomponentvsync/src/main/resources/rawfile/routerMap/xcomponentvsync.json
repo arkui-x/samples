@@ -1,0 +1,10 @@
+{
+  "routerMap": [
+    {
+      "name": "xcomponentvsync/XcomponentVsync",
+      "pageModule": "xcomponentvsync",
+      "pageSourceFile": "src/main/ets/generated/RouterBuilder.ets",
+      "registerFunction": "xcomponentVsyncRegister"
+    }
+  ]
+}

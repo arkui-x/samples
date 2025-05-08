@@ -1,0 +1,11 @@
+{
+  "module": {
+    "name": "sendmessage",
+    "type": "har",
+    "deviceTypes": [
+      "default",
+      "tablet",
+      "2in1"
+    ]
+  }
+}

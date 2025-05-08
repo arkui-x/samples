@@ -1,0 +1,60 @@
+{
+  "integer": [
+    {
+      "name": "deal_stride_solution_tab_font",
+      "value": 16
+    },
+    {
+      "name": "deal_stride_solution_tab_line",
+      "value": 30
+    },
+    {
+      "name": "deal_stride_solution_tab_margin",
+      "value": 7
+    },
+    {
+      "name": "deal_stride_solution_tab_divider_width",
+      "value": 5
+    },
+    {
+      "name": "deal_stride_solution_tab_divider_margin",
+      "value": 8
+    },
+    {
+      "name": "deal_stride_solution_tab_text",
+      "value": 24
+    },
+    {
+      "name": "deal_stride_solution_tab_text_blank",
+      "value": 20
+    },
+    {
+      "name": "deal_stride_solution_tab_description_width",
+      "value": 70
+    },
+    {
+      "name": "deal_stride_solution_tab_description_border_width",
+      "value": 1
+    },
+    {
+      "name": "deal_stride_solution_tab_description_border_radius",
+      "value": 10
+    },
+    {
+      "name": "deal_stride_solution_tab_description_padding",
+      "value": 2
+    },
+    {
+      "name": "deal_stride_solution_tab_description_margin",
+      "value": 10
+    },
+    {
+      "name": "deal_stride_solution_tab_description_font",
+      "value": 18
+    },
+    {
+      "name": "deal_stride_solution_tab_description_line",
+      "value": 30
+    }
+  ]
+}

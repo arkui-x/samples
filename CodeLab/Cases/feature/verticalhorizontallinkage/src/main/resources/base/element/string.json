@@ -1,0 +1,84 @@
+{
+  "string": [
+    {
+      "name": "vertical_horizontal_linkage_top_left_text_message",
+      "value": "共8款车"
+    },
+    {
+      "name": "vertical_horizontal_linkage_top_left_toggle_message",
+      "value": "只看差异"
+    },
+    {
+      "name": "vertical_horizontal_linkage_top_left_message_font_size",
+      "value": "14"
+    },
+    {
+      "name": "vertical_horizontal_linkage_list_item_height",
+      "value": "100"
+    },
+    {
+      "name": "vertical_horizontal_linkage_list_item_width",
+      "value": "100"
+    },
+    {
+      "name": "vertical_horizontal_linkage_vertical_divider_line_width",
+      "value": "0.5"
+    },
+    {
+      "name": "vertical_horizontal_linkage_vertical_divider_line_height",
+      "value": "80"
+    },
+    {
+      "name": "vertical_horizontal_linkage_vertical_horizontal_container_padding_size",
+      "value": "10"
+    },
+    {
+      "name": "vertical_horizontal_linkage_fixed_title_height_size",
+      "value": "44"
+    },
+    {
+      "name": "vertical_horizontal_linkage_fixed_title_width_size",
+      "value": "100%"
+    },
+    {
+      "name": "vertical_horizontal_linkage_bottom_left_title_height_size",
+      "value": "80"
+    },
+    {
+      "name": "vertical_horizontal_linkage_bottom_right_title_width_size",
+      "value": "288"
+    },
+    {
+      "name": "vertical_horizontal_linkage_bottom_right_title_initial_content",
+      "value": "官方配置>"
+    },
+    {
+      "name": "vertical_horizontal_linkage_bottom_right_title_click_content",
+      "value": "此处仅作美观使用，如需添加功能，请自行添加"
+    },
+    {
+      "name": "vertical_horizontal_linkage_bottom_right_title_content",
+      "value": "●标配 ○选配 ——无"
+    },
+    {
+      "name": "vertical_horizontal_linkage_bottom_left_list_height_size",
+      "value": "100%"
+    },
+    {
+      "name": "vertical_horizontal_linkage_horizontal_divider_line_width",
+      "value": "100%"
+    },
+    {
+      "name": "vertical_horizontal_linkage_bottom_right_single_List_width",
+      "value": "100%"
+    },
+    {
+      "name": "vertical_horizontal_linkage_right_List_Item_width",
+      "value": "155"
+    },
+    {
+      "name": "vertical_horizontal_linkage_top_List_height_size",
+      "value": "100%"
+    }
+  ]
+}

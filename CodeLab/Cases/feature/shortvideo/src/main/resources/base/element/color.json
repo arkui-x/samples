@@ -1,0 +1,28 @@
+{
+  "color": [
+    {
+      "name": "shortvideo_ont_color",
+      "value": "#aaaaaa"
+    },
+    {
+      "name": "shortvideo_background_color",
+      "value": "#e8e8e8"
+    },
+    {
+      "name": "shortvideo_time_color",
+      "value": "#bbbbbb"
+    },
+    {
+      "name": "shortvideo_up_color",
+      "value": "#ff3300"
+    },
+    {
+      "name": "shortvideo_comment_background_color",
+      "value": "#ffffff"
+    },
+    {
+      "name": "shortvideo_comment_close_button_background_color",
+      "value": "#f4f4f4"
+    }
+  ]
+}

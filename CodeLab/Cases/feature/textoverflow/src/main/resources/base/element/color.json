@@ -1,0 +1,32 @@
+{
+  "color": [
+    {
+      "name": "text_flow_color_blank",
+      "value": "#000000"
+    },
+    {
+      "name": "text_flow_color_red",
+      "value": "#ed394b"
+    },
+    {
+      "name": "text_flow_color_divider",
+      "value": "#EEEEEE"
+    },
+    {
+      "name": "text_flow_color_comment_text_border",
+      "value": "#EEEEEE"
+    },
+    {
+      "name": "text_flow_color_comment_text_background",
+      "value": "#F1F1F1"
+    },
+    {
+      "name": "text_flow_button_publish_background",
+      "value": "#be1d1d"
+    },
+    {
+      "name": "text_flow_note_color",
+      "value": "#368AEF"
+    }
+  ]
+}

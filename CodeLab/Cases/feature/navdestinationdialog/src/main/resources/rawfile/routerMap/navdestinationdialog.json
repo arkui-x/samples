@@ -1,0 +1,16 @@
+{
+  "routerMap": [
+    {
+      "name": "navdestinationdialog/NavDestinationDialog",
+      "pageModule": "navdestinationdialog",
+      "pageSourceFile": "src/main/ets/generated/RouterBuilder.ets",
+      "registerFunction": "navDestinationDialogRegister"
+    },
+    {
+      "name": "navdestinationdialog/CommentDialog",
+      "pageModule": "navdestinationdialog",
+      "pageSourceFile": "src/main/ets/generated/RouterBuilder.ets",
+      "registerFunction": "commentDialogRegister"
+    }
+  ]
+}

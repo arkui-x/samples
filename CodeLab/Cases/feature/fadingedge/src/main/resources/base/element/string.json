@@ -1,0 +1,32 @@
+{
+  "string": [
+    {
+      "name": "fadingedge_fill_size",
+      "value": "100%"
+    },
+    {
+      "name": "fadingedge_order",
+      "value": "订单"
+    },
+    {
+      "name": "fadingedge_coupon",
+      "value": "优惠券"
+    },
+    {
+      "name": "fadingedge_footprint",
+      "value": "足迹"
+    },
+    {
+      "name": "fadingedge_tip",
+      "value": "红包"
+    },
+    {
+      "name": "fadingedge_wallet",
+      "value": "储蓄"
+    },
+    {
+      "name": "fadingedge_prompt_message",
+      "value": "示例图片，无实际功能"
+    }
+  ]
+}

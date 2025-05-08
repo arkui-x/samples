@@ -1,0 +1,40 @@
+{
+  "color": [
+    {
+      "name": "multiple_screening_background_color",
+      "value": "#ffefefef"
+    },
+    {
+      "name": "multiple_screening_info_card_site_address_font",
+      "value": "#ffcac8c8"
+    },
+    {
+      "name": "multiple_screening_info_card_site_discount_color",
+      "value": "#fff88835"
+    },
+    {
+      "name": "multiple_screening_info_card_product_list_text",
+      "value": "#ff676767"
+    },
+    {
+      "name": "multiple_screening_filter_component_reset_font",
+      "value": "#333"
+    },
+    {
+      "name": "multiple_screening_filter_data_grid_color",
+      "value": "#ffffeee6"
+    },
+    {
+      "name": "multiple_screening_filter_data_grid_border_color",
+      "value": "#0aff4d13"
+    },
+    {
+      "name": "multiple_screening_custom_title_search_color",
+      "value": "#898585"
+    },
+    {
+      "name": "multiple_screening_custom_tab_bar_text_color",
+      "value": "#0a59f7"
+    }
+  ]
+}

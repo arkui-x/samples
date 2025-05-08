@@ -1,0 +1,13 @@
+{
+  "name": "healthchart",
+  "version": "1.0.0",
+  "description": "Please describe the basic information.",
+  "main": "Index.ets",
+  "author": "",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "@ohos/mpchart": "^3.0.11",
+    // 动态路由模块，用于配置动态路由
+    "routermodule": "file:../../common/routermodule"
+  }
+}

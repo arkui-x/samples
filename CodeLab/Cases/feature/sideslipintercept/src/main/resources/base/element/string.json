@@ -1,0 +1,28 @@
+{
+  "string": [
+    {
+      "name": "sideslipintercept_EntryAbility_label",
+      "value": "label"
+    },
+    {
+      "name": "sideslipintercept_edit_prompt",
+      "value": "编辑是否保存"
+    },
+    {
+      "name": "sideslipintercept_unsave_edit",
+      "value": "不保存"
+    },
+    {
+      "name": "sideslipintercept_save_edit",
+      "value": "保存"
+    },
+    {
+      "name": "sideslipintercept_edit_toast",
+      "value": "保存成功"
+    },
+    {
+      "name": "sideslipintercept_one_hundred_percent",
+      "value": "100%"
+    }
+  ]
+}

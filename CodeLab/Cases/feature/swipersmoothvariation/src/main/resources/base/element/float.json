@@ -1,0 +1,129 @@
+{
+  "float": [
+    {
+      "name": "swipersmoothvariation_offset_y",
+      "value": "-180vp"
+    },
+    {
+      "name": "swipersmoothvariation_offset_x",
+      "value": "0vp"
+    },
+    {
+      "name": "swipersmoothvariation_title_offset_y",
+      "value": "20vp"
+    },
+    {
+      "name": "swipersmoothvariation_border_radius",
+      "value": "12vp"
+    },
+    {
+      "name": "swipersmoothvariation_text_border_radius",
+      "value": "5vp"
+    },
+    {
+      "name": "swipersmoothvariation_tab_border_radius",
+      "value": "19vp"
+    },
+    {
+      "name": "swipersmoothvariation_tool_bar_width",
+      "value": "86vp"
+    },
+    {
+      "name": "swipersmoothvariation_pad_text",
+      "value": "15vp"
+    },
+    {
+      "name": "swipersmoothvariation_button_height",
+      "value": "36vp"
+    },
+    {
+      "name": "swipersmoothvariation_title_text_size",
+      "value": "16fp"
+    },
+    {
+      "name": "swipersmoothvariation_tab_big_img_with",
+      "value": "43vp"
+    },
+    {
+      "name": "swipersmoothvariation_tab_img_size",
+      "value": "28vp"
+    },
+    {
+      "name": "swipersmoothvariation_tab_margin",
+      "value": "-15vp"
+    },
+    {
+      "name": "swipersmoothvariation_tab_font_size",
+      "value": "10fp"
+    },
+    {
+      "name": "swipersmoothvariation_item_text_offset",
+      "value": "8vp"
+    },
+    {
+      "name": "swipersmoothvariation_small_font_size",
+      "value": "13vp"
+    },
+    {
+      "name": "swipersmoothvariation_blank_height",
+      "value": "20vp"
+    },
+    {
+      "name": "swipersmoothvariation_scroll_width",
+      "value": "340vp"
+    },
+    {
+      "name": "swipersmoothvariation_swiper_offset",
+      "value": "23vp"
+    },
+    {
+      "name": "swipersmoothvariation_normal_margin",
+      "value": "10vp"
+    },
+    {
+      "name": "swipersmoothvariation_item_text_height",
+      "value": "90vp"
+    },
+    {
+      "name": "swipersmoothvariation_margin_fifteen",
+      "value": "15vp"
+    },
+    {
+      "name": "swipersmoothvariation_select_item_width",
+      "value": "18fp"
+    },
+    {
+      "name": "swipersmoothvariation_select_item_height",
+      "value": "3vp"
+    },
+    {
+      "name": "swipersmoothvariation_default_item_width",
+      "value": "5vp"
+    },
+    {
+      "name": "swipersmoothvariation_default_item_height",
+      "value": "-3vp"
+    },
+    {
+      "name": "swipersmoothvariation_app_side_length",
+      "value": "30fp"
+    },
+    {
+      "name": "swipersmoothvariation_item_image_height",
+      "value": "90vp"
+    },
+    {
+      "name": "swipersmoothvariation_badge_font_size",
+      "value": "10vp"
+    },
+    {
+      "name": "swipersmoothvariation_item_image_width",
+      "value": "165vp"
+    },
+    {
+      "name": "swipersmoothvariation_colum_offset_one",
+      "value": "200vp"
+    }
+
+  ]
+}

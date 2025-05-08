@@ -1,0 +1,10 @@
+{
+  "routerMap": [
+    {
+      "name": "selecttextmenu/SelectTextMenu",
+      "pageModule": "selecttextmenu",
+      "pageSourceFile": "src/main/ets/generated/RouterBuilder.ets",
+      "registerFunction": "selectTextMenuRegister"
+    }
+  ]
+}

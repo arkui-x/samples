@@ -1,0 +1,60 @@
+{
+  "integer": [
+    {
+      "name": "bar_chart_health_font_size_twenty_four",
+      "value": 24
+    },
+    {
+      "name": "bar_chart_health_font_size_twenty",
+      "value": 20
+    },
+    {
+      "name": "bar_chart_health_font_size_eighteen",
+      "value": 18
+    },
+    {
+      "name": "bar_chart_health_margin_five",
+      "value": 5
+    },
+    {
+      "name": "bar_chart_health_margin_ten",
+      "value": 10
+    },
+    {
+      "name": "bar_chart_health_margin_twenty",
+      "value": 20
+    },
+    {
+      "name": "bar_chart_health_padding_four",
+      "value": 4
+    },
+    {
+      "name": "bar_chart_health_padding_ten",
+      "value": 10
+    },
+    {
+      "name": "bar_chart_health_padding_twenty",
+      "value": 20
+    },
+    {
+      "name": "bar_chart_health_radius_twenty",
+      "value": 20
+    },
+    {
+      "name": "bar_chart_health_radius_six",
+      "value": 6
+    },
+    {
+      "name": "bar_chart_health_radius_ten",
+      "value": 10
+    },
+    {
+      "name": "bar_chart_health_font_size_twelve",
+      "value": 12
+    },
+    {
+      "name": "bar_chart_health_border_width_one",
+      "value": 1
+    }
+  ]
+}

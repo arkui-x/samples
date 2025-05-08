@@ -1,0 +1,20 @@
+{
+  "name": "customanimationtab",
+  "version": "1.0.3",
+  "description": "CustomAnimationTab实现自定义动效Tab，背景条跟随手势移动、点击等交互产生动效",
+  "keywords": [
+    "跟手滑动",
+    "自定义动效",
+    "点击跳转",
+    "Harmony",
+    "OpenHarmony"
+  ],
+  "main": "Index.ets",
+  "author": "ohos-cases",
+  "license": "Apache License 2.0",
+  "homepage": "https://gitee.com/harmonyos-cases/cases",
+  "repository": "https://gitee.com/harmonyos-cases/cases/tree/master/CommonAppDevelopment/feature/customanimationtab",
+  "dependencies": {
+    "routermodule": "file:../../common/routermodule"
+  }
+}

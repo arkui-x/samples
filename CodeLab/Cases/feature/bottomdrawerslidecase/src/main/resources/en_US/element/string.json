@@ -1,0 +1,36 @@
+{
+  "string": [
+    {
+      "name": "bottomdrawerslidecase_homeTop",
+      "value": "callcar"
+    },
+    {
+      "name": "bottomdrawerslidecase_choose_your_location",
+      "value": "chooseyourlocation"
+    },
+    {
+      "name": "bottomdrawerslidecase_please_destination",
+      "value": "please input your destination"
+    },
+    {
+      "name": "bottomdrawerslidecase_destination_new",
+      "value": "destination"
+    },
+    {
+      "name": "bottomdrawerslidecase_get_on_the_car",
+      "value": "getonthecar"
+    },
+    {
+      "name": "bottomdrawerslidecase_set_out",
+      "value": "set_out"
+    },
+    {
+      "name": "bottomdrawerslidecase_promotion",
+      "value": "promotion"
+    },
+    {
+      "name": "bottomdrawerslidecase_fontsize_15",
+      "value": "fifteen"
+    }
+  ]
+}

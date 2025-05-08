@@ -1,0 +1,152 @@
+{
+  "integer": [
+    {
+      "name": "addressrecognize_length_five",
+      "value": 5
+    },
+    {
+      "name": "addressrecognize_length_seven",
+      "value": 7
+    },
+    {
+      "name": "addressrecognize_length_ten",
+      "value": 10
+    },
+    {
+      "name": "addressrecognize_length_fifteen",
+      "value": 15
+    },
+    {
+      "name": "addressrecognize_length_twenty",
+      "value": 20
+    },
+    {
+      "name": "addressrecognize_length_thirty",
+      "value": 30
+    },
+    {
+      "name": "addressrecognize_length_forty",
+      "value": 40
+    },
+    {
+      "name": "addressrecognize_length_sixty",
+      "value": 60
+    },
+    {
+      "name": "addressrecognize_recognize_button_height",
+      "value": 24
+    },
+    {
+      "name": "addressrecognize_length_eighty",
+      "value": 80
+    },
+    {
+      "name": "addressrecognize_length_ok_button",
+      "value": 120
+    },
+    {
+      "name": "addressrecognize_input_address_height",
+      "value": 150
+    },
+    {
+      "name": "addressrecognize_bind_sheet_height",
+      "value": 150
+    },
+    {
+      "name": "addressrecognize_menu_height",
+      "value": 150
+    },
+    {
+      "name": "addressrecognize_address_text_area_height",
+      "value": 100
+    },
+    {
+      "name": "addressrecognize_address_detail_height",
+      "value": 400
+    },
+    {
+      "name": "addressrecognize_contact_title_height",
+      "value": 64
+    },
+    {
+      "name": "addressrecognize_font_size_12",
+      "value": 12
+    },
+    {
+      "name": "addressrecognize_font_size_14",
+      "value": 14
+    },
+    {
+      "name": "addressrecognize_font_size_16",
+      "value": 16
+    },
+    {
+      "name": "addressrecognize_bottom_button_width",
+      "value": 120
+    },
+    {
+      "name": "addressrecognize_bottom_row_height",
+      "value": 80
+    },
+    {
+      "name": "addressrecognize_icon_size_lg",
+      "value": 16
+    },
+    {
+      "name": "addressrecognize_icon_size_md",
+      "value": 12
+    },
+    {
+      "name": "addressrecognize_title_height",
+      "value": 75
+    },
+    {
+      "name": "addressrecognize_padding_6",
+      "value": 6
+    },
+    {
+      "name": "addressrecognize_border_radius_sm",
+      "value": 6
+    },
+    {
+      "name": "addressrecognize_padding_12",
+      "value": 12
+    },
+    {
+      "name": "addressrecognize_textinput_height",
+      "value": 72
+    },
+    {
+      "name": "addressrecognize_padding_24",
+      "value": 24
+    },
+    {
+      "name": "addressrecognize_border_radius_md",
+      "value": 8
+    },
+    {
+      "name": "addressrecognize_tag_space",
+      "value": 10
+    },
+    {
+      "name": "addressrecognize_tag_height",
+      "value": 96
+    },
+    {
+      "name": "addressrecognize_title_bar_height",
+      "value": 50
+    },
+    {
+      "name": "addressrecognize_item_height",
+      "value": 64
+    },
+    {
+      "name": "addressrecognize_tag_padding",
+      "value": 3
+    },
+    {
+      "name": "addressrecognize_tag_radius",
+      "value": 5
+    }
+  ]
+}

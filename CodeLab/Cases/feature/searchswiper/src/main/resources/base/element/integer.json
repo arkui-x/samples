@@ -1,0 +1,76 @@
+{
+  "integer": [
+    {
+      "name": "search_swiper_image_height",
+      "value": 90
+    },
+    {
+      "name": "search_swiper_image_radius",
+      "value": 10
+    },
+    {
+      "name": "search_swiper_title_size",
+      "value": 15
+    },
+    {
+      "name": "search_swiper_title_left",
+      "value": 10
+    },
+    {
+      "name": "search_swiper_content_size",
+      "value": 10
+    },
+    {
+      "name": "search_swiper_content_left",
+      "value": 10
+    },
+    {
+      "name": "search_swiper_content_top",
+      "value": 25
+    },
+    {
+      "name": "search_swiper_relative_height",
+      "value": 100
+    },
+    {
+      "name": "search_swiper_button_left",
+      "value": 10
+    },
+    {
+      "name": "search_swiper_padding_left",
+      "value": 30
+    },
+    {
+      "name": "search_swiper_padding_right",
+      "value": 30
+    },
+    {
+      "name": "search_swiper_interval",
+      "value": 2000
+    },
+    {
+      "name": "search_swiper_size",
+      "value": 14
+    },
+    {
+      "name": "search_swiper_margin",
+      "value": 16
+    },
+    {
+      "name": "search_swiper_input_height",
+      "value": 40
+    },
+    {
+      "name": "search_swiper_stack_height",
+      "value": 100
+    },
+    {
+      "name": "search_swiper_button_width",
+      "value": 60
+    },
+    {
+      "name": "search_swiper_button_size",
+      "value": 14
+    }
+  ]
+}

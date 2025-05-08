@@ -1,0 +1,14 @@
+{
+  "name": "sharebutton",
+  "version": "1.0.0",
+  "description": "自定义分享按钮，通过url自动生成二维码，并通过Share Kit的接口拉起系统分享。",
+  "main": "Index.ets",
+  "author": "ohos-cases",
+  "license": "Apache-2.0",
+  "homepage": "https://gitee.com/harmonyos-cases/cases",
+  "repository": "https://gitee.com/harmonyos-cases/cases/tree/master/CommonAppDevelopment/feature/sharebutton",
+  "dependencies": {
+    // 动态路由模块，用于配置动态路由
+    "routermodule": "file:../../common/routermodule"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "color": [
+    {
+      "name": "fadingedge_menu_background_color",
+      "value": "#94f4f4f4"
+    },
+    {
+      "name": "fadingedge_banner_background_color",
+      "value": "#F4F4F4"
+    },
+    {
+      "name": "fadingedge_others_background_color",
+      "value": "#EBECF0"
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "color": [
+    {
+      "name": "secondarylinkage_white",
+      "value": "#FFFFFF"
+    },
+    {
+      "name": "secondarylinkage_lineColor",
+      "value": "#ffcf9861"
+    },
+    {
+      "name": "secondarylinkage_contentItemBcColor",
+      "value": "#ff355ac8"
+    },
+    {
+      "name": "secondarylinkage_contentTextFontColor",
+      "value": "#ff3cc824"
+    },
+    {
+      "name": "secondarylinkage_categorySelectedColor",
+      "value": "#108ee9"
+    },
+    {
+      "name": "secondarylinkage_pageContainerBcColor",
+      "value": "#f1f3f5"
+    },
+    {
+      "name": "secondarylinkage_itemBcColor",
+      "value": "#ccc"
+    },
+    {
+      "name": "secondarylinkage_color_sub_background",
+      "value": "#F1F3F5"
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "routerMap": [
+    {
+      "name": "palette/PaletteMainPage",
+      "pageModule": "palette",
+      "pageSourceFile": "src/main/ets/generated/RouterBuilder.ets",
+      "registerFunction": "paletteMainPageRegister"
+    }
+  ]
+}

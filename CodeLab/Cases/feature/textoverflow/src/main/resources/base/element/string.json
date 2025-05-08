@@ -1,0 +1,68 @@
+{
+  "string": [
+    {
+      "name": "text_flow_color_evaluate",
+      "value": "用户评价 (200+)"
+    },
+    {
+      "name": "text_flow_color_ninety_nine_percent",
+      "value": "99%"
+    },
+    {
+      "name": "text_flow_color_praise",
+      "value": "好评 ＞ "
+    },
+    {
+      "name": "text_flow_publish",
+      "value": "发布"
+    },
+    {
+      "name": "text_flow_page_show",
+      "value": "page from package"
+    },
+    {
+      "name": "text_flow_percent_100",
+      "value": "100%"
+    },
+    {
+      "name": "text_flow_percent_30",
+      "value": "30%"
+    },
+    {
+      "name": "text_flow_percent_95",
+      "value": "95%"
+    },
+    {
+      "name": "text_flow_text_input_hint",
+      "value": "发表商品评价"
+    },
+    {
+      "name": "text_flow_reply",
+      "value": "回复 >"
+    },
+    {
+      "name": "text_flow_cur_user",
+      "value": "兔子不吃窝边草"
+    },
+    {
+      "name": "text_flow_prompt_text",
+      "value": "仅演示，可自行实现业务功能"
+    },
+    {
+      "name": "text_flow_time_place",
+      "value": "刚刚·杭州"
+    },
+    {
+      "name": "text_flow_time_place1",
+      "value": "昨天23:24·杭州"
+    },
+    {
+      "name": "text_flow_reply_success",
+      "value": "评论成功"
+    },
+    {
+      "name": "text_flow_row_width",
+      "value": "60%"
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "color": [
+    {
+      "name": "search_swiper_blank",
+      "value": "#000000"
+    },
+    {
+      "name": "search_swiper_background",
+      "value": "#F1F3F5"
+    }
+  ]
+}

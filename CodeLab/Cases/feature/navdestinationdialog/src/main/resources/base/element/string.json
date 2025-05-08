@@ -1,0 +1,52 @@
+{
+  "string": [
+    {
+      "name": "navdialog_full_size",
+      "value": "100%"
+    },
+    {
+      "name": "navdialog_show_case_only",
+      "value": "该视图仅作展示使用"
+    },
+    {
+      "name": "navdialog_comment_textinput_placeholder",
+      "value": "快来发表一下评论吧"
+    },
+    {
+      "name": "navdialog_comment_example",
+      "value": "真的超级喜欢，非常支持，质量非常好，与卖家描述的完全一致，非常满意，真的很喜欢，完全超出期望值，发货速度非常快，包装非常仔细、严实，物流公司服务态度很好，运送速度很快，很满意的一次购物。"
+    },
+    {
+      "name": "navdialog_example_shop_name",
+      "value": "Panda旗舰店"
+    },
+    {
+      "name": "navdialog_shopbar_welcome_prompt",
+      "value": "进店逛逛"
+    },
+    {
+      "name": "navdialog_shopbar_shop_desc_width",
+      "value": "35%"
+    },
+    {
+      "name": "navdialog_shopbar_shop_purchase_label",
+      "value": "领券购买"
+    },
+    {
+      "name": "navdialog_comment_title_label",
+      "value": "商品评论 10+"
+    },
+    {
+      "name": "navdialog_comment_time",
+      "value": "4-11"
+    },
+    {
+      "name": "navdialog_comment_reply_label",
+      "value": "回复"
+    },
+    {
+      "name": "navdialog_comment_ad_image_height",
+      "value": "83%"
+    }
+  ]
+}

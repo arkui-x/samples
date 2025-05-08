@@ -1,0 +1,28 @@
+{
+  "string": [
+    {
+      "name": "page_turning_animation_bar_chart_height",
+      "value": "30%"
+    },
+    {
+      "name": "page_turning_animation_text_height",
+      "value": "30%"
+    },
+    {
+      "name": "page_turning_animation_text_width",
+      "value": "35%"
+    },
+    {
+      "name": "page_turning_animation_divider_height",
+      "value": "26%"
+    },
+    {
+      "name": "page_turning_animation_stack_height",
+      "value": "50%"
+    },
+    {
+      "name": "page_turning_animation_stack_width",
+      "value": "100%"
+    }
+  ]
+}

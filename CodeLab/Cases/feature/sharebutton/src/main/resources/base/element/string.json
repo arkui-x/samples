@@ -1,0 +1,25 @@
+{
+  "string": [
+    {
+      "name": "icon_width",
+      "value": "50%"
+    },
+    {
+      "name": "icon_height",
+      "value": "50%"
+    },
+
+    {
+      "name": "bg_width",
+      "value": "100%"
+    },
+    {
+      "name": "bg_height",
+      "value": "100%"
+    },
+    {
+      "name": "bg_border_radius",
+      "value": "100%"
+    }
+  ]
+}

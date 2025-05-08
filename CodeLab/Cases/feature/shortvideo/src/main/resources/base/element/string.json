@@ -1,0 +1,56 @@
+{
+  "string": [
+    {
+      "name": "shortvideo_share",
+      "value": "分享"
+    },
+    {
+      "name": "shortvideo_upgrade_hot",
+      "value": "上升热点"
+    },
+    {
+      "name": "shortvideo_online_people",
+      "value": "98万人在看"
+    },
+    {
+      "name": "shortvideo_focus",
+      "value": "关注"
+    },
+    {
+      "name": "shortvideo_featured",
+      "value": "精选"
+    },
+    {
+      "name": "shortvideo_recommend",
+      "value": "推荐"
+    },
+    {
+      "name": "shortvideo_movie_room",
+      "value": "放映厅"
+    },
+    {
+      "name": "shortvideo_demo_toast_tips",
+      "value": "仅演示，请根据业务需要自行实现"
+    },
+    {
+      "name": "shortvideo_comment_split",
+      "value": " · "
+    },
+    {
+      "name": "shortvideo_fifty_percent",
+      "value": "50%"
+    },
+    {
+      "name": "shortvideo_sixty_percent",
+      "value": "60%"
+    },
+    {
+      "name": "shortvideo_hundred_percent",
+      "value": "100%"
+    },
+    {
+      "name": "shortvideo_upgrade_hot_width",
+      "value": "66%"
+    }
+  ]
+}

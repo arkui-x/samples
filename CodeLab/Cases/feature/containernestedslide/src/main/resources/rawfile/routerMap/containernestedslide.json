@@ -1,0 +1,10 @@
+{
+  "routerMap": [
+    {
+      "name": "containernestedslide/NewsDetailPageComponent",
+      "pageModule": "containernestedslide",
+      "pageSourceFile": "src/main/ets/generated/RouterBuilder.ets",
+      "registerFunction": "newsDetailPageComponentRegister"
+    }
+  ]
+}

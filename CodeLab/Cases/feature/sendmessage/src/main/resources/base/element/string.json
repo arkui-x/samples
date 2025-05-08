@@ -1,0 +1,68 @@
+{
+  "string": [
+    {
+      "name": "send_message_toast",
+      "value": "此样式仅为案例展示"
+    },
+    {
+      "name": "send_message_text1",
+      "value": "请验证您的手机号"
+    },
+    {
+      "name": "send_message_span1",
+      "value": "请使用手机 "
+    },
+    {
+      "name": "send_message_span2",
+      "value": "111****1111"
+    },
+    {
+      "name": "send_message_span3",
+      "value": " 发送短信验证码"
+    },
+    {
+      "name": "send_message_btn_width",
+      "value": "90%"
+    },
+    {
+      "name": "send_message_msg_width",
+      "value": "60%"
+    },
+    {
+      "name": "send_message_com_width",
+      "value": "87%"
+    },
+    {
+      "name": "send_message_edit_message",
+      "value": "编辑短信"
+    },
+    {
+      "name": "send_message_send_message_to",
+      "value": "发送至"
+    },
+    {
+      "name": "send_message_send_message_question",
+      "value": "验证遇到问题？"
+    },
+    {
+      "name": "send_message_text_send_message_fee",
+      "value": "*短信费由运营商获取"
+    },
+    {
+      "name": "send_message_already_sent",
+      "value": "我已发送"
+    },
+    {
+      "name": "send_message_quickly_sent_message",
+      "value": "快捷发送短信"
+    },
+    {
+      "name": "send_message_prompt_message",
+      "value": "此处为固定值，点击发短信按钮自动回填信息"
+    },
+    {
+      "name": "send_message_one_hundred_percent",
+      "value": "100%"
+    }
+  ]
+}

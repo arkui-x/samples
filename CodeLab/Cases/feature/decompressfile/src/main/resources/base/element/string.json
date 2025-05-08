@@ -1,0 +1,44 @@
+{
+  "string": [
+    {
+      "name": "decompress_file",
+      "value": "文件解压"
+    },
+    {
+      "name": "decompress_file_sub_title",
+      "value": "使用@ohos.zlib在Worker子线程解压文件"
+    },
+    {
+      "name": "decompress_file_decompress",
+      "value": "解压"
+    },
+    {
+      "name": "decompress_file_decompressed_files",
+      "value": "解压结果"
+    },
+    {
+      "name": "decompress_file_toast",
+      "value": "文件解压成功"
+    },
+    {
+      "name": "ohos_id_corner_radius_default_m",
+      "value": "12"
+    },
+    {
+      "name": "ohos_id_text_size_body1",
+      "value": "14"
+    },
+    {
+      "name": "ohos_id_card_padding_start",
+      "value": "12"
+    },
+    {
+      "name": "ohos_id_text_size_headline",
+      "value": "20"
+    },
+    {
+      "name": "ohos_id_card_margin_start",
+      "value": "12"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "string": [
+    {
+      "name": "bottompanelslide_open",
+      "value": "展开"
+    },
+    {
+      "name": "bottompanelslide_watch_later",
+      "value": "稍后观看"
+    },
+    {
+      "name": "bottompanelslide_choose_file",
+      "value": "选择收藏夹"
+    },
+    {
+      "name": "bottompanelslide_new_file",
+      "value": "+新建收藏夹"
+    }
+  ]
+}

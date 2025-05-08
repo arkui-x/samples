@@ -1,0 +1,10 @@
+{
+  "routerMap": [
+    {
+      "name": "searchswiper/SearchSwiper",
+      "pageModule": "searchswiper",
+      "pageSourceFile": "src/main/ets/generated/RouterBuilder.ets",
+      "registerFunction": "searchSwiperRegister"
+    }
+  ]
+}

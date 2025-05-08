@@ -1,0 +1,20 @@
+{
+  "integer": [
+    {
+      "name": "aki_use_practice_fontSize",
+      "value": 50
+    },
+    {
+      "name": "aki_use_practice_margin",
+      "value": 30
+    },
+    {
+      "name": "aki_use_practice_button_height",
+      "value": 60
+    },
+    {
+      "name": "aki_use_practice_button_fontSize",
+      "value": 20
+    }
+  ]
+}

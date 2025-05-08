@@ -1,0 +1,40 @@
+{
+  "integer": [
+    {
+      "name": "fontdynamicregistration_title_font_size",
+      "value": 30
+    },
+    {
+      "name": "fontdynamicregistration_body_font_size",
+      "value": 18
+    },
+    {
+      "name": "fontdynamicregistration_body_text_margin",
+      "value": 10
+    },
+    {
+      "name": "fontdynamicregistration_body_text_padding",
+      "value": 20
+    },
+    {
+      "name": "fontdynamicregistration_body_text_borderRadius",
+      "value": 20
+    },
+    {
+      "name": "fontdynamicregistration_divider_margin",
+      "value": 20
+    },
+    {
+      "name": "fontdynamicregistration_bt_width",
+      "value": 130
+    },
+    {
+      "name": "fontdynamicregistration_bt_height",
+      "value": 40
+    },
+    {
+      "name": "fontdynamicregistration_button_spacing",
+      "value": 20
+    }
+  ]
+}

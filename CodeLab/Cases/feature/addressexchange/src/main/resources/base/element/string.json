@@ -1,0 +1,72 @@
+{
+  "string": [
+    {
+      "name": "address_exchange_content_size",
+      "value": "94%"
+    },
+    {
+      "name": "address_exchange_title",
+      "value": "地址交换动画"
+    },
+    {
+      "name": "address_exchange_detail",
+      "value": "点击中间图片，进行地址交换"
+    },
+    {
+      "name": "address_exchange_date",
+      "value": "2月8日"
+    },
+    {
+      "name": "address_exchange_week",
+      "value": "周四"
+    },
+    {
+      "name": "address_exchange_search_ticket",
+      "value": "查询车票"
+    },
+    {
+      "name": "address_exchange_address_left",
+      "value": "北京"
+    },
+    {
+      "name": "address_exchange_address_right",
+      "value": "上海"
+    },
+    {
+      "name": "address_exchange_address_width",
+      "value": "16%"
+    },
+    {
+      "name": "address_exchange_image_width",
+      "value": "20%"
+    },
+    {
+      "name": "address_exchange_other_function",
+      "value": "仅演示，可自行实现业务功能"
+    },
+    {
+      "name": "ohos_id_color_sub_background",
+      "value": "#F1F3F5"
+    },
+    {
+      "name": "ohos_id_corner_radius_default_m",
+      "value": "12"
+    },
+    {
+      "name": "ohos_id_card_margin_start",
+      "value": "15"
+    },
+    {
+      "name": "ohos_id_text_size_headline",
+      "value": "20"
+    },
+    {
+      "name": "address_exchange_font_size",
+      "value": "20"
+    },
+    {
+      "name": "address_exchange_flex_margin_top_size",
+      "value": "15"
+    }
+  ]
+}

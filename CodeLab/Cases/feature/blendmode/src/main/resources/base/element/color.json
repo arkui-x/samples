@@ -1,0 +1,12 @@
+{
+  "color": [
+    {
+      "name": "blend_mode_pendant_area_default_color",
+      "value": "#F4F4F4"
+    },
+    {
+      "name": "blend_mode_pendant_area_selected_color",
+      "value": "#FEE3EA"
+    }
+  ]
+}

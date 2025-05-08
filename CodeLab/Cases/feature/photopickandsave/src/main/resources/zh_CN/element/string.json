@@ -1,0 +1,84 @@
+{
+  "string": [
+    {
+      "name": "photopickandsave_image_request_fail",
+      "value": "图片加载失败，请检查网络"
+    },
+    {
+      "name": "photopickandsave_image_request_success",
+      "value": "图片下载成功"
+    },
+    {
+      "name": "photopickandsave_title",
+      "value": "下载并保存网络图片"
+    },
+    {
+      "name": "photopickandsave_content",
+      "value": "本示例上部的按钮介绍使用http、fs、photoAccessHelper接口从网络下载并保存图片到图库的场景；下部的按钮介绍使用picker、http、fs接口从网络下载并保存图片到用户指定路径的场景。"
+    },
+    {
+      "name": "photopickandsave_MainAbility_label",
+      "value": "图片处理"
+    },
+    {
+      "name": "photopickandsave_recently_added",
+      "value": "最近添加"
+    },
+    {
+      "name": "photopickandsave_choice_photo",
+      "value": "选照片"
+    },
+    {
+      "name": "photopickandsave_choice_video",
+      "value": "选视频"
+    },
+    {
+      "name": "photopickandsave_photograph",
+      "value": "拍照"
+    },
+    {
+      "name": "photopickandsave_take_video",
+      "value": "拍视频"
+    },
+    {
+      "name": "photopickandsave_upload_desc",
+      "value": "本示例介绍使用PhotoViewPicker选择图片预览的场景,点击“+”从图库中选择图片，并在当前当前页面显示选择的图片。"
+    },
+    {
+      "name": "photopickandsave_choice_number",
+      "value": "最多选择六张图片"
+    },
+    {
+      "name": "photopickandsave_user_tip",
+      "value": "功能开发中"
+    },
+    {
+      "name": "photopickandsave_picker_save",
+      "value": "下载到指定路径"
+    },
+    {
+      "name": "photopickandsave_photo_preview",
+      "value": "选择图片预览"
+    },
+    {
+      "name": "photopickandsave_download_photo",
+      "value": "下载保存图片到图库"
+    },
+    {
+      "name": "photopickandsave_save_picture",
+      "value": "下载保存图片到指定路径成功"
+    },
+    {
+      "name": "photopickandsave_request_permissions_reason",
+      "value": "user_grant"
+    },
+    {
+      "name": "photopickandsave_savebutton_width",
+      "value": "143"
+    },
+    {
+      "name": "photopickandsave_button_height",
+      "value": "43"
+    }
+  ]
+}

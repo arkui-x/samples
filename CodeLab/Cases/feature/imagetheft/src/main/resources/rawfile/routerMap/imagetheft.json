@@ -1,0 +1,10 @@
+{
+  "routerMap": [
+    {
+      "name": "imagetheft/ImageTheft",
+      "pageModule": "imagetheft",
+      "pageSourceFile": "src/main/ets/generated/RouterBuilder.ets",
+      "registerFunction": "imageTheftRegister"
+    }
+  ]
+}
