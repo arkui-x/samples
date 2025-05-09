@@ -38,7 +38,8 @@
   - ['OxHornCampus'：溪村小镇（API12）](CodeLab/OxHornCampus)
   - ['MusicHome'：音乐专辑（API12）](CodeLab/MusicHome)
   - ['HMOSWorld'：鸿蒙世界（API12）](CodeLab/HMOSWorld)
-
+  - ['ArkTSComponentCollection'：组件集合（API14）](CodeLab/ArkTSComponentCollection)
+  - ['Cases'：应用开发案例集（API14）](CodeLab/Cases)
 - ArkUI-X支持Rust
   - ['Rust'：Rust示例应用（API16）](RustFeature/Rust)
 
@@ -76,6 +77,8 @@ samples
   |---MultiShopping    	  # 购物应用
   |---MusicHome           # 音乐专辑
   |---OxHornCampus        # 溪村小镇
+  |---ArkTSComponentCollection        # 组件集合
+  |---Cases        		    # 应用开发案例集
 |---RustFeature         # ArkUI-X支持Rust
   |---Rust                # Rust示例应用
 ```
