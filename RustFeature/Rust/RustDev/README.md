@@ -276,7 +276,69 @@ ohrs build
 
 4、使用鸿蒙开发工具DevEco 5.0.4 Release创建一个Native C++ 工程。
 
-5、之后可以参考：[示例文档](https://developer.huawei.com/consumer/cn/blog/topic/03166271011531112)中的第3-5步，手动改造工程，进行编译引用。
+5、将rust项目中dist目录下的全部文件拷贝到Native C++跨平台工程的entry/libs目录下。同时在该libs目录下新建一个oh-package.json5文件，并加入以下内容：
+
+```shell
+{
+  "name": "librust_add.so",
+  "version": "1.0.0",
+  "description": "Rust implementation of librust_add",
+  "main": "librust_add.so"
+}
+```
+
+6、在Native C++跨平台工程的entry目录下的oh-package.json5文件中添加依赖配置，即在"dependencies"字段中加入以下内容：
+
+```shell
+"librust_add.so": "file:./libs"
+```
+
+效果如下：
+
+![](./screenshots/devices/add_dependencies_effect.png)
+
+随后点击"Sync Now"按钮同步项目，若entry/oh_modules目录内容如下图所示，即代表添加librust_add.so依赖成功。
+
+![](./screenshots/devices/oh_modules_effect.png)
+
+7、在Native C++跨平台工程的entry/src/main/ets/pages目录下的Index.ets文件中，引用librust_add.so文件，即可调用rust函数，可参考以下代码：
+
+```shell
+import { add } from "librust_add.so"
+
+@Entry
+@Component
+struct Index {
+  @State message: string = 'Hello Rust'
+
+  build() {
+    Row() {
+      Column() {
+        Text(this.message)
+          .fontSize(50)
+          .fontWeight(FontWeight.Bold)
+
+        Button() {
+          Text('10 + 20')
+            .fontSize(20)
+            .fontWeight(FontWeight.Bold)
+        }.type(ButtonType.Capsule)
+        .margin({ top: 20 })
+        .backgroundColor('#0D9FFB')
+        .width('35%')
+        .height('5%')
+        .onClick(()=>{
+          this.message = "Result: " + add(10, 20);
+        })
+      }
+      .width('100%')
+    }
+    .height('100%')
+  }
+}
+```
+
+8、构建Native C++跨平台工程即可。
 
 ### ArkUI-X（iOS）如何调用rust
 
@@ -500,7 +562,7 @@ linker = "Android SDK路径/ndk/28.0.13004108/toolchains/llvm/prebuilt/windows-x
 
 基于以上ohrs创建的rust应用工程，进行以下操作：
 
-1、修改rust工程中的build.rs文件为如下内容：[参考代码](#编译-2)。
+1、修改rust工程中的build.rs文件为如下内容：[参考代码](#编译-1)。
 
 2、使用DevEco 5.0.4 Release打开ArkUI-X跨平台工程，点击菜单上的构建->编译Hap(s)/APP(s)->编译APP(s)按钮，以同步信息与动态库到ArkUI-X跨平台工程中。
 
