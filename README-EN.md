@@ -36,6 +36,8 @@ This repository provides a series of app samples to help you quickly learn the A
   - ['OxHornCampus'：OxHornCampus（API12）](CodeLab/OxHornCampus)
   - ['MusicHome'：MusicHome（API12）](CodeLab/MusicHome)
   - ['HMOSWorld'：HMOSWorld（API12）](CodeLab/HMOSWorld)
+  - ['ArkTSComponentCollection'：ArkTSComponentCollection（API14）](CodeLab/ArkTSComponentCollection)
+  - ['Cases'：Cases（API14）](CodeLab/Cases)
 
 ## Directory Structure
 
@@ -69,6 +71,8 @@ samples
   |---MultiShopping    	  # MultiShopping
   |---MusicHome           # MusicHome
   |---OxHornCampus        # OxHornCampus
+  |---ArkTSComponentCollection        # ArkTSComponentCollection
+  |---Cases        		  # Cases
 ```
 
 ## Constraints
