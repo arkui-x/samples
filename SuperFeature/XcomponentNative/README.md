@@ -126,7 +126,7 @@ set(NATIVE_INCLUDE_PATH "$ENV{ARKUIX_SDK_HOME}/13/arkui-x/engine/lib/include/")
 git init
 git config core.sparsecheckout true
 echo /XcomponentNative > .git/info/sparse-checkout
-git remote add origin https://gitee.com/arkui-x/samples.git
+git remote add origin https://gitcode.com/arkui-x/samples.git
 git pull origin master
 ```
 
