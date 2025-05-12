@@ -57,7 +57,7 @@
 
 ### 使用说明
 
-1. Library模版编译生成的为aar文件，需要在项目中对aar文件进行引用后才能在不同平台上运行。Android工程具体配置方法可参考[ Android平台基于ArkUI-X的AAR的构建与使用](https://gitee.com/arkui-x/docs/blob/master/zh-cn/application-dev/tutorial/how-to-use-library-on-android.md)文档。iOS工程具体配置方法可参照[ iOS平台基于ArkUI-X的Framework的构建与使用](https://gitee.com/arkui-x/docs/blob/master/zh-cn/application-dev/tutorial/how-to-use-library-on-ios.md)文档。
+1. Library模版编译生成的为aar文件，需要在项目中对aar文件进行引用后才能在不同平台上运行。Android工程具体配置方法可参考[ Android平台基于ArkUI-X的AAR的构建与使用](https://gitcode.com/arkui-x/docs/blob/master/zh-cn/application-dev/tutorial/how-to-use-library-on-android.md)文档。iOS工程具体配置方法可参照[ iOS平台基于ArkUI-X的Framework的构建与使用](https://gitcode.com/arkui-x/docs/blob/master/zh-cn/application-dev/tutorial/how-to-use-library-on-ios.md)文档。
 2. 配置成功后，打开应用，首页面显示一个Button和一个Text。
 3. 点击Button按键，Text内容发生改变。
 
@@ -103,6 +103,6 @@ Library
 git init
 git config core.sparsecheckout true
 echo /Library > .git/info/sparse-checkout
-git remote add origin https://gitee.com/arkui-x/samples.git
+git remote add origin https://gitcode.com/arkui-x/samples.git
 git pull origin master
 ```
