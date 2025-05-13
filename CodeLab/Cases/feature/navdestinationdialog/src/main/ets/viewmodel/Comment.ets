@@ -51,6 +51,7 @@ export struct Comment {
         .width($r('app.integer.navdialog_comment_title_close_button_width'))
         .height($r('app.integer.navdialog_comment_title_close_button_height'))
         .justifyContent(FlexAlign.Center)
+        .margin({ top: 13 })
         .onClick(this.close)
       }
       .width($r('app.string.navdialog_full_size'))

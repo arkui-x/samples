@@ -37,7 +37,7 @@ struct VideoSample {
   @State autoPlay: boolean = false;
   @State controlsShow: boolean = true;
   @State mutedShow: boolean = false;
-  @State videoFit: ImageFit = ImageFit.Auto;
+  @State videoFit: ImageFit = ImageFit.Cover;
   @State videoLoop: boolean = false;
   controller: VideoController = new VideoController();
   private context: common.UIAbilityContext = getContext(this) as common.UIAbilityContext;
