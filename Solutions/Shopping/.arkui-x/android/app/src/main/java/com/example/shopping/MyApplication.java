@@ -10,7 +10,7 @@ import ohos.stage.ability.adapter.StageApplication;
  *
  * @since 2025-01-15
  * @see <a href=
- * "https://gitee.com/arkui-crossplatform/doc/blob/master/contribute/tutorial/how-to-build-Android-app.md">
+ * "https://gitcode.com/arkui-x/docs/blob/master/zh-cn/application-dev/tutorial/how-to-integrate-arkui-into-android.md">
  * to build android library</a>
  */
 public class MyApplication extends StageApplication {

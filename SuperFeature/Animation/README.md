@@ -175,6 +175,6 @@ entry/src/main/ets
 git init
 git config core.sparsecheckout true
 echo /Animation > .git/info/sparse-checkout
-git remote add origin https://gitee.com/arkui-x/samples.git
+git remote add origin https://gitcode.com/arkui-x/samples.git
 git pull origin master
 ```
