@@ -73,7 +73,7 @@ const FULL_SCREEN_ROUTE: string[] = ['foldablescreencases/MusicPlayerPage', 'med
  * 案例：需要设置窗口全屏
  * */
 const NEED_WINDOW_FULL_SCREEN: string[] = [
-  'pageflip/PageFlip', 'bottomdrawerslidecase/BottomDrawerSlideComponent', 'customscan/CustomScanPage',
+  'pageflip/PageFlip', 'customscan/CustomScanPage',
   'diggingholescreen/DiggingHoleScreen', 'effectKit/MainPage', 'immersive/ImmersiveView',
   'mediafullscreen/MediaFullScreen', 'secondfloorloadanimation/SecondFloorLoadAnimation',
   'statusbaranimation/StatusBarAnimation', 'videocreategif/VideoCreateGifView',

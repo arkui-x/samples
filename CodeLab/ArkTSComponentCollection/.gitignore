@@ -1,5 +1,5 @@
 /node_modules
-/oh_modules
+**/oh_modules
 **/.idea
 **/build
 /.hvigor
@@ -8,12 +8,13 @@
 /.clang-format
 /.clang-tidy
 **/.test
-/oh-package-lock.json5
+**/oh-package-lock.json5
 **/.DS_Store
 **/.gradle
 **/project.xcworkspace
 **/xcuserdata
+**/BuildProfile.ets
 /.arkui-x/android/app/libs/*
 /.arkui-x/android/app/src/main/assets
 /.arkui-x/ios/arkui-x
-/.arkui-x/ios/frameworkss
+/.arkui-x/ios/frameworks
