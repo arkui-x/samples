@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:id="@+id/vertical_scroll_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        >
+        <include layout="@layout/top_bar_layout" />
+
+        <TextView
+            android:id="@+id/content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:textSize="12sp" />
+        <Button
+            android:id="@+id/mButton01"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="48dp"
+            android:layout_marginRight="20dp"
+            android:text="前往DynamicHapAbility" />
+
+        <Button
+            android:id="@+id/mButton02"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="48dp"
+            android:layout_marginRight="20dp"
+            android:text="前往DynamicHapOneAbility" />
+
+        <Button
+            android:id="@+id/mButton03"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="48dp"
+            android:layout_marginRight="20dp"
+            android:text="前往DynamicHapTwoAbility" />
+        <Button
+            android:id="@+id/mButton04"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="48dp"
+            android:layout_marginRight="20dp"
+            android:text="拷贝到沙箱文件1" />
+
+        <Button
+            android:id="@+id/mButton05"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="48dp"
+            android:layout_marginRight="20dp"
+            android:text="拷贝到沙箱文件2" />
+
+        <Button
+            android:id="@+id/mButton07"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="48dp"
+            android:layout_marginRight="20dp"
+            android:text="removeAllFile" />
+
+        <Button
+            android:id="@+id/mButton08"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="48dp"
+            android:layout_marginRight="20dp"
+            android:text="copyAllResource" />
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,14 @@
+{
+  crossplatform: true,
+  modules: [
+    'entry',
+    'dynamicHap',
+    'dynamicHapOne',
+    'dynamicHapTwo',
+    'Fragment',
+    'PlatformBridge',
+    'PlatformView',
+    'Testversion',
+    'Test'
+  ],
+}

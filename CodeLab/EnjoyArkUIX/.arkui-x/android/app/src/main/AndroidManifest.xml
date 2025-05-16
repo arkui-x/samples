@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.enjoyarkuix">
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+<uses-permission android:name="android.permission.INTERNET"/>
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher_n"
+        android:label="@string/app_name"
+        android:name=".MyApplication"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.EnjoyArkUIX"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        tools:targetApi="31">
+
+        <activity
+            android:name=".activity.ShowActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.EntryEntryAbilityActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activity.FragmentEntryActivity"
+            android:configChanges="orientation|keyboard|layoutDirection|screenSize|screenLayout|uiMode|smallestScreenSize|density"
+            android:exported="true"
+            android:windowSoftInputMode="adjustNothing |stateHidden" />
+        <activity
+            android:name=".activity.FragmentManagerActivity"
+            android:configChanges="orientation|keyboard|layoutDirection|screenSize|screenLayout|uiMode|smallestScreenSize|density"
+            android:exported="true"
+            android:windowSoftInputMode="adjustNothing |stateHidden" />
+        <activity
+            android:name=".activity.ViewPagerFragmentActivity"
+            android:configChanges="orientation|keyboard|layoutDirection|screenSize|screenLayout|uiMode|smallestScreenSize|density"
+            android:exported="true"
+            android:windowSoftInputMode="adjustNothing |stateHidden" />
+        <activity
+            android:name=".PlatformViewJumpActivity"
+            android:configChanges="orientation|keyboard|layoutDirection|screenSize|screenLayout|uiMode|smallestScreenSize|density"
+            android:exported="true"
+            android:windowSoftInputMode="adjustNothing |stateHidden" />
+        <activity
+            android:name=".activity.DynamizationJumpActivity"
+            android:configChanges="orientation|keyboard|layoutDirection|screenSize|screenLayout|uiMode|smallestScreenSize|density"
+            android:exported="true"
+            android:windowSoftInputMode="adjustNothing |stateHidden" />
+        <activity
+            android:name=".stagedynamic.DynamicHapAbility"
+            android:configChanges="orientation|keyboard|layoutDirection|screenSize|screenLayout|uiMode|smallestScreenSize|density"
+            android:exported="true"
+            android:windowSoftInputMode="adjustNothing |stateHidden" />
+        <activity
+            android:name=".stagedynamic.DynamicHapTwoActivity"
+            android:configChanges="orientation|keyboard|layoutDirection|screenSize|screenLayout|uiMode|smallestScreenSize|density"
+            android:exported="true"
+            android:windowSoftInputMode="adjustNothing |stateHidden" />
+        <activity
+            android:name=".stagedynamic.DynamicHapOneActivity"
+            android:configChanges="orientation|keyboard|layoutDirection|screenSize|screenLayout|uiMode|smallestScreenSize|density"
+            android:exported="true"
+            android:windowSoftInputMode="adjustNothing |stateHidden" />
+
+        <activity
+            android:name=".activity.MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+    </application>
+
+</manifest>

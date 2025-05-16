@@ -1,0 +1,27 @@
+{
+  "module": {
+    "name": "PlatformBridge",
+    "type": "feature",
+    "description": "$string:module_desc",
+    "mainElement": "PlatformBridgeAbility",
+    "deviceTypes": [
+      "default",
+      "tablet"
+    ],
+    "deliveryWithInstall": true,
+    "installationFree": false,
+    "pages": "$profile:main_pages",
+    "abilities": [
+      {
+        "name": "PlatformBridgeAbility",
+        "srcEntry": "./ets/platformbridgeability/PlatformBridgeAbility.ets",
+        "description": "$string:PlatformBridgeAbility_desc",
+        "icon": "$media:layered_image",
+        "label": "$string:PlatformBridgeAbility_label",
+        "startWindowIcon": "$media:startIcon",
+        "startWindowBackground": "$color:start_window_background",
+        "exported": true
+      }
+    ]
+  }
+}
