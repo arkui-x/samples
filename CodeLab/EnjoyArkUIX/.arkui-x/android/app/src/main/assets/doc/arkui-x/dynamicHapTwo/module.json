@@ -1,0 +1,51 @@
+{
+	"app":	{
+		"bundleName":	"com.example.enjoyarkuix",
+		"vendor":	"example",
+		"versionCode":	4000000,
+		"versionName":	"1.0.0",
+		"icon":	"$media:app_icon",
+		"label":	"$string:app_name",
+		"apiReleaseType":	"Beta1",
+		"compileSdkVersion":	"5.1.0.60",
+		"targetAPIVersion":	16,
+		"minAPIVersion":	16,
+		"compileSdkType":	"OpenHarmony",
+		"appEnvironments":	[],
+		"bundleType":	"app",
+		"buildMode":	"debug",
+		"debug":	true,
+		"iconId":	201326593,
+		"labelId":	201326592
+	},
+	"module":	{
+		"name":	"dynamicHapTwo",
+		"type":	"feature",
+		"description":	"$string:module_desc",
+		"mainElement":	"DynamicHapTwoAbility",
+		"deviceTypes":	["default", "tablet"],
+		"deliveryWithInstall":	true,
+		"installationFree":	false,
+		"pages":	"$profile:main_pages",
+		"abilities":	[{
+				"name":	"DynamicHapTwoAbility",
+				"srcEntry":	"./ets/dynamichaptwoability/DynamicHapTwoAbility.ets",
+				"description":	"$string:DynamicHapTwoAbility_desc",
+				"icon":	"$media:layered_image",
+				"label":	"$string:DynamicHapTwoAbility_label",
+				"startWindowIcon":	"$media:startIcon",
+				"startWindowBackground":	"$color:start_window_background",
+				"exported":	true,
+				"descriptionId":	201326594,
+				"iconId":	201326601,
+				"labelId":	201326595,
+				"startWindowIconId":	201326602,
+				"startWindowBackgroundId":	201326597
+			}],
+		"packageName":	"dynamichaptwo",
+		"virtualMachine":	"ark12.0.6.0",
+		"compileMode":	"esmodule",
+		"dependencies":	[],
+		"descriptionId":	201326596
+	}
+}

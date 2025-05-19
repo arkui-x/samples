@@ -1,0 +1,136 @@
+{
+  app: {
+    signingConfigs: [],
+    products: [
+      {
+        "name": "default",
+        "signingConfig": "default",
+        "compileSdkVersion": 16,
+        "compatibleSdkVersion": 16,
+        "runtimeOS": "OpenHarmony"
+      },
+    ],
+    buildModeSet: [
+      {
+        name: 'debug',
+      },
+      {
+        name: 'release',
+      },
+    ],
+  },
+  modules: [
+    {
+      name: 'entry',
+      srcPath: './entry',
+      targets: [
+        {
+          name: 'default',
+          applyToProducts: [
+            'default',
+          ],
+        },
+      ],
+    },
+    {
+      "name": "Fragment",
+      "srcPath": "./Example/Fragment",
+      "targets": [
+        {
+          "name": "default",
+          "applyToProducts": [
+            "default"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "PlatformView",
+      "srcPath": "./Example/PlatformView",
+      "targets": [
+        {
+          "name": "default",
+          "applyToProducts": [
+            "default"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "PlatformBridge",
+      "srcPath": "./Example/PlatformBridge",
+      "targets": [
+        {
+          "name": "default",
+          "applyToProducts": [
+            "default"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "effectkit",
+      "srcPath": "./dependencies/effectkit",
+    },
+    {
+      "name": "dynamicHap",
+      "srcPath": "./Example/dynamicHap",
+      "targets": [
+        {
+          "name": "default",
+          "applyToProducts": [
+            "default"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "dynamicHapOne",
+      "srcPath": "./Example/dynamicHapOne",
+      "targets": [
+        {
+          "name": "default",
+          "applyToProducts": [
+            "default"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "dynamicHapTwo",
+      "srcPath": "./Example/dynamicHapTwo",
+      "targets": [
+        {
+          "name": "default",
+          "applyToProducts": [
+            "default"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Test",
+      "srcPath": "./Self_Test/Test",
+      "targets": [
+        {
+          "name": "default",
+          "applyToProducts": [
+            "default"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Testversion",
+      "srcPath": "./Version/Testversion",
+      "targets": [
+        {
+          "name": "default",
+          "applyToProducts": [
+            "default"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "integer": [
+    {
+      "name": "effectKit_image_borderRadius",
+      "value": 10
+    },
+    {
+      "name": "effectKit_image_margin_top",
+      "value": 20
+    },
+    {
+      "name": "effectKit_swiper_padding_left",
+      "value": 20
+    },
+    {
+      "name": "effectKit_swiper_padding_right",
+      "value": 20
+    },
+    {
+      "name": "effectKit_swiper_interval",
+      "value": 3500
+    },
+    {
+      "name": "effectKit_swiper_duration",
+      "value": 500
+    },
+    {
+      "name": "effectKit_swiper_itemSpace",
+      "value": 10
+    }
+  ]
+}
