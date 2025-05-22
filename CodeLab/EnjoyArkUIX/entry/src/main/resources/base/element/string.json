@@ -10,7 +10,43 @@
     },
     {
       "name": "EntryAbility_label",
-      "value": "label"
+      "value": "EnjoyArkUIX"
+    },
+    {
+      "name": "app_collection",
+      "value": "APP Collection"
+    },
+    {
+      "name": "super_feature",
+      "value": "SuperFeature"
+    },
+    {
+      "name": "platform_bridge",
+      "value": "PlatformBridge"
+    },
+    {
+      "name": "platform_view",
+      "value": "PlatformView"
+    },
+    {
+      "name": "fragment",
+      "value": "Fragment"
+    },
+    {
+      "name": "dynamization",
+      "value": "Dynamization"
+    },
+    {
+      "name": "self_test",
+      "value": "自测试"
+    },
+    {
+      "name": "demos",
+      "value": "演示"
+    },
+    {
+      "name": "versions",
+      "value": "版本"
     }
   ]
 }

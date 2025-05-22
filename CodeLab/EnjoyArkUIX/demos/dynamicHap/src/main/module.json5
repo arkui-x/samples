@@ -1,0 +1,26 @@
+{
+  "module": {
+    "name": "dynamicHap",
+    "type": "feature",
+    "description": "$string:module_desc",
+    "mainElement": "DynamicHapAbility",
+    "deviceTypes": [
+      "default"
+    ],
+    "deliveryWithInstall": true,
+    "installationFree": false,
+    "pages": "$profile:main_pages",
+    "abilities": [
+      {
+        "name": "DynamicHapAbility",
+        "srcEntry": "./ets/dynamichapability/DynamicHapAbility.ets",
+        "description": "$string:DynamicHapAbility_desc",
+        "icon": "$media:layered_image",
+        "label": "$string:DynamicHapAbility_label",
+        "startWindowIcon": "$media:startIcon",
+        "startWindowBackground": "$color:start_window_background",
+        "exported": true
+      }
+    ]
+  }
+}

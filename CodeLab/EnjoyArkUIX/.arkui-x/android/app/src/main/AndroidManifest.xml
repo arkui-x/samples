@@ -2,77 +2,91 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     package="com.example.enjoyarkuix">
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-<uses-permission android:name="android.permission.INTERNET"/>
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
-        android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher_n"
-        android:label="@string/app_name"
         android:name=".MyApplication"
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:extractNativeLibs="true"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/app_icon"
+        android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/Theme.EnjoyArkUIX"
-        android:dataExtractionRules="@xml/data_extraction_rules"
-        android:fullBackupContent="@xml/backup_rules"
         tools:targetApi="31">
-
         <activity
-            android:name=".activity.ShowActivity"
-            android:exported="false" />
-        <activity
-            android:name=".activity.EntryEntryAbilityActivity"
-            android:exported="true" />
-        <activity
-            android:name=".activity.FragmentEntryActivity"
+            android:name=".EntryEntryAbilityActivity"
             android:configChanges="orientation|keyboard|layoutDirection|screenSize|screenLayout|uiMode|smallestScreenSize|density"
             android:exported="true"
-            android:windowSoftInputMode="adjustNothing |stateHidden" />
-        <activity
-            android:name=".activity.FragmentManagerActivity"
-            android:configChanges="orientation|keyboard|layoutDirection|screenSize|screenLayout|uiMode|smallestScreenSize|density"
-            android:exported="true"
-            android:windowSoftInputMode="adjustNothing |stateHidden" />
-        <activity
-            android:name=".activity.ViewPagerFragmentActivity"
-            android:configChanges="orientation|keyboard|layoutDirection|screenSize|screenLayout|uiMode|smallestScreenSize|density"
-            android:exported="true"
-            android:windowSoftInputMode="adjustNothing |stateHidden" />
-        <activity
-            android:name=".PlatformViewJumpActivity"
-            android:configChanges="orientation|keyboard|layoutDirection|screenSize|screenLayout|uiMode|smallestScreenSize|density"
-            android:exported="true"
-            android:windowSoftInputMode="adjustNothing |stateHidden" />
-        <activity
-            android:name=".activity.DynamizationJumpActivity"
-            android:configChanges="orientation|keyboard|layoutDirection|screenSize|screenLayout|uiMode|smallestScreenSize|density"
-            android:exported="true"
-            android:windowSoftInputMode="adjustNothing |stateHidden" />
-        <activity
-            android:name=".stagedynamic.DynamicHapAbility"
-            android:configChanges="orientation|keyboard|layoutDirection|screenSize|screenLayout|uiMode|smallestScreenSize|density"
-            android:exported="true"
-            android:windowSoftInputMode="adjustNothing |stateHidden" />
-        <activity
-            android:name=".stagedynamic.DynamicHapTwoActivity"
-            android:configChanges="orientation|keyboard|layoutDirection|screenSize|screenLayout|uiMode|smallestScreenSize|density"
-            android:exported="true"
-            android:windowSoftInputMode="adjustNothing |stateHidden" />
-        <activity
-            android:name=".stagedynamic.DynamicHapOneActivity"
-            android:configChanges="orientation|keyboard|layoutDirection|screenSize|screenLayout|uiMode|smallestScreenSize|density"
-            android:exported="true"
-            android:windowSoftInputMode="adjustNothing |stateHidden" />
-
-        <activity
-            android:name=".activity.MainActivity"
-            android:exported="true">
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustNothing |stateAlwaysHidden">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
+        <activity
+            android:name=".PlatformBridgePlatformBridgeAbilityActivity"
+            android:configChanges="orientation|keyboard|layoutDirection|screenSize|screenLayout|uiMode|smallestScreenSize|density"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustNothing |stateAlwaysHidden" />
+        <activity
+            android:name=".PlatformViewPlatformViewAbilityActivity"
+            android:configChanges="orientation|keyboard|layoutDirection|screenSize|screenLayout|uiMode|smallestScreenSize|density"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustNothing |stateAlwaysHidden" />
+        <activity
+            android:name=".DynamizationJumpActivity"
+            android:configChanges="orientation|keyboard|layoutDirection|screenSize|screenLayout|uiMode|smallestScreenSize|density"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustNothing |stateHidden" />
+        <activity
+            android:name=".stagedynamic.DynamicHapAbility"
+            android:configChanges="orientation|keyboard|layoutDirection|screenSize|screenLayout|uiMode|smallestScreenSize|density"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustNothing |stateHidden" />
+        <activity
+            android:name=".stagedynamic.DynamicHapTwoActivity"
+            android:configChanges="orientation|keyboard|layoutDirection|screenSize|screenLayout|uiMode|smallestScreenSize|density"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustNothing |stateHidden" />
+        <activity
+            android:name=".stagedynamic.DynamicHapOneActivity"
+            android:configChanges="orientation|keyboard|layoutDirection|screenSize|screenLayout|uiMode|smallestScreenSize|density"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustNothing |stateHidden" />
+        <activity
+            android:name=".FragmentEntryActivity"
+            android:configChanges="orientation|keyboard|layoutDirection|screenSize|screenLayout|uiMode|smallestScreenSize|density"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustNothing |stateHidden" />
+        <activity
+            android:name=".stagefragment.FragmentManagerActivity"
+            android:configChanges="orientation|keyboard|layoutDirection|screenSize|screenLayout|uiMode|smallestScreenSize|density"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustNothing |stateHidden" />
+        <activity
+            android:name=".stagefragment.ViewPagerFragmentActivity"
+            android:configChanges="orientation|keyboard|layoutDirection|screenSize|screenLayout|uiMode|smallestScreenSize|density"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustNothing |stateHidden" />
+        <activity
+            android:name=".PlatformViewJumpActivity"
+            android:configChanges="orientation|keyboard|layoutDirection|screenSize|screenLayout|uiMode|smallestScreenSize|density"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustNothing |stateHidden" />
     </application>
-
 </manifest>

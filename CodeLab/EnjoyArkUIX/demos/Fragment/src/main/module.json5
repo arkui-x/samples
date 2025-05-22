@@ -1,0 +1,35 @@
+{
+  "module": {
+    "name": "Fragment",
+    "type": "feature",
+    "description": "$string:module_desc",
+    "mainElement": "FragmentAbility",
+    "deviceTypes": [
+      "default"
+    ],
+    "deliveryWithInstall": true,
+    "installationFree": false,
+    "pages": "$profile:main_pages",
+    "abilities": [
+      {
+        "name": "FragmentAbility",
+        "srcEntry": "./ets/fragmentability/FragmentAbility.ets",
+        "description": "$string:FragmentAbility_desc",
+        "icon": "$media:layered_image",
+        "label": "$string:FragmentAbility_label",
+        "startWindowIcon": "$media:startIcon",
+        "startWindowBackground": "$color:start_window_background",
+        "exported": true
+      },
+      {
+        "name": "ViewFragmentAbility",
+        "srcEntry": "./ets/viewfragmentability/ViewFragmentAbility.ets",
+        "description": "$string:FragmentAbilityOne_desc",
+        "icon": "$media:layered_image",
+        "label": "$string:FragmentAbilityOne_label",
+        "startWindowIcon": "$media:startIcon",
+        "startWindowBackground": "$color:start_window_background"
+      }
+    ]
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "module": {
+    "name": "dynamicHapTwo",
+    "type": "feature",
+    "description": "$string:module_desc",
+    "mainElement": "DynamicHapTwoAbility",
+    "deviceTypes": [
+      "default"
+    ],
+    "deliveryWithInstall": true,
+    "installationFree": false,
+    "pages": "$profile:main_pages",
+    "abilities": [
+      {
+        "name": "DynamicHapTwoAbility",
+        "srcEntry": "./ets/dynamichaptwoability/DynamicHapTwoAbility.ets",
+        "description": "$string:DynamicHapTwoAbility_desc",
+        "icon": "$media:layered_image",
+        "label": "$string:DynamicHapTwoAbility_label",
+        "startWindowIcon": "$media:startIcon",
+        "startWindowBackground": "$color:start_window_background",
+        "exported": true
+      }
+    ]
+  }
+}

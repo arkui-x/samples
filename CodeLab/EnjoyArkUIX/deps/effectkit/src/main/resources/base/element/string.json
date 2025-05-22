@@ -1,0 +1,16 @@
+{
+  "string": [
+    {
+      "name": "effectKit_swiper_width",
+      "value": "100%"
+    },
+    {
+      "name": "effectKit_column_width",
+      "value": "100%"
+    },
+    {
+      "name": "effectKit_column_height",
+      "value": "100%"
+    }
+  ]
+}

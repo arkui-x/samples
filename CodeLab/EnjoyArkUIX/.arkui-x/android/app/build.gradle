@@ -3,31 +3,10 @@ plugins {
 }
 
 android {
-    namespace 'com.example.enjoyarkuix'
-    compileSdk 33
+    compileSdkVersion 33
+    buildToolsVersion "30.0.3"
 
-    //Select whether you want to execute the compile arkts script.
     def configBuildFlag = false
-
-    task ArkTSBuildTask {
-      preBuild.dependsOn ArkTSBuildTask
-      doLast {
-        if (configBuildFlag) {
-          def os = System.getProperty("os.name").toLowerCase()
-          if (os.contains("win")) {
-            exec {
-              commandLine 'cmd', '/c', '.\\buildArkTS'
-              workingDir file( project.projectDir.getAbsolutePath() + '\\..' )
-            }
-          } else {
-            exec {
-              commandLine 'sh', '-c', 'chmod +x ./buildArkTS && ./buildArkTS'
-              workingDir file( project.projectDir.getAbsolutePath() + '/..' )
-            }
-          }
-        }
-      }
-    }
 
     defaultConfig {
         applicationId "com.example.enjoyarkuix"
@@ -35,8 +14,10 @@ android {
         targetSdkVersion 33
         versionCode 1
         versionName "1.0"
-        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
-        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+        ndk {
+            abiFilters "arm64-v8a", "armeabi-v7a"
+        }
     }
 
     buildTypes {
@@ -45,16 +26,13 @@ android {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
-        profile {
-            signingConfig signingConfigs.debug
-            minifyEnabled false
-            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
-        }
     }
+
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
     }
+
     dynamicFeatures = []
 
     sourceSets {
@@ -68,11 +46,6 @@ android {
             useLegacyPackaging true
         }
     }
-    buildFeatures {
-        viewBinding true
-    }
-    externalNativeBuild {
-    }
 }
 
 dependencies {
@@ -84,7 +57,4 @@ dependencies {
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
     implementation 'androidx.recyclerview:recyclerview:1.3.0'
     implementation 'com.amap.api:3dmap-location-search:latest.integration'
-    testImplementation 'junit:junit:4.13.2'
-    androidTestImplementation 'androidx.test.ext:junit:1.1.5'
-    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
 }

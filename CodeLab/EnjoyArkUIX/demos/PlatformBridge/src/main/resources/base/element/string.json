@@ -1,0 +1,16 @@
+{
+  "string": [
+    {
+      "name": "module_desc",
+      "value": "module description"
+    },
+    {
+      "name": "PlatformBridgeAbility_desc",
+      "value": "description"
+    },
+    {
+      "name": "PlatformBridgeAbility_label",
+      "value": "label"
+    }
+  ]
+}
