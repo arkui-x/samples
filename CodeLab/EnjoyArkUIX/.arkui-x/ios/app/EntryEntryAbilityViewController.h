@@ -13,8 +13,8 @@
  * limitations under the License.
  */
 
-#ifndef EntryEntryAbilityViewController_h
-#define EntryEntryAbilityViewController_h
+#ifndef ENTRY_ENTRY_ABILITY_VIEW_CONTROLLER_H
+#define ENTRY_ENTRY_ABILITY_VIEW_CONTROLLER_H
 #import <UIKit/UIKit.h>
 #import <libarkui_ios/StageViewController.h>
 @interface EntryEntryAbilityViewController : StageViewController

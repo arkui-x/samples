@@ -13,8 +13,8 @@
  * limitations under the License.
  */
 
-#ifndef PlatformViewPlatformViewAbilityViewController_h
-#define PlatformViewPlatformViewAbilityViewController_h
+#ifndef PLATFORM_VIEW_PLATFORM_VIEW_ABILITY_VIEW_CONTROLLER_H
+#define PLATFORM_VIEW_PLATFORM_VIEW_ABILITY_VIEW_CONTROLLER_H
 #import <UIKit/UIKit.h>
 #import <libarkui_ios/StageViewController.h>
 @interface PlatformViewPlatformViewAbilityViewController : StageViewController

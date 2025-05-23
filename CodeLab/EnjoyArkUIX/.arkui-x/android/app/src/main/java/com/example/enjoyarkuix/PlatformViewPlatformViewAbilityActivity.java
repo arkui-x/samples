@@ -37,6 +37,11 @@ public class PlatformViewPlatformViewAbilityActivity extends StageActivity {
         platFormView(savedInstanceState);
     }
 
+    /**
+     * platFormView
+     *
+     * @param savedInstanceState savedInstanceState
+     */
     public void platFormView(Bundle savedInstanceState) {
         AMapLocationClient.updatePrivacyShow(this, true, true);
         AMapLocationClient.updatePrivacyAgree(this, true);

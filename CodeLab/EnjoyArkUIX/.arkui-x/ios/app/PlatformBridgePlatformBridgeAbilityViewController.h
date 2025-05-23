@@ -13,8 +13,8 @@
  * limitations under the License.
  */
 
-#ifndef PlatformBridgePlatformBridgeAbilityViewController_h
-#define PlatformBridgePlatformBridgeAbilityViewController_h
+#ifndef PLATFORM_BRIDGE_PLATFORM_BRIDGE_ABILITY_VIEW_CONTROLLER_H
+#define PLATFORM_BRIDGE_PLATFORM_BRIDGE_ABILITY_VIEW_CONTROLLER_H
 #import <UIKit/UIKit.h>
 #import <libarkui_ios/StageViewController.h>
 @interface PlatformBridgePlatformBridgeAbilityViewController : StageViewController

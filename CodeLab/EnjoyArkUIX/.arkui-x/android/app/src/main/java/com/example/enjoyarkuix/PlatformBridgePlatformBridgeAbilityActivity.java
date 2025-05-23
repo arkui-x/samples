@@ -46,6 +46,7 @@ public class PlatformBridgePlatformBridgeAbilityActivity extends StageActivity {
     public void platFormBridge() {
         bridgeImpl = new Bridge(this, "Bridge", getBridgeManager());
         bridgeCodec = new Bridge(this, "BridgeCodec", getBridgeManager(), BridgePlugin.BridgeType.BINARY_TYPE);
-        bridgeTask = new Bridge(this, "BridgeTask", getBridgeManager(), BridgePlugin.BridgeType.BINARY_TYPE, new TaskOption());
+        bridgeTask = new Bridge(
+                this, "BridgeTask", getBridgeManager(), BridgePlugin.BridgeType.BINARY_TYPE, new TaskOption());
     }
 }

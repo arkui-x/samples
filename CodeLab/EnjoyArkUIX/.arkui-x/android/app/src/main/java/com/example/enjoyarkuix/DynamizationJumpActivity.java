@@ -77,7 +77,8 @@ public class DynamizationJumpActivity extends AppCompatActivity {
         setupButton(R.id.mButton02, v -> startActivity(new Intent(this, DynamicHapOneActivity.class)));
         setupButton(R.id.mButton03, v -> startActivity(new Intent(this, DynamicHapTwoActivity.class)));
         setupButton(R.id.mButton04, v -> copyFilesFromAssetsDoc(this, "doc", getApplication().getFilesDir().getPath()));
-        setupButton(R.id.mButton05, v -> copyFilesFromAssetsDoc(this, "resh", getApplication().getFilesDir().getPath()));
+        setupButton(R.id.mButton05, v ->
+        copyFilesFromAssetsDoc(this, "resh", getApplication().getFilesDir().getPath()));
         setupButton(R.id.mButton07, v -> {
             deleteDirectoryContents(getApplication().getFilesDir().getPath() + "/arkui-x/dynamicHap");
             deleteDirectoryContents(getApplication().getFilesDir().getPath() + "/arkui-x/dynamicHapOne");
@@ -101,17 +102,17 @@ public class DynamizationJumpActivity extends AppCompatActivity {
      * @param context       The context used to access the assets.
      * @param assetsDocPath The path within the assets folder to copy from. This can be a file or directory.
      * @param sandBoxPath   The destination path in the sandbox where the assets will be copied.
-     *                      <p>
-     *                      The method recursively copies directories and their contents. If the source is a file, it copies the file
-     *                      to the destination. It also ensures that the copied files and directories have appropriate permissions
-     *                      (readable, writable, and executable).
-     *                      <p>
-     *                      If the destination file ends with ".so", it explicitly sets the file to be writable, readable, and executable.
-     *                      <p>
-     *                      Logs errors and debug information using the Android Log class.
-     *                      <p>
-     *                      Exceptions:
-     *                      - IOException: If an error occurs while accessing or copying files.
+     *
+     * The method recursively copies directories and their contents. If the source is a file, it copies the file
+     * to the destination. It also ensures that the copied files and directories have appropriate permissions
+     * (readable, writable, and executable).
+     *
+     * If the destination file ends with ".so", it explicitly sets the file to be writable, readable, and executable.
+     *
+     * Logs errors and debug information using the Android Log class.
+     *
+     * Exceptions:
+     * - IOException: If an error occurs while accessing or copying files.
      */
     public void copyFilesFromAssetsDoc(Context context, String assetsDocPath, String sandBoxPath) {
         try {
@@ -130,7 +131,8 @@ public class DynamizationJumpActivity extends AppCompatActivity {
             } else {
                 Log.d("DynamicLoads", "fileNames: " + assetsDocPath);
                 File targetFile = new File(sandBoxPath);
-                try (InputStream sourceFileInput = context.getAssets().open(assetsDocPath); FileOutputStream targetFileOutPut = new FileOutputStream(targetFile)) {
+                try (InputStream sourceFileInput = context.getAssets().open(assetsDocPath);
+                    FileOutputStream targetFileOutPut = new FileOutputStream(targetFile)) {
                     byte[] buffer = new byte[2048];
                     int byteCount;
                     while ((byteCount = sourceFileInput.read(buffer)) != -1) {
@@ -180,7 +182,8 @@ public class DynamizationJumpActivity extends AppCompatActivity {
             }
 
             if (!file.delete()) {
-                Log.e("DynamicLoads", "Failed to delete " + (file.isDirectory() ? "directory" : "file") + ": " + filePath);
+                Log.e("DynamicLoads",
+                        "Failed to delete " + (file.isDirectory() ? "directory" : "file") + ": " + filePath);
                 return false;
             }
         }
@@ -208,7 +211,9 @@ public class DynamizationJumpActivity extends AppCompatActivity {
             Log.e("DynamicLoads", "read resources err: " + e.getMessage());
         }
         for (String resourcesName : moduleResources) {
-            copyFilesFromAssets(ASSETS_SUB_PATH + "/" + resourcesName, DynamizationJumpActivity.this.getApplicationContext().getFilesDir().getPath() + "/" + ASSETS_SUB_PATH + "/" + resourcesName);
+            copyFilesFromAssets(ASSETS_SUB_PATH + "/" + resourcesName,
+                    DynamizationJumpActivity.this.getApplicationContext().getFilesDir().getPath()
+                        + "/" + ASSETS_SUB_PATH + "/" + resourcesName);
         }
     }
 

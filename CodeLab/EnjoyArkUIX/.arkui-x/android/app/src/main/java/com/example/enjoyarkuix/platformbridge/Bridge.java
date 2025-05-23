@@ -83,7 +83,8 @@ public class Bridge extends BridgePlugin implements IMessageListener, IMethodRes
      * @param taskOption    Task Option
      * @since 2025-01-07
      */
-    public Bridge(Context context, String name, BridgeManager bridgeManager, BridgeType codecType, TaskOption taskOption) {
+    public Bridge(
+            Context context, String name, BridgeManager bridgeManager, BridgeType codecType, TaskOption taskOption) {
         super(context, name, bridgeManager, codecType, taskOption);
         this.name = name;
         this.context = context;
@@ -138,7 +139,8 @@ public class Bridge extends BridgePlugin implements IMessageListener, IMethodRes
             sendMessage("PlatformBridge successfully calls method of TS, The method is of type void");
         } else {
             Log.i("bridge onSuccess data: ", object.toString());
-            String result = "PlatformBridge successfully calls method of TS, and the return value is " + object.toString();
+            String result =
+                    "PlatformBridge successfully calls method of TS, and the return value is " + object.toString();
             sendMessage(result);
         }
     }
