@@ -24,7 +24,7 @@ export const DEMOS: ThirdLevelCategory[] = [
       moduleName: 'PlatformBridge',
       abilityName: 'PlatformBridgeAbility',
     },
-    platform: PlatformTypeEnum.BOTH
+    platform: PlatformTypeEnum.SUPPORT_BOTH
   },
   {
     image: $r('app.media.platform_view'),
@@ -34,7 +34,7 @@ export const DEMOS: ThirdLevelCategory[] = [
       moduleName: 'PlatformView',
       abilityName: 'PlatformViewAbility',
     },
-    platform: PlatformTypeEnum.BOTH
+    platform: PlatformTypeEnum.SUPPORT_BOTH
   },
   {
     image: $r('app.media.fragment'),
@@ -43,7 +43,7 @@ export const DEMOS: ThirdLevelCategory[] = [
       bundleName: 'com.example.enjoyarkuix',
       abilityName: 'FragmentEntry',
     },
-    platform: PlatformTypeEnum.ANDROID
+    platform: PlatformTypeEnum.SUPPORT_ANDROID
   },
   {
     image: $r('app.media.dynamization'),
@@ -53,6 +53,6 @@ export const DEMOS: ThirdLevelCategory[] = [
       moduleName: 'Dynamization',
       abilityName: 'Jump',
     },
-    platform: PlatformTypeEnum.BOTH
+    platform: PlatformTypeEnum.SUPPORT_BOTH
   }
 ]

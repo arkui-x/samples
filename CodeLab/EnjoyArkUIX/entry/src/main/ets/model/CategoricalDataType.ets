@@ -16,9 +16,9 @@
 import Want from '@ohos.app.ability.Want'
 
 export enum PlatformTypeEnum {
-  BOTH = 'Android And iOS Platform',
-  ANDROID = 'Android Platform',
-  IOS = 'iOS Platform',
+  SUPPORT_BOTH,
+  SUPPORT_ANDROID,
+  SUPPORT_IOS,
 }
 
 export interface FirstLevelCategory {

@@ -60,8 +60,8 @@ export struct ThirdLevelNavigation {
           let osFullNameInfo: string = deviceInfo.osFullName
           let platformName: string = osFullNameInfo.split(' ')[0]
           let caseSupport: boolean =
-            platformName.includes("Android") && this.thirdLevelCategory.platform === PlatformTypeEnum.IOS ||
-              platformName.includes("iOS") && this.thirdLevelCategory.platform === PlatformTypeEnum.ANDROID
+            platformName.includes("Android") && this.thirdLevelCategory.platform === PlatformTypeEnum.SUPPORT_IOS ||
+              platformName.includes("iOS") && this.thirdLevelCategory.platform === PlatformTypeEnum.SUPPORT_ANDROID
           if (caseSupport) {
             promptAction.showToast({
               message: '当前平台不支持该用例'
