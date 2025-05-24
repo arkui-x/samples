@@ -3,45 +3,42 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		DF9C1B6128B9FC4B005DCF58 /* arkui-x in Resources */ = {isa = PBXBuildFile; fileRef = DF9C1B6028B9FC4B005DCF58 /* arkui-x */; };
+		89E41E4529F505070004F33E /* EntryEntryAbilityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 89E41E4329F505070004F33E /* EntryEntryAbilityViewController.m */; };
+		89E41E4629F505CD0004F33E /* libarkui_ios.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF9C1B5D28B9FC3A005DCF58 /* libarkui_ios.xcframework */; };
+		89E41E4729F505CD0004F33E /* libarkui_ios.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DF9C1B5D28B9FC3A005DCF58 /* libarkui_ios.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		DFC5555629D7F36400B63EB3 /* arkui-x in Resources */ = {isa = PBXBuildFile; fileRef = DFC5555529D7F36400B63EB3 /* arkui-x */; };
 		F0AF1AD227D3684F008C55DD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F0AF1AD127D3684F008C55DD /* AppDelegate.m */; };
+		F0AF1ADD27D36856008C55DD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F0AF1ADC27D36856008C55DD /* Assets.xcassets */; };
 		F0AF1AE027D36856008C55DD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0AF1ADE27D36856008C55DD /* LaunchScreen.storyboard */; };
 		F0AF1AE327D36856008C55DD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F0AF1AE227D36856008C55DD /* main.m */; };
-		FA2DCA722DCE2D2900C15014 /* BaseModuleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA2DCA5C2DCE2D2900C15014 /* BaseModuleViewController.m */; };
-		FA2DCA732DCE2D2900C15014 /* OneToMoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA2DCA6C2DCE2D2900C15014 /* OneToMoreViewController.m */; };
-		FA2DCA742DCE2D2900C15014 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA2DCA682DCE2D2900C15014 /* MainViewController.m */; };
-		FA2DCA752DCE2D2900C15014 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA2DCA5E2DCE2D2900C15014 /* BaseViewController.m */; };
-		FA2DCA762DCE2D2900C15014 /* CenterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA2DCA602DCE2D2900C15014 /* CenterViewController.m */; };
-		FA2DCA772DCE2D2900C15014 /* PlatformBridgeController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA2DCA6E2DCE2D2900C15014 /* PlatformBridgeController.m */; };
-		FA2DCA782DCE2D2900C15014 /* MineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA2DCA6A2DCE2D2900C15014 /* MineViewController.m */; };
-		FA2DCA792DCE2D2900C15014 /* DynamicLoadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA2DCA642DCE2D2900C15014 /* DynamicLoadViewController.m */; };
-		FA2DCA7A2DCE2D2900C15014 /* DynamicShowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA2DCA662DCE2D2900C15014 /* DynamicShowViewController.m */; };
-		FA2DCA7B2DCE2D2900C15014 /* PlatformViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA2DCA702DCE2D2900C15014 /* PlatformViewController.m */; };
-		FA2DCA8E2DCE2D4F00C15014 /* MyMapView.m in Sources */ = {isa = PBXBuildFile; fileRef = FA2DCA812DCE2D4F00C15014 /* MyMapView.m */; };
-		FA2DCA8F2DCE2D4F00C15014 /* PublicAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = FA2DCA8C2DCE2D4F00C15014 /* PublicAlertView.m */; };
-		FA2DCA902DCE2D4F00C15014 /* MyWebview.m in Sources */ = {isa = PBXBuildFile; fileRef = FA2DCA872DCE2D4F00C15014 /* MyWebview.m */; };
-		FA2DCA912DCE2D4F00C15014 /* MyVideoView.m in Sources */ = {isa = PBXBuildFile; fileRef = FA2DCA852DCE2D4F00C15014 /* MyVideoView.m */; };
-		FA2DCA922DCE2D4F00C15014 /* ArkBridgeClass.m in Sources */ = {isa = PBXBuildFile; fileRef = FA2DCA7E2DCE2D4F00C15014 /* ArkBridgeClass.m */; };
-		FA2DCA932DCE2D4F00C15014 /* MainTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FA2DCA8A2DCE2D4F00C15014 /* MainTableViewCell.m */; };
-		FA2DCA942DCE2D4F00C15014 /* MyPlatformViewFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = FA2DCA832DCE2D4F00C15014 /* MyPlatformViewFactory.m */; };
-		FA2DCA9D2DCE2DAD00C15014 /* LaunchstartIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = FA2DCA972DCE2DAD00C15014 /* LaunchstartIcon.png */; };
-		FA2DCA9E2DCE2DAD00C15014 /* ios_test_plugin.m in Sources */ = {isa = PBXBuildFile; fileRef = FA2DCA962DCE2DAD00C15014 /* ios_test_plugin.m */; };
-		FA2DCA9F2DCE2DAD00C15014 /* test_plugin_impl.mm in Sources */ = {isa = PBXBuildFile; fileRef = FA2DCA9B2DCE2DAD00C15014 /* test_plugin_impl.mm */; };
-		FA2DCAD82DCE2F8B00C15014 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA2DCAD62DCE2F8B00C15014 /* Main.storyboard */; };
-		FA2DCB102DCE311300C15014 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA2DCB0F2DCE311300C15014 /* Assets.xcassets */; };
+		FAC8E7192DDEB99600EF5185 /* BridgeClass.m in Sources */ = {isa = PBXBuildFile; fileRef = FAC8E7172DDEB99600EF5185 /* BridgeClass.m */; };
+		FAC8E7232DDEBA9000EF5185 /* MyPlatformViewFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = FAC8E71D2DDEBA9000EF5185 /* MyPlatformViewFactory.m */; };
+		FAC8E7242DDEBA9000EF5185 /* MyWebview.m in Sources */ = {isa = PBXBuildFile; fileRef = FAC8E7212DDEBA9000EF5185 /* MyWebview.m */; };
+		FAC8E7252DDEBA9000EF5185 /* MyVideoView.m in Sources */ = {isa = PBXBuildFile; fileRef = FAC8E71F2DDEBA9000EF5185 /* MyVideoView.m */; };
+		FAC8E7262DDEBA9000EF5185 /* MyMapView.m in Sources */ = {isa = PBXBuildFile; fileRef = FAC8E71B2DDEBA9000EF5185 /* MyMapView.m */; };
+		FAC8E7292DDEBAC500EF5185 /* PlatformBridgePlatformBridgeAbilityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FAC8E7282DDEBAC500EF5185 /* PlatformBridgePlatformBridgeAbilityViewController.m */; };
+		FAC8E72C2DDEBAD600EF5185 /* PlatformViewPlatformViewAbilityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FAC8E72B2DDEBAD600EF5185 /* PlatformViewPlatformViewAbilityViewController.m */; };
+		FAC8E8872DDEBCA000EF5185 /* arkui-x in Resources */ = {isa = PBXBuildFile; fileRef = FAC8E8862DDEBCA000EF5185 /* arkui-x */; };
+		FAC8E8922DDEBD7000EF5185 /* DynamicShowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FAC8E88F2DDEBD7000EF5185 /* DynamicShowViewController.m */; };
+		FAC8E8932DDEBD7000EF5185 /* BaseModuleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FAC8E88B2DDEBD7000EF5185 /* BaseModuleViewController.m */; };
+		FAC8E8942DDEBD7000EF5185 /* DynamizationJumpController.m in Sources */ = {isa = PBXBuildFile; fileRef = FAC8E8912DDEBD7000EF5185 /* DynamizationJumpController.m */; };
+		FAC8E8952DDEBD7000EF5185 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FAC8E88D2DDEBD7000EF5185 /* BaseViewController.m */; };
+		FAC8E8982DDEC02800EF5185 /* resh in Resources */ = {isa = PBXBuildFile; fileRef = FAC8E8962DDEC02800EF5185 /* resh */; };
+		FAC8E8992DDEC02800EF5185 /* doc in Resources */ = {isa = PBXBuildFile; fileRef = FAC8E8972DDEC02800EF5185 /* doc */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		BB8712F427D450E2000E4763 /* Embed Frameworks */ = {
+		89E41E4829F505CD0004F33E /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				89E41E4729F505CD0004F33E /* libarkui_ios.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -49,56 +46,42 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		DF9C1B6028B9FC4B005DCF58 /* arkui-x */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "arkui-x"; sourceTree = "<group>"; };
-		F0AF1ACD27D3684F008C55DD /* app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = app.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		89E41E4329F505070004F33E /* EntryEntryAbilityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EntryEntryAbilityViewController.m; sourceTree = "<group>"; };
+		89E41E4429F505070004F33E /* EntryEntryAbilityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EntryEntryAbilityViewController.h; sourceTree = "<group>"; };
+		DF9C1B5D28B9FC3A005DCF58 /* libarkui_ios.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = libarkui_ios.xcframework; path = frameworks/libarkui_ios.xcframework; sourceTree = "<group>"; };
+		DFC5555529D7F36400B63EB3 /* arkui-x */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "arkui-x"; sourceTree = "<group>"; };
+		F0AF1ACD27D3684F008C55DD /* EnjoyArkUIX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EnjoyArkUIX.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0AF1AD027D3684F008C55DD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F0AF1AD127D3684F008C55DD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = AppDelegate.m; sourceTree = "<group>"; };
+		F0AF1ADC27D36856008C55DD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F0AF1ADF27D36856008C55DD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F0AF1AE127D36856008C55DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F0AF1AE227D36856008C55DD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		FA2DCA5B2DCE2D2900C15014 /* BaseModuleViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseModuleViewController.h; sourceTree = "<group>"; };
-		FA2DCA5C2DCE2D2900C15014 /* BaseModuleViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseModuleViewController.m; sourceTree = "<group>"; };
-		FA2DCA5D2DCE2D2900C15014 /* BaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
-		FA2DCA5E2DCE2D2900C15014 /* BaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
-		FA2DCA5F2DCE2D2900C15014 /* CenterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CenterViewController.h; sourceTree = "<group>"; };
-		FA2DCA602DCE2D2900C15014 /* CenterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CenterViewController.m; sourceTree = "<group>"; };
-		FA2DCA632DCE2D2900C15014 /* DynamicLoadViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DynamicLoadViewController.h; sourceTree = "<group>"; };
-		FA2DCA642DCE2D2900C15014 /* DynamicLoadViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DynamicLoadViewController.m; sourceTree = "<group>"; };
-		FA2DCA652DCE2D2900C15014 /* DynamicShowViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DynamicShowViewController.h; sourceTree = "<group>"; };
-		FA2DCA662DCE2D2900C15014 /* DynamicShowViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DynamicShowViewController.m; sourceTree = "<group>"; };
-		FA2DCA672DCE2D2900C15014 /* MainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
-		FA2DCA682DCE2D2900C15014 /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
-		FA2DCA692DCE2D2900C15014 /* MineViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MineViewController.h; sourceTree = "<group>"; };
-		FA2DCA6A2DCE2D2900C15014 /* MineViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MineViewController.m; sourceTree = "<group>"; };
-		FA2DCA6B2DCE2D2900C15014 /* OneToMoreViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OneToMoreViewController.h; sourceTree = "<group>"; };
-		FA2DCA6C2DCE2D2900C15014 /* OneToMoreViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OneToMoreViewController.m; sourceTree = "<group>"; };
-		FA2DCA6D2DCE2D2900C15014 /* PlatformBridgeController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PlatformBridgeController.h; sourceTree = "<group>"; };
-		FA2DCA6E2DCE2D2900C15014 /* PlatformBridgeController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PlatformBridgeController.m; sourceTree = "<group>"; };
-		FA2DCA6F2DCE2D2900C15014 /* PlatformViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PlatformViewController.h; sourceTree = "<group>"; };
-		FA2DCA702DCE2D2900C15014 /* PlatformViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PlatformViewController.m; sourceTree = "<group>"; };
-		FA2DCA7D2DCE2D4F00C15014 /* ArkBridgeClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ArkBridgeClass.h; sourceTree = "<group>"; };
-		FA2DCA7E2DCE2D4F00C15014 /* ArkBridgeClass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ArkBridgeClass.m; sourceTree = "<group>"; };
-		FA2DCA802DCE2D4F00C15014 /* MyMapView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyMapView.h; sourceTree = "<group>"; };
-		FA2DCA812DCE2D4F00C15014 /* MyMapView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyMapView.m; sourceTree = "<group>"; };
-		FA2DCA822DCE2D4F00C15014 /* MyPlatformViewFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyPlatformViewFactory.h; sourceTree = "<group>"; };
-		FA2DCA832DCE2D4F00C15014 /* MyPlatformViewFactory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyPlatformViewFactory.m; sourceTree = "<group>"; };
-		FA2DCA842DCE2D4F00C15014 /* MyVideoView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyVideoView.h; sourceTree = "<group>"; };
-		FA2DCA852DCE2D4F00C15014 /* MyVideoView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyVideoView.m; sourceTree = "<group>"; };
-		FA2DCA862DCE2D4F00C15014 /* MyWebview.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyWebview.h; sourceTree = "<group>"; };
-		FA2DCA872DCE2D4F00C15014 /* MyWebview.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyWebview.m; sourceTree = "<group>"; };
-		FA2DCA892DCE2D4F00C15014 /* MainTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainTableViewCell.h; sourceTree = "<group>"; };
-		FA2DCA8A2DCE2D4F00C15014 /* MainTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainTableViewCell.m; sourceTree = "<group>"; };
-		FA2DCA8B2DCE2D4F00C15014 /* PublicAlertView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PublicAlertView.h; sourceTree = "<group>"; };
-		FA2DCA8C2DCE2D4F00C15014 /* PublicAlertView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PublicAlertView.m; sourceTree = "<group>"; };
-		FA2DCA952DCE2DAD00C15014 /* ios_test_plugin.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ios_test_plugin.h; sourceTree = "<group>"; };
-		FA2DCA962DCE2DAD00C15014 /* ios_test_plugin.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ios_test_plugin.m; sourceTree = "<group>"; };
-		FA2DCA972DCE2DAD00C15014 /* LaunchstartIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LaunchstartIcon.png; sourceTree = "<group>"; };
-		FA2DCA982DCE2DAD00C15014 /* PublicHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PublicHeader.h; sourceTree = "<group>"; };
-		FA2DCA992DCE2DAD00C15014 /* test_plugin.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = test_plugin.h; sourceTree = "<group>"; };
-		FA2DCA9A2DCE2DAD00C15014 /* test_plugin_impl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = test_plugin_impl.h; sourceTree = "<group>"; };
-		FA2DCA9B2DCE2DAD00C15014 /* test_plugin_impl.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = test_plugin_impl.mm; sourceTree = "<group>"; };
-		FA2DCAD72DCE2F8B00C15014 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		FA2DCB0F2DCE311300C15014 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FAC8E7162DDEB99600EF5185 /* BridgeClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BridgeClass.h; sourceTree = "<group>"; };
+		FAC8E7172DDEB99600EF5185 /* BridgeClass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BridgeClass.m; sourceTree = "<group>"; };
+		FAC8E71A2DDEBA9000EF5185 /* MyMapView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyMapView.h; sourceTree = "<group>"; };
+		FAC8E71B2DDEBA9000EF5185 /* MyMapView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyMapView.m; sourceTree = "<group>"; };
+		FAC8E71C2DDEBA9000EF5185 /* MyPlatformViewFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyPlatformViewFactory.h; sourceTree = "<group>"; };
+		FAC8E71D2DDEBA9000EF5185 /* MyPlatformViewFactory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyPlatformViewFactory.m; sourceTree = "<group>"; };
+		FAC8E71E2DDEBA9000EF5185 /* MyVideoView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyVideoView.h; sourceTree = "<group>"; };
+		FAC8E71F2DDEBA9000EF5185 /* MyVideoView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyVideoView.m; sourceTree = "<group>"; };
+		FAC8E7202DDEBA9000EF5185 /* MyWebview.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyWebview.h; sourceTree = "<group>"; };
+		FAC8E7212DDEBA9000EF5185 /* MyWebview.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyWebview.m; sourceTree = "<group>"; };
+		FAC8E7272DDEBAC500EF5185 /* PlatformBridgePlatformBridgeAbilityViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PlatformBridgePlatformBridgeAbilityViewController.h; sourceTree = "<group>"; };
+		FAC8E7282DDEBAC500EF5185 /* PlatformBridgePlatformBridgeAbilityViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PlatformBridgePlatformBridgeAbilityViewController.m; sourceTree = "<group>"; };
+		FAC8E72A2DDEBAD600EF5185 /* PlatformViewPlatformViewAbilityViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PlatformViewPlatformViewAbilityViewController.h; sourceTree = "<group>"; };
+		FAC8E72B2DDEBAD600EF5185 /* PlatformViewPlatformViewAbilityViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PlatformViewPlatformViewAbilityViewController.m; sourceTree = "<group>"; };
+		FAC8E8862DDEBCA000EF5185 /* arkui-x */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "arkui-x"; sourceTree = "<group>"; };
+		FAC8E88A2DDEBD7000EF5185 /* BaseModuleViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseModuleViewController.h; sourceTree = "<group>"; };
+		FAC8E88B2DDEBD7000EF5185 /* BaseModuleViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseModuleViewController.m; sourceTree = "<group>"; };
+		FAC8E88C2DDEBD7000EF5185 /* BaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		FAC8E88D2DDEBD7000EF5185 /* BaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		FAC8E88E2DDEBD7000EF5185 /* DynamicShowViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DynamicShowViewController.h; sourceTree = "<group>"; };
+		FAC8E88F2DDEBD7000EF5185 /* DynamicShowViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DynamicShowViewController.m; sourceTree = "<group>"; };
+		FAC8E8902DDEBD7000EF5185 /* DynamizationJumpController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DynamizationJumpController.h; sourceTree = "<group>"; };
+		FAC8E8912DDEBD7000EF5185 /* DynamizationJumpController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DynamizationJumpController.m; sourceTree = "<group>"; };
+		FAC8E8962DDEC02800EF5185 /* resh */ = {isa = PBXFileReference; lastKnownFileType = folder; path = resh; sourceTree = "<group>"; };
+		FAC8E8972DDEC02800EF5185 /* doc */ = {isa = PBXFileReference; lastKnownFileType = folder; path = doc; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +89,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				89E41E4629F505CD0004F33E /* libarkui_ios.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -115,7 +99,9 @@
 		F0AF1AC427D3684F008C55DD = {
 			isa = PBXGroup;
 			children = (
-				DF9C1B6028B9FC4B005DCF58 /* arkui-x */,
+				FAC8E8972DDEC02800EF5185 /* doc */,
+				FAC8E8962DDEC02800EF5185 /* resh */,
+				FAC8E8862DDEBCA000EF5185 /* arkui-x */,
 				F0AF1ACF27D3684F008C55DD /* app */,
 				F0AF1ACE27D3684F008C55DD /* Products */,
 				F0AF1AEB27D36948008C55DD /* Frameworks */,
@@ -125,7 +111,7 @@
 		F0AF1ACE27D3684F008C55DD /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				F0AF1ACD27D3684F008C55DD /* app.app */,
+				F0AF1ACD27D3684F008C55DD /* EnjoyArkUIX.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -133,18 +119,28 @@
 		F0AF1ACF27D3684F008C55DD /* app */ = {
 			isa = PBXGroup;
 			children = (
-				FA2DCA9C2DCE2DAD00C15014 /* Common */,
-				FA2DCA7F2DCE2D4F00C15014 /* PlatformBridge */,
-				FA2DCA882DCE2D4F00C15014 /* PlatformView */,
-				FA2DCA8D2DCE2D4F00C15014 /* View */,
-				FA2DCA712DCE2D2900C15014 /* ViewController */,
+				FAC8E7222DDEBA9000EF5185 /* PlatformView */,
+				FAC8E7182DDEB99600EF5185 /* PlatformBridge */,
+				FAC8E88A2DDEBD7000EF5185 /* BaseModuleViewController.h */,
+				FAC8E88B2DDEBD7000EF5185 /* BaseModuleViewController.m */,
+				FAC8E88C2DDEBD7000EF5185 /* BaseViewController.h */,
+				FAC8E88D2DDEBD7000EF5185 /* BaseViewController.m */,
+				FAC8E88E2DDEBD7000EF5185 /* DynamicShowViewController.h */,
+				FAC8E88F2DDEBD7000EF5185 /* DynamicShowViewController.m */,
+				FAC8E8902DDEBD7000EF5185 /* DynamizationJumpController.h */,
+				FAC8E8912DDEBD7000EF5185 /* DynamizationJumpController.m */,
+				FAC8E72A2DDEBAD600EF5185 /* PlatformViewPlatformViewAbilityViewController.h */,
+				FAC8E72B2DDEBAD600EF5185 /* PlatformViewPlatformViewAbilityViewController.m */,
+				FAC8E7272DDEBAC500EF5185 /* PlatformBridgePlatformBridgeAbilityViewController.h */,
+				FAC8E7282DDEBAC500EF5185 /* PlatformBridgePlatformBridgeAbilityViewController.m */,
+				89E41E4429F505070004F33E /* EntryEntryAbilityViewController.h */,
+				89E41E4329F505070004F33E /* EntryEntryAbilityViewController.m */,
 				F0AF1AD027D3684F008C55DD /* AppDelegate.h */,
 				F0AF1AD127D3684F008C55DD /* AppDelegate.m */,
+				F0AF1ADC27D36856008C55DD /* Assets.xcassets */,
 				F0AF1ADE27D36856008C55DD /* LaunchScreen.storyboard */,
 				F0AF1AE127D36856008C55DD /* Info.plist */,
 				F0AF1AE227D36856008C55DD /* main.m */,
-				FA2DCB0F2DCE311300C15014 /* Assets.xcassets */,
-				FA2DCAD62DCE2F8B00C15014 /* Main.storyboard */,
 			);
 			path = app;
 			sourceTree = "<group>";
@@ -152,84 +148,33 @@
 		F0AF1AEB27D36948008C55DD /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				DF9C1B5D28B9FC3A005DCF58 /* libarkui_ios.xcframework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		FA2DCA712DCE2D2900C15014 /* ViewController */ = {
+		FAC8E7182DDEB99600EF5185 /* PlatformBridge */ = {
 			isa = PBXGroup;
 			children = (
-				FA2DCA5B2DCE2D2900C15014 /* BaseModuleViewController.h */,
-				FA2DCA5C2DCE2D2900C15014 /* BaseModuleViewController.m */,
-				FA2DCA5D2DCE2D2900C15014 /* BaseViewController.h */,
-				FA2DCA5E2DCE2D2900C15014 /* BaseViewController.m */,
-				FA2DCA5F2DCE2D2900C15014 /* CenterViewController.h */,
-				FA2DCA602DCE2D2900C15014 /* CenterViewController.m */,
-				FA2DCA632DCE2D2900C15014 /* DynamicLoadViewController.h */,
-				FA2DCA642DCE2D2900C15014 /* DynamicLoadViewController.m */,
-				FA2DCA652DCE2D2900C15014 /* DynamicShowViewController.h */,
-				FA2DCA662DCE2D2900C15014 /* DynamicShowViewController.m */,
-				FA2DCA672DCE2D2900C15014 /* MainViewController.h */,
-				FA2DCA682DCE2D2900C15014 /* MainViewController.m */,
-				FA2DCA692DCE2D2900C15014 /* MineViewController.h */,
-				FA2DCA6A2DCE2D2900C15014 /* MineViewController.m */,
-				FA2DCA6B2DCE2D2900C15014 /* OneToMoreViewController.h */,
-				FA2DCA6C2DCE2D2900C15014 /* OneToMoreViewController.m */,
-				FA2DCA6D2DCE2D2900C15014 /* PlatformBridgeController.h */,
-				FA2DCA6E2DCE2D2900C15014 /* PlatformBridgeController.m */,
-				FA2DCA6F2DCE2D2900C15014 /* PlatformViewController.h */,
-				FA2DCA702DCE2D2900C15014 /* PlatformViewController.m */,
-			);
-			path = ViewController;
-			sourceTree = "<group>";
-		};
-		FA2DCA7F2DCE2D4F00C15014 /* PlatformBridge */ = {
-			isa = PBXGroup;
-			children = (
-				FA2DCA7D2DCE2D4F00C15014 /* ArkBridgeClass.h */,
-				FA2DCA7E2DCE2D4F00C15014 /* ArkBridgeClass.m */,
+				FAC8E7162DDEB99600EF5185 /* BridgeClass.h */,
+				FAC8E7172DDEB99600EF5185 /* BridgeClass.m */,
 			);
 			path = PlatformBridge;
 			sourceTree = "<group>";
 		};
-		FA2DCA882DCE2D4F00C15014 /* PlatformView */ = {
+		FAC8E7222DDEBA9000EF5185 /* PlatformView */ = {
 			isa = PBXGroup;
 			children = (
-				FA2DCA802DCE2D4F00C15014 /* MyMapView.h */,
-				FA2DCA812DCE2D4F00C15014 /* MyMapView.m */,
-				FA2DCA822DCE2D4F00C15014 /* MyPlatformViewFactory.h */,
-				FA2DCA832DCE2D4F00C15014 /* MyPlatformViewFactory.m */,
-				FA2DCA842DCE2D4F00C15014 /* MyVideoView.h */,
-				FA2DCA852DCE2D4F00C15014 /* MyVideoView.m */,
-				FA2DCA862DCE2D4F00C15014 /* MyWebview.h */,
-				FA2DCA872DCE2D4F00C15014 /* MyWebview.m */,
+				FAC8E71A2DDEBA9000EF5185 /* MyMapView.h */,
+				FAC8E71B2DDEBA9000EF5185 /* MyMapView.m */,
+				FAC8E71C2DDEBA9000EF5185 /* MyPlatformViewFactory.h */,
+				FAC8E71D2DDEBA9000EF5185 /* MyPlatformViewFactory.m */,
+				FAC8E71E2DDEBA9000EF5185 /* MyVideoView.h */,
+				FAC8E71F2DDEBA9000EF5185 /* MyVideoView.m */,
+				FAC8E7202DDEBA9000EF5185 /* MyWebview.h */,
+				FAC8E7212DDEBA9000EF5185 /* MyWebview.m */,
 			);
 			path = PlatformView;
-			sourceTree = "<group>";
-		};
-		FA2DCA8D2DCE2D4F00C15014 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				FA2DCA892DCE2D4F00C15014 /* MainTableViewCell.h */,
-				FA2DCA8A2DCE2D4F00C15014 /* MainTableViewCell.m */,
-				FA2DCA8B2DCE2D4F00C15014 /* PublicAlertView.h */,
-				FA2DCA8C2DCE2D4F00C15014 /* PublicAlertView.m */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		FA2DCA9C2DCE2DAD00C15014 /* Common */ = {
-			isa = PBXGroup;
-			children = (
-				FA2DCA952DCE2DAD00C15014 /* ios_test_plugin.h */,
-				FA2DCA962DCE2DAD00C15014 /* ios_test_plugin.m */,
-				FA2DCA972DCE2DAD00C15014 /* LaunchstartIcon.png */,
-				FA2DCA982DCE2DAD00C15014 /* PublicHeader.h */,
-				FA2DCA992DCE2DAD00C15014 /* test_plugin.h */,
-				FA2DCA9A2DCE2DAD00C15014 /* test_plugin_impl.h */,
-				FA2DCA9B2DCE2DAD00C15014 /* test_plugin_impl.mm */,
-			);
-			path = Common;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -239,11 +184,10 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F0AF1AE627D36856008C55DD /* Build configuration list for PBXNativeTarget "app" */;
 			buildPhases = (
-				C95E21F1B99B4220A35CB6EB /* Run My Script */,
 				F0AF1AC927D3684F008C55DD /* Sources */,
 				F0AF1ACA27D3684F008C55DD /* Frameworks */,
 				F0AF1ACB27D3684F008C55DD /* Resources */,
-				BB8712F427D450E2000E4763 /* Embed Frameworks */,
+				89E41E4829F505CD0004F33E /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -251,7 +195,7 @@
 			);
 			name = app;
 			productName = app;
-			productReference = F0AF1ACD27D3684F008C55DD /* app.app */;
+			productReference = F0AF1ACD27D3684F008C55DD /* EnjoyArkUIX.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -290,59 +234,35 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FA2DCA9D2DCE2DAD00C15014 /* LaunchstartIcon.png in Resources */,
-				FA2DCAD82DCE2F8B00C15014 /* Main.storyboard in Resources */,
+				FAC8E8982DDEC02800EF5185 /* resh in Resources */,
+				FAC8E8992DDEC02800EF5185 /* doc in Resources */,
+				FAC8E8872DDEBCA000EF5185 /* arkui-x in Resources */,
 				F0AF1AE027D36856008C55DD /* LaunchScreen.storyboard in Resources */,
-				DF9C1B6128B9FC4B005DCF58 /* arkui-x in Resources */,
-				FA2DCB102DCE311300C15014 /* Assets.xcassets in Resources */,
+				F0AF1ADD27D36856008C55DD /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		C95E21F1B99B4220A35CB6EB /* Run My Script */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Run My Script";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "# Select whether you want to execute the compile arkts script.\nconfigBuildFlag=false\nif [ \"$configBuildFlag\" = \"false\" ]; then\n\texit 0\nfi\nsh ${SRCROOT}/buildArkTS.sh";
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		F0AF1AC927D3684F008C55DD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FAC8E7292DDEBAC500EF5185 /* PlatformBridgePlatformBridgeAbilityViewController.m in Sources */,
+				FAC8E7232DDEBA9000EF5185 /* MyPlatformViewFactory.m in Sources */,
+				FAC8E7242DDEBA9000EF5185 /* MyWebview.m in Sources */,
+				FAC8E72C2DDEBAD600EF5185 /* PlatformViewPlatformViewAbilityViewController.m in Sources */,
+				FAC8E7252DDEBA9000EF5185 /* MyVideoView.m in Sources */,
+				FAC8E7262DDEBA9000EF5185 /* MyMapView.m in Sources */,
+				FAC8E8922DDEBD7000EF5185 /* DynamicShowViewController.m in Sources */,
+				FAC8E8932DDEBD7000EF5185 /* BaseModuleViewController.m in Sources */,
+				FAC8E8942DDEBD7000EF5185 /* DynamizationJumpController.m in Sources */,
+				FAC8E8952DDEBD7000EF5185 /* BaseViewController.m in Sources */,
 				F0AF1AD227D3684F008C55DD /* AppDelegate.m in Sources */,
-				FA2DCA722DCE2D2900C15014 /* BaseModuleViewController.m in Sources */,
-				FA2DCA732DCE2D2900C15014 /* OneToMoreViewController.m in Sources */,
-				FA2DCA742DCE2D2900C15014 /* MainViewController.m in Sources */,
-				FA2DCA752DCE2D2900C15014 /* BaseViewController.m in Sources */,
-				FA2DCA762DCE2D2900C15014 /* CenterViewController.m in Sources */,
-				FA2DCA8E2DCE2D4F00C15014 /* MyMapView.m in Sources */,
-				FA2DCA8F2DCE2D4F00C15014 /* PublicAlertView.m in Sources */,
-				FA2DCA902DCE2D4F00C15014 /* MyWebview.m in Sources */,
-				FA2DCA912DCE2D4F00C15014 /* MyVideoView.m in Sources */,
-				FA2DCA922DCE2D4F00C15014 /* ArkBridgeClass.m in Sources */,
-				FA2DCA932DCE2D4F00C15014 /* MainTableViewCell.m in Sources */,
-				FA2DCA942DCE2D4F00C15014 /* MyPlatformViewFactory.m in Sources */,
-				FA2DCA772DCE2D2900C15014 /* PlatformBridgeController.m in Sources */,
-				FA2DCA782DCE2D2900C15014 /* MineViewController.m in Sources */,
-				FA2DCA9E2DCE2DAD00C15014 /* ios_test_plugin.m in Sources */,
-				FA2DCA9F2DCE2DAD00C15014 /* test_plugin_impl.mm in Sources */,
-				FA2DCA792DCE2D2900C15014 /* DynamicLoadViewController.m in Sources */,
-				FA2DCA7A2DCE2D2900C15014 /* DynamicShowViewController.m in Sources */,
-				FA2DCA7B2DCE2D2900C15014 /* PlatformViewController.m in Sources */,
+				89E41E4529F505070004F33E /* EntryEntryAbilityViewController.m in Sources */,
 				F0AF1AE327D36856008C55DD /* main.m in Sources */,
+				FAC8E7192DDEB99600EF5185 /* BridgeClass.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -355,14 +275,6 @@
 				F0AF1ADF27D36856008C55DD /* Base */,
 			);
 			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-		FA2DCAD62DCE2F8B00C15014 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				FA2DCAD72DCE2F8B00C15014 /* Base */,
-			);
-			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -489,24 +401,26 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 5QY8V8YXV6;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_BITCODE = NO;
+				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = app/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.example.wzr;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.enjoyarkuix;
+				PRODUCT_MODULE_NAME = EnjoyArkUIX;
+				PRODUCT_NAME = EnjoyArkUIX;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/frameworks/libarkui_ios.xcframework/ios-arm64/libarkui_ios.framework/Headers/include";
 			};
 			name = Debug;
 		};
@@ -519,24 +433,26 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 5QY8V8YXV6;
+				DEVELOPMENT_TEAM = JCS8W75JJS;
 				ENABLE_BITCODE = NO;
+				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = app/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.example.wzr;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.enjoyarkuix;
+				PRODUCT_MODULE_NAME = EnjoyArkUIX;
+				PRODUCT_NAME = EnjoyArkUIX;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/frameworks/libarkui_ios.xcframework/ios-arm64/libarkui_ios.framework/Headers/include";
 			};
 			name = Release;
 		};

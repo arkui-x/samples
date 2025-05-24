@@ -1,0 +1,9 @@
+{
+  "src": [
+    "pages/Index",
+    "pages/common/CommonComponent1",
+    "pages/common/CommonComponent2",
+    "pages/common/CommonComponent3",
+    "pages/common/CommonComponent4"
+  ]
+}

@@ -16,11 +16,11 @@
 package com.example.enjoyarkuix.platformbridge;
 
 import android.content.Context;
+import android.util.Log;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import ohos.ace.adapter.ALog;
 import ohos.ace.adapter.capability.bridge.BridgeManager;
 import ohos.ace.adapter.capability.bridge.BridgePlugin;
 import ohos.ace.adapter.capability.bridge.IMessageListener;
@@ -34,6 +34,8 @@ import ohos.ace.adapter.capability.bridge.TaskOption;
  * @since 2025-01-15
  */
 public class Bridge extends BridgePlugin implements IMessageListener, IMethodResult {
+    private static final String LOG_TAG = "[BridgeNative]";
+
     private String name;
 
     private Context context;
@@ -90,8 +92,6 @@ public class Bridge extends BridgePlugin implements IMessageListener, IMethodRes
         setMessageListener(this);
     }
 
-    // java侧准备的测试函数 ---------------------------------------------------------------------------
-
     /**
      * Func: getHelloArkUI
      *
@@ -100,7 +100,7 @@ public class Bridge extends BridgePlugin implements IMessageListener, IMethodRes
      * @since 2025-01-07
      */
     public String getHelloArkUI(String stringParam) {
-        ALog.i("Android Bridge getHelloArkUI stringParam is ", stringParam);
+        Log.i(LOG_TAG, "Android Bridge getHelloArkUI stringParam is " + stringParam);
         return "Hello ArkUI! " + stringParam;
     }
 
@@ -112,7 +112,7 @@ public class Bridge extends BridgePlugin implements IMessageListener, IMethodRes
      * @since 2025-01-07
      */
     public String methodOfPlatform(String stringParam) {
-        ALog.i("Android Bridge methodOfPlatform stringParam is ", stringParam);
+        Log.i(LOG_TAG, "Android Bridge methodOfPlatform stringParam is " + stringParam);
         List<Object> paramObject = new ArrayList<>();
         paramObject.add(stringParam);
         Object[] paramArray = paramObject.toArray();
@@ -121,26 +121,24 @@ public class Bridge extends BridgePlugin implements IMessageListener, IMethodRes
         return "Method of Platform call successful." + stringParam;
     }
 
-    // java侧准备的测试函数 ---------------------------------------------------------------------------
-
     @Override
     public Object onMessage(Object object) {
-        ALog.i("onMessage data:", object.toString());
+        Log.i(LOG_TAG, "onMessage data: " + object.toString());
         return "PlatformBridge Successfully receives the TsMessage. " + object.toString();
     }
 
     @Override
     public void onMessageResponse(Object object) {
-        ALog.i("onMessageResponse data:", object.toString());
+        Log.i(LOG_TAG, "onMessageResponse data: " + object.toString());
     }
 
     @Override
     public void onSuccess(Object object) {
         if (object == null) {
-            ALog.i("bridge return data is null", "call Success");
+            Log.i(LOG_TAG, "bridge return data is null");
             sendMessage("PlatformBridge successfully calls method of TS, The method is of type void");
         } else {
-            ALog.i("bridge onSuccess data:", object.toString());
+            Log.i("bridge onSuccess data: ", object.toString());
             String result =
                     "PlatformBridge successfully calls method of TS, and the return value is " + object.toString();
             sendMessage(result);
@@ -149,11 +147,11 @@ public class Bridge extends BridgePlugin implements IMessageListener, IMethodRes
 
     @Override
     public void onError(String methodName, int errorCode, String errorMessage) {
-        ALog.e("Bridge:", "onError: " + methodName + " " + String.valueOf(errorCode) + errorMessage);
+        Log.e(LOG_TAG, "onError: " + methodName + " " + String.valueOf(errorCode) + errorMessage);
     }
 
     @Override
     public void onMethodCancel(String methodName) {
-        ALog.i("Bridge:", "onMethodCancel");
+        Log.i(LOG_TAG, "onMethodCancel");
     }
 }

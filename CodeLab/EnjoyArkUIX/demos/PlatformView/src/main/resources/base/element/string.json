@@ -1,0 +1,16 @@
+{
+  "string": [
+    {
+      "name": "module_desc",
+      "value": "module description"
+    },
+    {
+      "name": "PlatformViewAbility_desc",
+      "value": "description"
+    },
+    {
+      "name": "PlatformViewAbility_label",
+      "value": "label"
+    }
+  ]
+}

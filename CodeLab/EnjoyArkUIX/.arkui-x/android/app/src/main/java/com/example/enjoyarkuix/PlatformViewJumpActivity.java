@@ -19,14 +19,15 @@ import android.os.Bundle;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.widget.TextView;
-import com.example.enjoyarkuix.base.BaseActivity;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 /**
  * PlatformViewJumpActivity
  *
  * @since 20
  */
-public class PlatformViewJumpActivity extends BaseActivity {
+public class PlatformViewJumpActivity extends AppCompatActivity {
     private WebView webview;
 
     /**

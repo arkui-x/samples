@@ -1,0 +1,16 @@
+{
+  "integer": [
+    {
+      "name": "Resource_TextTitle_fontSize",
+      "value": 30
+    },
+    {
+      "name": "Row_entry_width",
+      "value": 200
+    },
+    {
+      "name": "Row_entry_height",
+      "value": 200
+    }
+  ]
+}

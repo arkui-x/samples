@@ -1,0 +1,26 @@
+{
+  "module": {
+    "name": "dynamicHapOne",
+    "type": "feature",
+    "description": "$string:module_desc",
+    "mainElement": "DynamicHapOneAbility",
+    "deviceTypes": [
+      "default"
+    ],
+    "deliveryWithInstall": true,
+    "installationFree": false,
+    "pages": "$profile:main_pages",
+    "abilities": [
+      {
+        "name": "DynamicHapOneAbility",
+        "srcEntry": "./ets/dynamichaponeability/DynamicHapOneAbility.ets",
+        "description": "$string:DynamicHapOneAbility_desc",
+        "icon": "$media:layered_image",
+        "label": "$string:DynamicHapOneAbility_label",
+        "startWindowIcon": "$media:startIcon",
+        "startWindowBackground": "$color:start_window_background",
+        "exported": true
+      }
+    ]
+  }
+}

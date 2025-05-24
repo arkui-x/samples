@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2025 Huawei Device Co., Ltd.
+ * Copyright (c) Huawei Technologies Co., Ltd. 2025-2025. All rights reserved.
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
@@ -14,13 +14,14 @@
  */
 
 #import "AppDelegate.h"
-#import "MainViewController.h"
-#import "CenterViewController.h"
-#import "MineViewController.h"
+#import "EntryEntryAbilityViewController.h"
+#import "PlatformViewPlatformViewAbilityViewController.h"
+#import "PlatformBridgePlatformBridgeAbilityViewController.h"
+#import "DynamizationJumpController.h"
 #import <libarkui_ios/StageApplication.h>
 
-
 #define BUNDLE_DIRECTORY @"arkui-x"
+#define BUNDLE_NAME @"com.example.enjoyarkuix"
 
 @interface AppDelegate ()
 
@@ -31,40 +32,97 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     [StageApplication configModuleWithBundleDirectory:BUNDLE_DIRECTORY];
     [StageApplication launchApplication];
-    MainViewController *mainVC = [[MainViewController alloc] init];
-    [self setTabItemNormalImg:@"firstPageIcon_N" selectImg:@"firstPageIcon_S" title:@"自测试" vcName:mainVC];
-    CenterViewController *centerVC = [[CenterViewController alloc] init];
-    [self setTabItemNormalImg:@"otherIcon_N" selectImg:@"otherIcon_S" title:@"演示" vcName:centerVC];
-    MineViewController *mineVC = [[MineViewController alloc] init];
-    [self setTabItemNormalImg:@"mineIcon_N" selectImg:@"mineIcon_S" title:@"版本" vcName:mineVC];
-    UINavigationController *mainNav = [[UINavigationController alloc] initWithRootViewController:mainVC];
-    UINavigationController *centerNav = [[UINavigationController alloc] initWithRootViewController:centerVC];
-    UINavigationController *mineNav = [[UINavigationController alloc] initWithRootViewController:mineVC];
     
-    UITabBarController *tabBarController = [[UITabBarController alloc] init];
-    tabBarController.viewControllers = @[mainNav, centerNav, mineNav];
-    tabBarController.tabBar.barTintColor = [UIColor whiteColor];
-    tabBarController.tabBar.tintColor = [UIColor systemBlueColor];
-    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
-    self.window.backgroundColor = [UIColor whiteColor];
-    self.window.rootViewController = tabBarController;
-    [self.window makeKeyAndVisible];
-
+    NSString *instanceName = [NSString stringWithFormat:@"%@:%@:%@",BUNDLE_NAME, @"entry", @"EntryAbility"];
+    EntryEntryAbilityViewController *mainView = [[EntryEntryAbilityViewController alloc] initWithInstanceName:instanceName];
+    [self setNavRootVC:mainView];
     return YES;
 }
 
-- (UIInterfaceOrientationMask)application:(UIApplication *)application supportedInterfaceOrientationsForWindow:(UIWindow *)window {
-    if (_allowRotation) {
-        return UIInterfaceOrientationMaskAll;
+- (BOOL)application:(UIApplication *)app openURL:(NSURL *)url options:(NSDictionary<NSString *,id> *)options {
+    NSLog(@"appdelegate openUrl callback, url : %@", url.absoluteString); // eg: (com.entry.arkui://entry?OtherAbility)
+    
+    NSString *bundleName = url.scheme;
+    NSString *moduleName = url.host;
+    NSString *abilityName, *params;
+
+    NSURLComponents * urlComponents = [NSURLComponents componentsWithString:url.absoluteString];
+    NSArray <NSURLQueryItem *> *array = urlComponents.queryItems;
+    for (NSURLQueryItem * item in array) {
+        if ([item.name isEqualToString:@"abilityName"]) {
+            abilityName = item.value;
+        } else if ([item.name isEqualToString:@"params"]) {
+            params = item.value;
+        }
     }
-    return UIInterfaceOrientationMaskPortrait;
+
+    [self handleOpenUrlWithBundleName:bundleName
+                           moduleName:moduleName
+                          abilityName:abilityName
+                               params:params, nil];
+    
+    return YES;
 }
 
-- (void)setTabItemNormalImg:(NSString *)normalImg selectImg:(NSString *)selectImg title:(NSString *)title vcName:(UIViewController *)vcName {
-    vcName.tabBarItem.image = [UIImage imageNamed:normalImg];
-    vcName.tabBarItem.selectedImage = [UIImage imageNamed:selectImg];
-    vcName.tabBarItem.title = title;
-    vcName.tabBarItem.imageInsets = UIEdgeInsetsMake(0, 0, 0, 0);
+- (BOOL)handleOpenUrlWithBundleName:(NSString *)bundleName
+                         moduleName:(NSString *)moduleName
+                        abilityName:(NSString *)abilityName
+                             params:(NSString *)params, ...NS_REQUIRES_NIL_TERMINATION {
+    
+    id rootVC = [[UIApplication sharedApplication].delegate window].rootViewController;
+    BOOL hasRoot = NO;
+    if ([rootVC isKindOfClass:[UINavigationController class]]) {
+        hasRoot = YES;
+    }
+    
+    id subStageVC = nil;
+    
+    if ([moduleName isEqualToString:@"entry"] && [abilityName isEqualToString:@"EntryAbility"]) {
+        NSString *instanceName = [NSString stringWithFormat:@"%@:%@:%@",bundleName, moduleName, abilityName];
+        EntryEntryAbilityViewController *entryOtherVC = [[EntryEntryAbilityViewController alloc] initWithInstanceName:instanceName];
+        entryOtherVC.params = params;
+        subStageVC = (EntryEntryAbilityViewController *)entryOtherVC;
+    } else if ([moduleName isEqualToString:@"PlatformView"] && [abilityName isEqualToString:@"PlatformViewAbility"]) {
+        NSString *instanceName = [NSString stringWithFormat:@"%@:%@:%@",bundleName, moduleName, abilityName];
+        PlatformViewPlatformViewAbilityViewController *otherVC = [[PlatformViewPlatformViewAbilityViewController alloc] initWithInstanceName:instanceName];
+        subStageVC = (PlatformViewPlatformViewAbilityViewController *)otherVC;
+    } else if ([moduleName isEqualToString:@"PlatformBridge"] && [abilityName isEqualToString:@"PlatformBridgeAbility"]) {
+        NSString *instanceName = [NSString stringWithFormat:@"%@:%@:%@",bundleName, moduleName, abilityName];
+        PlatformBridgePlatformBridgeAbilityViewController *otherVC = [[PlatformBridgePlatformBridgeAbilityViewController alloc] initWithInstanceName:instanceName];
+        subStageVC = (PlatformBridgePlatformBridgeAbilityViewController *)otherVC;
+    }  else if ([moduleName isEqualToString:@"Dynamization"] && [abilityName isEqualToString:@"Jump"]) {
+        NSString *instanceName = [NSString stringWithFormat:@"%@:%@:%@",bundleName, moduleName, abilityName];
+        subStageVC = [[DynamizationJumpController alloc] initWithInstanceName:instanceName];
+    }// other ViewController
+    
+    if (!subStageVC) {
+        return NO;
+    }
+    
+    if (!hasRoot) {
+        [self setNavRootVC:subStageVC];
+    } else {
+        UINavigationController *rootNav = (UINavigationController *)self.window.rootViewController;
+        [rootNav pushViewController:subStageVC animated:YES];
+    }
+    return YES;
+}
+
+- (void)setNavRootVC:(id)viewController {
+    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    self.window.backgroundColor = [UIColor whiteColor];
+    [self.window makeKeyAndVisible];
+    UINavigationController *navi = [[UINavigationController alloc]initWithRootViewController:viewController];
+    [self setNaviAppearance:navi];
+    self.window.rootViewController = navi;
+}
+
+- (void)setNaviAppearance:(UINavigationController *)navi {
+    UINavigationBarAppearance *appearance = [UINavigationBarAppearance new];
+    [appearance configureWithOpaqueBackground];
+    appearance.backgroundColor = UIColor.whiteColor;
+    navi.navigationBar.standardAppearance = appearance;
+    navi.navigationBar.scrollEdgeAppearance = navi.navigationBar.standardAppearance;
 }
 
 @end
