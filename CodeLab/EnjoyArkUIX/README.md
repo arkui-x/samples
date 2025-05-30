@@ -4,7 +4,7 @@
 
 **EnjoyArkUIX** 是一个基于ArkUI-X跨平台框架能力构建的集自测试、演示为一体的工程，功能点涉及跨平台关键特性演示、ArkUI组件、子系统API验证等，后续将通过持续集成的方式补齐跨平台支持的特性功能点，用于看护ArkUI-X跨平台框架能力。<br>
 
-应用建议效果预览
+应用效果预览
 
 | 页面 | Android平台                                                 | iOS平台                                                 |
 | ---- | ----------------------------------------------------------- | ------------------------------------------------------- |
@@ -34,7 +34,7 @@
 
 ### 二、在当前框架添加新用例
 
-创建module `在对应目录中（鼠标右键｜windows（`ctrl+N `）/Mac（`command+N`））
+创建module
 
 ![module_Create](./screenshots/create-demo.png)
 
@@ -46,14 +46,13 @@
 
 ![module_Create](./screenshots/create2.png)
 
-创建跨平台工程成功后，在Android工程中自动生成相应的activity，通过setInstanceName()是拉起跨平台工程入口
+创建跨平台工程成功后，在Android工程中自动生成相应的activity，通过setInstanceName()拉起跨平台工程入口
 
 ![module_Create](./screenshots/Android-activity.png)
 
 在 iOS 项目中，相应的文件将会自动生成，以确保跨平台功能的一致性和可用性![module_Create](./screenshots/ios-create.png)
 
-> 跨平台工程创建成功后，在`entry`模块下 `data`目录中添加要跳转到的跨平台模块的数据
->
+跨平台工程创建成功后，在`entry`模块下 `data`目录中添加要跳转到的跨平台模块的数据
 > - DemosData：首页演示项目工程数据源
 > - SelfTestData：首页自测试项目工程数据源
 > - VersionsData：首页版本项目工程数据源
@@ -87,15 +86,15 @@
 
 ![ace build hap](./screenshots/build_hap1.png)
 
-使用`ace build apk` 导入库文件
+使用`ace build apk` 构建`apk`
 
 <img src="./screenshots/build_apk.png" alt="ace build hap" style="zoom:150%;" />
 
-若出现以下命令，则编译成功，可以使用 `ace install apk`，或使用 `Android Studio` 运行安装到手机上
+若出现以下打印信息，则编译成功，使用 `ace install apk`安装到手机上
 
 ![ace build success](./screenshots/build_apk1.png)
 
-若出现以下问题，执行命令 `ohpm install`，重新执行 `ace build ios/apk`
+若出现以下问题，执行命令 `ohpm install`，再重新执行 `ace build ios/apk`
 
 ![fail_result](./screenshots/error.png)
 
@@ -129,7 +128,7 @@
 
 ## 约束与限制
 
-1.本示例仅支持标准Android和iOS和设备系统上运行。<br>
+1.本示例仅支持标准Android和iOS设备系统上运行。<br>
 
 2.本示例已适配API version 16版本的ArkUI-X SDK。<br>
 
