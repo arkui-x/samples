@@ -2,9 +2,9 @@
 
 ## 介绍
 
-**EnjoyArkUIX** 是一个基于ArkUI-X跨平台框架能力构建的集自测试、演示为一体的工程，功能点涉及跨平台关键特性演示、ArkUI组件、子系统API验证等，后续将通过持续集成的方式补齐跨平台支持的特性功能点，用于看护ArkUI-X跨平台框架能力。<br>
+**EnjoyArkUIX** 是一个基于ArkUI-X跨平台框架能力构建的集自测试、演示为一体的工程，功能点涉及跨平台关键特性演示、ArkUI组件、子系统API验证等，后续将通过持续集成的方式补齐跨平台支持的特性功能点，用于看护ArkUI-X跨平台框架能力。`<br>`
 
-应用建议效果预览
+应用效果预览
 
 | 页面 | Android平台                                                 | iOS平台                                                 |
 | ---- | ----------------------------------------------------------- | ------------------------------------------------------- |
@@ -12,12 +12,13 @@
 
 ### 使用说明
 
-- 点击**自测试**、**演示**、**版本**三个按钮或左右滑动切换不同视图。<br>
-- 点击二级导航（如PlatformBridge、PlatformView等），若存在三级导航则展开三级导航；若不存在三级导航，则跳转至详情页面。<br>
-- 若存在三级导航，点击跳转至详情页面。<br>
+- 点击**自测试**、**演示**、**版本**三个按钮或左右滑动切换不同视图。`<br>`
+- 点击二级导航（如PlatformBridge、PlatformView等），若存在三级导航则展开三级导航；若不存在三级导航，则跳转至详情页面。`<br>`
+- 若存在三级导航，点击跳转至详情页面。`<br>`
 
 ## 案例列表
-应用案例列表及平台支持情况。<br>
+
+应用案例列表及平台支持情况。`<br>`
 
 | 案例名称       | 案例位置（应用界面案例入口） | Android | iOS    |
 | -------------- | ---------------------------- | ------- | ------ |
@@ -30,11 +31,11 @@
 
 ### 一、首页实现
 
-本示例使用[Tabs容器组件](https://gitee.com/openharmony/docs/blob/master/zh-cn/application-dev/reference/apis-arkui/arkui-ts/ts-container-tabs.md)搭建整体应用框架，每个[TabContent内容视图](https://gitee.com/openharmony/docs/blob/master/zh-cn/application-dev/reference/apis-arkui/arkui-ts/ts-container-tabcontent.md)使用[List容器组件](https://gitee.com/openharmony/docs/blob/master/zh-cn/application-dev/reference/apis-arkui/arkui-ts/ts-container-list.md)布局，在每个[ListItem](https://gitee.com/openharmony/docs/blob/master/zh-cn/application-dev/reference/apis-arkui/arkui-ts/ts-container-listitem.md)中使用[循环渲染](https://gitee.com/openharmony/docs/blob/master/zh-cn/application-dev/ui/state-management/arkts-rendering-control-foreach.md)加载此分类下分类导航数据，底部导航菜单使用[TabContent中tabBar属性](https://gitee.com/openharmony/docs/blob/master/zh-cn/application-dev/reference/apis-arkui/arkui-ts/ts-container-tabcontent.md#%E5%B1%9E%E6%80%A7)设置自定义样式 。<br>
+本示例使用[Tabs容器组件](https://gitee.com/openharmony/docs/blob/master/zh-cn/application-dev/reference/apis-arkui/arkui-ts/ts-container-tabs.md)搭建整体应用框架，每个[TabContent内容视图](https://gitee.com/openharmony/docs/blob/master/zh-cn/application-dev/reference/apis-arkui/arkui-ts/ts-container-tabcontent.md)使用[List容器组件](https://gitee.com/openharmony/docs/blob/master/zh-cn/application-dev/reference/apis-arkui/arkui-ts/ts-container-list.md)布局，在每个[ListItem](https://gitee.com/openharmony/docs/blob/master/zh-cn/application-dev/reference/apis-arkui/arkui-ts/ts-container-listitem.md)中使用[循环渲染](https://gitee.com/openharmony/docs/blob/master/zh-cn/application-dev/ui/state-management/arkts-rendering-control-foreach.md)加载此分类下分类导航数据，底部导航菜单使用[TabContent中tabBar属性](https://gitee.com/openharmony/docs/blob/master/zh-cn/application-dev/reference/apis-arkui/arkui-ts/ts-container-tabcontent.md#%E5%B1%9E%E6%80%A7)设置自定义样式 。`<br>`
 
 ### 二、在当前框架添加新用例
 
-创建module `在对应目录中（鼠标右键｜windows（`ctrl+N `）/Mac（`command+N`））
+创建module
 
 ![module_Create](./screenshots/create-demo.png)
 
@@ -46,14 +47,14 @@
 
 ![module_Create](./screenshots/create2.png)
 
-创建跨平台工程成功后，在Android工程中自动生成相应的activity，通过setInstanceName()是拉起跨平台工程入口
+创建跨平台工程成功后，在Android工程中自动生成相应的Activity，通过setInstanceName()拉起跨平台工程入口
 
 ![module_Create](./screenshots/Android-activity.png)
 
 在 iOS 项目中，相应的文件将会自动生成，以确保跨平台功能的一致性和可用性![module_Create](./screenshots/ios-create.png)
 
-> 跨平台工程创建成功后，在`entry`模块下 `data`目录中添加要跳转到的跨平台模块的数据
->
+跨平台工程创建成功后，在 `entry`模块下 `data`目录中添加要跳转到的跨平台模块的数据
+
 > - DemosData：首页演示项目工程数据源
 > - SelfTestData：首页自测试项目工程数据源
 > - VersionsData：首页版本项目工程数据源
@@ -69,39 +70,41 @@
 
 在项目开发中，根据具体需求，可以选择多种不同的实现方法来展示首页导航栏，以实现多样化的视觉效果和交互体验。
 
-| 下拉导航栏写法：                                        | 效果展示：                                |
-| ------------------------------------------------------------ | ----------------------------------------- |
-| <img src="./screenshots/code1.png" alt="module_Create" style="zoom:50%;" /> | ![module_Create](./screenshots/code2.png) |
-
-
+| 下拉导航栏写法：                                                                | 效果展示：                              |
+| ------------------------------------------------------------------------------- | --------------------------------------- |
+| `<img src="./screenshots/code1.png" alt="module_Create" style="zoom:50%;" />` | ![module_Create](./screenshots/code2.png) |
 
 ### 三、编译运行
 
 #### Android编译运行
 
-使用`ace build hap` 编译出对应模块hap包
+使用 `ace build hap` 编译出对应模块hap包
 
 <img src="./screenshots/build_hap.png" alt="ace build hap" style="zoom:150%;" />
 
-若出现以下命令，则编译`hap`包成功
+若出现以下命令，则编译 `hap`包成功
 
 ![ace build hap](./screenshots/build_hap1.png)
 
-使用`ace build apk` 导入库文件
+使用 `ace build apk` 构建 `apk`
 
 <img src="./screenshots/build_apk.png" alt="ace build hap" style="zoom:150%;" />
 
-若出现以下命令，则编译成功，可以使用 `ace install apk`，或使用 `Android Studio` 运行安装到手机上
+若出现以下打印信息，则编译成功，使用 `ace install apk`安装到手机上
 
 ![ace build success](./screenshots/build_apk1.png)
 
-若出现以下问题，执行命令 `ohpm install`，重新执行 `ace build ios/apk`
+#### iOS编译运行(需在Mac上执行)
 
-![fail_result](./screenshots/error.png)
+在Mac上安装运行，如若出现以下问题，则是缺少签名信息
 
-#### iOS编译运行
+![build_fail](./screenshots/ace_build_fail.png)
 
-使用 `ace build hap` 编译出对应模块hap包，`ace build ios` 导入库文件
+解决方案，需要打开 `.arkui-x/ios/app.xcodeproj`，配置签名信息
+
+![fail_result](./screenshots/ace_build_fail_result.png)
+
+配置完签名后，使用 `ace build hap` 编译出对应模块hap包，`ace build ios` 导入库文件
 
 <img src="./screenshots/ace_build_ios.png" alt="ace build ios" style="zoom:150%;" />
 
@@ -109,19 +112,17 @@
 
 ![ace build success](./screenshots/ace_build_result.png)
 
-若出现以下问题，则是缺少签名信息
+#### DevEco Studio编译时报错问题解决
 
-![build_fail](./screenshots/ace_build_fail.png)
+若出现以下编译问题，参考[编译报错“Cannot find module XXX or its corresponding type declarations”](https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs-V5/faqs-compiling-and-building-4-V5)，或执行命令 `ohpm install`，再重新执行 `ace build ios/apk`
 
-解决方案，需要打开`.arkui-x/ios/app.xcodeproj`，配置签名信息
-
-![fail_result](./screenshots/ace_build_fail_result.png)
+![](./screenshots/error.png)
 
 ## 相关权限
 
 [ohos.permission.INTERNET](https://gitee.com/openharmony/docs/blob/master/zh-cn/application-dev/security/AccessToken/permissions-for-all.md#ohospermissioninternet)
 
-- 本项目使用Web组件加载网页，请确保设备已连接网络<br>
+- 本项目使用Web组件加载网页，请确保设备已连接网络`<br>`
 
 ## 依赖
 
@@ -129,16 +130,16 @@
 
 ## 约束与限制
 
-1.本示例仅支持标准Android和iOS和设备系统上运行。<br>
+1.本示例仅支持在标准Android和iOS设备系统上运行。`<br>`
 
-2.本示例已适配API version 16版本的ArkUI-X SDK。<br>
+2.本示例已适配API version 16版本的ArkUI-X SDK。`<br>`
 
-3.本示例需要使用DevEco Studio 5.0.4 Release。<br>
+3.本示例需要使用DevEco Studio 5.0.4 Release。`<br>`
 
 ## 工程目录
 
 ```tsx
-.		
+.	
 ├── .arkui-x
 |    ├── android
 |    │   ├── app
