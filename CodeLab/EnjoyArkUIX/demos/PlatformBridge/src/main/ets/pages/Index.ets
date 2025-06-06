@@ -16,6 +16,8 @@
 import bridge from '@arkui-x.bridge';
 import deviceInfo from '@ohos.deviceInfo';
 import Logger from '../util/Logger';
+import { TitleBar } from 'titleBar';
+import { CommonItemSelect } from './CommonItemSelect'
 
 const TAG: string = '[BridgePage] '
 const osFullNameInfo: string = deviceInfo.osFullName
@@ -32,11 +34,14 @@ struct BridgePage {
   private bridgeImpl: undefined | bridge.BridgeObject = undefined;
   private bridgeCodec: undefined | bridge.BridgeObject = undefined;
   private BridgeTask: undefined | bridge.BridgeObject = undefined;
-  @State btnWidth: string = '75%';
-  @State btnHeight: number = 50;
+  @State callMethodFlag: boolean = false;
+  @State sendMessageFlag: boolean = false;
+  @State btnWidth: string = '55%';
+  @State btnHeight: number = 40;
   @State title: string = 'PlatformBridge';
   @State nativeResponse: string = '';
   @State receivePlatformSendMessage: string = '';
+  @State osName: string = deviceInfo.osFullName;
 
   aboutToAppear(): void {
     Logger.info(TAG, 'The Device Platform is :' + JSON.stringify(platform));
@@ -70,179 +75,214 @@ struct BridgePage {
 
   build() {
     Column() {
-      Row() {
-        Scroll() {
+      TitleBar({ title: $r('app.string.PlatformBridge_title') })
+        .visibility(this.osName.startsWith('iOS') ? Visibility.Hidden : Visibility.Visible)
+      Column() {
+        Row() {
           Column() {
-            Text(this.title)
-              .fontSize(35)
-              .margin(5)
+            Column() {
+              Scroll() {
+                Column() {
+                  if (this.sendMessageFlag) {
+                    Text('注册函数被调用结果: ' + this.receivePlatformSendMessage)
+                      .fontSize(20)
+                      .margin(5)
+                  }
 
-            Text('原生侧返回结果: ' + this.nativeResponse)
-              .fontSize(20)
-              .margin(5)
-
-            Text('注册函数被调用结果: ' + this.receivePlatformSendMessage)
-              .fontSize(20)
-              .margin(5)
-
-            Text('Bridge JSON模式(默认模式)')
-              .fontSize(20)
-              .margin(5)
-
-            Button('sendMessage JSON_TYPE')
-              .width(this.btnWidth)
-              .height(this.btnHeight)
-              .fontSize(15)
-              .margin(5)
-              .onClick(async () => {
-                if (this.bridgeImpl != undefined) {
-                  this.bridgeImpl.sendMessage('(JSON_TYPE)').then((res) => {
-                    this.nativeResponse = '发送数据到原生侧响应成功, 返回数据为 ' + res;
-                    Logger.info(TAG, this.nativeResponse);
-                  }).catch((err: Error) => {
-                    this.nativeResponse = '发送数据到原生侧响应失败： ' + err;
-                    Logger.info(TAG, this.nativeResponse);
-                  });
+                  if (this.callMethodFlag) {
+                    Text('原生侧返回结果: ' + this.nativeResponse)
+                      .fontSize(20)
+                      .margin(5)
+                  }
                 }
-              })
+              }.scrollBar(BarState.Off)
+            }
+            .size({ width: '98%', height: '40%' })
+            .border({
+              width: 3,
+              color: Color.Grey,
+              radius: 30,
+              style: BorderStyle.Solid
+            })
+            .margin({ top: 10, bottom: 10 })
+            .justifyContent(FlexAlign.Center)
+            .alignItems(HorizontalAlign.Center)
 
-            Button('callMethod JSON_TYPE')
-              .width(this.btnWidth)
-              .height(this.btnHeight)
-              .fontSize(15)
-              .margin(5)
-              .onClick(async () => {
-                if (this.bridgeImpl != undefined) {
-                  this.bridgeImpl.callMethod('getHelloArkUI', '(JSON_TYPE)').then((res) => {
-                    this.nativeResponse = '调用原生侧函数调用成功, 返回数据为 ' + res;
-                    Logger.info(TAG, this.nativeResponse);
-                  }).catch((err: Error) => {
-                    this.nativeResponse = '调用原生侧函数调用失败： ' + err;
-                    Logger.info(TAG, this.nativeResponse);
-                  });
+
+            Divider().size({ width: '100%', height: 3 }).backgroundColor(Color.Black).margin({ top: 20, bottom: 20 })
+
+            Column() {
+              Scroll() {
+                Column({ space: 2 }) {
+                  CommonItemSelect({
+                    name: 'JSON模式(默认模式)',
+                    selects: ['sendMessage JSON_TYPE', 'callMethod JSON_TYPE', 'callMethodWithCallback JSON_TYPE'],
+                    callback: (index) => {
+                      switch (index) {
+                        case 0:
+                          if (this.bridgeImpl != undefined) {
+                            this.bridgeImpl.sendMessage('(JSON_TYPE)').then((res) => {
+                              this.sendMessageFlag = false;
+                              this.callMethodFlag = true;
+                              this.nativeResponse = '发送数据到原生侧响应成功, 返回数据为 ' + res;
+                              Logger.info(TAG, this.nativeResponse);
+                            }).catch((err: Error) => {
+                              this.sendMessageFlag = false;
+                              this.callMethodFlag = true;
+                              this.nativeResponse = '发送数据到原生侧响应失败： ' + err;
+                              Logger.info(TAG, this.nativeResponse);
+                            });
+                          }
+                          break
+                        case 1:
+                          if (this.bridgeImpl != undefined) {
+                            this.bridgeImpl.callMethod('getHelloArkUI', '(JSON_TYPE)').then((res) => {
+                              this.sendMessageFlag = false;
+                              this.callMethodFlag = true;
+                              this.nativeResponse = '调用原生侧函数调用成功, 返回数据为 ' + res;
+                              Logger.info(TAG, this.nativeResponse);
+                            }).catch((err: Error) => {
+                              this.sendMessageFlag = false;
+                              this.callMethodFlag = true;
+                              this.nativeResponse = '调用原生侧函数调用失败： ' + err;
+                              Logger.info(TAG, this.nativeResponse);
+                            });
+                          }
+                          break
+                        case 2:
+                          if (this.bridgeImpl != undefined) {
+                            this.bridgeImpl.callMethodWithCallback('methodOfPlatform', methodOfTs, '(JSON_TYPE)')
+                              .then((res) => {
+                                this.sendMessageFlag = true;
+                                this.callMethodFlag = true;
+                                this.nativeResponse = '注册Ts侧函数并调用原生侧函数调用成功, 返回数据为 ' + res;
+                              })
+                              .catch((err: Error) => {
+                                this.sendMessageFlag = true;
+                                this.callMethodFlag = true;
+                                this.nativeResponse = '注册Ts侧函数并调用原生侧函数失败： ' + err;
+                              });
+                          }
+                          break
+                        default:
+                      }
+                    }
+                  })
+
+                  CommonItemSelect({
+                    name: '二进制编解码模式',
+                    selects: ['sendMessage BINARY_TYPE', 'callMethod BINARY_TYPE',
+                      'callMethodWithCallback BINARY_TYPE'],
+                    callback: (index) => {
+                      switch (index) {
+                        case 0:
+                          if (this.bridgeCodec != undefined) {
+                            this.bridgeCodec.sendMessage('(BINARY_TYPE)').then((res) => {
+                              this.sendMessageFlag = false;
+                              this.callMethodFlag = true;
+                              this.nativeResponse = '发送数据到原生侧响应成功, 返回数据为 ' + res;
+                              Logger.info(TAG, this.nativeResponse);
+                            }).catch((err: Error) => {
+                              this.sendMessageFlag = false;
+                              this.callMethodFlag = true;
+                              this.nativeResponse = '发送数据到原生侧响应失败： ' + err;
+                              Logger.info(TAG, this.nativeResponse);
+                            });
+                          }
+                          break
+                        case 1:
+                          if (this.bridgeCodec != undefined) {
+                            this.bridgeCodec.callMethod('getHelloArkUI', '(BINARY_TYPE)').then((res) => {
+                              this.sendMessageFlag = false;
+                              this.callMethodFlag = true;
+                              this.nativeResponse = '调用原生侧函数调用成功, 返回数据为 ' + res;
+                              Logger.info(TAG, this.nativeResponse);
+                            }).catch((err: Error) => {
+                              this.nativeResponse = '调用原生侧函数调用失败： ' + err;
+                              Logger.info(TAG, this.nativeResponse);
+                            });
+                          }
+                          break
+                        case 2:
+                          if (this.bridgeCodec != undefined) {
+                            this.bridgeCodec.callMethodWithCallback('methodOfPlatform', methodOfTs, '(BINARY_TYPE)')
+                              .then((res) => {
+                                this.sendMessageFlag = true;
+                                this.callMethodFlag = true;
+                                this.nativeResponse = '注册Ts侧函数并调用原生侧函数调用成功, 返回数据为 ' + res;
+                              })
+                              .catch((err: Error) => {
+                                this.sendMessageFlag = true;
+                                this.callMethodFlag = true;
+                                this.nativeResponse = '注册Ts侧函数并调用原生侧函数失败： ' + err;
+                              });
+                          }
+                          break
+                        default:
+                      }
+                    }
+                  })
+
+                  CommonItemSelect({
+                    name: '并发模式',
+                    selects: ['sendMessage TaskType', 'callMethod TaskType',
+                      'callMethodWithCallback TaskType'],
+                    callback: (index) => {
+                      switch (index) {
+                        case 0:
+                          if (this.BridgeTask != undefined) {
+                            this.BridgeTask.sendMessage('(TaskType)').then((res) => {
+                              this.sendMessageFlag = false;
+                              this.callMethodFlag = true;
+                              this.nativeResponse = '发送数据到原生侧响应成功, 返回数据为 ' + res;
+                              Logger.info(TAG, this.nativeResponse);
+                            }).catch((err: Error) => {
+                              this.sendMessageFlag = false;
+                              this.callMethodFlag = true;
+                              this.nativeResponse = '发送数据到原生侧响应失败： ' + err;
+                              Logger.info(TAG, this.nativeResponse);
+                            });
+                          }
+                          break
+                        case 1:
+                          if (this.BridgeTask != undefined) {
+                            this.BridgeTask.callMethod('getHelloArkUI', '(TaskType)').then((res) => {
+                              this.sendMessageFlag = false;
+                              this.callMethodFlag = true;
+                              this.nativeResponse = '调用原生侧函数调用成功, 返回数据为 ' + res;
+                              Logger.info(TAG, this.nativeResponse);
+                            }).catch((err: Error) => {
+                              this.sendMessageFlag = false;
+                              this.callMethodFlag = true;
+                              this.nativeResponse = '调用原生侧函数调用失败： ' + err;
+                              Logger.info(TAG, this.nativeResponse);
+                            });
+                          }
+                          break
+                        case 2:
+                          if (this.BridgeTask != undefined) {
+                            this.BridgeTask.callMethodWithCallback('methodOfPlatform', methodOfTs, '(TaskType)')
+                              .then((res) => {
+                                this.sendMessageFlag = true;
+                                this.callMethodFlag = true;
+                                this.nativeResponse = '注册Ts侧函数并调用原生侧函数调用成功, 返回数据为 ' + res;
+                              })
+                              .catch((err: Error) => {
+                                this.sendMessageFlag = true;
+                                this.callMethodFlag = true;
+                                this.nativeResponse = '注册Ts侧函数并调用原生侧函数失败： ' + err;
+                              });
+                          }
+                          break
+                        default:
+                      }
+                    }
+                  })
+
                 }
-              })
+              }.scrollBar(BarState.Off)
+            }.size({ width: '100%', height: '40%' })
 
-            Button('callMethodWithCallback JSON_TYPE')
-              .width(this.btnWidth)
-              .height(this.btnHeight)
-              .fontSize(15)
-              .margin(5)
-              .onClick(() => {
-                if (this.bridgeImpl != undefined) {
-                  this.bridgeImpl.callMethodWithCallback('methodOfPlatform', methodOfTs, '(JSON_TYPE)').then((res) => {
-                    this.nativeResponse = '注册Ts侧函数并调用原生侧函数调用成功, 返回数据为 ' + res;
-                  }).catch((err: Error) => {
-                    this.nativeResponse = '注册Ts侧函数并调用原生侧函数失败： ' + err;
-                  });
-                }
-              })
-
-            Text('Bridge 二进制编解码模式')
-              .fontSize(20)
-              .margin(5)
-
-            Button('sendMessage BINARY_TYPE')
-              .width(this.btnWidth)
-              .height(this.btnHeight)
-              .fontSize(15)
-              .margin(5)
-              .onClick(async () => {
-                if (this.bridgeCodec != undefined) {
-                  this.bridgeCodec.sendMessage('(BINARY_TYPE)').then((res) => {
-                    this.nativeResponse = '发送数据到原生侧响应成功, 返回数据为 ' + res;
-                    Logger.info(TAG, this.nativeResponse);
-                  }).catch((err: Error) => {
-                    this.nativeResponse = '发送数据到原生侧响应失败： ' + err;
-                    Logger.info(TAG, this.nativeResponse);
-                  });
-                }
-              })
-
-            Button('callMethod BINARY_TYPE')
-              .width(this.btnWidth)
-              .height(this.btnHeight)
-              .fontSize(15)
-              .margin(5)
-              .onClick(async () => {
-                if (this.bridgeCodec != undefined) {
-                  this.bridgeCodec.callMethod('getHelloArkUI', '(BINARY_TYPE)').then((res) => {
-                    this.nativeResponse = '调用原生侧函数调用成功, 返回数据为 ' + res;
-                    Logger.info(TAG, this.nativeResponse);
-                  }).catch((err: Error) => {
-                    this.nativeResponse = '调用原生侧函数调用失败： ' + err;
-                    Logger.info(TAG, this.nativeResponse);
-                  });
-                }
-              })
-
-            Button('callMethodWithCallback BINARY_TYPE')
-              .width(this.btnWidth)
-              .height(this.btnHeight)
-              .fontSize(15)
-              .margin(5)
-              .onClick(() => {
-                if (this.bridgeCodec != undefined) {
-                  this.bridgeCodec.callMethodWithCallback('methodOfPlatform', methodOfTs, '(BINARY_TYPE)').then((res) => {
-                    this.nativeResponse = '注册Ts侧函数并调用原生侧函数调用成功, 返回数据为 ' + res;
-                  }).catch((err: Error) => {
-                    this.nativeResponse = '注册Ts侧函数并调用原生侧函数失败： ' + err;
-                  });
-                }
-              })
-
-            Text('Bridge 并发模式')
-              .fontSize(20)
-              .margin(5)
-
-            Button('sendMessage TaskType')
-              .width(this.btnWidth)
-              .height(this.btnHeight)
-              .fontSize(15)
-              .margin(5)
-              .onClick(async () => {
-                if (this.BridgeTask != undefined) {
-                  this.BridgeTask.sendMessage('(TaskType)').then((res) => {
-                    this.nativeResponse = '发送数据到原生侧响应成功, 返回数据为 ' + res;
-                    Logger.info(TAG, this.nativeResponse);
-                  }).catch((err: Error) => {
-                    this.nativeResponse = '发送数据到原生侧响应失败： ' + err;
-                    Logger.info(TAG, this.nativeResponse);
-                  });
-                }
-              })
-
-            Button('callMethod TaskType')
-              .width(this.btnWidth)
-              .height(this.btnHeight)
-              .fontSize(15)
-              .margin(5)
-              .onClick(async () => {
-                if (this.BridgeTask != undefined) {
-                  this.BridgeTask.callMethod('getHelloArkUI', '(TaskType)').then((res) => {
-                    this.nativeResponse = '调用原生侧函数调用成功, 返回数据为 ' + res;
-                    Logger.info(TAG, this.nativeResponse);
-                  }).catch((err: Error) => {
-                    this.nativeResponse = '调用原生侧函数调用失败： ' + err;
-                    Logger.info(TAG, this.nativeResponse);
-                  });
-                }
-              })
-
-            Button('callMethodWithCallback TaskType')
-              .width(this.btnWidth)
-              .height(this.btnHeight)
-              .fontSize(15)
-              .margin(5)
-              .onClick(() => {
-                if (this.BridgeTask != undefined) {
-                  this.BridgeTask.callMethodWithCallback('methodOfPlatform', methodOfTs, '(TaskType)').then((res) => {
-                    this.nativeResponse = '注册Ts侧函数并调用原生侧函数调用成功, 返回数据为 ' + res;
-                  }).catch((err: Error) => {
-                    this.nativeResponse = '注册Ts侧函数并调用原生侧函数失败： ' + err;
-                  });
-                }
-              })
           }
           .width('100%')
         }

@@ -53,7 +53,7 @@ public class FragmentEntryActivity extends AppCompatActivity {
         View titleView = findViewById(R.id.tvTopBarTitle);
         if (titleView instanceof TextView) {
             TextView title = (TextView) titleView;
-            title.setText("Fragment跨平台");
+            title.setText("Fragment");
         } else {
             Log.e("ActivityFragmentEntry", "tvTopBarTitle is not an instance of TextView");
         }

@@ -21,7 +21,7 @@ import deviceInfo from '@ohos.deviceInfo';
 @Entry
 @Component
 struct Index {
-  @State message: string = '动态化加载演示页面'
+  @State message: string = '预制演示页面'
   private windowStage?: window.WindowStage = AppStorage.get("windowStage");
   private window?: window.Window;
   private netCon?: connection.NetConnection = undefined;
@@ -39,25 +39,25 @@ struct Index {
             router.pushUrl({
               url: 'pages/common/CommonComponent3'
             });
-          }).width('100%').margin(10)
+          }).width('90%').margin(10)
 
           Button("常用组件1").onClick(() => {
             router.pushUrl({
               url: 'pages/common/CommonComponent1'
             });
-          }).width('100%').margin(10)
+          }).width('90%').margin(10)
 
           Button("常用组件2").onClick(() => {
             router.pushUrl({
               url: 'pages/common/CommonComponent2'
             });
-          }).width('100%').margin(10)
+          }).width('90%').margin(10)
 
           Button("常用组件3").onClick(() => {
             router.pushUrl({
               url: 'pages/common/CommonComponent4'
             });
-          }).width('100%').margin(10)
+          }).width('90%').margin(10)
         }
         .width('100%')
       }

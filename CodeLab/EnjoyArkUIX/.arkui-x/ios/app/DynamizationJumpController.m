@@ -33,17 +33,17 @@
     
     CGFloat screenWidth = UIScreen.mainScreen.bounds.size.width;
     
-    UIButton *hap = [self createButton:@"前往DynamicHap"];
+    UIButton *hap = [self createButton:@"加载沙箱演示页面"];
     hap.frame = CGRectMake(15, 118, screenWidth - 30, 66);
     [hap addTarget:self action:@selector(pushHapView) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:hap];
     
-    UIButton *one = [self createButton:@"前往DynamicOne"];
+    UIButton *one = [self createButton:@"加载沙箱演示页面1"];
     one.frame = CGRectMake(15, CGRectGetMaxY(hap.frame) + 20, screenWidth - 30, 66);
     [one addTarget:self action:@selector(pushOneView) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:one];
     
-    UIButton *two = [self createButton:@"前往DynamicTwo"];
+    UIButton *two = [self createButton:@"加载沙箱演示页面2"];
     two.frame = CGRectMake(15, CGRectGetMaxY(one.frame) + 20, screenWidth - 30, 66);
     [two addTarget:self action:@selector(pushTwoView) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:two];

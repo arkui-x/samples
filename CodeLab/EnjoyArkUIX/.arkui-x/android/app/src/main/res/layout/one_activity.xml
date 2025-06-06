@@ -10,21 +10,15 @@
         >
         <include layout="@layout/top_bar_layout" />
 
-        <TextView
-            android:id="@+id/content"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="8dp"
-            android:textSize="12sp" />
         <Button
             android:id="@+id/mButton01"
             android:layout_width="300dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:layout_marginLeft="20dp"
-            android:layout_marginTop="48dp"
+            android:layout_marginTop="40dp"
             android:layout_marginRight="20dp"
-            android:text="前往DynamicHapAbility" />
+            android:text="加载沙箱演示页面" />
 
         <Button
             android:id="@+id/mButton02"
@@ -32,9 +26,9 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:layout_marginLeft="20dp"
-            android:layout_marginTop="48dp"
+            android:layout_marginTop="40dp"
             android:layout_marginRight="20dp"
-            android:text="前往DynamicHapOneAbility" />
+            android:text="加载沙箱演示页面1" />
 
         <Button
             android:id="@+id/mButton03"
@@ -42,18 +36,18 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:layout_marginLeft="20dp"
-            android:layout_marginTop="48dp"
+            android:layout_marginTop="40dp"
             android:layout_marginRight="20dp"
-            android:text="前往DynamicHapTwoAbility" />
+            android:text="加载沙箱演示页面2" />
         <Button
             android:id="@+id/mButton04"
             android:layout_width="300dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:layout_marginLeft="20dp"
-            android:layout_marginTop="48dp"
+            android:layout_marginTop="40dp"
             android:layout_marginRight="20dp"
-            android:text="拷贝到沙箱文件1" />
+            android:text="拷贝doc文件到沙箱" />
 
         <Button
             android:id="@+id/mButton05"
@@ -61,9 +55,9 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:layout_marginLeft="20dp"
-            android:layout_marginTop="48dp"
+            android:layout_marginTop="40dp"
             android:layout_marginRight="20dp"
-            android:text="拷贝到沙箱文件2" />
+            android:text="拷贝resh文件到沙箱" />
 
         <Button
             android:id="@+id/mButton07"
@@ -71,7 +65,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:layout_marginLeft="20dp"
-            android:layout_marginTop="48dp"
+            android:layout_marginTop="40dp"
             android:layout_marginRight="20dp"
             android:text="removeAllFile" />
 
@@ -81,7 +75,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:layout_marginLeft="20dp"
-            android:layout_marginTop="48dp"
+            android:layout_marginTop="40dp"
             android:layout_marginRight="20dp"
             android:text="copyAllResource" />
     </LinearLayout>

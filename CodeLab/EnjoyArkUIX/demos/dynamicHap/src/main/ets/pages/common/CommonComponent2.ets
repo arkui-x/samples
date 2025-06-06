@@ -64,10 +64,14 @@ struct CommonComponent2 {
               }
             },
           }).margin(10)
-          .width('100%')
+          .width('50%')
+          .height('10%')
 
         Button('菜单')
           .bindMenu(this.subMenu())
+          .width('50%')
+          .height('10%')
+
       }
       .width('100%')
     }

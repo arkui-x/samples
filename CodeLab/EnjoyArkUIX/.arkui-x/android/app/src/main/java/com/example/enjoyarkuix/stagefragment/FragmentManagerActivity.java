@@ -21,8 +21,8 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentActivity;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
@@ -35,7 +35,7 @@ import com.google.android.material.tabs.TabLayout;
  * @since 20
  */
 
-public class FragmentManagerActivity extends AppCompatActivity {
+public class FragmentManagerActivity extends FragmentActivity {
     ArkuiFragment arkuiFragment;
     NativeFragment nativeFragment;
 
@@ -72,7 +72,7 @@ public class FragmentManagerActivity extends AppCompatActivity {
     private void setupTabLayout() {
         TabLayout tabLayout = findViewById(R.id.tabLayout);
         tabLayout.addTab(tabLayout.newTab().setText("ArkuiFragment"));
-        tabLayout.addTab(tabLayout.newTab().setText("原生Fragment"));
+        tabLayout.addTab(tabLayout.newTab().setText("AndroidFragment"));
         tabLayout.addOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
             @Override
             public void onTabSelected(TabLayout.Tab tab) {

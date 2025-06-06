@@ -37,6 +37,14 @@
       "value": "Dynamization"
     },
     {
+      "name": "test",
+      "value": "自测试示例"
+    },
+    {
+      "name": "version",
+      "value": "版本示例"
+    },
+    {
       "name": "self_test",
       "value": "自测试"
     },

@@ -66,7 +66,7 @@ public class DynamizationJumpActivity extends AppCompatActivity {
         View view = findViewById(R.id.tvTopBarTitle);
         if (view instanceof TextView) {
             TextView title = (TextView) view;
-            title.setText("动态化加载Hap");
+            title.setText("Dynamization");
         } else {
             Log.e("Tag", "The view is not an instance of TextView");
         }

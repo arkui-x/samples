@@ -38,6 +38,12 @@ struct CommonComponent4 {
     Scroll() {
       Column() {
         Navigation() {
+
+          Text("DatePicker组件展示")
+            .fontSize(20)
+            .fontWeight(FontWeight.Bold)
+            .margin(10)
+
           DatePicker({
             start: new Date('1970-1-1'),
             end: new Date('2100-1-1'),
@@ -50,6 +56,11 @@ struct CommonComponent4 {
             .onDateChange((value: Date) => {
               this.selectedDate = value
             })
+
+          Text("WaterFlow组件展示")
+            .fontSize(20)
+            .fontWeight(FontWeight.Bold)
+            .margin(10)
 
           WaterFlow() {
             ForEach(this.data, (item: string, index: number) => {
@@ -72,7 +83,7 @@ struct CommonComponent4 {
           .margin(10)
         }
         .titleMode(NavigationTitleMode.Mini)
-        .title('主标题')
+        .title('Navigation组件')
 
       }
       .width('100%')

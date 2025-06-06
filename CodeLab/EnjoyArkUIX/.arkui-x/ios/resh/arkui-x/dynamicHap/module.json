@@ -2,12 +2,12 @@
 	"app":	{
 		"bundleName":	"com.example.enjoyarkuix",
 		"vendor":	"example",
-		"versionCode":	5000000,
+		"versionCode":	6000000,
 		"versionName":	"1.0.0",
 		"icon":	"$media:app_icon",
 		"label":	"$string:app_name",
-		"apiReleaseType":	"Beta1",
-		"compileSdkVersion":	"5.1.0.60",
+		"apiReleaseType":	"Canary1",
+		"compileSdkVersion":	"6.0.0.34",
 		"targetAPIVersion":	16,
 		"minAPIVersion":	16,
 		"compileSdkType":	"OpenHarmony",
@@ -15,15 +15,15 @@
 		"bundleType":	"app",
 		"buildMode":	"debug",
 		"debug":	true,
-		"iconId":	134217729,
-		"labelId":	134217728
+		"iconId":	83886081,
+		"labelId":	83886080
 	},
 	"module":	{
 		"name":	"dynamicHap",
 		"type":	"feature",
 		"description":	"$string:module_desc",
 		"mainElement":	"DynamicHapAbility",
-		"deviceTypes":	["default", "tablet"],
+		"deviceTypes":	["default"],
 		"deliveryWithInstall":	true,
 		"installationFree":	false,
 		"pages":	"$profile:main_pages",
@@ -36,16 +36,16 @@
 				"startWindowIcon":	"$media:startIcon",
 				"startWindowBackground":	"$color:start_window_background",
 				"exported":	true,
-				"descriptionId":	134217730,
-				"iconId":	134217738,
-				"labelId":	134217731,
-				"startWindowIconId":	134217739,
-				"startWindowBackgroundId":	134217733
+				"descriptionId":	83886082,
+				"iconId":	83886090,
+				"labelId":	83886083,
+				"startWindowIconId":	83886091,
+				"startWindowBackgroundId":	83886085
 			}],
 		"packageName":	"dynamichap",
 		"virtualMachine":	"ark12.0.6.0",
 		"compileMode":	"esmodule",
 		"dependencies":	[],
-		"descriptionId":	134217732
+		"descriptionId":	83886084
 	}
 }

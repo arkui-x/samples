@@ -9,6 +9,10 @@
       "value": "description"
     },
     {
+      "name": "PlatformBridge_title",
+      "value": "PlatformBridge"
+    },
+    {
       "name": "PlatformBridgeAbility_label",
       "value": "label"
     }

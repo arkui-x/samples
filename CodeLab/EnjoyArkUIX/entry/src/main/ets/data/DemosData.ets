@@ -17,7 +17,7 @@ import { PlatformTypeEnum, ThirdLevelCategory } from '../model/CategoricalDataTy
 
 export const DEMOS: ThirdLevelCategory[] = [
   {
-    image: $r('app.media.platform_bridge'),
+    image: $r('app.media.ic_unselect_universal'),
     title: $r('app.string.platform_bridge'),
     want: {
       bundleName: 'com.example.enjoyarkuix',
@@ -27,7 +27,7 @@ export const DEMOS: ThirdLevelCategory[] = [
     platform: PlatformTypeEnum.SUPPORT_BOTH
   },
   {
-    image: $r('app.media.platform_view'),
+    image: $r('app.media.ic_unselect_universal'),
     title: $r('app.string.platform_view'),
     want: {
       bundleName: 'com.example.enjoyarkuix',
@@ -37,7 +37,7 @@ export const DEMOS: ThirdLevelCategory[] = [
     platform: PlatformTypeEnum.SUPPORT_BOTH
   },
   {
-    image: $r('app.media.fragment'),
+    image: $r('app.media.ic_unselect_universal'),
     title: $r('app.string.fragment'),
     want: {
       bundleName: 'com.example.enjoyarkuix',
@@ -46,7 +46,7 @@ export const DEMOS: ThirdLevelCategory[] = [
     platform: PlatformTypeEnum.SUPPORT_ANDROID
   },
   {
-    image: $r('app.media.dynamization'),
+    image: $r('app.media.ic_unselect_universal'),
     title: $r('app.string.dynamization'),
     want: {
       bundleName: 'com.example.enjoyarkuix',

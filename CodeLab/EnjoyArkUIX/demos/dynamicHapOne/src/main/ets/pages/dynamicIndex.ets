@@ -24,7 +24,7 @@ struct dynamicIndex {
     Row() {
       Scroll() {
         Column() {
-          Text("DynamicOneAbility")
+          Text("预制演示页面")
             .fontSize(30)
             .fontWeight(FontWeight.Bold)
             .margin(10)

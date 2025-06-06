@@ -28,8 +28,7 @@ struct Index {
     Column() {
       Row() {
         Column() {
-          TitleBar().markAnchor({ x: -5, y: 210 })
-            .visibility(this.osName.startsWith('Android') ? Visibility.Hidden : Visibility.Visible)
+          TitleBar().markAnchor({ x: -5, y: 260 })
           Text(this.title)
             .fontSize(35)
             .margin(5)

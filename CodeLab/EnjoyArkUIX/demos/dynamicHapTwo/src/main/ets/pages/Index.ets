@@ -19,7 +19,7 @@ import deviceInfo from '@ohos.deviceInfo';
 @Entry
 @Component
 struct Index {
-  @State message: string = 'DynamicTwoAbility'
+  @State message: string = '预制演示页面'
   private windowStage?: window.WindowStage = AppStorage.get("windowStage");
   private window?: window.Window;
   @State osName: string = deviceInfo.osFullName;

@@ -88,5 +88,17 @@
             android:exported="true"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustNothing |stateHidden" />
+        <activity
+            android:name=".TestTestAbilityActivity"
+            android:configChanges="orientation|keyboard|layoutDirection|screenSize|screenLayout|uiMode|smallestScreenSize|density"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustNothing |stateAlwaysHidden" />
+        <activity
+            android:name=".VersionVersionAbilityActivity"
+            android:configChanges="orientation|keyboard|layoutDirection|screenSize|screenLayout|uiMode|smallestScreenSize|density"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustNothing |stateAlwaysHidden" />
     </application>
 </manifest>

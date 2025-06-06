@@ -1,0 +1,26 @@
+{
+  "module": {
+    "name": "version",
+    "type": "feature",
+    "description": "$string:module_desc",
+    "mainElement": "VersionAbility",
+    "deviceTypes": [
+      "default"
+    ],
+    "deliveryWithInstall": true,
+    "installationFree": false,
+    "pages": "$profile:main_pages",
+    "abilities": [
+      {
+        "name": "VersionAbility",
+        "srcEntry": "./ets/versionability/VersionAbility.ets",
+        "description": "$string:VersionAbility_desc",
+        "icon": "$media:layered_image",
+        "label": "$string:VersionAbility_label",
+        "startWindowIcon": "$media:startIcon",
+        "startWindowBackground": "$color:start_window_background",
+        "exported": true
+      }
+    ]
+  }
+}
