@@ -2,12 +2,12 @@
 	"app":	{
 		"bundleName":	"com.example.enjoyarkuix",
 		"vendor":	"example",
-		"versionCode":	3000000,
+		"versionCode":	4000000,
 		"versionName":	"1.0.0",
 		"icon":	"$media:app_icon",
 		"label":	"$string:app_name",
-		"apiReleaseType":	"Beta1",
-		"compileSdkVersion":	"5.1.0.60",
+		"apiReleaseType":	"Canary1",
+		"compileSdkVersion":	"6.0.0.34",
 		"targetAPIVersion":	16,
 		"minAPIVersion":	16,
 		"compileSdkType":	"OpenHarmony",
@@ -15,15 +15,15 @@
 		"bundleType":	"app",
 		"buildMode":	"debug",
 		"debug":	true,
-		"iconId":	150994945,
-		"labelId":	150994944
+		"iconId":	100663297,
+		"labelId":	100663296
 	},
 	"module":	{
 		"name":	"dynamicHapOne",
 		"type":	"feature",
 		"description":	"$string:module_desc",
 		"mainElement":	"DynamicHapOneAbility",
-		"deviceTypes":	["default", "tablet"],
+		"deviceTypes":	["default"],
 		"deliveryWithInstall":	true,
 		"installationFree":	false,
 		"pages":	"$profile:main_pages",
@@ -36,16 +36,16 @@
 				"startWindowIcon":	"$media:startIcon",
 				"startWindowBackground":	"$color:start_window_background",
 				"exported":	true,
-				"descriptionId":	150994946,
-				"iconId":	150994958,
-				"labelId":	150994947,
-				"startWindowIconId":	150994959,
-				"startWindowBackgroundId":	150994952
+				"descriptionId":	100663298,
+				"iconId":	100663310,
+				"labelId":	100663299,
+				"startWindowIconId":	100663311,
+				"startWindowBackgroundId":	100663304
 			}],
 		"packageName":	"dynamichapone",
 		"virtualMachine":	"ark12.0.6.0",
 		"compileMode":	"esmodule",
 		"dependencies":	[],
-		"descriptionId":	150994950
+		"descriptionId":	100663302
 	}
 }

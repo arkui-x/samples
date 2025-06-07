@@ -106,6 +106,34 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Test",
+      "srcPath": "./self_test/Test",
+      "targets": [
+        {
+          "name": "default",
+          "applyToProducts": [
+            "default"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "version",
+      "srcPath": "./version/version",
+      "targets": [
+        {
+          "name": "default",
+          "applyToProducts": [
+            "default"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "titleBar",
+      "srcPath": "./deps/titleBar",
     }
   ]
 }

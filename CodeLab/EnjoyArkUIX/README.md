@@ -2,7 +2,7 @@
 
 ## 介绍
 
-**EnjoyArkUIX** 是一个基于ArkUI-X跨平台框架能力构建的集自测试、演示为一体的工程，功能点涉及跨平台关键特性演示、ArkUI组件、子系统API验证等，后续将通过持续集成的方式补齐跨平台支持的特性功能点，用于看护ArkUI-X跨平台框架能力。`<br>`
+**EnjoyArkUIX** 是一个基于ArkUI-X跨平台框架能力构建的集自测试、演示为一体的工程，功能点涉及跨平台关键特性演示、ArkUI组件、子系统API验证等，后续将通过持续集成的方式补齐跨平台支持的特性功能点，用于看护ArkUI-X跨平台框架能力。<br>
 
 应用效果预览
 
@@ -12,13 +12,13 @@
 
 ### 使用说明
 
-- 点击**自测试**、**演示**、**版本**三个按钮或左右滑动切换不同视图。`<br>`
-- 点击二级导航（如PlatformBridge、PlatformView等），若存在三级导航则展开三级导航；若不存在三级导航，则跳转至详情页面。`<br>`
-- 若存在三级导航，点击跳转至详情页面。`<br>`
+- 点击**自测试**、**演示**、**版本**三个按钮或左右滑动切换不同视图。<br>
+- 点击二级导航（如PlatformBridge、PlatformView等），若存在三级导航则展开三级导航；若不存在三级导航，则跳转至详情页面。<br>
+- 若存在三级导航，点击跳转至详情页面。<br>
 
 ## 案例列表
 
-应用案例列表及平台支持情况。`<br>`
+应用案例列表及平台支持情况。<br>
 
 | 案例名称       | 案例位置（应用界面案例入口） | Android | iOS    |
 | -------------- | ---------------------------- | ------- | ------ |
@@ -31,7 +31,7 @@
 
 ### 一、首页实现
 
-本示例使用[Tabs容器组件](https://gitee.com/openharmony/docs/blob/master/zh-cn/application-dev/reference/apis-arkui/arkui-ts/ts-container-tabs.md)搭建整体应用框架，每个[TabContent内容视图](https://gitee.com/openharmony/docs/blob/master/zh-cn/application-dev/reference/apis-arkui/arkui-ts/ts-container-tabcontent.md)使用[List容器组件](https://gitee.com/openharmony/docs/blob/master/zh-cn/application-dev/reference/apis-arkui/arkui-ts/ts-container-list.md)布局，在每个[ListItem](https://gitee.com/openharmony/docs/blob/master/zh-cn/application-dev/reference/apis-arkui/arkui-ts/ts-container-listitem.md)中使用[循环渲染](https://gitee.com/openharmony/docs/blob/master/zh-cn/application-dev/ui/state-management/arkts-rendering-control-foreach.md)加载此分类下分类导航数据，底部导航菜单使用[TabContent中tabBar属性](https://gitee.com/openharmony/docs/blob/master/zh-cn/application-dev/reference/apis-arkui/arkui-ts/ts-container-tabcontent.md#%E5%B1%9E%E6%80%A7)设置自定义样式 。`<br>`
+本示例使用[Tabs容器组件](https://gitee.com/openharmony/docs/blob/master/zh-cn/application-dev/reference/apis-arkui/arkui-ts/ts-container-tabs.md)搭建整体应用框架，每个[TabContent内容视图](https://gitee.com/openharmony/docs/blob/master/zh-cn/application-dev/reference/apis-arkui/arkui-ts/ts-container-tabcontent.md)使用[List容器组件](https://gitee.com/openharmony/docs/blob/master/zh-cn/application-dev/reference/apis-arkui/arkui-ts/ts-container-list.md)布局，在每个[ListItem](https://gitee.com/openharmony/docs/blob/master/zh-cn/application-dev/reference/apis-arkui/arkui-ts/ts-container-listitem.md)中使用[循环渲染](https://gitee.com/openharmony/docs/blob/master/zh-cn/application-dev/ui/state-management/arkts-rendering-control-foreach.md)加载此分类下分类导航数据，底部导航菜单使用[TabContent中tabBar属性](https://gitee.com/openharmony/docs/blob/master/zh-cn/application-dev/reference/apis-arkui/arkui-ts/ts-container-tabcontent.md#%E5%B1%9E%E6%80%A7)设置自定义样式 。<br>
 
 ### 二、在当前框架添加新用例
 
@@ -70,9 +70,9 @@
 
 在项目开发中，根据具体需求，可以选择多种不同的实现方法来展示首页导航栏，以实现多样化的视觉效果和交互体验。
 
-| 下拉导航栏写法：                                                                | 效果展示：                              |
-| ------------------------------------------------------------------------------- | --------------------------------------- |
-| `<img src="./screenshots/code1.png" alt="module_Create" style="zoom:50%;" />` | ![module_Create](./screenshots/code2.png) |
+| 下拉导航栏写法：                                             | 效果展示：                                |
+| ------------------------------------------------------------ | ----------------------------------------- |
+| <img src="./screenshots/code1.png" alt="module_Create" style="zoom: 50%;" /> | ![module_Create](./screenshots/code2.png) |
 
 ### 三、编译运行
 
@@ -122,7 +122,7 @@
 
 [ohos.permission.INTERNET](https://gitee.com/openharmony/docs/blob/master/zh-cn/application-dev/security/AccessToken/permissions-for-all.md#ohospermissioninternet)
 
-- 本项目使用Web组件加载网页，请确保设备已连接网络`<br>`
+- 本项目使用Web组件加载网页，请确保设备已连接网络 <br>
 
 ## 依赖
 
@@ -130,16 +130,16 @@
 
 ## 约束与限制
 
-1.本示例仅支持在标准Android和iOS设备系统上运行。`<br>`
+1.本示例仅支持在标准Android和iOS设备系统上运行。<br>
 
-2.本示例已适配API version 16版本的ArkUI-X SDK。`<br>`
+2.本示例已适配API version 16版本的ArkUI-X SDK。<br>
 
-3.本示例需要使用DevEco Studio 5.0.4 Release。`<br>`
+3.本示例需要使用DevEco Studio 5.0.4 Release。<br>
 
 ## 工程目录
 
 ```tsx
-.	
+Enjoyarkuix
 ├── .arkui-x
 |    ├── android
 |    │   ├── app

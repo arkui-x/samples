@@ -15,6 +15,8 @@
 		F0AF1ADD27D36856008C55DD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F0AF1ADC27D36856008C55DD /* Assets.xcassets */; };
 		F0AF1AE027D36856008C55DD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0AF1ADE27D36856008C55DD /* LaunchScreen.storyboard */; };
 		F0AF1AE327D36856008C55DD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F0AF1AE227D36856008C55DD /* main.m */; };
+		FAB793F02DF1923700045981 /* TestTestAbilityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FAB793ED2DF1923700045981 /* TestTestAbilityViewController.m */; };
+		FAB793F12DF1923700045981 /* VersionVersionAbilityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FAB793EF2DF1923700045981 /* VersionVersionAbilityViewController.m */; };
 		FAC8E7192DDEB99600EF5185 /* BridgeClass.m in Sources */ = {isa = PBXBuildFile; fileRef = FAC8E7172DDEB99600EF5185 /* BridgeClass.m */; };
 		FAC8E7232DDEBA9000EF5185 /* MyPlatformViewFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = FAC8E71D2DDEBA9000EF5185 /* MyPlatformViewFactory.m */; };
 		FAC8E7242DDEBA9000EF5185 /* MyWebview.m in Sources */ = {isa = PBXBuildFile; fileRef = FAC8E7212DDEBA9000EF5185 /* MyWebview.m */; };
@@ -57,6 +59,10 @@
 		F0AF1ADF27D36856008C55DD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F0AF1AE127D36856008C55DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F0AF1AE227D36856008C55DD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FAB793EC2DF1923700045981 /* TestTestAbilityViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestTestAbilityViewController.h; sourceTree = "<group>"; };
+		FAB793ED2DF1923700045981 /* TestTestAbilityViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestTestAbilityViewController.m; sourceTree = "<group>"; };
+		FAB793EE2DF1923700045981 /* VersionVersionAbilityViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VersionVersionAbilityViewController.h; sourceTree = "<group>"; };
+		FAB793EF2DF1923700045981 /* VersionVersionAbilityViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VersionVersionAbilityViewController.m; sourceTree = "<group>"; };
 		FAC8E7162DDEB99600EF5185 /* BridgeClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BridgeClass.h; sourceTree = "<group>"; };
 		FAC8E7172DDEB99600EF5185 /* BridgeClass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BridgeClass.m; sourceTree = "<group>"; };
 		FAC8E71A2DDEBA9000EF5185 /* MyMapView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyMapView.h; sourceTree = "<group>"; };
@@ -119,6 +125,10 @@
 		F0AF1ACF27D3684F008C55DD /* app */ = {
 			isa = PBXGroup;
 			children = (
+				FAB793EC2DF1923700045981 /* TestTestAbilityViewController.h */,
+				FAB793ED2DF1923700045981 /* TestTestAbilityViewController.m */,
+				FAB793EE2DF1923700045981 /* VersionVersionAbilityViewController.h */,
+				FAB793EF2DF1923700045981 /* VersionVersionAbilityViewController.m */,
 				FAC8E7222DDEBA9000EF5185 /* PlatformView */,
 				FAC8E7182DDEB99600EF5185 /* PlatformBridge */,
 				FAC8E88A2DDEBD7000EF5185 /* BaseModuleViewController.h */,
@@ -260,6 +270,8 @@
 				FAC8E8942DDEBD7000EF5185 /* DynamizationJumpController.m in Sources */,
 				FAC8E8952DDEBD7000EF5185 /* BaseViewController.m in Sources */,
 				F0AF1AD227D3684F008C55DD /* AppDelegate.m in Sources */,
+				FAB793F02DF1923700045981 /* TestTestAbilityViewController.m in Sources */,
+				FAB793F12DF1923700045981 /* VersionVersionAbilityViewController.m in Sources */,
 				89E41E4529F505070004F33E /* EntryEntryAbilityViewController.m in Sources */,
 				F0AF1AE327D36856008C55DD /* main.m in Sources */,
 				FAC8E7192DDEB99600EF5185 /* BridgeClass.m in Sources */,

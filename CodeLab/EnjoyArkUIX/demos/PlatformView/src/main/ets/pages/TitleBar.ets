@@ -4,7 +4,6 @@ import {common} from '@kit.AbilityKit'
 // Page title bar
 @Component
 export struct TitleBar {
-  private title!: Resource;
   private context = this.getUIContext().getHostContext() as common.UIAbilityContext
 
   build() {
@@ -17,7 +16,7 @@ export struct TitleBar {
           .onClick(() => {
             this.context.terminateSelf()
           })
-        Text('返回原生页面')
+        Text('PlatformView')
           .fontSize(20)
           .fontWeight(FontWeight.Bold)
           .fontColor($r('app.color.font_color_black'))

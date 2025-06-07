@@ -18,6 +18,8 @@
 #import "PlatformViewPlatformViewAbilityViewController.h"
 #import "PlatformBridgePlatformBridgeAbilityViewController.h"
 #import "DynamizationJumpController.h"
+#import "TestTestAbilityViewController.h"
+#import "VersionVersionAbilityViewController.h"
 #import <libarkui_ios/StageApplication.h>
 
 #define BUNDLE_DIRECTORY @"arkui-x"
@@ -93,7 +95,15 @@
     }  else if ([moduleName isEqualToString:@"Dynamization"] && [abilityName isEqualToString:@"Jump"]) {
         NSString *instanceName = [NSString stringWithFormat:@"%@:%@:%@",bundleName, moduleName, abilityName];
         subStageVC = [[DynamizationJumpController alloc] initWithInstanceName:instanceName];
-    }// other ViewController
+    }else if ([moduleName isEqualToString:@"Test"] && [abilityName isEqualToString:@"TestAbility"]) {
+        NSString *instanceName = [NSString stringWithFormat:@"%@:%@:%@",bundleName, moduleName, abilityName];
+        TestTestAbilityViewController *otherVC = [[TestTestAbilityViewController alloc] initWithInstanceName:instanceName];
+        subStageVC = (TestTestAbilityViewController *)otherVC;
+    } else if ([moduleName isEqualToString:@"version"] && [abilityName isEqualToString:@"VersionAbility"]) {
+        NSString *instanceName = [NSString stringWithFormat:@"%@:%@:%@",bundleName, moduleName, abilityName];
+        VersionVersionAbilityViewController *otherVC = [[VersionVersionAbilityViewController alloc] initWithInstanceName:instanceName];
+        subStageVC = (VersionVersionAbilityViewController *)otherVC;
+    } // other ViewController
     
     if (!subStageVC) {
         return NO;

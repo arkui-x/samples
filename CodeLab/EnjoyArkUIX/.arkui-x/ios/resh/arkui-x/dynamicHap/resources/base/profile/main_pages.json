@@ -4,7 +4,6 @@
     "pages/common/CommonComponent1",
     "pages/common/CommonComponent2",
     "pages/common/CommonComponent3",
-    "pages/common/CommonComponent4",
-    "pages/common/sub_window"
+    "pages/common/CommonComponent4"
   ]
 }

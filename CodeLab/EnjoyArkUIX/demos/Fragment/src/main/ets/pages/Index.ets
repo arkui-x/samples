@@ -5,7 +5,6 @@ import common from '@ohos.app.ability.common'
 @Entry
 @Component
 struct One {
-  @State message: string = 'Arkui UI组件：'
   controller: TextInputController = new TextInputController()
   @State keyboartStr: string =''
   @State isLunar: boolean = false
@@ -14,22 +13,13 @@ struct One {
   build() {
     Row() {
       Column() {
-        Row() {
-          Image($r("app.media.icon")).width(20).height(20)
-
-          Text(this.message)
-            .fontSize(16)
-            .fontWeight(FontWeight.Normal)
-        }
-        .height(40)
-        .width('100%')
-        .margin({ top: 20, bottom: 6 })
 
         Button('切换公历农历')
           .margin({ top: 30, bottom: 30 })
           .onClick(() => {
             this.isLunar = !this.isLunar
           })
+
         DatePicker({
           start: new Date('1970-1-1'),
           end: new Date('2100-1-1'),
@@ -44,7 +34,7 @@ struct One {
             console.info('select current date is: ' + value.toString())
           })
 
-        Button("Arkui跳转原生activity")
+        Button("Arkui跳转ANDROID_ACTIVITY")
           .onClick(() => {
             let want:Want={
               bundleName:'com.example.enjoyarkuix',
@@ -56,10 +46,9 @@ struct One {
             context.startAbility(want,(err,data)=>{});
 
           })
-          .margin({ top: 30, bottom: 30 })
-          .width(200)
-          .fontSize(20)
-          .padding({top: 10,bottom:10})
+          .fontColor(Color.Black)
+          .backgroundColor(Color.Grey)
+          .margin({ top: 150, bottom: 30 })
       }
 
     }

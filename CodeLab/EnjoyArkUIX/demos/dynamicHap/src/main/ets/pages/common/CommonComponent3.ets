@@ -24,23 +24,10 @@ struct CommonComponent3 {
     Row() {
       Scroll() {
         Column() {
-
-          List() {
-            ListItem() {
-              Text('北京').fontSize(24)
-            }
-
-            ListItem() {
-              Text('杭州').fontSize(24)
-            }
-
-            ListItem() {
-              Text('上海').fontSize(24)
-            }
-          }
-          .backgroundColor('#FFF1F3F5')
-          .alignListItem(ListItemAlign.Center)
-          .margin(20)
+          Text("Grid组件展示")
+            .fontSize(20)
+            .fontWeight(FontWeight.Bold)
+            .margin(10)
 
           Grid() {
             GridItem() {
@@ -63,25 +50,10 @@ struct CommonComponent3 {
           .margin(20)
           .height(100)
 
-
-          Swiper() {
-            Text('0')
-              .backgroundColor(Color.Gray)
-              .textAlign(TextAlign.Center)
-              .fontSize(30)
-
-            Text('1')
-              .backgroundColor(Color.Green)
-              .textAlign(TextAlign.Center)
-              .fontSize(30)
-
-            Text('2')
-              .backgroundColor(Color.Pink)
-              .textAlign(TextAlign.Center)
-              .fontSize(30)
-          }
-          .loop(true)
-          .margin(20)
+          Text("Tabs组件展示")
+            .fontSize(20)
+            .fontWeight(FontWeight.Bold)
+            .margin(10)
 
           Tabs() {
             TabContent() {
@@ -105,6 +77,11 @@ struct CommonComponent3 {
             .tabBar("我的")
           }
           .height(150)
+
+          Text("scroll组件展示")
+            .fontSize(20)
+            .fontWeight(FontWeight.Bold)
+            .margin(10)
 
           Grid(this.scroller) {
             ForEach(this.Number, (day: string) => {
@@ -136,10 +113,6 @@ struct CommonComponent3 {
           .backgroundColor(0xFAEEE0)
           .height(300)
 
-          Button('next page')
-            .onClick(() => {
-              this.scroller.scrollPage({ next: true })
-            })
         }
         .width('100%')
       }

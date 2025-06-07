@@ -18,7 +18,7 @@ struct ViewFragmentPage {
             src: 'https://video.pearvideo.com/mp4/third/20221107/cont-1774194-10703582-201045-hd.mp4'
           })
             .width('100%')
-            .height('100%')
+            .height('70%')
             .objectFit(ImageFit.Contain)
             .autoPlay(false)
             .onFullscreenChange((event) => {
@@ -33,7 +33,7 @@ struct ViewFragmentPage {
               middle: { anchor: '__container__', align: HorizontalAlign.Center }
             })
 
-          Button("跳转原生")
+          Button("Arkui跳转ANDROID_ACTIVITY")
             .onClick(() => {
               let want: Want = {
                 bundleName: 'com.example.enjoyarkuix',
@@ -45,10 +45,9 @@ struct ViewFragmentPage {
               });
 
             })
-            .margin(10)
-            .width(200)
-            .fontSize(20)
-            .padding({ top: 10, bottom: 10 })
+            .backgroundColor(Color.Grey)
+            .fontColor(Color.Black)
+            .margin({ top: 100, bottom: 30 })
         }
         .width('100%')
         .padding({ left: '4%', right: '4%' })

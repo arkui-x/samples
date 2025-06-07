@@ -16,7 +16,7 @@
     <Button
         android:id="@+id/viewpager"
         android:layout_width="300dp"
-        android:layout_height="wrap_content"
+        android:layout_height="80dp"
         android:layout_gravity="center_horizontal"
         android:layout_marginLeft="20dp"
         android:layout_marginTop="48dp"
@@ -26,7 +26,7 @@
     <Button
         android:id="@+id/fragmentmanager"
         android:layout_width="300dp"
-        android:layout_height="wrap_content"
+        android:layout_height="80dp"
         android:layout_gravity="center_horizontal"
         android:layout_marginLeft="20dp"
         android:layout_marginTop="48dp"

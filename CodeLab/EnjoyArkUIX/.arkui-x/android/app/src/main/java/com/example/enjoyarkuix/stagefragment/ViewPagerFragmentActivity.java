@@ -70,7 +70,7 @@ public class ViewPagerFragmentActivity extends FragmentActivity {
         ViewPager viewPager = findViewById(R.id.viewPager);
 
         TitleFragmentPagerAdapter adapter = new TitleFragmentPagerAdapter(getSupportFragmentManager(), fragments,
-                new String[] {"ArkuiFragment", "原生Fragment"});
+                new String[] {"ArkuiFragment", "AndroidFragment"});
         viewPager.setAdapter(adapter);
 
         tabLayout.setupWithViewPager(viewPager);

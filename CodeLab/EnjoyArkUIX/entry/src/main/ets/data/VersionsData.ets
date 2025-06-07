@@ -13,6 +13,17 @@
  * limitations under the License.
  */
 
-import { ThirdLevelCategory } from '../model/CategoricalDataType'
+import {PlatformTypeEnum, ThirdLevelCategory } from '../model/CategoricalDataType'
 
-export const VERSIONS: ThirdLevelCategory[] = []
+export const VERSIONS: ThirdLevelCategory[] = [
+  {
+    image: $r('app.media.ic_unselect_animation'),
+    title: $r('app.string.version'),
+    want: {
+      bundleName: 'com.example.enjoyarkuix',
+      moduleName: 'version',
+      abilityName: 'VersionAbility',
+    },
+    platform: PlatformTypeEnum.SUPPORT_BOTH
+  },
+]

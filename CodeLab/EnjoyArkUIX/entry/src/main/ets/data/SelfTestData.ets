@@ -13,6 +13,17 @@
  * limitations under the License.
  */
 
-import { ThirdLevelCategory } from '../model/CategoricalDataType'
+import { PlatformTypeEnum,ThirdLevelCategory } from '../model/CategoricalDataType'
 
-export const SELF_TEST: ThirdLevelCategory[] = []
+export const SELF_TEST: ThirdLevelCategory[] = [
+  {
+    image: $r('app.media.ic_unselect_component'),
+    title: $r('app.string.test'),
+    want: {
+      bundleName: 'com.example.enjoyarkuix',
+      moduleName: 'Test',
+      abilityName: 'TestAbility',
+    },
+    platform: PlatformTypeEnum.SUPPORT_BOTH
+  },
+]
