@@ -138,13 +138,13 @@ APP
 
 ## 约束与限制
 
-1. 本示例仅支持标准HarmonyOS Next、Android和iOS和设备系统上运行。<br>
+1. 本示例仅支持在标准HarmonyOS Next、Android和iOS设备系统上运行。<br>
 
 2. 本示例已适配API version 16版本的ArkUI-X SDK。<br>
 
-3. 本示例需要使用DevEco Studio 5.0.4 Release。<br>
+3. 本示例需要使用DevEco Studio 5.0.4 Release及以上版本才可编译运行。<br>
 
-4. 本示例在Android端运行需要使用Cmake编译；需要配置以下内容<br>
+4. 本示例在Android端运行需要使用Cmake编译。需要配置以下内容：<br>
 
 - 配置系统环境变量：<br>
 
@@ -154,7 +154,7 @@ APP
 
 - 配置ArkUI-X SDK的API版本：<br>
 
-  找到工程的[CMakeLists.txt](.arkui-x/android/app/src/main/cpp/CMakeLists.txt)找到如下语句，修改其中的数字为实际编译使用的API版本<br>
+  找到工程的[CMakeLists.txt](.arkui-x/android/app/src/main/cpp/CMakeLists.txt)找到如下语句，修改为实际的SDK路径<br>
 
   <img src="screenshots/001.png" />
 
@@ -288,4 +288,3 @@ echo /CodeLab/Cases > .git/info/sparse-checkout
 git remote add origin https://gitcode.com/arkui-x/samples.git
 git pull origin master
 ```
-
