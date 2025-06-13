@@ -93,8 +93,7 @@
         PlatformBridgePlatformBridgeAbilityViewController *otherVC = [[PlatformBridgePlatformBridgeAbilityViewController alloc] initWithInstanceName:instanceName];
         subStageVC = (PlatformBridgePlatformBridgeAbilityViewController *)otherVC;
     }  else if ([moduleName isEqualToString:@"Dynamization"] && [abilityName isEqualToString:@"Jump"]) {
-        NSString *instanceName = [NSString stringWithFormat:@"%@:%@:%@",bundleName, moduleName, abilityName];
-        subStageVC = [[DynamizationJumpController alloc] initWithInstanceName:instanceName];
+        subStageVC = [[DynamizationJumpController alloc] init];
     }else if ([moduleName isEqualToString:@"Test"] && [abilityName isEqualToString:@"TestAbility"]) {
         NSString *instanceName = [NSString stringWithFormat:@"%@:%@:%@",bundleName, moduleName, abilityName];
         TestTestAbilityViewController *otherVC = [[TestTestAbilityViewController alloc] initWithInstanceName:instanceName];
