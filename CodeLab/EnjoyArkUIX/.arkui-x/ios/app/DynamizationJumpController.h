@@ -16,10 +16,9 @@
 #ifndef DYNAMICLOADVIEWCONTROLLER_H
 #define DYNAMICLOADVIEWCONTROLLER_H
 #import <UIKit/UIKit.h>
-#import <libarkui_ios/StageViewController.h>
 NS_ASSUME_NONNULL_BEGIN
 
-@interface DynamizationJumpController : StageViewController
+@interface DynamizationJumpController : UIViewController
 
 @property (nonatomic, copy) NSString *titleName;
 

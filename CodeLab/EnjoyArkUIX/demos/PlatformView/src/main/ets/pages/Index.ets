@@ -28,7 +28,7 @@ struct Index {
     Column() {
       Row() {
         Column() {
-          TitleBar().markAnchor({ x: -5, y: 260 })
+          TitleBar().markAnchor({ x: -5, y: 210 })
           Text(this.title)
             .fontSize(35)
             .margin(5)
