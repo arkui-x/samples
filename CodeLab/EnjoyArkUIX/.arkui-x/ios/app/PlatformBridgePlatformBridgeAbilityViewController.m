@@ -37,6 +37,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.navigationItem.hidesBackButton = YES;
+
 //    self.title = @"1.ArkUI通过Bridge调用原生平台";
 
     self.edgesForExtendedLayout = UIRectEdgeNone;
