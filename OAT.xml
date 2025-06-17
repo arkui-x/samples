@@ -59,60 +59,60 @@ Note:If the text contains special characters, please escape them according to th
                 <filteritem type="filename" name="gradle-wrapper.jar" desc="Android工程模版自带的打包工具"/>
                 <filteritem type="filename" name="icon.png" desc="app应用图标"/>
                 <filteritem type="filename" name="app_icon.png" desc="app应用图标"/>
-                <filteritem type="filepath" name="HelloWorld/ios/.*.xcuserstate" desc="iOS工程固定配置文件"/>
-                <filteritem type="filepath" name="HelloWorld/screenshots/.*.png|.*.jpg" desc="运行结果截图"/>
-                <filteritem type="filepath" name="PlatformBridge/ios/.*.xcuserstate" desc="iOS工程固定配置文件"/>
-                <filteritem type="filepath" name="PlatformView/ios/.*.xcuserstate" desc="iOS工程固定配置文件"/>
-                <filteritem type="filepath" name="PlatformView/entry/src/main/resources/base/media/.*.png" desc="应用图片"/>
-                <filteritem type="filepath" name="PlatformView/entry/src/ohosTest/resources/base/media/.*.png" desc="应用图片"/>
-                <filteritem type="filepath" name="PlatformView/AppScope/resources/base/media/.*.png" desc="应用图片"/>
-                <filteritem type="filepath" name="Shopping/source/entry/src/main/ets/MainAbility/resources/.*.png" desc="具备版权的图片"/>
-                <filteritem type="filepath" name="Shopping/android/app/src/main/assets/js/MainAbility/resources/.*.png" desc="具备版权的图片"/>
-                <filteritem type="filepath" name="Shopping/ios/.*.xcuserstate" desc="iOS工程固定配置文件"/>
-                <filteritem type="filepath" name="Shopping/screenshots/.*.png|.*.jpg" desc="运行结果截图"/>
-                <filteritem type="filepath" name="HealthyDiet/ios/.*.xcuserstate" desc="iOS工程固定配置文件"/>
-                <filteritem type="filepath" name="Animation/entry/src/main/resources/base/media/.*.png|.*.jpg" desc="具备版权的图片"/>
-                <filteritem type="filepath" name="Animation/screenshots/.*.png" desc="运行结果截图"/>
-                <filteritem type="filepath" name="Animation/entry/src/ohosTest/resources/base/media/.*.png" desc="具备版权的图片"/>
-                <filteritem type="filepath" name="Files/screenshots/.*.png" desc="运行结果截图"/>
-                <filteritem type="filepath" name="HealthyDiet/entry/src/main/resources/base/media/.*.png" desc="具备版权的图片"/>
-                <filteritem type="filepath" name="InfiniteList/entry/src/ohosTest/resources/base/media/.*.png" desc="具备版权的图片"/>
-                <filteritem type="filepath" name="InfiniteList/screenshots/.*.png|.*.jpg" desc="运行结果截图"/>
-                <filteritem type="filepath" name="JsonExample/screenshots/.*.png" desc="运行结果截图"/>
-                <filteritem type="filepath" name="MultiAbility/AppScope/resources/base/media/.*.png" desc="具备版权的图片"/>
-                <filteritem type="filepath" name="MultiAbility/secondmodule/src/main/resources/base/media/.*.png" desc="already checked"/>
-                <filteritem type="filepath" name="Router/entry/src/main/resources/base/media/.*.png|.*.webp" desc="already checked"/>
-                <filteritem type="filepath" name="Router/screenshots/.*.png" desc="运行结果截图"/>
-                <filteritem type="filepath" name="Files/entry/src/main/resources/base/media/.*.png" desc="already checked"/>
-                <filteritem type="filepath" name="News/entry/src/ohosTest/resources/base/media/.*.png" desc="already checked"/>
-                <filteritem type="filepath" name="Library/entry/src/ohosTest/resources/base/media/.*.png" desc="already checked"/>
-                <filteritem type="filepath" name="MediaVideo/screenshots/.*.png" desc="运行结果截图"/>
-                <filteritem type="filepath" name="MultiAbility/entry/src/main/resources/base/media/.*.png" desc="already checked"/>
-                <filteritem type="filepath" name="XcomponentNative/screenshots/.*.png" desc="运行结果截图"/>
-                <filteritem type="filepath" name="FauxNativeAlbum/cross_platform/screenshots/.*.png" desc="运行结果截图"/>
-                <filteritem type="filepath" name="FauxNativeAlbum/harmony_album/AppScope/resources/base/media/.*.png" desc="already checked"/>
-                <filteritem type="filepath" name="FauxNativeAlbum/harmony_album/entry/src/main/ets/common/images/.*.png|.*.mp4" desc="already checked"/>
-                <filteritem type="filepath" name="FauxNativeAlbum/harmony_album/entry/src/main/resources/base/media/.*.png|.*.mp4" desc="already checked"/>
-                <filteritem type="filepath" name="News/entry/src/main/resources/base/media/.*.png|.*.mp4|.*.gif" desc="already checked"/>
-                <filteritem type="filepath" name="News/screenshots/.*.png" desc="运行结果截图"/>
-                <filteritem type="filepath" name="Shopping/entry/src/main/ets/resources/.*.png" desc="already checked"/>
-                <filteritem type="filepath" name="JsonExample/entry/src/main/resources/base/media/.*.png" desc="already checked"/>
+                <filteritem type="filepath" name="BasicFeature/HelloWorld/ios/.*.xcuserstate" desc="iOS工程固定配置文件"/>
+                <filteritem type="filepath" name="BasicFeature/HelloWorld/screenshots/.*.png|.*.jpg" desc="运行结果截图"/>
+                <filteritem type="filepath" name="SuperFeature/PlatformBridge/ios/.*.xcuserstate" desc="iOS工程固定配置文件"/>
+                <filteritem type="filepath" name="SuperFeature/PlatformView/ios/.*.xcuserstate" desc="iOS工程固定配置文件"/>
+                <filteritem type="filepath" name="SuperFeature/PlatformView/entry/src/main/resources/base/media/.*.png" desc="应用图片"/>
+                <filteritem type="filepath" name="SuperFeature/PlatformView/entry/src/ohosTest/resources/base/media/.*.png" desc="应用图片"/>
+                <filteritem type="filepath" name="SuperFeature/PlatformView/AppScope/resources/base/media/.*.png" desc="应用图片"/>
+                <filteritem type="filepath" name="SuperFeature/PlatformView/screenshots/.*.png" desc="运行结果截图"/>
+                <filteritem type="filepath" name="Solutions/Shopping/source/entry/src/main/ets/MainAbility/resources/.*.png" desc="具备版权的图片"/>
+                <filteritem type="filepath" name="Solutions/Shopping/android/app/src/main/assets/js/MainAbility/resources/.*.png" desc="具备版权的图片"/>
+                <filteritem type="filepath" name="Solutions/Shopping/ios/.*.xcuserstate" desc="iOS工程固定配置文件"/>
+                <filteritem type="filepath" name="Solutions/Shopping/screenshots/.*.png|.*.jpg" desc="运行结果截图"/>
+                <filteritem type="filepath" name="Solutions/HealthyDiet/ios/.*.xcuserstate" desc="iOS工程固定配置文件"/>
+                <filteritem type="filepath" name="SuperFeature/Animation/entry/src/main/resources/base/media/.*.png|.*.jpg" desc="具备版权的图片"/>
+                <filteritem type="filepath" name="SuperFeature/Animation/screenshots/.*.png" desc="运行结果截图"/>
+                <filteritem type="filepath" name="SuperFeature/Animation/entry/src/ohosTest/resources/base/media/.*.png" desc="具备版权的图片"/>
+                <filteritem type="filepath" name="SuperFeature/Files/screenshots/.*.png" desc="运行结果截图"/>
+                <filteritem type="filepath" name="Solutions/HealthyDiet/entry/src/main/resources/base/media/.*.png" desc="具备版权的图片"/>
+                <filteritem type="filepath" name="SuperFeature/InfiniteList/entry/src/ohosTest/resources/base/media/.*.png" desc="具备版权的图片"/>
+                <filteritem type="filepath" name="SuperFeature/InfiniteList/screenshots/.*.png|.*.jpg" desc="运行结果截图"/>
+                <filteritem type="filepath" name="SuperFeature/JsonExample/screenshots/.*.png" desc="运行结果截图"/>
+                <filteritem type="filepath" name="BasicFeature/MultiAbility/AppScope/resources/base/media/.*.png" desc="具备版权的图片"/>
+                <filteritem type="filepath" name="BasicFeature/MultiAbility/secondmodule/src/main/resources/base/media/.*.png" desc="already checked"/>
+                <filteritem type="filepath" name="SuperFeature/Router/entry/src/main/resources/base/media/.*.png|.*.webp" desc="already checked"/>
+                <filteritem type="filepath" name="SuperFeature/Router/screenshots/.*.png" desc="运行结果截图"/>
+                <filteritem type="filepath" name="SuperFeature/Files/entry/src/main/resources/base/media/.*.png" desc="already checked"/>
+                <filteritem type="filepath" name="Solutions/News/entry/src/ohosTest/resources/base/media/.*.png" desc="already checked"/>
+                <filteritem type="filepath" name="BasicFeature/Library/entry/src/ohosTest/resources/base/media/.*.png" desc="already checked"/>
+                <filteritem type="filepath" name="SuperFeature/MediaVideo/screenshots/.*.png" desc="运行结果截图"/>
+                <filteritem type="filepath" name="BasicFeature/MultiAbility/entry/src/main/resources/base/media/.*.png" desc="already checked"/>
+                <filteritem type="filepath" name="SuperFeature/XcomponentNative/screenshots/.*.png" desc="运行结果截图"/>
+                <filteritem type="filepath" name="SuperFeature/FauxNativeAlbum/screenshots/.*.png" desc="运行结果截图"/>
+                <filteritem type="filepath" name="SuperFeature/FauxNativeAlbum/harmony_album/AppScope/resources/base/media/.*.png" desc="already checked"/>
+                <filteritem type="filepath" name="SuperFeature/FauxNativeAlbum/harmony_album/entry/src/main/ets/common/images/.*.png|.*.mp4" desc="already checked"/>
+                <filteritem type="filepath" name="SuperFeature/FauxNativeAlbum/harmony_album/entry/src/main/resources/base/media/.*.png|.*.mp4" desc="already checked"/>
+                <filteritem type="filepath" name="Solutions/News/entry/src/main/resources/base/media/.*.png|.*.mp4|.*.gif" desc="already checked"/>
+                <filteritem type="filepath" name="Solutions/News/screenshots/.*.png" desc="运行结果截图"/>
+                <filteritem type="filepath" name="Solutions/Shopping/entry/src/main/ets/resources/.*.png" desc="already checked"/>
+                <filteritem type="filepath" name="SuperFeature/JsonExample/entry/src/main/resources/base/media/.*.png" desc="already checked"/>
                 <filteritem type="filepath" name="SuperFeature/WebExample/entry/src/main/resources/base/media/.*.png" desc="already checked"/>
                 <filteritem type="filepath" name="SuperFeature/WebExample/screenshots/.*.png" desc="运行结果截图"/>
-                <filteritem type="filepath" name="HelloWorld/entry/src/main/resources/base/media/.*.png" desc="already checked"/>
-                <filteritem type="filepath" name="JsonExample/AppScope/resources/base/media/.*.png" desc="already checked"/>
-                <filteritem type="filepath" name="Router/AppScope/resources/base/media/.*.png" desc="already checked"/>
-                <filteritem type="filepath" name="FauxNativeAlbum/harmony_album/screenshots/.*.png" desc="运行结果截图"/>
+                <filteritem type="filepath" name="BasicFeature/HelloWorld/entry/src/main/resources/base/media/.*.png" desc="already checked"/>
+                <filteritem type="filepath" name="SuperFeature/JsonExample/AppScope/resources/base/media/.*.png" desc="already checked"/>
+                <filteritem type="filepath" name="SuperFeature/Router/AppScope/resources/base/media/.*.png" desc="already checked"/>
+                <filteritem type="filepath" name="SuperFeature/FauxNativeAlbum/harmony_album/screenshots/.*.png" desc="运行结果截图"/>
                 <filteritem type="filepath" name="SuperFeature/WebExample/entry/src/main/resources/rawfile/assets/.*.png" desc="already checked"/>
-                <filteritem type="filepath" name="FauxNativeAlbum/cross_platform/entry/src/main/resources/base/media/.*.png" desc="already checked"/>
-                <filteritem type="filepath" name="PlatformNAPI/screenshots/.*.png" desc="运行结果截图"/>
-                <filteritem type="filepath" name="Router/entry/src/main/ets/pages/RedirectPage.ets" desc="ets源码"/>
-                <filteritem type="filepath" name="JsonExample/entry/src/main/ets/beans/SimpleObject.ets" desc="ets源码"/>
-                <filteritem type="filepath" name="JsonExample/entry/src/main/ets/beans/ComplicatedObject.ets" desc="ets源码"/>
-                <filteritem type="filepath" name="Shopping/entry/src/main/ets/resources/common/.*.png" desc="already checked"/>
+                <filteritem type="filepath" name="SuperFeature/FauxNativeAlbum/entry/src/main/resources/base/media/.*.png" desc="already checked"/>
+                <filteritem type="filepath" name="SuperFeature/PlatformNAPI/screenshots/.*.png" desc="运行结果截图"/>
+                <filteritem type="filepath" name="SuperFeature/Router/entry/src/main/ets/pages/RedirectPage.ets" desc="ets源码"/>
+                <filteritem type="filepath" name="SuperFeature/JsonExample/entry/src/main/ets/beans/SimpleObject.ets" desc="ets源码"/>
+                <filteritem type="filepath" name="SuperFeature/JsonExample/entry/src/main/ets/beans/ComplicatedObject.ets" desc="ets源码"/>
+                <filteritem type="filepath" name="Solutions/Shopping/entry/src/main/ets/resources/common/.*.png" desc="already checked"/>
                 <filteritem type="filepath" name="SuperFeature/WebExample/entry/src/main/resources/rawfile/icons/.*.png" desc="already checked"/>
                 <filteritem type="filepath" name="SuperFeature/WebExample/entry/src/main/resources/rawfile/fonts/.*.ttf" desc="already checked"/>
-                <filteritem type="filepath" name="SuperFeature/WantParamsExample/screenshots/devices/.*.png" desc="already checked"/>
                 <filteritem type="filepath" name="RustFeature/Rust/RustDev/entry/src/main/resources/base/media/.*.png" desc="应用图片"/>
                 <filteritem type="filepath" name="RustFeature/Rust/RustDev/AppScope/resources/base/media/.*.png" desc="应用图片"/>
                 <filteritem type="filepath" name="RustFeature/Rust/rust_add/build.rs" desc="rust源码"/>
@@ -121,50 +121,59 @@ Note:If the text contains special characters, please escape them according to th
                 <filteritem type="filepath" name="CodeLab/Cases/.*.png|.*.mp4|.*.jpeg|.*.tgz|.*.so|.*.14|.*.xlsx|.*.mp3|.*.mp4|.*.heic|.*.ets" desc="already checked"/>
                 <filteritem type="filepath" name="CodeLab/Cases/.*.1|.*.zip|.*.json5|.*.4|.*.ogg|.*.pptx|.*.lrc|.*.pdf|.*.exe" desc="already checked"/>
                 <filteritem type="filepath" name="CodeLab/EnjoyArkUIX/.*.png" desc="already checked"/>
+                <filteritem type="filepath" name="CodeLab/HMOSWorld/.*.png|.*.ap" desc="already checked"/>
+                <filteritem type="filepath" name="CodeLab/MultiShopping/.*.png" desc="already checked"/>
+                <filteritem type="filepath" name="CodeLab/MusicHome/.*.png|.*.jpeg|.*.wav" desc="already checked"/>
+                <filteritem type="filepath" name="CodeLab/OxHornCampus/.*.png" desc="already checked"/>
+                <filteritem type="filepath" name="SuperFeature/WantParamsExample/.*.png" desc="already checked"/>
             </filefilter>
             <filefilter name="copyrightPolicyFilter" desc="Copyright文件头校验策略的过滤条件" >
-                <filteritem type="filepath" name="Animation/.*.ets|.*.ts" desc="示例展示无需添加版权头"/>
-                <filteritem type="filepath" name="FauxNativeAlbum/.*.ets|.*.ts" desc="示例展示无需添加版权头"/>
-                <filteritem type="filepath" name="Files/.*.ets|.*.ts" desc="示例展示无需添加版权头"/>
-                <filteritem type="filepath" name="HealthyDiet/.*.ets|.*.ts" desc="示例展示无需添加版权头"/>
-                <filteritem type="filepath" name="HelloWorld/.*.ets|.*.ts" desc="示例展示无需添加版权头"/>
-                <filteritem type="filepath" name="InfiniteList/.*.ets|.*.ts" desc="示例展示无需添加版权头"/>
-                <filteritem type="filepath" name="JsonExample/.*.ets|.*.ts" desc="示例展示无需添加版权头"/>
-                <filteritem type="filepath" name="Library/.*.ets|.*.ts" desc="示例展示无需添加版权头"/>
-                <filteritem type="filepath" name="MediaVideo/.*.ets|.*.ts" desc="示例展示无需添加版权头"/>
-                <filteritem type="filepath" name="MultiAbility/.*.ets|.*.ts" desc="示例展示无需添加版权头"/>
-                <filteritem type="filepath" name="Native/.*.ets|.*.ts" desc="示例展示无需添加版权头"/>
-                <filteritem type="filepath" name="News/.*.ets|.*.ts" desc="示例展示无需添加版权头"/>
-                <filteritem type="filepath" name="PlatformBridge/.*.ets|.*.ts" desc="示例展示无需添加版权头"/>
-                <filteritem type="filepath" name="PlatformNAPI/.*.ets|.*.ts" desc="示例展示无需添加版权头"/>
-                <filteritem type="filepath" name="Router/.*.ets|.*.ts" desc="示例展示无需添加版权头"/>
+                <filteritem type="filepath" name="SuperFeature/Animation/.*.ets|.*.ts" desc="示例展示无需添加版权头"/>
+                <filteritem type="filepath" name="SuperFeature/FauxNativeAlbum/.*.ets|.*.ts" desc="示例展示无需添加版权头"/>
+                <filteritem type="filepath" name="SuperFeature/Files/.*.ets|.*.ts" desc="示例展示无需添加版权头"/>
+                <filteritem type="filepath" name="Solutions/HealthyDiet/.*.ets|.*.ts" desc="示例展示无需添加版权头"/>
+                <filteritem type="filepath" name="BasicFeature/HelloWorld/.*.ets|.*.ts" desc="示例展示无需添加版权头"/>
+                <filteritem type="filepath" name="SuperFeature/InfiniteList/.*.ets|.*.ts" desc="示例展示无需添加版权头"/>
+                <filteritem type="filepath" name="SuperFeature/JsonExample/.*.ets|.*.ts" desc="示例展示无需添加版权头"/>
+                <filteritem type="filepath" name="BasicFeature/Library/.*.ets|.*.ts" desc="示例展示无需添加版权头"/>
+                <filteritem type="filepath" name="SuperFeature/MediaVideo/.*.ets|.*.ts" desc="示例展示无需添加版权头"/>
+                <filteritem type="filepath" name="BasicFeature/MultiAbility/.*.ets|.*.ts" desc="示例展示无需添加版权头"/>
+                <filteritem type="filepath" name="BasicFeature/Native/.*.ets|.*.ts" desc="示例展示无需添加版权头"/>
+                <filteritem type="filepath" name="Solutions/News/.*.ets|.*.ts" desc="示例展示无需添加版权头"/>
+                <filteritem type="filepath" name="SuperFeature/PlatformBridge/.*.ets|.*.ts" desc="示例展示无需添加版权头"/>
+                <filteritem type="filepath" name="SuperFeature/PlatformNAPI/.*.ets|.*.ts" desc="示例展示无需添加版权头"/>
+                <filteritem type="filepath" name="SuperFeature/Router/.*.ets|.*.ts" desc="示例展示无需添加版权头"/>
                 <filteritem type="filepath" name="RustFeature/Rust/rust_add/.*.rs|.*.toml" desc="示例展示无需添加版权头"/>
-                <filteritem type="filepath" name="Shopping/.*.ets|.*.ts" desc="示例展示无需添加版权头"/>
+                <filteritem type="filepath" name="Solutions/Shopping/.*.ets|.*.ts" desc="示例展示无需添加版权头"/>
                 <filteritem type="filepath" name="SuperFeature/WebExample/.*.ets|.*.ts" desc="示例展示无需添加版权头"/>
-                <filteritem type="filepath" name="XcomponentNative/.*.ets|.*.ts" desc="示例展示无需添加版权头"/>
+                <filteritem type="filepath" name="SuperFeature/XcomponentNative/.*.ets|.*.ts" desc="示例展示无需添加版权头"/>
+                <filteritem type="filepath" name="SuperFeature/PlatformView/.*.json5" desc="示例展示无需添加版权头"/>
+                <filteritem type="filepath" name="CodeLab/MusicHome/.*.lrc" desc="具备版权的音乐"/>
                 <filteritem type="filepath" name="SuperFeature/WebExample/entry/src/main/resources/rawfile/js/echarts.min.js" desc="import third-party ECharts file"/>
                 <filteritem type="filepath" name="SuperFeature/WebExample/entry/src/main/resources/rawfile/js/.*.js" desc="示例展示无需添加版权头"/>
             </filefilter>
             <filefilter name="defaultPolicyFilter" desc="HealthyDiet License文件头校验策略的过滤条件" >
-                <filteritem type="filepath" name="Animation/.*.ets|.*.ts" desc="示例展示无需添加License头"/>
-                <filteritem type="filepath" name="FauxNativeAlbum/.*.ets|.*.ts" desc="示例展示无需添加License头"/>
-                <filteritem type="filepath" name="Files/.*.ets|.*.ts" desc="示例展示无需添加License头"/>
-                <filteritem type="filepath" name="HealthyDiet/.*.ets|.*.ts" desc="示例展示无需添加License头"/>
-                <filteritem type="filepath" name="HelloWorld/.*.ets|.*.ts" desc="示例展示无需添加License头"/>
-                <filteritem type="filepath" name="InfiniteList/.*.ets|.*.ts" desc="示例展示无需添加License头"/>
-                <filteritem type="filepath" name="JsonExample/.*.ets|.*.ts" desc="示例展示无需添加License头"/>
-                <filteritem type="filepath" name="Library/.*.ets|.*.ts" desc="示例展示无需添加License头"/>
-                <filteritem type="filepath" name="MediaVideo/.*.ets|.*.ts" desc="示例展示无需添加License头"/>
-                <filteritem type="filepath" name="MultiAbility/.*.ets|.*.ts" desc="示例展示无需添加License头"/>
+                <filteritem type="filepath" name="SuperFeature/Animation/.*.ets|.*.ts" desc="示例展示无需添加License头"/>
+                <filteritem type="filepath" name="SuperFeature/FauxNativeAlbum/.*.ets|.*.ts" desc="示例展示无需添加License头"/>
+                <filteritem type="filepath" name="SuperFeature/Files/.*.ets|.*.ts" desc="示例展示无需添加License头"/>
+                <filteritem type="filepath" name="Solutions/HealthyDiet/.*.ets|.*.ts" desc="示例展示无需添加License头"/>
+                <filteritem type="filepath" name="BasicFeature/HelloWorld/.*.ets|.*.ts" desc="示例展示无需添加License头"/>
+                <filteritem type="filepath" name="SuperFeature/InfiniteList/.*.ets|.*.ts" desc="示例展示无需添加License头"/>
+                <filteritem type="filepath" name="SuperFeature/JsonExample/.*.ets|.*.ts" desc="示例展示无需添加License头"/>
+                <filteritem type="filepath" name="BasicFeature/Library/.*.ets|.*.ts" desc="示例展示无需添加License头"/>
+                <filteritem type="filepath" name="SuperFeature/MediaVideo/.*.ets|.*.ts" desc="示例展示无需添加License头"/>
+                <filteritem type="filepath" name="BasicFeature/MultiAbility/.*.ets|.*.ts" desc="示例展示无需添加License头"/>
                 <filteritem type="filepath" name="Native/.*.ets|.*.ts" desc="示例展示无需添加License头"/>
-                <filteritem type="filepath" name="News/.*.ets|.*.ts" desc="示例展示无需添加License头"/>
-                <filteritem type="filepath" name="PlatformBridge/.*.ets|.*.ts" desc="示例展示无需添加License头"/>
-                <filteritem type="filepath" name="PlatformNAPI/.*.ets|.*.ts" desc="示例展示无需添加License头"/>
-                <filteritem type="filepath" name="Router/.*.ets|.*.ts" desc="示例展示无需添加License头"/>
+                <filteritem type="filepath" name="Solutions/News/.*.ets|.*.ts" desc="示例展示无需添加License头"/>
+                <filteritem type="filepath" name="SuperFeature/PlatformBridge/.*.ets|.*.ts" desc="示例展示无需添加License头"/>
+                <filteritem type="filepath" name="SuperFeature/PlatformNAPI/.*.ets|.*.ts" desc="示例展示无需添加License头"/>
+                <filteritem type="filepath" name="SuperFeature/Router/.*.ets|.*.ts" desc="示例展示无需添加License头"/>
                 <filteritem type="filepath" name="RustFeature/Rust/rust_add/.*.rs|.*.toml" desc="示例展示无需添加License头"/>
-                <filteritem type="filepath" name="Shopping/.*.ets|.*.ts" desc="示例展示无需添加License头"/>
+                <filteritem type="filepath" name="Solutions/Shopping/.*.ets|.*.ts" desc="示例展示无需添加License头"/>
                 <filteritem type="filepath" name="SuperFeature/WebExample/.*.ets|.*.ts" desc="示例展示无需添加License头"/>
-                <filteritem type="filepath" name="XcomponentNative/.*.ets|.*.ts" desc="示例展示无需添加License头"/>
+                <filteritem type="filepath" name="SuperFeature/PlatformView/.*.json5" desc="示例展示无需添加License头"/>
+                <filteritem type="filepath" name="SuperFeature/XcomponentNative/.*.ets|.*.ts" desc="示例展示无需添加License头"/>
+                <filteritem type="filepath" name="CodeLab/MusicHome/.*.lrc" desc="具备版权的音乐，无需添加License头"/>
                 <filteritem type="filepath" name="SuperFeature/WebExample/entry/src/main/resources/rawfile/js/echarts.min.js" desc="import third-party ECharts file"/>
                 <filteritem type="filepath" name="SuperFeature/WebExample/entry/src/main/resources/rawfile/js/.*.js" desc="示例展示无需添加License头"/>
             </filefilter>
