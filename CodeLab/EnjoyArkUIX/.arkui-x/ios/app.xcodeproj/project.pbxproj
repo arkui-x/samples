@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		72EAB85EA2C247ABB9E27872 /* ModifierModifierAbilityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18ADF3C252B74EC9AA095A4A /* ModifierModifierAbilityViewController.m */; };
 		89E41E4529F505070004F33E /* EntryEntryAbilityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 89E41E4329F505070004F33E /* EntryEntryAbilityViewController.m */; };
 		89E41E4629F505CD0004F33E /* libarkui_ios.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF9C1B5D28B9FC3A005DCF58 /* libarkui_ios.xcframework */; };
 		89E41E4729F505CD0004F33E /* libarkui_ios.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DF9C1B5D28B9FC3A005DCF58 /* libarkui_ios.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -48,6 +49,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		18ADF3C252B74EC9AA095A4A /* ModifierModifierAbilityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModifierModifierAbilityViewController.m; sourceTree = "<group>"; };
+		6AFB8CB64D614C0287C598AB /* ModifierModifierAbilityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModifierModifierAbilityViewController.h; sourceTree = "<group>"; };
 		89E41E4329F505070004F33E /* EntryEntryAbilityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EntryEntryAbilityViewController.m; sourceTree = "<group>"; };
 		89E41E4429F505070004F33E /* EntryEntryAbilityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EntryEntryAbilityViewController.h; sourceTree = "<group>"; };
 		DF9C1B5D28B9FC3A005DCF58 /* libarkui_ios.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = libarkui_ios.xcframework; path = frameworks/libarkui_ios.xcframework; sourceTree = "<group>"; };
@@ -125,6 +128,8 @@
 		F0AF1ACF27D3684F008C55DD /* app */ = {
 			isa = PBXGroup;
 			children = (
+				6AFB8CB64D614C0287C598AB /* ModifierModifierAbilityViewController.h */,
+				18ADF3C252B74EC9AA095A4A /* ModifierModifierAbilityViewController.m */,
 				FAB793EC2DF1923700045981 /* TestTestAbilityViewController.h */,
 				FAB793ED2DF1923700045981 /* TestTestAbilityViewController.m */,
 				FAB793EE2DF1923700045981 /* VersionVersionAbilityViewController.h */,
@@ -259,6 +264,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				72EAB85EA2C247ABB9E27872 /* ModifierModifierAbilityViewController.m in Sources */,
 				FAC8E7292DDEBAC500EF5185 /* PlatformBridgePlatformBridgeAbilityViewController.m in Sources */,
 				FAC8E7232DDEBA9000EF5185 /* MyPlatformViewFactory.m in Sources */,
 				FAC8E7242DDEBA9000EF5185 /* MyWebview.m in Sources */,

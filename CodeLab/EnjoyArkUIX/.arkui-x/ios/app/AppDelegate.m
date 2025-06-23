@@ -20,6 +20,7 @@
 #import "DynamizationJumpController.h"
 #import "TestTestAbilityViewController.h"
 #import "VersionVersionAbilityViewController.h"
+#import "ModifierModifierAbilityViewController.h"
 #import <libarkui_ios/StageApplication.h>
 
 #define BUNDLE_DIRECTORY @"arkui-x"
@@ -102,6 +103,10 @@
         NSString *instanceName = [NSString stringWithFormat:@"%@:%@:%@",bundleName, moduleName, abilityName];
         VersionVersionAbilityViewController *otherVC = [[VersionVersionAbilityViewController alloc] initWithInstanceName:instanceName];
         subStageVC = (VersionVersionAbilityViewController *)otherVC;
+    } else if ([moduleName isEqualToString:@"Modifier"] && [abilityName isEqualToString:@"ModifierAbility"]) {
+        NSString *instanceName = [NSString stringWithFormat:@"%@:%@:%@",bundleName, moduleName, abilityName];
+        ModifierModifierAbilityViewController *otherVC = [[ModifierModifierAbilityViewController alloc] initWithInstanceName:instanceName];
+        subStageVC = (ModifierModifierAbilityViewController *)otherVC;
     } // other ViewController
     
     if (!subStageVC) {

@@ -41,7 +41,7 @@ struct BridgePage {
   @State title: string = 'PlatformBridge';
   @State nativeResponse: string = '';
   @State receivePlatformSendMessage: string = '';
-  @State osName: string = deviceInfo.osFullName;
+
 
   aboutToAppear(): void {
     Logger.info(TAG, 'The Device Platform is :' + JSON.stringify(platform));
@@ -76,7 +76,6 @@ struct BridgePage {
   build() {
     Column() {
       TitleBar({ title: $r('app.string.PlatformBridge_title') })
-        .visibility(this.osName.startsWith('iOS') ? Visibility.Hidden : Visibility.Visible)
       Column() {
         Row() {
           Column() {

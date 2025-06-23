@@ -18,11 +18,11 @@ import { PlatformTypeEnum,ThirdLevelCategory } from '../model/CategoricalDataTyp
 export const SELF_TEST: ThirdLevelCategory[] = [
   {
     image: $r('app.media.ic_unselect_component'),
-    title: $r('app.string.test'),
+    title: $r('app.string.Modifier'),
     want: {
       bundleName: 'com.example.enjoyarkuix',
-      moduleName: 'Test',
-      abilityName: 'TestAbility',
+      moduleName: 'Modifier',
+      abilityName: 'ModifierAbility',
     },
     platform: PlatformTypeEnum.SUPPORT_BOTH
   },

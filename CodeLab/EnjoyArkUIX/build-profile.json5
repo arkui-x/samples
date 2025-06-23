@@ -134,6 +134,18 @@
     {
       "name": "titleBar",
       "srcPath": "./deps/titleBar",
+    },
+    {
+      "name": "Modifier",
+      "srcPath": "./self_test/Modifier",
+      "targets": [
+        {
+          "name": "default",
+          "applyToProducts": [
+            "default"
+          ]
+        }
+      ]
     }
   ]
 }
