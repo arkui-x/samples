@@ -1,6 +1,6 @@
 # ArkUI-X支持Rust sample开发
 ## 介绍
-本示例通过DevEco 5.0.4 Release创建一个Native C++跨平台工程，用来实现鸿蒙、Android和iOS调用rust接口。 
+本示例通过DevEco创建一个Native C++跨平台工程，用来实现鸿蒙、Android和iOS调用rust接口。 
 
 ## 效果预览
 
@@ -274,7 +274,7 @@ ohrs build
 
 执行完成后会生成一个dist目录，其中含有librust_add.so文件和index.d.ts文件。
 
-4、使用鸿蒙开发工具DevEco 5.0.4 Release创建一个Native C++ 工程。
+4、使用鸿蒙开发工具DevEco创建一个Native C++ 工程。
 
 5、将rust项目中dist目录下的全部文件拷贝到Native C++跨平台工程的entry/libs目录下。同时在该libs目录下新建一个oh-package.json5文件，并加入以下内容：
 
@@ -435,7 +435,7 @@ fn main() {
 }
 ```
 
-2、使用DevEco 5.0.4 Release打开ArkUI-X跨平台工程，点击菜单上的构建->编译Hap(s)/APP(s)->编译APP(s)按钮，以同步信息与动态库到ArkUI-X跨平台工程中。
+2、使用DevEco打开ArkUI-X跨平台工程，点击菜单上的构建->编译Hap(s)/APP(s)->编译APP(s)按钮，以同步信息与动态库到ArkUI-X跨平台工程中。
 
 3、进入rust工程中，编译target为iOS的.dylib文件：
 
@@ -564,7 +564,7 @@ linker = "Android SDK路径/ndk/28.0.13004108/toolchains/llvm/prebuilt/windows-x
 
 1、修改rust工程中的build.rs文件为如下内容：[参考代码](#编译-1)。
 
-2、使用DevEco 5.0.4 Release打开ArkUI-X跨平台工程，点击菜单上的构建->编译Hap(s)/APP(s)->编译APP(s)按钮，以同步信息与动态库到ArkUI-X跨平台工程中。
+2、使用DevEco打开ArkUI-X跨平台工程，点击菜单上的构建->编译Hap(s)/APP(s)->编译APP(s)按钮，以同步信息与动态库到ArkUI-X跨平台工程中。
 
 3、进入rust工程中，编译target为Android 的.so文件：
 
@@ -605,7 +605,7 @@ ohrs build
 
 3、在ArkUI-X工程中添加subtract方法的调用，并打印返回结果。
 
-4、使用DevEco 5.0.4 Release打开ArkUI-X跨平台工程，点击菜单上的构建->编译Hap(s)/APP(s)->编译APP(s)按钮，以同步信息与动态库到ArkUI-X跨平台工程中。
+4、使用DevEco打开ArkUI-X跨平台工程，点击菜单上的构建->编译Hap(s)/APP(s)->编译APP(s)按钮，以同步信息与动态库到ArkUI-X跨平台工程中。
 
 5、重新编译rust工程：
 
