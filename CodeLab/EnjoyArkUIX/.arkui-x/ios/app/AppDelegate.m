@@ -21,6 +21,7 @@
 #import "TestTestAbilityViewController.h"
 #import "VersionVersionAbilityViewController.h"
 #import "ModifierModifierAbilityViewController.h"
+#import "VideoPlayDemoVideoPlayDemoAbilityViewController.h"
 #import <libarkui_ios/StageApplication.h>
 
 #define BUNDLE_DIRECTORY @"arkui-x"
@@ -107,6 +108,10 @@
         NSString *instanceName = [NSString stringWithFormat:@"%@:%@:%@",bundleName, moduleName, abilityName];
         ModifierModifierAbilityViewController *otherVC = [[ModifierModifierAbilityViewController alloc] initWithInstanceName:instanceName];
         subStageVC = (ModifierModifierAbilityViewController *)otherVC;
+    } else if ([moduleName isEqualToString:@"VideoPlayDemo"] && [abilityName isEqualToString:@"VideoPlayDemoAbility"]) {
+        NSString *instanceName = [NSString stringWithFormat:@"%@:%@:%@",bundleName, moduleName, abilityName];
+        VideoPlayDemoVideoPlayDemoAbilityViewController *otherVC = [[VideoPlayDemoVideoPlayDemoAbilityViewController alloc] initWithInstanceName:instanceName];
+        subStageVC = (VideoPlayDemoVideoPlayDemoAbilityViewController *)otherVC;
     } // other ViewController
     
     if (!subStageVC) {
