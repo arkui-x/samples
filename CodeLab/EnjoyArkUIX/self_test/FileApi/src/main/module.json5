@@ -1,0 +1,26 @@
+{
+  "module": {
+    "name": "FileApi",
+    "type": "feature",
+    "description": "$string:module_desc",
+    "mainElement": "FileApiAbility",
+    "deviceTypes": [
+      "default"
+    ],
+    "deliveryWithInstall": true,
+    "installationFree": false,
+    "pages": "$profile:main_pages",
+    "abilities": [
+      {
+        "name": "FileApiAbility",
+        "srcEntry": "./ets/fileapiability/FileApiAbility.ets",
+        "description": "$string:FileApiAbility_desc",
+        "icon": "$media:layered_image",
+        "label": "$string:FileApiAbility_label",
+        "startWindowIcon": "$media:startIcon",
+        "startWindowBackground": "$color:start_window_background",
+        "exported": true
+      }
+    ]
+  }
+}

@@ -5,8 +5,9 @@
       {
         "name": "default",
         "signingConfig": "default",
-        "compatibleSdkVersion": "5.0.2(14)",
-        "runtimeOS": "HarmonyOS",
+        "compatibleSdkVersion": 15,
+        "compileSdkVersion": 15,
+        "runtimeOS": "OpenHarmony",
       }
     ],
     "buildModeSet": [
@@ -147,9 +148,21 @@
         }
       ]
     },
-    {
+        {
       "name": "VideoPlayDemo",
       "srcPath": "./self_test/VideoPlayDemo",
+      "targets": [
+        {
+          "name": "default",
+          "applyToProducts": [
+            "default"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "FileApi",
+      "srcPath": "./self_test/FileApi",
       "targets": [
         {
           "name": "default",
