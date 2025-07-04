@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AEBDC5EA23984DB3B6D32F75 /* VideoPlayDemoVideoPlayDemoAbilityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8547AE5DA066489892A7678A /* VideoPlayDemoVideoPlayDemoAbilityViewController.m */; };
 		72EAB85EA2C247ABB9E27872 /* ModifierModifierAbilityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18ADF3C252B74EC9AA095A4A /* ModifierModifierAbilityViewController.m */; };
 		89E41E4529F505070004F33E /* EntryEntryAbilityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 89E41E4329F505070004F33E /* EntryEntryAbilityViewController.m */; };
 		89E41E4629F505CD0004F33E /* libarkui_ios.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF9C1B5D28B9FC3A005DCF58 /* libarkui_ios.xcframework */; };
@@ -49,6 +50,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		1FE5CE29705D452C9BDDC602 /* VideoPlayDemoVideoPlayDemoAbilityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoPlayDemoVideoPlayDemoAbilityViewController.h; sourceTree = "<group>"; };
+		8547AE5DA066489892A7678A /* VideoPlayDemoVideoPlayDemoAbilityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoPlayDemoVideoPlayDemoAbilityViewController.m; sourceTree = "<group>"; };
 		18ADF3C252B74EC9AA095A4A /* ModifierModifierAbilityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModifierModifierAbilityViewController.m; sourceTree = "<group>"; };
 		6AFB8CB64D614C0287C598AB /* ModifierModifierAbilityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModifierModifierAbilityViewController.h; sourceTree = "<group>"; };
 		89E41E4329F505070004F33E /* EntryEntryAbilityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EntryEntryAbilityViewController.m; sourceTree = "<group>"; };
@@ -128,6 +131,8 @@
 		F0AF1ACF27D3684F008C55DD /* app */ = {
 			isa = PBXGroup;
 			children = (
+				1FE5CE29705D452C9BDDC602 /* VideoPlayDemoVideoPlayDemoAbilityViewController.h */,
+				8547AE5DA066489892A7678A /* VideoPlayDemoVideoPlayDemoAbilityViewController.m */,
 				6AFB8CB64D614C0287C598AB /* ModifierModifierAbilityViewController.h */,
 				18ADF3C252B74EC9AA095A4A /* ModifierModifierAbilityViewController.m */,
 				FAB793EC2DF1923700045981 /* TestTestAbilityViewController.h */,
@@ -264,6 +269,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AEBDC5EA23984DB3B6D32F75 /* VideoPlayDemoVideoPlayDemoAbilityViewController.m in Sources */,
 				72EAB85EA2C247ABB9E27872 /* ModifierModifierAbilityViewController.m in Sources */,
 				FAC8E7292DDEBAC500EF5185 /* PlatformBridgePlatformBridgeAbilityViewController.m in Sources */,
 				FAC8E7232DDEBA9000EF5185 /* MyPlatformViewFactory.m in Sources */,

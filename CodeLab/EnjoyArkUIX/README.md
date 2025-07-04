@@ -35,13 +35,15 @@
 
 ### 二、在当前框架添加新用例
 
-创建module
+#### 创建新用例
+
+如应用效果图所示有三个创建新用例入口，如自测试(self_test)、演示(demos)和版本(version)，选择对应的文件夹创建module，会在对应的栏目下添加新用例，如自测试demo创建流程：
 
 ![module_Create](./screenshots/create-demo.png)
 
 选择[ArkUI-X] Empty Ability 工程
 
-![module_Create](./screenshots/create-moudle.png)
+![module_Create](./screenshots/create-module.png)
 
 输入Module name
 
@@ -53,7 +55,9 @@
 
 在 iOS 项目中，相应的文件将会自动生成，以确保跨平台功能的一致性和可用性![module_Create](./screenshots/ios-create.png)
 
-跨平台工程创建成功后，在 `entry`模块下 `data`目录中添加要跳转到的跨平台模块的数据
+#### 配置数据源
+
+新用例创建成功后，在 `entry`模块下 `data`目录中添加要跳转到的跨平台模块的数据
 
 > - DemosData：首页演示项目工程数据源
 > - SelfTestData：首页自测试项目工程数据源
@@ -62,7 +66,9 @@
 
 ![module_Create](./screenshots/ets.png)
 
-在项目演示中，通过配置 `image` 和 `title` 属性来指定页面的图标和标题。对于仅在 Android 平台上特有的功能，例如 `Fragment`，通过设置 `PlatformTypeEnum` 枚举值为 `PlatformTypeEnum.SUPPORT_ANDROID` 来处理。这样，当 iOS 设备尝试运行时，如果开发者点击了跳转到 `Fragment` 对应的按钮，系统会提示当前平台不支持该功能。![module_Create](./screenshots/enum.png)
+如上配置文件通过配置 `image` 和 `title` 属性来指定页面的图标和标题。对于仅在 Android 平台上特有的功能，例如 `Fragment`，通过设置 `PlatformTypeEnum` 枚举值为 `PlatformTypeEnum.SUPPORT_ANDROID` 来处理。这样，当 iOS 设备尝试运行时，如果开发者点击了跳转到 `Fragment` 对应的按钮，系统会提示当前平台不支持该功能。![module_Create](./screenshots/enum.png)
+
+#### 导航栏配置
 
 在跨平台导航栏的配置中，通过设置 `want` 对象的 `bundleName`、`moduleName` 和 `abilityName` 属性，可以指定目标模块的详细信息。这些属性分别代表目标模块的包名、模块名以及模块内特定功能的名称。完成这些设置后，主框架即可通过 `startAbility`跳转至对应的模块的首页。
 
@@ -114,9 +120,17 @@
 
 #### DevEco Studio编译时报错问题解决
 
+##### 问题1
+
 若出现以下编译问题，参考[编译报错“Cannot find module XXX or its corresponding type declarations”](https://developer.huawei.com/consumer/cn/doc/harmonyos-faqs-V5/faqs-compiling-and-building-4-V5)，或执行命令 `ohpm install`，再重新执行 `ace build ios/apk`
 
-![](./screenshots/error.png)
+![image](./screenshots/error.png)
+
+##### 问题2
+
+若出现以下编译问题，需要修改新创建module工程的module.json5文件（位置：modulename\src\main\module.json5），将文件中的type值由"entry"修改成"feature"，再次编译错误消失。
+
+![image](./screenshots/error2.png)
 
 ## 相关权限
 

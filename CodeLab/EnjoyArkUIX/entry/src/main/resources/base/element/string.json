@@ -45,6 +45,10 @@
       "value": "Test Modifier"
     },
     {
+      "name": "VideoPlayDemo",
+      "value": "Video Play TestDemo"
+    },
+    {
       "name": "version",
       "value": "版本示例"
     },
