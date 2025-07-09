@@ -1,0 +1,25 @@
+{
+  "src": [
+    "pages/Index",
+    "pages/BaseFileInterface",
+    "pages/AtomicFile_Watcher",
+    "pages/FileHash_Statvfs",
+    "pages/OtherFileInterface",
+    "pages/RandomAccess",
+    "pages/Stream",
+    "pages/Test/BaseFileInterface/accessTest",
+    "pages/Test/BaseFileInterface/lstatTest",
+    "pages/Test/BaseFileInterface/moveFileTest",
+    "pages/Test/BaseFileInterface/writereadTest",
+    "pages/Test/BaseFileInterface/xattrTest",
+    "pages/Test/BaseFileInterface/movedirTest",
+    "pages/Test/BaseFileInterface/copydirTest",
+    "pages/Test/BaseFileInterface/mkdirTest",
+    "pages/Test/AtomicFile_Watcher/atomicFileTest",
+    "pages/Test/AtomicFile_Watcher/watcherTest",
+    "pages/Test/FileHash_Statvfs/hash",
+    "pages/Test/FileHash_Statvfs/statvfs",
+    "pages/Test/RandomAccess/RandomAccess_file",
+    "pages/Test/RandomAccess/RandomAccess_rw"
+  ]
+}

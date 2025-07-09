@@ -49,6 +49,10 @@
       "value": "Video Play TestDemo"
     },
     {
+      "name": "FileApi",
+      "value": "Test FileApi"
+    },
+    {
       "name": "version",
       "value": "版本示例"
     },
