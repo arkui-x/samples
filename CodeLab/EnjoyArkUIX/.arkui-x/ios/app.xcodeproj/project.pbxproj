@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6EB63303CCE94092A1EC9594 /* DrawingDrawingAbilityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A741C8134ED94DD3BA3B9F4B /* DrawingDrawingAbilityViewController.m */; };
 		AEBDC5EA23984DB3B6D32F75 /* VideoPlayDemoVideoPlayDemoAbilityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8547AE5DA066489892A7678A /* VideoPlayDemoVideoPlayDemoAbilityViewController.m */; };
 		0B7275696B9A46E6B8542024 /* FileApiFileApiAbilityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1A41EFB52C9445D9F628C5C /* FileApiFileApiAbilityViewController.m */; };
 		72EAB85EA2C247ABB9E27872 /* ModifierModifierAbilityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18ADF3C252B74EC9AA095A4A /* ModifierModifierAbilityViewController.m */; };
@@ -51,6 +52,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		6F3D9A2E6C094AADAD1448DA /* DrawingDrawingAbilityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrawingDrawingAbilityViewController.h; sourceTree = "<group>"; };
+		A741C8134ED94DD3BA3B9F4B /* DrawingDrawingAbilityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrawingDrawingAbilityViewController.m; sourceTree = "<group>"; };
 		1FE5CE29705D452C9BDDC602 /* VideoPlayDemoVideoPlayDemoAbilityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoPlayDemoVideoPlayDemoAbilityViewController.h; sourceTree = "<group>"; };
 		8547AE5DA066489892A7678A /* VideoPlayDemoVideoPlayDemoAbilityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoPlayDemoVideoPlayDemoAbilityViewController.m; sourceTree = "<group>"; };
 		9F100A27FEE84410B74B6090 /* FileApiFileApiAbilityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FileApiFileApiAbilityViewController.h; sourceTree = "<group>"; };
@@ -134,6 +137,8 @@
 		F0AF1ACF27D3684F008C55DD /* app */ = {
 			isa = PBXGroup;
 			children = (
+				6F3D9A2E6C094AADAD1448DA /* DrawingDrawingAbilityViewController.h */,
+				A741C8134ED94DD3BA3B9F4B /* DrawingDrawingAbilityViewController.m */,
 				1FE5CE29705D452C9BDDC602 /* VideoPlayDemoVideoPlayDemoAbilityViewController.h */,
 				8547AE5DA066489892A7678A /* VideoPlayDemoVideoPlayDemoAbilityViewController.m */,
 				9F100A27FEE84410B74B6090 /* FileApiFileApiAbilityViewController.h */,
@@ -274,6 +279,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6EB63303CCE94092A1EC9594 /* DrawingDrawingAbilityViewController.m in Sources */,
 				AEBDC5EA23984DB3B6D32F75 /* VideoPlayDemoVideoPlayDemoAbilityViewController.m in Sources */,
 				0B7275696B9A46E6B8542024 /* FileApiFileApiAbilityViewController.m in Sources */,
 				72EAB85EA2C247ABB9E27872 /* ModifierModifierAbilityViewController.m in Sources */,

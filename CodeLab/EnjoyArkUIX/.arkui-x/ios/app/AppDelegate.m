@@ -23,6 +23,7 @@
 #import "ModifierModifierAbilityViewController.h"
 #import "VideoPlayDemoVideoPlayDemoAbilityViewController.h"
 #import "FileApiFileApiAbilityViewController.h"
+#import "DrawingDrawingAbilityViewController.h"
 #import <libarkui_ios/StageApplication.h>
 
 #define BUNDLE_DIRECTORY @"arkui-x"
@@ -117,6 +118,10 @@
         NSString *instanceName = [NSString stringWithFormat:@"%@:%@:%@",bundleName, moduleName, abilityName];
         FileApiFileApiAbilityViewController *otherVC = [[FileApiFileApiAbilityViewController alloc] initWithInstanceName:instanceName];
         subStageVC = (FileApiFileApiAbilityViewController *)otherVC;
+    } else if ([moduleName isEqualToString:@"Drawing"] && [abilityName isEqualToString:@"DrawingAbility"]) {
+        NSString *instanceName = [NSString stringWithFormat:@"%@:%@:%@",bundleName, moduleName, abilityName];
+        DrawingDrawingAbilityViewController *otherVC = [[DrawingDrawingAbilityViewController alloc] initWithInstanceName:instanceName];
+        subStageVC = (DrawingDrawingAbilityViewController *)otherVC;
     } // other ViewController
     
     if (!subStageVC) {

@@ -53,6 +53,10 @@
       "value": "Test FileApi"
     },
     {
+      "name": "Drawing",
+      "value": "Test Drawing"
+    },
+    {
       "name": "version",
       "value": "版本示例"
     },

@@ -12,6 +12,7 @@
     "version",
     "Modifier",
     "VideoPlayDemo",
-    "FileApi"
+    "FileApi",
+    "Drawing"
   ]
 }

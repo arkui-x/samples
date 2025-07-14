@@ -171,6 +171,18 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Drawing",
+      "srcPath": "./self_test/Drawing",
+      "targets": [
+        {
+          "name": "default",
+          "applyToProducts": [
+            "default"
+          ]
+        }
+      ]
     }
   ]
 }
