@@ -244,7 +244,7 @@ export struct AddressRecognize {
       dialogId: this.dialogId,
       builder: wrapBuilder(imageEditDialogBuilder),
       dialogType: DialogTypeEnum.BOTTOM,
-      dialogBuilderParam: {
+      builderParam: {
         onConfirm: (isCloseDialog?: boolean, data?: ESObject) => {
           if (isCloseDialog) {
             DialogUtil.closeCustomDialogById(this.dialogId);
