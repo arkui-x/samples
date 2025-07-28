@@ -477,7 +477,7 @@ cp target/aarch64-apple-ios-sim/release/librust_add.dylib \
    sim/librust_add.framework/librust_add # 将模拟器的dylib复制到framework文件夹内，注意去掉.dylib后缀
 ``````
 
-分别在两个framework文件夹内创建Info.plist文件，添加一下内容：
+分别在两个framework文件夹内创建Info.plist文件，添加以下内容：
 
 ``````xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -509,6 +509,10 @@ cp target/aarch64-apple-ios-sim/release/librust_add.dylib \
 </dict>
 </plist>
 ``````
+
+**注意：需要使用`xcrun vtool -show-build path_for_dylib`命令查看生成的librust_add.dylib适配的iOS版本，MinimumOSVersion设置的版本不能低于dylib最低支持版本。**
+
+![ios_xcrun_vtool_show_build](./screenshots/devices/ios_xcrun_vtool_show_build.png)
 
 生成xcframework文件：
 
