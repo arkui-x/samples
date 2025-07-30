@@ -56,4 +56,14 @@ export const SELF_TEST: ThirdLevelCategory[] = [
     },
     platform: PlatformTypeEnum.SUPPORT_BOTH
   },
+  {
+    image: $r('app.media.ic_unselect_component'),
+    title: $r('app.string.Window'),
+    want: {
+      bundleName: 'com.example.enjoyarkuix',
+      moduleName: 'Window',
+      abilityName: 'WindowAbility',
+    },
+    platform: PlatformTypeEnum.SUPPORT_BOTH
+  },
 ]

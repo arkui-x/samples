@@ -1,0 +1,20 @@
+{
+  "src": [
+    "pages/EnterPage",
+    "pages/Animation",
+    "pages/WindowEvent",
+    "pages/Index1",
+    "pages/Resource",
+    "pages/Window",
+    "pages/WindowContent1",
+    "pages/WindowContent2",
+    "pages/WindowContent3",
+    "pages/WindowStage",
+    "pages/WindowSizeChange",
+    "pages/WindowOnAvoidArea",
+    "pages/WindowSetWindowPrivacyMode",
+    "pages/WindowSetSystemBarProperty",
+    "pages/WindowStatusChanged",
+    "pages/CurveDemo"
+  ]
+}

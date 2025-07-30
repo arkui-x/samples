@@ -57,6 +57,10 @@
       "value": "Test Drawing"
     },
     {
+      "name": "Window",
+      "value": "Test Window"
+    },
+    {
       "name": "version",
       "value": "版本示例"
     },
