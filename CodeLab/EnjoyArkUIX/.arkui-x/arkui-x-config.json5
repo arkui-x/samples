@@ -12,6 +12,9 @@
     "version",
     "Modifier",
     "VideoPlayDemo",
-    "FileApi"
+    "FileApi",
+    "RDBDemo",
+    "UDMFDemo",
+    "PreferencesDemo"
   ]
 }

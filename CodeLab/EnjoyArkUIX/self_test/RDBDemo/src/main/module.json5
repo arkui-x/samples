@@ -1,0 +1,26 @@
+{
+  "module": {
+    "name": "RDBDemo",
+    "type": "feature",
+    "description": "$string:module_desc",
+    "mainElement": "RDBDemoAbility",
+    "deviceTypes": [
+      "default"
+    ],
+    "deliveryWithInstall": true,
+    "installationFree": false,
+    "pages": "$profile:main_pages",
+    "abilities": [
+      {
+        "name": "RDBDemoAbility",
+        "srcEntry": "./ets/rdbdemoability/RDBDemoAbility.ets",
+        "description": "$string:RDBDemoAbility_desc",
+        "icon": "$media:layered_image",
+        "label": "$string:RDBDemoAbility_label",
+        "startWindowIcon": "$media:startIcon",
+        "startWindowBackground": "$color:start_window_background",
+        "exported": true
+      }
+    ]
+  }
+}
