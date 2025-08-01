@@ -1,0 +1,16 @@
+{
+  "string": [
+    {
+      "name": "module_desc",
+      "value": "module description"
+    },
+    {
+      "name": "UDMFDemoAbility_desc",
+      "value": "description"
+    },
+    {
+      "name": "UDMFDemoAbility_label",
+      "value": "label"
+    }
+  ]
+}

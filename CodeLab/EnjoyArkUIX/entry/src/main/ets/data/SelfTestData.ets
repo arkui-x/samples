@@ -46,4 +46,34 @@ export const SELF_TEST: ThirdLevelCategory[] = [
     },
     platform: PlatformTypeEnum.SUPPORT_BOTH
   },
+  {
+    image: $r('app.media.ic_unselect_component'),
+    title: $r('app.string.RDBDemo'),
+    want: {
+      bundleName: 'com.example.enjoyarkuix',
+      moduleName: 'RDBDemo',
+      abilityName: 'RDBDemoAbility',
+    },
+    platform: PlatformTypeEnum.SUPPORT_BOTH
+  },
+  {
+    image: $r('app.media.ic_unselect_component'),
+    title: $r('app.string.UDMFDemo'),
+    want: {
+      bundleName: 'com.example.enjoyarkuix',
+      moduleName: 'UDMFDemo',
+      abilityName: 'UDMFDemoAbility',
+    },
+    platform: PlatformTypeEnum.SUPPORT_BOTH
+  },
+  {
+    image: $r('app.media.ic_unselect_component'),
+    title: $r('app.string.PreferencesDemo'),
+    want: {
+      bundleName: 'com.example.enjoyarkuix',
+      moduleName: 'PreferencesDemo',
+      abilityName: 'PreferencesDemoAbility',
+    },
+    platform: PlatformTypeEnum.SUPPORT_BOTH
+  },
 ]

@@ -5,8 +5,8 @@
       {
         "name": "default",
         "signingConfig": "default",
-        "compatibleSdkVersion": 15,
-        "compileSdkVersion": 15,
+        "compatibleSdkVersion": 18,
+        "compileSdkVersion": 18,
         "runtimeOS": "OpenHarmony",
       }
     ],
@@ -148,7 +148,7 @@
         }
       ]
     },
-        {
+    {
       "name": "VideoPlayDemo",
       "srcPath": "./self_test/VideoPlayDemo",
       "targets": [
@@ -163,6 +163,42 @@
     {
       "name": "FileApi",
       "srcPath": "./self_test/FileApi",
+      "targets": [
+        {
+          "name": "default",
+          "applyToProducts": [
+            "default"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "RDBDemo",
+      "srcPath": "./self_test/RDBDemo",
+      "targets": [
+        {
+          "name": "default",
+          "applyToProducts": [
+            "default"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "UDMFDemo",
+      "srcPath": "./self_test/UDMFDemo",
+      "targets": [
+        {
+          "name": "default",
+          "applyToProducts": [
+            "default"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "PreferencesDemo",
+      "srcPath": "./self_test/PreferencesDemo",
       "targets": [
         {
           "name": "default",
