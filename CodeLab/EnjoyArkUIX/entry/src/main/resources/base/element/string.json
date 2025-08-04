@@ -75,6 +75,18 @@
     {
       "name": "versions",
       "value": "版本"
+    },
+    {
+      "name": "RDBDemo",
+      "value": "RDBDemo"
+    },
+    {
+      "name": "UDMFDemo",
+      "value": "UDMFDemo"
+    },
+    {
+      "name": "PreferencesDemo",
+      "value": "PreferencesDemo"
     }
   ]
 }

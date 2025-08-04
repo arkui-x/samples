@@ -25,6 +25,9 @@
 #import "FileApiFileApiAbilityViewController.h"
 #import "DrawingDrawingAbilityViewController.h"
 #import "WindowWindowAbilityViewController.h"
+#import "RDBDemoRDBDemoAbilityViewController.h"
+#import "UDMFDemoUDMFDemoAbilityViewController.h"
+#import "PreferencesDemoPreferencesDemoAbilityViewController.h"
 #import <libarkui_ios/StageApplication.h>
 
 #define BUNDLE_DIRECTORY @"arkui-x"
@@ -127,6 +130,18 @@
         NSString *instanceName = [NSString stringWithFormat:@"%@:%@:%@",bundleName, moduleName, abilityName];
         WindowWindowAbilityViewController *otherVC = [[WindowWindowAbilityViewController alloc] initWithInstanceName:instanceName];
         subStageVC = (WindowWindowAbilityViewController *)otherVC;
+    } else if ([moduleName isEqualToString:@"RDBDemo"] && [abilityName isEqualToString:@"RDBDemoAbility"]) {
+        NSString *instanceName = [NSString stringWithFormat:@"%@:%@:%@",bundleName, moduleName, abilityName];
+        RDBDemoRDBDemoAbilityViewController *otherVC = [[RDBDemoRDBDemoAbilityViewController alloc] initWithInstanceName:instanceName];
+        subStageVC = (RDBDemoRDBDemoAbilityViewController *)otherVC;
+    } else if ([moduleName isEqualToString:@"UDMFDemo"] && [abilityName isEqualToString:@"UDMFDemoAbility"]) {
+        NSString *instanceName = [NSString stringWithFormat:@"%@:%@:%@",bundleName, moduleName, abilityName];
+        UDMFDemoUDMFDemoAbilityViewController *otherVC = [[UDMFDemoUDMFDemoAbilityViewController alloc] initWithInstanceName:instanceName];
+        subStageVC = (UDMFDemoUDMFDemoAbilityViewController *)otherVC;
+    } else if ([moduleName isEqualToString:@"PreferencesDemo"] && [abilityName isEqualToString:@"PreferencesDemoAbility"]) {
+        NSString *instanceName = [NSString stringWithFormat:@"%@:%@:%@",bundleName, moduleName, abilityName];
+        PreferencesDemoPreferencesDemoAbilityViewController *otherVC = [[PreferencesDemoPreferencesDemoAbilityViewController alloc] initWithInstanceName:instanceName];
+        subStageVC = (PreferencesDemoPreferencesDemoAbilityViewController *)otherVC;
     } // other ViewController
     
     if (!subStageVC) {

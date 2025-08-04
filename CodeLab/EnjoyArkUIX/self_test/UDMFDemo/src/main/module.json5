@@ -1,0 +1,26 @@
+{
+  "module": {
+    "name": "UDMFDemo",
+    "type": "feature",
+    "description": "$string:module_desc",
+    "mainElement": "UDMFDemoAbility",
+    "deviceTypes": [
+      "default"
+    ],
+    "deliveryWithInstall": true,
+    "installationFree": false,
+    "pages": "$profile:main_pages",
+    "abilities": [
+      {
+        "name": "UDMFDemoAbility",
+        "srcEntry": "./ets/udmfdemoability/UDMFDemoAbility.ets",
+        "description": "$string:UDMFDemoAbility_desc",
+        "icon": "$media:layered_image",
+        "label": "$string:UDMFDemoAbility_label",
+        "startWindowIcon": "$media:startIcon",
+        "startWindowBackground": "$color:start_window_background",
+        "exported": true
+      }
+    ]
+  }
+}

@@ -418,7 +418,7 @@ fn main() {
         let framework_dir = Path::new(&manifest_dir)
             .join("../RustDev/.arkui-x/ios/frameworks/libarkui_ios.xcframework");
 
-        let platform_subdir = if target.contains("simulator") {
+        let platform_subdir = if target.contains("sim") {
             "ios-arm64_x86_64-simulator"
         } else {
             "ios-arm64"
@@ -449,19 +449,95 @@ cargo build --target aarch64-apple-ios --release
 rust工程/target/aarch64-apple-ios/release/librust_add.dylib
 ```
 
+生成模拟器dylib文件：
+
+``````shell
+cargo build --target aarch64-apple-ios-sim --release
+``````
+
+设置加载路径：
+
+``````shell
+# ios
+install_name_tool -id "@rpath/librust_add.framework/librust_add" \
+    target/aarch64-apple-ios/release/librust_add.dylib
+# sim
+install_name_tool -id "@rpath/librust_add.framework/librust_add" \               
+    target/aarch64-apple-ios-sim/release/librust_add.dylib
+``````
+
+生成framework文件：
+
+``````shell
+mkdir -p librust_add.framework # 创建真机framework
+cp target/aarch64-apple-ios/release/librust_add.dylib \
+   librust_add.framework/librust_add # 将真机的dylib复制到framework文件夹内，注意去掉.dylib后缀
+mkdir -p sim/librust_add.framework # 创建模拟器framework
+cp target/aarch64-apple-ios-sim/release/librust_add.dylib \
+   sim/librust_add.framework/librust_add # 将模拟器的dylib复制到framework文件夹内，注意去掉.dylib后缀
+``````
+
+分别在两个framework文件夹内创建Info.plist文件，添加以下内容：
+
+``````xml
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleIdentifier</key>
+	<string>ohos.ace.librustadd</string>
+	<key>CFBundleVersion</key>
+	<string>1.0.0</string>
+	<key>CFBundleExecutable</key>
+	<string>librust_add</string>
+	<key>CFBundlePackageType</key>
+	<string>FMWK</string>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>en</string>
+	<key>CFBundleDisplayName</key>
+	<string>librust_add</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleShortVersionString</key>
+	<string>6.0.0</string>
+	<key>ClangVersion</key>
+	<string>b&apos;clang version 16.0.5&apos;</string>
+	<key>MiniXEngineVerson</key>
+	<string>1.0.0</string>
+	<key>MinimumOSVersion</key>
+	<string>10.0</string>
+</dict>
+</plist>
+``````
+
+**注意：需要使用`xcrun vtool -show-build path_for_dylib`命令查看生成的librust_add.dylib适配的iOS版本，MinimumOSVersion设置的版本不能低于dylib最低支持版本。**
+
+![ios_xcrun_vtool_show_build](./screenshots/devices/ios_xcrun_vtool_show_build.png)
+
+生成xcframework文件：
+
+``````shell
+xcodebuild -create-xcframework \
+  -framework librust_add.framework \
+  -framework sim/librust_add.framework \
+  -output librust_add.xcframework
+``````
+
+
+
 **备注：在iOS工程中引入的libarkui_ios.xcframework与rust依赖的libarkui_ios.xcframework必须是同一个。**
 
-4、拷贝rust生成的librust_add.dylib到ArkUI-X工程目录：
+4、拷贝rust生成的librust_add.xcframework到ArkUI-X工程目录：
 
 ​				ArkUI-X工程/.arkui-x/ios/frameworks
 
-5、把.arkui-x/ios/frameworks目录的librust_add.dylib放到iOS的工程当中（Frameworks目录）导入动态库到应用中
+5、把.arkui-x/ios/frameworks目录的librust_add.xcframework放到iOS的工程当中（Frameworks目录）导入动态库到应用中
 
 ![](./screenshots/devices/iOS_add_dylib.png)
 
-6、打开项目的TARGETS，点击Build Phases 之后点击“+”按钮，点击菜单中的New Copy Files Phase以添加Copy Files。
+6、打开项目的TARGETS，点击General 之后下拉至Frameworks,Libraries,and Embedded Content。
 
-展开Copy Files，其中的Destination选择Frameworks，在Copy Files中添加librust_add.dylib，以便把动态库复制到Frameworks目录。
+找到librust_add.xcframework，Embed选项修改为Embed&Sign（原为Do Not Embed）。
 
 ![](./screenshots/devices/iOS_config_dylib.png)
 

@@ -5,8 +5,8 @@
       {
         "name": "default",
         "signingConfig": "default",
-        "compatibleSdkVersion": 15,
-        "compileSdkVersion": 15,
+        "compatibleSdkVersion": 18,
+        "compileSdkVersion": 18,
         "runtimeOS": "OpenHarmony",
       }
     ],
@@ -148,7 +148,7 @@
         }
       ]
     },
-        {
+    {
       "name": "VideoPlayDemo",
       "srcPath": "./self_test/VideoPlayDemo",
       "targets": [
@@ -173,8 +173,56 @@
       ]
     },
     {
+      "name": "Window",
+      "srcPath": "./self_test/Window",
+      "targets": [
+        {
+          "name": "default",
+          "applyToProducts": [
+            "default"
+          ]
+        }
+      ]
+    },
+    {
       "name": "Drawing",
       "srcPath": "./self_test/Drawing",
+      "targets": [
+        {
+          "name": "default",
+          "applyToProducts": [
+            "default"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "RDBDemo",
+      "srcPath": "./self_test/RDBDemo",
+      "targets": [
+        {
+          "name": "default",
+          "applyToProducts": [
+            "default"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "UDMFDemo",
+      "srcPath": "./self_test/UDMFDemo",
+      "targets": [
+        {
+          "name": "default",
+          "applyToProducts": [
+            "default"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "PreferencesDemo",
+      "srcPath": "./self_test/PreferencesDemo",
       "targets": [
         {
           "name": "default",

@@ -14,6 +14,10 @@
     "VideoPlayDemo",
     "FileApi",
     "Drawing",
-    "Window"
+    "Window",
+    "RDBDemo",
+    "UDMFDemo",
+    "PreferencesDemo"
+>>>>>>> master
   ]
 }
