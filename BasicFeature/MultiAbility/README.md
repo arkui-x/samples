@@ -122,7 +122,7 @@ MultiAbility
 ## 约束与限制
 
 1. 本示例支持在Android\iOS\鸿蒙系统上运行。 
-2. 本示例已适配API version 12版本ArkUI-X SDK，版本号：2.0.0.27。 
+2. 本示例已适配API version 12及以上版本的ArkUI-X SDK。
 3. 本示例需要使用DevEco Studio NEXT Developer Beta1 (Build Version: 5.0.3.403, built on June 20, 2024)及以上版本才可编译运行。
 
 ## 下载
