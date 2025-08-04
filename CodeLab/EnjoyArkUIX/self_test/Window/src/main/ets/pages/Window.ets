@@ -113,7 +113,7 @@ struct Window {
                         }).margin({ top: 5 })
                    Button("displayPpi等接口")
                     .onClick(() => {
-                        router.pushUrl({ url: "pages/Index1" })
+                        router.pushUrl({ url: "pages/WindowDisplay" })
                     }).margin({ top: 5 })
 
                     Button("find window")

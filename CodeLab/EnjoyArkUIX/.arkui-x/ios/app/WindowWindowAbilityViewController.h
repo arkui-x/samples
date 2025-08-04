@@ -13,13 +13,15 @@
  * limitations under the License.
  */
 
-#ifndef WindowWindowAbilityViewController_h
-#define WindowWindowAbilityViewController_h
+#ifndef WINDOW_WINDOW_ABILITY_VIEW_CONTROLLER_H
+#define WINDOW_WINDOW_ABILITY_VIEW_CONTROLLER_H
+
 #import <UIKit/UIKit.h>
 #import <libarkui_ios/StageViewController.h>
+
 @interface WindowWindowAbilityViewController : StageViewController
 
 
 @end
 
-#endif /* WindowWindowAbilityViewController_h */
+#endif /* WINDOW_WINDOW_ABILITY_VIEW_CONTROLLER_H */

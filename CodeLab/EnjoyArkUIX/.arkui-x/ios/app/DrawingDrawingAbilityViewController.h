@@ -13,13 +13,15 @@
  * limitations under the License.
  */
 
-#ifndef DrawingDrawingAbilityViewController_h
-#define DrawingDrawingAbilityViewController_h
+#ifndef DRAWING_DRAWING_ABILITY_VIEW_CONTROLLER_H
+#define DRAWING_DRAWING_ABILITY_VIEW_CONTROLLER_H
+
 #import <UIKit/UIKit.h>
 #import <libarkui_ios/StageViewController.h>
+
 @interface DrawingDrawingAbilityViewController : StageViewController
 
 
 @end
 
-#endif /* DrawingDrawingAbilityViewController_h */
+#endif /* DRAWING_DRAWING_ABILITY_VIEW_CONTROLLER_H */
