@@ -207,6 +207,18 @@
           ]
         }
       ]
+    },
+    {
+      "name": "RequestDemo",
+      "srcPath": "./self_test/RequestDemo",
+      "targets": [
+        {
+          "name": "default",
+          "applyToProducts": [
+            "default"
+          ]
+        }
+      ]
     }
   ]
 }

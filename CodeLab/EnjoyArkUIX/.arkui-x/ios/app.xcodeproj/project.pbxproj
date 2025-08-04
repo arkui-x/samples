@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		31B577F6486A4EF5AC429DCC /* RequestDemoRequestDemoAbilityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68492AC35759413C812D5B78 /* RequestDemoRequestDemoAbilityViewController.m */; };
 		AF9B613D4F9543B1805F288E /* PreferencesDemoPreferencesDemoAbilityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ECDEB3C76204A93A7414C93 /* PreferencesDemoPreferencesDemoAbilityViewController.m */; };
 		CEE7BE2D5C1B4B87AB81079B /* UDMFDemoUDMFDemoAbilityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C7331DA4C5DC4873A5E2AC3A /* UDMFDemoUDMFDemoAbilityViewController.m */; };
 		D6EC532F1C8043089D7B0372 /* RDBDemoRDBDemoAbilityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C1005DB974343B18C36462D /* RDBDemoRDBDemoAbilityViewController.m */; };
@@ -54,6 +55,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		DE8355A4B3984C6098C28D21 /* RequestDemoRequestDemoAbilityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RequestDemoRequestDemoAbilityViewController.h; sourceTree = "<group>"; };
+		68492AC35759413C812D5B78 /* RequestDemoRequestDemoAbilityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RequestDemoRequestDemoAbilityViewController.m; sourceTree = "<group>"; };
 		72A9D2302AF346F0BDF93915 /* PreferencesDemoPreferencesDemoAbilityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PreferencesDemoPreferencesDemoAbilityViewController.h; sourceTree = "<group>"; };
 		8ECDEB3C76204A93A7414C93 /* PreferencesDemoPreferencesDemoAbilityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PreferencesDemoPreferencesDemoAbilityViewController.m; sourceTree = "<group>"; };
 		5E52A4F480AE4274BFE6CC63 /* UDMFDemoUDMFDemoAbilityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UDMFDemoUDMFDemoAbilityViewController.h; sourceTree = "<group>"; };
@@ -143,6 +146,8 @@
 		F0AF1ACF27D3684F008C55DD /* app */ = {
 			isa = PBXGroup;
 			children = (
+				DE8355A4B3984C6098C28D21 /* RequestDemoRequestDemoAbilityViewController.h */,
+				68492AC35759413C812D5B78 /* RequestDemoRequestDemoAbilityViewController.m */,
 				72A9D2302AF346F0BDF93915 /* PreferencesDemoPreferencesDemoAbilityViewController.h */,
 				8ECDEB3C76204A93A7414C93 /* PreferencesDemoPreferencesDemoAbilityViewController.m */,
 				5E52A4F480AE4274BFE6CC63 /* UDMFDemoUDMFDemoAbilityViewController.h */,
@@ -289,6 +294,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				31B577F6486A4EF5AC429DCC /* RequestDemoRequestDemoAbilityViewController.m in Sources */,
 				AF9B613D4F9543B1805F288E /* PreferencesDemoPreferencesDemoAbilityViewController.m in Sources */,
 				CEE7BE2D5C1B4B87AB81079B /* UDMFDemoUDMFDemoAbilityViewController.m in Sources */,
 				D6EC532F1C8043089D7B0372 /* RDBDemoRDBDemoAbilityViewController.m in Sources */,
