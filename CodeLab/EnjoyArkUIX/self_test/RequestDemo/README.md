@@ -20,8 +20,8 @@
 
 - 修改requestDemo/src/main/ets/pages/upload.ets文件下的url和urlProxy，使用正常工作的服务器与服务器代理，然后生成demo。<br>
 - 点击**上传**按钮切换到上传界面，点击back按钮跳转初始界面。<br>
-- 点击对应的按钮并输入index、begens、ends（第一次不输入默认undefined），查看显示内容及服务器中内容。<br>
 - 所有操作需以点击上传按钮启动上传为前提 —— 启动后可直接点击暂停按钮暂停上传；处于暂停状态时，点击恢复按钮即可继续上传过程；其他功能按钮及开关类按钮（需按 “先开启后关闭” 的顺序操作）均需在上传启动后使用<br>
+- 点击对应的按钮并输入index、begens、ends（第一次不输入默认undefined），查看显示内容及服务器中内容。<br>
 - 使用proxy时，需要设备与服务连接同一网络，然后点击proxy上传，在服务器上查看ip是否改变。<br>
 - <img src="screenshots/代理上传.jpg" width=1100 height=150 />
 - 显示过多时，可以点击清屏按钮。<br>
