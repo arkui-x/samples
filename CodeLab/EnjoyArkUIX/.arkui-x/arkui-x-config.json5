@@ -15,6 +15,7 @@
     "FileApi",
     "RDBDemo",
     "UDMFDemo",
-    "PreferencesDemo"
+    "PreferencesDemo",
+    "RequestDemo"
   ]
 }
