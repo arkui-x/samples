@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools"
           package="com.example.enjoyarkuix">
+    <uses-permission android:name="android.permission.DOWNLOAD_WITHOUT_NOTIFICATION"/>
     <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+    <uses-permission android:name="android.permission.MOUNT_FORMAT_FILESYSTEMS"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE"/>
     <application android:allowBackup="true" android:dataExtractionRules="@xml/data_extraction_rules"
                  android:extractNativeLibs="true" android:fullBackupContent="@xml/backup_rules"
                  android:icon="@drawable/app_icon" android:label="@string/app_name" android:name=".MyApplication"
@@ -94,6 +101,10 @@
         <activity
                 android:configChanges="orientation|keyboard|layoutDirection|screenSize|screenLayout|uiMode|smallestScreenSize|density"
                 android:exported="true" android:name=".PreferencesDemoPreferencesDemoAbilityActivity"
+                android:screenOrientation="portrait" android:windowSoftInputMode="adjustNothing |stateAlwaysHidden"/>
+        <activity
+                android:configChanges="orientation|keyboard|layoutDirection|screenSize|screenLayout|uiMode|smallestScreenSize|density"
+                android:exported="true" android:name=".RequestDemoRequestDemoAbilityActivity"
                 android:screenOrientation="portrait" android:windowSoftInputMode="adjustNothing |stateAlwaysHidden"/>
     </application>
 </manifest>

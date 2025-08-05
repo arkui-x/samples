@@ -11,12 +11,12 @@ if [ "$scriptBuildFlag" = "false" ]; then
   exit 0
 fi
 
-project_path="C:\Users\Administrator\Desktop\EnjoyArkUIX"
+project_path="C:\Users\Administrator\Desktop\tmp\EnjoyArkUIX"
 ohpm_path="D:\deverco-studio\DevEco_Studio\tools\ohpm\bin\ohpm"
 arkuiXSdkPath="D:\devecostudio-windows-5.0.3.502\ARKUI\18\arkui-x"
 
 # You can change the module name you want to compile.
-moduleLists=entry,PlatformView,PlatformBridge,Fragment,dynamicHap,dynamicHapOne,dynamicHapTwo,Test,version,Modifier,VideoPlayDemo,FileApi,RDBDemo,UDMFDemo,PreferencesDemo
+moduleLists=entry,PlatformView,PlatformBridge,Fragment,dynamicHap,dynamicHapOne,dynamicHapTwo,Test,version,Modifier,VideoPlayDemo,FileApi,RDBDemo,UDMFDemo,PreferencesDemo,RequestDemo
 
 # You can change the android arkuix path to the specified path.
 android_arkuix_path="$project_path/.arkui-x/android/app/src/main/assets/arkui-x"

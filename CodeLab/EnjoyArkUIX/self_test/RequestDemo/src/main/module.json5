@@ -1,0 +1,31 @@
+{
+  "module": {
+    "name": "RequestDemo",
+    "type": "feature",
+    "description": "$string:module_desc",
+    "mainElement": "RequestDemoAbility",
+    "deviceTypes": [
+      "default"
+    ],
+    "deliveryWithInstall": true,
+    "installationFree": false,
+    "pages": "$profile:main_pages",
+    "abilities": [
+      {
+        "name": "RequestDemoAbility",
+        "srcEntry": "./ets/requestdemoability/RequestDemoAbility.ets",
+        "description": "$string:RequestDemoAbility_desc",
+        "icon": "$media:layered_image",
+        "label": "$string:RequestDemoAbility_label",
+        "startWindowIcon": "$media:startIcon",
+        "startWindowBackground": "$color:start_window_background",
+        "exported": true
+      }
+    ],
+    "requestPermissions": [
+      {
+        "name": "ohos.permission.INTERNET"
+      }
+    ]
+  }
+}

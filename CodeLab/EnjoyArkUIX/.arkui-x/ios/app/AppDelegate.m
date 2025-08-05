@@ -28,6 +28,7 @@
 #import "RDBDemoRDBDemoAbilityViewController.h"
 #import "UDMFDemoUDMFDemoAbilityViewController.h"
 #import "PreferencesDemoPreferencesDemoAbilityViewController.h"
+#import "RequestDemoRequestDemoAbilityViewController.h"
 #import <libarkui_ios/StageApplication.h>
 
 #define BUNDLE_DIRECTORY @"arkui-x"
@@ -142,6 +143,10 @@
         NSString *instanceName = [NSString stringWithFormat:@"%@:%@:%@",bundleName, moduleName, abilityName];
         PreferencesDemoPreferencesDemoAbilityViewController *otherVC = [[PreferencesDemoPreferencesDemoAbilityViewController alloc] initWithInstanceName:instanceName];
         subStageVC = (PreferencesDemoPreferencesDemoAbilityViewController *)otherVC;
+    } else if ([moduleName isEqualToString:@"RequestDemo"] && [abilityName isEqualToString:@"RequestDemoAbility"]) {
+        NSString *instanceName = [NSString stringWithFormat:@"%@:%@:%@",bundleName, moduleName, abilityName];
+        RequestDemoRequestDemoAbilityViewController *otherVC = [[RequestDemoRequestDemoAbilityViewController alloc] initWithInstanceName:instanceName];
+        subStageVC = (RequestDemoRequestDemoAbilityViewController *)otherVC;
     } // other ViewController
     
     if (!subStageVC) {

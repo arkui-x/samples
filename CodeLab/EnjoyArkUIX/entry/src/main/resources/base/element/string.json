@@ -87,6 +87,10 @@
     {
       "name": "PreferencesDemo",
       "value": "PreferencesDemo"
+    },
+    {
+      "name": "RequestDemo",
+      "value": "RequestDemo"
     }
   ]
 }
