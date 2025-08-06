@@ -1,0 +1,26 @@
+{
+  "module": {
+    "name": "Window",
+    "type": "feature",
+    "description": "$string:module_desc",
+    "mainElement": "WindowAbility",
+    "deviceTypes": [
+      "default"
+    ],
+    "deliveryWithInstall": true,
+    "installationFree": false,
+    "pages": "$profile:main_pages",
+    "abilities": [
+      {
+        "name": "WindowAbility",
+        "srcEntry": "./ets/windowability/WindowAbility.ets",
+        "description": "$string:WindowAbility_desc",
+        "icon": "$media:layered_image",
+        "label": "$string:WindowAbility_label",
+        "startWindowIcon": "$media:startIcon",
+        "startWindowBackground": "$color:start_window_background",
+        "exported": true
+      }
+    ]
+  }
+}

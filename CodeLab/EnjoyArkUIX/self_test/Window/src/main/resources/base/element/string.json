@@ -1,0 +1,72 @@
+{
+  "string": [
+    {
+      "name": "module_desc",
+      "value": "module description"
+    },
+    {
+      "name": "WindowAbility_desc",
+      "value": "description"
+    },
+    {
+      "name": "WindowAbility_label",
+      "value": "label"
+    },
+    {
+      "name": "label",
+      "value": "80%"
+    },
+    {
+      "name": "Window_title",
+      "value": "attributeWindow"
+    },
+    {
+      "name": "Animation_title",
+      "value": "Animation"
+    },
+    {
+      "name": "Resource_title",
+      "value": "Resource"
+    },
+    {
+      "name": "window_title",
+      "value": "window"
+    },
+    {
+      "name": "WindowEvent_title",
+      "value": "WindowEvent"
+    },
+    {
+      "name": "WindowSizeChange_title",
+      "value": "WindowSizeChange"
+    },
+    {
+      "name": "WindowAvoidArea_title",
+      "value": "WindowAvoidArea"
+    },
+    {
+      "name": "WindowSetSystmBarProperty_title",
+      "value": "WindowSetSystmBarProperty"
+    },
+    {
+      "name": "WindowStatusChanged_title",
+      "value": "WindowStatusChanged"
+    },
+    {
+      "name": "WindowSetPrivacyMode_title",
+      "value": "WindowSetPrivacyMode"
+    },
+    {
+      "name": "DisplayPpi_title",
+      "value": "DisplayPpi"
+    },
+    {
+      "name": "WindowStage_title",
+      "value": "WindowStage"
+    },
+    {
+      "name": "WindowStageLoadContentByName_title",
+      "value": "WindowStageLoadContentByName"
+    }
+  ]
+}

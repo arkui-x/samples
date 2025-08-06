@@ -1,0 +1,26 @@
+{
+  "module": {
+    "name": "Drawing",
+    "type": "feature",
+    "description": "$string:module_desc",
+    "mainElement": "DrawingAbility",
+    "deviceTypes": [
+      "default"
+    ],
+    "deliveryWithInstall": true,
+    "installationFree": false,
+    "pages": "$profile:main_pages",
+    "abilities": [
+      {
+        "name": "DrawingAbility",
+        "srcEntry": "./ets/drawingability/DrawingAbility.ets",
+        "description": "$string:DrawingAbility_desc",
+        "icon": "$media:layered_image",
+        "label": "$string:DrawingAbility_label",
+        "startWindowIcon": "$media:startIcon",
+        "startWindowBackground": "$color:start_window_background",
+        "exported": true
+      }
+    ]
+  }
+}

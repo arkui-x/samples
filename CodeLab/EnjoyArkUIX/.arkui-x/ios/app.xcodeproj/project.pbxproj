@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B3D9FBF9DFEE406D97464741 /* WindowWindowAbilityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FCF8F6A046A42F2BF381181 /* WindowWindowAbilityViewController.m */; };
+		6EB63303CCE94092A1EC9594 /* DrawingDrawingAbilityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A741C8134ED94DD3BA3B9F4B /* DrawingDrawingAbilityViewController.m */; };
 		31B577F6486A4EF5AC429DCC /* RequestDemoRequestDemoAbilityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68492AC35759413C812D5B78 /* RequestDemoRequestDemoAbilityViewController.m */; };
 		AF9B613D4F9543B1805F288E /* PreferencesDemoPreferencesDemoAbilityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ECDEB3C76204A93A7414C93 /* PreferencesDemoPreferencesDemoAbilityViewController.m */; };
 		CEE7BE2D5C1B4B87AB81079B /* UDMFDemoUDMFDemoAbilityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C7331DA4C5DC4873A5E2AC3A /* UDMFDemoUDMFDemoAbilityViewController.m */; };
@@ -55,6 +57,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		5E6C7721A0C048C0BB3994FA /* WindowWindowAbilityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WindowWindowAbilityViewController.h; sourceTree = "<group>"; };
+		5FCF8F6A046A42F2BF381181 /* WindowWindowAbilityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WindowWindowAbilityViewController.m; sourceTree = "<group>"; };
+		6F3D9A2E6C094AADAD1448DA /* DrawingDrawingAbilityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrawingDrawingAbilityViewController.h; sourceTree = "<group>"; };
+		A741C8134ED94DD3BA3B9F4B /* DrawingDrawingAbilityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrawingDrawingAbilityViewController.m; sourceTree = "<group>"; };
 		DE8355A4B3984C6098C28D21 /* RequestDemoRequestDemoAbilityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RequestDemoRequestDemoAbilityViewController.h; sourceTree = "<group>"; };
 		68492AC35759413C812D5B78 /* RequestDemoRequestDemoAbilityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RequestDemoRequestDemoAbilityViewController.m; sourceTree = "<group>"; };
 		72A9D2302AF346F0BDF93915 /* PreferencesDemoPreferencesDemoAbilityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PreferencesDemoPreferencesDemoAbilityViewController.h; sourceTree = "<group>"; };
@@ -146,6 +152,10 @@
 		F0AF1ACF27D3684F008C55DD /* app */ = {
 			isa = PBXGroup;
 			children = (
+				5E6C7721A0C048C0BB3994FA /* WindowWindowAbilityViewController.h */,
+				5FCF8F6A046A42F2BF381181 /* WindowWindowAbilityViewController.m */,
+				6F3D9A2E6C094AADAD1448DA /* DrawingDrawingAbilityViewController.h */,
+				A741C8134ED94DD3BA3B9F4B /* DrawingDrawingAbilityViewController.m */,
 				DE8355A4B3984C6098C28D21 /* RequestDemoRequestDemoAbilityViewController.h */,
 				68492AC35759413C812D5B78 /* RequestDemoRequestDemoAbilityViewController.m */,
 				72A9D2302AF346F0BDF93915 /* PreferencesDemoPreferencesDemoAbilityViewController.h */,
@@ -294,6 +304,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B3D9FBF9DFEE406D97464741 /* WindowWindowAbilityViewController.m in Sources */,
+				6EB63303CCE94092A1EC9594 /* DrawingDrawingAbilityViewController.m in Sources */,
 				31B577F6486A4EF5AC429DCC /* RequestDemoRequestDemoAbilityViewController.m in Sources */,
 				AF9B613D4F9543B1805F288E /* PreferencesDemoPreferencesDemoAbilityViewController.m in Sources */,
 				CEE7BE2D5C1B4B87AB81079B /* UDMFDemoUDMFDemoAbilityViewController.m in Sources */,

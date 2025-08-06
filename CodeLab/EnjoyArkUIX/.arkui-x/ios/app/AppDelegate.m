@@ -23,6 +23,8 @@
 #import "ModifierModifierAbilityViewController.h"
 #import "VideoPlayDemoVideoPlayDemoAbilityViewController.h"
 #import "FileApiFileApiAbilityViewController.h"
+#import "DrawingDrawingAbilityViewController.h"
+#import "WindowWindowAbilityViewController.h"
 #import "RDBDemoRDBDemoAbilityViewController.h"
 #import "UDMFDemoUDMFDemoAbilityViewController.h"
 #import "PreferencesDemoPreferencesDemoAbilityViewController.h"
@@ -121,6 +123,14 @@
         NSString *instanceName = [NSString stringWithFormat:@"%@:%@:%@",bundleName, moduleName, abilityName];
         FileApiFileApiAbilityViewController *otherVC = [[FileApiFileApiAbilityViewController alloc] initWithInstanceName:instanceName];
         subStageVC = (FileApiFileApiAbilityViewController *)otherVC;
+    } else if ([moduleName isEqualToString:@"Drawing"] && [abilityName isEqualToString:@"DrawingAbility"]) {
+        NSString *instanceName = [NSString stringWithFormat:@"%@:%@:%@",bundleName, moduleName, abilityName];
+        DrawingDrawingAbilityViewController *otherVC = [[DrawingDrawingAbilityViewController alloc] initWithInstanceName:instanceName];
+        subStageVC = (DrawingDrawingAbilityViewController *)otherVC;
+    } else if ([moduleName isEqualToString:@"Window"] && [abilityName isEqualToString:@"WindowAbility"]) {
+        NSString *instanceName = [NSString stringWithFormat:@"%@:%@:%@",bundleName, moduleName, abilityName];
+        WindowWindowAbilityViewController *otherVC = [[WindowWindowAbilityViewController alloc] initWithInstanceName:instanceName];
+        subStageVC = (WindowWindowAbilityViewController *)otherVC;
     } else if ([moduleName isEqualToString:@"RDBDemo"] && [abilityName isEqualToString:@"RDBDemoAbility"]) {
         NSString *instanceName = [NSString stringWithFormat:@"%@:%@:%@",bundleName, moduleName, abilityName];
         RDBDemoRDBDemoAbilityViewController *otherVC = [[RDBDemoRDBDemoAbilityViewController alloc] initWithInstanceName:instanceName];
