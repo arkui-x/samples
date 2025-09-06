@@ -81,6 +81,7 @@ struct Histogram {
                 }
                 .justifyContent(FlexAlign.End)
                 .height('100%')
+                .margin({ top:46 })
               }
             })
           }
