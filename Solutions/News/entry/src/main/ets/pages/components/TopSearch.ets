@@ -28,7 +28,7 @@ export struct TopSearch {
       .margin({ left: 15 })
     }
     .backgroundColor('#f04142')
-    .padding({ top: 20, left: 15, right: 15 })
+    .padding({ left: 15, right: 15 })
     .height('10%')
   }
 }
