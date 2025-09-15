@@ -23,6 +23,7 @@ struct WebComponent {
     Column() {
       // 通过$rawfile加载本地资源文件。
       Web({ src: $rawfile("index.html"), controller: this.controller })
+        .margin({top: 54, bottom : 34})
     }
   }
 }
