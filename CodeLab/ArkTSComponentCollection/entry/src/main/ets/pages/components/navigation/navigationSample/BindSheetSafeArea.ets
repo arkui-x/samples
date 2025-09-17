@@ -24,6 +24,7 @@ struct BindSheetSafeArea {
   myBuilder() {
     Column() {
       TextInput({ placeholder: 'Hint' })
+        .position({ x: 0, y: 200 })
         .type(InputType.Password)
         .height(40)
     }

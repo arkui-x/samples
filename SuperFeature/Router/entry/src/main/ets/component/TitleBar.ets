@@ -8,8 +8,8 @@ export default struct TitleBar {
     Column() {
       Row() {
         Image($r('app.media.Back'))
-          .width(20)
-          .height(20)
+          .width(30)
+          .height(30)
           .margin({ left: 26 })
           .objectFit(ImageFit.Contain)
           .onClick(() => {
