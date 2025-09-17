@@ -135,10 +135,10 @@ export default struct MyTabContent {
    */
   @Builder
   buildObject(obj: object, tabCount: number = 0) {
-    Flex({ wrap: FlexWrap.Wrap, alignContent: FlexAlign.Start }) {
+    Column() {
       ForEach(getObjectKeys(obj), (key: string, index) => {
-        Flex({ wrap: FlexWrap.Wrap, alignContent: FlexAlign.Start }) {
-          if (isBasicType(obj[key])) { // 判断是否为基础数据类型
+        if (isBasicType(obj[key])) { // 判断是否为基础数据类型
+          Row() {
             Text(`${setTabs(tabCount)}${key}:\t`)
               .fontSize(14)
               .fontWeight(FontWeight.Bold)
@@ -147,38 +147,45 @@ export default struct MyTabContent {
             } else {
               Text(`${obj[key]}`)
             }
-          } else {
-            if (isArray(obj[key])) { // 判断是否为数组类型
-              if (isBasicArray(obj[key])) {
+          }.justifyContent(FlexAlign.Start)
+        } else {
+          if (isArray(obj[key])) { // 判断是否为数组类型
+            if (isBasicArray(obj[key])) {
+              Row() {
                 Text(`${setTabs(tabCount)}${key}:\t`)
                   .fontSize(14)
                   .fontWeight(FontWeight.Bold)
                 this.buildArray(obj[key])
-              } else {
+              }.justifyContent(FlexAlign.Start)
+            } else {
+              Column() {
                 Text(`${setTabs(tabCount)}${key}:\n`)
                   .fontSize(14)
                   .fontWeight(FontWeight.Bold)
                 this.buildArray(obj[key], false, tabCount + 1)
-              }
-            } else {
-              if (null === obj[key]) {
+              }.alignItems(HorizontalAlign.Start)
+            }
+          } else {
+            if (null === obj[key]) {
+              Row() {
                 Text(`${setTabs(tabCount)}${key}:\t`)
                   .fontSize(14)
                   .fontWeight(FontWeight.Bold)
                 Text(`${obj[key]}`)
-              } else {
+              }.justifyContent(FlexAlign.Start)
+            } else {
+              Column() {
                 Text(`${setTabs(tabCount)}${key}:\n`)
                   .fontSize(14)
                   .fontWeight(FontWeight.Bold)
                 this.buildObject(obj[key], tabCount + 1)
-              }
+              }.alignItems(HorizontalAlign.Start)
             }
           }
         }
-
         if (index !== getObjectKeys(obj).length - 1) Text(`\n`)
       })
-    }
+    }.alignItems(HorizontalAlign.Start)
   }
 
   build() {
