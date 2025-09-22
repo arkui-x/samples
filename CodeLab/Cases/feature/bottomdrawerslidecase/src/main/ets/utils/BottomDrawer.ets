@@ -211,4 +211,9 @@ export struct BottomDrawer {
       this.bottomAvoidHeight = px2vp(bottomAvoidHeight) / 2;
     })
   }
+
+aboutToDisappear(): void {
+    // 退出沉浸模式
+    this.windowModel.setMainWindowImmersive(false);
+  }
 }
