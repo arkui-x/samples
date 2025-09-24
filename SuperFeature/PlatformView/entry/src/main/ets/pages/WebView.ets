@@ -25,7 +25,7 @@ struct Index {
     Row() {
       Column() {
         MainPageComponent()
-        PlatformView('WebView')
+        PlatformView('WebView', 'https://gitcode.com/arkui-x')
       }
       .width('100%')
     }

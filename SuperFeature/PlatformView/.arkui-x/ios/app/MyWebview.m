@@ -13,13 +13,13 @@
     NSString* viewTag;
 }
 
-- (instancetype)initWithFrame
+- (instancetype)initWithFrame:(NSString*) data
 {
     self = [super init];
     if (self) {
         viewTag = @"WebView";
         webView = [[WKWebView alloc] init];
-        NSURL *url = [NSURL URLWithString:@"https://www.gitcode.com/arkui-x"];
+        NSURL *url = [NSURL URLWithString:data];
         NSURLRequest *request = [NSURLRequest requestWithURL:url];
         [webView loadRequest:request];
         webView.layer.allowsEdgeAntialiasing = YES;

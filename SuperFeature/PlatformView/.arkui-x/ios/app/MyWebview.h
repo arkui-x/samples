@@ -11,7 +11,7 @@ NS_ASSUME_NONNULL_BEGIN
 - (UIView *) view;
 - (void) onDispose;
 - (NSString *) getPlatformViewID;
-- (instancetype)initWithFrame;
+- (instancetype)initWithFrame:(NSString*) data;
 @end
 
 NS_ASSUME_NONNULL_END
