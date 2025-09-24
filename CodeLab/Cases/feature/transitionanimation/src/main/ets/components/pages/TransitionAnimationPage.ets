@@ -14,9 +14,10 @@
  */
 import { CardData } from '../../model/CardData';
 import { CardPage } from './CardPage';
-import { display } from '@kit.ArkUI';
+import { display, window } from '@kit.ArkUI';
 import { WaterFlowDataSource } from '../../model/WaterFlowDataSource';
 import { emitter } from '@kit.BasicServicesKit';
+import { common } from '@kit.AbilityKit';
 
 /**
  * 场景描述: 本方案做的是页面点击卡片跳转到详情预览的转场动画效果
@@ -75,11 +76,26 @@ export struct TransitionAnimationPage {
     this.currentDisplayHeight = display.getDefaultDisplaySync().height;
     // 注册事件监听
     this.listenBackPress();
+
+    const context = getContext() as common.UIAbilityContext; // 获取UIAbilityContext
+    window.getLastWindow(context, (err, data) => {
+      if (err.code !== 0) {
+        return;
+      }
+      data.setWindowSystemBarEnable(['status']);
+    });
   }
 
   aboutToDisappear(): void {
     // 销毁事件监听
     emitter.off(7);
+    const context = getContext() as common.UIAbilityContext; // 获取UIAbilityContext
+    window.getLastWindow(context, (err, data) => {
+      if (err.code !== 0) {
+        return;
+      }
+      data.setWindowSystemBarEnable(['status','navigation']);
+    });
   }
 
   @Builder

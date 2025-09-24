@@ -16,6 +16,7 @@
 #import "AppDelegate.h"
 #import "PhonePhoneAbilityViewController.h"
 #import <libarkui_ios/StageApplication.h>
+#import "SecondFloorViewController.h"
 
 #define BUNDLE_DIRECTORY @"arkui-x"
 #define BUNDLE_NAME @"com.north.cases"
@@ -78,11 +79,12 @@
         NSString *instanceName = [NSString stringWithFormat:@"%@:%@:%@",bundleName, moduleName, abilityName];
         PhonePhoneAbilityViewController *otherVC = [[PhonePhoneAbilityViewController alloc] initWithInstanceName:instanceName];
         subStageVC = (PhonePhoneAbilityViewController *)otherVC;
-    } else if ([moduleName isEqualToString:@"phone"] && [abilityName isEqualToString:@"PhoneAbility"]) {
-        NSString *instanceName = [NSString stringWithFormat:@"%@:%@:%@",bundleName, moduleName, abilityName];
-        PhonePhoneAbilityViewController *otherVC = [[PhonePhoneAbilityViewController alloc] initWithInstanceName:instanceName];
-        subStageVC = (PhonePhoneAbilityViewController *)otherVC;
-    } // other ViewController
+    }  else if ([moduleName isEqualToString:@"phone"] && [abilityName isEqualToString:@"EntryAbility"]) {
+        NSString *instanceName = [NSString stringWithFormat:@"%@:%@:%@",BUNDLE_NAME, @"phone", @"EntryAbility"];
+        SecondFloorViewController *secondFloorVC = [[SecondFloorViewController alloc] init];
+        secondFloorVC.instanceName = instanceName;
+        subStageVC = (SecondFloorViewController *)secondFloorVC;
+    }// other ViewController
     
     if (!subStageVC) {
         return NO;

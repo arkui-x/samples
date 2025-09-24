@@ -22,6 +22,6 @@ export struct ToolBoxComponent {
   build() {
     ToolBoxView()
       .height('99%')
-      .width('99%')
+      .width('100%')
   }
 }
