@@ -356,7 +356,7 @@ export struct SecondFloor {
       Row() {
         Blank()
           .width('35%')
-          .height($r('app.integer.second_floor_main_page_title_height'))
+          .height(104)
         Text($r('app.string.second_floor_main_page_title'))
           .fontSize($r('app.integer.second_floor_main_page_title_blank_font_size'))
           .width('34%')

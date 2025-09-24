@@ -1,6 +1,7 @@
 {
   "src": [
     "pages/EntryView",
-    "pages/AdvertisingPage"
+    "pages/AdvertisingPage",
+    "pages/SecondFloorPage"
   ]
 }

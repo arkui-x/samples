@@ -219,7 +219,7 @@ export struct FloorView {
       Column() {
         Blank()
           .width($r('app.string.second_floor_full_size'))
-          .height(px2vp(this.topRectHeight))
+          .height(44)
         // 二楼标题
         this.secondFloorTitle();
         // 二楼中间小程序

@@ -21,6 +21,7 @@ import { CollapseMenu } from 'collapsemenu';
 import { SceneModuleInfo } from './model/SceneModuleInfo';
 import { WaterFlowDataSource } from './model/WaterFlowDataSource';
 import { TAB_DATA, TabDataModel } from './model/TabsData';
+import { common, Want } from '@kit.AbilityKit';
 
 /**
  * 瀑布流列表项组件布局
@@ -228,6 +229,20 @@ struct methodPoints {
       bottom: $r('app.string.functional_scenes_item_gap_half')
     })
     .onClick(() => {
+      console.log(`scenes item click in ${this.listData.appUri}`)
+      if (this.listData.appUri === 'secondfloorloadanimation/SecondFloorLoadAnimation') {
+        const context: common.UIAbilityContext = getContext(this) as common.UIAbilityContext;
+        let want: Want= {
+          bundleName: 'com.north.cases',
+          moduleName: 'phone',
+          abilityName: 'EntryAbility',
+          parameters: { url: 'secondfloorloadanimation/SecondFloorLoadAnimation'}
+        }
+        context.startAbility(want, (err, data) => {
+          console.log(`SecondFloorLoadAnimation startAbility err ${err}`);
+        })
+        return;
+      }
       // 判断当前路由栈最后一个路由是否与当前跳转路由相同,相同则不跳转
       if (DynamicsRouter.appRouterStack.slice(-1)[0].name === this.listData.appUri) {
         return;
