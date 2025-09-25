@@ -9,6 +9,10 @@
       "value": "description"
     },
     {
+      "name": "EntryAbility_desc",
+      "value": "description"
+    },
+    {
       "name": "PhoneAbility_label",
       "value": "我的开发案例"
     },

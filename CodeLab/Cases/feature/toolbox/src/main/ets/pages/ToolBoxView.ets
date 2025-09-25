@@ -26,6 +26,7 @@ import { VisibleAnimation } from './VisiableAnimation';
 import { AttributeSet } from '../model/AttributeSet';
 import { ImgParams } from './ImgParams';
 import { ToolInterface } from '../model/ToolInterface';
+import { common } from '@kit.AbilityKit';
 
 /**
  * 功能说明: 本示例介绍使用zIndex、gesture等接口实现悬浮工具箱效果。
@@ -138,6 +139,23 @@ export struct ToolBoxView {
         { x: CommonConstants.MAXIMUM_DISTANCE, y: 0 },
         new AttributeSet(this.animationAttribute, new ImgParams($r('app.media.AI_lightbulb_max'))));
     this.arkuiXToolBoxSize();
+
+    const context = getContext() as common.UIAbilityContext; // 获取UIAbilityContext
+    window.getLastWindow(context, (err, data) => {
+      if (err.code !== 0) {
+        return;
+      }
+      data.setWindowSystemBarEnable(['status']);
+    });
+  }
+  aboutToDisappear(): void {
+    const context = getContext() as common.UIAbilityContext; // 获取UIAbilityContext
+    window.getLastWindow(context, (err, data) => {
+      if (err.code !== 0) {
+        return;
+      }
+      data.setWindowSystemBarEnable(['status','navigation']);
+    });
   }
 
   build() {

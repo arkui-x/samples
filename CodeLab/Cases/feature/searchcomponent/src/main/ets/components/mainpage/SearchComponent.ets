@@ -22,6 +22,7 @@ import { BusinessError } from '@kit.BasicServicesKit';
 import { logger, PlatformInfo, PlatformTypeEnum, PreferenceManager } from 'utils';
 import { FoldableRouter } from 'routermodule';
 import { SceneModuleInfo } from 'functionalscenes';
+import { Want } from '@kit.AbilityKit';
 
 /**
  * 搜索实现思路：
@@ -359,15 +360,33 @@ export struct SearchComponent {
               .margin({ top: $r('app.string.search_component_search_history_text_padding_margin4') })
               .padding({ right: $r('app.string.search_component_search_history_text_padding_margin2') })
               .onClick(() => {
-                // 点击历史记录直接跳转到指定范例
-                this.onItemClicked();
-                FoldableRouter.pushUri(item.appUri, item.param);
+
                 // 点击的项提到历史记录的最前面
                 this.searchHistoryData.map((historyItem, index) => {
                   if (historyItem === item) {
                     this.searchHistoryData.unshift(this.searchHistoryData.splice(index, 1)[0]);
                   }
                 })
+
+                // 点击历史记录直接跳转到指定范例
+                this.onItemClicked();
+                console.log(`search histroy item click in ${item.appUri}`)
+                if (item.appUri === 'secondfloorloadanimation/SecondFloorLoadAnimation') {
+                  const context: common.UIAbilityContext = getContext(this) as common.UIAbilityContext;
+                  let want: Want= {
+                    bundleName: 'com.north.cases',
+                    moduleName: 'phone',
+                    abilityName: 'EntryAbility',
+                    parameters: { url: 'secondfloorloadanimation/SecondFloorLoadAnimation'}
+                  }
+                  context.startAbility(want, (err, data) => {
+                    console.log(`SecondFloorLoadAnimation startAbility err ${err}`);
+                  })
+                  return;
+                }
+                FoldableRouter.pushUri(item.appUri, item.param);
+
+
               })
             })
           }
@@ -453,7 +472,20 @@ export struct SearchComponent {
 
             }
             this.onItemClicked();
-
+            console.log(`search item click in ${item.appUri}`)
+            if (item.appUri === 'secondfloorloadanimation/SecondFloorLoadAnimation') {
+              const context: common.UIAbilityContext = getContext(this) as common.UIAbilityContext;
+              let want: Want= {
+                bundleName: 'com.north.cases',
+                moduleName: 'phone',
+                abilityName: 'EntryAbility',
+                parameters: { url: 'secondfloorloadanimation/SecondFloorLoadAnimation'}
+              }
+              context.startAbility(want, (err, data) => {
+                console.log(`SecondFloorLoadAnimation startAbility err ${err}`);
+              })
+              return;
+            }
             // 调用动态路由相关方法实现页面跳转
             FoldableRouter.pushUri(item.appUri, item.param);
           })
