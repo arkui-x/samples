@@ -13,16 +13,21 @@
     return self;
 }
 
-- (NSObject<IPlatformView>*) getPlatformView:(NSString*) xComponentId {
+- (NSObject<IPlatformView>*) getPlatformView:(NSString*) platformViewId {
     NSLog(@"[PlatformViewUI] getPlatfformView");
-    if ([xComponentId isEqualToString:@"WebView"]) {
-        NSObject<IPlatformView> * view = [[MyWebview alloc] initWithFrame];
-        return view;
-    } else if ([xComponentId isEqualToString:@"MapView"]) {
+    if ([platformViewId isEqualToString:@"MapView"]) {
         NSObject<IPlatformView> * view = [[MyMapView alloc] initWithFrame];
         return view;
-    } else if ([xComponentId isEqualToString:@"VideoView"]) {
+    } else if ([platformViewId isEqualToString:@"VideoView"]) {
         NSObject<IPlatformView> * view = [[MyVideoView alloc] initWithFrame];
+        return view;
+    }
+    return nil;
+}
+
+- (NSObject<IPlatformView>*) getPlatformView:(NSString*) platformViewId data:(NSString*) data {
+    if ([platformViewId isEqualToString:@"WebView"]) {
+        NSObject<IPlatformView> * view = [[MyWebview alloc] initWithFrame:data];
         return view;
     }
     return nil;

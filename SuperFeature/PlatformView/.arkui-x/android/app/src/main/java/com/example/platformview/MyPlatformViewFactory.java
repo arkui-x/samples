@@ -16,13 +16,19 @@ public class MyPlatformViewFactory extends PlatformViewFactory {
     private Bundle savedInstanceState;
 
     @Override
-    public IPlatformView getPlatformView(String Id) {
-        if ("MapView".equals(Id)) {
+    public IPlatformView getPlatformView(String id) {
+        if ("MapView".equals(id)) {
             return new MyMapView(context, savedInstanceState);
-        } else if ("WebView".equals(Id)) {
-            return new MyWebView(context);
-        } else if ("VideoView".equals(Id)) {
+        } else if ("VideoView".equals(id)) {
             return new MyVideoView(context);
+        }
+        return null;
+    }
+
+    @Override
+    public IPlatformView getPlatformView(String id, String data) {
+        if ("WebView".equals(id)) {
+            return new MyWebView(context, data);
         }
         return null;
     }
