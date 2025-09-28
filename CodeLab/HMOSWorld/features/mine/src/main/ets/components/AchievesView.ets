@@ -72,6 +72,7 @@ export struct AchievesView {
             top: $r('app.float.md_padding_margin')
           })
           .onClick(() => {
+            this.mainCanvasRenderingContext = new CanvasRenderingContext2D(new RenderingContextSettings(true))
             if (this.learnedIds.includes(item.pathId)) {
               this.clickedItem = item;
               this.isShow = true;

@@ -217,7 +217,7 @@ struct NewsVideoView {
               topLeft: $r('app.string.video_linkage_corner_radius_default_l'),
               topRight: $r('app.string.video_linkage_corner_radius_default_l')
             })
-            .onPrepared((event: Record<string, number>) => {
+            .onPrepared((event: PreparedInfo) => {
               this.videoDuration = event.duration;
             })
             .onStart(() => {
@@ -226,7 +226,7 @@ struct NewsVideoView {
                 this.controller.pause();
               }
             })
-            .onUpdate((event: Record<string, number>) => {
+            .onUpdate((event: PlaybackInfo) => {
               this.currentTime = event.time;
             })
             .onFinish(() => {
