@@ -17,8 +17,9 @@ public class MyWebView implements IPlatformView {
     private WebView mWebView;
 
     @SuppressLint("SetJavaScriptEnabled")
-    MyWebView(Context context, String url) {
+    MyWebView(Context context) {
         mWebView = new WebView(context);
+        String url = "https://gitcode.com/arkui-x";
         mWebView.getSettings().setJavaScriptEnabled(true);
         mWebView.getSettings().setDomStorageEnabled(true);
         mWebView.loadUrl(url);

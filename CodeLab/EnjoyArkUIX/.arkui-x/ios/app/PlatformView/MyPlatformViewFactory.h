@@ -23,7 +23,8 @@
 NS_ASSUME_NONNULL_BEGIN
 @interface MyPlatformViewFactory : NSObject<PlatformViewFactory>
 
-- (NSObject<IPlatformView>*) getPlatformView:(NSString*) xComponentId;
+- (NSObject<IPlatformView>*) getPlatformView:(NSString*) platformViewId;
+- (NSObject<IPlatformView>*) getPlatformView:(NSString*) platformViewId data:(NSString*) data;
 - initWithFrame;
 @end
 NS_ASSUME_NONNULL_END

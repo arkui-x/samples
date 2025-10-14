@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2024 Huawei Device Co., Ltd.
+ * Copyright (c) Huawei Technologies Co., Ltd. 2025-2025. All rights reserved.
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
@@ -13,22 +13,22 @@
  * limitations under the License.
  */
 
-import { MainPageComponent } from 'effectkit';
-import PlatformView, { PlatformViewAttribute } from '@arkui-x.platformview';
+#ifndef MY_WEBVIEW2_H
+#define MY_WEBVIEW2_H
+#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
-@Entry
-@Component
-struct Index {
-  @State title: string = 'PlatformView WebView'
+#import <libarkui_ios/IPlatformView.h>
 
-  build() {
-    Row() {
-      Column() {
-        MainPageComponent()
-        PlatformView('WebView')
-      }
-      .width('100%')
-    }
-    .height('100%')
-  }
-}
+NS_ASSUME_NONNULL_BEGIN
+
+@interface MyWebview2 : NSObject<IPlatformView>
+- (UIView *) view;
+- (void) onDispose;
+- (NSString *) getPlatformViewID;
+- (instancetype)initWithFrame:(NSString*) data;
+@end
+
+NS_ASSUME_NONNULL_END
+
+#endif /* MY_WEBVIEW2_H */

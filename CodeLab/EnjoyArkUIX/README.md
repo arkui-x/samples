@@ -146,9 +146,9 @@
 
 1.本示例仅支持在标准Android和iOS设备系统上运行。<br>
 
-2.本示例已适配API version 16及以上版本的ArkUI-X SDK。<br>
+2.本示例已适配API version 22及以上版本的ArkUI-X SDK。<br>
 
-3.本示例需要使用DevEco Studio 5.0.4 Release及以上版本才可编译运行。<br>
+3.本示例需要使用DevEco Studio 6.0.0 Release及以上版本才可编译运行。<br>
 
 ## 工程目录
 
