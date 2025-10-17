@@ -48,6 +48,14 @@ struct Index {
             .onClick(() => {
               router.pushUrl({ url: 'pages/WebView' });
             })
+          Button('WebView with data')
+            .width('75%')
+            .height(50)
+            .fontSize(15)
+            .margin(5)
+            .onClick(() => {
+              router.pushUrl({ url: 'pages/WebView2' });
+            })
           Button('VideoView')
             .width('75%')
             .height(50)

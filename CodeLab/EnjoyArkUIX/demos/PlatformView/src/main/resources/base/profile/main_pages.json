@@ -3,6 +3,7 @@
     "pages/Index",
     "pages/VideoView",
     "pages/MapView",
-    "pages/WebView"
+    "pages/WebView",
+    "pages/WebView2"
   ]
 }

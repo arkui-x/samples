@@ -42,6 +42,13 @@ public class MyPlatformViewFactory extends PlatformViewFactory {
         return null;
     }
 
+    @Override
+    public IPlatformView getPlatformView(String id, String data) {
+        if ("WebView".equals(id)) {
+            return new MyWebView2(context, data);
+        }
+        return null;
+    }
     public void setContext(Context context) {
         this.context = context;
     }
