@@ -1,0 +1,90 @@
+{
+  "module": {
+    "name": "entry",
+    "type": "entry",
+    "description": "$string:module_desc",
+    "mainElement": "EntryAbility",
+    "deviceTypes": [
+      "phone"
+    ],
+    "deliveryWithInstall": true,
+    "installationFree": false,
+    "pages": "$profile:main_pages",
+    "abilities": [
+      {
+        "name": "EntryAbility",
+        "srcEntry": "./ets/entryability/EntryAbility.ets",
+        "description": "$string:EntryAbility_desc",
+        "icon": "$media:layered_image",
+        "label": "$string:EntryAbility_label",
+        "startWindowIcon": "$media:startIcon",
+        "startWindowBackground": "$color:start_window_background",
+        "exported": true,
+        "skills": [
+          {
+            "entities": [
+              "entity.system.home"
+            ],
+            "actions": [
+              "action.system.home"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Main1Ability",
+        "srcEntry": "./ets/main1ability/Main1Ability.ets",
+        "description": "$string:Main1Ability_desc",
+        "icon": "$media:layered_image",
+        "label": "$string:Main1Ability_label",
+        "startWindowIcon": "$media:startIcon",
+        "startWindowBackground": "$color:start_window_background"
+      },
+      {
+        "name": "Feature1Ability",
+        "srcEntry": "./ets/feature1ability/Feature1Ability.ets",
+        "description": "$string:Feature1Ability_desc",
+        "icon": "$media:layered_image",
+        "label": "$string:Feature1Ability_label",
+        "startWindowIcon": "$media:startIcon",
+        "startWindowBackground": "$color:start_window_background"
+      },
+      {
+        "name": "Feature2Ability",
+        "srcEntry": "./ets/feature2ability/Feature2Ability.ets",
+        "description": "$string:Feature2Ability_desc",
+        "icon": "$media:layered_image",
+        "label": "$string:Feature2Ability_label",
+        "startWindowIcon": "$media:startIcon",
+        "startWindowBackground": "$color:start_window_background"
+      },
+      {
+        "name": "Feature3Ability",
+        "srcEntry": "./ets/feature3ability/Feature3Ability.ets",
+        "description": "$string:Feature3Ability_desc",
+        "icon": "$media:layered_image",
+        "label": "$string:Feature3Ability_label",
+        "startWindowIcon": "$media:startIcon",
+        "startWindowBackground": "$color:start_window_background"
+      },
+      {
+        "name": "Main2Ability",
+        "srcEntry": "./ets/main2ability/Main2Ability.ets",
+        "description": "$string:Main2Ability_desc",
+        "icon": "$media:layered_image",
+        "label": "$string:Main2Ability_label",
+        "startWindowIcon": "$media:startIcon",
+        "startWindowBackground": "$color:start_window_background"
+      },
+      {
+        "name": "Main3Ability",
+        "srcEntry": "./ets/main3ability/Main3Ability.ets",
+        "description": "$string:Main3Ability_desc",
+        "icon": "$media:layered_image",
+        "label": "$string:Main3Ability_label",
+        "startWindowIcon": "$media:startIcon",
+        "startWindowBackground": "$color:start_window_background"
+      }
+    ]
+  }
+}

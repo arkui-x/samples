@@ -126,6 +126,7 @@ Note:If the text contains special characters, please escape them according to th
                 <filteritem type="filepath" name="CodeLab/MusicHome/.*.png|.*.jpeg|.*.wav" desc="already checked"/>
                 <filteritem type="filepath" name="CodeLab/OxHornCampus/.*.png" desc="already checked"/>
                 <filteritem type="filepath" name="SuperFeature/WantParamsExample/.*.png" desc="already checked"/>
+                <filteritem type="filepath" name="SuperFeature/SplitScreenView/.*.png" desc="already checked"/>
                 <filteritem type="filepath" name="CodeLab/EnjoyArkUIX/self_test/Drawing/src/main/resources/rawfile/.*.ttf" desc="already checked"/>
             </filefilter>
             <filefilter name="copyrightPolicyFilter" desc="Copyright文件头校验策略的过滤条件" >

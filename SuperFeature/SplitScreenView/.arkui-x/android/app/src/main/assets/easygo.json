@@ -1,0 +1,25 @@
+{
+  "easyGoVersion": "1.0",
+  "client": "com.example.splitscreenview",
+  "logicEntities": [
+    {
+      "head": {
+        "function": "magicwindow",
+        "required": "true"
+      },
+      "body": {
+        "mode": "1",
+        "activityPairs": [
+          {
+            "from": "com.example.splitscreenview.EntryEntryAbilityActivity",
+            "to": "com.example.splitscreenview.EntryMain1AbilityActivity"
+          },
+          {
+            "from": "com.example.splitscreenview.EntryMain1AbilityActivity",
+            "to": "com.example.splitscreenview.EntryMain2AbilityActivity"
+          }
+        ]
+      }
+    }
+  ]
+}

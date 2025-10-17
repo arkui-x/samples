@@ -1,0 +1,64 @@
+{
+  "string": [
+    {
+      "name": "module_desc",
+      "value": "module description"
+    },
+    {
+      "name": "EntryAbility_desc",
+      "value": "description"
+    },
+    {
+      "name": "EntryAbility_label",
+      "value": "平行视界"
+    },
+    {
+      "name": "Main1Ability_desc",
+      "value": "description"
+    },
+    {
+      "name": "Main1Ability_label",
+      "value": "label"
+    },
+    {
+      "name": "Feature1Ability_desc",
+      "value": "description"
+    },
+    {
+      "name": "Feature1Ability_label",
+      "value": "label"
+    },
+    {
+      "name": "Feature2Ability_desc",
+      "value": "description"
+    },
+    {
+      "name": "Feature2Ability_label",
+      "value": "label"
+    },
+    {
+      "name": "Feature3Ability_desc",
+      "value": "description"
+    },
+    {
+      "name": "Feature3Ability_label",
+      "value": "label"
+    },
+    {
+      "name": "Main2Ability_desc",
+      "value": "description"
+    },
+    {
+      "name": "Main2Ability_label",
+      "value": "label"
+    },
+    {
+      "name": "Main3Ability_desc",
+      "value": "description"
+    },
+    {
+      "name": "Main3Ability_label",
+      "value": "label"
+    }
+  ]
+}
