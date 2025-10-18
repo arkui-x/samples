@@ -15,7 +15,7 @@
 ### 使用说明
 - 本示例运行安装时随意修改本示例的bundleName可能会导致网络请求失败。<br>
 
-- 本示例用到了地图和华为快捷登录功能，如果想体验这两个功能，需要用本示例build-profile.json5文件中配置的签名信息安装运行。<br>
+- 本示例中地图和华为快捷登录功能仅在HarmonyOSNext上支持，需要在build-profile.json5文件中配置签名信息(请参考：[HarmonyOSNext使用说明](https://gitcode.com/HarmonyOS_Samples/hmosworld/blob/master/README.md#%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E))。<br>
 
 - 本示例存在两个module，分别命名为arkuix和harmonyos，其中arkuix经编译后部署于Android/iOS平台；harmonyos经编译后部署于HarmonyOS平台。因此在运行时，需要根据目标部署平台来确定参与编译的module。具体实现方法为：工程[build-profile.json5](build-profile.json5)文件中，确定参与编译的module保持不变即可，使用注释方法将另一个module进行注释，禁止其参与编译。最终确定编译时仅与目标平台对应的module参与编译，另一个module不参与编译。
 
