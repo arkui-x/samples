@@ -1,0 +1,13 @@
+{
+  "src": [
+    "pages/EntryPage",
+    "pages/Main1Page",
+    "pages/Main2Page",
+    "pages/Main3Page",
+    "pages/Feature1Page",
+    "pages/Feature2Page",
+    "pages/Feature3Page",
+    "pages/VideoPage",
+    "pages/WebPage"
+  ]
+}

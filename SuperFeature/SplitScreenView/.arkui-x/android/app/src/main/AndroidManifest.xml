@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.splitscreenview">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="true"
+        android:extractNativeLibs="true"
+        android:icon="@drawable/arkuix"
+        android:label="@string/app_name"
+        android:supportsRtl="true">
+        <meta-data
+            android:name="EasyGoClient"
+            android:value="true" />
+
+        <activity
+            android:name=".EntryEntryAbilityActivity"
+            android:configChanges="orientation|keyboard|layoutDirection|screenSize|uiMode|smallestScreenSize|density"
+            android:exported="true"
+            android:windowSoftInputMode="adjustNothing|stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".EntryMain1AbilityActivity"
+            android:configChanges="orientation|keyboard|layoutDirection|screenSize|uiMode|smallestScreenSize|density"
+            android:exported="true"
+            android:windowSoftInputMode="adjustNothing|stateHidden" />
+        <activity
+            android:name=".EntryMain2AbilityActivity"
+            android:configChanges="orientation|keyboard|layoutDirection|screenSize|uiMode|smallestScreenSize|density"
+            android:exported="true"
+            android:windowSoftInputMode="adjustNothing|stateHidden" />
+        <activity
+            android:name=".EntryMain3AbilityActivity"
+            android:configChanges="orientation|keyboard|layoutDirection|screenSize|uiMode|smallestScreenSize|density"
+            android:exported="true"
+            android:windowSoftInputMode="adjustNothing|stateHidden" />
+        <activity
+            android:name=".EntryFeature1AbilityActivity"
+            android:configChanges="orientation|keyboard|layoutDirection|screenSize|uiMode|smallestScreenSize|density"
+            android:exported="true"
+            android:windowSoftInputMode="adjustNothing|stateHidden" />
+        <activity
+            android:name=".EntryFeature2AbilityActivity"
+            android:configChanges="orientation|keyboard|layoutDirection|screenSize|uiMode|smallestScreenSize|density"
+            android:exported="true"
+            android:windowSoftInputMode="adjustNothing|stateHidden" />
+        <activity
+            android:name=".EntryFeature3AbilityActivity"
+            android:configChanges="orientation|keyboard|layoutDirection|screenSize|uiMode|smallestScreenSize|density"
+            android:exported="true"
+            android:windowSoftInputMode="adjustNothing|stateHidden" />
+    </application>
+</manifest>
