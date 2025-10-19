@@ -28,6 +28,7 @@
   - ['XcomponentNative'：XcomponentNative（API12）](SuperFeature/XcomponentNative)
   - ['PlatformView'：PlatformView（API14）](SuperFeature/PlatformView)
   - ['WantParamsExample'：WantParamsExample（API16）](SuperFeature/WantParamsExample)
+  - ['SplitScreenView'：SplitScreenView（API20）](SuperFeature/SplitScreenView)
 
 - 精品应用
   - ['Shopping'：购物示例应用（API12）](Solutions/Shopping)
@@ -68,6 +69,7 @@ samples
   |---WebExample          # Web组件
   |---XcomponentNative    # OpenGL绘制3D图形
   |---PlatformView        # 平台视图
+  |---SplitScreenView     # 平行视界
 |---Solutions           # 精品应用
   |---HealthyDiet    	  # 健康饮食
   |---News    	          # 新闻
