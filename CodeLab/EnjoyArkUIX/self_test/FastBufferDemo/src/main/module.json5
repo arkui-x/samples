@@ -1,0 +1,36 @@
+{
+  "module": {
+    "name": "FastBufferDemo",
+    "type": "feature",
+    "description": "$string:module_desc",
+    "mainElement": "FastBufferDemoAbility",
+    "deviceTypes": [
+      "default"
+    ],
+    "deliveryWithInstall": true,
+    "installationFree": false,
+    "pages": "$profile:main_pages",
+    "abilities": [
+      {
+        "name": "FastBufferDemoAbility",
+        "srcEntry": "./ets/fastbufferdemoability/FastBufferDemoAbility.ets",
+        "description": "$string:FastBufferDemoAbility_desc",
+        "icon": "$media:layered_image",
+        "label": "$string:FastBufferDemoAbility_label",
+        "startWindowIcon": "$media:startIcon",
+        "startWindowBackground": "$color:start_window_background",
+        "exported": true,
+        "skills": [
+          {
+            "entities": [
+              "entity.system.home"
+            ],
+            "actions": [
+              "ohos.want.action.home"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "module": {
+    "name": "CollectionsDemo",
+    "type": "feature",
+    "description": "$string:module_desc",
+    "mainElement": "CollectionsDemoAbility",
+    "deviceTypes": [
+      "default"
+    ],
+    "deliveryWithInstall": true,
+    "installationFree": false,
+    "pages": "$profile:main_pages",
+    "abilities": [
+      {
+        "name": "CollectionsDemoAbility",
+        "srcEntry": "./ets/collectionsdemoability/CollectionsDemoAbility.ets",
+        "description": "$string:CollectionsDemoAbility_desc",
+        "icon": "$media:layered_image",
+        "label": "$string:CollectionsDemoAbility_label",
+        "startWindowIcon": "$media:startIcon",
+        "startWindowBackground": "$color:start_window_background",
+        "exported": true,
+        "skills": [
+          {
+            "entities": [
+              "entity.system.home"
+            ],
+            "actions": [
+              "ohos.want.action.home"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

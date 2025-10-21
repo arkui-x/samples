@@ -243,6 +243,102 @@
           ]
         }
       ]
+    },
+    {
+      "name": "GeoLocationManagerDemo",
+      "srcPath": "./self_test/GeoLocationManagerDemo",
+      "targets": [
+        {
+          "name": "default",
+          "applyToProducts": [
+            "default"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "VibrationBasicDemo",
+      "srcPath": "./self_test/VibrationBasicDemo",
+      "targets": [
+        {
+          "name": "default",
+          "applyToProducts": [
+            "default"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "VibratorCustomHapticDemo",
+      "srcPath": "./self_test/VibratorCustomHapticDemo",
+      "targets": [
+        {
+          "name": "default",
+          "applyToProducts": [
+            "default"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "VibratorJsSamplesDemo",
+      "srcPath": "./self_test/VibratorJsSamplesDemo",
+      "targets": [
+        {
+          "name": "default",
+          "applyToProducts": [
+            "default"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "TaskPoolDemo",
+      "srcPath": "./self_test/TaskPoolDemo",
+      "targets": [
+        {
+          "name": "default",
+          "applyToProducts": [
+            "default"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "CollectionsDemo",
+      "srcPath": "./self_test/CollectionsDemo",
+      "targets": [
+        {
+          "name": "default",
+          "applyToProducts": [
+            "default"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "FastBufferDemo",
+      "srcPath": "./self_test/FastBufferDemo",
+      "targets": [
+        {
+          "name": "default",
+          "applyToProducts": [
+            "default"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "UtilsDemo",
+      "srcPath": "./self_test/UtilsDemo",
+      "targets": [
+        {
+          "name": "default",
+          "applyToProducts": [
+            "default"
+          ]
+        }
+      ]
     }
   ]
 }

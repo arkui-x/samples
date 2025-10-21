@@ -11,6 +11,12 @@
 			<array>
 				<string>com.example.enjoyarkuix</string>
 			</array>
+			<key>NSLocationWhenInUseUsageDescription</key>
+			<string>需要获取您的位置信息，以提供WiFi BSSID获取及定位相关服务</string>
+			<key>NSBluetoothPeripheralUsageDescription</key>
+			<string>需要蓝牙权限以搜索并连接智能设备</string>
+			<key>NSBluetoothAlwaysUsageDescription</key>
+			<string>需要蓝牙权限以搜索并连接智能设备，即使应用在后台也能保持连接</string>
 		</dict>
 	</array>
 </dict>

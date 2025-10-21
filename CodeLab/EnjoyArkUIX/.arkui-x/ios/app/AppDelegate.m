@@ -29,6 +29,14 @@
 #import "UDMFDemoUDMFDemoAbilityViewController.h"
 #import "PreferencesDemoPreferencesDemoAbilityViewController.h"
 #import "RequestDemoRequestDemoAbilityViewController.h"
+#import "GeoLocationManagerDemoGeoLocationManagerDemoAbilityViewController.h"
+#import "VibrationBasicDemoVibrationBasicDemoAbilityViewController.h"
+#import "VibratorCustomHapticDemoVibratorCustomHapticDemoAbilityViewController.h"
+#import "VibratorJsSamplesDemoVibratorJsSamplesDemoAbilityViewController.h"
+#import "TaskPoolDemoTaskPoolDemoAbilityViewController.h"
+#import "CollectionsDemoCollectionsDemoAbilityViewController.h"
+#import "FastBufferDemoFastBufferDemoAbilityViewController.h"
+#import "UtilsDemoUtilsDemoAbilityViewController.h"
 #import <libarkui_ios/StageApplication.h>
 
 #define BUNDLE_DIRECTORY @"arkui-x"
@@ -147,6 +155,38 @@
         NSString *instanceName = [NSString stringWithFormat:@"%@:%@:%@",bundleName, moduleName, abilityName];
         RequestDemoRequestDemoAbilityViewController *otherVC = [[RequestDemoRequestDemoAbilityViewController alloc] initWithInstanceName:instanceName];
         subStageVC = (RequestDemoRequestDemoAbilityViewController *)otherVC;
+    } else if ([moduleName isEqualToString:@"GeoLocationManagerDemo"] && [abilityName isEqualToString:@"GeoLocationManagerDemoAbility"]) {
+        NSString *instanceName = [NSString stringWithFormat:@"%@:%@:%@",bundleName, moduleName, abilityName];
+        GeoLocationManagerDemoGeoLocationManagerDemoAbilityViewController *otherVC = [[GeoLocationManagerDemoGeoLocationManagerDemoAbilityViewController alloc] initWithInstanceName:instanceName];
+        subStageVC = (GeoLocationManagerDemoGeoLocationManagerDemoAbilityViewController *)otherVC;
+    } else if ([moduleName isEqualToString:@"VibrationBasicDemo"] && [abilityName isEqualToString:@"VibrationBasicDemoAbility"]) {
+        NSString *instanceName = [NSString stringWithFormat:@"%@:%@:%@",bundleName, moduleName, abilityName];
+        VibrationBasicDemoVibrationBasicDemoAbilityViewController *otherVC = [[VibrationBasicDemoVibrationBasicDemoAbilityViewController alloc] initWithInstanceName:instanceName];
+        subStageVC = (VibrationBasicDemoVibrationBasicDemoAbilityViewController *)otherVC;
+    } else if ([moduleName isEqualToString:@"VibratorCustomHapticDemo"] && [abilityName isEqualToString:@"VibratorCustomHapticDemoAbility"]) {
+        NSString *instanceName = [NSString stringWithFormat:@"%@:%@:%@",bundleName, moduleName, abilityName];
+        VibratorCustomHapticDemoVibratorCustomHapticDemoAbilityViewController *otherVC = [[VibratorCustomHapticDemoVibratorCustomHapticDemoAbilityViewController alloc] initWithInstanceName:instanceName];
+        subStageVC = (VibratorCustomHapticDemoVibratorCustomHapticDemoAbilityViewController *)otherVC;
+    } else if ([moduleName isEqualToString:@"VibratorJsSamplesDemo"] && [abilityName isEqualToString:@"VibratorJsSamplesDemoAbility"]) {
+        NSString *instanceName = [NSString stringWithFormat:@"%@:%@:%@",bundleName, moduleName, abilityName];
+        VibratorJsSamplesDemoVibratorJsSamplesDemoAbilityViewController *otherVC = [[VibratorJsSamplesDemoVibratorJsSamplesDemoAbilityViewController alloc] initWithInstanceName:instanceName];
+        subStageVC = (VibratorJsSamplesDemoVibratorJsSamplesDemoAbilityViewController *)otherVC;
+    } else if ([moduleName isEqualToString:@"TaskPoolDemo"] && [abilityName isEqualToString:@"TaskPoolDemoAbility"]) {
+        NSString *instanceName = [NSString stringWithFormat:@"%@:%@:%@",bundleName, moduleName, abilityName];
+        TaskPoolDemoTaskPoolDemoAbilityViewController *otherVC = [[TaskPoolDemoTaskPoolDemoAbilityViewController alloc] initWithInstanceName:instanceName];
+        subStageVC = (TaskPoolDemoTaskPoolDemoAbilityViewController *)otherVC;
+    } else if ([moduleName isEqualToString:@"CollectionsDemo"] && [abilityName isEqualToString:@"CollectionsDemoAbility"]) {
+        NSString *instanceName = [NSString stringWithFormat:@"%@:%@:%@",bundleName, moduleName, abilityName];
+        CollectionsDemoCollectionsDemoAbilityViewController *otherVC = [[CollectionsDemoCollectionsDemoAbilityViewController alloc] initWithInstanceName:instanceName];
+        subStageVC = (CollectionsDemoCollectionsDemoAbilityViewController *)otherVC;
+    } else if ([moduleName isEqualToString:@"FastBufferDemo"] && [abilityName isEqualToString:@"FastBufferDemoAbility"]) {
+        NSString *instanceName = [NSString stringWithFormat:@"%@:%@:%@",bundleName, moduleName, abilityName];
+        FastBufferDemoFastBufferDemoAbilityViewController *otherVC = [[FastBufferDemoFastBufferDemoAbilityViewController alloc] initWithInstanceName:instanceName];
+        subStageVC = (FastBufferDemoFastBufferDemoAbilityViewController *)otherVC;
+    } else if ([moduleName isEqualToString:@"UtilsDemo"] && [abilityName isEqualToString:@"UtilsDemoAbility"]) {
+        NSString *instanceName = [NSString stringWithFormat:@"%@:%@:%@",bundleName, moduleName, abilityName];
+        UtilsDemoUtilsDemoAbilityViewController *otherVC = [[UtilsDemoUtilsDemoAbilityViewController alloc] initWithInstanceName:instanceName];
+        subStageVC = (UtilsDemoUtilsDemoAbilityViewController *)otherVC;
     } // other ViewController
     
     if (!subStageVC) {

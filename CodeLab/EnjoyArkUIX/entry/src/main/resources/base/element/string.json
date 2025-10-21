@@ -91,6 +91,38 @@
     {
       "name": "RequestDemo",
       "value": "RequestDemo"
+    },
+    {
+      "name": "GeoLocationManagerDemo",
+      "value": "GeoLocationManagerDemo"
+    },
+    {
+      "name": "VibrationBasicDemo",
+      "value": "VibrationBasicDemo"
+    },
+    {
+      "name": "VibratorCustomHapticDemo",
+      "value": "VibratorCustomHapticDemo"
+    },
+    {
+      "name": "VibratorJsSamplesDemo",
+      "value": "VibratorJsSamplesDemo"
+    },
+    {
+      "name": "TaskPoolDemo",
+      "value": "TaskPoolDemo"
+    },
+    {
+      "name": "CollectionsDemo",
+      "value": "CollectionsDemo"
+    },
+    {
+      "name": "FastBufferDemo",
+      "value": "FastBufferDemo"
+    },
+    {
+      "name": "UtilsDemo",
+      "value": "UtilsDemo"
     }
   ]
 }
