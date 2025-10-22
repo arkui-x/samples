@@ -128,6 +128,8 @@ Note:If the text contains special characters, please escape them according to th
                 <filteritem type="filepath" name="SuperFeature/WantParamsExample/.*.png" desc="already checked"/>
                 <filteritem type="filepath" name="SuperFeature/SplitScreenView/.*.png" desc="already checked"/>
                 <filteritem type="filepath" name="CodeLab/EnjoyArkUIX/self_test/Drawing/src/main/resources/rawfile/.*.ttf" desc="already checked"/>
+                <filteritem type="filepath" name="SuperFeature/PlatformBridge/.*.png" desc="运行结果截图"/>
+                <filteritem type="filepath" name="SuperFeature/PlatformBridge/.*.jpg" desc="运行结果截图"/>
             </filefilter>
             <filefilter name="copyrightPolicyFilter" desc="Copyright文件头校验策略的过滤条件" >
                 <filteritem type="filepath" name="SuperFeature/Animation/.*.ets|.*.ts" desc="示例展示无需添加版权头"/>
