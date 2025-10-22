@@ -1,6 +1,6 @@
 /*
- * Copyright (c) 2023 Huawei Device Co., Ltd.
- * Licensed under the Apache License, Version 2.0 (the "License");
+ * Copyright (c) Huawei Technologies Co., Ltd. 2025-2025. All rights reserved.
+ * Licensed under the Apache License, Version 2.0 (the "License")
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
  *
@@ -15,10 +15,11 @@
 
 #import "AppDelegate.h"
 #import "EntryEntryAbilityViewController.h"
+#import "NativeAbilityViewController.h"
 #import <libarkui_ios/StageApplication.h>
 
 #define BUNDLE_DIRECTORY @"arkui-x"
-#define BUNDLE_NAME @"com.example.platformbridge"
+#define BUNDLE_NAME @"com.example.bridge"
 
 @interface AppDelegate ()
 
@@ -38,7 +39,7 @@
 
 - (BOOL)application:(UIApplication *)app openURL:(NSURL *)url options:(NSDictionary<NSString *,id> *)options {
     NSLog(@"appdelegate openUrl callback, url : %@", url.absoluteString); // eg: (com.entry.arkui://entry?OtherAbility)
-    
+
     NSString *bundleName = url.scheme;
     NSString *moduleName = url.host;
     NSString *abilityName, *params;
@@ -76,21 +77,19 @@
     
     if ([moduleName isEqualToString:@"entry"] && [abilityName isEqualToString:@"EntryAbility"]) {
         NSString *instanceName = [NSString stringWithFormat:@"%@:%@:%@",bundleName, moduleName, abilityName];
-        EntryEntryAbilityViewController *entryOtherVC = [[EntryEntryAbilityViewController alloc] initWithInstanceName:instanceName];
-        entryOtherVC.params = params;
-        subStageVC = (EntryEntryAbilityViewController *)entryOtherVC;
+        EntryEntryAbilityViewController *otherVC = [[EntryEntryAbilityViewController alloc] initWithInstanceName:instanceName];
+        subStageVC = (EntryEntryAbilityViewController *)otherVC;
+    } else if ([moduleName isEqualToString:@"entry"] && [abilityName isEqualToString:@"NativeAbility"]) {
+        NSString *instanceName = [NSString stringWithFormat:@"%@:%@:%@",bundleName, moduleName, abilityName];
+        NativeAbilityViewController *otherVC = [[NativeAbilityViewController alloc] initWithInstanceName:instanceName];
+        subStageVC = (NativeAbilityViewController *)otherVC;
     } // other ViewController
     
     if (!subStageVC) {
         return NO;
     }
-    
-    if (!hasRoot) {
-        [self setNavRootVC:subStageVC];
-    } else {
-        UINavigationController *rootNav = (UINavigationController *)self.window.rootViewController;
-        [rootNav pushViewController:subStageVC animated:YES];
-    }
+
+    [self setNavRootVC:subStageVC];
     return YES;
 }
 

@@ -1,6 +1,6 @@
 /*
- * Copyright (c) 2023 Huawei Device Co., Ltd.
- * Licensed under the Apache License, Version 2.0 (the "License");
+ * Copyright (c) Huawei Technologies Co., Ltd. 2025-2025. All rights reserved.
+ * Licensed under the Apache License, Version 2.0 (the "License")
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
  *
@@ -13,11 +13,17 @@
  * limitations under the License.
  */
 
+#ifndef APP_DELEGATE_H
+#define APP_DELEGATE_H
+
 #import <UIKit/UIKit.h>
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (nonatomic, strong) UIWindow *window;
 
+- (void)setNavRootVC:(id)viewController;
+
 @end
 
+#endif /* APP_DELEGATE_H */
