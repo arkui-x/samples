@@ -106,5 +106,37 @@
                 android:configChanges="orientation|keyboard|layoutDirection|screenSize|screenLayout|uiMode|smallestScreenSize|density"
                 android:exported="true" android:name=".RequestDemoRequestDemoAbilityActivity"
                 android:screenOrientation="portrait" android:windowSoftInputMode="adjustNothing |stateAlwaysHidden"/>
+        <activity
+                android:configChanges="orientation|keyboard|layoutDirection|screenSize|screenLayout|uiMode|smallestScreenSize|density"
+                android:exported="true" android:name=".GeoLocationManagerDemoGeoLocationManagerDemoAbilityActivity"
+                android:screenOrientation="portrait" android:windowSoftInputMode="adjustNothing |stateAlwaysHidden"/>
+        <activity
+                android:configChanges="orientation|keyboard|layoutDirection|screenSize|screenLayout|uiMode|smallestScreenSize|density"
+                android:exported="true" android:name=".VibrationBasicDemoVibrationBasicDemoAbilityActivity"
+                android:screenOrientation="portrait" android:windowSoftInputMode="adjustNothing |stateAlwaysHidden"/>
+        <activity
+                android:configChanges="orientation|keyboard|layoutDirection|screenSize|screenLayout|uiMode|smallestScreenSize|density"
+                android:exported="true" android:name=".VibratorCustomHapticDemoVibratorCustomHapticDemoAbilityActivity"
+                android:screenOrientation="portrait" android:windowSoftInputMode="adjustNothing |stateAlwaysHidden"/>
+        <activity
+                android:configChanges="orientation|keyboard|layoutDirection|screenSize|screenLayout|uiMode|smallestScreenSize|density"
+                android:exported="true" android:name=".VibratorJsSamplesDemoVibratorJsSamplesDemoAbilityActivity"
+                android:screenOrientation="portrait" android:windowSoftInputMode="adjustNothing |stateAlwaysHidden"/>
+        <activity
+                android:configChanges="orientation|keyboard|layoutDirection|screenSize|screenLayout|uiMode|smallestScreenSize|density"
+                android:exported="true" android:name=".TaskPoolDemoTaskPoolDemoAbilityActivity"
+                android:screenOrientation="portrait" android:windowSoftInputMode="adjustNothing |stateAlwaysHidden"/>
+        <activity
+                android:configChanges="orientation|keyboard|layoutDirection|screenSize|screenLayout|uiMode|smallestScreenSize|density"
+                android:exported="true" android:name=".CollectionsDemoCollectionsDemoAbilityActivity"
+                android:screenOrientation="portrait" android:windowSoftInputMode="adjustNothing |stateAlwaysHidden"/>
+        <activity
+                android:configChanges="orientation|keyboard|layoutDirection|screenSize|screenLayout|uiMode|smallestScreenSize|density"
+                android:exported="true" android:name=".FastBufferDemoFastBufferDemoAbilityActivity"
+                android:screenOrientation="portrait" android:windowSoftInputMode="adjustNothing |stateAlwaysHidden"/>
+        <activity
+                android:configChanges="orientation|keyboard|layoutDirection|screenSize|screenLayout|uiMode|smallestScreenSize|density"
+                android:exported="true" android:name=".UtilsDemoUtilsDemoAbilityActivity"
+                android:screenOrientation="portrait" android:windowSoftInputMode="adjustNothing |stateAlwaysHidden"/>
     </application>
 </manifest>

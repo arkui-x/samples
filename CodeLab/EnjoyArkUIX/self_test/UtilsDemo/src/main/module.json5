@@ -1,0 +1,36 @@
+{
+  "module": {
+    "name": "UtilsDemo",
+    "type": "feature",
+    "description": "$string:module_desc",
+    "mainElement": "UtilsDemoAbility",
+    "deviceTypes": [
+      "default"
+    ],
+    "deliveryWithInstall": true,
+    "installationFree": false,
+    "pages": "$profile:main_pages",
+    "abilities": [
+      {
+        "name": "UtilsDemoAbility",
+        "srcEntry": "./ets/utilsdemoability/UtilsDemoAbility.ets",
+        "description": "$string:UtilsDemoAbility_desc",
+        "icon": "$media:layered_image",
+        "label": "$string:UtilsDemoAbility_label",
+        "startWindowIcon": "$media:startIcon",
+        "startWindowBackground": "$color:start_window_background",
+        "exported": true,
+        "skills": [
+          {
+            "entities": [
+              "entity.system.home"
+            ],
+            "actions": [
+              "ohos.want.action.home"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

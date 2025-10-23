@@ -1,0 +1,16 @@
+{
+  "string": [
+    {
+      "name": "module_desc",
+      "value": "module description"
+    },
+    {
+      "name": "FastBufferDemoAbility_desc",
+      "value": "description"
+    },
+    {
+      "name": "FastBufferDemoAbility_label",
+      "value": "label"
+    }
+  ]
+}

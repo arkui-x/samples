@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		559C019F7B8543109E552998 /* UtilsDemoUtilsDemoAbilityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DD91850B8124E2ABD9D7A28 /* UtilsDemoUtilsDemoAbilityViewController.m */; };
+		152384287B8B4EE1BBFB952E /* FastBufferDemoFastBufferDemoAbilityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EDB8976BB1894068A45D1242 /* FastBufferDemoFastBufferDemoAbilityViewController.m */; };
+		ACE453031D32451690ABB80A /* CollectionsDemoCollectionsDemoAbilityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD81A58ACE504A07831F0B7C /* CollectionsDemoCollectionsDemoAbilityViewController.m */; };
+		16F1304D22844BB4859D1468 /* TaskPoolDemoTaskPoolDemoAbilityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7388E3E8F22F48E3ACE924B0 /* TaskPoolDemoTaskPoolDemoAbilityViewController.m */; };
+		C6EEC18ECB944DBF8E58DF3B /* VibratorJsSamplesDemoVibratorJsSamplesDemoAbilityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F8B9C498FC748BBBDF680E2 /* VibratorJsSamplesDemoVibratorJsSamplesDemoAbilityViewController.m */; };
+		21E4064396F24ED98CF6BAEF /* VibratorCustomHapticDemoVibratorCustomHapticDemoAbilityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 270F0BA529E34AB1ADE18A87 /* VibratorCustomHapticDemoVibratorCustomHapticDemoAbilityViewController.m */; };
+		6D59220A86F74BEDA0A71806 /* VibrationBasicDemoVibrationBasicDemoAbilityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D2ACD96FAE84CA789163CD3 /* VibrationBasicDemoVibrationBasicDemoAbilityViewController.m */; };
+		CCEC83536EC44F44B7B57FE6 /* GeoLocationManagerDemoGeoLocationManagerDemoAbilityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF563F2305EC40C8BD463CE7 /* GeoLocationManagerDemoGeoLocationManagerDemoAbilityViewController.m */; };
 		B3D9FBF9DFEE406D97464741 /* WindowWindowAbilityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FCF8F6A046A42F2BF381181 /* WindowWindowAbilityViewController.m */; };
 		6EB63303CCE94092A1EC9594 /* DrawingDrawingAbilityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A741C8134ED94DD3BA3B9F4B /* DrawingDrawingAbilityViewController.m */; };
 		31B577F6486A4EF5AC429DCC /* RequestDemoRequestDemoAbilityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68492AC35759413C812D5B78 /* RequestDemoRequestDemoAbilityViewController.m */; };
@@ -57,6 +65,22 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		2A258B4CF1DC46CFA6071C12 /* UtilsDemoUtilsDemoAbilityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UtilsDemoUtilsDemoAbilityViewController.h; sourceTree = "<group>"; };
+		1DD91850B8124E2ABD9D7A28 /* UtilsDemoUtilsDemoAbilityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UtilsDemoUtilsDemoAbilityViewController.m; sourceTree = "<group>"; };
+		C70AB04507FD47188A878694 /* FastBufferDemoFastBufferDemoAbilityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FastBufferDemoFastBufferDemoAbilityViewController.h; sourceTree = "<group>"; };
+		EDB8976BB1894068A45D1242 /* FastBufferDemoFastBufferDemoAbilityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FastBufferDemoFastBufferDemoAbilityViewController.m; sourceTree = "<group>"; };
+		4D876E4B8D66481A8AB7E80A /* CollectionsDemoCollectionsDemoAbilityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionsDemoCollectionsDemoAbilityViewController.h; sourceTree = "<group>"; };
+		AD81A58ACE504A07831F0B7C /* CollectionsDemoCollectionsDemoAbilityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionsDemoCollectionsDemoAbilityViewController.m; sourceTree = "<group>"; };
+		6F7E328BBBC74D0BA67F2DF0 /* TaskPoolDemoTaskPoolDemoAbilityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TaskPoolDemoTaskPoolDemoAbilityViewController.h; sourceTree = "<group>"; };
+		7388E3E8F22F48E3ACE924B0 /* TaskPoolDemoTaskPoolDemoAbilityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TaskPoolDemoTaskPoolDemoAbilityViewController.m; sourceTree = "<group>"; };
+		7FC8F4D616244FB59A68AC8F /* VibratorJsSamplesDemoVibratorJsSamplesDemoAbilityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VibratorJsSamplesDemoVibratorJsSamplesDemoAbilityViewController.h; sourceTree = "<group>"; };
+		2F8B9C498FC748BBBDF680E2 /* VibratorJsSamplesDemoVibratorJsSamplesDemoAbilityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VibratorJsSamplesDemoVibratorJsSamplesDemoAbilityViewController.m; sourceTree = "<group>"; };
+		3CD8F477706F4393A5880FA3 /* VibratorCustomHapticDemoVibratorCustomHapticDemoAbilityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VibratorCustomHapticDemoVibratorCustomHapticDemoAbilityViewController.h; sourceTree = "<group>"; };
+		270F0BA529E34AB1ADE18A87 /* VibratorCustomHapticDemoVibratorCustomHapticDemoAbilityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VibratorCustomHapticDemoVibratorCustomHapticDemoAbilityViewController.m; sourceTree = "<group>"; };
+		B571B3EA93FB49E0B08776A5 /* VibrationBasicDemoVibrationBasicDemoAbilityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VibrationBasicDemoVibrationBasicDemoAbilityViewController.h; sourceTree = "<group>"; };
+		2D2ACD96FAE84CA789163CD3 /* VibrationBasicDemoVibrationBasicDemoAbilityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VibrationBasicDemoVibrationBasicDemoAbilityViewController.m; sourceTree = "<group>"; };
+		62FCAFE38E7E4758896FBC59 /* GeoLocationManagerDemoGeoLocationManagerDemoAbilityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GeoLocationManagerDemoGeoLocationManagerDemoAbilityViewController.h; sourceTree = "<group>"; };
+		EF563F2305EC40C8BD463CE7 /* GeoLocationManagerDemoGeoLocationManagerDemoAbilityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GeoLocationManagerDemoGeoLocationManagerDemoAbilityViewController.m; sourceTree = "<group>"; };
 		5E6C7721A0C048C0BB3994FA /* WindowWindowAbilityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WindowWindowAbilityViewController.h; sourceTree = "<group>"; };
 		5FCF8F6A046A42F2BF381181 /* WindowWindowAbilityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WindowWindowAbilityViewController.m; sourceTree = "<group>"; };
 		6F3D9A2E6C094AADAD1448DA /* DrawingDrawingAbilityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrawingDrawingAbilityViewController.h; sourceTree = "<group>"; };
@@ -152,6 +176,22 @@
 		F0AF1ACF27D3684F008C55DD /* app */ = {
 			isa = PBXGroup;
 			children = (
+				2A258B4CF1DC46CFA6071C12 /* UtilsDemoUtilsDemoAbilityViewController.h */,
+				1DD91850B8124E2ABD9D7A28 /* UtilsDemoUtilsDemoAbilityViewController.m */,
+				C70AB04507FD47188A878694 /* FastBufferDemoFastBufferDemoAbilityViewController.h */,
+				EDB8976BB1894068A45D1242 /* FastBufferDemoFastBufferDemoAbilityViewController.m */,
+				4D876E4B8D66481A8AB7E80A /* CollectionsDemoCollectionsDemoAbilityViewController.h */,
+				AD81A58ACE504A07831F0B7C /* CollectionsDemoCollectionsDemoAbilityViewController.m */,
+				6F7E328BBBC74D0BA67F2DF0 /* TaskPoolDemoTaskPoolDemoAbilityViewController.h */,
+				7388E3E8F22F48E3ACE924B0 /* TaskPoolDemoTaskPoolDemoAbilityViewController.m */,
+				7FC8F4D616244FB59A68AC8F /* VibratorJsSamplesDemoVibratorJsSamplesDemoAbilityViewController.h */,
+				2F8B9C498FC748BBBDF680E2 /* VibratorJsSamplesDemoVibratorJsSamplesDemoAbilityViewController.m */,
+				3CD8F477706F4393A5880FA3 /* VibratorCustomHapticDemoVibratorCustomHapticDemoAbilityViewController.h */,
+				270F0BA529E34AB1ADE18A87 /* VibratorCustomHapticDemoVibratorCustomHapticDemoAbilityViewController.m */,
+				B571B3EA93FB49E0B08776A5 /* VibrationBasicDemoVibrationBasicDemoAbilityViewController.h */,
+				2D2ACD96FAE84CA789163CD3 /* VibrationBasicDemoVibrationBasicDemoAbilityViewController.m */,
+				62FCAFE38E7E4758896FBC59 /* GeoLocationManagerDemoGeoLocationManagerDemoAbilityViewController.h */,
+				EF563F2305EC40C8BD463CE7 /* GeoLocationManagerDemoGeoLocationManagerDemoAbilityViewController.m */,
 				5E6C7721A0C048C0BB3994FA /* WindowWindowAbilityViewController.h */,
 				5FCF8F6A046A42F2BF381181 /* WindowWindowAbilityViewController.m */,
 				6F3D9A2E6C094AADAD1448DA /* DrawingDrawingAbilityViewController.h */,
@@ -304,6 +344,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				559C019F7B8543109E552998 /* UtilsDemoUtilsDemoAbilityViewController.m in Sources */,
+				152384287B8B4EE1BBFB952E /* FastBufferDemoFastBufferDemoAbilityViewController.m in Sources */,
+				ACE453031D32451690ABB80A /* CollectionsDemoCollectionsDemoAbilityViewController.m in Sources */,
+				16F1304D22844BB4859D1468 /* TaskPoolDemoTaskPoolDemoAbilityViewController.m in Sources */,
+				C6EEC18ECB944DBF8E58DF3B /* VibratorJsSamplesDemoVibratorJsSamplesDemoAbilityViewController.m in Sources */,
+				21E4064396F24ED98CF6BAEF /* VibratorCustomHapticDemoVibratorCustomHapticDemoAbilityViewController.m in Sources */,
+				6D59220A86F74BEDA0A71806 /* VibrationBasicDemoVibrationBasicDemoAbilityViewController.m in Sources */,
+				CCEC83536EC44F44B7B57FE6 /* GeoLocationManagerDemoGeoLocationManagerDemoAbilityViewController.m in Sources */,
 				B3D9FBF9DFEE406D97464741 /* WindowWindowAbilityViewController.m in Sources */,
 				6EB63303CCE94092A1EC9594 /* DrawingDrawingAbilityViewController.m in Sources */,
 				31B577F6486A4EF5AC429DCC /* RequestDemoRequestDemoAbilityViewController.m in Sources */,

@@ -18,6 +18,14 @@
     "RDBDemo",
     "UDMFDemo",
     "PreferencesDemo",
-    "RequestDemo"
+    "RequestDemo",
+    "GeoLocationManagerDemo",
+    "VibrationBasicDemo",
+    "VibratorCustomHapticDemo",
+    "VibratorJsSamplesDemo",
+    "TaskPoolDemo",
+    "CollectionsDemo",
+    "FastBufferDemo",
+    "UtilsDemo"
   ]
 }

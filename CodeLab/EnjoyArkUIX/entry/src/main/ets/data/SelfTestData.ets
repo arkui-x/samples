@@ -106,4 +106,84 @@ export const SELF_TEST: ThirdLevelCategory[] = [
     },
     platform: PlatformTypeEnum.SUPPORT_BOTH
   },
+  {
+    image: $r('app.media.ic_unselect_component'),
+    title: $r('app.string.GeoLocationManagerDemo'),
+    want: {
+      bundleName: 'com.example.enjoyarkuix',
+      moduleName: 'GeoLocationManagerDemo',
+      abilityName: 'GeoLocationManagerDemoAbility',
+    },
+    platform: PlatformTypeEnum.SUPPORT_BOTH
+  },
+  {
+    image: $r('app.media.ic_unselect_component'),
+    title: $r('app.string.VibrationBasicDemo'),
+    want: {
+      bundleName: 'com.example.enjoyarkuix',
+      moduleName: 'VibrationBasicDemo',
+      abilityName: 'VibrationBasicDemoAbility',
+    },
+    platform: PlatformTypeEnum.SUPPORT_BOTH
+  },
+  {
+    image: $r('app.media.ic_unselect_component'),
+    title: $r('app.string.VibratorCustomHapticDemo'),
+    want: {
+      bundleName: 'com.example.enjoyarkuix',
+      moduleName: 'VibratorCustomHapticDemo',
+      abilityName: 'VibratorCustomHapticDemoAbility',
+    },
+    platform: PlatformTypeEnum.SUPPORT_BOTH
+  },
+  {
+    image: $r('app.media.ic_unselect_component'),
+    title: $r('app.string.VibratorJsSamplesDemo'),
+    want: {
+      bundleName: 'com.example.enjoyarkuix',
+      moduleName: 'VibratorJsSamplesDemo',
+      abilityName: 'VibratorJsSamplesDemoAbility',
+    },
+    platform: PlatformTypeEnum.SUPPORT_BOTH
+  },
+  {
+    image: $r('app.media.ic_unselect_component'),
+    title: $r('app.string.TaskPoolDemo'),
+    want: {
+      bundleName: 'com.example.enjoyarkuix',
+      moduleName: 'TaskPoolDemo',
+      abilityName: 'TaskPoolDemoAbility',
+    },
+    platform: PlatformTypeEnum.SUPPORT_BOTH
+  },
+  {
+    image: $r('app.media.ic_unselect_component'),
+    title: $r('app.string.CollectionsDemo'),
+    want: {
+      bundleName: 'com.example.enjoyarkuix',
+      moduleName: 'CollectionsDemo',
+      abilityName: 'CollectionsDemoAbility',
+    },
+    platform: PlatformTypeEnum.SUPPORT_BOTH
+  },
+  {
+    image: $r('app.media.ic_unselect_component'),
+    title: $r('app.string.FastBufferDemo'),
+    want: {
+      bundleName: 'com.example.enjoyarkuix',
+      moduleName: 'FastBufferDemo',
+      abilityName: 'FastBufferDemoAbility',
+    },
+    platform: PlatformTypeEnum.SUPPORT_BOTH
+  },
+  {
+    image: $r('app.media.ic_unselect_component'),
+    title: $r('app.string.UtilsDemo'),
+    want: {
+      bundleName: 'com.example.enjoyarkuix',
+      moduleName: 'UtilsDemo',
+      abilityName: 'UtilsDemoAbility',
+    },
+    platform: PlatformTypeEnum.SUPPORT_BOTH
+  },
 ]
