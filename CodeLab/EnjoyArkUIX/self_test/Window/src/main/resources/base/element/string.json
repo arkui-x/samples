@@ -57,8 +57,8 @@
       "value": "WindowSetPrivacyMode"
     },
     {
-      "name": "DisplayPpi_title",
-      "value": "DisplayPpi"
+      "name": "WindowDisplay_title",
+      "value": "WindowDisplay"
     },
     {
       "name": "WindowStage_title",
