@@ -6,7 +6,6 @@
   "author": "",
   "license": "",
   "dependencies": {
-    "libentry.so": "file:./src/main/cpp/types/libentry",
-	"librust_add.so": "file:./libs",
+    "libentry.so": "file:./src/main/cpp/types/libentry"
   }
 }
