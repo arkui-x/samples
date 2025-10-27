@@ -7,27 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		559C019F7B8543109E552998 /* UtilsDemoUtilsDemoAbilityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DD91850B8124E2ABD9D7A28 /* UtilsDemoUtilsDemoAbilityViewController.m */; };
-		152384287B8B4EE1BBFB952E /* FastBufferDemoFastBufferDemoAbilityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EDB8976BB1894068A45D1242 /* FastBufferDemoFastBufferDemoAbilityViewController.m */; };
-		ACE453031D32451690ABB80A /* CollectionsDemoCollectionsDemoAbilityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD81A58ACE504A07831F0B7C /* CollectionsDemoCollectionsDemoAbilityViewController.m */; };
-		16F1304D22844BB4859D1468 /* TaskPoolDemoTaskPoolDemoAbilityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7388E3E8F22F48E3ACE924B0 /* TaskPoolDemoTaskPoolDemoAbilityViewController.m */; };
-		C6EEC18ECB944DBF8E58DF3B /* VibratorJsSamplesDemoVibratorJsSamplesDemoAbilityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F8B9C498FC748BBBDF680E2 /* VibratorJsSamplesDemoVibratorJsSamplesDemoAbilityViewController.m */; };
-		21E4064396F24ED98CF6BAEF /* VibratorCustomHapticDemoVibratorCustomHapticDemoAbilityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 270F0BA529E34AB1ADE18A87 /* VibratorCustomHapticDemoVibratorCustomHapticDemoAbilityViewController.m */; };
-		6D59220A86F74BEDA0A71806 /* VibrationBasicDemoVibrationBasicDemoAbilityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D2ACD96FAE84CA789163CD3 /* VibrationBasicDemoVibrationBasicDemoAbilityViewController.m */; };
-		CCEC83536EC44F44B7B57FE6 /* GeoLocationManagerDemoGeoLocationManagerDemoAbilityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF563F2305EC40C8BD463CE7 /* GeoLocationManagerDemoGeoLocationManagerDemoAbilityViewController.m */; };
-		B3D9FBF9DFEE406D97464741 /* WindowWindowAbilityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FCF8F6A046A42F2BF381181 /* WindowWindowAbilityViewController.m */; };
-		6EB63303CCE94092A1EC9594 /* DrawingDrawingAbilityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A741C8134ED94DD3BA3B9F4B /* DrawingDrawingAbilityViewController.m */; };
-		31B577F6486A4EF5AC429DCC /* RequestDemoRequestDemoAbilityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68492AC35759413C812D5B78 /* RequestDemoRequestDemoAbilityViewController.m */; };
-		AF9B613D4F9543B1805F288E /* PreferencesDemoPreferencesDemoAbilityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ECDEB3C76204A93A7414C93 /* PreferencesDemoPreferencesDemoAbilityViewController.m */; };
-		CEE7BE2D5C1B4B87AB81079B /* UDMFDemoUDMFDemoAbilityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C7331DA4C5DC4873A5E2AC3A /* UDMFDemoUDMFDemoAbilityViewController.m */; };
-		D6EC532F1C8043089D7B0372 /* RDBDemoRDBDemoAbilityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C1005DB974343B18C36462D /* RDBDemoRDBDemoAbilityViewController.m */; };
-		AEBDC5EA23984DB3B6D32F75 /* VideoPlayDemoVideoPlayDemoAbilityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8547AE5DA066489892A7678A /* VideoPlayDemoVideoPlayDemoAbilityViewController.m */; };
 		0B7275696B9A46E6B8542024 /* FileApiFileApiAbilityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1A41EFB52C9445D9F628C5C /* FileApiFileApiAbilityViewController.m */; };
+		152384287B8B4EE1BBFB952E /* FastBufferDemoFastBufferDemoAbilityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EDB8976BB1894068A45D1242 /* FastBufferDemoFastBufferDemoAbilityViewController.m */; };
+		16F1304D22844BB4859D1468 /* TaskPoolDemoTaskPoolDemoAbilityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7388E3E8F22F48E3ACE924B0 /* TaskPoolDemoTaskPoolDemoAbilityViewController.m */; };
+		21E4064396F24ED98CF6BAEF /* VibratorCustomHapticDemoVibratorCustomHapticDemoAbilityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 270F0BA529E34AB1ADE18A87 /* VibratorCustomHapticDemoVibratorCustomHapticDemoAbilityViewController.m */; };
+		31B577F6486A4EF5AC429DCC /* RequestDemoRequestDemoAbilityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68492AC35759413C812D5B78 /* RequestDemoRequestDemoAbilityViewController.m */; };
+		559C019F7B8543109E552998 /* UtilsDemoUtilsDemoAbilityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DD91850B8124E2ABD9D7A28 /* UtilsDemoUtilsDemoAbilityViewController.m */; };
+		6D59220A86F74BEDA0A71806 /* VibrationBasicDemoVibrationBasicDemoAbilityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D2ACD96FAE84CA789163CD3 /* VibrationBasicDemoVibrationBasicDemoAbilityViewController.m */; };
+		6EB63303CCE94092A1EC9594 /* DrawingDrawingAbilityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A741C8134ED94DD3BA3B9F4B /* DrawingDrawingAbilityViewController.m */; };
 		72EAB85EA2C247ABB9E27872 /* ModifierModifierAbilityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18ADF3C252B74EC9AA095A4A /* ModifierModifierAbilityViewController.m */; };
 		89E41E4529F505070004F33E /* EntryEntryAbilityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 89E41E4329F505070004F33E /* EntryEntryAbilityViewController.m */; };
 		89E41E4629F505CD0004F33E /* libarkui_ios.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF9C1B5D28B9FC3A005DCF58 /* libarkui_ios.xcframework */; };
 		89E41E4729F505CD0004F33E /* libarkui_ios.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DF9C1B5D28B9FC3A005DCF58 /* libarkui_ios.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		DFC5555629D7F36400B63EB3 /* arkui-x in Resources */ = {isa = PBXBuildFile; fileRef = DFC5555529D7F36400B63EB3 /* arkui-x */; };
+		ACE453031D32451690ABB80A /* CollectionsDemoCollectionsDemoAbilityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD81A58ACE504A07831F0B7C /* CollectionsDemoCollectionsDemoAbilityViewController.m */; };
+		AEBDC5EA23984DB3B6D32F75 /* VideoPlayDemoVideoPlayDemoAbilityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8547AE5DA066489892A7678A /* VideoPlayDemoVideoPlayDemoAbilityViewController.m */; };
+		AF9B613D4F9543B1805F288E /* PreferencesDemoPreferencesDemoAbilityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ECDEB3C76204A93A7414C93 /* PreferencesDemoPreferencesDemoAbilityViewController.m */; };
+		B3D9FBF9DFEE406D97464741 /* WindowWindowAbilityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FCF8F6A046A42F2BF381181 /* WindowWindowAbilityViewController.m */; };
+		C6EEC18ECB944DBF8E58DF3B /* VibratorJsSamplesDemoVibratorJsSamplesDemoAbilityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F8B9C498FC748BBBDF680E2 /* VibratorJsSamplesDemoVibratorJsSamplesDemoAbilityViewController.m */; };
+		CB1FD70C2EAF8C8100682F59 /* MyWebview2.m in Sources */ = {isa = PBXBuildFile; fileRef = CB1FD70B2EAF8C8100682F59 /* MyWebview2.m */; };
+		CCEC83536EC44F44B7B57FE6 /* GeoLocationManagerDemoGeoLocationManagerDemoAbilityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF563F2305EC40C8BD463CE7 /* GeoLocationManagerDemoGeoLocationManagerDemoAbilityViewController.m */; };
+		CEE7BE2D5C1B4B87AB81079B /* UDMFDemoUDMFDemoAbilityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C7331DA4C5DC4873A5E2AC3A /* UDMFDemoUDMFDemoAbilityViewController.m */; };
+		D6EC532F1C8043089D7B0372 /* RDBDemoRDBDemoAbilityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C1005DB974343B18C36462D /* RDBDemoRDBDemoAbilityViewController.m */; };
 		F0AF1AD227D3684F008C55DD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F0AF1AD127D3684F008C55DD /* AppDelegate.m */; };
 		F0AF1ADD27D36856008C55DD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F0AF1ADC27D36856008C55DD /* Assets.xcassets */; };
 		F0AF1AE027D36856008C55DD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0AF1ADE27D36856008C55DD /* LaunchScreen.storyboard */; };
@@ -48,6 +48,76 @@
 		FAC8E8952DDEBD7000EF5185 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FAC8E88D2DDEBD7000EF5185 /* BaseViewController.m */; };
 		FAC8E8982DDEC02800EF5185 /* resh in Resources */ = {isa = PBXBuildFile; fileRef = FAC8E8962DDEC02800EF5185 /* resh */; };
 		FAC8E8992DDEC02800EF5185 /* doc in Resources */ = {isa = PBXBuildFile; fileRef = FAC8E8972DDEC02800EF5185 /* doc */; };
+		C1DF795C7FF44A38BEF6230F /* libarkui_componentsnapshot.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5520E628D38C44E7B30606FE /* libarkui_componentsnapshot.xcframework */; };
+		E810CBFEB9A84789AA48F2B2 /* libarkui_componentsnapshot.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5520E628D38C44E7B30606FE /* libarkui_componentsnapshot.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		5E038DE1C3DF4FF9B31E7813 /* libarkui_focuscontroller.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5D2C68E6B424F2CB9919C11 /* libarkui_focuscontroller.xcframework */; };
+		EBDEA0C764044B1AA3CFF20C /* libarkui_focuscontroller.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D5D2C68E6B424F2CB9919C11 /* libarkui_focuscontroller.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		2C50636065B4473596144AFF /* libhilog.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0B7D984B4E8410D984FFB98 /* libhilog.xcframework */; };
+		B294AD568239451EA278E6F0 /* libhilog.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F0B7D984B4E8410D984FFB98 /* libhilog.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B360E8CC8C5549069C04BE37 /* libbridge.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69F4A8AF99EA4827A9FA9B16 /* libbridge.xcframework */; };
+		4731B8C31C3F4908AA262473 /* libbridge.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 69F4A8AF99EA4827A9FA9B16 /* libbridge.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C7419331BE1446BD889268D6 /* libdeviceinfo.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = F38C25BA0B8F41DF8B3224A0 /* libdeviceinfo.xcframework */; };
+		E706D0F257E949499F688F88 /* libdeviceinfo.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F38C25BA0B8F41DF8B3224A0 /* libdeviceinfo.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B4B53D1FCD414B92A46B40E7 /* librouter.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF1962BA82A64F5789AF7460 /* librouter.xcframework */; };
+		BC4B8FC741E54E6BA3533B9F /* librouter.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AF1962BA82A64F5789AF7460 /* librouter.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B74F0A6C306F4AFEAD654BD7 /* libplatformview.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 026270EEDD364486B91147E2 /* libplatformview.xcframework */; };
+		A2CABE5A82BF471D8D9D7D54 /* libplatformview.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 026270EEDD364486B91147E2 /* libplatformview.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E3AE20B2D01744FE8E321DF6 /* libeffectkit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = C950E71A0330486DB472228A /* libeffectkit.xcframework */; };
+		863E0899C26F4347A8DD8B57 /* libeffectkit.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C950E71A0330486DB472228A /* libeffectkit.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A2AABC6083B54E419CAD8DA3 /* libpromptaction.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F08A3FFAB1A40269D991653 /* libpromptaction.xcframework */; };
+		8650E5A38B514F67A30FDABC /* libpromptaction.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3F08A3FFAB1A40269D991653 /* libpromptaction.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		8CBB8ED8F2D0445080070819 /* libarkts_collections.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFFD44684A1A4587BD34CEB2 /* libarkts_collections.xcframework */; };
+		8DC97FB9DD714273B936543A /* libarkts_collections.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CFFD44684A1A4587BD34CEB2 /* libarkts_collections.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		09E07F0FE229489BBAE47779 /* libfile_fs.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C604325C28244669BE11B8D /* libfile_fs.xcframework */; };
+		627EFAB04F454AAFA8DE899B /* libfile_fs.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6C604325C28244669BE11B8D /* libfile_fs.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		7B9541260E5547458F7898CE /* libfile_streamrw.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7FC8CAEEC2C47CEA2A147E3 /* libfile_streamrw.xcframework */; };
+		5D1A66E713454219AD363B58 /* libfile_streamrw.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E7FC8CAEEC2C47CEA2A147E3 /* libfile_streamrw.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F96762D7FF0B4EFAA13A5AA8 /* libutil_stream.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = F513570C0E534F90947C6114 /* libutil_stream.xcframework */; };
+		9F4F8FCA80864F0BA4F874A6 /* libutil_stream.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F513570C0E534F90947C6114 /* libutil_stream.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		253F0EAC3BAB42C1B2F05342 /* libutil.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31A0F448D4964332A7614853 /* libutil.xcframework */; };
+		0948F554B70E4078BFD4C16B /* libutil.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 31A0F448D4964332A7614853 /* libutil.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		04DB443CB33A4551A8EB4E90 /* libcrypto_openssl.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9482CE1129543B9A7F683A7 /* libcrypto_openssl.xcframework */; };
+		6749F943F0314B939B45DF8D /* libcrypto_openssl.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B9482CE1129543B9A7F683A7 /* libcrypto_openssl.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		9C2F0867A7EA4771B5C98978 /* libsystemdatetime.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBF92AB666934183BDAF468C /* libsystemdatetime.xcframework */; };
+		5FF846FEBE134F0386765ED3 /* libsystemdatetime.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CBF92AB666934183BDAF468C /* libsystemdatetime.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		27504B934D5E410A9725AA7D /* libbuffer.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = EEB23A78A723459F898974F8 /* libbuffer.xcframework */; };
+		1DCF70172FBF4DE7A97D6C65 /* libbuffer.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EEB23A78A723459F898974F8 /* libbuffer.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C9A1E80EDE2E45B0B298426B /* libfastbuffer.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB3B2B9CECE545B399B24997 /* libfastbuffer.xcframework */; };
+		E15A97187BA947608C68B982 /* libfastbuffer.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FB3B2B9CECE545B399B24997 /* libfastbuffer.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C3900576610E40F697280929 /* libfile_statvfs.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = D50A2DACBAF44D56928E6414 /* libfile_statvfs.xcframework */; };
+		A7B0BB06B701444A9E0DF98D /* libfile_statvfs.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D50A2DACBAF44D56928E6414 /* libfile_statvfs.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		46ED4417BF6140C88DBF03AB /* libfile_hash.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD1AA6DC27B04F5F83332F27 /* libfile_hash.xcframework */; };
+		E67066DC90604E68A906B4B6 /* libfile_hash.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BD1AA6DC27B04F5F83332F27 /* libfile_hash.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		4B48AFA276F448969D16C129 /* libfile_streamhash.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA3D6F378C18452592468FD4 /* libfile_streamhash.xcframework */; };
+		52D83FC9857348BC92DA9170 /* libfile_streamhash.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CA3D6F378C18452592468FD4 /* libfile_streamhash.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B2E18426247E490B901EC4CA /* libabilityaccessctrl.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3746DB41AF314365ABC72D66 /* libabilityaccessctrl.xcframework */; };
+		81EEBEEE56324AD9BADDAA46 /* libabilityaccessctrl.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3746DB41AF314365ABC72D66 /* libabilityaccessctrl.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		9233D7A9F1944EEB89B0D18A /* libnotificationmanager.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C9B3DA0B82042CEA87263FC /* libnotificationmanager.xcframework */; };
+		194ED8E1181D47A9A4ED1A8E /* libnotificationmanager.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9C9B3DA0B82042CEA87263FC /* libnotificationmanager.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		5C938159DF2949B9B5758894 /* libdata_preferences.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 148B4A943D054CCD8AB41707 /* libdata_preferences.xcframework */; };
+		E21B5B293B6A4C6997CF6A46 /* libdata_preferences.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 148B4A943D054CCD8AB41707 /* libdata_preferences.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		DC2219CB0EF541209FABBD1A /* libxml2_shared.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 870608BA219E4D99A002C6D9 /* libxml2_shared.xcframework */; };
+		7CD8E18F935747FDB612E4E3 /* libxml2_shared.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 870608BA219E4D99A002C6D9 /* libxml2_shared.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		818FB63556AF4CFE9F1D7892 /* libdata_relationalstore.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 425AFA70517640C982D727B0 /* libdata_relationalstore.xcframework */; };
+		59732E651985425CA5D02C7E /* libdata_relationalstore.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 425AFA70517640C982D727B0 /* libdata_relationalstore.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		573572D9A1884E3AA12A6EBE /* librequest.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5CCCEDF40330478DB9BC19E7 /* librequest.xcframework */; };
+		5D56946A161C4C66A1B47657 /* librequest.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5CCCEDF40330478DB9BC19E7 /* librequest.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		3EE8E558ED8946429BE1ED0E /* libworker.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = D79440A8555E4EB280E14EE8 /* libworker.xcframework */; };
+		F3418D3313A843769B983316 /* libworker.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D79440A8555E4EB280E14EE8 /* libworker.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		57A39F0A01E04BE9ABCD8F16 /* libtaskpool.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41C5F99595D3403B934F03E2 /* libtaskpool.xcframework */; };
+		3BA0946BF1674411AE8EE650 /* libtaskpool.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 41C5F99595D3403B934F03E2 /* libtaskpool.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		0CC8C83D2B1F4D569966EEB4 /* libdata_uniformtypedescriptor.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = C20DAA7146624A118F344085 /* libdata_uniformtypedescriptor.xcframework */; };
+		785B4D2B604743FEB53DB714 /* libdata_uniformtypedescriptor.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C20DAA7146624A118F344085 /* libdata_uniformtypedescriptor.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A96C257CA3B940B194CDA22D /* libarkts_utils.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E7DEE052677485B97868843 /* libarkts_utils.xcframework */; };
+		D3F5EE45A37649B8BDFA0DC8 /* libarkts_utils.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1E7DEE052677485B97868843 /* libarkts_utils.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D4F6EE8B8A7B42F4BDE14945 /* libvibrator.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6B9DE9BC96B451089149F94 /* libvibrator.xcframework */; };
+		847B91C7720B462B812D356B /* libvibrator.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F6B9DE9BC96B451089149F94 /* libvibrator.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		3E66BC430CFE430FB32A0E2B /* libmultimedia_media.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3232A8A0FB334AD8B99837F7 /* libmultimedia_media.xcframework */; };
+		722303BA4601456E8DCEFE28 /* libmultimedia_media.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3232A8A0FB334AD8B99837F7 /* libmultimedia_media.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		58CF940828FE406DB1D4D708 /* libdisplay.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62A62C1D93FC409EA39D6E87 /* libdisplay.xcframework */; };
+		1D758582B82A41ABAFEF70A8 /* libdisplay.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 62A62C1D93FC409EA39D6E87 /* libdisplay.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		BCBEA55C16954D1D84D0EB1F /* libconfiguration.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA9F1B673B51488688AF2B61 /* libconfiguration.xcframework */; };
+		32060F47EFC846D99A45B3D4 /* libconfiguration.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DA9F1B673B51488688AF2B61 /* libconfiguration.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -58,51 +128,86 @@
 			dstSubfolderSpec = 10;
 			files = (
 				89E41E4729F505CD0004F33E /* libarkui_ios.xcframework in Embed Frameworks */,
-			);
+					E810CBFEB9A84789AA48F2B2 /* libarkui_componentsnapshot.xcframework in Embed Frameworks */,
+					EBDEA0C764044B1AA3CFF20C /* libarkui_focuscontroller.xcframework in Embed Frameworks */,
+					B294AD568239451EA278E6F0 /* libhilog.xcframework in Embed Frameworks */,
+					4731B8C31C3F4908AA262473 /* libbridge.xcframework in Embed Frameworks */,
+					E706D0F257E949499F688F88 /* libdeviceinfo.xcframework in Embed Frameworks */,
+					BC4B8FC741E54E6BA3533B9F /* librouter.xcframework in Embed Frameworks */,
+					A2CABE5A82BF471D8D9D7D54 /* libplatformview.xcframework in Embed Frameworks */,
+					863E0899C26F4347A8DD8B57 /* libeffectkit.xcframework in Embed Frameworks */,
+					8650E5A38B514F67A30FDABC /* libpromptaction.xcframework in Embed Frameworks */,
+					8DC97FB9DD714273B936543A /* libarkts_collections.xcframework in Embed Frameworks */,
+					627EFAB04F454AAFA8DE899B /* libfile_fs.xcframework in Embed Frameworks */,
+					5D1A66E713454219AD363B58 /* libfile_streamrw.xcframework in Embed Frameworks */,
+					9F4F8FCA80864F0BA4F874A6 /* libutil_stream.xcframework in Embed Frameworks */,
+					0948F554B70E4078BFD4C16B /* libutil.xcframework in Embed Frameworks */,
+					6749F943F0314B939B45DF8D /* libcrypto_openssl.xcframework in Embed Frameworks */,
+					5FF846FEBE134F0386765ED3 /* libsystemdatetime.xcframework in Embed Frameworks */,
+					1DCF70172FBF4DE7A97D6C65 /* libbuffer.xcframework in Embed Frameworks */,
+					E15A97187BA947608C68B982 /* libfastbuffer.xcframework in Embed Frameworks */,
+					A7B0BB06B701444A9E0DF98D /* libfile_statvfs.xcframework in Embed Frameworks */,
+					E67066DC90604E68A906B4B6 /* libfile_hash.xcframework in Embed Frameworks */,
+					52D83FC9857348BC92DA9170 /* libfile_streamhash.xcframework in Embed Frameworks */,
+					81EEBEEE56324AD9BADDAA46 /* libabilityaccessctrl.xcframework in Embed Frameworks */,
+					194ED8E1181D47A9A4ED1A8E /* libnotificationmanager.xcframework in Embed Frameworks */,
+					E21B5B293B6A4C6997CF6A46 /* libdata_preferences.xcframework in Embed Frameworks */,
+					7CD8E18F935747FDB612E4E3 /* libxml2_shared.xcframework in Embed Frameworks */,
+					59732E651985425CA5D02C7E /* libdata_relationalstore.xcframework in Embed Frameworks */,
+					5D56946A161C4C66A1B47657 /* librequest.xcframework in Embed Frameworks */,
+					F3418D3313A843769B983316 /* libworker.xcframework in Embed Frameworks */,
+					3BA0946BF1674411AE8EE650 /* libtaskpool.xcframework in Embed Frameworks */,
+					785B4D2B604743FEB53DB714 /* libdata_uniformtypedescriptor.xcframework in Embed Frameworks */,
+					D3F5EE45A37649B8BDFA0DC8 /* libarkts_utils.xcframework in Embed Frameworks */,
+					847B91C7720B462B812D356B /* libvibrator.xcframework in Embed Frameworks */,
+					722303BA4601456E8DCEFE28 /* libmultimedia_media.xcframework in Embed Frameworks */,
+					1D758582B82A41ABAFEF70A8 /* libdisplay.xcframework in Embed Frameworks */,
+					32060F47EFC846D99A45B3D4 /* libconfiguration.xcframework in Embed Frameworks */,
+);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		2A258B4CF1DC46CFA6071C12 /* UtilsDemoUtilsDemoAbilityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UtilsDemoUtilsDemoAbilityViewController.h; sourceTree = "<group>"; };
+		18ADF3C252B74EC9AA095A4A /* ModifierModifierAbilityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModifierModifierAbilityViewController.m; sourceTree = "<group>"; };
 		1DD91850B8124E2ABD9D7A28 /* UtilsDemoUtilsDemoAbilityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UtilsDemoUtilsDemoAbilityViewController.m; sourceTree = "<group>"; };
-		C70AB04507FD47188A878694 /* FastBufferDemoFastBufferDemoAbilityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FastBufferDemoFastBufferDemoAbilityViewController.h; sourceTree = "<group>"; };
-		EDB8976BB1894068A45D1242 /* FastBufferDemoFastBufferDemoAbilityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FastBufferDemoFastBufferDemoAbilityViewController.m; sourceTree = "<group>"; };
-		4D876E4B8D66481A8AB7E80A /* CollectionsDemoCollectionsDemoAbilityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionsDemoCollectionsDemoAbilityViewController.h; sourceTree = "<group>"; };
-		AD81A58ACE504A07831F0B7C /* CollectionsDemoCollectionsDemoAbilityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionsDemoCollectionsDemoAbilityViewController.m; sourceTree = "<group>"; };
-		6F7E328BBBC74D0BA67F2DF0 /* TaskPoolDemoTaskPoolDemoAbilityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TaskPoolDemoTaskPoolDemoAbilityViewController.h; sourceTree = "<group>"; };
-		7388E3E8F22F48E3ACE924B0 /* TaskPoolDemoTaskPoolDemoAbilityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TaskPoolDemoTaskPoolDemoAbilityViewController.m; sourceTree = "<group>"; };
-		7FC8F4D616244FB59A68AC8F /* VibratorJsSamplesDemoVibratorJsSamplesDemoAbilityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VibratorJsSamplesDemoVibratorJsSamplesDemoAbilityViewController.h; sourceTree = "<group>"; };
+		1FE5CE29705D452C9BDDC602 /* VideoPlayDemoVideoPlayDemoAbilityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoPlayDemoVideoPlayDemoAbilityViewController.h; sourceTree = "<group>"; };
+		270F0BA529E34AB1ADE18A87 /* VibratorCustomHapticDemoVibratorCustomHapticDemoAbilityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VibratorCustomHapticDemoVibratorCustomHapticDemoAbilityViewController.m; sourceTree = "<group>"; };
+		2A258B4CF1DC46CFA6071C12 /* UtilsDemoUtilsDemoAbilityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UtilsDemoUtilsDemoAbilityViewController.h; sourceTree = "<group>"; };
+		2D2ACD96FAE84CA789163CD3 /* VibrationBasicDemoVibrationBasicDemoAbilityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VibrationBasicDemoVibrationBasicDemoAbilityViewController.m; sourceTree = "<group>"; };
 		2F8B9C498FC748BBBDF680E2 /* VibratorJsSamplesDemoVibratorJsSamplesDemoAbilityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VibratorJsSamplesDemoVibratorJsSamplesDemoAbilityViewController.m; sourceTree = "<group>"; };
 		3CD8F477706F4393A5880FA3 /* VibratorCustomHapticDemoVibratorCustomHapticDemoAbilityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VibratorCustomHapticDemoVibratorCustomHapticDemoAbilityViewController.h; sourceTree = "<group>"; };
-		270F0BA529E34AB1ADE18A87 /* VibratorCustomHapticDemoVibratorCustomHapticDemoAbilityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VibratorCustomHapticDemoVibratorCustomHapticDemoAbilityViewController.m; sourceTree = "<group>"; };
-		B571B3EA93FB49E0B08776A5 /* VibrationBasicDemoVibrationBasicDemoAbilityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VibrationBasicDemoVibrationBasicDemoAbilityViewController.h; sourceTree = "<group>"; };
-		2D2ACD96FAE84CA789163CD3 /* VibrationBasicDemoVibrationBasicDemoAbilityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VibrationBasicDemoVibrationBasicDemoAbilityViewController.m; sourceTree = "<group>"; };
-		62FCAFE38E7E4758896FBC59 /* GeoLocationManagerDemoGeoLocationManagerDemoAbilityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GeoLocationManagerDemoGeoLocationManagerDemoAbilityViewController.h; sourceTree = "<group>"; };
-		EF563F2305EC40C8BD463CE7 /* GeoLocationManagerDemoGeoLocationManagerDemoAbilityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GeoLocationManagerDemoGeoLocationManagerDemoAbilityViewController.m; sourceTree = "<group>"; };
+		4D876E4B8D66481A8AB7E80A /* CollectionsDemoCollectionsDemoAbilityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionsDemoCollectionsDemoAbilityViewController.h; sourceTree = "<group>"; };
+		5E52A4F480AE4274BFE6CC63 /* UDMFDemoUDMFDemoAbilityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UDMFDemoUDMFDemoAbilityViewController.h; sourceTree = "<group>"; };
 		5E6C7721A0C048C0BB3994FA /* WindowWindowAbilityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WindowWindowAbilityViewController.h; sourceTree = "<group>"; };
 		5FCF8F6A046A42F2BF381181 /* WindowWindowAbilityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WindowWindowAbilityViewController.m; sourceTree = "<group>"; };
-		6F3D9A2E6C094AADAD1448DA /* DrawingDrawingAbilityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrawingDrawingAbilityViewController.h; sourceTree = "<group>"; };
-		A741C8134ED94DD3BA3B9F4B /* DrawingDrawingAbilityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrawingDrawingAbilityViewController.m; sourceTree = "<group>"; };
-		DE8355A4B3984C6098C28D21 /* RequestDemoRequestDemoAbilityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RequestDemoRequestDemoAbilityViewController.h; sourceTree = "<group>"; };
+		62FCAFE38E7E4758896FBC59 /* GeoLocationManagerDemoGeoLocationManagerDemoAbilityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GeoLocationManagerDemoGeoLocationManagerDemoAbilityViewController.h; sourceTree = "<group>"; };
 		68492AC35759413C812D5B78 /* RequestDemoRequestDemoAbilityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RequestDemoRequestDemoAbilityViewController.m; sourceTree = "<group>"; };
-		72A9D2302AF346F0BDF93915 /* PreferencesDemoPreferencesDemoAbilityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PreferencesDemoPreferencesDemoAbilityViewController.h; sourceTree = "<group>"; };
-		8ECDEB3C76204A93A7414C93 /* PreferencesDemoPreferencesDemoAbilityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PreferencesDemoPreferencesDemoAbilityViewController.m; sourceTree = "<group>"; };
-		5E52A4F480AE4274BFE6CC63 /* UDMFDemoUDMFDemoAbilityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UDMFDemoUDMFDemoAbilityViewController.h; sourceTree = "<group>"; };
-		C7331DA4C5DC4873A5E2AC3A /* UDMFDemoUDMFDemoAbilityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UDMFDemoUDMFDemoAbilityViewController.m; sourceTree = "<group>"; };
-		BD53475F18B44B4AB2067544 /* RDBDemoRDBDemoAbilityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDBDemoRDBDemoAbilityViewController.h; sourceTree = "<group>"; };
-		6C1005DB974343B18C36462D /* RDBDemoRDBDemoAbilityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RDBDemoRDBDemoAbilityViewController.m; sourceTree = "<group>"; };
-		1FE5CE29705D452C9BDDC602 /* VideoPlayDemoVideoPlayDemoAbilityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoPlayDemoVideoPlayDemoAbilityViewController.h; sourceTree = "<group>"; };
-		8547AE5DA066489892A7678A /* VideoPlayDemoVideoPlayDemoAbilityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoPlayDemoVideoPlayDemoAbilityViewController.m; sourceTree = "<group>"; };
-		9F100A27FEE84410B74B6090 /* FileApiFileApiAbilityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FileApiFileApiAbilityViewController.h; sourceTree = "<group>"; };
-		F1A41EFB52C9445D9F628C5C /* FileApiFileApiAbilityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FileApiFileApiAbilityViewController.m; sourceTree = "<group>"; };
-		18ADF3C252B74EC9AA095A4A /* ModifierModifierAbilityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModifierModifierAbilityViewController.m; sourceTree = "<group>"; };
 		6AFB8CB64D614C0287C598AB /* ModifierModifierAbilityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModifierModifierAbilityViewController.h; sourceTree = "<group>"; };
+		6C1005DB974343B18C36462D /* RDBDemoRDBDemoAbilityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RDBDemoRDBDemoAbilityViewController.m; sourceTree = "<group>"; };
+		6F3D9A2E6C094AADAD1448DA /* DrawingDrawingAbilityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrawingDrawingAbilityViewController.h; sourceTree = "<group>"; };
+		6F7E328BBBC74D0BA67F2DF0 /* TaskPoolDemoTaskPoolDemoAbilityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TaskPoolDemoTaskPoolDemoAbilityViewController.h; sourceTree = "<group>"; };
+		72A9D2302AF346F0BDF93915 /* PreferencesDemoPreferencesDemoAbilityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PreferencesDemoPreferencesDemoAbilityViewController.h; sourceTree = "<group>"; };
+		7388E3E8F22F48E3ACE924B0 /* TaskPoolDemoTaskPoolDemoAbilityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TaskPoolDemoTaskPoolDemoAbilityViewController.m; sourceTree = "<group>"; };
+		7FC8F4D616244FB59A68AC8F /* VibratorJsSamplesDemoVibratorJsSamplesDemoAbilityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VibratorJsSamplesDemoVibratorJsSamplesDemoAbilityViewController.h; sourceTree = "<group>"; };
+		8547AE5DA066489892A7678A /* VideoPlayDemoVideoPlayDemoAbilityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoPlayDemoVideoPlayDemoAbilityViewController.m; sourceTree = "<group>"; };
 		89E41E4329F505070004F33E /* EntryEntryAbilityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EntryEntryAbilityViewController.m; sourceTree = "<group>"; };
 		89E41E4429F505070004F33E /* EntryEntryAbilityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EntryEntryAbilityViewController.h; sourceTree = "<group>"; };
+		8ECDEB3C76204A93A7414C93 /* PreferencesDemoPreferencesDemoAbilityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PreferencesDemoPreferencesDemoAbilityViewController.m; sourceTree = "<group>"; };
+		9F100A27FEE84410B74B6090 /* FileApiFileApiAbilityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FileApiFileApiAbilityViewController.h; sourceTree = "<group>"; };
+		A741C8134ED94DD3BA3B9F4B /* DrawingDrawingAbilityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrawingDrawingAbilityViewController.m; sourceTree = "<group>"; };
+		AD81A58ACE504A07831F0B7C /* CollectionsDemoCollectionsDemoAbilityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionsDemoCollectionsDemoAbilityViewController.m; sourceTree = "<group>"; };
+		B571B3EA93FB49E0B08776A5 /* VibrationBasicDemoVibrationBasicDemoAbilityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VibrationBasicDemoVibrationBasicDemoAbilityViewController.h; sourceTree = "<group>"; };
+		BD53475F18B44B4AB2067544 /* RDBDemoRDBDemoAbilityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDBDemoRDBDemoAbilityViewController.h; sourceTree = "<group>"; };
+		C70AB04507FD47188A878694 /* FastBufferDemoFastBufferDemoAbilityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FastBufferDemoFastBufferDemoAbilityViewController.h; sourceTree = "<group>"; };
+		C7331DA4C5DC4873A5E2AC3A /* UDMFDemoUDMFDemoAbilityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UDMFDemoUDMFDemoAbilityViewController.m; sourceTree = "<group>"; };
+		CB1FD70A2EAF8C8100682F59 /* MyWebview2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyWebview2.h; sourceTree = "<group>"; };
+		CB1FD70B2EAF8C8100682F59 /* MyWebview2.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyWebview2.m; sourceTree = "<group>"; };
+		DE8355A4B3984C6098C28D21 /* RequestDemoRequestDemoAbilityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RequestDemoRequestDemoAbilityViewController.h; sourceTree = "<group>"; };
 		DF9C1B5D28B9FC3A005DCF58 /* libarkui_ios.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = libarkui_ios.xcframework; path = frameworks/libarkui_ios.xcframework; sourceTree = "<group>"; };
-		DFC5555529D7F36400B63EB3 /* arkui-x */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "arkui-x"; sourceTree = "<group>"; };
+		EDB8976BB1894068A45D1242 /* FastBufferDemoFastBufferDemoAbilityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FastBufferDemoFastBufferDemoAbilityViewController.m; sourceTree = "<group>"; };
+		EF563F2305EC40C8BD463CE7 /* GeoLocationManagerDemoGeoLocationManagerDemoAbilityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GeoLocationManagerDemoGeoLocationManagerDemoAbilityViewController.m; sourceTree = "<group>"; };
 		F0AF1ACD27D3684F008C55DD /* EnjoyArkUIX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EnjoyArkUIX.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0AF1AD027D3684F008C55DD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F0AF1AD127D3684F008C55DD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -110,6 +215,7 @@
 		F0AF1ADF27D36856008C55DD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F0AF1AE127D36856008C55DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F0AF1AE227D36856008C55DD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F1A41EFB52C9445D9F628C5C /* FileApiFileApiAbilityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FileApiFileApiAbilityViewController.m; sourceTree = "<group>"; };
 		FAB793EC2DF1923700045981 /* TestTestAbilityViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestTestAbilityViewController.h; sourceTree = "<group>"; };
 		FAB793ED2DF1923700045981 /* TestTestAbilityViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestTestAbilityViewController.m; sourceTree = "<group>"; };
 		FAB793EE2DF1923700045981 /* VersionVersionAbilityViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VersionVersionAbilityViewController.h; sourceTree = "<group>"; };
@@ -139,6 +245,41 @@
 		FAC8E8912DDEBD7000EF5185 /* DynamizationJumpController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DynamizationJumpController.m; sourceTree = "<group>"; };
 		FAC8E8962DDEC02800EF5185 /* resh */ = {isa = PBXFileReference; lastKnownFileType = folder; path = resh; sourceTree = "<group>"; };
 		FAC8E8972DDEC02800EF5185 /* doc */ = {isa = PBXFileReference; lastKnownFileType = folder; path = doc; sourceTree = "<group>"; };
+		5520E628D38C44E7B30606FE /* libarkui_componentsnapshot.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = libarkui_componentsnapshot.xcframework; path = frameworks/libarkui_componentsnapshot.xcframework; sourceTree = "<group>"; };
+		D5D2C68E6B424F2CB9919C11 /* libarkui_focuscontroller.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = libarkui_focuscontroller.xcframework; path = frameworks/libarkui_focuscontroller.xcframework; sourceTree = "<group>"; };
+		F0B7D984B4E8410D984FFB98 /* libhilog.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = libhilog.xcframework; path = frameworks/libhilog.xcframework; sourceTree = "<group>"; };
+		69F4A8AF99EA4827A9FA9B16 /* libbridge.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = libbridge.xcframework; path = frameworks/libbridge.xcframework; sourceTree = "<group>"; };
+		F38C25BA0B8F41DF8B3224A0 /* libdeviceinfo.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = libdeviceinfo.xcframework; path = frameworks/libdeviceinfo.xcframework; sourceTree = "<group>"; };
+		AF1962BA82A64F5789AF7460 /* librouter.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = librouter.xcframework; path = frameworks/librouter.xcframework; sourceTree = "<group>"; };
+		026270EEDD364486B91147E2 /* libplatformview.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = libplatformview.xcframework; path = frameworks/libplatformview.xcframework; sourceTree = "<group>"; };
+		C950E71A0330486DB472228A /* libeffectkit.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = libeffectkit.xcframework; path = frameworks/libeffectkit.xcframework; sourceTree = "<group>"; };
+		3F08A3FFAB1A40269D991653 /* libpromptaction.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = libpromptaction.xcframework; path = frameworks/libpromptaction.xcframework; sourceTree = "<group>"; };
+		CFFD44684A1A4587BD34CEB2 /* libarkts_collections.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = libarkts_collections.xcframework; path = frameworks/libarkts_collections.xcframework; sourceTree = "<group>"; };
+		6C604325C28244669BE11B8D /* libfile_fs.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = libfile_fs.xcframework; path = frameworks/libfile_fs.xcframework; sourceTree = "<group>"; };
+		E7FC8CAEEC2C47CEA2A147E3 /* libfile_streamrw.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = libfile_streamrw.xcframework; path = frameworks/libfile_streamrw.xcframework; sourceTree = "<group>"; };
+		F513570C0E534F90947C6114 /* libutil_stream.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = libutil_stream.xcframework; path = frameworks/libutil_stream.xcframework; sourceTree = "<group>"; };
+		31A0F448D4964332A7614853 /* libutil.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = libutil.xcframework; path = frameworks/libutil.xcframework; sourceTree = "<group>"; };
+		B9482CE1129543B9A7F683A7 /* libcrypto_openssl.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = libcrypto_openssl.xcframework; path = frameworks/libcrypto_openssl.xcframework; sourceTree = "<group>"; };
+		CBF92AB666934183BDAF468C /* libsystemdatetime.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = libsystemdatetime.xcframework; path = frameworks/libsystemdatetime.xcframework; sourceTree = "<group>"; };
+		EEB23A78A723459F898974F8 /* libbuffer.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = libbuffer.xcframework; path = frameworks/libbuffer.xcframework; sourceTree = "<group>"; };
+		FB3B2B9CECE545B399B24997 /* libfastbuffer.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = libfastbuffer.xcframework; path = frameworks/libfastbuffer.xcframework; sourceTree = "<group>"; };
+		D50A2DACBAF44D56928E6414 /* libfile_statvfs.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = libfile_statvfs.xcframework; path = frameworks/libfile_statvfs.xcframework; sourceTree = "<group>"; };
+		BD1AA6DC27B04F5F83332F27 /* libfile_hash.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = libfile_hash.xcframework; path = frameworks/libfile_hash.xcframework; sourceTree = "<group>"; };
+		CA3D6F378C18452592468FD4 /* libfile_streamhash.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = libfile_streamhash.xcframework; path = frameworks/libfile_streamhash.xcframework; sourceTree = "<group>"; };
+		3746DB41AF314365ABC72D66 /* libabilityaccessctrl.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = libabilityaccessctrl.xcframework; path = frameworks/libabilityaccessctrl.xcframework; sourceTree = "<group>"; };
+		9C9B3DA0B82042CEA87263FC /* libnotificationmanager.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = libnotificationmanager.xcframework; path = frameworks/libnotificationmanager.xcframework; sourceTree = "<group>"; };
+		148B4A943D054CCD8AB41707 /* libdata_preferences.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = libdata_preferences.xcframework; path = frameworks/libdata_preferences.xcframework; sourceTree = "<group>"; };
+		870608BA219E4D99A002C6D9 /* libxml2_shared.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = libxml2_shared.xcframework; path = frameworks/libxml2_shared.xcframework; sourceTree = "<group>"; };
+		425AFA70517640C982D727B0 /* libdata_relationalstore.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = libdata_relationalstore.xcframework; path = frameworks/libdata_relationalstore.xcframework; sourceTree = "<group>"; };
+		5CCCEDF40330478DB9BC19E7 /* librequest.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = librequest.xcframework; path = frameworks/librequest.xcframework; sourceTree = "<group>"; };
+		D79440A8555E4EB280E14EE8 /* libworker.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = libworker.xcframework; path = frameworks/libworker.xcframework; sourceTree = "<group>"; };
+		41C5F99595D3403B934F03E2 /* libtaskpool.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = libtaskpool.xcframework; path = frameworks/libtaskpool.xcframework; sourceTree = "<group>"; };
+		C20DAA7146624A118F344085 /* libdata_uniformtypedescriptor.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = libdata_uniformtypedescriptor.xcframework; path = frameworks/libdata_uniformtypedescriptor.xcframework; sourceTree = "<group>"; };
+		1E7DEE052677485B97868843 /* libarkts_utils.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = libarkts_utils.xcframework; path = frameworks/libarkts_utils.xcframework; sourceTree = "<group>"; };
+		F6B9DE9BC96B451089149F94 /* libvibrator.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = libvibrator.xcframework; path = frameworks/libvibrator.xcframework; sourceTree = "<group>"; };
+		3232A8A0FB334AD8B99837F7 /* libmultimedia_media.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = libmultimedia_media.xcframework; path = frameworks/libmultimedia_media.xcframework; sourceTree = "<group>"; };
+		62A62C1D93FC409EA39D6E87 /* libdisplay.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = libdisplay.xcframework; path = frameworks/libdisplay.xcframework; sourceTree = "<group>"; };
+		DA9F1B673B51488688AF2B61 /* libconfiguration.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = libconfiguration.xcframework; path = frameworks/libconfiguration.xcframework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,7 +288,42 @@
 			buildActionMask = 2147483647;
 			files = (
 				89E41E4629F505CD0004F33E /* libarkui_ios.xcframework in Frameworks */,
-			);
+					C1DF795C7FF44A38BEF6230F /* libarkui_componentsnapshot.xcframework in Frameworks */,
+					5E038DE1C3DF4FF9B31E7813 /* libarkui_focuscontroller.xcframework in Frameworks */,
+					2C50636065B4473596144AFF /* libhilog.xcframework in Frameworks */,
+					B360E8CC8C5549069C04BE37 /* libbridge.xcframework in Frameworks */,
+					C7419331BE1446BD889268D6 /* libdeviceinfo.xcframework in Frameworks */,
+					B4B53D1FCD414B92A46B40E7 /* librouter.xcframework in Frameworks */,
+					B74F0A6C306F4AFEAD654BD7 /* libplatformview.xcframework in Frameworks */,
+					E3AE20B2D01744FE8E321DF6 /* libeffectkit.xcframework in Frameworks */,
+					A2AABC6083B54E419CAD8DA3 /* libpromptaction.xcframework in Frameworks */,
+					8CBB8ED8F2D0445080070819 /* libarkts_collections.xcframework in Frameworks */,
+					09E07F0FE229489BBAE47779 /* libfile_fs.xcframework in Frameworks */,
+					7B9541260E5547458F7898CE /* libfile_streamrw.xcframework in Frameworks */,
+					F96762D7FF0B4EFAA13A5AA8 /* libutil_stream.xcframework in Frameworks */,
+					253F0EAC3BAB42C1B2F05342 /* libutil.xcframework in Frameworks */,
+					04DB443CB33A4551A8EB4E90 /* libcrypto_openssl.xcframework in Frameworks */,
+					9C2F0867A7EA4771B5C98978 /* libsystemdatetime.xcframework in Frameworks */,
+					27504B934D5E410A9725AA7D /* libbuffer.xcframework in Frameworks */,
+					C9A1E80EDE2E45B0B298426B /* libfastbuffer.xcframework in Frameworks */,
+					C3900576610E40F697280929 /* libfile_statvfs.xcframework in Frameworks */,
+					46ED4417BF6140C88DBF03AB /* libfile_hash.xcframework in Frameworks */,
+					4B48AFA276F448969D16C129 /* libfile_streamhash.xcframework in Frameworks */,
+					B2E18426247E490B901EC4CA /* libabilityaccessctrl.xcframework in Frameworks */,
+					9233D7A9F1944EEB89B0D18A /* libnotificationmanager.xcframework in Frameworks */,
+					5C938159DF2949B9B5758894 /* libdata_preferences.xcframework in Frameworks */,
+					DC2219CB0EF541209FABBD1A /* libxml2_shared.xcframework in Frameworks */,
+					818FB63556AF4CFE9F1D7892 /* libdata_relationalstore.xcframework in Frameworks */,
+					573572D9A1884E3AA12A6EBE /* librequest.xcframework in Frameworks */,
+					3EE8E558ED8946429BE1ED0E /* libworker.xcframework in Frameworks */,
+					57A39F0A01E04BE9ABCD8F16 /* libtaskpool.xcframework in Frameworks */,
+					0CC8C83D2B1F4D569966EEB4 /* libdata_uniformtypedescriptor.xcframework in Frameworks */,
+					A96C257CA3B940B194CDA22D /* libarkts_utils.xcframework in Frameworks */,
+					D4F6EE8B8A7B42F4BDE14945 /* libvibrator.xcframework in Frameworks */,
+					3E66BC430CFE430FB32A0E2B /* libmultimedia_media.xcframework in Frameworks */,
+					58CF940828FE406DB1D4D708 /* libdisplay.xcframework in Frameworks */,
+					BCBEA55C16954D1D84D0EB1F /* libconfiguration.xcframework in Frameworks */,
+);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
@@ -244,7 +420,42 @@
 			isa = PBXGroup;
 			children = (
 				DF9C1B5D28B9FC3A005DCF58 /* libarkui_ios.xcframework */,
-			);
+					5520E628D38C44E7B30606FE /* libarkui_componentsnapshot.xcframework */,
+					D5D2C68E6B424F2CB9919C11 /* libarkui_focuscontroller.xcframework */,
+					F0B7D984B4E8410D984FFB98 /* libhilog.xcframework */,
+					69F4A8AF99EA4827A9FA9B16 /* libbridge.xcframework */,
+					F38C25BA0B8F41DF8B3224A0 /* libdeviceinfo.xcframework */,
+					AF1962BA82A64F5789AF7460 /* librouter.xcframework */,
+					026270EEDD364486B91147E2 /* libplatformview.xcframework */,
+					C950E71A0330486DB472228A /* libeffectkit.xcframework */,
+					3F08A3FFAB1A40269D991653 /* libpromptaction.xcframework */,
+					CFFD44684A1A4587BD34CEB2 /* libarkts_collections.xcframework */,
+					6C604325C28244669BE11B8D /* libfile_fs.xcframework */,
+					E7FC8CAEEC2C47CEA2A147E3 /* libfile_streamrw.xcframework */,
+					F513570C0E534F90947C6114 /* libutil_stream.xcframework */,
+					31A0F448D4964332A7614853 /* libutil.xcframework */,
+					B9482CE1129543B9A7F683A7 /* libcrypto_openssl.xcframework */,
+					CBF92AB666934183BDAF468C /* libsystemdatetime.xcframework */,
+					EEB23A78A723459F898974F8 /* libbuffer.xcframework */,
+					FB3B2B9CECE545B399B24997 /* libfastbuffer.xcframework */,
+					D50A2DACBAF44D56928E6414 /* libfile_statvfs.xcframework */,
+					BD1AA6DC27B04F5F83332F27 /* libfile_hash.xcframework */,
+					CA3D6F378C18452592468FD4 /* libfile_streamhash.xcframework */,
+					3746DB41AF314365ABC72D66 /* libabilityaccessctrl.xcframework */,
+					9C9B3DA0B82042CEA87263FC /* libnotificationmanager.xcframework */,
+					148B4A943D054CCD8AB41707 /* libdata_preferences.xcframework */,
+					870608BA219E4D99A002C6D9 /* libxml2_shared.xcframework */,
+					425AFA70517640C982D727B0 /* libdata_relationalstore.xcframework */,
+					5CCCEDF40330478DB9BC19E7 /* librequest.xcframework */,
+					D79440A8555E4EB280E14EE8 /* libworker.xcframework */,
+					41C5F99595D3403B934F03E2 /* libtaskpool.xcframework */,
+					C20DAA7146624A118F344085 /* libdata_uniformtypedescriptor.xcframework */,
+					1E7DEE052677485B97868843 /* libarkts_utils.xcframework */,
+					F6B9DE9BC96B451089149F94 /* libvibrator.xcframework */,
+					3232A8A0FB334AD8B99837F7 /* libmultimedia_media.xcframework */,
+					62A62C1D93FC409EA39D6E87 /* libdisplay.xcframework */,
+					DA9F1B673B51488688AF2B61 /* libconfiguration.xcframework */,
+);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
@@ -260,6 +471,8 @@
 		FAC8E7222DDEBA9000EF5185 /* PlatformView */ = {
 			isa = PBXGroup;
 			children = (
+				CB1FD70A2EAF8C8100682F59 /* MyWebview2.h */,
+				CB1FD70B2EAF8C8100682F59 /* MyWebview2.m */,
 				FAC8E71A2DDEBA9000EF5185 /* MyMapView.h */,
 				FAC8E71B2DDEBA9000EF5185 /* MyMapView.m */,
 				FAC8E71C2DDEBA9000EF5185 /* MyPlatformViewFactory.h */,
@@ -350,6 +563,7 @@
 				16F1304D22844BB4859D1468 /* TaskPoolDemoTaskPoolDemoAbilityViewController.m in Sources */,
 				C6EEC18ECB944DBF8E58DF3B /* VibratorJsSamplesDemoVibratorJsSamplesDemoAbilityViewController.m in Sources */,
 				21E4064396F24ED98CF6BAEF /* VibratorCustomHapticDemoVibratorCustomHapticDemoAbilityViewController.m in Sources */,
+				CB1FD70C2EAF8C8100682F59 /* MyWebview2.m in Sources */,
 				6D59220A86F74BEDA0A71806 /* VibrationBasicDemoVibrationBasicDemoAbilityViewController.m in Sources */,
 				CCEC83536EC44F44B7B57FE6 /* GeoLocationManagerDemoGeoLocationManagerDemoAbilityViewController.m in Sources */,
 				B3D9FBF9DFEE406D97464741 /* WindowWindowAbilityViewController.m in Sources */,
