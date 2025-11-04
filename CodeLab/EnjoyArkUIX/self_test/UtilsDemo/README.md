@@ -82,3 +82,7 @@ SendableLruCache<K, V>相关功能[SendableLruCache<K, V>](https://gitee.com/ope
 
 
 * 性能统计：监控各种操作的计数统计
+
+### 注意事项
+
+**本示例需要手动添加标签后再编译，后续待标签合入后方可正常编译。**

@@ -73,6 +73,8 @@ time、preset、file、pattern四种形式的振动，订阅去订阅外设热�
 
 3.本示例需要使用DevEco Studio 5.0.4 Release (Build Version: 5.0.11.100, built on March 28, 2025)及以上版本才可编译运行。
 
+4.本示例需要手动添加标签后再编译，后续待标签合入后方可正常编译。
+
 ### 下载
 
 如需单独下载本工程，执行如下命令：
