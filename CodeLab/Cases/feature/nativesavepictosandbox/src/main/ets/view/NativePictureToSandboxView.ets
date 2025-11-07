@@ -168,6 +168,7 @@ export struct NativePictureToSandboxViewComponent {
       .padding($r('app.string.nativesavepictosandbox_padding'))
       .margin($r('app.string.nativesavepictosandbox_margin12'))
       .width('100%')
+      .height('50%')
     }.padding($r('app.string.ohos_id_card_padding_start'))
     .height('100%')
   }
