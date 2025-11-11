@@ -1,6 +1,6 @@
 # ArkUI-X支持Rust sample开发
 ## 介绍
-本示例通过DevEco创建一个Native C++跨平台工程，用来实现鸿蒙、Android和iOS调用rust接口。 
+本示例通过DevEco创建一个\[ArkUI-X\] Native C++跨平台工程，用来实现鸿蒙、Android和iOS调用rust接口。 
 
 ## 效果预览
 
@@ -127,7 +127,7 @@ RustDev									// Native C++跨平台工程
 
 ## 配置说明
 
-### 相关环境配置
+### 一、相关环境配置
 
 #### 1、安装Rust工具链
 
@@ -168,6 +168,38 @@ rustc --version
 cargo --version
 ```
 
+（4）使用cargo安装脚手架工具ohrs
+
+```shell
+cargo install ohrs
+```
+
+（5）验证ohrs安装
+
+```shell
+ohrs doctor
+```
+
+若安装成功，则会有如下结果：
+
+> Windows端可能会有乱码，不影响正常使用
+
+```shell
+✔  Environment variable OHOS_NDK_HOME should be set.
+✔  Rust version should be >= 1.78.0.
+✔  Rustup target: aarch64-unknown-linux-ohos should be installed.
+✔  Rustup target: armv7-unknown-linux-ohos should be installed.
+✔  Rustup target: x86_64-unknown-linux-ohos should be installed.
+```
+
+（6）修改Cargo配置文件名称
+
+进入.cargo文件夹，修改config文件的名称为config.toml，若找不到config文件可直接新建一个名称为config.toml的空文件，可通过以下命令找到.cargo文件夹位置：
+
+```shell
+where cargo
+```
+
 #### 2、需要安装 Rust 的 toolchain 来帮助构建相应平台的动态库
 
 **鸿蒙平台**
@@ -194,11 +226,15 @@ rustup target add x86_64-apple-ios
 rustup target add aarch64-apple-ios-sim
 ```
 
-### 鸿蒙上如何调用rust
+---
+
+### 二、鸿蒙上如何调用rust
 
 #### 环境
 
 1、配置​**OHOS_NDK_HOME**​环境变量：
+
+> 该目录指向了DevEco Studio安装目录中的openharmony sdk，您需要根据您DevEco Studio具体的安装位置调整变量值
 
 **Mac端**
 
@@ -216,47 +252,15 @@ export OHOS_NDK_HOME=/Applications/DevEco-Studio.app/Contents/sdk/default/openha
 变量：OHOS_NDK_HOME，值：/DevEco安装目录/sdk/default/openharmony
 ```
 
-2、使用cargo安装脚手架工具ohrs
-
-```shell
-cargo install ohrs
-```
-
-3、修改Cargo配置文件名称
-
-进入.cargo文件夹，修改config文件的名称为config.toml，若找不到config文件可直接新建一个config.toml文件，可通过以下命令找到.cargo文件夹位置：
-
-```shell
-where cargo
-```
-
 #### 编译
 
-1、先检查ohrs的相关环境是否OK：
-
-```shell
-ohrs doctor
-```
-
-运行结果如下：
-
-> Windows端可能会有乱码，不影响正常使用
-
-```shell
-✔  Environment variable OHOS_NDK_HOME should be set.
-✔  Rust version should be >= 1.78.0.
-✔  Rustup target: aarch64-unknown-linux-ohos should be installed.
-✔  Rustup target: armv7-unknown-linux-ohos should be installed.
-✔  Rustup target: x86_64-unknown-linux-ohos should be installed.
-```
-
-2、使用ohrs来初始化rust项目：
+1、使用ohrs来创建一个新的rust项目，或者您可以直接使用Sample中的rust_add项目：
 
 ```shell
 ohrs init rust_add
 ```
 
-运行结果如下：
+若创建成功，则会有如下输出：
 
 ```shell
 Create lib.rs succeed.
@@ -274,9 +278,9 @@ ohrs build
 
 执行完成后会生成一个dist目录，其中含有librust_add.so文件和index.d.ts文件。
 
-4、使用鸿蒙开发工具DevEco创建一个Native C++ 工程。
+4、使用鸿蒙开发工具DevEco创建一个ArkUI-X Native C++ 工程，或者您可以直接使用Sample中的RustDev项目。
 
-5、将rust项目中dist目录下的全部文件拷贝到Native C++跨平台工程的entry/libs目录下。同时在该libs目录下新建一个oh-package.json5文件，并加入以下内容：
+5、将rust项目中dist目录下的全部文件拷贝到ArkUI-X Native C++跨平台工程的entry/libs目录下。同时在该libs目录下新建一个oh-package.json5文件，并加入以下内容：
 
 ```shell
 {
@@ -287,7 +291,7 @@ ohrs build
 }
 ```
 
-6、在Native C++跨平台工程的entry目录下的oh-package.json5文件中添加依赖配置，即在"dependencies"字段中加入以下内容：
+6、在ArkUI-X Native C++跨平台工程的entry目录下的oh-package.json5文件中添加依赖配置，即在"dependencies"字段中加入以下内容：
 
 ```shell
 "librust_add.so": "file:./libs"
@@ -301,7 +305,7 @@ ohrs build
 
 ![](./screenshots/devices/oh_modules_effect.png)
 
-7、在Native C++跨平台工程的entry/src/main/ets/pages目录下的Index.ets文件中，引用librust_add.so文件，即可调用rust函数，可参考以下代码：
+7、在ArkUI-X Native C++跨平台工程的entry/src/main/ets/pages目录下的Index.ets文件中，引用librust_add.so文件，即可调用rust函数，可参考以下代码：
 
 ```shell
 import { add } from "librust_add.so"
@@ -338,13 +342,17 @@ struct Index {
 }
 ```
 
-8、构建Native C++跨平台工程即可。
+8、构建ArkUI-X Native C++跨平台工程即可。
 
-### ArkUI-X（iOS）如何调用rust
+---
+
+### 三、ArkUI-X（iOS）如何调用rust
 
 #### 环境
 
 1、编辑 .cargo目录中的config.toml文件，加入以下内容：
+
+> 运行 `where cargo` 命令即可找到 .cargo目录位置
 
 ```shell
 [target.aarch64-apple-ios]  # iPhone 真机 (ARM64)
@@ -371,9 +379,13 @@ rustflags = [
 
 #### 编译
 
-基于以上ohrs创建的rust应用工程，进行以下操作：
+1、使用ohrs来创建一个新的rust项目，或者您可以直接使用Sample中的rust_add项目：
 
-1、修改rust工程中的build.rs文件为如下内容：
+```shell
+ohrs init rust_add
+```
+
+2、修改rust工程中的build.rs文件为如下内容：
 
 ```shell
 use std::env;
@@ -435,49 +447,53 @@ fn main() {
 }
 ```
 
-2、使用DevEco打开ArkUI-X跨平台工程，点击菜单上的构建->编译Hap(s)/APP(s)->编译APP(s)按钮，以同步信息与动态库到ArkUI-X跨平台工程中。
+3、使用鸿蒙开发工具DevEco创建一个ArkUI-X Native C++ 工程，推荐将工程名设置为RustDev，并修改相应文件，[详情见：鸿蒙上如何调用rust中编译的第7步](#二、鸿蒙上如何调用rust)。或者您可以直接使用Sample中的RustDev项目。
 
-3、进入rust工程中，编译target为iOS的.dylib文件：
+> 注意：您需要确保ArkUI-X Native C++ 工程与上面使用的rust工程处在同一目录下，因为在rust配置文件中使用了相对路径的形式来配置ArkUI-X工程中的xcframework文件位置，推荐将ArkUI-X工程名设置为RustDev也是出于同样的原因
+
+4、使用DevEco打开ArkUI-X工程，点击菜单上的构建->编译Hap(s)/APP(s)->编译APP(s)按钮，以同步信息与xcframework动态库到ArkUI-X跨平台工程的iOS工程中。
+
+5、进入rust工程中，编译target为iOS的.dylib文件，并将.dylib文件编译为.xcframework文件：
+
+> 以下的命令均是在rust_add工程目录下执行的
+
+（1）编译.dylib文件：
 
 ```shell
+# 编译iOS真机.dylib文件
 cargo build --target aarch64-apple-ios --release
-```
 
-动态库生成的目录：
-
-```shell
-rust工程/target/aarch64-apple-ios/release/librust_add.dylib
-```
-
-生成模拟器dylib文件：
-
-``````shell
+# 编译iOS模拟器.dylib文件
 cargo build --target aarch64-apple-ios-sim --release
-``````
+```
 
-设置加载路径：
+动态库生成的位置：rust工程/target/aarch64-apple-ios/release/librust_add.dylib
 
-``````shell
-# ios
-install_name_tool -id "@rpath/librust_add.framework/librust_add" \
-    target/aarch64-apple-ios/release/librust_add.dylib
-# sim
-install_name_tool -id "@rpath/librust_add.framework/librust_add" \               
-    target/aarch64-apple-ios-sim/release/librust_add.dylib
-``````
-
-生成framework文件：
+（2）为.dylib文件设置加载路径：
 
 ``````shell
-mkdir -p librust_add.framework # 创建真机framework
-cp target/aarch64-apple-ios/release/librust_add.dylib \
-   librust_add.framework/librust_add # 将真机的dylib复制到framework文件夹内，注意去掉.dylib后缀
-mkdir -p sim/librust_add.framework # 创建模拟器framework
-cp target/aarch64-apple-ios-sim/release/librust_add.dylib \
-   sim/librust_add.framework/librust_add # 将模拟器的dylib复制到framework文件夹内，注意去掉.dylib后缀
+# iOS真机
+install_name_tool -id "@rpath/librust_add.framework/librust_add" target/aarch64-apple-ios/release/librust_add.dylib
+
+# iOS模拟器
+install_name_tool -id "@rpath/librust_add.framework/librust_add" target/aarch64-apple-ios-sim/release/librust_add.dylib
 ``````
 
-分别在两个framework文件夹内创建Info.plist文件，添加以下内容：
+（3）生成framework文件：
+
+``````shell
+# 创建iOS真机framework
+mkdir -p framework/librust_add.framework
+# 将iOS真机的dylib复制到相应的librust_add.framework文件夹内
+cp target/aarch64-apple-ios/release/librust_add.dylib framework/librust_add.framework/librust_add
+
+# 创建iOS模拟器framework
+mkdir -p framework/sim/librust_add.framework
+# 将iOS模拟器的dylib复制到相应的librust_add.framework文件夹内
+cp target/aarch64-apple-ios-sim/release/librust_add.dylib framework/sim/librust_add.framework/librust_add
+``````
+
+（4）分别在两个librust_add.framework文件夹内创建Info.plist文件，两个librust_add.framework文件夹的位置：rust工程/framework。然后添加以下内容：
 
 ``````xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -501,7 +517,7 @@ cp target/aarch64-apple-ios-sim/release/librust_add.dylib \
 	<key>CFBundleShortVersionString</key>
 	<string>6.0.0</string>
 	<key>ClangVersion</key>
-	<string>b&apos;clang version 16.0.5&apos;</string>
+	<string>b'clang version 14.0.0'</string>
 	<key>MiniXEngineVerson</key>
 	<string>1.0.0</string>
 	<key>MinimumOSVersion</key>
@@ -514,36 +530,29 @@ cp target/aarch64-apple-ios-sim/release/librust_add.dylib \
 
 ![ios_xcrun_vtool_show_build](./screenshots/devices/ios_xcrun_vtool_show_build.png)
 
-生成xcframework文件：
+（5）生成xcframework文件：
 
 ``````shell
-xcodebuild -create-xcframework \
-  -framework librust_add.framework \
-  -framework sim/librust_add.framework \
-  -output librust_add.xcframework
+xcodebuild -create-xcframework -framework framework/librust_add.framework -framework framework/sim/librust_add.framework -output librust_add.xcframework
 ``````
-
-
 
 **备注：在iOS工程中引入的libarkui_ios.xcframework与rust依赖的libarkui_ios.xcframework必须是同一个。**
 
-4、拷贝rust生成的librust_add.xcframework到ArkUI-X工程目录：
+5、拷贝编译生成的librust_add.xcframework到ArkUI-X工程目录中：ArkUI-X工程/.arkui-x/ios/frameworks
 
-​				ArkUI-X工程/.arkui-x/ios/frameworks
-
-5、把.arkui-x/ios/frameworks目录的librust_add.xcframework放到iOS的工程当中（Frameworks目录）导入动态库到应用中
+6、将.arkui-x/ios/frameworks目录的librust_add.xcframework文件添加到iOS的工程的Frameworks目录当中，以导入动态库。
 
 ![](./screenshots/devices/iOS_add_dylib.png)
 
-6、打开项目的TARGETS，点击General 之后下拉至Frameworks,Libraries,and Embedded Content。
-
-找到librust_add.xcframework，Embed选项修改为Embed&Sign（原为Do Not Embed）。
+7、打开项目的TARGETS，点击General 之后下拉至Frameworks,Libraries,and Embedded Content。找到librust_add.xcframework，Embed选项修改为Embed&Sign（原为Do Not Embed）。
 
 ![](./screenshots/devices/iOS_config_dylib.png)
 
-7、再次构建跨平台工程即可。
+8、再次构建跨平台工程即可。
 
-### ArkUI-X（Android）如何调用rust
+---
+
+### 四、ArkUI-X（Android）如何调用rust
 
 #### 环境
 
@@ -581,6 +590,8 @@ python3 /Android SDK路径/ndk/28.0.13004108/build/tools/make_standalone_toolcha
 ```
 
 3、编辑 .cargo目录中的config.toml文件，加入以下内容
+
+> 运行 `where cargo` 命令即可找到 .cargo目录位置
 
 **Mac端**
 
@@ -636,31 +647,37 @@ linker = "Android SDK路径/ndk/28.0.13004108/toolchains/llvm/prebuilt/windows-x
 
 #### 编译
 
-基于以上ohrs创建的rust应用工程，进行以下操作：
+1、使用ohrs来创建一个新的rust项目，或者您可以直接使用Sample中的rust_add项目：
 
-1、修改rust工程中的build.rs文件为如下内容：[参考代码](#编译-1)。
+```shell
+ohrs init rust_add
+```
 
-2、使用DevEco打开ArkUI-X跨平台工程，点击菜单上的构建->编译Hap(s)/APP(s)->编译APP(s)按钮，以同步信息与动态库到ArkUI-X跨平台工程中。
+2、修改rust工程中的build.rs文件为如下内容：[参考代码](#编译-1)。
 
-3、进入rust工程中，编译target为Android 的.so文件：
+3、使用鸿蒙开发工具DevEco创建一个ArkUI-X Native C++ 工程，推荐将工程名设置为RustDev，并修改相应文件，[详情见：鸿蒙上如何调用rust中编译的第7步](#二、鸿蒙上如何调用rust)。或者您可以直接使用Sample中的RustDev项目。
+
+> 注意：您需要确保ArkUI-X Native C++ 工程与上面使用的rust工程处在同一目录下，因为在rust配置文件中使用了相对路径的形式来配置ArkUI-X工程中的so文件位置，推荐将ArkUI-X工程名设置为RustDev也是出于同样的原因
+
+4、使用DevEco打开ArkUI-X跨平台工程，点击菜单上的构建->编译Hap(s)/APP(s)->编译APP(s)按钮，以同步信息与动态库到ArkUI-X跨平台工程的Android工程中。
+
+5、进入rust工程中，编译target为Android 的.so文件：
 
 ```shell
 cargo build --target aarch64-linux-android --release
 ```
 
-动态库生成的目录：
-
-```shell
-rust工程/target/aarch64-linux-android/release/librust_add.so
-```
+动态库生成的目录：rust工程/target/aarch64-linux-android/release/librust_add.so
 
 **备注：在Android工程中引入的libarkui_android.so与rust依赖的libarkui_android.so必须是一致的。**
 
-4、拷贝rust生成的librust_add.so到ArkUI-X工程目录：ArkUI-X工程/.arkui-x/android/app/libs/arm64-v8a
+6、拷贝rust生成的librust_add.so到ArkUI-X工程目录：ArkUI-X工程/.arkui-x/android/app/libs/arm64-v8a
 
-5、再次构建跨平台工程即可。
+7、再次构建跨平台工程即可。
 
-### 添加Rust方法
+---
+
+### 五、添加Rust方法
 
 1、打开rust工程，在lib.rs中添加新方法，例如：
 

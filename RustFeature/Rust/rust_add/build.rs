@@ -40,7 +40,7 @@ fn main() {
         let framework_dir = Path::new(&manifest_dir)
             .join("../RustDev/.arkui-x/ios/frameworks/libarkui_ios.xcframework");
 
-        let platform_subdir = if target.contains("simulator") {
+        let platform_subdir = if target.contains("sim") {
             "ios-arm64_x86_64-simulator"
         } else {
             "ios-arm64"
