@@ -123,9 +123,18 @@ export struct AlbumComponent {
   }
 
   build() {
-    Scroll() {
       Column() {
-        GridRow() {
+        GridRow({
+          breakpoints: {
+            value: BreakpointConstants.BREAKPOINT_VALUE,
+            reference: BreakpointsReference.WindowSize
+          },
+          columns: {
+            sm: BreakpointConstants.COLUMN_LG,
+            md: BreakpointConstants.COLUMN_LG,
+            lg: BreakpointConstants.COLUMN_LG
+          }
+        }) {
           GridCol({
             span: { sm: GridConstants.SPAN_FOUR, md: GridConstants.SPAN_TWELVE, lg: GridConstants.SPAN_TWELVE }
           }) {
@@ -163,8 +172,6 @@ export struct AlbumComponent {
           }).getValue(this.currentBreakpoint)
         })
       }
-    }
-    .scrollBar(BarState.Off)
     .margin({
       left: new BreakpointType({
         sm: $r('app.float.cover_margin_sm'),
