@@ -61,6 +61,8 @@ time、preset、file、pattern四种形式的振动，订阅去订阅外设热�
 
 [ohos.permission.VIBRATE](https://gitee.com/openharmony/docs/blob/master/zh-cn/application-dev/security/AccessToken/permissions-for-all.md#ohospermissionvibrate)
 
+* 本项目需使用震动功能，请确保允许应用控制马达振动。
+
 ### 依赖
 
 不涉及。
