@@ -126,7 +126,7 @@ struct attributeDemo {
           top: 20,
           left: 20,
           right: 20,
-          bottom: 20
+          bottom: 50
         })
         .justifyContent(FlexAlign.Center)
         .alignItems(HorizontalAlign.Center)
