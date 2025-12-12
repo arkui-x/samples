@@ -130,6 +130,8 @@ Note:If the text contains special characters, please escape them according to th
                 <filteritem type="filepath" name="CodeLab/EnjoyArkUIX/self_test/Drawing/src/main/resources/rawfile/.*.ttf" desc="already checked"/>
                 <filteritem type="filepath" name="SuperFeature/PlatformBridge/.*.png" desc="运行结果截图"/>
                 <filteritem type="filepath" name="SuperFeature/PlatformBridge/.*.jpg" desc="运行结果截图"/>
+                <filteritem type="filepath" name="SuperFeature/DecoupledUIAndLogic/.*.png" desc="运行结果截图"/>
+                <filteritem type="filepath" name="SuperFeature/DecoupledUIAndLogic/.*.jpg" desc="运行结果截图"/>
             </filefilter>
             <filefilter name="copyrightPolicyFilter" desc="Copyright文件头校验策略的过滤条件" >
                 <filteritem type="filepath" name="SuperFeature/Animation/.*.ets|.*.ts" desc="示例展示无需添加版权头"/>
@@ -155,6 +157,8 @@ Note:If the text contains special characters, please escape them according to th
                 <filteritem type="filepath" name="CodeLab/MusicHome/.*.lrc" desc="具备版权的音乐"/>
                 <filteritem type="filepath" name="SuperFeature/WebExample/entry/src/main/resources/rawfile/js/echarts.min.js" desc="import third-party ECharts file"/>
                 <filteritem type="filepath" name="SuperFeature/WebExample/entry/src/main/resources/rawfile/js/.*.js" desc="示例展示无需添加版权头"/>
+                <filteritem type="filepath" name="SuperFeature/DecoupledUIAndLogic/.*.json5" desc="示例展示无需添加版权头"/>
+                <filteritem type="filepath" name="SuperFeature/DecoupledUIAndLogic/.*.ets|.*.ts" desc="示例展示无需添加版权头"/>
             </filefilter>
             <filefilter name="defaultPolicyFilter" desc="HealthyDiet License文件头校验策略的过滤条件" >
                 <filteritem type="filepath" name="SuperFeature/Animation/.*.ets|.*.ts" desc="示例展示无需添加License头"/>
