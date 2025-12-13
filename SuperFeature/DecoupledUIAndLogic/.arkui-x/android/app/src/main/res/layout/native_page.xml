@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/vertical_scroll_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="411dp"
+            android:layout_height="90dp"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:lines="2"
+            android:shadowDx="10.0"
+            android:shadowDy="10.0"
+            android:shadowRadius="3.0"
+            android:text="Native"
+            android:textColor="#000000"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/BTN_LoadHap"
+            android:layout_width="fill_parent"
+            android:layout_height="60sp"
+            android:layout_marginTop="5sp"
+            android:layout_marginBottom="5sp"
+            android:background="@drawable/btn_pressed_selector"
+            android:fontFamily="sans-serif-light"
+            android:padding="10dp"
+            android:text="点击加载Hap"
+            android:textColor="#000000"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/BTN_CallMethod"
+            android:layout_width="fill_parent"
+            android:layout_height="60sp"
+            android:layout_marginTop="5sp"
+            android:layout_marginBottom="5sp"
+            android:background="@drawable/btn_pressed_selector"
+            android:fontFamily="sans-serif-light"
+            android:padding="10dp"
+            android:text="通过平台桥接调用Hap中方法"
+            android:textColor="#000000"
+            android:textSize="15sp" />
+    </LinearLayout>
+</ScrollView>
