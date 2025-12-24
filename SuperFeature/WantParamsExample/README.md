@@ -19,6 +19,11 @@
               <img src="./screenshots/devices/android_want.jpg">
           </center>
       </td>
+      <td>
+          <center>
+              <img src="./screenshots/devices/android_getValue.jpg">
+          </center>
+      </td>
   </tr>
   </table> 
 
@@ -34,6 +39,11 @@
       <td>
           <center>
               <img src="./screenshots/devices/ios_state.png">
+          </center>
+      </td>
+      <td>
+          <center>
+              <img src="./screenshots/devices/ios_getValue.png">
           </center>
       </td>
   </tr>
