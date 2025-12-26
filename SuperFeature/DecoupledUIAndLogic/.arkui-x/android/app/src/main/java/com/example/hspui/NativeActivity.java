@@ -21,6 +21,9 @@ import android.graphics.drawable.GradientDrawable;
 import android.os.Bundle;
 import android.util.Log;
 
+import java.util.ConcurrentModificationException;
+
+import ohos.stage.ability.adapter.AbilityLoader;
 import ohos.stage.ability.adapter.StageApplicationDelegate;
 
 /**
@@ -43,6 +46,59 @@ public class NativeActivity extends Activity {
         findViewById(id).setBackground(greenBg);
     }
 
+    private void getDeviceInfo() {
+        try {
+            BridgeUtil object = BridgeUtil.getInstance();
+            if (object == null) {
+                Log.e(TAG, LOG_TAG + "BridgeUtil object is null");
+                return;
+            }
+            Object data = object.callMethodSync("getDeviceInfo");
+            Log.i(TAG, LOG_TAG + "DeviceInfo is " + data);
+            this.showCaseRes(R.id.BTN_getDeviceInfo, data.toString().contains(
+                    "[ArkTS]: (Native) call getDeviceInfo by callMethodSync success"));
+        } catch (NullPointerException | ArrayIndexOutOfBoundsException | IllegalArgumentException |
+                 IllegalStateException | ClassCastException | ArithmeticException | SecurityException |
+                 UnsupportedOperationException | ConcurrentModificationException e) {
+            Log.e(TAG, LOG_TAG + "callMethodSync failed, error is :", e);
+            this.showCaseRes(R.id.BTN_getDeviceInfo, false);
+        }
+    }
+
+    private void requestBaidu() {
+        try {
+            BridgeUtil object = BridgeUtil.getInstance();
+            if (object == null) {
+                Log.e(TAG, LOG_TAG + "BridgeUtil object is null");
+                return;
+            }
+            object.callMethodSync("requestBaidu");
+            this.showCaseRes(R.id.BTN_requestBaidu, true);
+        } catch (NullPointerException | ArrayIndexOutOfBoundsException | IllegalArgumentException |
+                 IllegalStateException | ClassCastException | ArithmeticException | SecurityException |
+                 UnsupportedOperationException | ConcurrentModificationException e) {
+            Log.e(TAG, LOG_TAG + "callMethodSync failed, error is :", e);
+            this.showCaseRes(R.id.BTN_requestBaidu, false);
+        }
+    }
+
+    private void handleDatabaseOperation() {
+        try {
+            BridgeUtil object = BridgeUtil.getInstance();
+            if (object == null) {
+                Log.e(TAG, LOG_TAG + "BridgeUtil object is null");
+                return;
+            }
+            object.callMethodSync("handleDatabaseOperation");
+            this.showCaseRes(R.id.BTN_handleDatabaseOperation, true);
+        } catch (NullPointerException | ArrayIndexOutOfBoundsException | IllegalArgumentException |
+                 IllegalStateException | ClassCastException | ArithmeticException | SecurityException |
+                 UnsupportedOperationException | ConcurrentModificationException e) {
+            Log.e(TAG, LOG_TAG + "callMethodSync failed, error is :", e);
+            this.showCaseRes(R.id.BTN_handleDatabaseOperation, false);
+        }
+    }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         Log.e(TAG, LOG_TAG + "onCreate");
@@ -51,23 +107,19 @@ public class NativeActivity extends Activity {
 
         findViewById(R.id.BTN_LoadHap).setOnClickListener(v -> {
             StageApplicationDelegate.loadModule("entry", "./ets/MyModuleLoader.ets");
+            AbilityLoader.loadAbility("com.example.hspui", "entry", "EntryAbility", "");
         });
 
-        findViewById(R.id.BTN_CallMethod).setOnClickListener(v -> {
-            try {
-                BridgeUtil object = BridgeUtil.getInstance();
-                if (object == null) {
-                    Log.e(TAG, LOG_TAG + "BridgeUtil object is null");
-                    return;
-                }
-                Object data = object.callMethodSync("getDeviceInfo");
-                Log.i(TAG, LOG_TAG + "DeviceInfo is " + data);
-                this.showCaseRes(R.id.BTN_CallMethod, data.toString().contains(
-                    "[ArkTS]: (Native) call getDeviceInfo by callMethodSync success"));
-            } catch (Exception e) {
-                Log.e(TAG, LOG_TAG + "callMethodSync failed, error is :", e);
-                this.showCaseRes(R.id.BTN_CallMethod, false);
-            }
+        findViewById(R.id.BTN_getDeviceInfo).setOnClickListener(v -> {
+            this.getDeviceInfo();
+        });
+
+        findViewById(R.id.BTN_requestBaidu).setOnClickListener(v -> {
+            this.requestBaidu();
+        });
+
+        findViewById(R.id.BTN_handleDatabaseOperation).setOnClickListener(v -> {
+            this.handleDatabaseOperation();
         });
     }
 }
