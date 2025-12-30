@@ -15,12 +15,27 @@
 
 import { AbilityConstant, UIAbility, Want } from '@kit.AbilityKit';
 import { window } from '@kit.ArkUI';
+import relationalStore from '@ohos.data.relationalStore';
+import { BridgeUtil } from '../BridgeUtil';
 
 const LOG_TAG: string = '[Test][ArkTS][EntryAbility]:: '
 
 export default class EntryAbility extends UIAbility {
   onCreate(want: Want, launchParam: AbilityConstant.LaunchParam): void {
     console.info(LOG_TAG + 'Ability onCreate');
+    const STORE_CONFIG: relationalStore.StoreConfig = {
+      name: "RdbTest.db",
+      securityLevel: relationalStore.SecurityLevel.S1
+    };
+    relationalStore.getRdbStore(this.context, STORE_CONFIG,
+      (err, rdbStore: relationalStore.RdbStore) => {
+        if (err) {
+          console.error(LOG_TAG + `Get RdbStore failed, code is ${err.code},message is ${err.message}`);
+          return;
+        }
+        console.info(LOG_TAG + `Get RdbStore successfully.`);
+        BridgeUtil.getInstance().setRdbStore(rdbStore)
+      })
   }
 
   onDestroy(): void {

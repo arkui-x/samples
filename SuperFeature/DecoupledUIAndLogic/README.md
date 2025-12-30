@@ -1,4 +1,4 @@
-# 支持UI与业务解耦，实现不带UI的独立业务逻辑跨平台应用示例
+# 以Hap为主体的共享逻辑包开发跨平台应用示例
 
 ## 介绍
 
@@ -14,9 +14,11 @@ ArkUI-X框架支持加载特殊形式的ArkTS侧Hap包，在该Hap中，开发�
 
 ### 使用说明
 
-1. 打开app，进入应用首页，主页面显示页面标题："Native"，存在两个按钮，分别为"点击加载Hap"、"通过平台桥接调用Hap中方法"。<br>
+1. 打开app，进入应用首页，主页面显示页面标题："Native"。<br>
 2. 点击界面按钮"点击加载Hap"，触发加载Hap包。<br>
-3. 点击界面按钮"通过平台桥接调用Hap中方法"，通过平台桥接调用Hap包中方法，调用成功后按钮变为绿色。<br>
+3. 点击界面按钮"获取设备信息"，通过平台桥接调用Hap包中方法[getDeviceInfo](./entry/src/main/ets/BridgeUtil.ets)，调用成功后按钮变为绿色。<br>
+4. 点击界面按钮"http请求百度"，通过平台桥接调用Hap包中方法[requestBaidu](./entry/src/main/ets/BridgeUtil.ets)，调用成功后按钮变为绿色。<br>
+5. 点击界面按钮"数据库操作"，通过平台桥接调用Hap包中方法[handleDatabaseOperation](./entry/src/main/ets/BridgeUtil.ets)，调用成功后按钮变为绿色。<br>
 
 ## 工程目录
 
@@ -100,14 +102,14 @@ ArkUI-X框架支持加载特殊形式的ArkTS侧Hap包，在该Hap中，开发�
 
 ## 约束与限制
 
-1. 开发前请务必阅览[开发文档](https://gitcode.com/arkui-x/docs/blob/master/zh-cn/application-dev/quick-start/decoupled-UI-and-Logic.md)，尤其注意`约束与限制`。
+1. 开发前请务必阅览[Android端开发指南](https://gitcode.com/arkui-x/docs/blob/master/zh-cn/application-dev/tutorial/how-to-decoupled-UI-and-Logic-on-android.md)或[iOS端开发指南](https://gitcode.com/arkui-x/docs/blob/master/zh-cn/application-dev/tutorial/how-to-decoupled-UI-and-Logic-on-ios.md)，尤其注意`约束与限制`。
 2. 本示例仅支持标准Android和iOS和设备系统上运行。
 
 2. 本示例已适配API version 23及以上版本的ArkUI-X SDK。
 
 3. 本示例需要使用DevEco Studio 6.0.1 Release及以上版本才可编译运行。
 
-##  下载
+## 下载
 
 如需单独下载本工程，执行如下命令：
 

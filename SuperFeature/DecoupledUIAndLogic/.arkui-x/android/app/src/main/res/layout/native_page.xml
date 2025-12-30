@@ -37,7 +37,7 @@
             android:textSize="15sp" />
 
         <Button
-            android:id="@+id/BTN_CallMethod"
+            android:id="@+id/BTN_getDeviceInfo"
             android:layout_width="fill_parent"
             android:layout_height="60sp"
             android:layout_marginTop="5sp"
@@ -45,7 +45,33 @@
             android:background="@drawable/btn_pressed_selector"
             android:fontFamily="sans-serif-light"
             android:padding="10dp"
-            android:text="通过平台桥接调用Hap中方法"
+            android:text="获取设备信息"
+            android:textColor="#000000"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/BTN_requestBaidu"
+            android:layout_width="fill_parent"
+            android:layout_height="60sp"
+            android:layout_marginTop="5sp"
+            android:layout_marginBottom="5sp"
+            android:background="@drawable/btn_pressed_selector"
+            android:fontFamily="sans-serif-light"
+            android:padding="10dp"
+            android:text="http请求百度"
+            android:textColor="#000000"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/BTN_handleDatabaseOperation"
+            android:layout_width="fill_parent"
+            android:layout_height="60sp"
+            android:layout_marginTop="5sp"
+            android:layout_marginBottom="5sp"
+            android:background="@drawable/btn_pressed_selector"
+            android:fontFamily="sans-serif-light"
+            android:padding="10dp"
+            android:text="数据库操作"
             android:textColor="#000000"
             android:textSize="15sp" />
     </LinearLayout>

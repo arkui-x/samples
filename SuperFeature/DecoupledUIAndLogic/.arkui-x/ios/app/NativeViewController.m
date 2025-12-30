@@ -14,6 +14,7 @@
  */
 
 #import <libarkui_ios/StageApplication.h>
+#import <libarkui_ios/AbilityLoader.h>
 #import "NativeViewController.h"
 #import "BridgeUtil.h"
 
@@ -22,7 +23,9 @@
 @property(nonatomic, strong) BridgeUtil* bridgeObject;
 @property(nonatomic, strong) UIScrollView* mainScrollView;
 @property(nonatomic, strong) UIButton* BTN_LoadHap;
-@property(nonatomic, strong) UIButton* BTN_CallMethod;
+@property(nonatomic, strong) UIButton* BTN_getDeviceInfo;
+@property(nonatomic, strong) UIButton* BTN_requestBaidu;
+@property(nonatomic, strong) UIButton* BTN_handleDatabaseOperation;
 
 @end
 
@@ -84,7 +87,7 @@
     CGFloat spacing = 8;
     CGFloat titleHeight = 30;
     CGFloat margins = 20 + 20 + 20;
-    NSInteger buttonCount = 2;
+    NSInteger buttonCount = 4;
     CGFloat totalHeight = titleHeight + margins + (buttonHeight + spacing) * buttonCount;
     UIView* contentView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, self.view.bounds.size.width, totalHeight)];
     [self.mainScrollView addSubview:contentView];
@@ -110,13 +113,29 @@
     [self.BTN_LoadHap addTarget:self action:@selector(BTN_LoadHap:) forControlEvents:UIControlEventTouchUpInside];
     [bottomButtonStack addArrangedSubview:self.BTN_LoadHap];
 
-    self.BTN_CallMethod = [UIButton buttonWithType:UIButtonTypeSystem];
-    [self.BTN_CallMethod setTitle:@"通过平台桥接调用Hap中方法" forState:UIControlStateNormal];
-    [self.BTN_CallMethod setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-    self.BTN_CallMethod.backgroundColor = [UIColor colorWithRed:0.0 green:0.478 blue:1.0 alpha:1.0];
-    self.BTN_CallMethod.layer.cornerRadius = 4;
-    [self.BTN_CallMethod addTarget:self action:@selector(BTN_CallMethod:) forControlEvents:UIControlEventTouchUpInside];
-    [bottomButtonStack addArrangedSubview:self.BTN_CallMethod];
+    self.BTN_getDeviceInfo = [UIButton buttonWithType:UIButtonTypeSystem];
+    [self.BTN_getDeviceInfo setTitle:@"获取设备信息" forState:UIControlStateNormal];
+    [self.BTN_getDeviceInfo setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+    self.BTN_getDeviceInfo.backgroundColor = [UIColor colorWithRed:0.0 green:0.478 blue:1.0 alpha:1.0];
+    self.BTN_getDeviceInfo.layer.cornerRadius = 4;
+    [self.BTN_getDeviceInfo addTarget:self action:@selector(BTN_getDeviceInfo:) forControlEvents:UIControlEventTouchUpInside];
+    [bottomButtonStack addArrangedSubview:self.BTN_getDeviceInfo];
+
+    self.BTN_requestBaidu = [UIButton buttonWithType:UIButtonTypeSystem];
+    [self.BTN_requestBaidu setTitle:@"http请求百度" forState:UIControlStateNormal];
+    [self.BTN_requestBaidu setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+    self.BTN_requestBaidu.backgroundColor = [UIColor colorWithRed:0.0 green:0.478 blue:1.0 alpha:1.0];
+    self.BTN_requestBaidu.layer.cornerRadius = 4;
+    [self.BTN_requestBaidu addTarget:self action:@selector(BTN_requestBaidu:) forControlEvents:UIControlEventTouchUpInside];
+    [bottomButtonStack addArrangedSubview:self.BTN_requestBaidu];
+
+    self.BTN_handleDatabaseOperation = [UIButton buttonWithType:UIButtonTypeSystem];
+    [self.BTN_handleDatabaseOperation setTitle:@"数据库操作" forState:UIControlStateNormal];
+    [self.BTN_handleDatabaseOperation setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+    self.BTN_handleDatabaseOperation.backgroundColor = [UIColor colorWithRed:0.0 green:0.478 blue:1.0 alpha:1.0];
+    self.BTN_handleDatabaseOperation.layer.cornerRadius = 4;
+    [self.BTN_handleDatabaseOperation addTarget:self action:@selector(BTN_handleDatabaseOperation:) forControlEvents:UIControlEventTouchUpInside];
+    [bottomButtonStack addArrangedSubview:self.BTN_handleDatabaseOperation];
 
     self.mainScrollView.contentSize = CGSizeMake(self.view.bounds.size.width, totalHeight);
 }
@@ -124,9 +143,10 @@
 - (void)BTN_LoadHap:(UIButton*)sender
 {
     [StageApplication loadModule:@"entry" entryFile:@"./ets/MyModuleLoader.ets"];
+    [AbilityLoader loadAbility:@"com.example.hspui" moduleName:@"entry" abilityName:@"EntryAbility" params:@""];
 }
 
-- (void)BTN_CallMethod:(UIButton*)sender
+- (void)BTN_getDeviceInfo:(UIButton*)sender
 {
     @try {
         id data = [self.bridgeObject callMethodSync:@"getDeviceInfo" parameters:nil];
@@ -140,6 +160,28 @@
         } else {
             sender.backgroundColor = [UIColor colorWithRed:0.8 green:0.2 blue:0.2 alpha:1.0];
         }
+    } @catch (NSException* exception) {
+        NSLog(@"[Test][iOS][NativeViewController]:: callMethodSync failed, error is : %@", exception);
+        sender.backgroundColor = [UIColor colorWithRed:0.8 green:0.2 blue:0.2 alpha:1.0];
+    }
+}
+
+- (void)BTN_requestBaidu:(UIButton*)sender
+{
+    @try {
+        [self.bridgeObject callMethodSync:@"requestBaidu" parameters:nil];
+        sender.backgroundColor = [UIColor colorWithRed:0.2 green:0.8 blue:0.2 alpha:1.0];
+    } @catch (NSException* exception) {
+        NSLog(@"[Test][iOS][NativeViewController]:: callMethodSync failed, error is : %@", exception);
+        sender.backgroundColor = [UIColor colorWithRed:0.8 green:0.2 blue:0.2 alpha:1.0];
+    }
+}
+
+- (void)BTN_handleDatabaseOperation:(UIButton*)sender
+{
+    @try {
+        [self.bridgeObject callMethodSync:@"handleDatabaseOperation" parameters:nil];
+        sender.backgroundColor = [UIColor colorWithRed:0.2 green:0.8 blue:0.2 alpha:1.0];
     } @catch (NSException* exception) {
         NSLog(@"[Test][iOS][NativeViewController]:: callMethodSync failed, error is : %@", exception);
         sender.backgroundColor = [UIColor colorWithRed:0.8 green:0.2 blue:0.2 alpha:1.0];
