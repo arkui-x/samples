@@ -8,19 +8,23 @@
 | Android平台                                                  |                                                              |                                                              |                                                              |
 | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
 | 主页面展示效果                                               | 点击 “sendMessage JSON_TYPE” 按钮展示效果                    | 点击 “callMethod JSON_TYPE” 按钮展示效果                     | 点击 “callMethodWithCallback JSON_TYPE” 按钮展示效果         |
-| <img src="./screenshots/devices/android_main.jpeg" alt="android_main" /> | <img src="./screenshots/devices/android_state1.jpg" alt="android_state1" /> | <img src="./screenshots/devices/android_state2.jpg" alt="android_state2" /> | <img src="./screenshots/devices/android_state3.jpg" alt="android_state3" /> |
+| <img src="./screenshots/devices/android_main.jpeg"  height="200" alt="android_main" /> | <img src="./screenshots/devices/android_state1.jpg"  height="200" alt="android_state1" /> | <img src="./screenshots/devices/android_state2.jpg"  height="200" alt="android_state2" /> | <img src="./screenshots/devices/android_state3.jpg"  height="200" alt="android_state3" /> |
 | **iOS平台**                                                  |                                                              |                                                              |                                                              |
 | 主页面展示效果                                               | 点击 “sendMessage JSON_TYPE” 按钮展示效果                    | 点击 “callMethod JSON_TYPE” 按钮展示效果                     | 点击 “callMethodWithCallback JSON_TYPE” 按钮展示效果         |
-| <img src="./screenshots/devices/IOSmain1.jpeg" alt="IOSmain1" /> | <img src="./screenshots/devices/IOSstate1.jpg" alt="iOS_state1" /> | <img src="./screenshots/devices/IOSstate2.jpg" alt="iOS_state2" /> | <img src="./screenshots/devices/IOSstate3.jpg" alt="iOS_state3" /> |
+| <img src="./screenshots/devices/IOSmain1.jpeg" height="200" alt="IOSmain1" /> | <img src="./screenshots/devices/IOSstate1.jpg" height="200"  alt="IOSstate1" /> | <img src="./screenshots/devices/IOSstate2.jpg"  height="200" alt="IOSstate2" /> | <img src="./screenshots/devices/IOSstate3.jpg"  height="200" alt="IOSstate3" /> |
 
 
 
 ### 使用说明
 
 1.打开app，主页面显示三种Bridge模式和其对应的功能按钮。
+
 2.以Json模式为例，点击调用不同功能的Button按钮，Text内容发生改变。
+
 3.点击名为sendMessage按钮，ArkTS侧向原生侧发送数据，原生侧接收成功并返回数据，使用 “原生侧返回结果: ” Text文本接收原生侧返回数据并显示。
+
 4.点击名为callMethod按钮，ArkTS侧调用原生侧方法，原生侧方法调用成功并返回结果，使用“原生侧返回结果: ” Text文本接收原生侧返回数据并显示。
+
 5.点击名为callMethodWithCallback按钮，注册ArkTS侧方法并调用原生侧方法（在该原生侧方法里调用ArkTS侧刚注册的方法），原生侧方法调用成功并返回结果，使用“原生侧返回结果: ” Text文本接收原生侧返回数据并显示。同时ArkTS侧注册方法被调用成功并返回结果，使用 “注册函数被调用结果: ” Text文本接收原生侧返回数据并显示。
 
 ## 具体实现
