@@ -70,7 +70,7 @@ struct TextAreaSample {
             placeholder: 'This textArea can contain more than one line, please input your word.',
             controller: this.controller
           })
-            .enterKeyType(EnterKeyType.Done)
+            .enterKeyType(EnterKeyType.NEW_LINE)
             .id(`textarea_001`)
             .placeholderColor(this.placeholderColor)
             .placeholderFont({ size: 20, weight: 400 })
@@ -133,7 +133,7 @@ struct TextAreaSample {
             .height(80)
             .fontSize(20)
             .backgroundColor($r('app.color.white'))
-            .enterKeyType(EnterKeyType.Done)
+            .enterKeyType(EnterKeyType.NEW_LINE)
             .editMenuOptions({
               onCreateMenu: this.onCreateMenu, onMenuItemClick: (menuItem: TextMenuItem, textRange: TextRange) => {
                 if (menuItem.id.equals(TextMenuItemId.of('custom2'))) {
