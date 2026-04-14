@@ -15,6 +15,7 @@
 
 import { CommonConstants } from '../constants/CommonConstants';
 import WindowModel from '../utils/WindowModel';
+import { window } from '@kit.ArkUI';
 
 // 地图顶部标题栏
 @Component
@@ -24,10 +25,18 @@ export struct TopTitle {
   private windowModel: WindowModel = WindowModel.getInstance(); // 窗口管理model
 
   aboutToAppear(): void {
-    // 获取顶部导航栏高度
-    this.windowModel.getStatusBarHeight((statusBarHeight) => {
-      this.statusBarHeight = px2vp(statusBarHeight);
-    })
+    const windowStage: window.WindowStage | undefined = AppStorage.get('windowStage');
+    if (!windowStage) {
+      console.info('windowStage init error!');
+      return;
+    }
+    const windowClass: window.Window | undefined = windowStage.getMainWindowSync();
+    windowClass.on('avoidAreaChange', (data) => {
+      if (data.type === window.AvoidAreaType.TYPE_SYSTEM) {
+        this.statusBarHeight = px2vp(windowClass.getWindowAvoidArea(window.AvoidAreaType.TYPE_SYSTEM).topRect.height)
+        console.info('avoidAreaChange statusBarHeight is:' + this.statusBarHeight);
+      }
+    });
   }
 
   build() {
