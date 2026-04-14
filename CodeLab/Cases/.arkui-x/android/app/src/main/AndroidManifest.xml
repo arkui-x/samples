@@ -41,6 +41,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".PhoneEntryAbilityActivity"
+            android:configChanges="orientation|keyboard|layoutDirection|screenSize|uiMode|smallestScreenSize|density">
+        </activity>
     </application>
 
 </manifest>
