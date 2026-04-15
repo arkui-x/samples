@@ -23,6 +23,7 @@
     EntryEntryAbilityViewController *mainView = [[EntryEntryAbilityViewController alloc] initWithInstanceName:self.instanceName];
     mainView.view.frame = CGRectMake(0, 0, self.mainView.frame.size.width, self.mainView.frame.size.height);
     [self.mainView addSubview:mainView.view];
+    [self addChildViewController:mainView];
 }
 
 /// 顶部安全高度
