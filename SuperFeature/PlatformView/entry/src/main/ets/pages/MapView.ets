@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2024 Huawei Device Co., Ltd.
+ * Copyright (c) 2026 Huawei Device Co., Ltd.
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
@@ -14,20 +14,48 @@
 
 import { MainPageComponent } from 'effectkit';
 import PlatformView, { PlatformViewAttribute } from '@arkui-x.platformview';
+import { deviceInfo } from '@kit.BasicServicesKit';
+import { BuilderNode, NodeController, UIContext } from '@kit.ArkUI';
 
 @Entry
 @Component
 struct Index {
   @State title: string = 'PlatformView MapView'
+  private osFullNameInfo: string = '';
+  private controller: MyNodeController = new MyNodeController();
+
+  aboutToAppear(): void {
+    this.osFullNameInfo = deviceInfo.osFullName;
+    if (this.osFullNameInfo.startsWith("OpenHarmony")) {
+      import ('./harmonyOSPage').then(res => {
+        this.controller.node = new BuilderNode(this.getUIContext());
+        this.controller.node.build(res.MapComponentBuilder);
+      })
+    }
+  }
 
   build() {
     Row() {
       Column() {
         MainPageComponent()
-        PlatformView('MapView')
+        if (this.osFullNameInfo.startsWith("OpenHarmony")) {
+          NodeContainer(this.controller).width('100%').height('100%')
+        } else if (this.osFullNameInfo.startsWith("Android") ||
+                   this.osFullNameInfo.startsWith("iOS") ||
+                   this.osFullNameInfo.startsWith("iPadOS")) {
+          PlatformView('MapView')
+        }
       }
       .width('100%')
     }
     .height('100%')
+  }
+}
+
+class MyNodeController extends NodeController {
+  node?: BuilderNode<[]>;
+
+  makeNode(uiContext: UIContext): FrameNode | null {
+    return this.node?.getFrameNode() ?? null;
   }
 }
