@@ -23,6 +23,7 @@ struct Index {
   @State title: string = 'PlatformView MapView'
   private osFullNameInfo: string = '';
   private controller: MyNodeController = new MyNodeController();
+  private gaodeController: MyNodeController = new MyNodeController();
 
   aboutToAppear(): void {
     this.osFullNameInfo = deviceInfo.osFullName;
@@ -30,6 +31,10 @@ struct Index {
       import ('./harmonyOSPage').then(res => {
         this.controller.node = new BuilderNode(this.getUIContext());
         this.controller.node.build(res.MapComponentBuilder);
+      })
+      import ('./MapShowController').then(res => {
+        this.gaodeController.node = new BuilderNode(this.getUIContext());
+        this.gaodeController.node.build(res.MapGaodeComponentBuilder);
       })
     }
   }
@@ -39,7 +44,7 @@ struct Index {
       Column() {
         MainPageComponent()
         if (this.osFullNameInfo.startsWith("OpenHarmony")) {
-          NodeContainer(this.controller).width('100%').height('100%')
+          NodeContainer(this.gaodeController).width('100%').height('100%')
         } else if (this.osFullNameInfo.startsWith("Android") ||
                    this.osFullNameInfo.startsWith("iOS") ||
                    this.osFullNameInfo.startsWith("iPadOS")) {
