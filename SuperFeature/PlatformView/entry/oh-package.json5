@@ -6,7 +6,9 @@
   "author": "",
   "license": "",
   "dependencies": {
-    "effectkit": "file:../effectkit"
+    "effectkit": "file:../effectkit",
+    "@amap/amap_lbs_common": ">=1.2.2",
+    "@amap/amap_lbs_map3d": ">=2.2.3"
   }
 }
 
