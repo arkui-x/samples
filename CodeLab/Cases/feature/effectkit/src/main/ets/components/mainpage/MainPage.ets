@@ -53,8 +53,12 @@ export struct MainPageComponent {
     // 顶部安全高度适配
     let windowHight: window.Window = await window.getLastWindow(getContext(this));
     await windowHight.setWindowLayoutFullScreen(true);
-    this.topSafeHeight = px2vp(windowHight.getWindowAvoidArea(window.AvoidAreaType.TYPE_SYSTEM).topRect.height)
-
+    windowHight.on('avoidAreaChange', (data) => {
+      if (data.type === window.AvoidAreaType.TYPE_SYSTEM) {
+        this.topSafeHeight = px2vp(windowHight.getWindowAvoidArea(window.AvoidAreaType.TYPE_SYSTEM).topRect.height)
+        console.info('avoidAreaChange topSafeHeight:' + this.topSafeHeight);
+      }
+    });
     // TODO 知识点：初始化页面获取第一张图片的颜色
     const context = getContext(this);
     const resourceMgr: resourceManager.ResourceManager = context.resourceManager;

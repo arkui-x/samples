@@ -141,6 +141,11 @@ export struct CaptchaLogin {
             .backgroundColor($r('app.color.multimodaltransion_red'))
             .opacity(this.op)
             .onClick(() => {
+              if (this.op == 0.5) {
+                console.info('the phone number is invalid')
+                return;
+              }
+
               if (this.isConfirmed) {
                 // 调用Toast显示登录成功提示
                 promptAction.showToast({ message: $r('app.string.multimodaltransion_captcha_sent') });

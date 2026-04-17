@@ -54,6 +54,7 @@ export struct StyledStringComponent {
   aboutToAppear(): void {
     // 处理文本
     this.handleStyledString();
+    this.controller.setStyledString(this.paragraphStyledString);
   }
 
   aboutToReuse(params: Record<string, MyCustomSpan[]>): void {

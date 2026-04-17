@@ -170,9 +170,9 @@ struct TextClockSample {
             .value($r('app.string.text_clock_select_button'))
             .onSelect((index: number) => {
               if (index === 0) {
-                this.fontFeature = 'ss01';
+                this.fontFeature = "\"ss01\" on";
               } else if (index === 1) {
-                this.fontFeature = 'ss02';
+                this.fontFeature = "\"ss02\" on";
               }
             })
 

@@ -69,10 +69,12 @@ export struct StatusBarAnimationComponent {
     this.windowModel.setImmersive(this.popPage);
 
     // 获取顶部状态栏高度
-    this.windowModel.getStatusBarHeight((statusBarHeight) => {
-      logger.info(TAG, 'statusBarHeight is ' + statusBarHeight);
-      this.statusBarHeight = px2vp(statusBarHeight);
-    })
+    windowClass.on('avoidAreaChange', (data) => {
+      if (data.type === window.AvoidAreaType.TYPE_SYSTEM) {
+        this.statusBarHeight = px2vp(windowClass.getWindowAvoidArea(window.AvoidAreaType.TYPE_SYSTEM).topRect.height)
+        console.info('avoidAreaChange statusBarHeight is:' + this.statusBarHeight);
+      }
+    });
 
     // 组装数据源
     this.dataSource.pushArrayData(LIST_DATA);
