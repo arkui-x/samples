@@ -45,7 +45,10 @@
 entry/src/main/ets
 |---entryability
 |---pages
-|   |---index.ets                          			// 主页面
+|   |---Constants.ets                               // 鸿蒙高德地图常量定义
+|   |---harmonyOSPage.ets                           // 鸿蒙系统地图实现
+|   |---index.ets                                   // 主页面
+|   |---MapShowController.ets                       // 鸿蒙高德地图实现
 |   |---MapView.ets									// arkui-x ets侧PlatformView-MapView实现
 |   |---WebView.ets									// arkui-x ets侧PlatformView-WebView实现
 |   |---VideoView.ets								// arkui-x ets侧PlatformView-VideoView
@@ -53,7 +56,8 @@ entry/src/main/ets
 
 ## 具体实现
 
-+ ets 侧创建 PlatformVIew 实例，确保 ID 唯一，用于区分原生组件。
++ 针对Map、Web、Video三种场景分别实现跨平台适配，iOS和Android上通过PlatfromView组件适配。其中Map中增加了鸿蒙地图（包含鸿蒙系统地图和鸿蒙高德地图）的实现，完整演示三端适配开发案例。
++ PlatformView的实现是ets 侧创建 PlatformView 实例，确保 ID 唯一，用于区分原生组件。
 + 平台侧实现 PlatformVIew 相关接口。
   + 新建一个实现 IPlatformView 接口的类，并实现 getView 、onDispose() 接口，同时完成原生组件的创建等相关操作。
   + 新建一个实现 PlatformViewFactory 接口的类，并实现 getPlatformView() 接口，根据 ID 创建 IPlatformView 对象。
@@ -70,7 +74,7 @@ entry/src/main/ets
 
 ## 约束与限制
 
-1.本示例仅支持标准 Android/iOS 上运行。
+1.本示例Web、Viedo仅支持标准 Android/iOS 上运行，Map支持 HarmonyOS/Android/iOS三端运行验证。
 
 2.本示例已适配 API version 14以上版本的 ArkUI-X SDK，需要配套 API version 14以上版本的 OpenHarmony SDK。
 
@@ -87,3 +91,7 @@ echo /SuperFeature/PlatformView > .git/info/sparse-checkout
 git remote add origin https://gitcode.com/arkui-x/samples.git
 git pull origin master
 ```
+
+## FAQ
+
+针对不支持跨平台的HMS API或者组件，参考[如何实现平台差异化(编译态、运行态)](https://gitcode.com/arkui-x/docs/blob/master/zh-cn/application-dev/tutorial/faq/Development-Stage/Dev-faq-9.md)。
