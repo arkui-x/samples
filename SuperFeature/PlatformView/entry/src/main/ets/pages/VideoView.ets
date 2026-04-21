@@ -15,19 +15,37 @@
 
 import { MainPageComponent } from 'effectkit';
 import PlatformView, { PlatformViewAttribute } from '@arkui-x.platformview';
+import { deviceInfo } from '@kit.BasicServicesKit';
 
 @Entry
 @Component
 struct Index {
   @State title: string = 'PlatformView VideoView'
+  private osFullNameInfo: string = '';
+
+  aboutToAppear(): void {
+    this.osFullNameInfo = deviceInfo.osFullName;
+  }
 
   build() {
     Row() {
       Column() {
         MainPageComponent()
+        if (this.osFullNameInfo.startsWith("OpenHarmony")) {
+          Video({
+            src: $rawfile('video.mp4')
+          })
+            .width('50%')
+            .height('50%')
+            .objectFit(ImageFit.Contain)
+            .autoPlay(true)
+        } else if (this.osFullNameInfo.startsWith("Android") ||
+        this.osFullNameInfo.startsWith("iOS") ||
+        this.osFullNameInfo.startsWith("iPadOS")) {
           PlatformView('VideoView')
-          .width(216)
-          .height(384)
+            .width(216)
+            .height(384)
+        }
       }
       .height('100%')
       .width('100%')
