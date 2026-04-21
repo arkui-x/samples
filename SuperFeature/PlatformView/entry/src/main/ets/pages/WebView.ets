@@ -15,17 +15,34 @@
 
 import { MainPageComponent } from 'effectkit';
 import PlatformView, { PlatformViewAttribute } from '@arkui-x.platformview';
+import webview from '@ohos.web.webview'
+import { deviceInfo } from '@kit.BasicServicesKit';
 
 @Entry
 @Component
 struct Index {
   @State title: string = 'PlatformView WebView'
+  controller: webview.WebviewController = new webview.WebviewController()
+  private osFullNameInfo: string = '';
+
+  aboutToAppear(): void {
+    this.osFullNameInfo = deviceInfo.osFullName;
+  }
 
   build() {
     Row() {
       Column() {
         MainPageComponent()
-        PlatformView('WebView')
+        if (this.osFullNameInfo.startsWith("OpenHarmony")) {
+          Web({ src: 'https://www.gitcode.com/arkui-x', controller: this.controller })
+            .width('100%')
+            .height('100%')
+            .domStorageAccess(true)
+        } else if (this.osFullNameInfo.startsWith("Android") ||
+        this.osFullNameInfo.startsWith("iOS") ||
+        this.osFullNameInfo.startsWith("iPadOS")) {
+          PlatformView('WebView')
+        }
       }
       .width('100%')
     }
