@@ -2,7 +2,7 @@
 
 ## 介绍
 
-本示例使用 PlatformView 功能（原生组件嵌入 ArkUI 界面中）在 ArkUI 界面中使用原生 Mapview , WebView 和 播放视频。
+本示例使用 PlatformView 功能（原生组件嵌入 ArkUI 界面中）在 ArkUI 界面中使用原生 Mapview , WebView 和 VideoView。
 
 ## 效果预览
 
@@ -22,7 +22,7 @@
 
 1.打开 app，主页面显示 MapView, WebView 和VideoView对应按钮。
 
-2.点击按钮进入对应界面，使用原生的 MapView , WebView 和VideoView 功能。
+2.点击按钮进入对应界面，加载原生的 MapView , WebView 和VideoView 功能。
 
 ## 工程目录
 
@@ -31,19 +31,19 @@
 |---android/app/src/main/java/com/example/platformview
 |   |---EntryEntryAbilityActivity.java	   			// Android侧注册PlatformViewFactory类
 |   |---MyPlatformViewFactory.java					// Android侧PlatformViewFactory接口实现
-|   |---MyMapView.java								// Android侧IPlatformView接口实现，使用原生地图组件
-|   |---MyWebView.java								// Android侧IPlatformView接口实现，使用原生WebView
-|   |---MyVideoView.java							// Android侧IPlatformView接口实现，使用原生播放视频
+|   |---MyMapView.java								// Android侧IPlatformView接口实现，加载原生MapView
+|   |---MyWebView.java								// Android侧IPlatformView接口实现，加载原生WebView
+|   |---MyVideoView.java							// Android侧IPlatformView接口实现，加载原生VideoView
 |---/ios/app
 |   |---EntryEntryAbilityActivity.m	         		// iOS侧注册PlatformViewFactory类
 |   |---MyPlatformViewFactory.h						// iOS侧PlatformViewFactory接口实现
 |   |---MyPlatformViewFactory.m						// iOS侧PlatformViewFactory接口实现
-|   |---MyMapView.h									// iOS侧IPlatformView接口实现，使用原生地图组件
-|   |---MyMapView.m									// iOS侧IPlatformView接口实现，使用原生地图组件
-|   |---MyWebView.h									// iOS侧IPlatformView接口实现，使用原生WebView
-|   |---MyWebView.m									// iOS侧IPlatformView接口实现，使用原生WebView
-|   |---MyVideoView.h								// iOS侧IPlatformView接口实现，使用原生播放视频
-|   |---MyVideoView.m								// iOS侧IPlatformView接口实现，使用原生播放视频
+|   |---MyMapView.h									// iOS侧IPlatformView接口实现，加载原生MapView
+|   |---MyMapView.m									// iOS侧IPlatformView接口实现，加载原生MapView
+|   |---MyWebView.h									// iOS侧IPlatformView接口实现，加载原生WebView
+|   |---MyWebView.m									// iOS侧IPlatformView接口实现，加载原生WebView
+|   |---MyVideoView.h								// iOS侧IPlatformView接口实现，加载原生ViedoView
+|   |---MyVideoView.m								// iOS侧IPlatformView接口实现，加载原生ViedoView
 entry/src/main/ets
 |---entryability
 |---pages
@@ -53,14 +53,14 @@ entry/src/main/ets
 |   |---MapShowController.ets                       // 鸿蒙高德地图实现
 |   |---MapView.ets									// arkui-x ets侧PlatformView-MapView实现
 |   |---WebView.ets									// arkui-x ets侧PlatformView-WebView实现
-|   |---VideoView.ets								// arkui-x ets侧PlatformView-VideoView
+|   |---VideoView.ets								// arkui-x ets侧PlatformView-VideoView实现
 ```
 
 ## 具体实现
 
 + 针对Map、Web、Video三种场景分别实现跨平台适配，iOS和Android上通过PlatfromView组件适配,加载iOS和Android的map、web和video组件。harmonyOS使用harmonyOS的map、web和video组件，完整演示三端适配开发案例。
 + PlatformView的实现是ets 侧创建 PlatformView 实例，确保 ID 唯一，用于区分原生组件。
-+ 平台侧实现 PlatformVIew 相关接口。
++ 平台侧实现 PlatformView 相关接口。
   + 新建一个实现 IPlatformView 接口的类，并实现 getView 、onDispose() 接口，同时完成原生组件的创建等相关操作。
   + 新建一个实现 PlatformViewFactory 接口的类，并实现 getPlatformView() 接口，根据 ID 创建 IPlatformView 对象。
 
