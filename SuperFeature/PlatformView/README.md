@@ -13,7 +13,9 @@
 | **iOS 平台**                                                 |                                                              |                                                              |                                                              |
 | 主页面展示效果                                               | PlatformView MapView 展示效果                                | PlatformView Webview 展示效果                                | PlatformView Videoview 展示效果                              |
 | <img src="./screenshots/ios_main.png" alt="ios_main" />      | <img src="./screenshots/ios_mapview.png" alt="ios_mapview" /> | <img src="./screenshots/ios_webview.png" alt="ios_webview" /> | <img src="./screenshots/ios_videoview.png" alt="ios_videoview" /> |
-
+| **harmonyOS 平台**                                                 |                                                              |                                                              |                                                              |
+| 主页面展示效果                                               | PlatformView MapView 展示效果                                | PlatformView Webview 展示效果                                | PlatformView Videoview 展示效果                              |
+| <img src="./screenshots/harmonyOS_main.jpg" alt="harmonyOS_main" />      | <img src="./screenshots/harmonyOS_mapview.jpg" alt="harmonyOS_mapview" /> | <img src="./screenshots/harmonyOS_webview.jpg" alt="harmonyOS_webview" /> | <img src="./screenshots/harmonyOS_videoview.jpg" alt="harmonyOS_videoview" /> |
 
 
 ### 使用说明
@@ -56,7 +58,7 @@ entry/src/main/ets
 
 ## 具体实现
 
-+ 针对Map、Web、Video三种场景分别实现跨平台适配，iOS和Android上通过PlatfromView组件适配。其中Map中增加了鸿蒙地图（包含鸿蒙系统地图和鸿蒙高德地图）的实现，完整演示三端适配开发案例。
++ 针对Map、Web、Video三种场景分别实现跨平台适配，iOS和Android上通过PlatfromView组件适配,加载iOS和Android的map、web和video组件。harmonyOS使用harmonyOS的map、web和video组件，完整演示三端适配开发案例。
 + PlatformView的实现是ets 侧创建 PlatformView 实例，确保 ID 唯一，用于区分原生组件。
 + 平台侧实现 PlatformVIew 相关接口。
   + 新建一个实现 IPlatformView 接口的类，并实现 getView 、onDispose() 接口，同时完成原生组件的创建等相关操作。
@@ -74,7 +76,7 @@ entry/src/main/ets
 
 ## 约束与限制
 
-1.本示例Web、Viedo仅支持标准 Android/iOS 上运行，Map支持 HarmonyOS/Android/iOS三端运行验证。
+1.本示例Web、Viedo、Map均支持 HarmonyOS/Android/iOS三端运行验证。
 
 2.本示例已适配 API version 14以上版本的 ArkUI-X SDK，需要配套 API version 14以上版本的 OpenHarmony SDK。
 
