@@ -14,11 +14,16 @@
  */
 
 import { TitleBar } from '../../../../common/TitleBar';
+import { KeyboardAvoidMode } from '@kit.ArkUI';
 
 @Entry
 @Component
 struct BindSheetSafeArea {
   @State isShow: boolean = true;
+
+  aboutToAppear(): void {
+    this.getUIContext()?.setKeyboardAvoidMode(KeyboardAvoidMode.RESIZE_WITH_CARET);
+  }
 
   @Builder
   myBuilder() {
@@ -34,6 +39,7 @@ struct BindSheetSafeArea {
 
   build() {
     Column() {
+      Blank().height(50)
       TitleBar({ title: $r('app.string.navigation_bindsheet_title') })
       Button("show bindSheet")
         .onClick(() => {
