@@ -129,6 +129,7 @@ export struct DetailsPage {
         .expandSafeArea([SafeAreaType.SYSTEM], [SafeAreaEdge.TOP, SafeAreaEdge.BOTTOM]) // 通过expandSafeArea属性支持组件不改变布局情况下扩展其绘制区域至安全区外。本例中设置全屏播放页背景图占满整个屏幕。
 
       Column() {
+        Blank(40)
         Row() {
           Image($r('app.media.miniplayeranimation_down_arrow'))
             .width($r('app.float.mini_player_animation_down_arrow_size'))
