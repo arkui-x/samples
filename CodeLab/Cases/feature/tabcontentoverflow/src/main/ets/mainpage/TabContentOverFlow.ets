@@ -60,7 +60,7 @@ export struct TabContentOverFlowComponent {
   }); // 设置拖动方向，只能左右拖动。
   private screenW: number = px2vp(display.getDefaultDisplaySync().width); // 获取设备宽度
   @StorageLink('avoidAreaBottomToModule') avoidAreaBottomToModule: number =
-    PlatformInfo.getPlatform() === PlatformTypeEnum.IOS ? 15 : 0;
+    PlatformInfo.getPlatform() === PlatformTypeEnum.IOS ? 102 : 0;
 
   aboutToAppear(): void {
     window.getLastWindow(getContext(this)).then((data: window.Window) => {
