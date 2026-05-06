@@ -39,9 +39,9 @@ export struct MultiColumnDisplayComponent {
   // 瀑布流数据个数
   dataCount: number = waterFlowData.length;
   // 双列时，图片较小的瀑布流子组件高度
-  private shortDisplayHeight: number = 155;
+  private shortDisplayHeight: number = 170;
   // 双列时，图片较大的瀑布流子组件高度
-  private highDisplayHeight: number = 256;
+  private highDisplayHeight: number = 271;
   // 瀑布流滚动控制器
   private scroller: Scroller = new Scroller();
   // 瀑布流容器里的图片元素组件的复用id和type

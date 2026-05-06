@@ -82,7 +82,6 @@ export struct TransitionAnimationPage {
       if (err.code !== 0) {
         return;
       }
-      data.setWindowSystemBarEnable(['status']);
     });
   }
 
