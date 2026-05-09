@@ -48,6 +48,10 @@
   | 可否复制     | 组件 文本与输入 Search 搜索框           | 不支持  | 不支持 |
   | 取色效果调整 | 通用 通用属性 图像效果 背景模糊取色类型 | 不支持  | 不支持 |
 
+- 以下案例存在部分功能限制支持。<br>
+
+  TextClock文字时钟，字体设置设为等宽数字时，部分手机预置字库不支持，可以使用支持等宽数字的自定义字库。使用自定义字库参考[自定义字库](https://gitcode.com/arkui-x/docs/blob/master/zh-cn/application-dev/tutorial/faq/Development-Stage/Dev-faq-19.md)。
+
   
 
 ## 具体实现
