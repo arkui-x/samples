@@ -55,6 +55,13 @@ struct TextClockSample {
   @State textShadows: ShadowOptions | Array<ShadowOptions> = [];
   controller: TextClockController = new TextClockController();
 
+  aboutToAppear(): void {
+    this.getUIContext().getFont().registerFont({
+      familyName: 'customFont',
+      familySrc: $rawfile('HarmonyOS_Sans.ttf')
+    })
+  }
+
   build() {
     Column() {
       TitleBar({ title: $r('app.string.text_clock') })
@@ -67,6 +74,7 @@ struct TextClockSample {
           .fontSize(30)
           .textShadow(this.textShadows)
           .fontFeature(this.fontFeature)
+          .fontFamily('customFont')
         Row() {
           Button($r('app.string.text_clock_start')).onClick(() => {
             this.controller.start()

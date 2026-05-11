@@ -132,6 +132,7 @@ Note:If the text contains special characters, please escape them according to th
                 <filteritem type="filepath" name="SuperFeature/PlatformBridge/.*.jpg" desc="运行结果截图"/>
                 <filteritem type="filepath" name="SuperFeature/DecoupledUIAndLogic/.*.png" desc="运行结果截图"/>
                 <filteritem type="filepath" name="SuperFeature/DecoupledUIAndLogic/.*.jpg" desc="运行结果截图"/>
+                <filteritem type="filepath" name="CodeLab/ArkTSComponentCollection/.*.ttf" desc="鸿蒙开放字库"/>				
             </filefilter>
             <filefilter name="copyrightPolicyFilter" desc="Copyright文件头校验策略的过滤条件" >
                 <filteritem type="filepath" name="SuperFeature/Animation/.*.ets|.*.ts" desc="示例展示无需添加版权头"/>
