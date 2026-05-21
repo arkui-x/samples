@@ -127,6 +127,10 @@
     {
       "name": "ImageDemo",
       "value": "ImageDemo"
+    },
+    {
+      "name": "I18nDemo",
+      "value": "I18nDemo"
     }
   ]
 }

@@ -351,6 +351,18 @@
           ]
         }
       ]
+    },
+    {
+      "name": "I18nDemo",
+      "srcPath": "./self_test/I18nDemo",
+      "targets": [
+        {
+          "name": "default",
+          "applyToProducts": [
+            "default"
+          ]
+        }
+      ]
     }
   ]
 }

@@ -27,6 +27,7 @@
     "CollectionsDemo",
     "FastBufferDemo",
     "UtilsDemo",
-    "ImageDemo"
+    "ImageDemo",
+    "I18nDemo"
   ]
 }

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EAE782105B364AA88E3B36E0 /* I18nDemoI18nDemoAbilityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 838AE0EA592647458D0F4EE2 /* I18nDemoI18nDemoAbilityViewController.m */; };
 		DC7BCD477CDF4964972070BC /* ImageDemoImageDemoAbilityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B7045D8231704F45A55CC23F /* ImageDemoImageDemoAbilityViewController.m */; };
 		0B7275696B9A46E6B8542024 /* FileApiFileApiAbilityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1A41EFB52C9445D9F628C5C /* FileApiFileApiAbilityViewController.m */; };
 		152384287B8B4EE1BBFB952E /* FastBufferDemoFastBufferDemoAbilityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EDB8976BB1894068A45D1242 /* FastBufferDemoFastBufferDemoAbilityViewController.m */; };
@@ -171,6 +172,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		C7528C67A74B451D9A7B71F4 /* I18nDemoI18nDemoAbilityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = I18nDemoI18nDemoAbilityViewController.h; sourceTree = "<group>"; };
+		838AE0EA592647458D0F4EE2 /* I18nDemoI18nDemoAbilityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = I18nDemoI18nDemoAbilityViewController.m; sourceTree = "<group>"; };
 		6E0E6992FA354F7F8DE9D2B9 /* ImageDemoImageDemoAbilityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageDemoImageDemoAbilityViewController.h; sourceTree = "<group>"; };
 		B7045D8231704F45A55CC23F /* ImageDemoImageDemoAbilityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageDemoImageDemoAbilityViewController.m; sourceTree = "<group>"; };
 		18ADF3C252B74EC9AA095A4A /* ModifierModifierAbilityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModifierModifierAbilityViewController.m; sourceTree = "<group>"; };
@@ -355,6 +358,8 @@
 		F0AF1ACF27D3684F008C55DD /* app */ = {
 			isa = PBXGroup;
 			children = (
+				C7528C67A74B451D9A7B71F4 /* I18nDemoI18nDemoAbilityViewController.h */,
+				838AE0EA592647458D0F4EE2 /* I18nDemoI18nDemoAbilityViewController.m */,
 				6E0E6992FA354F7F8DE9D2B9 /* ImageDemoImageDemoAbilityViewController.h */,
 				B7045D8231704F45A55CC23F /* ImageDemoImageDemoAbilityViewController.m */,
 				2A258B4CF1DC46CFA6071C12 /* UtilsDemoUtilsDemoAbilityViewController.h */,
@@ -562,6 +567,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EAE782105B364AA88E3B36E0 /* I18nDemoI18nDemoAbilityViewController.m in Sources */,
 				DC7BCD477CDF4964972070BC /* ImageDemoImageDemoAbilityViewController.m in Sources */,
 				559C019F7B8543109E552998 /* UtilsDemoUtilsDemoAbilityViewController.m in Sources */,
 				152384287B8B4EE1BBFB952E /* FastBufferDemoFastBufferDemoAbilityViewController.m in Sources */,
