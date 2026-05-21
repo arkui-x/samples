@@ -123,6 +123,10 @@
     {
       "name": "UtilsDemo",
       "value": "UtilsDemo"
+    },
+    {
+      "name": "ImageDemo",
+      "value": "ImageDemo"
     }
   ]
 }

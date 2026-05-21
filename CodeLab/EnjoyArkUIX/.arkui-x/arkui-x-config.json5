@@ -26,6 +26,7 @@
     "TaskPoolDemo",
     "CollectionsDemo",
     "FastBufferDemo",
-    "UtilsDemo"
+    "UtilsDemo",
+    "ImageDemo"
   ]
 }

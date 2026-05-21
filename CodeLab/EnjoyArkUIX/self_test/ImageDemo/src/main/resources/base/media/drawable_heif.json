@@ -1,0 +1,7 @@
+{
+  "layered_image":
+  {
+    "background" : "$media:background_heif",
+    "foreground" : "$media:1cut_heif"
+  }
+}

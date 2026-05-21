@@ -339,6 +339,18 @@
           ]
         }
       ]
+    },
+    {
+      "name": "ImageDemo",
+      "srcPath": "./self_test/ImageDemo",
+      "targets": [
+        {
+          "name": "default",
+          "applyToProducts": [
+            "default"
+          ]
+        }
+      ]
     }
   ]
 }

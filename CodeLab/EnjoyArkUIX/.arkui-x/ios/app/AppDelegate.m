@@ -37,6 +37,7 @@
 #import "CollectionsDemoCollectionsDemoAbilityViewController.h"
 #import "FastBufferDemoFastBufferDemoAbilityViewController.h"
 #import "UtilsDemoUtilsDemoAbilityViewController.h"
+#import "ImageDemoImageDemoAbilityViewController.h"
 #import <libarkui_ios/StageApplication.h>
 
 #define BUNDLE_DIRECTORY @"arkui-x"
@@ -187,6 +188,10 @@
         NSString *instanceName = [NSString stringWithFormat:@"%@:%@:%@",bundleName, moduleName, abilityName];
         UtilsDemoUtilsDemoAbilityViewController *otherVC = [[UtilsDemoUtilsDemoAbilityViewController alloc] initWithInstanceName:instanceName];
         subStageVC = (UtilsDemoUtilsDemoAbilityViewController *)otherVC;
+    } else if ([moduleName isEqualToString:@"ImageDemo"] && [abilityName isEqualToString:@"ImageDemoAbility"]) {
+        NSString *instanceName = [NSString stringWithFormat:@"%@:%@:%@",bundleName, moduleName, abilityName];
+        ImageDemoImageDemoAbilityViewController *otherVC = [[ImageDemoImageDemoAbilityViewController alloc] initWithInstanceName:instanceName];
+        subStageVC = (ImageDemoImageDemoAbilityViewController *)otherVC;
     } // other ViewController
     
     if (!subStageVC) {
