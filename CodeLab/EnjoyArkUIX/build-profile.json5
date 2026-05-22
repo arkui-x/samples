@@ -399,6 +399,18 @@
           ]
         }
       ]
+    },
+    {
+      "name": "distributedKVStoreDemo",
+      "srcPath": "./self_test/distributedKVStoreDemo",
+      "targets": [
+        {
+          "name": "default",
+          "applyToProducts": [
+            "default"
+          ]
+        }
+      ]
     }
   ]
 }

@@ -42,6 +42,7 @@
 #import "HyperlinkDemoHyperlinkDemoAbilityViewController.h"
 #import "GraphicsTextDemoGraphicsTextDemoAbilityViewController.h"
 #import "WebSocketDemoWebSocketDemoAbilityViewController.h"
+#import "DistributedKVStoreDemoDistributedKVStoreDemoAbilityViewController.h"
 #import <libarkui_ios/StageApplication.h>
 
 #define BUNDLE_DIRECTORY @"arkui-x"
@@ -212,6 +213,10 @@
         NSString *instanceName = [NSString stringWithFormat:@"%@:%@:%@",bundleName, moduleName, abilityName];
         WebSocketDemoWebSocketDemoAbilityViewController *otherVC = [[WebSocketDemoWebSocketDemoAbilityViewController alloc] initWithInstanceName:instanceName];
         subStageVC = (WebSocketDemoWebSocketDemoAbilityViewController *)otherVC;
+    } else if ([moduleName isEqualToString:@"distributedKVStoreDemo"] && [abilityName isEqualToString:@"DistributedKVStoreDemoAbility"]) {
+        NSString *instanceName = [NSString stringWithFormat:@"%@:%@:%@",bundleName, moduleName, abilityName];
+        DistributedKVStoreDemoDistributedKVStoreDemoAbilityViewController *otherVC = [[DistributedKVStoreDemoDistributedKVStoreDemoAbilityViewController alloc] initWithInstanceName:instanceName];
+        subStageVC = (DistributedKVStoreDemoDistributedKVStoreDemoAbilityViewController *)otherVC;
     } // other ViewController
     
     if (!subStageVC) {

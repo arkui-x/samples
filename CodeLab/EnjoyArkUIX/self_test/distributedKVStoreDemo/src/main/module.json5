@@ -1,0 +1,36 @@
+{
+  "module": {
+    "name": "distributedKVStoreDemo",
+    "type": "feature",
+    "description": "$string:module_desc",
+    "mainElement": "DistributedKVStoreDemoAbility",
+    "deviceTypes": [
+      "default"
+    ],
+    "deliveryWithInstall": true,
+    "installationFree": false,
+    "pages": "$profile:main_pages",
+    "abilities": [
+      {
+        "name": "DistributedKVStoreDemoAbility",
+        "srcEntry": "./ets/distributedkvstoredemoability/DistributedKVStoreDemoAbility.ets",
+        "description": "$string:DistributedKVStoreDemoAbility_desc",
+        "icon": "$media:layered_image",
+        "label": "$string:DistributedKVStoreDemoAbility_label",
+        "startWindowIcon": "$media:startIcon",
+        "startWindowBackground": "$color:start_window_background",
+        "exported": true,
+        "skills": [
+          {
+            "entities": [
+              "entity.system.home"
+            ],
+            "actions": [
+              "ohos.want.action.home"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

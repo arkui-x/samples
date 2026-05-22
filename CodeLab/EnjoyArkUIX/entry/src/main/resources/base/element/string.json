@@ -143,6 +143,10 @@
     {
       "name": "WebSocketDemo",
       "value": "WebSocketDemo"
+    },
+    {
+      "name": "distributedKVStoreDemo",
+      "value": "distributedKVStoreDemo"
     }
   ]
 }

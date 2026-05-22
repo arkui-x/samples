@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BD7AB15E05794E71864B6B3C /* DistributedKVStoreDemoDistributedKVStoreDemoAbilityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DE444EF566C4B64AC586698 /* DistributedKVStoreDemoDistributedKVStoreDemoAbilityViewController.m */; };
 		BE8AF7F3F1024C0FA51D13A9 /* WebSocketDemoWebSocketDemoAbilityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 507CA1B96A294FF799BFAE5C /* WebSocketDemoWebSocketDemoAbilityViewController.m */; };
 		6612F32ED3664CB88611F9BC /* GraphicsTextDemoGraphicsTextDemoAbilityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FF3943B84CE4135B31CDD4D /* GraphicsTextDemoGraphicsTextDemoAbilityViewController.m */; };
 		D08A7F742DDA4AACBC6B808A /* HyperlinkDemoHyperlinkDemoAbilityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E508603575AD4CC3B3E7897E /* HyperlinkDemoHyperlinkDemoAbilityViewController.m */; };
@@ -175,6 +176,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		C3F38BE3464441F4B2046477 /* DistributedKVStoreDemoDistributedKVStoreDemoAbilityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DistributedKVStoreDemoDistributedKVStoreDemoAbilityViewController.h; sourceTree = "<group>"; };
+		0DE444EF566C4B64AC586698 /* DistributedKVStoreDemoDistributedKVStoreDemoAbilityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DistributedKVStoreDemoDistributedKVStoreDemoAbilityViewController.m; sourceTree = "<group>"; };
 		5D761346A2A84122A6E6D45A /* WebSocketDemoWebSocketDemoAbilityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebSocketDemoWebSocketDemoAbilityViewController.h; sourceTree = "<group>"; };
 		507CA1B96A294FF799BFAE5C /* WebSocketDemoWebSocketDemoAbilityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebSocketDemoWebSocketDemoAbilityViewController.m; sourceTree = "<group>"; };
 		F2BA267363424AF89E2F37C1 /* GraphicsTextDemoGraphicsTextDemoAbilityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GraphicsTextDemoGraphicsTextDemoAbilityViewController.h; sourceTree = "<group>"; };
@@ -367,6 +370,8 @@
 		F0AF1ACF27D3684F008C55DD /* app */ = {
 			isa = PBXGroup;
 			children = (
+				C3F38BE3464441F4B2046477 /* DistributedKVStoreDemoDistributedKVStoreDemoAbilityViewController.h */,
+				0DE444EF566C4B64AC586698 /* DistributedKVStoreDemoDistributedKVStoreDemoAbilityViewController.m */,
 				5D761346A2A84122A6E6D45A /* WebSocketDemoWebSocketDemoAbilityViewController.h */,
 				507CA1B96A294FF799BFAE5C /* WebSocketDemoWebSocketDemoAbilityViewController.m */,
 				F2BA267363424AF89E2F37C1 /* GraphicsTextDemoGraphicsTextDemoAbilityViewController.h */,
@@ -582,6 +587,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BD7AB15E05794E71864B6B3C /* DistributedKVStoreDemoDistributedKVStoreDemoAbilityViewController.m in Sources */,
 				BE8AF7F3F1024C0FA51D13A9 /* WebSocketDemoWebSocketDemoAbilityViewController.m in Sources */,
 				6612F32ED3664CB88611F9BC /* GraphicsTextDemoGraphicsTextDemoAbilityViewController.m in Sources */,
 				D08A7F742DDA4AACBC6B808A /* HyperlinkDemoHyperlinkDemoAbilityViewController.m in Sources */,

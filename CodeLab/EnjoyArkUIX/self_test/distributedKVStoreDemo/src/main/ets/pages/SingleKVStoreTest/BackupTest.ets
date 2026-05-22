@@ -1,0 +1,582 @@
+/*
+ * Copyright (c) 2025 Huawei Device Co., Ltd.
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+import distributedKVStore from '@ohos.data.distributedKVStore';
+import { common } from '@kit.AbilityKit';
+import { Router } from '@ohos.arkui.UIContext'
+import { BusinessError } from '@kit.BasicServicesKit';
+
+const context = AppStorage.get<common.UIAbilityContext>("EntryAbilityContext") as common.UIAbilityContext;
+const kvManagerConfig: distributedKVStore.KVManagerConfig = {
+  context: context,
+  bundleName: "com.example.distributedkvstoretest"
+}
+const maxKeyLength: number = 1024;  // MAX_KEY_LENGTH
+
+@Entry
+@Component
+struct BackupTest {
+  @State consoleInfo: string = "";
+
+  @State file_backup: string = "backupFile";
+  @State file_restore: string = "backupFile";
+  @State file_deleteBackup: string[] = ["backupFile"];
+
+  private kvManager: distributedKVStore.KVManager = distributedKVStore.createKVManager(kvManagerConfig);
+  private singleKVStore : distributedKVStore.SingleKVStore | undefined = undefined;
+  private router: Router = this.getUIContext().getRouter();
+  private uiContext: UIContext = this.getUIContext();
+
+  scroller: Scroller = new Scroller()
+  scroller2: Scroller = new Scroller()
+
+  build() {
+    Column() {
+      Row() { // 导航栏
+        Navigation() {
+        }
+        .height('100%')
+        .width('100%')
+        .hideBackButton(false)
+        .titleMode(NavigationTitleMode.Mini)
+        .title('备份相关测试')
+        .mode(NavigationMode.Stack);
+      } // 导航栏
+      .height(56)
+      .width('100%')
+      .onClick(async () => {
+        this.router.back();
+      });
+
+      Row() { //这一行放了返回之外的一整页
+        Column() {
+          // 结果显示
+          Column() {
+            Column() {
+              Scroll(this.scroller) {
+                Row({ space: 10 }) {
+                  Text("结果: " + this.consoleInfo)
+                    .fontSize(18)
+                    .margin({ top: 3 })
+                    .fontColor('#182431')
+                    .fontWeight(500);
+                }.width('100%')
+                .margin({ top: 5 });
+              }
+            }.justifyContent(FlexAlign.SpaceBetween).width('100%').margin({ top: 5 });
+          }
+          .height(120)
+          .width('100%')
+          .padding({ left: '3.35%', right: '3.35%' })
+          .backgroundColor(Color.White)
+          .margin({ bottom: 16 })
+          .borderRadius(24)
+
+          Column() { // 界面部分
+            Scroll(this.scroller2) {
+              Column() {
+                Button("创建数据库")
+                  .fontWeight(FontWeight.Bold)
+                  .onClick(async () => {
+                    try {
+                      let options: distributedKVStore.Options = {
+                        createIfMissing: true,
+                        kvStoreType: distributedKVStore.KVStoreType.SINGLE_VERSION,
+                        securityLevel: distributedKVStore.SecurityLevel.S3,
+                      };
+
+                      try {
+                        await this.kvManager.deleteKVStore("com.example.distributedkvstoretest", "backupTest");
+                      } catch (error) {}
+
+                      await this.kvManager.getKVStore("backupTest", options).then((data: distributedKVStore.SingleKVStore) => {
+                        if (data !== undefined) {
+                          this.singleKVStore = data;
+                          this.consoleInfo = "SingleKVStore创建成功";
+                          this.singleKVStore.put("key", "value")
+                        }
+                      }).catch((error: BusinessError) => {
+                        this.consoleInfo = `SingleKVStore创建失败，code: ${error.code}，message: ${error.message}`;
+                      })
+                    } catch (error) {
+                      this.consoleInfo = `SingleKVStore创建失败，code: ${error.code}，message: ${error.message}`;
+                    }
+                  }).margin({ bottom: 10 });
+
+                Button("关闭数据库")
+                  .fontWeight(FontWeight.Bold)
+                  .onClick(async () => {
+                    try {
+                      await this.kvManager.closeKVStore("com.example.distributedkvstoretest", "backupTest").then(() => {
+                        this.consoleInfo = "关闭成功";
+                      }).catch((error: BusinessError) => {
+                        this.consoleInfo = `关闭失败，code: ${error.code}，message: ${error.message}`;
+                      })
+                    } catch (error) {
+                      this.consoleInfo = `关闭失败，code: ${error.code}，message: ${error.message}`;
+                    }
+                  })
+                  .margin({ bottom: 10 })
+
+                Column() { // 参数设置区域一
+                  Column() {
+                    Row({ space: 10 }) {
+                      Text('backup的参数')
+                        .fontSize(18)
+                        .margin({ top: 3 })
+                        .fontColor('#182431')
+                        .fontWeight(500);
+                    }.width('100%')
+                    .margin({ top: 5 });
+
+                    // 参数选项
+                    Row() {
+                      Text("file: ")
+                        .fontWeight(FontWeight.Bold)
+                        .margin({ left: 8 })
+                        .backgroundColor('#F5F7FA')
+                        .borderRadius(24)
+
+                      Select([{ value: '"backupFile"' }, { value: '超长的字符串' }, { value: "\"\"" },
+                        { value: "null" }, { value: "undefined" }])
+                        .selected(0)
+                        .value('"backupFile"')
+                        .onSelect((index: number) => {
+                          switch (index) {
+                            case 0:
+                              this.file_backup = "backupFile"
+                              break
+                            case 1:
+                              this.file_backup = "s".repeat(maxKeyLength + 1);
+                              break
+                            case 2:
+                              this.file_backup = ""
+                              break
+                            case 3:
+                              this.file_backup = null!
+                              break
+                            case 4:
+                              this.file_backup = undefined!
+                              break
+                          }
+                        })
+                    }.margin({ top: 10, bottom: 10 }).justifyContent(FlexAlign.Center)
+
+                  }.justifyContent(FlexAlign.SpaceBetween).width('100%').margin({ top: 5 });
+                } // 参数设置区域一
+                .width('100%')
+                .padding({ left: '3.35%', right: '3.35%' })
+                .backgroundColor(Color.White)
+                .margin({ bottom: 16 })
+                .borderRadius(24)
+
+                Button("backup_Callback")
+                  .fontWeight(FontWeight.Bold)
+                  .onClick(async () => {
+                    try {
+                      if (this.singleKVStore !== undefined) {
+                        this.singleKVStore.backup(this.file_backup, (error: BusinessError) => {
+                          if (error) {
+                            this.consoleInfo = `备份失败，code: ${error.code}，message: ${error.message}`;
+                          } else {
+                            this.consoleInfo = "备份成功";
+                          }
+                        });
+                      }
+                    } catch (error) {
+                      this.consoleInfo = `备份失败，code: ${error.code}，message: ${error.message}`;
+                    }
+                  })
+                  .margin({ bottom: 10 });
+
+                Button("backup_Promise")
+                  .fontWeight(FontWeight.Bold)
+                  .onClick(async () => {
+                    try {
+                      if (this.singleKVStore !== undefined) {
+                        this.singleKVStore.backup(this.file_backup).then(() => {
+                          this.consoleInfo = "备份成功";
+                        }).catch((error: BusinessError) => {
+                          this.consoleInfo = `备份失败，code: ${error.code}，message: ${error.message}`;
+                        });
+                      }
+                    } catch (error) {
+                      this.consoleInfo = `备份失败，code: ${error.code}，message: ${error.message}`;
+                    }
+                  })
+                  .margin({ bottom: 10 });
+
+                Button("backup_Callback_Callback参数为null")
+                  .backgroundColor(Color.Orange)
+                  .fontWeight(FontWeight.Bold)
+                  .onClick(async () => {
+                    try {
+                      if (this.singleKVStore !== undefined) {
+                        this.singleKVStore.backup("backupFile", null);
+                        this.consoleInfo = `未抛出异常`;
+                      }
+                    } catch (error) {
+                      this.consoleInfo = `备份失败，code: ${error.code}，message: ${error.message}`;
+                    }
+                  })
+                  .margin({ bottom: 10 });
+
+                Button("backup_Callback_Callback参数为undefined")
+                  .backgroundColor(Color.Orange)
+                  .fontWeight(FontWeight.Bold)
+                  .onClick(async () => {
+                    try {
+                      if (this.singleKVStore !== undefined) {
+                        this.singleKVStore.backup("backupFile", undefined);
+                        this.consoleInfo = `未抛出异常`;
+                      }
+                    } catch (error) {
+                      this.consoleInfo = `备份失败，code: ${error.code}，message: ${error.message}`;
+                    }
+                  })
+                  .margin({ bottom: 10 });
+
+
+                Column() { // 参数设置区域二
+                  Column() {
+                    Row({ space: 10 }) {
+                      Text('restore的参数')
+                        .fontSize(18)
+                        .margin({ top: 3 })
+                        .fontColor('#182431')
+                        .fontWeight(500);
+                    }.width('100%')
+                    .margin({ top: 5 });
+
+                    // 参数选项
+                    Row() {
+                      Text("file: ")
+                        .fontWeight(FontWeight.Bold)
+                        .margin({ left: 8 })
+                        .backgroundColor('#F5F7FA')
+                        .borderRadius(24)
+
+                      Select([{ value: '"backupFile"' }, { value: '"abc"' }, { value: '超长的字符串' }, { value: "\"\"" },
+                        { value: "null" }, { value: "undefined" }])
+                        .selected(0)
+                        .value('"backupFile"')
+                        .onSelect((index: number) => {
+                          switch (index) {
+                            case 0:
+                              this.file_restore = "backupFile"
+                              break
+                            case 1:
+                              this.file_restore = "abc"
+                              break
+                            case 2:
+                              this.file_restore = "s".repeat(maxKeyLength + 1);
+                              break
+                            case 3:
+                              this.file_restore = ""
+                              break
+                            case 4:
+                              this.file_restore = null!
+                              break
+                            case 5:
+                              this.file_restore = undefined!
+                              break
+                          }
+                        })
+                    }.margin({ top: 10, bottom: 10 }).justifyContent(FlexAlign.Center)
+
+                  }.justifyContent(FlexAlign.SpaceBetween).width('100%').margin({ top: 5 });
+                } // 参数设置区域二
+                .width('100%')
+                .padding({ left: '3.35%', right: '3.35%' })
+                .backgroundColor(Color.White)
+                .margin({ bottom: 16 })
+                .borderRadius(24)
+
+                Button("restore_Callback")
+                  .fontWeight(FontWeight.Bold)
+                  .onClick(async () => {
+                    try {
+                      if (this.singleKVStore !== undefined) {
+                        this.singleKVStore.restore(this.file_restore, (error: BusinessError) => {
+                          if (error) {
+                            this.consoleInfo = `恢复失败，code: ${error.code}，message: ${error.message}`;
+                          } else {
+                            this.consoleInfo = "恢复成功";
+                          }
+                        });
+                      }
+                    } catch (error) {
+                      this.consoleInfo = `恢复失败，code: ${error.code}，message: ${error.message}`;
+                    }
+                  })
+                  .margin({ bottom: 10 });
+
+                Button("restore_Promise")
+                  .fontWeight(FontWeight.Bold)
+                  .onClick(async () => {
+                    try {
+                      if (this.singleKVStore !== undefined) {
+                        this.singleKVStore.restore(this.file_restore).then(() => {
+                          this.consoleInfo = "恢复成功";
+                        }).catch((error: BusinessError) => {
+                          this.consoleInfo = `恢复失败，code: ${error.code}，message: ${error.message}`;
+                        });
+                      }
+                    } catch (error) {
+                      this.consoleInfo = `恢复失败，code: ${error.code}，message: ${error.message}`;
+                    }
+                  })
+                  .margin({ bottom: 10 });
+
+                Button("restore_Callback_Callback参数为null")
+                  .backgroundColor(Color.Orange)
+                  .fontWeight(FontWeight.Bold)
+                  .onClick(async () => {
+                    try {
+                      if (this.singleKVStore !== undefined) {
+                        this.singleKVStore.restore("backupFile", null);
+                        this.consoleInfo = `未抛出异常`;
+                      }
+                    } catch (error) {
+                      this.consoleInfo = `恢复失败，code: ${error.code}，message: ${error.message}`;
+                    }
+                  })
+                  .margin({ bottom: 10 });
+
+                Button("restore_Callback_Callback参数为undefined")
+                  .backgroundColor(Color.Orange)
+                  .fontWeight(FontWeight.Bold)
+                  .onClick(async () => {
+                    try {
+                      if (this.singleKVStore !== undefined) {
+                        this.singleKVStore.restore("backupFile", undefined);
+                        this.consoleInfo = `未抛出异常`;
+                      }
+                    } catch (error) {
+                      this.consoleInfo = `恢复失败，code: ${error.code}，message: ${error.message}`;
+                    }
+                  })
+                  .margin({ bottom: 10 });
+
+                Column() { // 参数设置区域三
+                  Column() {
+                    Row({ space: 10 }) {
+                      Text('deleteBackup的参数')
+                        .fontSize(18)
+                        .margin({ top: 3 })
+                        .fontColor('#182431')
+                        .fontWeight(500);
+                    }.width('100%')
+                    .margin({ top: 5 });
+
+                    // 参数选项
+                    Row() {
+                      Text("file: ")
+                        .fontWeight(FontWeight.Bold)
+                        .margin({ left: 8 })
+                        .backgroundColor('#F5F7FA')
+                        .borderRadius(24)
+
+                      Select([{ value: '["backupFile"]' }, { value: '["abc"]' }, { value: '[""]' }, { value: "[]" },
+                        { value: "null" }, { value: "undefined" }])
+                        .selected(0)
+                        .value('["backupFile"]')
+                        .onSelect((index: number) => {
+                          switch (index) {
+                            case 0:
+                              this.file_deleteBackup = ["backupFile"]
+                              break
+                            case 1:
+                              this.file_deleteBackup = ["abc"]
+                              break
+                            case 2:
+                              this.file_deleteBackup = [""];
+                              break
+                            case 3:
+                              this.file_deleteBackup = []
+                              break
+                            case 4:
+                              this.file_deleteBackup = null!
+                              break
+                            case 5:
+                              this.file_deleteBackup = undefined!
+                              break
+                          }
+                        })
+                    }.margin({ top: 10, bottom: 10 }).justifyContent(FlexAlign.Center)
+
+                  }.justifyContent(FlexAlign.SpaceBetween).width('100%').margin({ top: 5 });
+                } // 参数设置区域三
+                .width('100%')
+                .padding({ left: '3.35%', right: '3.35%' })
+                .backgroundColor(Color.White)
+                .margin({ bottom: 16 })
+                .borderRadius(24)
+
+                Button("deleteBackup_Callback")
+                  .fontWeight(FontWeight.Bold)
+                  .onClick(async () => {
+                    try {
+                      if (this.singleKVStore !== undefined) {
+                        this.singleKVStore.deleteBackup(this.file_deleteBackup, (error: BusinessError, data: [string, number][]) => {
+                          if (error) {
+                            this.consoleInfo = `删除失败，code: ${error.code}，message: ${error.message}`;
+                          } else {
+                            this.consoleInfo = `删除成功，删除的文件名: ${data[0][0]}，处理结果: ${data[0][1]}`;
+                          }
+                        });
+                      }
+                    } catch (error) {
+                      this.consoleInfo = `删除失败，code: ${error.code}，message: ${error.message}`;
+                    }
+                  })
+                  .margin({ bottom: 10 });
+
+                Button("deleteBackup_Promise")
+                  .fontWeight(FontWeight.Bold)
+                  .onClick(async () => {
+                    try {
+                      if (this.singleKVStore !== undefined) {
+                        this.singleKVStore.deleteBackup(this.file_deleteBackup).then((data: [string, number][]) => {
+                          this.consoleInfo = `删除成功，删除的文件名: ${data[0][0]}，处理结果: ${data[0][1]}`;
+                        }).catch((error: BusinessError) => {
+                          this.consoleInfo = `删除失败，code: ${error.code}，message: ${error.message}`;
+                        })
+                      }
+                    } catch (error) {
+                      this.consoleInfo = `删除失败，code: ${error.code}，message: ${error.message}`;
+                    }
+                  })
+                  .margin({ bottom: 10 });
+
+                Button("deleteBackup_Callback_Callback参数为null")
+                  .backgroundColor(Color.Orange)
+                  .fontWeight(FontWeight.Bold)
+                  .onClick(async () => {
+                    try {
+                      if (this.singleKVStore !== undefined) {
+                        this.singleKVStore.deleteBackup(["backupFile"], null);
+                        this.consoleInfo = `未抛出异常`;
+                      }
+                    } catch (error) {
+                      this.consoleInfo = `删除失败，code: ${error.code}，message: ${error.message}`;
+                    }
+                  })
+                  .margin({ bottom: 10 });
+
+                Button("deleteBackup_Callback_Callback参数为undefined")
+                  .backgroundColor(Color.Orange)
+                  .fontWeight(FontWeight.Bold)
+                  .onClick(async () => {
+                    try {
+                      if (this.singleKVStore !== undefined) {
+                        this.singleKVStore.deleteBackup(["backupFile"], undefined);
+                        this.consoleInfo = `未抛出异常`;
+                      }
+                    } catch (error) {
+                      this.consoleInfo = `删除失败，code: ${error.code}，message: ${error.message}`;
+                    }
+                  })
+                  .margin({ bottom: 10 });
+
+
+                Column() { // 数据插入区域
+                  Column() {
+                    Row({ space: 10 }) {
+                      Text('数据查看')
+                        .fontSize(20)
+                        .margin({ top: 3 })
+                        .fontColor('#182431')
+                        .fontWeight(500);
+                    }.width('100%')
+                    .margin({ top: 5 });
+
+                    // 按钮
+                    Row() {
+                      Button("删除数据")
+                        .fontWeight(FontWeight.Bold)
+                        .onClick(async () => {
+                          try {
+                            if (this.singleKVStore !== undefined) {
+                              await this.singleKVStore.delete("key").then(() => {
+                                this.consoleInfo = "删除成功";
+                              }).catch((error: BusinessError) => {
+                                this.consoleInfo = `删除失败，code: ${error.code}，message: ${error.message}`;
+                              });
+                            } else {
+                              this.consoleInfo = "请先创建数据库";
+                            }
+                          } catch (error) {
+                            this.consoleInfo = `数据插入失败，code: ${error.code}，message: ${error.message}`;
+                          }
+                        })
+                        .margin({ bottom: 10 })
+
+                      Button("查看数据库的数据")
+                        .fontWeight(FontWeight.Bold)
+                        .onClick(async () => {
+                          try {
+                            if (this.singleKVStore !== undefined) {
+                              await this.singleKVStore.getEntries("^").then((entries: distributedKVStore.Entry[]) => {
+                                let str = `共有${entries.length}条数据` + "\n";
+                                entries.forEach((value: distributedKVStore.Entry, index: number) => {
+                                  str += `${index + 1}. key: ${value.key}, value: ${value.value.value}` + "\n";
+                                });
+
+                                this.uiContext.showAlertDialog({
+                                  title: '数据库内容弹窗',
+                                  message: str,
+                                  primaryButton: {
+                                    value: '关闭',
+                                    backgroundColor: '#F5F7FA',
+                                    action: () => {}
+                                  },
+                                })
+                              }).catch((error: BusinessError) => {
+                                this.consoleInfo = `数据获取失败，code: ${error.code}，message: ${error.message}`;
+                              });
+                            } else {
+                              this.consoleInfo = "请先创建数据库";
+                            }
+                          } catch (error) {
+                            this.consoleInfo = `数据插入失败，code: ${error.code}，message: ${error.message}`;
+                          }
+                        })
+                        .margin({ bottom: 10 })
+                    }.margin({ top: 10 }).justifyContent(FlexAlign.Center)
+
+                  }.justifyContent(FlexAlign.SpaceBetween).width('100%').margin({ top: 5 });
+                } // 数据插入区域
+                .width('100%')
+                .padding({ left: '3.35%', right: '3.35%' })
+                .backgroundColor(Color.White)
+                .margin({ bottom: 16 })
+                .borderRadius(24)
+
+              }
+            }
+          }.height('75%') // 界面部分
+        }.width('100%').height('100%')
+
+      } // 整页
+      .width('100%')
+      .padding({ left: '3.35%', right: '3.35%' })
+      .margin({ bottom: 20 })
+      .borderRadius(24)
+    }
+    .width('100%')
+    .backgroundColor('#f1f3f5')
+  }
+}
