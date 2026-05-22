@@ -1,0 +1,26 @@
+{
+  "module": {
+    "name": "HyperlinkDemo",
+    "type": "feature",
+    "description": "$string:module_desc",
+    "mainElement": "HyperlinkDemoAbility",
+    "deviceTypes": [
+      "default"
+    ],
+    "deliveryWithInstall": true,
+    "installationFree": false,
+    "pages": "$profile:main_pages",
+    "abilities": [
+      {
+        "name": "HyperlinkDemoAbility",
+        "srcEntry": "./ets/hyperlinkdemoability/HyperlinkDemoAbility.ets",
+        "description": "$string:HyperlinkDemoAbility_desc",
+        "icon": "$media:layered_image",
+        "label": "$string:HyperlinkDemoAbility_label",
+        "startWindowIcon": "$media:startIcon",
+        "startWindowBackground": "$color:start_window_background",
+        "exported": true
+      }
+    ]
+  }
+}

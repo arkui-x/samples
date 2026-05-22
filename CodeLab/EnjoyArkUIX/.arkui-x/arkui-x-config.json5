@@ -28,6 +28,7 @@
     "FastBufferDemo",
     "UtilsDemo",
     "ImageDemo",
-    "I18nDemo"
+    "I18nDemo",
+    "HyperlinkDemo"
   ]
 }

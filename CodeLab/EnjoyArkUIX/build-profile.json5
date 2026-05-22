@@ -363,6 +363,18 @@
           ]
         }
       ]
+    },
+    {
+      "name": "HyperlinkDemo",
+      "srcPath": "./self_test/HyperlinkDemo",
+      "targets": [
+        {
+          "name": "default",
+          "applyToProducts": [
+            "default"
+          ]
+        }
+      ]
     }
   ]
 }

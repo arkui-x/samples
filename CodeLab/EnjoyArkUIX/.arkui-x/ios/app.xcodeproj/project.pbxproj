@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D08A7F742DDA4AACBC6B808A /* HyperlinkDemoHyperlinkDemoAbilityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E508603575AD4CC3B3E7897E /* HyperlinkDemoHyperlinkDemoAbilityViewController.m */; };
 		EAE782105B364AA88E3B36E0 /* I18nDemoI18nDemoAbilityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 838AE0EA592647458D0F4EE2 /* I18nDemoI18nDemoAbilityViewController.m */; };
 		DC7BCD477CDF4964972070BC /* ImageDemoImageDemoAbilityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B7045D8231704F45A55CC23F /* ImageDemoImageDemoAbilityViewController.m */; };
 		0B7275696B9A46E6B8542024 /* FileApiFileApiAbilityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1A41EFB52C9445D9F628C5C /* FileApiFileApiAbilityViewController.m */; };
@@ -172,6 +173,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		435D3EA07D594048996E221B /* HyperlinkDemoHyperlinkDemoAbilityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HyperlinkDemoHyperlinkDemoAbilityViewController.h; sourceTree = "<group>"; };
+		E508603575AD4CC3B3E7897E /* HyperlinkDemoHyperlinkDemoAbilityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HyperlinkDemoHyperlinkDemoAbilityViewController.m; sourceTree = "<group>"; };
 		C7528C67A74B451D9A7B71F4 /* I18nDemoI18nDemoAbilityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = I18nDemoI18nDemoAbilityViewController.h; sourceTree = "<group>"; };
 		838AE0EA592647458D0F4EE2 /* I18nDemoI18nDemoAbilityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = I18nDemoI18nDemoAbilityViewController.m; sourceTree = "<group>"; };
 		6E0E6992FA354F7F8DE9D2B9 /* ImageDemoImageDemoAbilityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageDemoImageDemoAbilityViewController.h; sourceTree = "<group>"; };
@@ -358,6 +361,8 @@
 		F0AF1ACF27D3684F008C55DD /* app */ = {
 			isa = PBXGroup;
 			children = (
+				435D3EA07D594048996E221B /* HyperlinkDemoHyperlinkDemoAbilityViewController.h */,
+				E508603575AD4CC3B3E7897E /* HyperlinkDemoHyperlinkDemoAbilityViewController.m */,
 				C7528C67A74B451D9A7B71F4 /* I18nDemoI18nDemoAbilityViewController.h */,
 				838AE0EA592647458D0F4EE2 /* I18nDemoI18nDemoAbilityViewController.m */,
 				6E0E6992FA354F7F8DE9D2B9 /* ImageDemoImageDemoAbilityViewController.h */,
@@ -567,6 +572,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D08A7F742DDA4AACBC6B808A /* HyperlinkDemoHyperlinkDemoAbilityViewController.m in Sources */,
 				EAE782105B364AA88E3B36E0 /* I18nDemoI18nDemoAbilityViewController.m in Sources */,
 				DC7BCD477CDF4964972070BC /* ImageDemoImageDemoAbilityViewController.m in Sources */,
 				559C019F7B8543109E552998 /* UtilsDemoUtilsDemoAbilityViewController.m in Sources */,

@@ -39,6 +39,7 @@
 #import "UtilsDemoUtilsDemoAbilityViewController.h"
 #import "ImageDemoImageDemoAbilityViewController.h"
 #import "I18nDemoI18nDemoAbilityViewController.h"
+#import "HyperlinkDemoHyperlinkDemoAbilityViewController.h"
 #import <libarkui_ios/StageApplication.h>
 
 #define BUNDLE_DIRECTORY @"arkui-x"
@@ -197,6 +198,10 @@
         NSString *instanceName = [NSString stringWithFormat:@"%@:%@:%@",bundleName, moduleName, abilityName];
         I18nDemoI18nDemoAbilityViewController *otherVC = [[I18nDemoI18nDemoAbilityViewController alloc] initWithInstanceName:instanceName];
         subStageVC = (I18nDemoI18nDemoAbilityViewController *)otherVC;
+    } else if ([moduleName isEqualToString:@"HyperlinkDemo"] && [abilityName isEqualToString:@"HyperlinkDemoAbility"]) {
+        NSString *instanceName = [NSString stringWithFormat:@"%@:%@:%@",bundleName, moduleName, abilityName];
+        HyperlinkDemoHyperlinkDemoAbilityViewController *otherVC = [[HyperlinkDemoHyperlinkDemoAbilityViewController alloc] initWithInstanceName:instanceName];
+        subStageVC = (HyperlinkDemoHyperlinkDemoAbilityViewController *)otherVC;
     } // other ViewController
     
     if (!subStageVC) {

@@ -1,0 +1,36 @@
+{
+  "string": [
+    {
+      "name": "module_desc",
+      "value": "module description"
+    },
+    {
+      "name": "HyperlinkDemoAbility_desc",
+      "value": "description"
+    },
+    {
+      "name": "HyperlinkDemoAbility_label",
+      "value": "label"
+    },
+    {
+      "name": "Test_001",
+      "value": "ResABcd1234中文!@#！@#￥%"
+    },
+    {
+      "name": "Test_002",
+      "value": ""
+    },
+    {
+      "name": "Test_003",
+      "value": "Resbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb"
+    },
+    {
+      "name": "Test_100",
+      "value": "http://hcl.baidu.com/"
+    },
+    {
+      "name": "Test_200",
+      "value": "https://www.gov.cn/"
+    }
+  ]
+}
