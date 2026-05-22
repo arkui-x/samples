@@ -1,0 +1,16 @@
+{
+  "string": [
+    {
+      "name": "module_desc",
+      "value": "module description"
+    },
+    {
+      "name": "WebSocketDemoAbility_desc",
+      "value": "description"
+    },
+    {
+      "name": "WebSocketDemoAbility_label",
+      "value": "label"
+    }
+  ]
+}

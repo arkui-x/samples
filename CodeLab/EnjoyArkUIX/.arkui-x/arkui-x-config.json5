@@ -30,6 +30,7 @@
     "ImageDemo",
     "I18nDemo",
     "HyperlinkDemo",
-    "GraphicsTextDemo"
+    "GraphicsTextDemo",
+    "WebSocketDemo"
   ]
 }

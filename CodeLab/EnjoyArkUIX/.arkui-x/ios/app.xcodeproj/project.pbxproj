@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BE8AF7F3F1024C0FA51D13A9 /* WebSocketDemoWebSocketDemoAbilityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 507CA1B96A294FF799BFAE5C /* WebSocketDemoWebSocketDemoAbilityViewController.m */; };
 		6612F32ED3664CB88611F9BC /* GraphicsTextDemoGraphicsTextDemoAbilityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FF3943B84CE4135B31CDD4D /* GraphicsTextDemoGraphicsTextDemoAbilityViewController.m */; };
 		D08A7F742DDA4AACBC6B808A /* HyperlinkDemoHyperlinkDemoAbilityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E508603575AD4CC3B3E7897E /* HyperlinkDemoHyperlinkDemoAbilityViewController.m */; };
 		EAE782105B364AA88E3B36E0 /* I18nDemoI18nDemoAbilityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 838AE0EA592647458D0F4EE2 /* I18nDemoI18nDemoAbilityViewController.m */; };
@@ -174,6 +175,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		5D761346A2A84122A6E6D45A /* WebSocketDemoWebSocketDemoAbilityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebSocketDemoWebSocketDemoAbilityViewController.h; sourceTree = "<group>"; };
+		507CA1B96A294FF799BFAE5C /* WebSocketDemoWebSocketDemoAbilityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebSocketDemoWebSocketDemoAbilityViewController.m; sourceTree = "<group>"; };
 		F2BA267363424AF89E2F37C1 /* GraphicsTextDemoGraphicsTextDemoAbilityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GraphicsTextDemoGraphicsTextDemoAbilityViewController.h; sourceTree = "<group>"; };
 		8FF3943B84CE4135B31CDD4D /* GraphicsTextDemoGraphicsTextDemoAbilityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GraphicsTextDemoGraphicsTextDemoAbilityViewController.m; sourceTree = "<group>"; };
 		435D3EA07D594048996E221B /* HyperlinkDemoHyperlinkDemoAbilityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HyperlinkDemoHyperlinkDemoAbilityViewController.h; sourceTree = "<group>"; };
@@ -364,6 +367,8 @@
 		F0AF1ACF27D3684F008C55DD /* app */ = {
 			isa = PBXGroup;
 			children = (
+				5D761346A2A84122A6E6D45A /* WebSocketDemoWebSocketDemoAbilityViewController.h */,
+				507CA1B96A294FF799BFAE5C /* WebSocketDemoWebSocketDemoAbilityViewController.m */,
 				F2BA267363424AF89E2F37C1 /* GraphicsTextDemoGraphicsTextDemoAbilityViewController.h */,
 				8FF3943B84CE4135B31CDD4D /* GraphicsTextDemoGraphicsTextDemoAbilityViewController.m */,
 				435D3EA07D594048996E221B /* HyperlinkDemoHyperlinkDemoAbilityViewController.h */,
@@ -577,6 +582,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BE8AF7F3F1024C0FA51D13A9 /* WebSocketDemoWebSocketDemoAbilityViewController.m in Sources */,
 				6612F32ED3664CB88611F9BC /* GraphicsTextDemoGraphicsTextDemoAbilityViewController.m in Sources */,
 				D08A7F742DDA4AACBC6B808A /* HyperlinkDemoHyperlinkDemoAbilityViewController.m in Sources */,
 				EAE782105B364AA88E3B36E0 /* I18nDemoI18nDemoAbilityViewController.m in Sources */,

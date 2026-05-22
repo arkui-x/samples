@@ -387,6 +387,18 @@
           ]
         }
       ]
+    },
+    {
+      "name": "WebSocketDemo",
+      "srcPath": "./self_test/WebSocketDemo",
+      "targets": [
+        {
+          "name": "default",
+          "applyToProducts": [
+            "default"
+          ]
+        }
+      ]
     }
   ]
 }

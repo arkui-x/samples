@@ -226,4 +226,14 @@ export const SELF_TEST: ThirdLevelCategory[] = [
     },
     platform: PlatformTypeEnum.SUPPORT_BOTH
   },
+  {
+    image: $r('app.media.ic_unselect_component'),
+    title: $r('app.string.WebSocketDemo'),
+    want: {
+      bundleName: 'com.example.enjoyarkuix',
+      moduleName: 'WebSocketDemo',
+      abilityName: 'WebSocketDemoAbility',
+    },
+    platform: PlatformTypeEnum.SUPPORT_BOTH
+  },
 ]

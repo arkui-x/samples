@@ -139,6 +139,10 @@
     {
       "name": "GraphicsTextDemo",
       "value": "GraphicsTextDemo"
+    },
+    {
+      "name": "WebSocketDemo",
+      "value": "WebSocketDemo"
     }
   ]
 }
