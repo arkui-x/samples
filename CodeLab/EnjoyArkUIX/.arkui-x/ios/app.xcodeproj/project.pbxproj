@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6612F32ED3664CB88611F9BC /* GraphicsTextDemoGraphicsTextDemoAbilityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FF3943B84CE4135B31CDD4D /* GraphicsTextDemoGraphicsTextDemoAbilityViewController.m */; };
 		D08A7F742DDA4AACBC6B808A /* HyperlinkDemoHyperlinkDemoAbilityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E508603575AD4CC3B3E7897E /* HyperlinkDemoHyperlinkDemoAbilityViewController.m */; };
 		EAE782105B364AA88E3B36E0 /* I18nDemoI18nDemoAbilityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 838AE0EA592647458D0F4EE2 /* I18nDemoI18nDemoAbilityViewController.m */; };
 		DC7BCD477CDF4964972070BC /* ImageDemoImageDemoAbilityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B7045D8231704F45A55CC23F /* ImageDemoImageDemoAbilityViewController.m */; };
@@ -173,6 +174,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		F2BA267363424AF89E2F37C1 /* GraphicsTextDemoGraphicsTextDemoAbilityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GraphicsTextDemoGraphicsTextDemoAbilityViewController.h; sourceTree = "<group>"; };
+		8FF3943B84CE4135B31CDD4D /* GraphicsTextDemoGraphicsTextDemoAbilityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GraphicsTextDemoGraphicsTextDemoAbilityViewController.m; sourceTree = "<group>"; };
 		435D3EA07D594048996E221B /* HyperlinkDemoHyperlinkDemoAbilityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HyperlinkDemoHyperlinkDemoAbilityViewController.h; sourceTree = "<group>"; };
 		E508603575AD4CC3B3E7897E /* HyperlinkDemoHyperlinkDemoAbilityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HyperlinkDemoHyperlinkDemoAbilityViewController.m; sourceTree = "<group>"; };
 		C7528C67A74B451D9A7B71F4 /* I18nDemoI18nDemoAbilityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = I18nDemoI18nDemoAbilityViewController.h; sourceTree = "<group>"; };
@@ -361,6 +364,8 @@
 		F0AF1ACF27D3684F008C55DD /* app */ = {
 			isa = PBXGroup;
 			children = (
+				F2BA267363424AF89E2F37C1 /* GraphicsTextDemoGraphicsTextDemoAbilityViewController.h */,
+				8FF3943B84CE4135B31CDD4D /* GraphicsTextDemoGraphicsTextDemoAbilityViewController.m */,
 				435D3EA07D594048996E221B /* HyperlinkDemoHyperlinkDemoAbilityViewController.h */,
 				E508603575AD4CC3B3E7897E /* HyperlinkDemoHyperlinkDemoAbilityViewController.m */,
 				C7528C67A74B451D9A7B71F4 /* I18nDemoI18nDemoAbilityViewController.h */,
@@ -572,6 +577,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6612F32ED3664CB88611F9BC /* GraphicsTextDemoGraphicsTextDemoAbilityViewController.m in Sources */,
 				D08A7F742DDA4AACBC6B808A /* HyperlinkDemoHyperlinkDemoAbilityViewController.m in Sources */,
 				EAE782105B364AA88E3B36E0 /* I18nDemoI18nDemoAbilityViewController.m in Sources */,
 				DC7BCD477CDF4964972070BC /* ImageDemoImageDemoAbilityViewController.m in Sources */,

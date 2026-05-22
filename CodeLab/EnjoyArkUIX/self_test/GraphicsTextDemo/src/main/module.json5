@@ -1,0 +1,26 @@
+{
+  "module": {
+    "name": "GraphicsTextDemo",
+    "type": "feature",
+    "description": "$string:module_desc",
+    "mainElement": "GraphicsTextDemoAbility",
+    "deviceTypes": [
+      "default"
+    ],
+    "deliveryWithInstall": true,
+    "installationFree": false,
+    "pages": "$profile:main_pages",
+    "abilities": [
+      {
+        "name": "GraphicsTextDemoAbility",
+        "srcEntry": "./ets/graphicstextdemoability/GraphicsTextDemoAbility.ets",
+        "description": "$string:GraphicsTextDemoAbility_desc",
+        "icon": "$media:layered_image",
+        "label": "$string:GraphicsTextDemoAbility_label",
+        "startWindowIcon": "$media:startIcon",
+        "startWindowBackground": "$color:start_window_background",
+        "exported": true
+      }
+    ]
+  }
+}

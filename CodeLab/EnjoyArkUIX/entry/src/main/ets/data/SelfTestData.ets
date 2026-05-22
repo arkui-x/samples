@@ -216,4 +216,14 @@ export const SELF_TEST: ThirdLevelCategory[] = [
     },
     platform: PlatformTypeEnum.SUPPORT_BOTH
   },
+  {
+    image: $r('app.media.ic_unselect_component'),
+    title: $r('app.string.GraphicsTextDemo'),
+    want: {
+      bundleName: 'com.example.enjoyarkuix',
+      moduleName: 'GraphicsTextDemo',
+      abilityName: 'GraphicsTextDemoAbility',
+    },
+    platform: PlatformTypeEnum.SUPPORT_BOTH
+  },
 ]

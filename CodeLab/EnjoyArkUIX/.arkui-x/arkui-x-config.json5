@@ -29,6 +29,7 @@
     "UtilsDemo",
     "ImageDemo",
     "I18nDemo",
-    "HyperlinkDemo"
+    "HyperlinkDemo",
+    "GraphicsTextDemo"
   ]
 }

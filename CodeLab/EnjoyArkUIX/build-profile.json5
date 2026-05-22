@@ -375,6 +375,18 @@
           ]
         }
       ]
+    },
+    {
+      "name": "GraphicsTextDemo",
+      "srcPath": "./self_test/GraphicsTextDemo",
+      "targets": [
+        {
+          "name": "default",
+          "applyToProducts": [
+            "default"
+          ]
+        }
+      ]
     }
   ]
 }
