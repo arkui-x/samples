@@ -13,8 +13,8 @@
  * limitations under the License.
  */
 
-#ifndef ImageDemoImageDemoAbilityViewController_h
-#define ImageDemoImageDemoAbilityViewController_h
+#ifndef IMAGEDEMO_ABILITY_VIEW_CONTROLLER_H
+#define IMAGEDEMO_ABILITY_VIEW_CONTROLLER_H
 #import <UIKit/UIKit.h>
 #import <libarkui_ios/StageViewController.h>
 @interface ImageDemoImageDemoAbilityViewController : StageViewController
@@ -22,4 +22,4 @@
 
 @end
 
-#endif /* ImageDemoImageDemoAbilityViewController_h */
+#endif /* IMAGEDEMO_ABILITY_VIEW_CONTROLLER_H */

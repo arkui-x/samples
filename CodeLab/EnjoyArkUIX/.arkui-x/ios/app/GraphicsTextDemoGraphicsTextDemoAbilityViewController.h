@@ -13,8 +13,8 @@
  * limitations under the License.
  */
 
-#ifndef GraphicsTextDemoGraphicsTextDemoAbilityViewController_h
-#define GraphicsTextDemoGraphicsTextDemoAbilityViewController_h
+#ifndef GRAPH_TEXTMO_ABILITY_VIEW_CONTROLLER_H
+#define GRAPH_TEXTMO_ABILITY_VIEW_CONTROLLER_H
 #import <UIKit/UIKit.h>
 #import <libarkui_ios/StageViewController.h>
 @interface GraphicsTextDemoGraphicsTextDemoAbilityViewController : StageViewController
@@ -22,4 +22,4 @@
 
 @end
 
-#endif /* GraphicsTextDemoGraphicsTextDemoAbilityViewController_h */
+#endif /* GRAPH_TEXTMO_ABILITY_VIEW_CONTROLLER_H */

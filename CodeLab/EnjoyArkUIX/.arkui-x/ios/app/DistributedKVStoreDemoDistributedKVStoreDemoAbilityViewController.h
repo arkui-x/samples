@@ -13,8 +13,8 @@
  * limitations under the License.
  */
 
-#ifndef DistributedKVStoreDemoDistributedKVStoreDemoAbilityViewController_h
-#define DistributedKVStoreDemoDistributedKVStoreDemoAbilityViewController_h
+#ifndef DISTRIBUTED_KV_STORE_DEMO_ABILITY_VIEW_CONTROLLER_H
+#define DISTRIBUTED_KV_STORE_DEMO_ABILITY_VIEW_CONTROLLER_H
 #import <UIKit/UIKit.h>
 #import <libarkui_ios/StageViewController.h>
 @interface DistributedKVStoreDemoDistributedKVStoreDemoAbilityViewController : StageViewController
@@ -22,4 +22,4 @@
 
 @end
 
-#endif /* DistributedKVStoreDemoDistributedKVStoreDemoAbilityViewController_h */
+#endif /* DISTRIBUTED_KV_STORE_DEMO_ABILITY_VIEW_CONTROLLER_H */

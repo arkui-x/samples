@@ -13,8 +13,8 @@
  * limitations under the License.
  */
 
-#ifndef I18nDemoI18nDemoAbilityViewController_h
-#define I18nDemoI18nDemoAbilityViewController_h
+#ifndef I18N_DEMO_I18N_DEMO_VIEW_CONTROLLER_H
+#define I18N_DEMO_I18N_DEMO_VIEW_CONTROLLER_H
 #import <UIKit/UIKit.h>
 #import <libarkui_ios/StageViewController.h>
 @interface I18nDemoI18nDemoAbilityViewController : StageViewController
@@ -22,4 +22,4 @@
 
 @end
 
-#endif /* I18nDemoI18nDemoAbilityViewController_h */
+#endif /* I18N_DEMO_I18N_DEMO_VIEW_CONTROLLER_H */

@@ -13,8 +13,8 @@
  * limitations under the License.
  */
 
-#ifndef HyperlinkDemoHyperlinkDemoAbilityViewController_h
-#define HyperlinkDemoHyperlinkDemoAbilityViewController_h
+#ifndef HYPERLINK_DEMO_ABILITY_VIEW_CONTROLLER_H
+#define HYPERLINK_DEMO_ABILITY_VIEW_CONTROLLER_H
 #import <UIKit/UIKit.h>
 #import <libarkui_ios/StageViewController.h>
 @interface HyperlinkDemoHyperlinkDemoAbilityViewController : StageViewController
@@ -22,4 +22,4 @@
 
 @end
 
-#endif /* HyperlinkDemoHyperlinkDemoAbilityViewController_h */
+#endif /* HYPERLINK_DEMO_ABILITY_VIEW_CONTROLLER_H */

@@ -13,8 +13,8 @@
  * limitations under the License.
  */
 
-#ifndef WebSocketDemoWebSocketDemoAbilityViewController_h
-#define WebSocketDemoWebSocketDemoAbilityViewController_h
+#ifndef WEB_SOCKET_DE_ABILITY_VIEW_CONTROLLER_H
+#define WEB_SOCKET_DE_ABILITY_VIEW_CONTROLLER_H
 #import <UIKit/UIKit.h>
 #import <libarkui_ios/StageViewController.h>
 @interface WebSocketDemoWebSocketDemoAbilityViewController : StageViewController
@@ -22,4 +22,4 @@
 
 @end
 
-#endif /* WebSocketDemoWebSocketDemoAbilityViewController_h */
+#endif /* WEB_SOCKET_DE_ABILITY_VIEW_CONTROLLER_H */
