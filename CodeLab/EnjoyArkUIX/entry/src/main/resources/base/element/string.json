@@ -123,6 +123,18 @@
     {
       "name": "UtilsDemo",
       "value": "UtilsDemo"
+    },
+    {
+      "name": "VidoDemo",
+      "value": "VidoDemo"
+    },
+    {
+      "name": "HighContrastDemo",
+      "value": "HighContrastDemo"
+    },
+    {
+      "name": "EnableHapticFeedbackDemo",
+      "value": "EnableHapticFeedbackDemo"
     }
   ]
 }

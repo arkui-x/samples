@@ -1,0 +1,30 @@
+{
+  "module": {
+    "name": "EnableHapticFeedbackDemo",
+    "type": "feature",
+    "description": "$string:module_desc",
+    "mainElement": "EnableHapticFeedbackDemoAbility",
+    "deviceTypes": [
+      "default"
+    ],
+    "deliveryWithInstall": true,
+    "installationFree": false,
+    "pages": "$profile:main_pages",
+    "requestPermissions": [
+      { "name": "ohos.permission.INTERNET" },
+      { "name": "ohos.permission.VIBRATE" }
+    ],
+    "abilities": [
+      {
+        "name": "EnableHapticFeedbackDemoAbility",
+        "srcEntry": "./ets/enablehapticfeedbackdemoability/EnableHapticFeedbackDemoAbility.ets",
+        "description": "$string:EnableHapticFeedbackDemoAbility_desc",
+        "icon": "$media:layered_image",
+        "label": "$string:EnableHapticFeedbackDemoAbility_label",
+        "startWindowIcon": "$media:startIcon",
+        "startWindowBackground": "$color:start_window_background",
+        "exported": true
+      }
+    ]
+  }
+}
