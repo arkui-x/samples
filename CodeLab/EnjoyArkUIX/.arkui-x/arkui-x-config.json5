@@ -26,6 +26,9 @@
     "TaskPoolDemo",
     "CollectionsDemo",
     "FastBufferDemo",
-    "UtilsDemo"
+    "UtilsDemo",
+    "VidoDemo",
+    "HighContrastDemo",
+    "EnableHapticFeedbackDemo"
   ]
 }

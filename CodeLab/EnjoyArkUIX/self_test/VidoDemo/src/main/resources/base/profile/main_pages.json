@@ -1,0 +1,10 @@
+{
+  "src": [
+    "pages/Index",
+    "pages/PlaybackRateTest",
+    "pages/PosterOptionsTest",
+    "pages/ShortcutKeyTest",
+    "pages/ResetTest",
+    "pages/FullScreenTest"
+  ]
+}

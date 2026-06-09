@@ -1,0 +1,36 @@
+{
+  "module": {
+    "name": "HighContrastDemo",
+    "type": "feature",
+    "description": "$string:module_desc",
+    "mainElement": "HighContrastDemoAbility",
+    "deviceTypes": [
+      "default"
+    ],
+    "deliveryWithInstall": true,
+    "installationFree": false,
+    "pages": "$profile:main_pages",
+    "abilities": [
+      {
+        "name": "HighContrastDemoAbility",
+        "srcEntry": "./ets/highcontrastdemoability/HighContrastDemoAbility.ets",
+        "description": "$string:HighContrastDemoAbility_desc",
+        "icon": "$media:layered_image",
+        "label": "$string:HighContrastDemoAbility_label",
+        "startWindowIcon": "$media:startIcon",
+        "startWindowBackground": "$color:start_window_background",
+        "exported": true,
+        "skills": [
+          {
+            "entities": [
+              "entity.system.home"
+            ],
+            "actions": [
+              "ohos.want.action.home"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

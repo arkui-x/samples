@@ -37,6 +37,9 @@
 #import "CollectionsDemoCollectionsDemoAbilityViewController.h"
 #import "FastBufferDemoFastBufferDemoAbilityViewController.h"
 #import "UtilsDemoUtilsDemoAbilityViewController.h"
+#import "VidoDemoVidoDemoAbilityViewController.h"
+#import "HighContrastDemoHighContrastDemoAbilityViewController.h"
+#import "EnableHapticFeedbackDemoEnableHapticFeedbackDemoAbilityViewController.h"
 #import <libarkui_ios/StageApplication.h>
 
 #define BUNDLE_DIRECTORY @"arkui-x"
@@ -187,6 +190,18 @@
         NSString *instanceName = [NSString stringWithFormat:@"%@:%@:%@",bundleName, moduleName, abilityName];
         UtilsDemoUtilsDemoAbilityViewController *otherVC = [[UtilsDemoUtilsDemoAbilityViewController alloc] initWithInstanceName:instanceName];
         subStageVC = (UtilsDemoUtilsDemoAbilityViewController *)otherVC;
+    } else if ([moduleName isEqualToString:@"VidoDemo"] && [abilityName isEqualToString:@"VidoDemoAbility"]) {
+        NSString *instanceName = [NSString stringWithFormat:@"%@:%@:%@",bundleName, moduleName, abilityName];
+        VidoDemoVidoDemoAbilityViewController *otherVC = [[VidoDemoVidoDemoAbilityViewController alloc] initWithInstanceName:instanceName];
+        subStageVC = (VidoDemoVidoDemoAbilityViewController *)otherVC;
+    } else if ([moduleName isEqualToString:@"HighContrastDemo"] && [abilityName isEqualToString:@"HighContrastDemoAbility"]) {
+        NSString *instanceName = [NSString stringWithFormat:@"%@:%@:%@",bundleName, moduleName, abilityName];
+        HighContrastDemoHighContrastDemoAbilityViewController *otherVC = [[HighContrastDemoHighContrastDemoAbilityViewController alloc] initWithInstanceName:instanceName];
+        subStageVC = (HighContrastDemoHighContrastDemoAbilityViewController *)otherVC;
+    } else if ([moduleName isEqualToString:@"EnableHapticFeedbackDemo"] && [abilityName isEqualToString:@"EnableHapticFeedbackDemoAbility"]) {
+        NSString *instanceName = [NSString stringWithFormat:@"%@:%@:%@",bundleName, moduleName, abilityName];
+        EnableHapticFeedbackDemoEnableHapticFeedbackDemoAbilityViewController *otherVC = [[EnableHapticFeedbackDemoEnableHapticFeedbackDemoAbilityViewController alloc] initWithInstanceName:instanceName];
+        subStageVC = (EnableHapticFeedbackDemoEnableHapticFeedbackDemoAbilityViewController *)otherVC;
     } // other ViewController
     
     if (!subStageVC) {

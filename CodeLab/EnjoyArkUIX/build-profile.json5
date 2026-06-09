@@ -339,6 +339,42 @@
           ]
         }
       ]
+    },
+    {
+      "name": "VidoDemo",
+      "srcPath": "./self_test/VidoDemo",
+      "targets": [
+        {
+          "name": "default",
+          "applyToProducts": [
+            "default"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "HighContrastDemo",
+      "srcPath": "./self_test/HighContrastDemo",
+      "targets": [
+        {
+          "name": "default",
+          "applyToProducts": [
+            "default"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "EnableHapticFeedbackDemo",
+      "srcPath": "./self_test/EnableHapticFeedbackDemo",
+      "targets": [
+        {
+          "name": "default",
+          "applyToProducts": [
+            "default"
+          ]
+        }
+      ]
     }
   ]
 }
