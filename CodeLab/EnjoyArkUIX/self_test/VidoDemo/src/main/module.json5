@@ -1,0 +1,26 @@
+{
+  "module": {
+    "name": "VidoDemo",
+    "type": "feature",
+    "description": "$string:module_desc",
+    "mainElement": "VidoDemoAbility",
+    "deviceTypes": [
+      "default"
+    ],
+    "deliveryWithInstall": true,
+    "installationFree": false,
+    "pages": "$profile:main_pages",
+    "abilities": [
+      {
+        "name": "VidoDemoAbility",
+        "srcEntry": "./ets/vidodemoability/VidoDemoAbility.ets",
+        "description": "$string:VidoDemoAbility_desc",
+        "icon": "$media:layered_image",
+        "label": "$string:VidoDemoAbility_label",
+        "startWindowIcon": "$media:startIcon",
+        "startWindowBackground": "$color:start_window_background",
+        "exported": true
+      }
+    ]
+  }
+}

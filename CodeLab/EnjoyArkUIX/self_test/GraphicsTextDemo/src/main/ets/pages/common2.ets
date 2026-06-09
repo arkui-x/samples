@@ -17,11 +17,6 @@ import { drawing, text } from '@kit.ArkGraphics2D'
 import { image } from '@kit.ImageKit'
 import { TitleBar } from './title';
 
-let fontCollection = text.FontCollection.getGlobalInstance();
-fontCollection.loadFontSync('cc', $rawfile("ComingSoon.ttf"));
-let fontFamilies: Array<string> = ["cc"];
-
-
 let myFontFeature: text.FontFeature = {
   name: 'frac',
   value: 900
@@ -141,39 +136,8 @@ let textStylered2: text.TextStyle = {
   },
   fontSize: 10,
   fontWeight: text.FontWeight.W100,
-  fontFamilies: fontFamilies
+  fontFamilies: ['cc']
 };
-
-let paragraphBuilder = new text.ParagraphBuilder(paragraphStyle, fontCollection);
-paragraphBuilder.addText("12\t345\n");
-
-
-// 第 1 块：1/2
-paragraphBuilder.pushStyle(textStyleGray);
-paragraphBuilder.addText('1/2\n');
-paragraphBuilder.popStyle();
-
-// 第 2 块：myFontVariation（换行）
-paragraphBuilder.pushStyle(textStylegreen);
-paragraphBuilder.addText('FontVariation\n'); // ← 强制换行
-paragraphBuilder.popStyle();
-
-// 第 3 块：backgroundRect（再换行）
-paragraphBuilder.pushStyle(textStylered);
-paragraphBuilder.addText('backgroundRect\n');
-paragraphBuilder.popStyle();
-
-
-paragraphBuilder.pushStyle(textStylered2);
-paragraphBuilder.addText('ABCDZX中文1234\n');
-
-// 第 4 块：textShadows（再换行）
-paragraphBuilder.pushStyle(textStylegreen1);
-paragraphBuilder.addText('textShadows\n');
-paragraphBuilder.popStyle();
-
-
-// 可选：占位符做「段间距」
 let myPlaceholderSpan: text.PlaceholderSpan = {
   width: 200,
   height: 10,
@@ -182,34 +146,67 @@ let myPlaceholderSpan: text.PlaceholderSpan = {
   baselineOffset: 0
 };
 
-paragraphBuilder.addPlaceholder(myPlaceholderSpan);
-
-let paragraph = paragraphBuilder.build();
-
-function textFunc(pixelmap: PixelMap) {
-  console.info('textFunc begin')
-  let canvas = new drawing.Canvas(pixelmap);
-  paragraph.paint(canvas, 30, 50);
-}
-
 @Entry
 @Component
 struct TestParagraphBuilder {
   @State content: string = "默认字体"
   @State pixelmap?: PixelMap = undefined;
-  fun: Function = textFunc;
   @State msg: string = "Test_Graphics_Text"
+  private fontCollection: text.FontCollection = new text.FontCollection();
+  private paragraph?: text.Paragraph = undefined;
+
+  private buildParagraph(): text.Paragraph {
+    let paragraphBuilder = new text.ParagraphBuilder(paragraphStyle, this.fontCollection);
+    paragraphBuilder.addText("12\t345\n");
+
+    // 第 1 块：1/2
+    paragraphBuilder.pushStyle(textStyleGray);
+    paragraphBuilder.addText('1/2\n');
+    paragraphBuilder.popStyle();
+
+    // 第 2 块：myFontVariation（换行）
+    paragraphBuilder.pushStyle(textStylegreen);
+    paragraphBuilder.addText('FontVariation\n');
+    paragraphBuilder.popStyle();
+
+    // 第 3 块：backgroundRect（再换行）
+    paragraphBuilder.pushStyle(textStylered);
+    paragraphBuilder.addText('backgroundRect\n');
+    paragraphBuilder.popStyle();
+
+    paragraphBuilder.pushStyle(textStylered2);
+    paragraphBuilder.addText('ABCDZX中文1234\n');
+
+    // 第 4 块：textShadows（再换行）
+    paragraphBuilder.pushStyle(textStylegreen1);
+    paragraphBuilder.addText('textShadows\n');
+    paragraphBuilder.popStyle();
+
+    paragraphBuilder.addPlaceholder(myPlaceholderSpan);
+    return paragraphBuilder.build();
+  }
+
+  private drawParagraph(pixelmap: PixelMap) {
+    if (!this.paragraph) {
+      return;
+    }
+    console.info('textFunc begin')
+    let canvas = new drawing.Canvas(pixelmap);
+    this.paragraph.paint(canvas, 30, 50);
+  }
 
   async prepareLayoutPromise() {
-    paragraph.layoutSync(200);
+    this.paragraph = this.buildParagraph();
+    this.paragraph.layoutSync(200);
   }
 
   aboutToAppear() {
+    this.fontCollection.loadFontSync('cc', $rawfile("ComingSoon.ttf"));
     this.prepareLayoutPromise();
   }
 
   aboutToDisappear() {
-    fontCollection.unloadFontSync("cc")
+    this.fontCollection.unloadFontSync("cc")
   }
 
   build() {
@@ -230,7 +227,7 @@ struct TestParagraphBuilder {
               if (this.pixelmap == undefined) {
                 this.pixelmap = image.createPixelMapSync(color, opts);
               }
-              this.fun(this.pixelmap);
+              this.drawParagraph(this.pixelmap);
             })
         }
       }

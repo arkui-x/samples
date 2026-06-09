@@ -1,0 +1,15 @@
+{
+  "src": [
+    "pages/Index",
+    "pages/Picker",
+    "pages/Slider",
+    "pages/Text",
+    "pages/Web",
+    "pages/AlphabetIndexer",
+    "pages/Drag",
+    "pages/uipicker",
+    "pages/CommonBindContextMenu",
+    "pages/RicheditorContextMenu",
+    "pages/WebBindContextMenu"
+  ]
+}

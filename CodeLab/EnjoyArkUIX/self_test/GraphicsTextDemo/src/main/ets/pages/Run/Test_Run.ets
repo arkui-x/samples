@@ -58,6 +58,16 @@ struct TestRun {
   aboutToDisappear() {
     fontCollection.unloadFontSync("HarmonyOS_Sans_SC_Light")
   }
+
+  getGlyphRunsSafely() {
+    const lines = this.paragraph.getTextLines();
+    if (lines.length === 0) {
+      console.error(this.msg + " no text lines");
+      return [];
+    }
+    return lines[0].getGlyphRuns();
+  }
+
   build() {
     Column() {
       Scroll() {
@@ -85,8 +95,10 @@ struct TestRun {
                 { editable: true, pixelFormat: 3, size: { height: 200, width: 200 } }
               this.pixelmap = image.createPixelMapSync(color, opts);
               let canvas = new drawing.Canvas(this.pixelmap);
-              const lines = this.paragraph.getTextLines();
-              const GlyphRuns = lines[0].getGlyphRuns();
+              const GlyphRuns = this.getGlyphRunsSafely();
+              if (GlyphRuns.length === 0) {
+                return;
+              }
               GlyphRuns[0].paint(canvas, 0, 0);
             })
 
@@ -96,8 +108,7 @@ struct TestRun {
               .margin(5).width('40%').height(30)
 
               .onClick(() => {
-                let lines = this.paragraph.getTextLines();
-                let GlyphRuns = lines[0].getGlyphRuns();
+                const GlyphRuns = this.getGlyphRunsSafely();
                 if (GlyphRuns.length === 0) {
                   console.error(this.msg + " no text Runs");
                   return;
@@ -110,8 +121,7 @@ struct TestRun {
               .margin(5).width('40%').height(30)
 
               .onClick(() => {
-                const lines = this.paragraph.getTextLines();
-                const GlyphRuns = lines[0].getGlyphRuns();
+                const GlyphRuns = this.getGlyphRunsSafely();
                 if (GlyphRuns.length === 0) {
                   console.error(this.msg + " no text Runs");
                   return;
@@ -125,8 +135,7 @@ struct TestRun {
           Button("getGlyphs({start: 0, end: 1})")
             .margin(5).width('80%').height(30)
             .onClick(() => {
-              const lines = this.paragraph.getTextLines();
-              const GlyphRuns = lines[0].getGlyphRuns();
+              const GlyphRuns = this.getGlyphRunsSafely();
               if (GlyphRuns.length === 0) {
                 console.error(this.msg + " no text Runs");
                 return;
@@ -138,8 +147,7 @@ struct TestRun {
           Button("getGlyphs({start:0, end:-10})")
             .margin(5).width('80%').height(30)
             .onClick(() => {
-              const lines = this.paragraph.getTextLines();
-              const GlyphRuns = lines[0].getGlyphRuns();
+              const GlyphRuns = this.getGlyphRunsSafely();
               if (GlyphRuns.length === 0) {
                 console.error(this.msg + " no text Runs");
                 return;
@@ -152,8 +160,7 @@ struct TestRun {
           Button("getGlyphs({ start: -1, end: 2 })")
             .margin(5).width('80%').height(30)
             .onClick(() => {
-              const lines = this.paragraph.getTextLines();
-              const GlyphRuns = lines[0].getGlyphRuns();
+              const GlyphRuns = this.getGlyphRunsSafely();
               if (GlyphRuns.length === 0) {
                 console.error(this.msg + " no text Runs");
                 return;
@@ -165,8 +172,7 @@ struct TestRun {
             Button("getGlyphs(null)")
               .margin(5).width('40%').height(30)
               .onClick(() => {
-                const lines = this.paragraph.getTextLines();
-                const GlyphRuns = lines[0].getGlyphRuns();
+                const GlyphRuns = this.getGlyphRunsSafely();
                 if (GlyphRuns.length === 0) {
                   console.error(this.msg + " no text Runs");
                   return;
@@ -178,8 +184,7 @@ struct TestRun {
             Button("getGlyphs(undefined)")
               .margin(5).width('40%').height(30)
               .onClick(() => {
-                const lines = this.paragraph.getTextLines();
-                const GlyphRuns = lines[0].getGlyphRuns();
+                const GlyphRuns = this.getGlyphRunsSafely();
 
                 if (GlyphRuns.length === 0) {
                   console.error(this.msg + " no text Runs");
@@ -194,8 +199,7 @@ struct TestRun {
             Button("getTextDirection")
               .width('40%').height(30)
               .onClick(() => {
-                const lines = this.paragraph.getTextLines();
-                const GlyphRuns = lines[0].getGlyphRuns();
+                const GlyphRuns = this.getGlyphRunsSafely();
                 if (GlyphRuns.length === 0) {
                   console.error(this.msg + " no text Runs");
                   return;
@@ -207,10 +211,9 @@ struct TestRun {
             Button("getPositions()")
               .margin(5).width('40%').height(30)
               .onClick(() => {
-                const lines = this.paragraph.getTextLines();
-                const GlyphRuns = lines[0].getGlyphRuns();
-                if (lines.length === 0) {
-                  console.error(this.msg + " no text lines");
+                const GlyphRuns = this.getGlyphRunsSafely();
+                if (GlyphRuns.length === 0) {
+                  console.error(this.msg + " no text Runs");
                   return;
                 }
                 const Positions = GlyphRuns[0].getPositions();
@@ -222,8 +225,7 @@ struct TestRun {
           Button("getPositions({ start: 1, end: 2 })")
             .margin(5).width('80%').height(30)
             .onClick(() => {
-              const lines = this.paragraph.getTextLines();
-              const GlyphRuns = lines[0].getGlyphRuns();
+              const GlyphRuns = this.getGlyphRunsSafely();
 
               if (GlyphRuns.length === 0) {
                 console.error(this.msg + " no text Runs");
@@ -236,8 +238,7 @@ struct TestRun {
           Button("getPositions({ start: -1, end: 2 })")
             .margin(5).width('80%').height(30)
             .onClick(() => {
-              const lines = this.paragraph.getTextLines();
-              const GlyphRuns = lines[0].getGlyphRuns();
+              const GlyphRuns = this.getGlyphRunsSafely();
 
               if (GlyphRuns.length === 0) {
                 console.error(this.msg + " no text Runs");
@@ -250,8 +251,7 @@ struct TestRun {
           Button("getPositions({ start: 0, end: -10 })")
             .margin(5).width('80%').height(30)
             .onClick(() => {
-              const lines = this.paragraph.getTextLines();
-              const GlyphRuns = lines[0].getGlyphRuns();
+              const GlyphRuns = this.getGlyphRunsSafely();
 
               if (GlyphRuns.length === 0) {
                 console.error(this.msg + " no text Runs");
@@ -264,8 +264,7 @@ struct TestRun {
             Button("getPositions(null)")
               .margin(5).width('40%').height(30)
               .onClick(() => {
-                const lines = this.paragraph.getTextLines();
-                const GlyphRuns = lines[0].getGlyphRuns();
+                const GlyphRuns = this.getGlyphRunsSafely();
 
                 if (GlyphRuns.length === 0) {
                   console.error(this.msg + " no text Runs");
@@ -278,8 +277,7 @@ struct TestRun {
             Button("getPositions(undefined)")
               .margin(5).width('40%').height(30)
               .onClick(() => {
-                const lines = this.paragraph.getTextLines();
-                const GlyphRuns = lines[0].getGlyphRuns();
+                const GlyphRuns = this.getGlyphRunsSafely();
 
                 if (GlyphRuns.length === 0) {
                   console.error(this.msg + " no text Runs");
@@ -295,8 +293,7 @@ struct TestRun {
               .margin(5).height(30)
               .width('40%')
               .onClick(() => {
-                const lines = this.paragraph.getTextLines();
-                const GlyphRuns = lines[0].getGlyphRuns();
+                const GlyphRuns = this.getGlyphRunsSafely();
 
                 if (GlyphRuns.length === 0) {
                   console.error(this.msg + " no text Runs");
@@ -309,8 +306,7 @@ struct TestRun {
             Button("getFont")
               .margin(5).width('40%').height(30)
               .onClick(() => {
-                const lines = this.paragraph.getTextLines();
-                const GlyphRuns = lines[0].getGlyphRuns();
+                const GlyphRuns = this.getGlyphRunsSafely();
                 if (GlyphRuns.length === 0) {
                   console.error(this.msg + " no text Runs");
                   return;
@@ -325,8 +321,7 @@ struct TestRun {
               .margin(5).width('40%').height(30)
 
               .onClick(() => {
-                const lines = this.paragraph.getTextLines();
-                const GlyphRuns = lines[0].getGlyphRuns();
+                const GlyphRuns = this.getGlyphRunsSafely();
                 if (GlyphRuns.length === 0) {
                   console.error(this.msg + " no text Runs");
                   return;
@@ -341,8 +336,7 @@ struct TestRun {
               .margin(5).width('40%').height(30)
 
               .onClick(() => {
-                const lines = this.paragraph.getTextLines();
-                const GlyphRuns = lines[0].getGlyphRuns();
+                const GlyphRuns = this.getGlyphRunsSafely();
                 if (GlyphRuns.length === 0) {
                   console.error(this.msg + " no text Runs");
                   return;
@@ -356,8 +350,7 @@ struct TestRun {
           Button("getStringIndices({start:1, end:2})")
             .margin(5).width('80%').height(30)
             .onClick(() => {
-              const lines = this.paragraph.getTextLines();
-              const GlyphRuns = lines[0].getGlyphRuns();
+              const GlyphRuns = this.getGlyphRunsSafely();
               if (GlyphRuns.length === 0) {
                 console.error(this.msg + " no text Runs");
                 return;
@@ -369,8 +362,7 @@ struct TestRun {
           Button("getStringIndices({start:-1, end:2})")
             .margin(5).width('80%').height(30)
             .onClick(() => {
-              const lines = this.paragraph.getTextLines();
-              const GlyphRuns = lines[0].getGlyphRuns();
+              const GlyphRuns = this.getGlyphRunsSafely();
               if (GlyphRuns.length === 0) {
                 console.error(this.msg + " no text Runs");
                 return;
@@ -387,8 +379,7 @@ struct TestRun {
           Button("getStringIndices({start:0, end:-10})")
             .margin(5).width('80%').height(30)
             .onClick(() => {
-              const lines = this.paragraph.getTextLines();
-              const GlyphRuns = lines[0].getGlyphRuns();
+              const GlyphRuns = this.getGlyphRunsSafely();
               if (GlyphRuns.length === 0) {
                 console.error(this.msg + " no text Runs");
                 return;
@@ -404,8 +395,7 @@ struct TestRun {
           Button("getStringIndices(null)")
             .margin(5).width('80%').height(30)
             .onClick(() => {
-              const lines = this.paragraph.getTextLines();
-              const GlyphRuns = lines[0].getGlyphRuns();
+              const GlyphRuns = this.getGlyphRunsSafely();
               if (GlyphRuns.length === 0) {
                 console.error(this.msg + " no text Runs");
                 return;
@@ -417,8 +407,7 @@ struct TestRun {
           Button("getStringIndices(undefined)")
             .margin(5).width('80%').height(30)
             .onClick(() => {
-              const lines = this.paragraph.getTextLines();
-              const GlyphRuns = lines[0].getGlyphRuns();
+              const GlyphRuns = this.getGlyphRunsSafely();
               if (GlyphRuns.length === 0) {
                 console.error(this.msg + " no text Runs");
                 return;
@@ -434,8 +423,7 @@ struct TestRun {
           Button("getImageBounds")
             .margin(5).width('80%').height(30)
             .onClick(() => {
-              const lines = this.paragraph.getTextLines();
-              const GlyphRuns = lines[0].getGlyphRuns();
+              const GlyphRuns = this.getGlyphRunsSafely();
               if (GlyphRuns.length === 0) {
                 console.error(this.msg + " no text Runs");
                 return;
@@ -447,8 +435,7 @@ struct TestRun {
           Button("getTypographicBounds")
             .margin(5).width('80%').height(30)
             .onClick(() => {
-              const lines = this.paragraph.getTextLines();
-              const GlyphRuns = lines[0].getGlyphRuns();
+              const GlyphRuns = this.getGlyphRunsSafely();
               if (GlyphRuns.length === 0) {
                 console.error(this.msg + " no text Runs");
                 return;
@@ -460,8 +447,7 @@ struct TestRun {
           Button("getAdvances set:{ start: 1, end: 2 }")
             .margin(5).width('80%').height(30)
             .onClick(() => {
-              const lines = this.paragraph.getTextLines();
-              const GlyphRuns = lines[0].getGlyphRuns();
+              const GlyphRuns = this.getGlyphRunsSafely();
               if (GlyphRuns.length === 0) {
                 console.error(this.msg + " no text Runs");
                 return;
@@ -473,8 +459,7 @@ struct TestRun {
           Button("getAdvances({start:-1, end:2}) = undefined")
             .margin(5).width('80%').height(30)
             .onClick(() => {
-              const lines = this.paragraph.getTextLines();
-              const GlyphRuns = lines[0].getGlyphRuns();
+              const GlyphRuns = this.getGlyphRunsSafely();
               if (GlyphRuns.length === 0) {
                 console.error(this.msg + " no text Runs");
                 return;
@@ -486,8 +471,7 @@ struct TestRun {
           Button("getAdvances({start:0, end:-10}) = undefined")
             .margin(5).width('80%').height(30)
             .onClick(() => {
-              const lines = this.paragraph.getTextLines();
-              const GlyphRuns = lines[0].getGlyphRuns();
+              const GlyphRuns = this.getGlyphRunsSafely();
               if (GlyphRuns.length === 0) {
                 console.error(this.msg + " no text Runs");
                 return;
@@ -499,8 +483,7 @@ struct TestRun {
           Button("getAdvances(null) = undefined")
             .margin(5).width('80%').height(30)
             .onClick(() => {
-              const lines = this.paragraph.getTextLines();
-              const GlyphRuns = lines[0].getGlyphRuns();
+              const GlyphRuns = this.getGlyphRunsSafely();
               if (GlyphRuns.length === 0) {
                 console.error(this.msg + " no text Runs");
                 return;
@@ -512,8 +495,7 @@ struct TestRun {
           Button("getAdvances(undefined) = undefined")
             .margin(5).width('80%').height(30)
             .onClick(() => {
-              const lines = this.paragraph.getTextLines();
-              const GlyphRuns = lines[0].getGlyphRuns();
+              const GlyphRuns = this.getGlyphRunsSafely();
               if (GlyphRuns.length === 0) {
                 console.error(this.msg + " no text Runs");
                 return;

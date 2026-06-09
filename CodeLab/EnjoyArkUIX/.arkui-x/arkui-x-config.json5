@@ -33,5 +33,8 @@
     "GraphicsTextDemo",
     "WebSocketDemo",
     "distributedKVStoreDemo"
+    "VidoDemo",
+    "HighContrastDemo",
+    "EnableHapticFeedbackDemo"
   ]
 }

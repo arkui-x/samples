@@ -4,7 +4,6 @@ import { display, router } from '@kit.ArkUI'
 import { TitleBar } from './title';
 
 // ============  全局常量  ============
-const FONT_COLLECTION: text.FontCollection = new text.FontCollection()
 const MULTI_LANG_TEXT: Record<string, string> = {
   "en": 'This Is AVery Long English Word Without Any Space 中文长文本测试断行规则验证 ',
   "ko": '한 국어는개의음절을활용합니 다안녕하세요,만나서 반갑습니다!',
@@ -32,9 +31,6 @@ const LANG_FONT_MAP: Record<string, FontInfo> = {
   "mn": { name: 'NotoSansMongolian', file: "NotoSansMongolian-Regular.ttf" },
   "ze": { name: 'HarmonyOS_Sans_SC_Light4', file: "HarmonyOS_Sans_SC_Light.ttf" },
 };
-FONT_COLLECTION.loadFontSync('HarmonyOS_Sans_SC_Light',
-  $rawfile("HarmonyOS_Sans_SC_Light.ttf"));
-let fontFamilies: Array<string> = ["HarmonyOS_Sans_SC_Light"];
 
 
 
@@ -42,6 +38,8 @@ let fontFamilies: Array<string> = ["HarmonyOS_Sans_SC_Light"];
 @Entry
 @Component
 export struct Index {
+  private fontCollection: text.FontCollection = new text.FontCollection()
+  private fontFamilies: Array<string> = ["HarmonyOS_Sans_SC_Light"]
   @State pixelMap?: PixelMap = undefined
   @State paragraph?: text.Paragraph = undefined
   @State textContent: string = MULTI_LANG_TEXT.en; // 当前显示的文本
@@ -85,20 +83,23 @@ export struct Index {
   }
   // 生命周期：创建 PixelMap + 初始段落
   aboutToAppear(): void {
+    this.fontCollection.loadFontSync('HarmonyOS_Sans_SC_Light',
+      $rawfile("HarmonyOS_Sans_SC_Light.ttf"));
     this.createPixelMap()
     this.rebuildParagraph() // 初始构建
   }
 
   aboutToDisappear() {
-    FONT_COLLECTION.unloadFontSync("HarmonyOS_Sans_SC_Light")
-    FONT_COLLECTION.unloadFontSync("HarmonyOS_Sans_SC_Light1")
-    FONT_COLLECTION.unloadFontSync("HarmonyOS_Sans_SC_Light2")
-    FONT_COLLECTION.unloadFontSync("HarmonyOS_Sans_SC_Light3")
-    FONT_COLLECTION.unloadFontSync("NotoSansMyanmar")
-    FONT_COLLECTION.unloadFontSync("NotoSansTibetan")
-    FONT_COLLECTION.unloadFontSync("NotoSansArabic")
-    FONT_COLLECTION.unloadFontSync("NotoSansMongolian")
-    FONT_COLLECTION.unloadFontSync("HarmonyOS_Sans_SC_Light4")
+    Object.values(LANG_FONT_MAP).forEach((fontInfo: FontInfo) => {
+      try {
+        this.fontCollection.unloadFontSync(fontInfo.name)
+      } catch (_err) {
+      }
+    })
+    try {
+      this.fontCollection.unloadFontSync("HarmonyOS_Sans_SC_Light")
+    } catch (_err) {
+    }
   }
 
   // 创建画板
@@ -147,7 +148,7 @@ export struct Index {
       locale: 'en',
       baselineShift: this.baselineShift,
       badgeType: this.badgeType,
-      fontFamilies: fontFamilies
+      fontFamilies: this.fontFamilies
     }
 
     const myStrutStyle1: text.StrutStyle = {
@@ -179,7 +180,7 @@ export struct Index {
     }
 
     // 3. build + layout
-    const builder = new text.ParagraphBuilder(paraStyle, FONT_COLLECTION)
+    const builder = new text.ParagraphBuilder(paraStyle, this.fontCollection)
     builder.addText(this.textContent)
     this.paragraph = builder.build()
     this.paragraph.layoutSync(180)
@@ -249,13 +250,13 @@ export struct Index {
               this.textContent = MULTI_LANG_TEXT[this.currentLang];
               const fontInfo = LANG_FONT_MAP[this.currentLang];
               try {
-                FONT_COLLECTION.unloadFontSync(fontFamilies[0]);
-                FONT_COLLECTION.loadFontSync(fontInfo.name, $rawfile(fontInfo.file));
-                fontFamilies = [fontInfo.name];
+                this.fontCollection.unloadFontSync(this.fontFamilies[0]);
+                this.fontCollection.loadFontSync(fontInfo.name, $rawfile(fontInfo.file));
+                this.fontFamilies = [fontInfo.name];
                 console.info(`切换语言: ${this.currentLang}, 加载字体: ${fontInfo.name}, 文件: ${fontInfo.file}`);
               } catch (err) {
                 console.error(`字体加载失败: ${err.message}`);
-                fontFamilies = ['HarmonyOS_Sans_SC_Light'];
+                this.fontFamilies = ['HarmonyOS_Sans_SC_Light'];
               }
               this.rebuildParagraph();
             })

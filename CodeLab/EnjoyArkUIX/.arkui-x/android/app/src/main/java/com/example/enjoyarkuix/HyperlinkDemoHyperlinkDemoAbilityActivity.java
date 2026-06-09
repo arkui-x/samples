@@ -11,7 +11,7 @@ import ohos.stage.ability.adapter.StageActivity;
  *
  * @since 2026-05-25
  * @see <a href=
- * "https://gitee.com/arkui-x/docs/blob/master/zh-cn/application-dev/tutorial/how-to-integrate-arkui-into-android.md">
+ * "https://gitcode.com/arkui-x/docs/blob/master/zh-cn/application-dev/tutorial/how-to-integrate-arkui-into-android.md">
  * to build android library</a>
  */
 public class HyperlinkDemoHyperlinkDemoAbilityActivity extends StageActivity {
@@ -19,7 +19,7 @@ public class HyperlinkDemoHyperlinkDemoAbilityActivity extends StageActivity {
     protected void onCreate(Bundle savedInstanceState) {
         Log.e("HiHelloWorld", "HyperlinkDemoHyperlinkDemoAbilityActivity");
 
-        setInstanceName("com.example.enjoyarkuix:HyperlinkDemo:HyperlinkDemoAbility: ");
+        setInstanceName("com.example.enjoyarkuix:HyperlinkDemo:HyperlinkDemoAbility:");
         super.onCreate(savedInstanceState);
     }
 }

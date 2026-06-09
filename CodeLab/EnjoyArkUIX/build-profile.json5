@@ -353,8 +353,32 @@
       ]
     },
     {
+      "name": "VidoDemo",
+      "srcPath": "./self_test/VidoDemo",
+      "targets": [
+        {
+          "name": "default",
+          "applyToProducts": [
+            "default"
+          ]
+        }
+      ]
+    },
+    {
       "name": "I18nDemo",
       "srcPath": "./self_test/I18nDemo",
+      "targets": [
+        {
+          "name": "default",
+          "applyToProducts": [
+            "default"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "HighContrastDemo",
+      "srcPath": "./self_test/HighContrastDemo",
       "targets": [
         {
           "name": "default",
@@ -403,6 +427,18 @@
     {
       "name": "distributedKVStoreDemo",
       "srcPath": "./self_test/distributedKVStoreDemo",
+      "targets": [
+        {
+          "name": "default",
+          "applyToProducts": [
+            "default"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "EnableHapticFeedbackDemo",
+      "srcPath": "./self_test/EnableHapticFeedbackDemo",
       "targets": [
         {
           "name": "default",

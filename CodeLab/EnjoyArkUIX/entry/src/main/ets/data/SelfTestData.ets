@@ -198,11 +198,31 @@ export const SELF_TEST: ThirdLevelCategory[] = [
   },
   {
     image: $r('app.media.ic_unselect_component'),
+    title: $r('app.string.VidoDemo'),
+    want: {
+      bundleName: 'com.example.enjoyarkuix',
+      moduleName: 'VidoDemo',
+      abilityName: 'VidoDemoAbility',
+    },
+    platform: PlatformTypeEnum.SUPPORT_BOTH
+  },
+  {
+    image: $r('app.media.ic_unselect_component'),
     title: $r('app.string.I18nDemo'),
     want: {
       bundleName: 'com.example.enjoyarkuix',
       moduleName: 'I18nDemo',
       abilityName: 'I18nDemoAbility',
+    },
+    platform: PlatformTypeEnum.SUPPORT_BOTH
+  },
+  {
+    image: $r('app.media.ic_unselect_component'),
+    title: $r('app.string.HighContrastDemo'),
+    want: {
+      bundleName: 'com.example.enjoyarkuix',
+      moduleName: 'HighContrastDemo',
+      abilityName: 'HighContrastDemoAbility',
     },
     platform: PlatformTypeEnum.SUPPORT_BOTH
   },
@@ -243,6 +263,16 @@ export const SELF_TEST: ThirdLevelCategory[] = [
       bundleName: 'com.example.enjoyarkuix',
       moduleName: 'distributedKVStoreDemo',
       abilityName: 'DistributedKVStoreDemoAbility',
+    },
+    platform: PlatformTypeEnum.SUPPORT_BOTH
+  },
+  {
+    image: $r('app.media.ic_unselect_component'),
+    title: $r('app.string.EnableHapticFeedbackDemo'),
+    want: {
+      bundleName: 'com.example.enjoyarkuix',
+      moduleName: 'EnableHapticFeedbackDemo',
+      abilityName: 'EnableHapticFeedbackDemoAbility',
     },
     platform: PlatformTypeEnum.SUPPORT_BOTH
   },

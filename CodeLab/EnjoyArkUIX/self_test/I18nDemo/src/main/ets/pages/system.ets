@@ -236,7 +236,7 @@ struct system {
   }
   testi18nSystemgetSystemCountries005(): void {
     try {
-      this.addLog('========== testi18nSystemgetSystemCountries001 开始 ==========');
+      this.addLog('========== testi18nSystemgetSystemCountries005 开始 ==========');
       const locale = 'ar';
       this.addLog(`调用API：i18n.System.getSystemCountries('${locale}')`);
 
@@ -251,15 +251,15 @@ struct system {
       this.addLog(`  前10个国家码：${systemCountries.slice(0, 10).join(', ')}${systemCountries.length > 10 ? '...' : ''}`);
 
       this.addLog(`验证结果：调用成功`);
-      this.addLog('========== testi18nSystemgetSystemCountries001 结束 ==========\n');
+      this.addLog('========== testi18nSystemgetSystemCountries005 结束 ==========\n');
     } catch (error) {
       const err = error as BusinessError;
       console.error(`call System.getSystemCountries failed, error code: ${err.code}, message: ${err.message}.`);
-      this.addLog(`testi18nSystemgetSystemCountries001 执行出错：`);
+      this.addLog(`testi18nSystemgetSystemCountries005 执行出错：`);
       this.addLog(`  错误码：${err.code}`);
       this.addLog(`  错误信息：${err.message}`);
       this.addLog(`  错误详情：${JSON.stringify(error)}`);
-      this.addLog('========== testi18nSystemgetSystemCountries001 结束 ==========\n');
+      this.addLog('========== testi18nSystemgetSystemCountries005 结束 ==========\n');
     }
   }
   // 验证语言/国家是否为推荐 - 双参数测试

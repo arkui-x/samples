@@ -1,0 +1,16 @@
+{
+  "string": [
+    {
+      "name": "module_desc",
+      "value": "module description"
+    },
+    {
+      "name": "EnableHapticFeedbackDemoAbility_desc",
+      "value": "description"
+    },
+    {
+      "name": "EnableHapticFeedbackDemoAbility_label",
+      "value": "label"
+    }
+  ]
+}

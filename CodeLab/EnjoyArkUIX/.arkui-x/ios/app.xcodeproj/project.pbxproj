@@ -13,6 +13,9 @@
 		D08A7F742DDA4AACBC6B808A /* HyperlinkDemoHyperlinkDemoAbilityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E508603575AD4CC3B3E7897E /* HyperlinkDemoHyperlinkDemoAbilityViewController.m */; };
 		EAE782105B364AA88E3B36E0 /* I18nDemoI18nDemoAbilityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 838AE0EA592647458D0F4EE2 /* I18nDemoI18nDemoAbilityViewController.m */; };
 		DC7BCD477CDF4964972070BC /* ImageDemoImageDemoAbilityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B7045D8231704F45A55CC23F /* ImageDemoImageDemoAbilityViewController.m */; };
+		3A3EB7A7ADB24991B9501489 /* EnableHapticFeedbackDemoEnableHapticFeedbackDemoAbilityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90ECA247AFB641F3BAD8648A /* EnableHapticFeedbackDemoEnableHapticFeedbackDemoAbilityViewController.m */; };
+		107030BD41434956A6B60B53 /* HighContrastDemoHighContrastDemoAbilityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1315630467484F53B516BCFE /* HighContrastDemoHighContrastDemoAbilityViewController.m */; };
+		35AEB7CBF4AC4DFEB79CAF2A /* VidoDemoVidoDemoAbilityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F36D0F34FC44C05B15A917F /* VidoDemoVidoDemoAbilityViewController.m */; };
 		0B7275696B9A46E6B8542024 /* FileApiFileApiAbilityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1A41EFB52C9445D9F628C5C /* FileApiFileApiAbilityViewController.m */; };
 		152384287B8B4EE1BBFB952E /* FastBufferDemoFastBufferDemoAbilityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EDB8976BB1894068A45D1242 /* FastBufferDemoFastBufferDemoAbilityViewController.m */; };
 		16F1304D22844BB4859D1468 /* TaskPoolDemoTaskPoolDemoAbilityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7388E3E8F22F48E3ACE924B0 /* TaskPoolDemoTaskPoolDemoAbilityViewController.m */; };
@@ -188,6 +191,12 @@
 		838AE0EA592647458D0F4EE2 /* I18nDemoI18nDemoAbilityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = I18nDemoI18nDemoAbilityViewController.m; sourceTree = "<group>"; };
 		6E0E6992FA354F7F8DE9D2B9 /* ImageDemoImageDemoAbilityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageDemoImageDemoAbilityViewController.h; sourceTree = "<group>"; };
 		B7045D8231704F45A55CC23F /* ImageDemoImageDemoAbilityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageDemoImageDemoAbilityViewController.m; sourceTree = "<group>"; };
+		C94A0DA49BF0411694DB9CEF /* EnableHapticFeedbackDemoEnableHapticFeedbackDemoAbilityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EnableHapticFeedbackDemoEnableHapticFeedbackDemoAbilityViewController.h; sourceTree = "<group>"; };
+		90ECA247AFB641F3BAD8648A /* EnableHapticFeedbackDemoEnableHapticFeedbackDemoAbilityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EnableHapticFeedbackDemoEnableHapticFeedbackDemoAbilityViewController.m; sourceTree = "<group>"; };
+		C2D52CE5FB404B8A9A0AA644 /* HighContrastDemoHighContrastDemoAbilityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HighContrastDemoHighContrastDemoAbilityViewController.h; sourceTree = "<group>"; };
+		1315630467484F53B516BCFE /* HighContrastDemoHighContrastDemoAbilityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HighContrastDemoHighContrastDemoAbilityViewController.m; sourceTree = "<group>"; };
+		56E51EA4403E40A2AB854121 /* VidoDemoVidoDemoAbilityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VidoDemoVidoDemoAbilityViewController.h; sourceTree = "<group>"; };
+		1F36D0F34FC44C05B15A917F /* VidoDemoVidoDemoAbilityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VidoDemoVidoDemoAbilityViewController.m; sourceTree = "<group>"; };
 		18ADF3C252B74EC9AA095A4A /* ModifierModifierAbilityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModifierModifierAbilityViewController.m; sourceTree = "<group>"; };
 		1DD91850B8124E2ABD9D7A28 /* UtilsDemoUtilsDemoAbilityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UtilsDemoUtilsDemoAbilityViewController.m; sourceTree = "<group>"; };
 		1FE5CE29705D452C9BDDC602 /* VideoPlayDemoVideoPlayDemoAbilityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoPlayDemoVideoPlayDemoAbilityViewController.h; sourceTree = "<group>"; };
@@ -382,6 +391,12 @@
 				838AE0EA592647458D0F4EE2 /* I18nDemoI18nDemoAbilityViewController.m */,
 				6E0E6992FA354F7F8DE9D2B9 /* ImageDemoImageDemoAbilityViewController.h */,
 				B7045D8231704F45A55CC23F /* ImageDemoImageDemoAbilityViewController.m */,
+				C94A0DA49BF0411694DB9CEF /* EnableHapticFeedbackDemoEnableHapticFeedbackDemoAbilityViewController.h */,
+				90ECA247AFB641F3BAD8648A /* EnableHapticFeedbackDemoEnableHapticFeedbackDemoAbilityViewController.m */,
+				C2D52CE5FB404B8A9A0AA644 /* HighContrastDemoHighContrastDemoAbilityViewController.h */,
+				1315630467484F53B516BCFE /* HighContrastDemoHighContrastDemoAbilityViewController.m */,
+				56E51EA4403E40A2AB854121 /* VidoDemoVidoDemoAbilityViewController.h */,
+				1F36D0F34FC44C05B15A917F /* VidoDemoVidoDemoAbilityViewController.m */,
 				2A258B4CF1DC46CFA6071C12 /* UtilsDemoUtilsDemoAbilityViewController.h */,
 				1DD91850B8124E2ABD9D7A28 /* UtilsDemoUtilsDemoAbilityViewController.m */,
 				C70AB04507FD47188A878694 /* FastBufferDemoFastBufferDemoAbilityViewController.h */,
@@ -593,6 +608,9 @@
 				D08A7F742DDA4AACBC6B808A /* HyperlinkDemoHyperlinkDemoAbilityViewController.m in Sources */,
 				EAE782105B364AA88E3B36E0 /* I18nDemoI18nDemoAbilityViewController.m in Sources */,
 				DC7BCD477CDF4964972070BC /* ImageDemoImageDemoAbilityViewController.m in Sources */,
+				3A3EB7A7ADB24991B9501489 /* EnableHapticFeedbackDemoEnableHapticFeedbackDemoAbilityViewController.m in Sources */,
+				107030BD41434956A6B60B53 /* HighContrastDemoHighContrastDemoAbilityViewController.m in Sources */,
+				35AEB7CBF4AC4DFEB79CAF2A /* VidoDemoVidoDemoAbilityViewController.m in Sources */,
 				559C019F7B8543109E552998 /* UtilsDemoUtilsDemoAbilityViewController.m in Sources */,
 				152384287B8B4EE1BBFB952E /* FastBufferDemoFastBufferDemoAbilityViewController.m in Sources */,
 				ACE453031D32451690ABB80A /* CollectionsDemoCollectionsDemoAbilityViewController.m in Sources */,

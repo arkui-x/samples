@@ -28,8 +28,7 @@ struct LayeredDrawableDescriptor_2 {
 
   private resManager = this.getUIContext().getHostContext()?.resourceManager;
   @State drawable_as: DrawableDescriptor | undefined = this.resManager?.getDrawableDescriptor($r('app.media.drawable_png').id);
-
-  @State layeredDrawableDescriptor_as : LayeredDrawableDescriptor = (this.drawable_as as LayeredDrawableDescriptor);
+  @State layeredDrawableDescriptor_as : LayeredDrawableDescriptor | undefined = undefined;
 
   // 测试格式选项
   @State formatOptions: string[] = ['PNG', 'JPG', 'JPEG', 'BMP', 'SVG', 'WEBP', 'GIF'];
@@ -57,6 +56,12 @@ struct LayeredDrawableDescriptor_2 {
 
   // 初始化资源映射
   aboutToAppear() {
+    if (this.drawable_as instanceof LayeredDrawableDescriptor) {
+      this.layeredDrawableDescriptor_as = this.drawable_as;
+    } else {
+      this.layeredDrawableDescriptor_as = undefined;
+    }
+
     // 初始化各种格式的资源路径
     this.formatResourceMap.set('PNG', {
       foreground: $r('app.media.1cut_png'),
