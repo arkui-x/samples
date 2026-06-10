@@ -1,0 +1,26 @@
+{
+  "module": {
+    "name": "ChipDemo",
+    "type": "feature",
+    "description": "$string:module_desc",
+    "mainElement": "ChipDemoAbility",
+    "deviceTypes": [
+      "default"
+    ],
+    "deliveryWithInstall": true,
+    "installationFree": false,
+    "pages": "$profile:main_pages",
+    "abilities": [
+      {
+        "name": "ChipDemoAbility",
+        "srcEntry": "./ets/chipdemoability/ChipDemoAbility.ets",
+        "description": "$string:ChipDemoAbility_desc",
+        "icon": "$media:icon",
+        "label": "$string:ChipDemoAbility_label",
+        "startWindowIcon": "$media:icon",
+        "startWindowBackground": "$color:start_window_background",
+        "exported": true
+      }
+    ]
+  }
+}

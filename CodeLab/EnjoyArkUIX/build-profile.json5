@@ -447,6 +447,18 @@
           ]
         }
       ]
+    },
+    {
+      "name": "ChipDemo",
+      "srcPath": "./self_test/ChipDemo",
+      "targets": [
+        {
+          "name": "default",
+          "applyToProducts": [
+            "default"
+          ]
+        }
+      ]
     }
   ]
 }

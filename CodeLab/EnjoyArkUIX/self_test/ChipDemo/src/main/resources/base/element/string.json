@@ -1,0 +1,16 @@
+{
+  "string": [
+    {
+      "name": "module_desc",
+      "value": "module description"
+    },
+    {
+      "name": "ChipDemoAbility_desc",
+      "value": "description"
+    },
+    {
+      "name": "ChipDemoAbility_label",
+      "value": "label"
+    }
+  ]
+}

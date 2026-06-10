@@ -32,9 +32,10 @@
     "HyperlinkDemo",
     "GraphicsTextDemo",
     "WebSocketDemo",
-    "distributedKVStoreDemo"
+    "distributedKVStoreDemo",
     "VidoDemo",
     "HighContrastDemo",
-    "EnableHapticFeedbackDemo"
+    "EnableHapticFeedbackDemo",
+    "ChipDemo"
   ]
 }
