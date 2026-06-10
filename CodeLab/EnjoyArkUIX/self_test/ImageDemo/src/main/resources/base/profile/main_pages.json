@@ -1,0 +1,8 @@
+{
+  "src": [
+    "pages/Index",
+    "pages/PixelMapDrawableDescriptor_1",
+    "pages/LayeredDrawableDescriptor_2",
+    "pages/AnimatedDrawableDescriptor_3"
+  ]
+}

@@ -125,6 +125,30 @@
       "value": "UtilsDemo"
     },
     {
+<<<<<<< add_module
+      "name": "ImageDemo",
+      "value": "ImageDemo"
+    },
+    {
+      "name": "I18nDemo",
+      "value": "I18nDemo"
+    },
+    {
+      "name": "HyperlinkDemo",
+      "value": "HyperlinkDemo"
+    },
+    {
+      "name": "GraphicsTextDemo",
+      "value": "GraphicsTextDemo"
+    },
+    {
+      "name": "WebSocketDemo",
+      "value": "WebSocketDemo"
+    },
+    {
+      "name": "distributedKVStoreDemo",
+      "value": "distributedKVStoreDemo"
+=======
       "name": "VidoDemo",
       "value": "VidoDemo"
     },
@@ -135,6 +159,7 @@
     {
       "name": "EnableHapticFeedbackDemo",
       "value": "EnableHapticFeedbackDemo"
+>>>>>>> master
     }
   ]
 }

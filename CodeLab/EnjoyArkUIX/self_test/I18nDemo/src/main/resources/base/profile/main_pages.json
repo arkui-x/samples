@@ -1,0 +1,26 @@
+{
+  "src": [
+    "pages/Index",
+    "pages/system",
+    "pages/I18NUtil",
+    "pages/Calendar",
+    "pages/BreakIterator",
+    "pages/i18n",
+    "pages/PhoneNumberFormat",
+
+    "pages2/TimeZone",
+    "pages2/i18n2",
+    "pages2/IndexUtil",
+    "pages2/ZoneRules",
+    "pages2/ZoneOffsetTransition",
+    "pages2/Transliterator",
+    "pages2/Normalizer",
+    "pages2/HolidayManager",
+
+    "pages3/i18n3",
+    "pages3/EntityRecognizer",
+    "pages3/SimpleDateTimeFormat",
+    "pages3/SimpleNumberFormat",
+    "pages3/StyledNumberFormat"
+  ]
+}

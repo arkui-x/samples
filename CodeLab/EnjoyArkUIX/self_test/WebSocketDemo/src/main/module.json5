@@ -1,0 +1,58 @@
+{
+  "module": {
+    "name": "WebSocketDemo",
+    "type": "feature",
+    "description": "$string:module_desc",
+    "mainElement": "EntryAbility",
+    "deviceTypes": [
+      "default"
+    ],
+    "deliveryWithInstall": true,
+    "installationFree": false,
+    "pages": "$profile:main_pages",
+    "definePermissions": [
+      {
+        "name": "ohos.permission.CREATE_SERVER", // 自定义权限名称
+        "description": "用于创建本地WebSocket服务器，实现设备间通信",
+        "grantMode": "system_grant", // 授权模式
+        "availableLevel": "system_basic" // 可用级别
+      }
+    ],
+    "requestPermissions": [
+      {
+        "name": "ohos.permission.INTERNET"
+      },
+      {
+        "name": "ohos.permission.GET_NETWORK_INFO"
+      },
+      {
+        "name": "ohos.permission.ACCESS_CERT_MANAGER"
+      },
+      {
+        "name": "ohos.permission.SET_NETWORK_INFO"
+      }
+    ],
+    "abilities": [
+      {
+        "name": "WebSocketDemoAbility",
+        "srcEntry": "./ets/websocketdemoability/WebSocketDemoAbility.ets",
+        "description": "$string:WebSocketDemoAbility_desc",
+        "icon": "$media:layered_image",
+        "label": "$string:WebSocketDemoAbility_label",
+        "startWindowIcon": "$media:startIcon",
+        "startWindowBackground": "$color:start_window_background",
+        "exported": true,
+        "skills": [
+          {
+            "entities": [
+              "entity.system.home"
+            ],
+            "actions": [
+              "ohos.want.action.home"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

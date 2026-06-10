@@ -341,6 +341,18 @@
       ]
     },
     {
+      "name": "ImageDemo",
+      "srcPath": "./self_test/ImageDemo",
+      "targets": [
+        {
+          "name": "default",
+          "applyToProducts": [
+            "default"
+          ]
+        }
+      ]
+    },
+    {
       "name": "VidoDemo",
       "srcPath": "./self_test/VidoDemo",
       "targets": [
@@ -353,8 +365,68 @@
       ]
     },
     {
+      "name": "I18nDemo",
+      "srcPath": "./self_test/I18nDemo",
+      "targets": [
+        {
+          "name": "default",
+          "applyToProducts": [
+            "default"
+          ]
+        }
+      ]
+    },
+    {
       "name": "HighContrastDemo",
       "srcPath": "./self_test/HighContrastDemo",
+      "targets": [
+        {
+          "name": "default",
+          "applyToProducts": [
+            "default"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "HyperlinkDemo",
+      "srcPath": "./self_test/HyperlinkDemo",
+      "targets": [
+        {
+          "name": "default",
+          "applyToProducts": [
+            "default"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "GraphicsTextDemo",
+      "srcPath": "./self_test/GraphicsTextDemo",
+      "targets": [
+        {
+          "name": "default",
+          "applyToProducts": [
+            "default"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "WebSocketDemo",
+      "srcPath": "./self_test/WebSocketDemo",
+      "targets": [
+        {
+          "name": "default",
+          "applyToProducts": [
+            "default"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "distributedKVStoreDemo",
+      "srcPath": "./self_test/distributedKVStoreDemo",
       "targets": [
         {
           "name": "default",

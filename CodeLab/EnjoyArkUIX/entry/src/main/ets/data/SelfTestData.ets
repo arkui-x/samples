@@ -188,6 +188,16 @@ export const SELF_TEST: ThirdLevelCategory[] = [
   },
   {
     image: $r('app.media.ic_unselect_component'),
+    title: $r('app.string.ImageDemo'),
+    want: {
+      bundleName: 'com.example.enjoyarkuix',
+      moduleName: 'ImageDemo',
+      abilityName: 'ImageDemoAbility',
+    },
+    platform: PlatformTypeEnum.SUPPORT_BOTH
+  },
+  {
+    image: $r('app.media.ic_unselect_component'),
     title: $r('app.string.VidoDemo'),
     want: {
       bundleName: 'com.example.enjoyarkuix',
@@ -198,11 +208,61 @@ export const SELF_TEST: ThirdLevelCategory[] = [
   },
   {
     image: $r('app.media.ic_unselect_component'),
+    title: $r('app.string.I18nDemo'),
+    want: {
+      bundleName: 'com.example.enjoyarkuix',
+      moduleName: 'I18nDemo',
+      abilityName: 'I18nDemoAbility',
+    },
+    platform: PlatformTypeEnum.SUPPORT_BOTH
+  },
+  {
+    image: $r('app.media.ic_unselect_component'),
     title: $r('app.string.HighContrastDemo'),
     want: {
       bundleName: 'com.example.enjoyarkuix',
       moduleName: 'HighContrastDemo',
       abilityName: 'HighContrastDemoAbility',
+    },
+    platform: PlatformTypeEnum.SUPPORT_BOTH
+  },
+  {
+    image: $r('app.media.ic_unselect_component'),
+    title: $r('app.string.HyperlinkDemo'),
+    want: {
+      bundleName: 'com.example.enjoyarkuix',
+      moduleName: 'HyperlinkDemo',
+      abilityName: 'HyperlinkDemoAbility',
+    },
+    platform: PlatformTypeEnum.SUPPORT_BOTH
+  },
+  {
+    image: $r('app.media.ic_unselect_component'),
+    title: $r('app.string.GraphicsTextDemo'),
+    want: {
+      bundleName: 'com.example.enjoyarkuix',
+      moduleName: 'GraphicsTextDemo',
+      abilityName: 'GraphicsTextDemoAbility',
+    },
+    platform: PlatformTypeEnum.SUPPORT_BOTH
+  },
+  {
+    image: $r('app.media.ic_unselect_component'),
+    title: $r('app.string.WebSocketDemo'),
+    want: {
+      bundleName: 'com.example.enjoyarkuix',
+      moduleName: 'WebSocketDemo',
+      abilityName: 'WebSocketDemoAbility',
+    },
+    platform: PlatformTypeEnum.SUPPORT_BOTH
+  },
+  {
+    image: $r('app.media.ic_unselect_component'),
+    title: $r('app.string.distributedKVStoreDemo'),
+    want: {
+      bundleName: 'com.example.enjoyarkuix',
+      moduleName: 'distributedKVStoreDemo',
+      abilityName: 'DistributedKVStoreDemoAbility',
     },
     platform: PlatformTypeEnum.SUPPORT_BOTH
   },

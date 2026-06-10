@@ -1,0 +1,26 @@
+{
+  "module": {
+    "name": "ImageDemo",
+    "type": "feature",
+    "description": "$string:module_desc",
+    "mainElement": "ImageDemoAbility",
+    "deviceTypes": [
+      "default"
+    ],
+    "deliveryWithInstall": true,
+    "installationFree": false,
+    "pages": "$profile:main_pages",
+    "abilities": [
+      {
+        "name": "ImageDemoAbility",
+        "srcEntry": "./ets/imagedemoability/ImageDemoAbility.ets",
+        "description": "$string:ImageDemoAbility_desc",
+        "icon": "$media:layered_image",
+        "label": "$string:ImageDemoAbility_label",
+        "startWindowIcon": "$media:startIcon",
+        "startWindowBackground": "$color:start_window_background",
+        "exported": true
+      }
+    ]
+  }
+}

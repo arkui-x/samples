@@ -37,6 +37,12 @@
 #import "CollectionsDemoCollectionsDemoAbilityViewController.h"
 #import "FastBufferDemoFastBufferDemoAbilityViewController.h"
 #import "UtilsDemoUtilsDemoAbilityViewController.h"
+#import "ImageDemoImageDemoAbilityViewController.h"
+#import "I18nDemoI18nDemoAbilityViewController.h"
+#import "HyperlinkDemoHyperlinkDemoAbilityViewController.h"
+#import "GraphicsTextDemoGraphicsTextDemoAbilityViewController.h"
+#import "WebSocketDemoWebSocketDemoAbilityViewController.h"
+#import "DistributedKVStoreDemoDistributedKVStoreDemoAbilityViewController.h"
 #import "VidoDemoVidoDemoAbilityViewController.h"
 #import "HighContrastDemoHighContrastDemoAbilityViewController.h"
 #import "EnableHapticFeedbackDemoEnableHapticFeedbackDemoAbilityViewController.h"
@@ -190,6 +196,30 @@
         NSString *instanceName = [NSString stringWithFormat:@"%@:%@:%@",bundleName, moduleName, abilityName];
         UtilsDemoUtilsDemoAbilityViewController *otherVC = [[UtilsDemoUtilsDemoAbilityViewController alloc] initWithInstanceName:instanceName];
         subStageVC = (UtilsDemoUtilsDemoAbilityViewController *)otherVC;
+    } else if ([moduleName isEqualToString:@"ImageDemo"] && [abilityName isEqualToString:@"ImageDemoAbility"]) {
+        NSString *instanceName = [NSString stringWithFormat:@"%@:%@:%@",bundleName, moduleName, abilityName];
+        ImageDemoImageDemoAbilityViewController *otherVC = [[ImageDemoImageDemoAbilityViewController alloc] initWithInstanceName:instanceName];
+        subStageVC = (ImageDemoImageDemoAbilityViewController *)otherVC;
+    } else if ([moduleName isEqualToString:@"I18nDemo"] && [abilityName isEqualToString:@"I18nDemoAbility"]) {
+        NSString *instanceName = [NSString stringWithFormat:@"%@:%@:%@",bundleName, moduleName, abilityName];
+        I18nDemoI18nDemoAbilityViewController *otherVC = [[I18nDemoI18nDemoAbilityViewController alloc] initWithInstanceName:instanceName];
+        subStageVC = (I18nDemoI18nDemoAbilityViewController *)otherVC;
+    } else if ([moduleName isEqualToString:@"HyperlinkDemo"] && [abilityName isEqualToString:@"HyperlinkDemoAbility"]) {
+        NSString *instanceName = [NSString stringWithFormat:@"%@:%@:%@",bundleName, moduleName, abilityName];
+        HyperlinkDemoHyperlinkDemoAbilityViewController *otherVC = [[HyperlinkDemoHyperlinkDemoAbilityViewController alloc] initWithInstanceName:instanceName];
+        subStageVC = (HyperlinkDemoHyperlinkDemoAbilityViewController *)otherVC;
+    } else if ([moduleName isEqualToString:@"GraphicsTextDemo"] && [abilityName isEqualToString:@"GraphicsTextDemoAbility"]) {
+        NSString *instanceName = [NSString stringWithFormat:@"%@:%@:%@",bundleName, moduleName, abilityName];
+        GraphicsTextDemoGraphicsTextDemoAbilityViewController *otherVC = [[GraphicsTextDemoGraphicsTextDemoAbilityViewController alloc] initWithInstanceName:instanceName];
+        subStageVC = (GraphicsTextDemoGraphicsTextDemoAbilityViewController *)otherVC;
+    } else if ([moduleName isEqualToString:@"WebSocketDemo"] && [abilityName isEqualToString:@"WebSocketDemoAbility"]) {
+        NSString *instanceName = [NSString stringWithFormat:@"%@:%@:%@",bundleName, moduleName, abilityName];
+        WebSocketDemoWebSocketDemoAbilityViewController *otherVC = [[WebSocketDemoWebSocketDemoAbilityViewController alloc] initWithInstanceName:instanceName];
+        subStageVC = (WebSocketDemoWebSocketDemoAbilityViewController *)otherVC;
+    } else if ([moduleName isEqualToString:@"distributedKVStoreDemo"] && [abilityName isEqualToString:@"DistributedKVStoreDemoAbility"]) {
+        NSString *instanceName = [NSString stringWithFormat:@"%@:%@:%@",bundleName, moduleName, abilityName];
+        DistributedKVStoreDemoDistributedKVStoreDemoAbilityViewController *otherVC = [[DistributedKVStoreDemoDistributedKVStoreDemoAbilityViewController alloc] initWithInstanceName:instanceName];
+        subStageVC = (DistributedKVStoreDemoDistributedKVStoreDemoAbilityViewController *)otherVC;
     } else if ([moduleName isEqualToString:@"VidoDemo"] && [abilityName isEqualToString:@"VidoDemoAbility"]) {
         NSString *instanceName = [NSString stringWithFormat:@"%@:%@:%@",bundleName, moduleName, abilityName];
         VidoDemoVidoDemoAbilityViewController *otherVC = [[VidoDemoVidoDemoAbilityViewController alloc] initWithInstanceName:instanceName];

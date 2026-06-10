@@ -1,0 +1,7 @@
+{
+  "layered_image":
+  {
+    "background" : "$media:2_svg",
+    "foreground" : "$media:1_svg"
+  }
+}

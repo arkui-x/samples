@@ -121,6 +121,11 @@ Note:If the text contains special characters, please escape them according to th
                 <filteritem type="filepath" name="CodeLab/Cases/.*.png|.*.mp4|.*.jpeg|.*.tgz|.*.so|.*.14|.*.xlsx|.*.mp3|.*.mp4|.*.heic|.*.ets" desc="already checked"/>
                 <filteritem type="filepath" name="CodeLab/Cases/.*.1|.*.zip|.*.json5|.*.4|.*.ogg|.*.pptx|.*.lrc|.*.pdf|.*.exe" desc="already checked"/>
                 <filteritem type="filepath" name="CodeLab/EnjoyArkUIX/.*.png" desc="already checked"/>
+                <filteritem type="filepath" name="CodeLab/EnjoyArkUIX/self_test/GraphicsTextDemo/src/main/resources/rawfile/.*.ttf" desc="already checked"/>
+                <filteritem type="filepath" name="CodeLab/EnjoyArkUIX/self_test/GraphicsTextDemo/src/main/resources/rawfile/.*.ttc" desc="already checked"/>
+                <filteritem type="filepath" name="CodeLab/EnjoyArkUIX/self_test/GraphicsTextDemo/src/main/resources/rawfile/.*.otf" desc="already checked"/>
+                <filteritem type="filepath" name="CodeLab/EnjoyArkUIX/self_test/ImageDemo/src/main/resources/base/media/.*.bmp" desc="already checked"/>
+                <filteritem type="filepath" name="CodeLab/EnjoyArkUIX/self_test/ImageDemo/src/main/resources/base/media/.*.heif" desc="already checked"/>
                 <filteritem type="filepath" name="CodeLab/HMOSWorld/.*.png|.*.ap" desc="already checked"/>
                 <filteritem type="filepath" name="CodeLab/MultiShopping/.*.png" desc="already checked"/>
                 <filteritem type="filepath" name="CodeLab/MusicHome/.*.png|.*.jpeg|.*.wav" desc="already checked"/>
@@ -160,6 +165,8 @@ Note:If the text contains special characters, please escape them according to th
                 <filteritem type="filepath" name="SuperFeature/WebExample/entry/src/main/resources/rawfile/js/.*.js" desc="示例展示无需添加版权头"/>
                 <filteritem type="filepath" name="SuperFeature/DecoupledUIAndLogic/.*.json5" desc="示例展示无需添加版权头"/>
                 <filteritem type="filepath" name="SuperFeature/DecoupledUIAndLogic/.*.ets|.*.ts" desc="示例展示无需添加版权头"/>
+                <filteritem type="filepath" name="CodeLab/EnjoyArkUIX/self_test/GraphicsTextDemo/src/main/resources/rawfile/.*.ttc|.*.otf" desc="already checked"/>
+                <filteritem type="filepath" name="CodeLab/EnjoyArkUIX/self_test/I18nDemo/src/main/resources/rawfile/reso.ics" desc="already checked"/>
             </filefilter>
             <filefilter name="defaultPolicyFilter" desc="HealthyDiet License文件头校验策略的过滤条件" >
                 <filteritem type="filepath" name="SuperFeature/Animation/.*.ets|.*.ts" desc="示例展示无需添加License头"/>
@@ -185,6 +192,9 @@ Note:If the text contains special characters, please escape them according to th
                 <filteritem type="filepath" name="CodeLab/MusicHome/.*.lrc" desc="具备版权的音乐，无需添加License头"/>
                 <filteritem type="filepath" name="SuperFeature/WebExample/entry/src/main/resources/rawfile/js/echarts.min.js" desc="import third-party ECharts file"/>
                 <filteritem type="filepath" name="SuperFeature/WebExample/entry/src/main/resources/rawfile/js/.*.js" desc="示例展示无需添加License头"/>
+                <filteritem type="filepath" name="CodeLab/EnjoyArkUIX/self_test/GraphicsTextDemo/src/main/resources/rawfile/.*.ttc|.*.otf" desc="already checked"/>
+                <filteritem type="filepath" name="CodeLab/EnjoyArkUIX/self_test/GraphicsTextDemo/src/main/resources/rawfile/HarmonyOS Sans/.*/LICENSE.txt" desc="already checked"/>
+                <filteritem type="filepath" name="CodeLab/EnjoyArkUIX/self_test/I18nDemo/src/main/resources/rawfile/reso.ics" desc="already checked"/>
             </filefilter>
             <filefilter name="copyrightPolicyFilter" desc="Copyright文件头校验策略的过滤条件" >
                 <filteritem type="filename" name="gradlew" desc="Android工程编译入口脚本，无需添加版权头"/>
@@ -198,6 +208,8 @@ Note:If the text contains special characters, please escape them according to th
                 <filteritem type="filename" name="hvigor-wrapper.js" desc="OpenHarmony工程编译配置文件，无需添加版权头"/>
                 <filteritem type="filename" name="app.json5" desc="OpenHarmony工程编译配置文件，无需添加版权头"/>
                 <filteritem type="filename" name="hvigorw" desc="OpenHarmony工程编译配置文件，无需添加版权头"/>
+                <filteritem type="filepath" name="CodeLab/EnjoyArkUIX/self_test/GraphicsTextDemo/src/main/resources/rawfile/.*.ttc|.*.otf" desc="already checked"/>
+                <filteritem type="filepath" name="CodeLab/EnjoyArkUIX/self_test/I18nDemo/src/main/resources/rawfile/reso.ics" desc="already checked"/>
             </filefilter>
             <filefilter name="defaultPolicyFilter" desc="License文件头校验策略的过滤条件" >
                 <filteritem type="filename" name="gradlew" desc="Android工程编译入口脚本，无需添加License头"/>
@@ -211,6 +223,9 @@ Note:If the text contains special characters, please escape them according to th
                 <filteritem type="filename" name="hvigor-wrapper.js" desc="OpenHarmony工程编译配置文件，无需添加License头"/>
                 <filteritem type="filename" name="app.json5" desc="OpenHarmony工程编译配置文件，无需添加License头"/>
                 <filteritem type="filename" name="hvigorw" desc="OpenHarmony工程编译配置文件，无需添加License头"/>
+                <filteritem type="filepath" name="CodeLab/EnjoyArkUIX/self_test/GraphicsTextDemo/src/main/resources/rawfile/.*.ttc|.*.otf" desc="already checked"/>
+                <filteritem type="filepath" name="CodeLab/EnjoyArkUIX/self_test/GraphicsTextDemo/src/main/resources/rawfile/HarmonyOS Sans/.*/LICENSE.txt" desc="already checked"/>
+                <filteritem type="filepath" name="CodeLab/EnjoyArkUIX/self_test/I18nDemo/src/main/resources/rawfile/reso.ics" desc="already checked"/>
             </filefilter>
         </filefilterlist>
     </oatconfig>

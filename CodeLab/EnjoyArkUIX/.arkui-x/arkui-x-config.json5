@@ -27,6 +27,12 @@
     "CollectionsDemo",
     "FastBufferDemo",
     "UtilsDemo",
+    "ImageDemo",
+    "I18nDemo",
+    "HyperlinkDemo",
+    "GraphicsTextDemo",
+    "WebSocketDemo",
+    "distributedKVStoreDemo"
     "VidoDemo",
     "HighContrastDemo",
     "EnableHapticFeedbackDemo"
