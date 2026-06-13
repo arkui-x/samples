@@ -46,6 +46,7 @@
 #import "VidoDemoVidoDemoAbilityViewController.h"
 #import "HighContrastDemoHighContrastDemoAbilityViewController.h"
 #import "EnableHapticFeedbackDemoEnableHapticFeedbackDemoAbilityViewController.h"
+#import "ChipDemoChipDemoAbilityViewController.h"
 #import <libarkui_ios/StageApplication.h>
 
 #define BUNDLE_DIRECTORY @"arkui-x"
@@ -232,6 +233,10 @@
         NSString *instanceName = [NSString stringWithFormat:@"%@:%@:%@",bundleName, moduleName, abilityName];
         EnableHapticFeedbackDemoEnableHapticFeedbackDemoAbilityViewController *otherVC = [[EnableHapticFeedbackDemoEnableHapticFeedbackDemoAbilityViewController alloc] initWithInstanceName:instanceName];
         subStageVC = (EnableHapticFeedbackDemoEnableHapticFeedbackDemoAbilityViewController *)otherVC;
+    } else if ([moduleName isEqualToString:@"ChipDemo"] && [abilityName isEqualToString:@"ChipDemoAbility"]) {
+        NSString *instanceName = [NSString stringWithFormat:@"%@:%@:%@",bundleName, moduleName, abilityName];
+        ChipDemoChipDemoAbilityViewController *otherVC = [[ChipDemoChipDemoAbilityViewController alloc] initWithInstanceName:instanceName];
+        subStageVC = (ChipDemoChipDemoAbilityViewController *)otherVC;
     } // other ViewController
     
     if (!subStageVC) {

@@ -276,4 +276,14 @@ export const SELF_TEST: ThirdLevelCategory[] = [
     },
     platform: PlatformTypeEnum.SUPPORT_BOTH
   },
+  {
+    image: $r('app.media.ic_unselect_component'),
+    title: $r('app.string.ChipDemo'),
+    want: {
+      bundleName: 'com.example.enjoyarkuix',
+      moduleName: 'ChipDemo',
+      abilityName: 'ChipDemoAbility',
+    },
+    platform: PlatformTypeEnum.SUPPORT_BOTH
+  },
 ]

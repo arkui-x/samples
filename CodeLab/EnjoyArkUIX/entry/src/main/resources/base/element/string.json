@@ -125,7 +125,6 @@
       "value": "UtilsDemo"
     },
     {
-<<<<<<< add_module
       "name": "ImageDemo",
       "value": "ImageDemo"
     },
@@ -148,7 +147,8 @@
     {
       "name": "distributedKVStoreDemo",
       "value": "distributedKVStoreDemo"
-=======
+    },
+    {
       "name": "VidoDemo",
       "value": "VidoDemo"
     },
@@ -159,7 +159,10 @@
     {
       "name": "EnableHapticFeedbackDemo",
       "value": "EnableHapticFeedbackDemo"
->>>>>>> master
+    },
+    {
+      "name": "ChipDemo",
+      "value": "ChipDemo"
     }
   ]
 }

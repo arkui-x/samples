@@ -168,7 +168,7 @@
                 android:screenOrientation="portrait" android:windowSoftInputMode="adjustNothing |stateAlwaysHidden"/>
         <activity
                 android:configChanges="orientation|keyboard|layoutDirection|screenSize|screenLayout|uiMode|smallestScreenSize|density"
-                android:exported="true" android:name=".DistributedKVStoreDemoDistributedKVStoreDemoAbilityActivity"
+                android:exported="true" android:name=".DistributedKVStoreDemoDistributedKVStoreDemoAbilityActivity"/>
         <activity
                 android:configChanges="orientation|keyboard|layoutDirection|screenSize|screenLayout|uiMode|smallestScreenSize|density"
                 android:exported="true" android:name=".VidoDemoVidoDemoAbilityActivity"
@@ -180,6 +180,10 @@
         <activity
                 android:configChanges="orientation|keyboard|layoutDirection|screenSize|screenLayout|uiMode|smallestScreenSize|density"
                 android:exported="true" android:name=".EnableHapticFeedbackDemoEnableHapticFeedbackDemoAbilityActivity"
+                android:screenOrientation="portrait" android:windowSoftInputMode="adjustNothing |stateAlwaysHidden"/>
+        <activity
+                android:configChanges="orientation|keyboard|layoutDirection|screenSize|screenLayout|uiMode|smallestScreenSize|density"
+                android:exported="true" android:name=".ChipDemoChipDemoAbilityActivity"
                 android:screenOrientation="portrait" android:windowSoftInputMode="adjustNothing |stateAlwaysHidden"/>
     </application>
 </manifest>
