@@ -35,7 +35,7 @@ struct HolidayManagerTest {
      this.addLog('testi18nHolidayManagerconstructor001 开始')
     try {
       let icsPath = "/system/lib/reso.ics";
-      const context = AppStorage.get<common.UIAbilityContext>("EntryAbilityContext") as common.UIAbilityContext;
+      const context = AppStorage.get<common.UIAbilityContext>("I18nDemoAbilityContext") as common.UIAbilityContext;
 
       icsPath = context.filesDir+'/reso.ics';
       let data = this.getUIContext().getHostContext()?.resourceManager.getRawFileContentSync("reso.ics")
@@ -62,7 +62,7 @@ struct HolidayManagerTest {
      console.info('testi18nHolidayManagerisHoliday001 开始')
     try {
       let icsPath = "/system/lib/reso.ics";
-      const context = AppStorage.get<common.UIAbilityContext>("EntryAbilityContext") as common.UIAbilityContext;
+      const context = AppStorage.get<common.UIAbilityContext>("I18nDemoAbilityContext") as common.UIAbilityContext;
 
       icsPath = context.filesDir+'/reso.ics';
       let data = this.getUIContext().getHostContext()?.resourceManager.getRawFileContentSync("reso.ics")
@@ -91,7 +91,7 @@ struct HolidayManagerTest {
      console.info('testi18nHolidayManagerisHoliday002 开始')
     try {
       let icsPath = "/system/lib/reso.ics";
-      const context = AppStorage.get<common.UIAbilityContext>("EntryAbilityContext") as common.UIAbilityContext;
+      const context = AppStorage.get<common.UIAbilityContext>("I18nDemoAbilityContext") as common.UIAbilityContext;
 
       icsPath = context.filesDir+'/reso.ics';
       let data = this.getUIContext().getHostContext()?.resourceManager.getRawFileContentSync("reso.ics")
@@ -120,7 +120,7 @@ struct HolidayManagerTest {
     this.addLog('testi18nHolidayManagerisHoliday003 开始')
     try {
       let icsPath = "/system/lib/reso.ics";
-      const context = AppStorage.get<common.UIAbilityContext>("EntryAbilityContext") as common.UIAbilityContext;
+      const context = AppStorage.get<common.UIAbilityContext>("I18nDemoAbilityContext") as common.UIAbilityContext;
 
       icsPath = context.filesDir+'/reso.ics';
       let data = this.getUIContext().getHostContext()?.resourceManager.getRawFileContentSync("reso.ics")
@@ -146,7 +146,7 @@ struct HolidayManagerTest {
      this.addLog('testi18nHolidayManagergetHolidayInfoItemArray001 开始')
     try {
       let icsPath = "/system/lib/reso.ics";
-      const context = AppStorage.get<common.UIAbilityContext>("EntryAbilityContext") as common.UIAbilityContext;
+      const context = AppStorage.get<common.UIAbilityContext>("I18nDemoAbilityContext") as common.UIAbilityContext;
 
       icsPath = context.filesDir+'/reso.ics';
       let data = this.getUIContext().getHostContext()?.resourceManager.getRawFileContentSync("reso.ics")
@@ -181,7 +181,7 @@ struct HolidayManagerTest {
      this.addLog('testi18nHolidayManagergetHolidayInfoItemArray002 开始')
     try {
       let icsPath = "/system/lib/reso.ics";
-      const context = AppStorage.get<common.UIAbilityContext>("EntryAbilityContext") as common.UIAbilityContext;
+      const context = AppStorage.get<common.UIAbilityContext>("I18nDemoAbilityContext") as common.UIAbilityContext;
 
       icsPath = context.filesDir+'/reso.ics';
       let data = this.getUIContext().getHostContext()?.resourceManager.getRawFileContentSync("reso.ics")
@@ -215,7 +215,7 @@ struct HolidayManagerTest {
      this.addLog('testi18nHolidayManagergetHolidayInfoItemArray003 开始')
     try {
       let icsPath = "/system/lib/reso.ics";
-      const context = AppStorage.get<common.UIAbilityContext>("EntryAbilityContext") as common.UIAbilityContext;
+      const context = AppStorage.get<common.UIAbilityContext>("I18nDemoAbilityContext") as common.UIAbilityContext;
 
       icsPath = context.filesDir+'/reso.ics';
       let data = this.getUIContext().getHostContext()?.resourceManager.getRawFileContentSync("reso.ics")
@@ -240,7 +240,7 @@ struct HolidayManagerTest {
      this.addLog('testi18nHolidayManagergetHolidayInfoItemArray004 开始')
     try {
       let icsPath = "/system/lib/reso.ics";
-      const context = AppStorage.get<common.UIAbilityContext>("EntryAbilityContext") as common.UIAbilityContext;
+      const context = AppStorage.get<common.UIAbilityContext>("I18nDemoAbilityContext") as common.UIAbilityContext;
 
       icsPath = context.filesDir+'/reso.ics';
       let data = this.getUIContext().getHostContext()?.resourceManager.getRawFileContentSync("reso.ics")
