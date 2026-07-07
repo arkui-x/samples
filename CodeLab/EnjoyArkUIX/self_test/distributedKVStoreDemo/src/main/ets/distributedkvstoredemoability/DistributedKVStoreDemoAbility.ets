@@ -6,6 +6,7 @@ const DOMAIN = 0x0000;
 
 export default class DistributedKVStoreDemoAbility extends UIAbility {
   onCreate(want: Want, launchParam: AbilityConstant.LaunchParam): void {
+    AppStorage.setOrCreate('DistributedKVStoreDemoAbilityContext', this.context);
     hilog.info(DOMAIN, 'testTag', '%{public}s', 'Ability onCreate');
   }
 

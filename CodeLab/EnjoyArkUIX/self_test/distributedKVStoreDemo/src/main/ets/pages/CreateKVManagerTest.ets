@@ -18,7 +18,7 @@ import { common } from '@kit.AbilityKit';
 import { Router } from '@ohos.arkui.UIContext'
 import { BusinessError } from '@kit.BasicServicesKit';
 
-const context = AppStorage.get<common.UIAbilityContext>("EntryAbilityContext") as common.UIAbilityContext;
+const context = AppStorage.get<common.UIAbilityContext>("DistributedKVStoreDemoAbilityContext") as common.UIAbilityContext;
 
 @Entry
 @Component
