@@ -17,6 +17,7 @@ endif()
 
 include_directories(${NATIVE_ROOT_PATH})
 include_directories(${NATIVE_INCLUDE_PATH})
+include_directories(${NATIVE_INCLUDE_PATH}/rawfile)
 
 add_library(arkui_android SHARED IMPORTED GLOBAL)
 set_target_properties(
@@ -25,7 +26,13 @@ set_target_properties(
         ${CMAKE_CURRENT_SOURCE_DIR}/../../../libs/${CMAKE_ANDROID_ARCH_ABI}/libarkui_android.so
 )
 
+add_library(ace_native SHARED IMPORTED GLOBAL)
+set_target_properties(
+        ace_native
+        PROPERTIES IMPORTED_LOCATION
+        ${CMAKE_CURRENT_SOURCE_DIR}/../../../libs/${CMAKE_ANDROID_ARCH_ABI}/libace_ndk.so
+)
+
 set(NATIVE_SOURCE_PATH ${CMAKE_CURRENT_SOURCE_DIR}/../../../../../../entry/src/main/cpp)
 add_library(entry SHARED ${NATIVE_SOURCE_PATH}/hello.cpp)
-target_link_libraries(entry PUBLIC arkui_android)
-
+target_link_libraries(entry PUBLIC arkui_android ace_native)
