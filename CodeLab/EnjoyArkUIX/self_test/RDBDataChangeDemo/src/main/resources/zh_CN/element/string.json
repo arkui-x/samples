@@ -1,0 +1,16 @@
+{
+  "string": [
+    {
+      "name": "module_desc",
+      "value": "模块描述"
+    },
+    {
+      "name": "RDBDataChangeDemoAbility_desc",
+      "value": "description"
+    },
+    {
+      "name": "RDBDataChangeDemoAbility_label",
+      "value": "label"
+    }
+  ]
+}

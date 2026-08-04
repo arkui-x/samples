@@ -163,6 +163,10 @@
     {
       "name": "ChipDemo",
       "value": "ChipDemo"
+    },
+    {
+      "name": "RDBDataChangeDemo",
+      "value": "RDBDataChangeDemo"
     }
   ]
 }

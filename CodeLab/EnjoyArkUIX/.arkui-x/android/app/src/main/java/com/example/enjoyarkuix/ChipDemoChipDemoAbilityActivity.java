@@ -12,7 +12,7 @@ import ohos.stage.ability.adapter.StageActivity;
  * @see <a href=
  * "https://gitee.com/arkui-x/docs/blob/master/zh-cn/application-dev/tutorial/how-to-integrate-arkui-into-android.md">
  * to build android library</a>
- * @since 2026
+ * @since 2026-05-24
  */
 public class ChipDemoChipDemoAbilityActivity extends StageActivity {
     @Override

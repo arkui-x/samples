@@ -36,6 +36,7 @@
     "VidoDemo",
     "HighContrastDemo",
     "EnableHapticFeedbackDemo",
-    "ChipDemo"
+    "ChipDemo",
+    "RDBDataChangeDemo"
   ]
 }
