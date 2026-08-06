@@ -459,6 +459,18 @@
           ]
         }
       ]
+    },
+    {
+      "name": "RDBDataChangeDemo",
+      "srcPath": "./self_test/RDBDataChangeDemo",
+      "targets": [
+        {
+          "name": "default",
+          "applyToProducts": [
+            "default"
+          ]
+        }
+      ]
     }
   ]
 }

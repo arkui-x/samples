@@ -1,0 +1,16 @@
+{
+  "string": [
+    {
+      "name": "module_desc",
+      "value": "module description"
+    },
+    {
+      "name": "RDBDataChangeDemoAbility_desc",
+      "value": "description"
+    },
+    {
+      "name": "RDBDataChangeDemoAbility_label",
+      "value": "label"
+    }
+  ]
+}
