@@ -1,0 +1,16 @@
+{
+  "string": [
+    {
+      "name": "module_desc",
+      "value": "module description"
+    },
+    {
+      "name": "FileStorageStatisticsDemoAbility_desc",
+      "value": "description"
+    },
+    {
+      "name": "FileStorageStatisticsDemoAbility_label",
+      "value": "应用空间统计"
+    }
+  ]
+}

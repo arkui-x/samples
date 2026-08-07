@@ -48,6 +48,7 @@
 #import "EnableHapticFeedbackDemoEnableHapticFeedbackDemoAbilityViewController.h"
 #import "ChipDemoChipDemoAbilityViewController.h"
 #import "RDBDataChangeDemoRDBDataChangeDemoAbilityViewController.h"
+#import "FileStorageStatisticsDemoFileStorageStatisticsDemoAbilityViewController.h"
 #import <libarkui_ios/StageApplication.h>
 
 #define BUNDLE_DIRECTORY @"arkui-x"
@@ -242,6 +243,10 @@
         NSString *instanceName = [NSString stringWithFormat:@"%@:%@:%@",bundleName, moduleName, abilityName];
         RDBDataChangeDemoRDBDataChangeDemoAbilityViewController *otherVC = [[RDBDataChangeDemoRDBDataChangeDemoAbilityViewController alloc] initWithInstanceName:instanceName];
         subStageVC = (RDBDataChangeDemoRDBDataChangeDemoAbilityViewController *)otherVC;
+    } else if ([moduleName isEqualToString:@"FileStorageStatisticsDemo"] && [abilityName isEqualToString:@"FileStorageStatisticsDemoAbility"]) {
+        NSString *instanceName = [NSString stringWithFormat:@"%@:%@:%@",bundleName, moduleName, abilityName];
+        FileStorageStatisticsDemoFileStorageStatisticsDemoAbilityViewController *otherVC = [[FileStorageStatisticsDemoFileStorageStatisticsDemoAbilityViewController alloc] initWithInstanceName:instanceName];
+        subStageVC = (FileStorageStatisticsDemoFileStorageStatisticsDemoAbilityViewController *)otherVC;
     } // other ViewController
     
     if (!subStageVC) {

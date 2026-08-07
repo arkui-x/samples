@@ -37,6 +37,7 @@
     "HighContrastDemo",
     "EnableHapticFeedbackDemo",
     "ChipDemo",
-    "RDBDataChangeDemo"
+    "RDBDataChangeDemo",
+    "FileStorageStatisticsDemo"
   ]
 }

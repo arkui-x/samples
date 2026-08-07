@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
         E84FBB3C267B4ADBBFF3B045 /* RDBDataChangeDemoRDBDataChangeDemoAbilityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F70CC001588B4A8D8FC44038 /* RDBDataChangeDemoRDBDataChangeDemoAbilityViewController.m */; };
+		4739A38BA1194E9696C852B2 /* FileStorageStatisticsDemoFileStorageStatisticsDemoAbilityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EEE7A1B056F04AA096A0E5C6 /* FileStorageStatisticsDemoFileStorageStatisticsDemoAbilityViewController.m */; };
 		6F0F71F1D2A14BB7A58F6B08 /* ChipDemoChipDemoAbilityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC4F96F08E4946D1A984A544 /* ChipDemoChipDemoAbilityViewController.m */; };
 		BD7AB15E05794E71864B6B3C /* DistributedKVStoreDemoDistributedKVStoreDemoAbilityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DE444EF566C4B64AC586698 /* DistributedKVStoreDemoDistributedKVStoreDemoAbilityViewController.m */; };
 		BE8AF7F3F1024C0FA51D13A9 /* WebSocketDemoWebSocketDemoAbilityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 507CA1B96A294FF799BFAE5C /* WebSocketDemoWebSocketDemoAbilityViewController.m */; };
@@ -203,6 +204,8 @@
 		1F36D0F34FC44C05B15A917F /* VidoDemoVidoDemoAbilityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VidoDemoVidoDemoAbilityViewController.m; sourceTree = "<group>"; };
 		EE0540173C824D8CA44D3D78 /* RDBDataChangeDemoRDBDataChangeDemoAbilityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDBDataChangeDemoRDBDataChangeDemoAbilityViewController.h; sourceTree = "<group>"; };
 		F70CC001588B4A8D8FC44038 /* RDBDataChangeDemoRDBDataChangeDemoAbilityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RDBDataChangeDemoRDBDataChangeDemoAbilityViewController.m; sourceTree = "<group>"; };
+		0304EBE05DC14D41ABC27091 /* FileStorageStatisticsDemoFileStorageStatisticsDemoAbilityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FileStorageStatisticsDemoFileStorageStatisticsDemoAbilityViewController.h; sourceTree = "<group>"; };
+		EEE7A1B056F04AA096A0E5C6 /* FileStorageStatisticsDemoFileStorageStatisticsDemoAbilityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FileStorageStatisticsDemoFileStorageStatisticsDemoAbilityViewController.m; sourceTree = "<group>"; };
 		18ADF3C252B74EC9AA095A4A /* ModifierModifierAbilityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModifierModifierAbilityViewController.m; sourceTree = "<group>"; };
 		1DD91850B8124E2ABD9D7A28 /* UtilsDemoUtilsDemoAbilityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UtilsDemoUtilsDemoAbilityViewController.m; sourceTree = "<group>"; };
 		1FE5CE29705D452C9BDDC602 /* VideoPlayDemoVideoPlayDemoAbilityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoPlayDemoVideoPlayDemoAbilityViewController.h; sourceTree = "<group>"; };
@@ -407,6 +410,8 @@
 				1F36D0F34FC44C05B15A917F /* VidoDemoVidoDemoAbilityViewController.m */,
 				EE0540173C824D8CA44D3D78 /* RDBDataChangeDemoRDBDataChangeDemoAbilityViewController.h */,
 				F70CC001588B4A8D8FC44038 /* RDBDataChangeDemoRDBDataChangeDemoAbilityViewController.m */,
+				0304EBE05DC14D41ABC27091 /* FileStorageStatisticsDemoFileStorageStatisticsDemoAbilityViewController.h */,
+				EEE7A1B056F04AA096A0E5C6 /* FileStorageStatisticsDemoFileStorageStatisticsDemoAbilityViewController.m */,
 				2A258B4CF1DC46CFA6071C12 /* UtilsDemoUtilsDemoAbilityViewController.h */,
 				1DD91850B8124E2ABD9D7A28 /* UtilsDemoUtilsDemoAbilityViewController.m */,
 				C70AB04507FD47188A878694 /* FastBufferDemoFastBufferDemoAbilityViewController.h */,
@@ -613,6 +618,7 @@
 			buildActionMask = 2147483647;
 			files = (
 			    E84FBB3C267B4ADBBFF3B045 /* RDBDataChangeDemoRDBDataChangeDemoAbilityViewController.m in Sources */,
+				4739A38BA1194E9696C852B2 /* FileStorageStatisticsDemoFileStorageStatisticsDemoAbilityViewController.m in Sources */,
 				6F0F71F1D2A14BB7A58F6B08 /* ChipDemoChipDemoAbilityViewController.m in Sources */,
 				BD7AB15E05794E71864B6B3C /* DistributedKVStoreDemoDistributedKVStoreDemoAbilityViewController.m in Sources */,
 				BE8AF7F3F1024C0FA51D13A9 /* WebSocketDemoWebSocketDemoAbilityViewController.m in Sources */,

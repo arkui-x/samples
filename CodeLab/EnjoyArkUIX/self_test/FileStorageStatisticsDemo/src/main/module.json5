@@ -1,0 +1,26 @@
+{
+  "module": {
+    "name": "FileStorageStatisticsDemo",
+    "type": "feature",
+    "description": "$string:module_desc",
+    "mainElement": "FileStorageStatisticsDemoAbility",
+    "deviceTypes": [
+      "default"
+    ],
+    "deliveryWithInstall": true,
+    "installationFree": false,
+    "pages": "$profile:main_pages",
+    "abilities": [
+      {
+        "name": "FileStorageStatisticsDemoAbility",
+        "srcEntry": "./ets/filestoragestatisticsdemoability/FileStorageStatisticsDemoAbility.ets",
+        "description": "$string:FileStorageStatisticsDemoAbility_desc",
+        "icon": "$media:layered_image",
+        "label": "$string:FileStorageStatisticsDemoAbility_label",
+        "startWindowIcon": "$media:startIcon",
+        "startWindowBackground": "$color:start_window_background",
+        "exported": true
+      }
+    ]
+  }
+}

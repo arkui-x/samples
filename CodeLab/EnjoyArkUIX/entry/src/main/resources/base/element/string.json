@@ -167,6 +167,10 @@
     {
       "name": "RDBDataChangeDemo",
       "value": "RDBDataChangeDemo"
+    },
+    {
+      "name": "FileStorageStatisticsDemo",
+      "value": "FileStorageStatisticsDemo"
     }
   ]
 }
