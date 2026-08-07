@@ -1,0 +1,26 @@
+{
+  "module": {
+    "name": "WindowNewDemo",
+    "type": "feature",
+    "description": "$string:module_desc",
+    "mainElement": "WindowNewDemoAbility",
+    "deviceTypes": [
+      "default"
+    ],
+    "deliveryWithInstall": true,
+    "installationFree": false,
+    "pages": "$profile:main_pages",
+    "abilities": [
+      {
+        "name": "WindowNewDemoAbility",
+        "srcEntry": "./ets/windownewdemoability/WindowNewDemoAbility.ets",
+        "description": "$string:WindowNewDemoAbility_desc",
+        "icon": "$media:layered_image",
+        "label": "$string:WindowNewDemoAbility_label",
+        "startWindowIcon": "$media:startIcon",
+        "startWindowBackground": "$color:start_window_background",
+        "exported": true
+      }
+    ]
+  }
+}

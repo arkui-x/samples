@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Cross Platform Crash Test</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --bg: #f6f8fb;
+      --panel: #ffffff;
+      --text: #1f2937;
+      --subtle: #5b6472;
+      --accent: #b42318;
+      --warn-bg: #fff1f0;
+      --border: #e5e7eb;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      padding: 18px;
+      background: linear-gradient(180deg, #fbfdff 0%, var(--bg) 100%);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      line-height: 1.45;
+    }
+
+    .card {
+      background: var(--panel);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 16px;
+      box-shadow: 0 10px 30px rgba(15, 23, 42, 0.06);
+    }
+
+    h1 {
+      margin: 0 0 10px;
+      font-size: 22px;
+    }
+
+    p {
+      margin: 0 0 10px;
+      color: var(--subtle);
+      font-size: 14px;
+    }
+
+    .warn {
+      margin-top: 12px;
+      padding: 12px;
+      border-radius: 12px;
+      background: var(--warn-bg);
+      color: var(--accent);
+      font-size: 13px;
+    }
+
+    .metrics {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 10px;
+      margin-top: 14px;
+    }
+
+    .metric {
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 12px;
+      background: #fafafa;
+    }
+
+    .metric-label {
+      font-size: 12px;
+      color: var(--subtle);
+      margin-bottom: 6px;
+    }
+
+    .metric-value {
+      font-size: 18px;
+      font-weight: 700;
+    }
+
+    #status {
+      margin-top: 14px;
+      font-size: 13px;
+      font-weight: 600;
+      color: #7a0916;
+      word-break: break-word;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>Cross-platform Web crash page</h1>
+    <p>页面加载后会自动进入高强度内存压测。目标不是抛出 JavaScript 异常，而是持续制造真实内存压力，让 Web 内容进程被系统或内核回收。</p>
+    <p>如果设备内存较大，可能需要等待几秒到几十秒。页面一旦白屏或宿主收到回调，就说明测试生效。</p>
+    <div class="warn">该页面会快速占用大量内存，仅用于 onRenderExited / webViewWebContentProcessDidTerminate 测试。</div>
+
+    <div class="metrics">
+      <div class="metric">
+        <div class="metric-label">已申请块数</div>
+        <div class="metric-value" id="chunkCount">0</div>
+      </div>
+      <div class="metric">
+        <div class="metric-label">理论占用</div>
+        <div class="metric-value" id="allocated">0 MB</div>
+      </div>
+    </div>
+
+    <div id="status">状态：页面初始化中...</div>
+  </div>
+
+  <script>
+    (function () {
+      let chunks = [];
+      let canvases = [];
+      let chunkSize = 32 * 1024 * 1024;
+      let totalBytes = 0;
+      let rounds = 0;
+      let statusNode = document.getElementById('status');
+      let allocatedNode = document.getElementById('allocated');
+      let chunkCountNode = document.getElementById('chunkCount');
+
+      function updateStatus(message) {
+        statusNode.textContent = '状态：' + message;
+        allocatedNode.textContent = Math.floor(totalBytes / 1024 / 1024) + ' MB';
+        chunkCountNode.textContent = String(chunks.length);
+      }
+
+      function allocateChunk() {
+        let block = new Uint8Array(chunkSize);
+        for (let index = 0; index < block.length; index += 4096) {
+          block[index] = (index + rounds) % 251;
+        }
+        chunks.push(block);
+        totalBytes += block.byteLength;
+      }
+
+      function allocateCanvas() {
+        let canvas = document.createElement('canvas');
+        canvas.width = 4096;
+        canvas.height = 4096;
+        let context = canvas.getContext('2d');
+        if (context) {
+          context.fillStyle = 'rgb(' + (rounds % 255) + ', 40, 40)';
+          context.fillRect(0, 0, canvas.width, canvas.height);
+          context.getImageData(0, 0, canvas.width, canvas.height);
+        }
+        canvases.push(canvas);
+      }
+
+      function pressureLoop() {
+        rounds += 1;
+        updateStatus('第 ' + rounds + ' 轮压测，持续申请 JS 堆和图形内存');
+
+        try {
+          allocateChunk();
+          allocateChunk();
+
+          if (rounds % 2 === 0) {
+            allocateCanvas();
+          }
+
+          setTimeout(pressureLoop, 0);
+        } catch (error) {
+          updateStatus('捕获异常：' + error + '，继续追加压力');
+          setTimeout(pressureLoop, 0);
+        }
+      }
+
+      window.addEventListener('load', function () {
+        updateStatus('3 秒后开始自动压测');
+        setTimeout(pressureLoop, 3000);
+      });
+    })();
+  </script>
+</body>
+</html>

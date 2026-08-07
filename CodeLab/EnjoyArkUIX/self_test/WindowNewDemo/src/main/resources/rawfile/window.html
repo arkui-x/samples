@@ -1,0 +1,23 @@
+<!-- window.html页面代码 -->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<h2>Multi-Window Test</h2>
+<!--<p>window.open 目标: https://www.baidu.com</p>-->
+<!--<p>子Web组件 src: https://www.example.com</p>-->
+<!--<p>如果子窗口显示百度 → transport绑定生效(setWebController起作用)</p>-->
+<!--<p>如果子窗口显示example.com → 子Web独立加载src(setWebController未生效)</p>-->
+<br>
+<a href="#" onclick="openNewWindow('https://www.baidu.com')">打开新窗口(目标:百度)</a>
+<script type="text/javascript">
+    function openNewWindow(url) {
+      window.open(url, '_blank');
+      return false;
+    }
+</script>
+</body>
+</html>

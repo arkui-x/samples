@@ -1,0 +1,12 @@
+{
+  "src": [
+    "pages/SecondPage",
+    "pages/onRenderExited",
+    "pages/Index",
+    "pages/SetWebControllerNull",
+    "pages/OnWindowNewNullUndefined",
+    "pages/AllowWindowOpenMethod",
+    "pages/MultiWindowAccess",
+    "pages/OnWindowExit"
+  ]
+}

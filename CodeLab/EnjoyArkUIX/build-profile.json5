@@ -507,6 +507,18 @@
           ]
         }
       ]
+    },
+    {
+      "name": "WindowNewDemo",
+      "srcPath": "./self_test/WindowNewDemo",
+      "targets": [
+        {
+          "name": "default",
+          "applyToProducts": [
+            "default"
+          ]
+        }
+      ]
     }
   ]
 }

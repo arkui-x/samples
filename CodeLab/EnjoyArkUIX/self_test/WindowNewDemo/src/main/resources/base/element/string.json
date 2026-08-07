@@ -1,0 +1,16 @@
+{
+  "string": [
+    {
+      "name": "module_desc",
+      "value": "module description"
+    },
+    {
+      "name": "WindowNewDemoAbility_desc",
+      "value": "description"
+    },
+    {
+      "name": "WindowNewDemoAbility_label",
+      "value": "label"
+    }
+  ]
+}
