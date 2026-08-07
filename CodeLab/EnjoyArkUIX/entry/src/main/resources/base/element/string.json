@@ -187,6 +187,10 @@
     {
       "name": "InteractionEffectTestDemo",
       "value": "InteractionEffectTestDemo"
+    },
+    {
+      "name": "WebAttributeTestDemo",
+      "value": "WebAttributeTestDemo"
     }
   ]
 }

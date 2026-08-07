@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <title>Long Content - 14</title>
+    <style>
+        body { margin: 0; padding: 16px; font-size: 16px; line-height: 1.6; background: #fff; }
+        .display-area {
+            height: 200px;
+            box-sizing: border-box;
+            background: linear-gradient(135deg, #e3f2fd 0%, #bbdefb 100%);
+            border: 2px solid #1976d2;
+            border-radius: 8px;
+            margin-bottom: 16px;
+            padding: 16px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        .display-area .label { color: #1976d2; font-size: 14px; font-weight: 600; margin-bottom: 8px; }
+        .display-area .px-value { font-size: 36px; font-weight: bold; color: #0d47a1; line-height: 1.2; }
+        .display-area .desc { font-size: 12px; color: #546e7a; margin-top: 8px; }
+        .block {
+            box-sizing: border-box;
+            border-bottom: 1px solid #eee;
+            padding: 20px; height: 200px;
+            display: flex; flex-direction: column; justify-content: center;
+        }
+        h3 { margin: 0 0 8px 0; color: #333; font-size: 18px; }
+        p { margin: 0; color: #666; }
+    </style>
+</head>
+<body>
+<div class="display-area">
+    <div class="label">H5 网页实际内容高度 (px)</div>
+    <div class="px-value" id="actualPx">计算中...</div>
+    <div class="desc" id="actualDesc">14 个区块</div>
+</div>
+<div id="content"></div>
+<script>
+    let container = document.getElementById('content');
+    let blockCount = 14;
+    for (let i = 1; i <= blockCount; i++) {
+        let block = document.createElement('div');
+        block.className = 'block';
+        block.innerHTML = '<h3>第 ' + i + '/' + blockCount + ' 个区块</h3><p>这是长内容测试区块，用于验证 FIT_CONTENT 模式下 Web 组件高度超过 7680px 时的自适应表现。每个区块约 200px 高，共 ' + blockCount + ' 个区块，总高度约 ' + (200 + 200 * blockCount) + ' px。</p>';
+        container.appendChild(block);
+    }
+    // 计算该 H5 网页的实际 px 显示区域
+    function updateActualPx() {
+        let totalHeight = document.documentElement.scrollHeight || document.body.scrollHeight;
+        document.getElementById('actualPx').textContent = totalHeight + ' px';
+        document.getElementById('actualDesc').textContent = blockCount + ' 个区块 (每块约 200px) + 200px 显示区';
+    }
+    window.addEventListener('load', updateActualPx);
+    window.addEventListener('resize', updateActualPx);
+    setTimeout(updateActualPx, 100);
+    setTimeout(updateActualPx, 500);
+</script>
+</body>
+</html>

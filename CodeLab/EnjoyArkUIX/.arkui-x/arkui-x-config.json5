@@ -42,6 +42,7 @@
     "FileUriTestDemo",
     "WindowDisplayFoldDemo",
     "WindowNewDemo",
-    "InteractionEffectTestDemo"
+    "InteractionEffectTestDemo",
+    "WebAttributeTestDemo"
   ]
 }

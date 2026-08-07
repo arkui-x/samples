@@ -53,6 +53,7 @@
 #import "WindowDisplayFoldDemoWindowDisplayFoldDemoAbilityViewController.h"
 #import "WindowNewDemoWindowNewDemoAbilityViewController.h"
 #import "InteractionEffectTestDemoInteractionEffectTestDemoAbilityViewController.h"
+#import "WebAttributeTestDemoWebAttributeTestDemoAbilityViewController.h"
 #import <libarkui_ios/StageApplication.h>
 
 #define BUNDLE_DIRECTORY @"arkui-x"
@@ -267,6 +268,10 @@
         NSString *instanceName = [NSString stringWithFormat:@"%@:%@:%@",bundleName, moduleName, abilityName];
         InteractionEffectTestDemoInteractionEffectTestDemoAbilityViewController *otherVC = [[InteractionEffectTestDemoInteractionEffectTestDemoAbilityViewController alloc] initWithInstanceName:instanceName];
         subStageVC = (InteractionEffectTestDemoInteractionEffectTestDemoAbilityViewController *)otherVC;
+    } else if ([moduleName isEqualToString:@"WebAttributeTestDemo"] && [abilityName isEqualToString:@"WebAttributeTestDemoAbility"]) {
+        NSString *instanceName = [NSString stringWithFormat:@"%@:%@:%@",bundleName, moduleName, abilityName];
+        WebAttributeTestDemoWebAttributeTestDemoAbilityViewController *otherVC = [[WebAttributeTestDemoWebAttributeTestDemoAbilityViewController alloc] initWithInstanceName:instanceName];
+        subStageVC = (WebAttributeTestDemoWebAttributeTestDemoAbilityViewController *)otherVC;
     } // other ViewController
     
     if (!subStageVC) {

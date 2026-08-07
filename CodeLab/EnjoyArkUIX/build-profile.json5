@@ -531,6 +531,18 @@
           ]
         }
       ]
+    },
+    {
+      "name": "WebAttributeTestDemo",
+      "srcPath": "./self_test/WebAttributeTestDemo",
+      "targets": [
+        {
+          "name": "default",
+          "applyToProducts": [
+            "default"
+          ]
+        }
+      ]
     }
   ]
 }
