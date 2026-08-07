@@ -49,6 +49,7 @@
 #import "ChipDemoChipDemoAbilityViewController.h"
 #import "RDBDataChangeDemoRDBDataChangeDemoAbilityViewController.h"
 #import "FileStorageStatisticsDemoFileStorageStatisticsDemoAbilityViewController.h"
+#import "FileUriTestDemoFileUriTestDemoAbilityViewController.h"
 #import <libarkui_ios/StageApplication.h>
 
 #define BUNDLE_DIRECTORY @"arkui-x"
@@ -247,6 +248,10 @@
         NSString *instanceName = [NSString stringWithFormat:@"%@:%@:%@",bundleName, moduleName, abilityName];
         FileStorageStatisticsDemoFileStorageStatisticsDemoAbilityViewController *otherVC = [[FileStorageStatisticsDemoFileStorageStatisticsDemoAbilityViewController alloc] initWithInstanceName:instanceName];
         subStageVC = (FileStorageStatisticsDemoFileStorageStatisticsDemoAbilityViewController *)otherVC;
+    } else if ([moduleName isEqualToString:@"FileUriTestDemo"] && [abilityName isEqualToString:@"FileUriTestDemoAbility"]) {
+        NSString *instanceName = [NSString stringWithFormat:@"%@:%@:%@",bundleName, moduleName, abilityName];
+        FileUriTestDemoFileUriTestDemoAbilityViewController *otherVC = [[FileUriTestDemoFileUriTestDemoAbilityViewController alloc] initWithInstanceName:instanceName];
+        subStageVC = (FileUriTestDemoFileUriTestDemoAbilityViewController *)otherVC;
     } // other ViewController
     
     if (!subStageVC) {

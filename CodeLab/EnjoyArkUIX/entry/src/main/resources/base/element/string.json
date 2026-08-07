@@ -171,6 +171,10 @@
     {
       "name": "FileStorageStatisticsDemo",
       "value": "FileStorageStatisticsDemo"
+    },
+    {
+      "name": "FileUriTestDemo",
+      "value": "FileUriTestDemo"
     }
   ]
 }

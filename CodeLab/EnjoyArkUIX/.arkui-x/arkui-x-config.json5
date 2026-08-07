@@ -38,6 +38,7 @@
     "EnableHapticFeedbackDemo",
     "ChipDemo",
     "RDBDataChangeDemo",
-    "FileStorageStatisticsDemo"
+    "FileStorageStatisticsDemo",
+    "FileUriTestDemo"
   ]
 }

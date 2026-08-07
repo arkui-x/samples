@@ -1,0 +1,26 @@
+{
+  "module": {
+    "name": "FileUriTestDemo",
+    "type": "feature",
+    "description": "$string:module_desc",
+    "mainElement": "FileUriTestDemoAbility",
+    "deviceTypes": [
+      "default"
+    ],
+    "deliveryWithInstall": true,
+    "installationFree": false,
+    "pages": "$profile:main_pages",
+    "abilities": [
+      {
+        "name": "FileUriTestDemoAbility",
+        "srcEntry": "./ets/fileuritestdemoability/FileUriTestDemoAbility.ets",
+        "description": "$string:FileUriTestDemoAbility_desc",
+        "icon": "$media:icon",
+        "label": "$string:FileUriTestDemoAbility_label",
+        "startWindowIcon": "$media:icon",
+        "startWindowBackground": "$color:start_window_background",
+        "exported": true
+      }
+    ]
+  }
+}

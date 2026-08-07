@@ -306,4 +306,14 @@ export const SELF_TEST: ThirdLevelCategory[] = [
     },
     platform: PlatformTypeEnum.SUPPORT_BOTH
   },
+  {
+    image: $r('app.media.ic_unselect_component'),
+    title: $r('app.string.FileUriTestDemo'),
+    want: {
+      bundleName: 'com.example.enjoyarkuix',
+      moduleName: 'FileUriTestDemo',
+      abilityName: 'FileUriTestDemoAbility',
+    },
+    platform: PlatformTypeEnum.SUPPORT_BOTH
+  },
 ]

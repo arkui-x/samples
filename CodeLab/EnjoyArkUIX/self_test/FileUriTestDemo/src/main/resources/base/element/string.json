@@ -1,0 +1,16 @@
+{
+  "string": [
+    {
+      "name": "module_desc",
+      "value": "module description"
+    },
+    {
+      "name": "FileUriTestDemoAbility_desc",
+      "value": "description"
+    },
+    {
+      "name": "FileUriTestDemoAbility_label",
+      "value": "fileuri"
+    }
+  ]
+}

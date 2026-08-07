@@ -483,6 +483,18 @@
           ]
         }
       ]
+    },
+    {
+      "name": "FileUriTestDemo",
+      "srcPath": "./self_test/FileUriTestDemo",
+      "targets": [
+        {
+          "name": "default",
+          "applyToProducts": [
+            "default"
+          ]
+        }
+      ]
     }
   ]
 }
