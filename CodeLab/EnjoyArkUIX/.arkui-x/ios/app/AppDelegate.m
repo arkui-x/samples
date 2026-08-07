@@ -50,6 +50,7 @@
 #import "RDBDataChangeDemoRDBDataChangeDemoAbilityViewController.h"
 #import "FileStorageStatisticsDemoFileStorageStatisticsDemoAbilityViewController.h"
 #import "FileUriTestDemoFileUriTestDemoAbilityViewController.h"
+#import "WindowDisplayFoldDemoWindowDisplayFoldDemoAbilityViewController.h"
 #import <libarkui_ios/StageApplication.h>
 
 #define BUNDLE_DIRECTORY @"arkui-x"
@@ -252,6 +253,10 @@
         NSString *instanceName = [NSString stringWithFormat:@"%@:%@:%@",bundleName, moduleName, abilityName];
         FileUriTestDemoFileUriTestDemoAbilityViewController *otherVC = [[FileUriTestDemoFileUriTestDemoAbilityViewController alloc] initWithInstanceName:instanceName];
         subStageVC = (FileUriTestDemoFileUriTestDemoAbilityViewController *)otherVC;
+    } else if ([moduleName isEqualToString:@"WindowDisplayFoldDemo"] && [abilityName isEqualToString:@"WindowDisplayFoldDemoAbility"]) {
+        NSString *instanceName = [NSString stringWithFormat:@"%@:%@:%@",bundleName, moduleName, abilityName];
+        WindowDisplayFoldDemoWindowDisplayFoldDemoAbilityViewController *otherVC = [[WindowDisplayFoldDemoWindowDisplayFoldDemoAbilityViewController alloc] initWithInstanceName:instanceName];
+        subStageVC = (WindowDisplayFoldDemoWindowDisplayFoldDemoAbilityViewController *)otherVC;
     } // other ViewController
     
     if (!subStageVC) {

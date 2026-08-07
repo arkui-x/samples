@@ -316,4 +316,14 @@ export const SELF_TEST: ThirdLevelCategory[] = [
     },
     platform: PlatformTypeEnum.SUPPORT_BOTH
   },
+  {
+    image: $r('app.media.ic_unselect_component'),
+    title: $r('app.string.WindowDisplayFoldDemo'),
+    want: {
+      bundleName: 'com.example.enjoyarkuix',
+      moduleName: 'WindowDisplayFoldDemo',
+      abilityName: 'WindowDisplayFoldDemoAbility',
+    },
+    platform: PlatformTypeEnum.SUPPORT_BOTH
+  },
 ]

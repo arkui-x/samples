@@ -39,6 +39,7 @@
     "ChipDemo",
     "RDBDataChangeDemo",
     "FileStorageStatisticsDemo",
-    "FileUriTestDemo"
+    "FileUriTestDemo",
+    "WindowDisplayFoldDemo"
   ]
 }

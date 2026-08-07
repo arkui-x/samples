@@ -175,6 +175,10 @@
     {
       "name": "FileUriTestDemo",
       "value": "FileUriTestDemo"
+    },
+    {
+      "name": "WindowDisplayFoldDemo",
+      "value": "WindowDisplayFoldDemo"
     }
   ]
 }
