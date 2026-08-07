@@ -28,6 +28,14 @@ set_target_properties(
         ${CMAKE_CURRENT_SOURCE_DIR}/../../../libs/${CMAKE_ANDROID_ARCH_ABI}/libarkui_android.so
 )
 
+# 若使用OpenHarmony SDK 7.0.0.33以下版本，需删除arkui_ndk相关配置。
+add_library(arkui_ndk SHARED IMPORTED GLOBAL)
+set_target_properties(
+    arkui_ndk
+    PROPERTIES IMPORTED_LOCATION
+    ${CMAKE_CURRENT_SOURCE_DIR}/../../../libs/${CMAKE_ANDROID_ARCH_ABI}/libace_ndk.so
+)
+
 set(NATIVE_SOURCE_PATH ${CMAKE_CURRENT_SOURCE_DIR}/../../../../../../entry/src/main/cpp)
 
 include_directories(${NATIVE_SOURCE_PATH})
@@ -43,6 +51,8 @@ add_library(xcomponent_napi SHARED
             ${NATIVE_SOURCE_PATH}/napi_manager.cpp
             ${NATIVE_SOURCE_PATH}/napi_util.cpp)
 target_link_libraries(xcomponent_napi PUBLIC arkui_android)
+# 若使用OpenHarmony SDK 7.0.0.33以下版本，需删除arkui_ndk相关配置。
+target_link_libraries(xcomponent_napi PUBLIC arkui_ndk)
 target_link_libraries(xcomponent_napi PUBLIC libc++.a)
 target_link_libraries(xcomponent_napi PUBLIC log)
 target_link_libraries(xcomponent_napi PUBLIC EGL)
