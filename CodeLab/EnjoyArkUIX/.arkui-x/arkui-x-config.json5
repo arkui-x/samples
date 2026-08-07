@@ -41,6 +41,7 @@
     "FileStorageStatisticsDemo",
     "FileUriTestDemo",
     "WindowDisplayFoldDemo",
-    "WindowNewDemo"
+    "WindowNewDemo",
+    "InteractionEffectTestDemo"
   ]
 }

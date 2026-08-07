@@ -183,6 +183,10 @@
     {
       "name": "WindowNewDemo",
       "value": "WindowNewDemo"
+    },
+    {
+      "name": "InteractionEffectTestDemo",
+      "value": "InteractionEffectTestDemo"
     }
   ]
 }

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width,maximum-scale=10">
+    <meta charset="UTF-8">
+</head>
+<body>
+<script>
+    // 供 ets 通过 runJavaScript 调用，返回网页的缩放信息
+    function getScale() {
+        let vvScale = window.visualViewport ? window.visualViewport.scale : -1;
+        return vvScale.toFixed(2) * 100;
+    }
+</script>
+<div style="width: 800px; background: linear-gradient(to right, red, blue);">
+    <h1 style="width: 600px;">这是一个很宽的内容区域</h1>
+    <p style="width: 200px;">这是一段文字</p>
+    <script>
+        for (let i = 1; i <= 20; i++) {
+          document.write('<p style="width: 350px;">示例段落 ' + i + '：这是用于测试的占位文本。</p>');
+        }
+    </script>
+    <p style="width: 600px;">这是最后一行文字</p>
+
+    <!-- 内部可滚动区域 -->
+    <div style="width: 75%; height: 200px; overflow: auto; border: 3px solid #333; margin: 20px auto; background: #f0f0f0; overscroll-behavior: contain;">
+    <h2 style="text-align: center; color: #333;">内部可滚动区域</h2>
+    <script>
+        for (let j = 1; j <= 15; j++) {
+            document.write('<p style="padding: 10px; margin: 5px; background: ' + (j % 2 === 0 ? '#e0e0e0' : '#ffffff') + ';">内部滚动项 ' + j + '：这是用于测试overScrollMode属性的内部可滚动内容。</p>');
+        }
+    </script>
+</div>
+</div>
+</body>
+</html>

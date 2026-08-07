@@ -12,6 +12,7 @@
  		459BA2B4614849B790821D44 /* FileUriTestDemoFileUriTestDemoAbilityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEE556EF1B2543398456FAC0 /* FileUriTestDemoFileUriTestDemoAbilityViewController.m */; };
  		2A43848033834EC6AE49305D /* WindowDisplayFoldDemoWindowDisplayFoldDemoAbilityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E3852D90BD5C4C46A2676913 /* WindowDisplayFoldDemoWindowDisplayFoldDemoAbilityViewController.m */; };
  		EC776E51686E44E0991CE574 /* WindowNewDemoWindowNewDemoAbilityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49CA95E40C6F466E9A7C5ECA /* WindowNewDemoWindowNewDemoAbilityViewController.m */; };
+ 		74610A3DF6A2467098AF580D /* InteractionEffectTestDemoInteractionEffectTestDemoAbilityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CD14CEE5F3F4F2195F27BD7 /* InteractionEffectTestDemoInteractionEffectTestDemoAbilityViewController.m */; };
 		6F0F71F1D2A14BB7A58F6B08 /* ChipDemoChipDemoAbilityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC4F96F08E4946D1A984A544 /* ChipDemoChipDemoAbilityViewController.m */; };
 		BD7AB15E05794E71864B6B3C /* DistributedKVStoreDemoDistributedKVStoreDemoAbilityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DE444EF566C4B64AC586698 /* DistributedKVStoreDemoDistributedKVStoreDemoAbilityViewController.m */; };
 		BE8AF7F3F1024C0FA51D13A9 /* WebSocketDemoWebSocketDemoAbilityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 507CA1B96A294FF799BFAE5C /* WebSocketDemoWebSocketDemoAbilityViewController.m */; };
@@ -215,6 +216,8 @@
  		E3852D90BD5C4C46A2676913 /* WindowDisplayFoldDemoWindowDisplayFoldDemoAbilityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WindowDisplayFoldDemoWindowDisplayFoldDemoAbilityViewController.m; sourceTree = "<group>"; };
  		F11C685F83CB492AB15036FA /* WindowNewDemoWindowNewDemoAbilityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WindowNewDemoWindowNewDemoAbilityViewController.h; sourceTree = "<group>"; };
 		49CA95E40C6F466E9A7C5ECA /* WindowNewDemoWindowNewDemoAbilityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WindowNewDemoWindowNewDemoAbilityViewController.m; sourceTree = "<group>"; };
+ 		0B8F2C5649DC46B897D3F1F3 /* InteractionEffectTestDemoInteractionEffectTestDemoAbilityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InteractionEffectTestDemoInteractionEffectTestDemoAbilityViewController.h; sourceTree = "<group>"; };
+		4CD14CEE5F3F4F2195F27BD7 /* InteractionEffectTestDemoInteractionEffectTestDemoAbilityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InteractionEffectTestDemoInteractionEffectTestDemoAbilityViewController.m; sourceTree = "<group>"; };
 		18ADF3C252B74EC9AA095A4A /* ModifierModifierAbilityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModifierModifierAbilityViewController.m; sourceTree = "<group>"; };
 		1DD91850B8124E2ABD9D7A28 /* UtilsDemoUtilsDemoAbilityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UtilsDemoUtilsDemoAbilityViewController.m; sourceTree = "<group>"; };
 		1FE5CE29705D452C9BDDC602 /* VideoPlayDemoVideoPlayDemoAbilityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoPlayDemoVideoPlayDemoAbilityViewController.h; sourceTree = "<group>"; };
@@ -427,6 +430,8 @@
  				E3852D90BD5C4C46A2676913 /* WindowDisplayFoldDemoWindowDisplayFoldDemoAbilityViewController.m */,
  				F11C685F83CB492AB15036FA /* WindowNewDemoWindowNewDemoAbilityViewController.h */,
 				49CA95E40C6F466E9A7C5ECA /* WindowNewDemoWindowNewDemoAbilityViewController.m */,
+ 				0B8F2C5649DC46B897D3F1F3 /* InteractionEffectTestDemoInteractionEffectTestDemoAbilityViewController.h */,
+				4CD14CEE5F3F4F2195F27BD7 /* InteractionEffectTestDemoInteractionEffectTestDemoAbilityViewController.m */,
 				2A258B4CF1DC46CFA6071C12 /* UtilsDemoUtilsDemoAbilityViewController.h */,
 				1DD91850B8124E2ABD9D7A28 /* UtilsDemoUtilsDemoAbilityViewController.m */,
 				C70AB04507FD47188A878694 /* FastBufferDemoFastBufferDemoAbilityViewController.h */,
@@ -637,6 +642,7 @@
  				459BA2B4614849B790821D44 /* FileUriTestDemoFileUriTestDemoAbilityViewController.m in Sources */,
  				2A43848033834EC6AE49305D /* WindowDisplayFoldDemoWindowDisplayFoldDemoAbilityViewController.m in Sources */,
  				EC776E51686E44E0991CE574 /* WindowNewDemoWindowNewDemoAbilityViewController.m in Sources */,
+ 				74610A3DF6A2467098AF580D /* InteractionEffectTestDemoInteractionEffectTestDemoAbilityViewController.m in Sources */,
 				6F0F71F1D2A14BB7A58F6B08 /* ChipDemoChipDemoAbilityViewController.m in Sources */,
 				BD7AB15E05794E71864B6B3C /* DistributedKVStoreDemoDistributedKVStoreDemoAbilityViewController.m in Sources */,
 				BE8AF7F3F1024C0FA51D13A9 /* WebSocketDemoWebSocketDemoAbilityViewController.m in Sources */,

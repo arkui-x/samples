@@ -519,6 +519,18 @@
           ]
         }
       ]
+    },
+    {
+      "name": "InteractionEffectTestDemo",
+      "srcPath": "./self_test/InteractionEffectTestDemo",
+      "targets": [
+        {
+          "name": "default",
+          "applyToProducts": [
+            "default"
+          ]
+        }
+      ]
     }
   ]
 }

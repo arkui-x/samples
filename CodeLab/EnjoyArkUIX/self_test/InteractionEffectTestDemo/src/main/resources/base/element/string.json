@@ -1,0 +1,16 @@
+{
+  "string": [
+    {
+      "name": "module_desc",
+      "value": "module description"
+    },
+    {
+      "name": "InteractionEffectTestDemoAbility_desc",
+      "value": "description"
+    },
+    {
+      "name": "InteractionEffectTestDemoAbility_label",
+      "value": "label"
+    }
+  ]
+}
