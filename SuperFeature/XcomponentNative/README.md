@@ -106,6 +106,8 @@ entry/src/main/
 
 3.本示例需要使用DevEco Studio 5.0 Beta1 (Build Version: 5.0.3.403, built on June 21, 2024)及以上版本才可编译运行。
 
+4.本示例需要使用OpenHarmony SDK 7.0.0.33及以上版本才可编译运行，若使用SDK早于该版本，需去除Android应用工程的CMakeLists.txt文件中arkui_ndk相关配置。
+
 ##### 针对CMakeLists.txt的检查说明：
 
 - 代码路径：.arkui-x/android/app/src/main/cpp/CMakeLists.txt
