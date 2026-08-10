@@ -189,5 +189,30 @@
                 android:configChanges="orientation|keyboard|layoutDirection|screenSize|screenLayout|uiMode|smallestScreenSize|density"
                 android:exported="true" android:name=".RDBDataChangeDemoRDBDataChangeDemoAbilityActivity"
                 android:screenOrientation="portrait" android:windowSoftInputMode="adjustNothing |stateAlwaysHidden"/>
+        <activity
+                android:configChanges="orientation|keyboard|layoutDirection|screenSize|screenLayout|uiMode|smallestScreenSize|density"
+                android:exported="true" android:name=".FileStorageStatisticsDemoFileStorageStatisticsDemoAbilityActivity"
+                android:screenOrientation="portrait" android:windowSoftInputMode="adjustNothing |stateAlwaysHidden"/>
+        <activity
+                android:configChanges="orientation|keyboard|layoutDirection|screenSize|screenLayout|uiMode|smallestScreenSize|density"
+                android:exported="true" android:name=".FileUriTestDemoFileUriTestDemoAbilityActivity"
+                android:screenOrientation="portrait" android:windowSoftInputMode="adjustNothing |stateAlwaysHidden"/>
+        <activity
+                android:configChanges="orientation|keyboard|layoutDirection|screenSize|screenLayout|uiMode|smallestScreenSize|density"
+                android:exported="true" android:name=".WindowDisplayFoldDemoWindowDisplayFoldDemoAbilityActivity"
+                android:screenOrientation="portrait" android:windowSoftInputMode="adjustNothing |stateAlwaysHidden"/>
+        <activity
+                android:configChanges="orientation|keyboard|layoutDirection|screenSize|screenLayout|uiMode|smallestScreenSize|density"
+                android:exported="true" android:name=".WindowNewDemoWindowNewDemoAbilityActivity"
+                android:screenOrientation="portrait" android:windowSoftInputMode="adjustNothing |stateAlwaysHidden"/>
+        <activity
+                android:configChanges="orientation|keyboard|layoutDirection|screenSize|screenLayout|uiMode|smallestScreenSize|density"
+                android:exported="true"
+                android:name=".InteractionEffectTestDemoInteractionEffectTestDemoAbilityActivity"
+                android:screenOrientation="portrait" android:windowSoftInputMode="adjustNothing |stateAlwaysHidden"/>
+        <activity
+                android:configChanges="orientation|keyboard|layoutDirection|screenSize|screenLayout|uiMode|smallestScreenSize|density"
+                android:exported="true" android:name=".WebAttributeTestDemoWebAttributeTestDemoAbilityActivity"
+                android:screenOrientation="portrait" android:windowSoftInputMode="adjustNothing |stateAlwaysHidden"/>
     </application>
 </manifest>

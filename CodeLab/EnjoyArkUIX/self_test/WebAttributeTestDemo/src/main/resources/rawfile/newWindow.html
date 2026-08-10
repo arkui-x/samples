@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>New Window</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    html { font-size: 18px; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial; line-height: 1.4; padding: 16px; }
+    h1 { font-size: 1.6rem; margin-bottom: 0.75rem; }
+    p { font-size: 1rem; }
+    button { font-size: 1rem; padding: 12px 20px; min-width: 140px; min-height: 44px; border-radius: 8px; cursor: pointer; }
+  </style>
+</head>
+<body>
+<h1>New Window</h1>
+<p>This is a new window.</p>
+<button onclick="closeThisWindow()">Close This Window</button>
+
+<script>
+  function closeThisWindow() {
+      console.log('Closing window...');
+      window.close();
+  }
+</script>
+</body>
+</html>

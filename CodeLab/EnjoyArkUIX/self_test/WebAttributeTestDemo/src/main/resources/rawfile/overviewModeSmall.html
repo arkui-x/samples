@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <!-- 关键：加了 viewport，让网页适配手机宽度 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>正常宽度 - 小于屏幕宽度</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background: #f5f5f5;
+            /* 关键：不写固定宽度，自动撑满屏幕但不超宽 */
+            max-width: 100%;
+            overflow-x: hidden;
+        }
+        .box {
+            width: 100%;       /* 永远等于屏幕宽度，不会超 */
+            max-width: 100%;   /* 强制不超屏幕 */
+            height: 120px;
+            line-height: 120px;
+            text-align: center;
+            font-size: 32px;
+            background: #e0f7fa;
+            border-bottom: 1px solid #ccc;
+        }
+        .normal {
+            background: #c8e6c9;
+        }
+    </style>
+</head>
+<body>
+<div class="box">小宽度</div>
+<div class="box normal"></div>
+</body>
+</html>

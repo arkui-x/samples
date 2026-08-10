@@ -1,0 +1,40 @@
+<!-- auto_open.html — 页面加载后自动延迟触发 window.open -->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body style="background:#f0f2f5; font-family: sans-serif; text-align: center; padding: 20px;">
+    <h3>allowWindowOpenMethod 自动测试页</h3>
+    <p id="status">页面已加载，等待 <span id="countdown">5</span> 秒后自动触发 window.open()...</p>
+    <p><button type="button" onclick="manualOpen()" style="padding:8px 16px; cursor:pointer;">手动立即触发</button></p>
+
+<script>
+    let countdown = 5;
+    let timer = setInterval(function() {
+        countdown--;
+        document.getElementById('countdown').textContent = countdown;
+        if (countdown <= 0) {
+            clearInterval(timer);
+            document.getElementById('status').innerHTML = '<span style="color:red;font-weight:bold;">正在执行 window.open()...</span>';
+            openwindowAll();
+        }
+    }, 1000);
+
+    function openwindowAll() {
+        try {
+            open('https://www.baidu.com', '_blank', 'height=400,width=600,top=100,left=100,scrollbars=no');
+        } catch (e) {
+            document.getElementById('status').innerHTML = '<span style="color:red;">window.open 异常: ' + e.message + '</span>';
+        }
+    }
+
+    function manualOpen() {
+        clearInterval(timer);
+        document.getElementById('status').innerHTML = '<span style="color:blue;font-weight:bold;">手动触发 → 正在执行 window.open()...</span>';
+        openwindowAll();
+    }
+</script>
+</body>
+</html>

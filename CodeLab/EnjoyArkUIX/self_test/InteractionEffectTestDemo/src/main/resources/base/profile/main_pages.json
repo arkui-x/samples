@@ -1,0 +1,8 @@
+{
+  "src": [
+    "pages/Home",
+    "pages/Index",
+    "pages/NonExplicit",
+    "pages/OverScrollModeTest"
+  ]
+}

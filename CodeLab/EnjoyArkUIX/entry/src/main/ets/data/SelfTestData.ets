@@ -296,4 +296,64 @@ export const SELF_TEST: ThirdLevelCategory[] = [
     },
     platform: PlatformTypeEnum.SUPPORT_BOTH
   },
+  {
+    image: $r('app.media.ic_unselect_component'),
+    title: $r('app.string.FileStorageStatisticsDemo'),
+    want: {
+      bundleName: 'com.example.enjoyarkuix',
+      moduleName: 'FileStorageStatisticsDemo',
+      abilityName: 'FileStorageStatisticsDemoAbility',
+    },
+    platform: PlatformTypeEnum.SUPPORT_BOTH
+  },
+  {
+    image: $r('app.media.ic_unselect_component'),
+    title: $r('app.string.FileUriTestDemo'),
+    want: {
+      bundleName: 'com.example.enjoyarkuix',
+      moduleName: 'FileUriTestDemo',
+      abilityName: 'FileUriTestDemoAbility',
+    },
+    platform: PlatformTypeEnum.SUPPORT_BOTH
+  },
+  {
+    image: $r('app.media.ic_unselect_component'),
+    title: $r('app.string.WindowDisplayFoldDemo'),
+    want: {
+      bundleName: 'com.example.enjoyarkuix',
+      moduleName: 'WindowDisplayFoldDemo',
+      abilityName: 'WindowDisplayFoldDemoAbility',
+    },
+    platform: PlatformTypeEnum.SUPPORT_BOTH
+  },
+  {
+    image: $r('app.media.ic_unselect_component'),
+    title: $r('app.string.WindowNewDemo'),
+    want: {
+      bundleName: 'com.example.enjoyarkuix',
+      moduleName: 'WindowNewDemo',
+      abilityName: 'WindowNewDemoAbility',
+    },
+    platform: PlatformTypeEnum.SUPPORT_BOTH
+  },
+  {
+    image: $r('app.media.ic_unselect_component'),
+    title: $r('app.string.InteractionEffectTestDemo'),
+    want: {
+      bundleName: 'com.example.enjoyarkuix',
+      moduleName: 'InteractionEffectTestDemo',
+      abilityName: 'InteractionEffectTestDemoAbility',
+    },
+    platform: PlatformTypeEnum.SUPPORT_BOTH
+  },
+  {
+    image: $r('app.media.ic_unselect_component'),
+    title: $r('app.string.WebAttributeTestDemo'),
+    want: {
+      bundleName: 'com.example.enjoyarkuix',
+      moduleName: 'WebAttributeTestDemo',
+      abilityName: 'WebAttributeTestDemoAbility',
+    },
+    platform: PlatformTypeEnum.SUPPORT_BOTH
+  },
 ]

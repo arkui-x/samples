@@ -48,6 +48,12 @@
 #import "EnableHapticFeedbackDemoEnableHapticFeedbackDemoAbilityViewController.h"
 #import "ChipDemoChipDemoAbilityViewController.h"
 #import "RDBDataChangeDemoRDBDataChangeDemoAbilityViewController.h"
+#import "FileStorageStatisticsDemoFileStorageStatisticsDemoAbilityViewController.h"
+#import "FileUriTestDemoFileUriTestDemoAbilityViewController.h"
+#import "WindowDisplayFoldDemoWindowDisplayFoldDemoAbilityViewController.h"
+#import "WindowNewDemoWindowNewDemoAbilityViewController.h"
+#import "InteractionEffectTestDemoInteractionEffectTestDemoAbilityViewController.h"
+#import "WebAttributeTestDemoWebAttributeTestDemoAbilityViewController.h"
 #import <libarkui_ios/StageApplication.h>
 
 #define BUNDLE_DIRECTORY @"arkui-x"
@@ -242,6 +248,30 @@
         NSString *instanceName = [NSString stringWithFormat:@"%@:%@:%@",bundleName, moduleName, abilityName];
         RDBDataChangeDemoRDBDataChangeDemoAbilityViewController *otherVC = [[RDBDataChangeDemoRDBDataChangeDemoAbilityViewController alloc] initWithInstanceName:instanceName];
         subStageVC = (RDBDataChangeDemoRDBDataChangeDemoAbilityViewController *)otherVC;
+    } else if ([moduleName isEqualToString:@"FileStorageStatisticsDemo"] && [abilityName isEqualToString:@"FileStorageStatisticsDemoAbility"]) {
+        NSString *instanceName = [NSString stringWithFormat:@"%@:%@:%@",bundleName, moduleName, abilityName];
+        FileStorageStatisticsDemoFileStorageStatisticsDemoAbilityViewController *otherVC = [[FileStorageStatisticsDemoFileStorageStatisticsDemoAbilityViewController alloc] initWithInstanceName:instanceName];
+        subStageVC = (FileStorageStatisticsDemoFileStorageStatisticsDemoAbilityViewController *)otherVC;
+    } else if ([moduleName isEqualToString:@"FileUriTestDemo"] && [abilityName isEqualToString:@"FileUriTestDemoAbility"]) {
+        NSString *instanceName = [NSString stringWithFormat:@"%@:%@:%@",bundleName, moduleName, abilityName];
+        FileUriTestDemoFileUriTestDemoAbilityViewController *otherVC = [[FileUriTestDemoFileUriTestDemoAbilityViewController alloc] initWithInstanceName:instanceName];
+        subStageVC = (FileUriTestDemoFileUriTestDemoAbilityViewController *)otherVC;
+    } else if ([moduleName isEqualToString:@"WindowDisplayFoldDemo"] && [abilityName isEqualToString:@"WindowDisplayFoldDemoAbility"]) {
+        NSString *instanceName = [NSString stringWithFormat:@"%@:%@:%@",bundleName, moduleName, abilityName];
+        WindowDisplayFoldDemoWindowDisplayFoldDemoAbilityViewController *otherVC = [[WindowDisplayFoldDemoWindowDisplayFoldDemoAbilityViewController alloc] initWithInstanceName:instanceName];
+        subStageVC = (WindowDisplayFoldDemoWindowDisplayFoldDemoAbilityViewController *)otherVC;
+    } else if ([moduleName isEqualToString:@"WindowNewDemo"] && [abilityName isEqualToString:@"WindowNewDemoAbility"]) {
+        NSString *instanceName = [NSString stringWithFormat:@"%@:%@:%@",bundleName, moduleName, abilityName];
+        WindowNewDemoWindowNewDemoAbilityViewController *otherVC = [[WindowNewDemoWindowNewDemoAbilityViewController alloc] initWithInstanceName:instanceName];
+        subStageVC = (WindowNewDemoWindowNewDemoAbilityViewController *)otherVC;
+    } else if ([moduleName isEqualToString:@"InteractionEffectTestDemo"] && [abilityName isEqualToString:@"InteractionEffectTestDemoAbility"]) {
+        NSString *instanceName = [NSString stringWithFormat:@"%@:%@:%@",bundleName, moduleName, abilityName];
+        InteractionEffectTestDemoInteractionEffectTestDemoAbilityViewController *otherVC = [[InteractionEffectTestDemoInteractionEffectTestDemoAbilityViewController alloc] initWithInstanceName:instanceName];
+        subStageVC = (InteractionEffectTestDemoInteractionEffectTestDemoAbilityViewController *)otherVC;
+    } else if ([moduleName isEqualToString:@"WebAttributeTestDemo"] && [abilityName isEqualToString:@"WebAttributeTestDemoAbility"]) {
+        NSString *instanceName = [NSString stringWithFormat:@"%@:%@:%@",bundleName, moduleName, abilityName];
+        WebAttributeTestDemoWebAttributeTestDemoAbilityViewController *otherVC = [[WebAttributeTestDemoWebAttributeTestDemoAbilityViewController alloc] initWithInstanceName:instanceName];
+        subStageVC = (WebAttributeTestDemoWebAttributeTestDemoAbilityViewController *)otherVC;
     } // other ViewController
     
     if (!subStageVC) {

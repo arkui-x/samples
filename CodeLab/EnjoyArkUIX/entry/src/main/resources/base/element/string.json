@@ -167,6 +167,30 @@
     {
       "name": "RDBDataChangeDemo",
       "value": "RDBDataChangeDemo"
+    },
+    {
+      "name": "FileStorageStatisticsDemo",
+      "value": "FileStorageStatisticsDemo"
+    },
+    {
+      "name": "FileUriTestDemo",
+      "value": "FileUriTestDemo"
+    },
+    {
+      "name": "WindowDisplayFoldDemo",
+      "value": "WindowDisplayFoldDemo"
+    },
+    {
+      "name": "WindowNewDemo",
+      "value": "WindowNewDemo"
+    },
+    {
+      "name": "InteractionEffectTestDemo",
+      "value": "InteractionEffectTestDemo"
+    },
+    {
+      "name": "WebAttributeTestDemo",
+      "value": "WebAttributeTestDemo"
     }
   ]
 }

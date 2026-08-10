@@ -1,0 +1,26 @@
+{
+  "module": {
+    "name": "WebAttributeTestDemo",
+    "type": "feature",
+    "description": "$string:module_desc",
+    "mainElement": "WebAttributeTestDemoAbility",
+    "deviceTypes": [
+      "default"
+    ],
+    "deliveryWithInstall": true,
+    "installationFree": false,
+    "pages": "$profile:main_pages",
+    "abilities": [
+      {
+        "name": "WebAttributeTestDemoAbility",
+        "srcEntry": "./ets/webattributetestdemoability/WebAttributeTestDemoAbility.ets",
+        "description": "$string:WebAttributeTestDemoAbility_desc",
+        "icon": "$media:layered_image",
+        "label": "$string:WebAttributeTestDemoAbility_label",
+        "startWindowIcon": "$media:startIcon",
+        "startWindowBackground": "$color:start_window_background",
+        "exported": true
+      }
+    ]
+  }
+}

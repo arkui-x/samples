@@ -1,0 +1,12 @@
+{
+  "src": [
+    "pages/Index",
+    "pages/OverviewModePage",
+    "pages/LayoutModePage",
+    "pages/DarkModePage",
+    "pages/LayoutDarkModePage",
+    "pages/ForceDarkAccessPage",
+    "pages/DefaultFontSizePage",
+    "pages/WebDisplayPage"
+  ]
+}

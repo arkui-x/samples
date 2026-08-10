@@ -1,0 +1,26 @@
+{
+  "module": {
+    "name": "WindowDisplayFoldDemo",
+    "type": "feature",
+    "description": "$string:module_desc",
+    "mainElement": "WindowDisplayFoldDemoAbility",
+    "deviceTypes": [
+      "default"
+    ],
+    "deliveryWithInstall": true,
+    "installationFree": false,
+    "pages": "$profile:main_pages",
+    "abilities": [
+      {
+        "name": "WindowDisplayFoldDemoAbility",
+        "srcEntry": "./ets/windowdisplayfolddemoability/WindowDisplayFoldDemoAbility.ets",
+        "description": "$string:WindowDisplayFoldDemoAbility_desc",
+        "icon": "$media:icon",
+        "label": "$string:WindowDisplayFoldDemoAbility_label",
+        "startWindowIcon": "$media:icon",
+        "startWindowBackground": "$color:start_window_background",
+        "exported": true
+      }
+    ]
+  }
+}

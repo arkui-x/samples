@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <!-- 故意不写 viewport，让它用桌面宽度 -->
+    <title>测试 overviewModeAccess</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            width: 980px; /* 固定宽，大于手机屏宽 */
+            background: #f5f5f5;
+        }
+        .box {
+            width: 980px;
+            height: 120px;
+            line-height: 120px;
+            text-align: center;
+            font-size: 32px;
+            background: #e0e0e0;
+            border-bottom: 1px solid #ccc;
+        }
+        .wide {
+            width: 1200px; /* 更宽，强制横向滚动 */
+            background: #d0d0d0;
+        }
+    </style>
+</head>
+<body>
+<div class="box">980px 宽块</div>
+<div class="box wide">1200px 超宽块</div>
+</body>
+</html>

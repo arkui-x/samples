@@ -37,6 +37,12 @@
     "HighContrastDemo",
     "EnableHapticFeedbackDemo",
     "ChipDemo",
-    "RDBDataChangeDemo"
+    "RDBDataChangeDemo",
+    "FileStorageStatisticsDemo",
+    "FileUriTestDemo",
+    "WindowDisplayFoldDemo",
+    "WindowNewDemo",
+    "InteractionEffectTestDemo",
+    "WebAttributeTestDemo"
   ]
 }

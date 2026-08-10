@@ -471,6 +471,78 @@
           ]
         }
       ]
+    },
+    {
+      "name": "FileStorageStatisticsDemo",
+      "srcPath": "./self_test/FileStorageStatisticsDemo",
+      "targets": [
+        {
+          "name": "default",
+          "applyToProducts": [
+            "default"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "FileUriTestDemo",
+      "srcPath": "./self_test/FileUriTestDemo",
+      "targets": [
+        {
+          "name": "default",
+          "applyToProducts": [
+            "default"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "WindowDisplayFoldDemo",
+      "srcPath": "./self_test/WindowDisplayFoldDemo",
+      "targets": [
+        {
+          "name": "default",
+          "applyToProducts": [
+            "default"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "WindowNewDemo",
+      "srcPath": "./self_test/WindowNewDemo",
+      "targets": [
+        {
+          "name": "default",
+          "applyToProducts": [
+            "default"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "InteractionEffectTestDemo",
+      "srcPath": "./self_test/InteractionEffectTestDemo",
+      "targets": [
+        {
+          "name": "default",
+          "applyToProducts": [
+            "default"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "WebAttributeTestDemo",
+      "srcPath": "./self_test/WebAttributeTestDemo",
+      "targets": [
+        {
+          "name": "default",
+          "applyToProducts": [
+            "default"
+          ]
+        }
+      ]
     }
   ]
 }

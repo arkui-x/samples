@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>未支持深色模式网页</title>
+    <style>
+        body {
+          padding: 40px;
+          font-size: 18px;
+          /* 固定浅色样式，未适配 prefers-color-scheme */
+          background: LightBlue;
+          color: red;
+        }
+    </style>
+</head>
+<body>
+<h3>未支持深色模式测试页面</h3>
+<p>本网页未适配深色模式（无 prefers-color-scheme 媒体查询），固定浅色样式。用于验证 darkMode / forceDarkAccess 在网页本身不支持深色模式时的表现。</p>
+</body>
+</html>

@@ -1,0 +1,16 @@
+{
+  "string": [
+    {
+      "name": "module_desc",
+      "value": "module description"
+    },
+    {
+      "name": "WindowDisplayFoldDemoAbility_desc",
+      "value": "description"
+    },
+    {
+      "name": "WindowDisplayFoldDemoAbility_label",
+      "value": "折叠设备"
+    }
+  ]
+}

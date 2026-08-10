@@ -1,0 +1,16 @@
+{
+  "string": [
+    {
+      "name": "module_desc",
+      "value": "module description"
+    },
+    {
+      "name": "WebAttributeTestDemoAbility_desc",
+      "value": "description"
+    },
+    {
+      "name": "WebAttributeTestDemoAbility_label",
+      "value": "label"
+    }
+  ]
+}
