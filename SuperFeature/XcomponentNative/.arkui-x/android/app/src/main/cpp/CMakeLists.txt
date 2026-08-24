@@ -28,12 +28,22 @@ set_target_properties(
         ${CMAKE_CURRENT_SOURCE_DIR}/../../../libs/${CMAKE_ANDROID_ARCH_ABI}/libarkui_android.so
 )
 
-# 若使用OpenHarmony SDK 7.0.0.33以下版本，需删除arkui_ndk相关配置。
+# 若使用ArkUI-X SDK 7.0.0.33以下版本，需删除arkui_ndk相关配置。
+if(${CMAKE_ANDROID_ARCH_ABI} STREQUAL "arm64-v8a")
+    set(ARKUI_ABI_DIR "android-arm64-release")
+elseif(${CMAKE_ANDROID_ARCH_ABI} STREQUAL "armeabi-v7a")
+    set(ARKUI_ABI_DIR "android-arm-release")
+elseif(${CMAKE_ANDROID_ARCH_ABI} STREQUAL "x86_64")
+    set(ARKUI_ABI_DIR "android-x86_64")
+else()
+    message(FATAL_ERROR "Unsupported ABI: ${CMAKE_ANDROID_ARCH_ABI}")
+endif()
+
 add_library(arkui_ndk SHARED IMPORTED GLOBAL)
 set_target_properties(
     arkui_ndk
     PROPERTIES IMPORTED_LOCATION
-    ${CMAKE_CURRENT_SOURCE_DIR}/../../../libs/${CMAKE_ANDROID_ARCH_ABI}/libace_ndk.so
+    $ENV{ARKUIX_SDK_HOME}/26.0.0/arkui-x/plugins/api/lib/arkui/${ARKUI_ABI_DIR}/libace_ndk.so
 )
 
 set(NATIVE_SOURCE_PATH ${CMAKE_CURRENT_SOURCE_DIR}/../../../../../../entry/src/main/cpp)
@@ -51,7 +61,7 @@ add_library(xcomponent_napi SHARED
             ${NATIVE_SOURCE_PATH}/napi_manager.cpp
             ${NATIVE_SOURCE_PATH}/napi_util.cpp)
 target_link_libraries(xcomponent_napi PUBLIC arkui_android)
-# 若使用OpenHarmony SDK 7.0.0.33以下版本，需删除arkui_ndk相关配置。
+# 若使用ArkUI-X SDK 7.0.0.33以下版本，需删除arkui_ndk相关配置。
 target_link_libraries(xcomponent_napi PUBLIC arkui_ndk)
 target_link_libraries(xcomponent_napi PUBLIC libc++.a)
 target_link_libraries(xcomponent_napi PUBLIC log)
